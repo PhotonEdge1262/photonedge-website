@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "name": "photonedge-optics",
+  "builds": [
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.png",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/products",
+      "dest": "/products.html"
+    },
+    {
+      "src": "/product/(.*)",
+      "dest": "/product-detail.html?id=$1"
+    },
+    {
+      "src": "/about",
+      "dest": "/about.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/contact.html"
+    },
+    {
+      "src": "/applications",
+      "dest": "/applications.html"
+    },
+    {
+      "src": "/news",
+      "dest": "/news.html"
+    },
+    {
+      "src": "/downloads",
+      "dest": "/downloads.html"
+    }
+  ]
+}

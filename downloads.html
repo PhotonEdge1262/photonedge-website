@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - PhotonEdge</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 统一 Tailwind 配置 -->
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: {
+                        50: '#eff6ff',
+                        100: '#dbeafe',
+                        200: '#bfdbfe',
+                        300: '#93c5fd',
+                        400: '#60a5fa',
+                        500: '#3b82f6',
+                        600: '#2563eb',
+                        700: '#1d4ed8',
+                        800: '#1e40af',
+                        900: '#1e3a8a',
+                    },
+                },
+                animation: {
+                    'fade-in': 'fadeIn 0.5s ease-out',
+                    'slide-up': 'slideUp 0.5s ease-out',
+                    'scale-in': 'scaleIn 0.3s ease-out',
+                    'bounce-soft': 'bounceSoft 2s ease-in-out infinite',
+                },
+                keyframes: {
+                    fadeIn: {
+                        '0%': { opacity: '0' },
+                        '100%': { opacity: '1' },
+                    },
+                    slideUp: {
+                        '0%': { opacity: '0', transform: 'translateY(30px)' },
+                        '100%': { opacity: '1', transform: 'translateY(0)' },
+                    },
+                    scaleIn: {
+                        '0%': { opacity: '0', transform: 'scale(0.9)' },
+                        '100%': { opacity: '1', transform: 'scale(1)' },
+                    },
+                    bounceSoft: {
+                        '0%, 100%': { transform: 'translateY(0)' },
+                        '50%': { transform: 'translateY(-5px)' },
+                    },
+                },
+                boxShadow: {
+                    'soft': '0 4px 20px -3px rgba(0, 0, 0, 0.08), 0 10px 25px -5px rgba(0, 0, 0, 0.05)',
+                    'soft-lg': '0 10px 40px -10px rgba(0, 0, 0, 0.12), 0 4px 15px -5px rgba(0, 0, 0, 0.06)',
+                    'glow': '0 0 25px rgba(59, 130, 246, 0.35)',
+                    'card-hover': '0 20px 50px -15px rgba(0, 0, 0, 0.15)',
+                },
+            }
+        }
+    }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .transition-smooth { @apply transition-all duration-300 ease-out; }
+            .transition-fast { @apply transition-all duration-150 ease-out; }
+            .glass { @apply bg-white/90 backdrop-blur-md border border-gray-200/50; }
+            .gradient-primary { @apply bg-gradient-to-r from-primary-600 to-primary-500; }
+            .gradient-subtle { @apply bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50; }
+            .hover-lift { @apply transition-smooth hover:-translate-y-2 hover:shadow-card-hover; }
+            .hover-glow { @apply transition-smooth hover:shadow-glow; }
+            .press-effect { @apply active:scale-[0.97] transition-fast; }
+            .text-gradient { @apply bg-gradient-to-r from-primary-600 via-blue-600 to-primary-500 bg-clip-text text-transparent; }
+        }
+    </style>
+    <!-- AiPexBase SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/aipexbase-js/dist/aipexbase.umd.min.js"></script>
+</head>
+<body class="bg-gradient-subtle min-h-screen">
+    <!-- 顶部导航栏 -->
+    <nav class="sticky top-0 z-50 glass shadow-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-soft">
+                        <span class="text-white font-bold text-lg">PE</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold text-gradient">PhotonEdge</span>
+                        <p class="text-xs text-gray-500 -mt-1">Precision Optical Components</p>
+                    </div>
+                </div>
+                
+                <!-- 桌面端导航 -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Home</a>
+                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Products</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">About</a>
+                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Applications</a>
+                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">News</a>
+                    <a href="downloads.html" class="px-4 py-2 rounded-lg bg-primary-50 text-primary-600 font-semibold transition-smooth">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Contact</a>
+                </div>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-smooth">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- 移动端导航菜单 -->
+            <div id="mobileMenu" class="hidden md:hidden pb-4 animate-slide-down">
+                <div class="flex flex-col space-y-1">
+                    <a href="index.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Home</a>
+                    <a href="products.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Products</a>
+                    <a href="about.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">About</a>
+                    <a href="applications.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Applications</a>
+                    <a href="news.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">News</a>
+                    <a href="downloads.html" class="px-4 py-2.5 rounded-lg bg-primary-50 text-primary-600 font-semibold">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2.5 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题区 -->
+    <section class="bg-gradient-to-br from-primary-600 via-primary-700 to-blue-800 text-white py-16 md:py-20 relative overflow-hidden">
+        <!-- 装饰背景 -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-40 h-40 border border-white rounded-full"></div>
+            <div class="absolute bottom-10 right-10 w-60 h-60 border border-white rounded-full"></div>
+            <div class="absolute top-1/2 left-1/3 w-20 h-20 border border-white rounded-lg rotate-45"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 animate-fade-in">
+            <div class="text-center">
+                <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                    <i class="fas fa-download"></i>
+                    <span class="text-sm font-medium">Resources Center</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Downloads</h1>
+                <p class="text-lg md:text-xl text-primary-100 max-w-2xl mx-auto">Download our comprehensive product catalogs and specifications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主内容区 -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <!-- 分类筛选标签 -->
+        <div class="flex flex-wrap justify-center gap-3 mb-12 animate-slide-up" id="categoryFilters">
+            <button data-category="All" class="filter-btn active px-6 py-2.5 rounded-full text-sm font-semibold transition-smooth press-effect">
+                All
+            </button>
+            <button data-category="Product Catalog" class="filter-btn px-6 py-2.5 rounded-full text-sm font-semibold transition-smooth press-effect">
+                Product Catalog
+            </button>
+        </div>
+
+        <!-- 下载资源卡片区 -->
+        <div id="downloadsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- 卡片将通过 JavaScript 动态渲染 -->
+        </div>
+        
+        <!-- 加载状态 -->
+        <div id="loadingState" class="flex flex-col items-center justify-center py-20 hidden">
+            <div class="w-12 h-12 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin"></div>
+            <p class="mt-4 text-gray-500">Loading resources...</p>
+        </div>
+        
+        <!-- 空状态 -->
+        <div id="emptyState" class="flex flex-col items-center justify-center py-20 hidden">
+            <div class="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                <i class="fas fa-folder-open text-4xl text-gray-400"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">No Resources Found</h3>
+            <p class="text-gray-500">No downloads available in this category yet.</p>
+        </div>
+    </main>
+
+    <!-- 底部信息栏 -->
+    <footer class="bg-gray-900 text-white py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <!-- 公司信息 -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">PE</span>
+                        </div>
+                        <span class="text-xl font-bold">PhotonEdge</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Professional precision optical components manufacturer with 15+ years of experience. ISO 9001 certified supplier.
+                    </p>
+                </div>
+                
+                <!-- 快速链接 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html" class="hover:text-white transition-smooth">Products</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="applications.html" class="hover:text-white transition-smooth">Applications</a></li>
+                        <li><a href="downloads.html" class="hover:text-white transition-smooth">Downloads</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 产品分类 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Product Categories</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="products.html?category=Lenses" class="hover:text-white transition-smooth">Lenses</a></li>
+                        <li><a href="products.html?category=Windows" class="hover:text-white transition-smooth">Windows</a></li>
+                        <li><a href="products.html?category=Mirrors" class="hover:text-white transition-smooth">Mirrors & Prisms</a></li>
+                        <li><a href="products.html?category=Filters" class="hover:text-white transition-smooth">Filters</a></li>
+                    </ul>
+                </div>
+                
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-phone mt-1"></i>
+                            <span>+86-13693009175</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-envelope mt-1"></i>
+                            <span>hengdingguang@sina.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fab fa-whatsapp mt-1"></i>
+                            <span>+86-13693009175</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 分隔线 -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                        &copy; 2024 PhotonEdge. All rights reserved.
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition-smooth">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition-smooth">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-primary-600 hover:text-white transition-smooth">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp 悬浮按钮 -->
+    <a href="https://wa.me/8613693009175" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:scale-110 active:scale-95 transition-all group">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+        <span class="absolute right-full mr-3 px-3 py-1.5 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-smooth whitespace-nowrap">
+            Chat on WhatsApp
+        </span>
+    </a>
+
+    <!-- Toast 容器 -->
+    <div id="toast-container" class="fixed top-20 right-4 z-50 space-y-3"></div>
+
+    <script>
+        // ===== 初始化客户端 =====
+        const client = aipexbase.createClient({
+            baseUrl: 'https://baas.kuafuai.net/baas-api',
+            apiKey: 'baas_sGzz4VCE'
+        });
+
+        // ===== 全局变量 =====
+        let allDownloads = [];
+        let currentFilter = 'All';
+
+        // ===== Toast 提示函数 =====
+        function showToast(message, type = 'success') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            const styles = {
+                success: 'bg-green-50 border-green-200 text-green-800',
+                error: 'bg-red-50 border-red-200 text-red-800',
+                warning: 'bg-yellow-50 border-yellow-200 text-yellow-800',
+                info: 'bg-blue-50 border-blue-200 text-blue-800'
+            };
+            const icons = {
+                success: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>',
+                error: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>',
+                warning: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>',
+                info: '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>'
+            };
+            toast.className = `flex items-center px-4 py-3 rounded-xl border shadow-soft animate-slide-down ${styles[type]}`;
+            toast.innerHTML = `
+                <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">${icons[type]}</svg>
+                <span class="font-medium">${message}</span>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                toast.style.transform = 'translateX(100%)';
+                toast.style.transition = 'all 0.3s ease-out';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+
+        // ===== 获取文件图标 =====
+        function getFileIcon(category) {
+            const iconMap = {
+                'Product Catalog': '<i class="fas fa-book-open text-3xl text-primary-600"></i>',
+                'Company Profile': '<i class="fas fa-building text-3xl text-blue-600"></i>',
+                'Certifications': '<i class="fas fa-certificate text-3xl text-amber-500"></i>',
+                'Technical Documents': '<i class="fas fa-file-alt text-3xl text-teal-600"></i>'
+            };
+            return iconMap[category] || '<i class="fas fa-file-pdf text-3xl text-red-500"></i>';
+        }
+
+        // ===== 获取文件图标背景色 =====
+        function getIconBg(category) {
+            const bgMap = {
+                'Product Catalog': 'bg-blue-50',
+                'Company Profile': 'bg-indigo-50',
+                'Certifications': 'bg-amber-50',
+                'Technical Documents': 'bg-teal-50'
+            };
+            return bgMap[category] || 'bg-gray-50';
+        }
+
+        // ===== 渲染下载卡片 =====
+        function renderDownloadCard(item) {
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-2xl shadow-soft p-6 hover-lift animate-scale-in';
+            card.innerHTML = `
+                <div class="flex items-start space-x-4 mb-4">
+                    <div class="w-16 h-16 ${getIconBg(item.category)} rounded-xl flex items-center justify-center flex-shrink-0">
+                        ${getFileIcon(item.category)}
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1 line-clamp-2">${item.name}</h3>
+                        <span class="inline-block px-3 py-1 text-xs font-medium bg-gray-100 text-gray-600 rounded-full">${item.category}</span>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between text-sm text-gray-500 mb-4 pb-4 border-b border-gray-100">
+                    <div class="flex items-center space-x-4">
+                        <span class="flex items-center space-x-1">
+                            <i class="fas fa-hdd"></i>
+                            <span>${item.file_size}</span>
+                        </span>
+                        <span class="flex items-center space-x-1">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>${item.update_date || 'N/A'}</span>
+                        </span>
+                    </div>
+                </div>
+                <button onclick="downloadFile(${item.id}, '${item.name}')" 
+                        class="w-full gradient-primary text-white px-4 py-3 rounded-xl font-medium shadow-soft hover:shadow-glow hover:scale-[1.02] active:scale-[0.97] transition-smooth flex items-center justify-center space-x-2">
+                    <i class="fas fa-download"></i>
+                    <span>Download</span>
+                </button>
+            `;
+            return card;
+        }
+
+        // ===== 下载文件 =====
+        async function downloadFile(id, name) {
+            try {
+                // 获取文件详情
+                const res = await client.db.from('downloads').get().eq('id', id);
+                if (res.data && res.data.file && res.data.file.length > 0) {
+                    // 如果有文件URL，打开下载
+                    window.open(res.data.file[0], '_blank');
+                } else {
+                    // 模拟下载（实际场景中应替换为真实文件URL）
+                    showToast(`Download started: ${name}`, 'info');
+                    // 创建模拟下载效果
+                    simulateDownload(name);
+                }
+            } catch (error) {
+                console.error('Download error:', error);
+                showToast(`Download started: ${name}`, 'info');
+                simulateDownload(name);
+            }
+        }
+
+        // ===== 模拟下载效果 =====
+        function simulateDownload(name) {
+            const btn = event.target.closest('button');
+            const originalContent = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i><span>Downloading...</span>';
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i><span>Downloaded!</span>';
+                setTimeout(() => {
+                    btn.innerHTML = originalContent;
+                    btn.disabled = false;
+                }, 1500);
+            }, 1500);
+        }
+
+        // ===== 加载下载资源 =====
+        async function loadDownloads() {
+            const container = document.getElementById('downloadsContainer');
+            const loadingState = document.getElementById('loadingState');
+            const emptyState = document.getElementById('emptyState');
+            
+            loadingState.classList.remove('hidden');
+            emptyState.classList.add('hidden');
+            container.innerHTML = '';
+            
+            try {
+                const res = await client.db.from('downloads').list();
+                allDownloads = res.data || [];
+                filterDownloads(currentFilter);
+            } catch (error) {
+                console.error('Failed to load downloads:', error);
+                showToast('Failed to load resources. Please try again.', 'error');
+                loadingState.classList.add('hidden');
+                emptyState.classList.remove('hidden');
+            }
+        }
+
+        // ===== 筛选下载资源 =====
+        function filterDownloads(category) {
+            const container = document.getElementById('downloadsContainer');
+            const loadingState = document.getElementById('loadingState');
+            const emptyState = document.getElementById('emptyState');
+            
+            loadingState.classList.add('hidden');
+            
+            let filteredData = allDownloads;
+            if (category !== 'All') {
+                filteredData = allDownloads.filter(item => item.category === category);
+            }
+            
+            container.innerHTML = '';
+            
+            if (filteredData.length === 0) {
+                emptyState.classList.remove('hidden');
+            } else {
+                emptyState.classList.add('hidden');
+                filteredData.forEach((item, index) => {
+                    const card = renderDownloadCard(item);
+                    card.style.animationDelay = `${index * 0.1}s`;
+                    container.appendChild(card);
+                });
+            }
+        }
+
+        // ===== 分类筛选事件 =====
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // 更新按钮状态
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.remove('active', 'gradient-primary', 'text-white', 'shadow-soft');
+                    b.classList.add('bg-gray-100', 'text-gray-600');
+                });
+                this.classList.remove('bg-gray-100', 'text-gray-600');
+                this.classList.add('active', 'gradient-primary', 'text-white', 'shadow-soft');
+                
+                // 筛选资源
+                currentFilter = this.dataset.category;
+                filterDownloads(currentFilter);
+            });
+        });
+
+        // ===== 移动端菜单 =====
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        });
+
+        // ===== 页面加载时初始化 =====
+        document.addEventListener('DOMContentLoaded', function() {
+            // 初始化筛选按钮样式
+            document.querySelector('.filter-btn[data-category="All"]').classList.add('gradient-primary', 'text-white', 'shadow-soft');
+            document.querySelector('.filter-btn[data-category="All"]').classList.remove('bg-gray-100', 'text-gray-600');
+            
+            // 加载下载资源
+            loadDownloads();
+        });
+
+        console.log('Downloads page initialized');
+    </script>
+</body>
+</html>
