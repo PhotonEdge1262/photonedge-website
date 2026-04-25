@@ -1047,5 +1047,184 @@
             `;
         }
     </script>
-</body>
+
+    <script>
+        // ===== 加载产品数据 =====
+        let localProductsData = null;
+        
+        async function loadProductData() {
+            try {
+                const response = await fetch('js/products-data.js');
+                const text = await response.text();
+                eval(text);
+                localProductsData = productsData;
+                
+                // 从URL获取产品ID
+                const urlParams = new URLSearchParams(window.location.search);
+                const productId = urlParams.get('id');
+                
+                if (productId && localProductsData) {
+                    loadProductDetail(productId);
+                } else {
+                    showNotFound();
+                }
+            } catch (error) {
+                console.error('Error loading product data:', error);
+                showNotFound();
+            }
+        }
+        
+        // ===== 加载产品详情 =====
+        function loadProductDetail(productId) {
+            let product = null;
+            let currentCategory = null;
+            
+            // 查找产品
+            for (const category of localProductsData.categories) {
+                const found = category.products.find(p => p.id === productId);
+                if (found) {
+                    product = found;
+                    currentCategory = category;
+                    break;
+                }
+            }
+            
+            if (!product) {
+                showNotFound();
+                return;
+            }
+            
+            // 更新页面内容
+            updateProductPage(product, currentCategory);
+        }
+        
+        // ===== 更新产品页面 =====
+        function updateProductPage(product, category) {
+            // 更新标题
+            document.title = `${product.name} - PhotonEdge`;
+            
+            // 更新面包屑和产品名
+            const breadcrumb = document.querySelector('.breadcrumb');
+            if (breadcrumb) {
+                breadcrumb.innerHTML = `
+                    <div class="breadcrumb-container">
+                        <a href="index.html">Home</a>
+                        <span>&gt;</span>
+                        <a href="products.html">Products</a>
+                        <span>&gt;</span>
+                        <a href="products.html?category=${category.id}">${category.name}</a>
+                        <span>&gt;</span>
+                        <span class="current">${product.name}</span>
+                    </div>
+                `;
+            }
+            
+            // 更新产品名称
+            const productNameEl = document.querySelector('.product-info h1');
+            if (productNameEl) {
+                productNameEl.textContent = product.name;
+            }
+            
+            // 更新分类标签
+            const categoryEl = document.querySelector('.product-category');
+            if (categoryEl) {
+                categoryEl.textContent = category.name;
+            }
+            
+            // 更新产品图片
+            const mainImage = document.querySelector('.main-image img');
+            if (mainImage) {
+                if (product.image) {
+                    mainImage.src = product.image;
+                } else {
+                    mainImage.src = 'https://s.coze.cn/image/aLbrCP5IcO0/';
+                }
+            }
+            
+            // 更新描述
+            const descEl = document.querySelector('.product-description');
+            if (descEl) {
+                descEl.innerHTML = `<p>${product.description || 'No description available.'}</p>`;
+            }
+            
+            // 更新规格参数表
+            updateSpecsTable(product.specs);
+            
+            // 加载相关产品
+            loadRelatedProducts(product, category);
+            
+            // 隐藏loading
+            document.querySelector('.loading')?.classList.add('hidden');
+        }
+        
+        // ===== 更新规格参数表 =====
+        function updateSpecsTable(specs) {
+            const tbody = document.querySelector('.parameters-table tbody');
+            if (tbody && specs) {
+                let html = '';
+                for (const [key, value] of Object.entries(specs)) {
+                    html += `<tr><td>${key}</td><td>${value}</td></tr>`;
+                }
+                tbody.innerHTML = html;
+            }
+        }
+        
+        // ===== 加载相关产品 =====
+        function loadRelatedProducts(currentProduct, category) {
+            const relatedGrid = document.querySelector('.related-grid');
+            if (!relatedGrid) return;
+            
+            const related = category.products
+                .filter(p => p.id !== currentProduct.id)
+                .slice(0, 4);
+            
+            if (related.length === 0) {
+                document.querySelector('.related-section')?.classList.add('hidden');
+                return;
+            }
+            
+            let html = '';
+            related.forEach(product => {
+                html += `
+                    <div class="product-card" onclick="window.location.href='product-detail.html?id=${product.id}'">
+                        <div class="product-card-image">
+                            <img src="${product.image || 'https://s.coze.cn/image/aLbrCP5IcO0/'}" alt="${product.name}">
+                        </div>
+                        <div class="product-card-content">
+                            <h3>${product.name}</h3>
+                            <p>${category.name}</p>
+                            <span class="view-btn">
+                                View Details
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            relatedGrid.innerHTML = html;
+        }
+        
+        // ===== 显示404 =====
+        function showNotFound() {
+            const mainContent = document.querySelector('.product-section');
+            if (mainContent) {
+                mainContent.innerHTML = `
+                    <div class="not-found">
+                        <i class="fas fa-search"></i>
+                        <h2>Product Not Found</h2>
+                        <p>The product you're looking for doesn't exist.</p>
+                        <a href="products.html" class="btn btn-primary">
+                            <i class="fas fa-arrow-left"></i>
+                            Back to Products
+                        </a>
+                    </div>
+                `;
+            }
+        }
+        
+        // ===== 页面加载 =====
+        document.addEventListener('DOMContentLoaded', loadProductData);
+    </script>
+    </body>
 </html>

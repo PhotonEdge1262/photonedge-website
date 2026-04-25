@@ -803,5 +803,103 @@
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', init);
     </script>
-</body>
+
+    <script>
+        // ===== 本地产品数据 =====
+        let localProductsData = null;
+        
+        // ===== 加载本地产品数据 =====
+        async function loadLocalProducts() {
+            try {
+                // 加载本地产品数据
+                const response = await fetch('js/products-data.js');
+                const text = await response.text();
+                eval(text);
+                localProductsData = productsData;
+                
+                // 初始化产品列表
+                if (localProductsData && localProductsData.categories) {
+                    initProductList();
+                }
+            } catch (error) {
+                console.error('Failed to load local products:', error);
+            }
+        }
+        
+        // ===== 初始化产品列表 =====
+        function initProductList() {
+            // 渲染分类标签
+            renderCategoryTags();
+            
+            // 加载所有产品
+            loadAllProducts();
+        }
+        
+        // ===== 渲染分类标签 =====
+        function renderCategoryTags() {
+            const tagsContainer = document.querySelector('.category-tag').parentElement;
+            const allButton = tagsContainer.querySelector('[data-category="all"]');
+            
+            if (localProductsData && localProductsData.categories) {
+                // 保留"All"按钮
+                let newTags = allButton.outerHTML;
+                
+                // 添加各分类按钮
+                localProductsData.categories.forEach(cat => {
+                    newTags += `
+                        <button class="category-tag px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-primary-50 hover:text-primary-600 transition-smooth"
+                            data-category="${cat.id}">
+                            ${cat.name}
+                        </button>
+                    `;
+                });
+                
+                tagsContainer.innerHTML = newTags;
+                
+                // 重新绑定分类点击事件
+                bindCategoryEvents();
+            }
+        }
+        
+        // ===== 绑定分类事件 =====
+        function bindCategoryEvents() {
+            document.querySelectorAll('.category-tag').forEach(tag => {
+                tag.addEventListener('click', function() {
+                    document.querySelectorAll('.category-tag').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    state.currentCategory = this.dataset.category;
+                    loadAllProducts();
+                });
+            });
+        }
+        
+        // ===== 加载所有产品 =====
+        function loadAllProducts() {
+            let filteredProducts = [];
+            
+            if (state.currentCategory === 'all') {
+                // 显示所有产品
+                localProductsData.categories.forEach(cat => {
+                    filteredProducts = filteredProducts.concat(cat.products);
+                });
+            } else {
+                // 按分类筛选
+                const category = localProductsData.categories.find(c => c.id === state.currentCategory);
+                if (category) {
+                    filteredProducts = category.products;
+                }
+            }
+            
+            state.totalProducts = filteredProducts.length;
+            state.products = filteredProducts;
+            renderProducts(filteredProducts);
+        }
+        
+        // ===== 页面加载完成后初始化 =====
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLocalProducts();
+            bindCategoryEvents();
+        });
+    </script>
+    </body>
 </html>
