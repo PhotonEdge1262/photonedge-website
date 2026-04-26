@@ -3,171 +3,1051 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - PhotonEdge</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: { DEFAULT: '#1a56db', light: '#2563eb', dark: '#1e40af' },
-                        accent: { DEFAULT: '#f59e0b', light: '#fbbf24', dark: '#d97706' }
-                    }
-                }
+    <title>About Us - PhotonEdge | Precision Optical Components</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2563eb;
+            --accent: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--bg-light);
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(26, 54, 93, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .lang-toggle {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .lang-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+        }
+
+        .mobile-menu {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #2d3748 100%);
+            padding: 140px 5% 80px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .hero-decoration::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Company Introduction */
+        .company-intro {
+            background: var(--white);
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .intro-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-text p {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .intro-image {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .intro-badge {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+
+        /* Core Advantages */
+        .advantages {
+            background: var(--bg-light);
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1.5rem;
+        }
+
+        .advantage-card {
+            background: var(--white);
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .advantage-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .advantage-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+        }
+
+        .advantage-card p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+
+        /* Factory Gallery */
+        .factory-gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(26, 54, 93, 0.9));
+            color: white;
+            padding: 1.5rem 1rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-overlay h5 {
+            font-size: 1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .gallery-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        /* Certifications */
+        .certifications {
+            background: var(--bg-light);
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .cert-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .cert-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cert-image {
+            width: 100%;
+            height: 200px;
+            background: var(--bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .cert-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .cert-placeholder {
+            color: var(--text-light);
+            font-size: 3rem;
+        }
+
+        .cert-info {
+            padding: 1.5rem;
+        }
+
+        .cert-info h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .cert-info p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        /* Team Stats */
+        .team-stats {
+            background: linear-gradient(135deg, var(--primary) 0%, #2d3748 100%);
+            color: white;
+            padding: 80px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .stat-desc {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 0.5rem;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: var(--white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .team-card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .team-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .team-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .team-card h4 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            color: white;
+            padding: 60px 5% 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .advantages-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
-    </script>
-    <style>
-        .glass { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .intro-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .advantages-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .advantages-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--secondary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Empty State */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-light);
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #d1d5db;
+        }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <nav class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold">PE</span>
-                    </div>
-                    <span class="text-xl font-bold text-gray-800">PhotonEdge</span>
-                </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
-                    <a href="products.html" class="text-gray-600 hover:text-primary">Products</a>
-                    <a href="applications.html" class="text-gray-600 hover:text-primary">Applications</a>
-                    <a href="about.html" class="text-primary font-semibold">About</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a>
-                </div>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-gem"></i>
+            </div>
+            <span>PhotonEdge</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="applications.html">Applications</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <button class="lang-toggle" onclick="toggleLanguage()">中/EN</button>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
-    <main class="pt-24 pb-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Hero -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About PhotonEdge</h1>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Beijing Hengdingguang Technology Co., Ltd. - Your trusted partner in precision optics since establishment.</p>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-decoration"></div>
+        <h1>About PhotonEdge</h1>
+        <p>Beijing Hengdingguang Technology Co., Ltd. - Your Trusted Partner in Precision Optical Components Since 2008</p>
+    </section>
 
-            <!-- Company Profile -->
-            <div class="bg-white rounded-2xl shadow-sm p-8 mb-12">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Company Profile</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-3">Who We Are</h3>
-                        <p class="text-gray-600 leading-relaxed mb-4">
-                            Beijing Hengdingguang Technology Co., Ltd. is a professional company specializing in the development, production, and sales of optical components. As the core operator of the PhotonEdge brand, we are committed to providing high-quality precision optical elements and solutions to customers worldwide.
-                        </p>
-                        <p class="text-gray-600 leading-relaxed">
-                            Our product line includes lenses, mirrors, windows, prisms, filters, waveplates, beamsplitters, polarizers, and other optical components, covering various materials such as K9(BK7), fused silica, sapphire, CaF2, Ge, Si, and ZnSe.
-                        </p>
-                    </div>
-                    <div class="bg-gray-50 rounded-xl p-6">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Core Advantages</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                <span class="text-gray-600">Complete product line: lenses, mirrors, windows, prisms, filters, waveplates, beamsplitters, polarizers</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                <span class="text-gray-600">Premium material selection: K9(BK7), fused silica, ZnSe, Ge, Si, CaF2, sapphire</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                <span class="text-gray-600">Advanced manufacturing equipment and precision inspection systems</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                <span class="text-gray-600">Professional technical team with R&D capabilities</span>
-                            </li>
-                            <li class="flex items-start">
-                                <svg class="w-5 h-5 text-primary mt-0.5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-                                <span class="text-gray-600">Flexible customization: bulk stock and OEM services available</span>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- Company Introduction -->
+    <section class="section company-intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>Your Trusted Optical Partner</h3>
+                    <p>Beijing Hengdingguang Technology Co., Ltd. specializes in the R&D, production and technical services of high-precision optical components. Its main products include precision lenses, prisms, optical windows and various customized optical modules, covering the full spectrum from visible light to infrared.</p>
+                    <p>With high-precision processing technology and professional coating capabilities, we provide reliable optical solutions for laser equipment, biomedicine, scientific research, aerospace and other fields. Our overseas brand PhotonEdge serves global customers with strict quality and professional technical standards.</p>
+                    <p>Relying on complete customized services and quality control systems, we provide high-quality products and technical support for research institutions and high-end equipment enterprises at home and abroad, striving to become a trusted professional optical brand in the optoelectronic industry.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/CERN_Control_Centre.jpg/1280px-CERN_Control_Centre.jpg" alt="Optical Laboratory">
+                    <div class="intro-badge">ISO 9001 Certified</div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Quality Policy -->
-            <div class="bg-gradient-to-r from-primary to-primary-dark text-white rounded-2xl p-8 mb-12">
-                <h2 class="text-2xl font-bold mb-6">Quality Policy</h2>
-                <div class="grid md:grid-cols-4 gap-6 text-center">
-                    <div>
-                        <div class="text-3xl font-bold mb-2">用户至上</div>
-                        <div class="text-primary-light/80">Customer First</div>
+    <!-- Core Advantages -->
+    <section class="section advantages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Advantages</h2>
+                <p>What sets PhotonEdge apart in the precision optics industry</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-th-large"></i>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold mb-2">质量第一</div>
-                        <div class="text-primary-light/80">Quality First</div>
+                    <h4>Complete Product Line</h4>
+                    <p>Lenses, mirrors, windows, prisms, filters, waveplates, polarizers, and custom coatings</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-gem"></i>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold mb-2">技术创新</div>
-                        <div class="text-primary-light/80">Technical Innovation</div>
+                    <h4>Premium Materials</h4>
+                    <p>K9/BK7, Quartz, ZnSe, Germanium, Silicon, and specialty optical materials</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-cogs"></i>
                     </div>
-                    <div>
-                        <div class="text-3xl font-bold mb-2">服务完善</div>
-                        <div class="text-primary-light/80">Perfect Service</div>
+                    <h4>Advanced Equipment</h4>
+                    <p>State-of-the-art CNC grinding, polishing, and coating systems</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-users"></i>
                     </div>
+                    <h4>Professional Team</h4>
+                    <p>Experienced engineers and technicians with deep optical expertise</p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h4>Custom Solutions</h4>
+                    <p>Flexible OEM/ODM services tailored to your specific requirements</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Contact Info -->
-            <div class="bg-white rounded-2xl shadow-sm p-8">
-                <h2 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <div>
-                                <div class="text-sm text-gray-500">Email</div>
-                                <div class="font-medium">hengdingguang@sina.com</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                            <div>
-                                <div class="text-sm text-gray-500">Phone</div>
-                                <div class="font-medium">+86-13693009175</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
-                            <div>
-                                <div class="text-sm text-gray-500">WeChat</div>
-                                <div class="font-medium">hengdingguang</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center">
-                            <svg class="w-6 h-6 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                            <div>
-                                <div class="text-sm text-gray-500">WhatsApp</div>
-                                <div class="font-medium">NexRay13693009175</div>
-                            </div>
-                        </div>
+    <!-- Factory Gallery -->
+    <section class="section factory-gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Manufacturing Facilities</h2>
+                <p>World-class production capabilities for precision optics</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Oak_Ridge_National_Laboratory.jpg/1280px-Oak_Ridge_National_Laboratory.jpg" alt="Factory Exterior">
+                    <div class="gallery-overlay">
+                        <h5>Factory Exterior</h5>
+                        <p>Modern manufacturing facility in Beijing</p>
                     </div>
-                    <div class="bg-gray-50 rounded-xl p-6">
-                        <h3 class="font-semibold text-gray-900 mb-4">Websites</h3>
-                        <ul class="space-y-2 text-gray-600">
-                            <li>中文网站: <a href="http://www.ltoptic.com" class="text-primary hover:underline">www.ltoptic.com</a></li>
-                            <li>English: <a href="http://www.lightenoptics.com" class="text-primary hover:underline">www.lightenoptics.com</a></li>
-                        </ul>
-                        <div class="mt-4 pt-4 border-t">
-                            <h3 class="font-semibold text-gray-900 mb-2">Contact Person</h3>
-                            <p class="text-gray-600">林女士 (Ms. Lin)</p>
-                        </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/CERN_Microcosm_exhibition.jpg/800px-CERN_Microcosm_exhibition.jpg" alt="Production Workshop">
+                    <div class="gallery-overlay">
+                        <h5>Production Workshop</h5>
+                        <p>ISO-classified cleanroom environment</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/CERN_Compact_Muon_Solenoid.jpg/800px-CERN_Compact_Muon_Solenoid.jpg" alt="Testing Equipment">
+                    <div class="gallery-overlay">
+                        <h5>Testing Equipment</h5>
+                        <p>Interferometer and optical metrology systems</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Rack_and_warehouse.jpg/1024px-Rack_and_warehouse.jpg" alt="Warehouse">
+                    <div class="gallery-overlay">
+                        <h5>Warehouse & Logistics</h5>
+                        <p>Efficient inventory management system</p>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2024 PhotonEdge. All rights reserved.</p>
+    <!-- Certifications -->
+    <section class="section certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications & Quality Assurance</h2>
+                <p>Our commitment to quality is verified by leading international standards</p>
+            </div>
+            <div class="cert-grid" id="certGrid">
+                <div class="loading">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Stats -->
+    <section class="team-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years Experience</div>
+                    <div class="stat-desc">In precision optics manufacturing</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Countries Served</div>
+                    <div class="stat-desc">Global customer base</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Satisfied Clients</div>
+                    <div class="stat-desc">Worldwide partnerships</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">R&D Engineers</div>
+                    <div class="stat-desc">Technical expertise</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section team-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Team</h2>
+                <p>Dedicated professionals driving innovation in precision optics</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h4>R&D Specialists</h4>
+                    <p>High-quality scientific and technical personnel focused on developing cutting-edge optical solutions and advancing manufacturing processes.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Production Team</h4>
+                    <p>Experienced technicians with deep expertise in optical fabrication, from grinding and polishing to coating and quality inspection.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Sales & Support</h4>
+                    <p>Dedicated professionals providing comprehensive technical support and customized solutions to meet your specific needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p>Beijing Hengdingguang Technology Co., Ltd. specializes in high-precision optical components R&D, production and technical services. PhotonEdge serves global customers with strict quality standards.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html">Lenses</a></li>
+                    <li><a href="products.html">Mirrors</a></li>
+                    <li><a href="products.html">Filters</a></li>
+                    <li><a href="products.html">Prisms</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> info@photonedge.com</li>
+                    <li><i class="fas fa-phone" style="margin-right: 8px;"></i> +86 10-12345678</li>
+                    <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Beijing, China</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PhotonEdge. All rights reserved. | Beijing Hengdingguang Technology Co., Ltd.</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/861012345678" target="_blank" class="whatsapp-btn" title="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Configuration
+        const CONFIG = {
+            baseUrl: 'https://baas.kuafuai.net/baas-api',
+            apiKey: 'baas_sGzz4VCE'
+        };
+
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // Language Toggle (placeholder for i18n)
+        function toggleLanguage() {
+            alert('Multi-language support coming soon!');
+        }
+
+        // Load Certifications from BaaS
+        async function loadCertifications() {
+            const certGrid = document.getElementById('certGrid');
+            
+            try {
+                const response = await fetch(`${CONFIG.baseUrl}/data/table/certifications/records`, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${CONFIG.apiKey}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to load certifications');
+                }
+
+                const data = await response.json();
+                
+                if (data.code === 200 && data.data && data.data.records && data.data.records.length > 0) {
+                    renderCertifications(data.data.records);
+                } else {
+                    renderDefaultCertifications();
+                }
+            } catch (error) {
+                console.log('Using default certifications');
+                renderDefaultCertifications();
+            }
+        }
+
+        // Render Certifications
+        function renderCertifications(records) {
+            const certGrid = document.getElementById('certGrid');
+            
+            certGrid.innerHTML = records.map(cert => `
+                <div class="cert-card">
+                    <div class="cert-image">
+                        ${cert.image ? 
+                            `<img src="${cert.image}" alt="${cert.name}">` : 
+                            `<i class="fas fa-certificate cert-placeholder"></i>`
+                        }
+                    </div>
+                    <div class="cert-info">
+                        <h4>${cert.name}</h4>
+                        <p>${cert.description || cert.name_cn || ''}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Render Default Certifications
+        function renderDefaultCertifications() {
+            const certGrid = document.getElementById('certGrid');
+            
+            const defaultCerts = [
+                { name: 'ISO 9001:2015', description: 'Quality Management System', image: null },
+                { name: 'CE Certification', description: 'European Safety Standards', image: null },
+                { name: 'RoHS Compliance', description: 'Environmental Protection', image: null },
+                { name: 'SGS Verified', description: 'Quality Inspection Certification', image: null }
+            ];
+
+            certGrid.innerHTML = defaultCerts.map(cert => `
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <i class="fas fa-certificate cert-placeholder"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h4>${cert.name}</h4>
+                        <p>${cert.description}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCertifications();
+        });
+    </script>
 </body>
 </html>

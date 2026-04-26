@@ -4,507 +4,1069 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details - PhotonEdge</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/products-data.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: { DEFAULT: '#1a56db', light: '#2563eb', dark: '#1e40af' },
-                        accent: { DEFAULT: '#f59e0b', light: '#fbbf24', dark: '#d97706' }
-                    }
-                }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a56db;
+            --secondary-color: #0e4290;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 0 5%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .lang-switch {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            padding: 100px 5% 20px;
+            background: var(--bg-light);
+        }
+
+        .breadcrumb-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-color);
+        }
+
+        .breadcrumb span {
+            color: var(--text-light);
+            margin: 0 8px;
+        }
+
+        .breadcrumb .current {
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        /* Product Section */
+        .product-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 5%;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        /* Gallery */
+        .product-gallery {
+            position: sticky;
+            top: 90px;
+        }
+
+        .main-image {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 15px;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .main-image:hover img {
+            transform: scale(1.02);
+        }
+
+        .thumbnail-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .thumbnail {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: var(--primary-color);
+        }
+
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Product Info */
+        .product-info h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .product-info .product-name-cn {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .product-category {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .product-actions {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(26, 86, 219, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Parameters Section */
+        .parameters-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: var(--primary-color);
+        }
+
+        .parameters-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .parameters-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .parameters-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .parameters-table td:first-child {
+            font-weight: 600;
+            color: var(--text-dark);
+            width: 35%;
+        }
+
+        .parameters-table td:last-child {
+            color: var(--text-light);
+        }
+
+        /* Applications Section */
+        .applications-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+
+        .application-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .app-tag {
+            padding: 8px 18px;
+            background: var(--bg-light);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s;
+        }
+
+        .app-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .application-desc {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Related Products */
+        .related-section {
+            margin-bottom: 60px;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .product-card-image {
+            aspect-ratio: 1;
+            overflow: hidden;
+            background: var(--bg-light);
+        }
+
+        .product-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover .product-card-image img {
+            transform: scale(1.05);
+        }
+
+        .product-card-content {
+            padding: 20px;
+        }
+
+        .product-card-content h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .product-card-content p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+
+        .view-btn {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 60px 5% 30px;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 50px;
+        }
+
+        .footer-about h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .footer-about p {
+            color: #9ca3af;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .footer-contact p {
+            color: #9ca3af;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #374151;
+            text-align: center;
+            color: #9ca3af;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--border-color);
+            border-top-color: var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Not Found */
+        .not-found {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .not-found i {
+            font-size: 4rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .not-found h2 {
+            margin-bottom: 15px;
+        }
+
+        .not-found p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .product-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .product-gallery {
+                position: static;
+            }
+
+            .related-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr 1fr;
             }
         }
-    </script>
-    <style>
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
-        .animate-slide-up { animation: slideUp 0.5s ease-out forwards; }
-        .glass { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
-        table { border-collapse: collapse; }
-        th, td { border: 1px solid #e5e7eb; }
-        .spec-card { transition: all 0.2s ease; }
-        .spec-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .product-info h1 {
+                font-size: 1.5rem;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .thumbnail-list {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+
+            .product-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* Placeholder Image */
+        .placeholder-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+            color: #94a3b8;
+            font-size: 3rem;
+        }
     </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body>
     <!-- Navigation -->
-    <nav class="fixed top-0 left-0 right-0 z-50 glass shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold text-lg">PE</span>
-                        </div>
-                        <span class="text-xl font-bold text-gray-800">PhotonEdge</span>
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-primary transition-colors">Home</a>
-                    <a href="products.html" class="text-primary font-semibold">Products</a>
-                    <a href="applications.html" class="text-gray-600 hover:text-primary transition-colors">Applications</a>
-                    <a href="about.html" class="text-gray-600 hover:text-primary transition-colors">About</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
-                </div>
-                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="PhotonEdge" onerror="this.style.display='none'">
+                <span>PhotonEdge</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="downloads.html">Downloads</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <select class="lang-switch" id="langSwitch">
+                    <option value="en">EN</option>
+                    <option value="cn">中文</option>
+                </select>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
                 </button>
-            </div>
-        </div>
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-            <div class="px-4 py-3 space-y-2">
-                <a href="index.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100">Home</a>
-                <a href="products.html" class="block px-3 py-2 rounded-lg bg-primary text-white">Products</a>
-                <a href="applications.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100">Applications</a>
-                <a href="about.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100">About</a>
-                <a href="contact.html" class="block px-3 py-2 rounded-lg hover:bg-gray-100">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Breadcrumb -->
-    <div class="pt-24 pb-4 bg-white border-b">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <nav class="flex" aria-label="Breadcrumb">
-                <ol class="flex items-center space-x-2 text-sm">
-                    <li><a href="index.html" class="text-gray-500 hover:text-primary">Home</a></li>
-                    <li><svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
-                    <li><a href="products.html" class="text-gray-500 hover:text-primary">Products</a></li>
-                    <li><svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
-                    <li><span id="breadcrumbCategory" class="text-gray-500">Loading...</span></li>
-                    <li><svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg></li>
-                    <li><span id="breadcrumbProduct" class="text-gray-900 font-medium">Loading...</span></li>
-                </ol>
-            </nav>
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="products.html">Products</a>
+            <span>/</span>
+            <span class="current" id="breadcrumbProduct">Loading...</span>
         </div>
     </div>
 
     <!-- Main Content -->
-    <main class="py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div id="productContent" class="animate-fade-in">
-                <!-- Loading State -->
-                <div class="flex justify-center py-20">
-                    <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary border-t-transparent"></div>
-                </div>
-            </div>
+    <main class="product-section" id="mainContent">
+        <div class="loading">
+            <div class="spinner"></div>
         </div>
     </main>
 
-    <!-- Related Products Section -->
-    <section id="relatedProducts" class="py-12 bg-white hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Related Products</h2>
-            <div id="relatedProductsGrid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Related products loaded here -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Inquiry Section -->
-    <section class="py-12 bg-primary/5">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl font-bold text-gray-900 mb-4">Need a Custom Solution?</h2>
-            <p class="text-gray-600 mb-6">Contact us for custom specifications, bulk orders, or OEM services.</p>
-            <a href="contact.html" class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                Contact Us
-            </a>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold">PE</span>
-                        </div>
-                        <span class="text-xl font-bold">PhotonEdge</span>
-                    </div>
-                    <p class="text-gray-400 text-sm">Beijing Hengdingguang Technology Co., Ltd.</p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Products</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="products.html?category=optical-lenses" class="hover:text-white transition-colors">Optical Lenses</a></li>
-                        <li><a href="products.html?category=optical-windows" class="hover:text-white transition-colors">Optical Windows</a></li>
-                        <li><a href="products.html?category=optical-mirrors" class="hover:text-white transition-colors">Optical Mirrors</a></li>
-                        <li><a href="products.html?category=optical-prisms" class="hover:text-white transition-colors">Optical Prisms</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li>Email: hengdingguang@sina.com</li>
-                        <li>Phone: +86-13693009175</li>
-                        <li>WeChat: hengdingguang</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>PhotonEdge</h3>
+                <p>Your trusted partner for precision optical components. With 15+ years of experience, we deliver high-quality optical solutions to customers worldwide.</p>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2024 PhotonEdge. All rights reserved.</p>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html?category=lenses">Lenses</a></li>
+                    <li><a href="products.html?category=mirrors">Mirrors</a></li>
+                    <li><a href="products.html?category=windows">Windows</a></li>
+                    <li><a href="products.html?category=filters">Filters</a></li>
+                </ul>
+            </div>
+            <div class="footer-links footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@photonedge.com</p>
+                <p><i class="fas fa-phone"></i> +86 755 1234 5678</p>
+                <p><i class="fas fa-map-marker-alt"></i> Shenzhen, China</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PhotonEdge. All rights reserved. | <a href="#" style="color: #9ca3af;">Privacy Policy</a></p>
         </div>
     </footer>
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/861234567890" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <script>
-        // Get URL parameters
-        const urlParams = new URLSearchParams(window.location.search);
-        const productId = urlParams.get('id');
-        const categoryId = urlParams.get('category');
+        // Configuration
+        const config = {
+            baseUrl: 'https://baas.kuafuai.net/baas-api',
+            apiKey: 'baas_sGzz4VCE'
+        };
+
+        // State
+        let currentLang = localStorage.getItem('lang') || 'en';
+        let currentProduct = null;
+        let allProducts = [];
 
         // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            initMobileMenu();
-            loadProduct();
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('langSwitch').value = currentLang;
+            document.getElementById('langSwitch').addEventListener('change', handleLanguageChange);
+            
+            const productId = getUrlParameter('id');
+            if (productId) {
+                loadProductDetail(productId);
+            } else {
+                showNotFound();
+            }
         });
 
-        function initMobileMenu() {
-            const btn = document.getElementById('mobileMenuBtn');
-            const menu = document.getElementById('mobileMenu');
-            btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        // Get URL Parameter
+        function getUrlParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
         }
 
-        function loadProduct() {
-            const container = document.getElementById('productContent');
-            
-            // Find category and subcategory
-            let category = null;
-            let subcategory = null;
-
-            if (categoryId) {
-                category = productsData.categories.find(c => c.id === categoryId);
+        // Handle Language Change
+        function handleLanguageChange(e) {
+            currentLang = e.target.value;
+            localStorage.setItem('lang', currentLang);
+            if (currentProduct) {
+                renderProductDetail(currentProduct);
             }
+        }
 
-            if (productId && category) {
-                subcategory = category.subcategories?.find(s => s.id === productId);
-            }
-
-            // Fallback: search all categories
-            if (!subcategory) {
-                for (const cat of productsData.categories) {
-                    if (cat.subcategories) {
-                        const found = cat.subcategories.find(s => s.id === productId);
-                        if (found) {
-                            category = cat;
-                            subcategory = found;
-                            break;
-                        }
+        // Load Product Detail
+        async function loadProductDetail(id) {
+            try {
+                const response = await fetch(`${config.baseUrl}/rest/v1/products?id=eq.${id}&select=*,category_id(*)`, {
+                    headers: {
+                        'apikey': config.apiKey,
+                        'Authorization': `Bearer ${config.apiKey}`
                     }
-                }
-            }
+                });
 
-            if (!subcategory) {
-                container.innerHTML = `
-                    <div class="text-center py-20">
-                        <svg class="mx-auto h-16 w-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                        </svg>
-                        <h2 class="mt-4 text-xl font-medium text-gray-900">Product not found</h2>
-                        <p class="mt-2 text-gray-500">The product you're looking for doesn't exist.</p>
-                        <a href="products.html" class="mt-6 inline-block px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
-                            Browse Products
-                        </a>
+                if (!response.ok) throw new Error('Failed to fetch product');
+
+                const data = await response.json();
+                
+                if (data && data.length > 0) {
+                    currentProduct = data[0];
+                    document.title = `${currentLang === 'cn' && currentProduct.name_cn ? currentProduct.name_cn : currentProduct.name} - PhotonEdge`;
+                    document.getElementById('breadcrumbProduct').textContent = 
+                        currentLang === 'cn' && currentProduct.name_cn ? currentProduct.name_cn : currentProduct.name;
+                    renderProductDetail(currentProduct);
+                    loadRelatedProducts();
+                } else {
+                    showNotFound();
+                }
+            } catch (error) {
+                console.error('Error loading product:', error);
+                showError();
+            }
+        }
+
+        // Render Product Detail
+        function renderProductDetail(product) {
+            const isCn = currentLang === 'cn';
+            const name = isCn && product.name_cn ? product.name_cn : product.name;
+            const description = isCn && product.description_cn ? product.description_cn : product.description;
+            const categoryName = product.category_id ? 
+                (isCn && product.category_id.name_cn ? product.category_id.name_cn : product.category_id.name) : '';
+
+            const images = product.images || [];
+            const parameters = parseParameters(product.parameters);
+
+            document.getElementById('mainContent').innerHTML = `
+                <div class="product-container">
+                    <!-- Gallery -->
+                    <div class="product-gallery">
+                        <div class="main-image" id="mainImage">
+                            ${images.length > 0 ? 
+                                `<img src="${images[0]}" alt="${name}">` : 
+                                `<div class="placeholder-img"><i class="fas fa-image"></i></div>`
+                            }
+                        </div>
+                        ${images.length > 1 ? `
+                            <div class="thumbnail-list">
+                                ${images.map((img, idx) => `
+                                    <div class="thumbnail ${idx === 0 ? 'active' : ''}" onclick="changeMainImage('${img}', this)">
+                                        <img src="${img}" alt="Thumbnail ${idx + 1}">
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
                     </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info">
+                        <h1>${name}</h1>
+                        ${product.name_cn ? `<p class="product-name-cn">${product.name_cn}</p>` : ''}
+                        ${categoryName ? `<span class="product-category">${categoryName}</span>` : ''}
+                        <p class="product-description">${description}</p>
+                        <div class="product-actions">
+                            <a href="contact.html?product=${product.id}" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                ${isCn ? '获取报价' : 'Request Quote'}
+                            </a>
+                            <button class="btn btn-secondary" onclick="downloadPDF('${product.id}')">
+                                <i class="fas fa-download"></i>
+                                ${isCn ? '下载 PDF' : 'Download PDF'}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parameters Section -->
+                ${parameters.length > 0 ? `
+                    <div class="parameters-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-list-ul"></i>
+                            ${isCn ? '产品参数' : 'Product Parameters'}
+                        </h2>
+                        <table class="parameters-table">
+                            <tbody>
+                                ${parameters.map(param => `
+                                    <tr>
+                                        <td>${param.label}</td>
+                                        <td>${param.value}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                ` : ''}
+
+                <!-- Applications Section -->
+                ${product.applications ? `
+                    <div class="applications-section">
+                        <h2 class="section-title">
+                            <i class="fas fa-cogs"></i>
+                            ${isCn ? '应用场景' : 'Applications'}
+                        </h2>
+                        <div class="application-tags">
+                            ${product.applications.split(',').map(app => `
+                                <span class="app-tag">${app.trim()}</span>
+                            `).join('')}
+                        </div>
+                        <p class="application-desc">
+                            ${isCn ? 
+                                '这些光学元件广泛应用于以下领域，为各种精密光学系统提供高质量的光学性能。' : 
+                                'These optical components are widely used in the following fields, providing high-quality optical performance for various precision optical systems.'}
+                        </p>
+                    </div>
+                ` : ''}
+
+                <!-- Related Products -->
+                <div class="related-section" id="relatedProducts">
+                    <h2 class="section-title">
+                        <i class="fas fa-th-large"></i>
+                        ${isCn ? '相关产品' : 'Related Products'}
+                    </h2>
+                    <div class="related-grid" id="relatedGrid">
+                        <div class="loading"><div class="spinner"></div></div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Change Main Image
+        function changeMainImage(src, thumbnail) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.innerHTML = `<img src="${src}" alt="Product Image">`;
+            
+            document.querySelectorAll('.thumbnail').forEach(thumb => {
+                thumb.classList.remove('active');
+            });
+            thumbnail.classList.add('active');
+        }
+
+        // Parse Parameters JSON
+        function parseParameters(paramString) {
+            if (!paramString) return [];
+            
+            try {
+                const params = JSON.parse(paramString);
+                const labels = {
+                    material: { en: 'Material', cn: '材质/材料' },
+                    dimensions: { en: 'Dimensions', cn: '尺寸范围' },
+                    coating: { en: 'Coating Type', cn: '镀膜类型' },
+                    wavelength: { en: 'Wavelength Range', cn: '波长范围' },
+                    tolerance: { en: 'Tolerance', cn: '精度等级' },
+                    surface_quality: { en: 'Surface Quality', cn: '表面质量' },
+                    surface_flatness: { en: 'Surface Flatness', cn: '面形精度' },
+                    reflectivity: { en: 'Reflectivity', cn: '反射率' },
+                    transmittance: { en: 'Transmittance', cn: '透光率' },
+                    coating: { en: 'Coating', cn: '镀膜' },
+                    diameter: { en: 'Diameter', cn: '直径' },
+                    thickness: { en: 'Thickness', cn: '厚度' },
+                    focal_length: { en: 'Focal Length', cn: '焦距' },
+                    substrate: { en: 'Substrate', cn: '基底材料' },
+                    angle_tolerance: { en: 'Angle Tolerance', cn: '角度公差' },
+                    clear_aperture: { en: 'Clear Aperture', cn: '通光孔径' }
+                };
+
+                const lang = currentLang === 'cn' ? 'cn' : 'en';
+
+                return Object.entries(params).map(([key, value]) => ({
+                    label: labels[key] ? labels[key][lang] : key,
+                    value: value
+                }));
+            } catch (e) {
+                console.error('Error parsing parameters:', e);
+                return [];
+            }
+        }
+
+        // Download PDF
+        function downloadPDF(productId) {
+            alert(currentLang === 'cn' ? 'PDF 下载功能即将推出' : 'PDF download coming soon');
+        }
+
+        // Load Related Products
+        async function loadRelatedProducts() {
+            if (!currentProduct) return;
+
+            try {
+                let url = `${config.baseUrl}/rest/v1/products?select=*`;
+                
+                if (currentProduct.category_id) {
+                    url += `&category_id=eq.${currentProduct.category_id}`;
+                }
+                url += `&limit=5`;
+
+                const response = await fetch(url, {
+                    headers: {
+                        'apikey': config.apiKey,
+                        'Authorization': `Bearer ${config.apiKey}`
+                    }
+                });
+
+                if (!response.ok) throw new Error('Failed to fetch related products');
+
+                const data = await response.json();
+                allProducts = data.filter(p => p.id !== currentProduct.id).slice(0, 4);
+
+                renderRelatedProducts();
+            } catch (error) {
+                console.error('Error loading related products:', error);
+                document.getElementById('relatedGrid').innerHTML = `
+                    <p style="color: var(--text-light); text-align: center; grid-column: 1/-1;">
+                        ${currentLang === 'cn' ? '暂无相关产品' : 'No related products found'}
+                    </p>
+                `;
+            }
+        }
+
+        // Render Related Products
+        function renderRelatedProducts() {
+            const isCn = currentLang === 'cn';
+            const grid = document.getElementById('relatedGrid');
+
+            if (allProducts.length === 0) {
+                grid.innerHTML = `
+                    <p style="color: var(--text-light); text-align: center; grid-column: 1/-1;">
+                        ${isCn ? '暂无相关产品' : 'No related products found'}
+                    </p>
                 `;
                 return;
             }
 
-            // Update breadcrumb
-            document.getElementById('breadcrumbCategory').textContent = category.nameCn;
-            document.getElementById('breadcrumbCategory').href = `products.html?category=${category.id}`;
-            document.getElementById('breadcrumbProduct').textContent = subcategory.nameCn;
+            grid.innerHTML = allProducts.map(product => {
+                const name = isCn && product.name_cn ? product.name_cn : product.name;
+                const images = product.images || [];
+                const imageUrl = images.length > 0 ? images[0] : '';
 
-            // Update page title
-            document.title = `${subcategory.name} - PhotonEdge`;
-
-            // Render product
-            container.innerHTML = `
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Main Info -->
-                    <div class="lg:col-span-2">
-                        <div class="bg-white rounded-xl shadow-sm p-8">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span class="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                                    ${category.nameCn}
-                                </span>
-                                <span class="text-gray-300">|</span>
-                                <span class="px-3 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">
-                                    ${subcategory.nameCn}
-                                </span>
-                            </div>
-
-                            <h1 class="text-3xl font-bold text-gray-900 mb-2">${subcategory.name}</h1>
-                            <h2 class="text-xl text-gray-600 mb-6">${subcategory.nameCn}</h2>
-
-                            <p class="text-gray-600 mb-8 leading-relaxed">${subcategory.description || 'High-quality optical component for various applications.'}</p>
-
-                            <!-- Specifications -->
-                            ${subcategory.specs ? `
-                                <div class="mb-8">
-                                    <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                                        <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                        </svg>
-                                        Specifications
-                                    </h3>
-                                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                                        ${Object.entries(subcategory.specs).map(([key, value]) => {
-                                            if (Array.isArray(value)) {
-                                                return `
-                                                    <div class="spec-card bg-gray-50 rounded-lg p-4">
-                                                        <div class="text-xs text-gray-500 uppercase tracking-wide mb-2">${formatSpecKey(key)}</div>
-                                                        <div class="space-y-1">
-                                                            ${value.map(v => `<span class="inline-block px-2 py-0.5 bg-white rounded text-sm text-gray-700 mr-1 mb-1">${v}</span>`).join('')}
-                                                        </div>
-                                                    </div>
-                                                `;
-                                            } else if (typeof value === 'string' || typeof value === 'number') {
-                                                return `
-                                                    <div class="spec-card bg-gray-50 rounded-lg p-4">
-                                                        <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">${formatSpecKey(key)}</div>
-                                                        <div class="text-sm font-medium text-gray-900">${value}</div>
-                                                    </div>
-                                                `;
-                                            }
-                                            return '';
-                                        }).join('')}
-                                    </div>
-                                </div>
-                            ` : ''}
-
-                            <!-- Models Table -->
-                            ${subcategory.models && subcategory.models.length > 0 ? `
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                                        <svg class="w-5 h-5 mr-2 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-                                        </svg>
-                                        Product Models
-                                        <span class="ml-2 text-sm font-normal text-gray-500">(${subcategory.models.length} models)</span>
-                                    </h3>
-                                    
-                                    <!-- Table Search -->
-                                    <div class="mb-4">
-                                        <input type="text" id="modelSearch" placeholder="Search models..." 
-                                            class="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
-                                            oninput="filterModels(this.value)">
-                                    </div>
-
-                                    <!-- Table -->
-                                    <div class="overflow-x-auto rounded-lg border border-gray-200">
-                                        <table class="w-full text-sm" id="modelsTable">
-                                            <thead class="bg-gray-100">
-                                                <tr>
-                                                    ${generateTableHeaders(subcategory.models[0])}
-                                                </tr>
-                                            </thead>
-                                            <tbody class="divide-y divide-gray-200" id="modelsTableBody">
-                                                ${subcategory.models.map((model, idx) => `
-                                                    <tr class="hover:bg-gray-50 model-row" data-index="${idx}">
-                                                        ${generateTableCells(model)}
-                                                    </tr>
-                                                `).join('')}
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-                                    <p id="modelsCount" class="mt-2 text-sm text-gray-500">
-                                        Showing <span id="visibleCount">${subcategory.models.length}</span> of ${subcategory.models.length} models
-                                    </p>
-                                </div>
-                            ` : ''}
-
-                            <!-- Download Section -->
-                            <div class="mt-8 pt-8 border-t">
-                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Downloads</h3>
-                                <div class="flex flex-wrap gap-3">
-                                    <a href="contact.html" class="inline-flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors">
-                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                        </svg>
-                                        Request Quote
-                                    </a>
-                                    <a href="contact.html" class="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors">
-                                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                                        </svg>
-                                        Contact Sales
-                                    </a>
-                                </div>
-                            </div>
+                return `
+                    <div class="product-card" onclick="window.location.href='product-detail.html?id=${product.id}'">
+                        <div class="product-card-image">
+                            ${imageUrl ? 
+                                `<img src="${imageUrl}" alt="${name}">` : 
+                                `<div class="placeholder-img"><i class="fas fa-image"></i></div>`
+                            }
+                        </div>
+                        <div class="product-card-content">
+                            <h3>${name}</h3>
+                            <p>${isCn ? '点击查看详情' : 'View Details'}</p>
+                            <span class="view-btn">
+                                <i class="fas fa-arrow-right"></i>
+                                ${isCn ? '查看详情' : 'View Details'}
+                            </span>
                         </div>
                     </div>
+                `;
+            }).join('');
+        }
 
-                    <!-- Sidebar -->
-                    <div class="lg:col-span-1">
-                        <div class="bg-white rounded-xl shadow-sm p-6 sticky top-24">
-                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Quick Info</h3>
-                            
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                                    </svg>
-                                    <div class="ml-3">
-                                        <div class="text-sm font-medium text-gray-900">Category</div>
-                                        <div class="text-sm text-gray-500">${category.name}</div>
-                                    </div>
-                                </div>
-
-                                ${subcategory.specs?.material ? `
-                                    <div class="flex items-start">
-                                        <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                                        </svg>
-                                        <div class="ml-3">
-                                            <div class="text-sm font-medium text-gray-900">Material</div>
-                                            <div class="text-sm text-gray-500">${subcategory.specs.material}</div>
-                                        </div>
-                                    </div>
-                                ` : ''}
-
-                                <div class="flex items-start">
-                                    <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"></path>
-                                    </svg>
-                                    <div class="ml-3">
-                                        <div class="text-sm font-medium text-gray-900">Models Available</div>
-                                        <div class="text-sm text-gray-500">${subcategory.models?.length || 0}</div>
-                                    </div>
-                                </div>
-
-                                <div class="flex items-start">
-                                    <svg class="w-5 h-5 text-primary mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
-                                    </svg>
-                                    <div class="ml-3">
-                                        <div class="text-sm font-medium text-gray-900">Custom Orders</div>
-                                        <div class="text-sm text-gray-500">Available</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-6 pt-6 border-t">
-                                <a href="contact.html" class="block w-full text-center px-4 py-3 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors font-medium">
-                                    Request Quotation
-                                </a>
-                            </div>
-
-                            <div class="mt-4 text-center text-sm text-gray-500">
-                                <p>Need help? Contact us at</p>
-                                <p class="text-primary">hengdingguang@sina.com</p>
-                            </div>
-                        </div>
-                    </div>
+        // Show Not Found
+        function showNotFound() {
+            document.getElementById('mainContent').innerHTML = `
+                <div class="not-found">
+                    <i class="fas fa-search"></i>
+                    <h2>${currentLang === 'cn' ? '产品未找到' : 'Product Not Found'}</h2>
+                    <p>${currentLang === 'cn' ? '抱歉，您查找的产品不存在。' : 'Sorry, the product you are looking for does not exist.'}</p>
+                    <a href="products.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i>
+                        ${currentLang === 'cn' ? '返回产品列表' : 'Back to Products'}
+                    </a>
                 </div>
             `;
-
-            // Load related products
-            loadRelatedProducts(category, subcategory);
         }
 
-        function loadRelatedProducts(category, currentProduct) {
-            const section = document.getElementById('relatedProducts');
-            const grid = document.getElementById('relatedProductsGrid');
-            
-            if (!category?.subcategories || category.subcategories.length <= 1) {
-                // Show products from same main category
-                const allInCategory = [];
-                productsData.categories.forEach(cat => {
-                    if (cat.id === category?.id && cat.subcategories) {
-                        allInCategory.push(...cat.subcategories);
-                    }
-                });
-                
-                // Add products from other categories
-                if (allInCategory.length <= 1) {
-                    productsData.categories.forEach(cat => {
-                        if (cat.id !== category?.id && cat.subcategories) {
-                            allInCategory.push(...cat.subcategories.slice(0, 2));
-                        }
-                    });
-                }
-
-                if (allInCategory.length > 0) {
-                    const toShow = allInCategory.filter(p => p.id !== currentProduct.id).slice(0, 4);
-                    if (toShow.length > 0) {
-                        grid.innerHTML = toShow.map(p => `
-                            <a href="product-detail.html?id=${p.id}&category=${p.categoryId || category?.id}" class="block bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors">
-                                <h4 class="font-medium text-gray-900 text-sm">${p.name}</h4>
-                                <p class="text-xs text-gray-500 mt-1">${p.nameCn}</p>
-                            </a>
-                        `).join('');
-                        section.classList.remove('hidden');
-                    }
-                }
-            } else {
-                const related = category.subcategories
-                    .filter(p => p.id !== currentProduct.id)
-                    .slice(0, 4);
-                
-                grid.innerHTML = related.map(p => `
-                    <a href="product-detail.html?id=${p.id}&category=${category.id}" class="block bg-gray-50 rounded-lg p-4 hover:bg-gray-100 transition-colors">
-                        <h4 class="font-medium text-gray-900 text-sm">${p.name}</h4>
-                        <p class="text-xs text-gray-500 mt-1">${p.nameCn}</p>
+        // Show Error
+        function showError() {
+            document.getElementById('mainContent').innerHTML = `
+                <div class="not-found">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h2>${currentLang === 'cn' ? '加载失败' : 'Loading Failed'}</h2>
+                    <p>${currentLang === 'cn' ? '无法加载产品信息，请稍后重试。' : 'Unable to load product information, please try again later.'}</p>
+                    <a href="products.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-left"></i>
+                        ${currentLang === 'cn' ? '返回产品列表' : 'Back to Products'}
                     </a>
-                `).join('');
-                section.classList.remove('hidden');
-            }
-        }
-
-        function formatSpecKey(key) {
-            return key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase()).replace(/_/g, ' ').trim();
-        }
-
-        function generateTableHeaders(model) {
-            return Object.keys(model).map(key => `
-                <th class="px-4 py-3 text-left font-semibold text-gray-700 bg-gray-50 whitespace-nowrap">${formatSpecKey(key)}</th>
-            `).join('');
-        }
-
-        function generateTableCells(model) {
-            return Object.values(model).map(value => `
-                <td class="px-4 py-3 text-gray-600 whitespace-nowrap">${value !== undefined && value !== null ? value : '-'}</td>
-            `).join('');
-        }
-
-        function filterModels(query) {
-            query = query.toLowerCase();
-            const rows = document.querySelectorAll('.model-row');
-            let visibleCount = 0;
-            
-            rows.forEach(row => {
-                const text = row.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    row.style.display = '';
-                    visibleCount++;
-                } else {
-                    row.style.display = 'none';
-                }
-            });
-            
-            document.getElementById('visibleCount').textContent = visibleCount;
+                </div>
+            `;
         }
     </script>
-</body>
+
+    <script>
+    <!-- Product Data - loaded via script tag for static site compatibility -->
+    <script src="js/products-data.js"></script>
+
+    <script>
+        // ===== 本地产品数据 =====
+        let localProductsData = productsData;
+
+        // 从URL获取产品ID并加载详情
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+
+            if (productId && localProductsData) {
+                loadProductDetail(productId);
+            } else {
+                showNotFound();
+            }
+        });
+    </script>
+    </body>
 </html>
