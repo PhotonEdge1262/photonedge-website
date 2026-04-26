@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details - PhotonEdge</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
     <style>
         :root {
             --primary-color: #1a56db;
@@ -635,19 +637,16 @@
                 <span>PhotonEdge</span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="applications.html">Applications</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                <li><a href="applications.html" data-i18n="nav_applications">Applications</a></li>
+                <li><a href="news.html" data-i18n="nav_news">News</a></li>
+                <li><a href="downloads.html" data-i18n="nav_downloads">Downloads</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
             </ul>
             <div class="nav-right">
-                <select class="lang-switch" id="langSwitch">
-                    <option value="en">EN</option>
-                    <option value="cn">中文</option>
-                </select>
+                <button class="lang-switch lang-toggle-btn" onclick="toggleLanguage()">中/EN</button>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
                 </button>

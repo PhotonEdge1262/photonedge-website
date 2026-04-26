@@ -76,6 +76,8 @@
     </style>
     <!-- AiPexBase SDK -->
     <script src="https://cdn.jsdelivr.net/npm/aipexbase-js/dist/aipexbase.umd.min.js"></script>
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
 </head>
 <body class="bg-gradient-subtle min-h-screen">
     <!-- 顶部导航栏 -->
@@ -96,18 +98,18 @@
                 
                 <!-- 桌面端导航 -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Home</a>
-                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Products</a>
-                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">About</a>
-                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Applications</a>
-                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">News</a>
-                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Downloads</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-lg text-primary-600 bg-primary-50 font-medium transition-smooth">Contact</a>
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_home">Home</a>
+                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_products">Products</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_about">About</a>
+                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_applications">Applications</a>
+                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_news">News</a>
+                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_downloads">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-primary-600 bg-primary-50 font-medium" data-i18n="nav_contact">Contact</a>
                 </div>
 
                 <!-- 语言切换 + 移动端菜单 -->
                 <div class="flex items-center space-x-3">
-                    <button class="px-3 py-1.5 rounded-lg border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-smooth">EN</button>
+                    <button id="langToggle" class="px-3 py-1.5 rounded-lg border border-gray-200 text-sm font-medium text-gray-600 hover:bg-gray-50 transition-smooth lang-toggle-btn" onclick="toggleLanguage()">中/EN</button>
                     <!-- 移动端汉堡菜单按钮 -->
                     <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100 transition-smooth">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,13 +122,13 @@
             <!-- 移动端菜单 -->
             <div id="mobile-menu" class="hidden md:hidden pb-4 animate-slide-down">
                 <div class="flex flex-col space-y-1">
-                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Home</a>
-                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Products</a>
-                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">About</a>
-                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Applications</a>
-                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">News</a>
-                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth">Downloads</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-lg text-primary-600 bg-primary-50 font-medium transition-smooth">Contact</a>
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_home">Home</a>
+                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_products">Products</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_about">About</a>
+                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_applications">Applications</a>
+                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_news">News</a>
+                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-600 hover:bg-primary-50 transition-smooth" data-i18n="nav_downloads">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-primary-600 bg-primary-50 font-medium" data-i18n="nav_contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -135,8 +137,8 @@
     <!-- 页面标题区 -->
     <div class="bg-gradient-to-r from-primary-600 to-primary-500 py-12 md:py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4">Contact Us</h1>
-            <p class="text-primary-100 text-lg">Get in touch with our team for inquiries, quotes, or technical support</p>
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-4" data-i18n="contact_title">Contact Us</h1>
+            <p class="text-primary-100 text-lg" data-i18n="contact_subtitle">Get in touch with our team for inquiries, quotes, or technical support</p>
         </div>
     </div>
 
@@ -153,8 +155,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h2 class="text-xl font-bold text-gray-900">Send Us an Inquiry</h2>
-                            <p class="text-gray-500 text-sm">Fill out the form below and we'll respond within 24 hours</p>
+                            <h2 class="text-xl font-bold text-gray-900" data-i18n="send_inquiry">Send Us an Inquiry</h2>
+                            <p class="text-gray-500 text-sm" data-i18n="inquiry_desc">Fill out the form below and we'll respond within 24 hours</p>
                         </div>
                     </div>
 
@@ -163,21 +165,21 @@
                             <!-- Name * -->
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    Name <span class="text-red-500">*</span>
+                                    <span data-i18n="name_label">Name</span> <span class="text-red-500">*</span>
                                 </label>
                                 <input type="text" name="name" required
                                     class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-smooth outline-none"
-                                    placeholder="Your full name">
+                                    placeholder="Your full name" data-i18n-placeholder="name_placeholder">
                             </div>
 
                             <!-- Email * -->
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    Email <span class="text-red-500">*</span>
+                                    <span data-i18n="email_label">Email</span> <span class="text-red-500">*</span>
                                 </label>
                                 <input type="email" name="email" required
                                     class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-smooth outline-none"
-                                    placeholder="your.email@company.com">
+                                    placeholder="your.email@company.com" data-i18n-placeholder="email_placeholder">
                             </div>
                         </div>
 
@@ -185,21 +187,21 @@
                             <!-- Company -->
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    Company
+                                    <span data-i18n="company_label">Company</span>
                                 </label>
                                 <input type="text" name="company"
                                     class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-smooth outline-none"
-                                    placeholder="Your company name">
+                                    placeholder="Your company name" data-i18n-placeholder="company_placeholder">
                             </div>
 
                             <!-- Phone -->
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    Phone
+                                    <span data-i18n="phone_label">Phone</span>
                                 </label>
                                 <input type="tel" name="phone"
                                     class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-100 transition-smooth outline-none"
-                                    placeholder="+1 234 567 8900">
+                                    placeholder="+1 234 567 8900" data-i18n-placeholder="phone_placeholder">
                             </div>
                         </div>
 

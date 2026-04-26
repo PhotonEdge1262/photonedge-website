@@ -6,6 +6,8 @@
     <title>Applications - PhotonEdge</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
     <style>
         :root {
             --primary-color: #0A1628;
@@ -561,28 +563,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" data-i18n="nav_home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
+                        <a class="nav-link" href="products.html" data-i18n="nav_products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html" data-i18n="nav_about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="applications.html">Applications</a>
+                        <a class="nav-link active" href="applications.html" data-i18n="nav_applications">Applications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="news.html" data-i18n="nav_news">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="downloads.html">Downloads</a>
+                        <a class="nav-link" href="downloads.html" data-i18n="nav_downloads">Downloads</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html" data-i18n="nav_contact">Contact</a>
                     </li>
                 </ul>
-                <div class="language-toggle" id="langToggle">
+                <div class="language-toggle lang-toggle-btn" id="langToggle" onclick="toggleLanguage()">
                     <span>EN</span>
                     <i class="fas fa-globe text-white"></i>
                 </div>
@@ -593,8 +595,8 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Applications</h1>
-            <p class="subtitle">Our optical components serve various industries worldwide</p>
+            <h1 data-i18n="applications_page_title">Applications</h1>
+            <p class="subtitle" data-i18n="applications_page_subtitle">Our optical components serve various industries worldwide</p>
         </div>
     </section>
 

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - PhotonEdge | Precision Optical Components</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Translations -->
+    <script src="js/translations.js"></script>
     <style>
         :root {
             --primary: #1a365d;
@@ -101,6 +103,22 @@
         }
 
         .lang-toggle:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+        }
+
+        .lang-toggle-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+
+        .lang-toggle-btn:hover {
             background: rgba(255, 255, 255, 0.1);
             border-color: var(--accent);
         }
@@ -705,16 +723,16 @@
             <span>PhotonEdge</span>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="about.html" class="active">About Us</a></li>
-            <li><a href="applications.html">Applications</a></li>
-            <li><a href="news.html">News</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="products.html" data-i18n="nav_products">Products</a></li>
+            <li><a href="about.html" class="active" data-i18n="nav_about">About Us</a></li>
+            <li><a href="applications.html" data-i18n="nav_applications">Applications</a></li>
+            <li><a href="news.html" data-i18n="nav_news">News</a></li>
+            <li><a href="downloads.html" data-i18n="nav_downloads">Downloads</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
         </ul>
         <div style="display: flex; align-items: center; gap: 1rem;">
-            <button class="lang-toggle" onclick="toggleLanguage()">中/EN</button>
+            <button class="lang-toggle lang-toggle-btn" onclick="toggleLanguage()">中/EN</button>
             <div class="mobile-menu" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
@@ -724,7 +742,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-decoration"></div>
-        <h1>About PhotonEdge</h1>
+        <h1 data-i18n="about_title">About PhotonEdge</h1>
         <p>Beijing Hengdingguang Technology Co., Ltd. - Your Trusted Partner in Precision Optical Components Since 2008</p>
     </section>
 
