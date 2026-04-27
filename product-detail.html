@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Translations -->
     <script src="js/translations.js"></script>
+    <!-- Product Data -->
+    <script src="js/products-data.js"></script>
     <style>
         :root {
             --primary-color: #1a56db;
@@ -715,12 +717,6 @@
     </a>
 
     <script>
-        // Configuration
-        const config = {
-            baseUrl: 'https://baas.kuafuai.net/baas-api',
-            apiKey: 'baas_sGzz4VCE'
-        };
-
         // State
         let currentLang = localStorage.getItem('lang') || 'en';
         let currentProduct = null;
@@ -755,24 +751,28 @@
         }
 
         // Load Product Detail
-        async function loadProductDetail(id) {
+        function loadProductDetail(id) {
             try {
-                const response = await fetch(`${config.baseUrl}/rest/v1/products?id=eq.${id}&select=*,category_id(*)`, {
-                    headers: {
-                        'apikey': config.apiKey,
-                        'Authorization': `Bearer ${config.apiKey}`
-                    }
-                });
-
-                if (!response.ok) throw new Error('Failed to fetch product');
-
-                const data = await response.json();
+                // 从本地 productsData 查找产品
+                let product = null;
+                let categoryName = '';
                 
-                if (data && data.length > 0) {
-                    currentProduct = data[0];
-                    document.title = `${currentLang === 'cn' && currentProduct.name_cn ? currentProduct.name_cn : currentProduct.name} - PhotonEdge`;
+                if (typeof productsData !== 'undefined' && productsData.categories) {
+                    for (const cat of productsData.categories) {
+                        const found = cat.products.find(p => p.id == id);
+                        if (found) {
+                            product = found;
+                            categoryName = cat.name;
+                            break;
+                        }
+                    }
+                }
+                
+                if (product) {
+                    currentProduct = { ...product, category_name: categoryName };
+                    document.title = `${currentLang === 'cn' && product.name_cn ? product.name_cn : product.name} - PhotonEdge`;
                     document.getElementById('breadcrumbProduct').textContent = 
-                        currentLang === 'cn' && currentProduct.name_cn ? currentProduct.name_cn : currentProduct.name;
+                        currentLang === 'cn' && product.name_cn ? product.name_cn : product.name;
                     renderProductDetail(currentProduct);
                     loadRelatedProducts();
                 } else {
@@ -788,12 +788,13 @@
         function renderProductDetail(product) {
             const isCn = currentLang === 'cn';
             const name = isCn && product.name_cn ? product.name_cn : product.name;
-            const description = isCn && product.description_cn ? product.description_cn : product.description;
-            const categoryName = product.category_id ? 
-                (isCn && product.category_id.name_cn ? product.category_id.name_cn : product.category_id.name) : '';
+            const description = product.description || '';
+            const categoryName = product.category_name || product.category || '';
 
-            const images = product.images || [];
-            const parameters = parseParameters(product.parameters);
+            // 获取图片
+            const images = product.images || (product.image ? [product.image] : []);
+            // 解析规格参数
+            const parameters = parseSpecs(product.specs);
 
             document.getElementById('mainContent').innerHTML = `
                 <div class="product-container">
@@ -899,7 +900,36 @@
             thumbnail.classList.add('active');
         }
 
-        // Parse Parameters JSON
+        // Parse Specs Object (for local data)
+        function parseSpecs(specs) {
+            if (!specs) return [];
+            
+            try {
+                const params = typeof specs === 'string' ? JSON.parse(specs) : specs;
+                const labels = {
+                    Material: { en: 'Material', cn: '材质' },
+                    Surface_Quality: { en: 'Surface Quality', cn: '表面质量' },
+                    Coating: { en: 'Coating', cn: '镀膜' },
+                    Dimensional_Tolerance: { en: 'Dimensional Tolerance', cn: '尺寸公差' },
+                    Type: { en: 'Type', cn: '类型' },
+                    Wavelength_Range: { en: 'Wavelength Range', cn: '波长范围' },
+                    Focal_Length: { en: 'Focal Length', cn: '焦距' },
+                    Diameter: { en: 'Diameter', cn: '直径' }
+                };
+
+                const lang = currentLang === 'cn' ? 'cn' : 'en';
+
+                return Object.entries(params).map(([key, value]) => ({
+                    label: labels[key] ? labels[key][lang] : key,
+                    value: value
+                }));
+            } catch (e) {
+                console.error('Error parsing specs:', e);
+                return [];
+            }
+        }
+
+        // Parse Parameters JSON (for API data)
         function parseParameters(paramString) {
             if (!paramString) return [];
             
@@ -942,29 +972,23 @@
         }
 
         // Load Related Products
-        async function loadRelatedProducts() {
+        function loadRelatedProducts() {
             if (!currentProduct) return;
 
             try {
-                let url = `${config.baseUrl}/rest/v1/products?select=*`;
+                // 从本地 productsData 加载相关产品
+                let relatedProds = [];
                 
-                if (currentProduct.category_id) {
-                    url += `&category_id=eq.${currentProduct.category_id}`;
-                }
-                url += `&limit=5`;
-
-                const response = await fetch(url, {
-                    headers: {
-                        'apikey': config.apiKey,
-                        'Authorization': `Bearer ${config.apiKey}`
+                if (typeof productsData !== 'undefined' && productsData.categories) {
+                    for (const cat of productsData.categories) {
+                        if (currentProduct.category_name && cat.name === currentProduct.category_name) {
+                            relatedProds = cat.products.filter(p => p.id !== currentProduct.id);
+                            break;
+                        }
                     }
-                });
-
-                if (!response.ok) throw new Error('Failed to fetch related products');
-
-                const data = await response.json();
-                allProducts = data.filter(p => p.id !== currentProduct.id).slice(0, 4);
-
+                }
+                
+                allProducts = relatedProds.slice(0, 4);
                 renderRelatedProducts();
             } catch (error) {
                 console.error('Error loading related products:', error);
@@ -992,8 +1016,9 @@
 
             grid.innerHTML = allProducts.map(product => {
                 const name = isCn && product.name_cn ? product.name_cn : product.name;
+                // 获取图片 - 支持 images 数组和 image 单字段
                 const images = product.images || [];
-                const imageUrl = images.length > 0 ? images[0] : '';
+                const imageUrl = images.length > 0 ? images[0] : (product.image || '');
 
                 return `
                     <div class="product-card" onclick="window.location.href='product-detail.html?id=${product.id}'">
@@ -1046,26 +1071,5 @@
             `;
         }
     </script>
-
-    <script>
-    <!-- Product Data - loaded via script tag for static site compatibility -->
-    <script src="js/products-data.js"></script>
-
-    <script>
-        // ===== 本地产品数据 =====
-        let localProductsData = productsData;
-
-        // 从URL获取产品ID并加载详情
-        document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const productId = urlParams.get('id');
-
-            if (productId && localProductsData) {
-                loadProductDetail(productId);
-            } else {
-                showNotFound();
-            }
-        });
-    </script>
-    </body>
+</body>
 </html>

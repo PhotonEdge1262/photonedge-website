@@ -116,10 +116,10 @@
         }
     </style>
     
-    <!-- AiPexBase SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/aipexbase-js/dist/aipexbase.umd.min.js"></script>
     <!-- Translations -->
     <script src="js/translations.js"></script>
+    <!-- Product Data -->
+    <script src="js/products-data.js"></script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -424,12 +424,6 @@
     <div id="toast-container" class="fixed top-4 right-4 z-50 space-y-3"></div>
 
     <script>
-        // ===== 初始化 AiPexBase 客户端 =====
-        const client = aipexbase.createClient({
-            baseUrl: 'https://baas.kuafuai.net/baas-api',
-            apiKey: 'baas_sGzz4VCE'
-        });
-
         // ===== 状态管理 =====
         const state = {
             products: [],
@@ -602,64 +596,82 @@
             }
 
             try {
-                // 构建查询
-                let query = client.db.from('products').page()
-                    .page(state.currentPage, state.pageSize)
-                    .order('created_at', 'desc');
-
-                // 添加分类筛选
-                const categoryName = categoryMap[state.currentCategory];
-                if (categoryName) {
-                    query = query.eq('category_id', categoryName);
+                // 从本地 productsData 读取
+                let allProducts = [];
+                if (typeof productsData !== 'undefined' && productsData.categories) {
+                    productsData.categories.forEach(cat => {
+                        cat.products.forEach(prod => {
+                            allProducts.push({
+                                ...prod,
+                                category_name: cat.name
+                            });
+                        });
+                    });
                 }
-
-                // 添加搜索筛选 - 支持中英文搜索
+                
+                // 分类筛选
+                if (state.currentCategory !== 'all') {
+                    const categoryName = categoryMap[state.currentCategory];
+                    if (categoryName) {
+                        allProducts = allProducts.filter(p => p.category_name === categoryName);
+                    }
+                }
+                
+                // 搜索筛选
                 if (state.searchKeyword) {
-                    const keyword = state.searchKeyword;
-                    // 使用 OR 条件搜索 name 和 name_en 字段
-                    query = query.or(`name.like.${keyword},name_en.like.${keyword}`);
+                    const keyword = state.searchKeyword.toLowerCase();
+                    allProducts = allProducts.filter(p => 
+                        p.name.toLowerCase().includes(keyword) ||
+                        (p.name_cn && p.name_cn.toLowerCase().includes(keyword))
+                    );
                 }
+                
+                // 分页
+                const start = (state.currentPage - 1) * state.pageSize;
+                const end = start + state.pageSize;
+                const pageProducts = allProducts.slice(start, end);
+                
+                state.totalProducts = allProducts.length;
 
-                const res = await query;
-
-                if (res.success && res.data) {
-                    const newProducts = res.data.records || [];
-                    state.totalProducts = res.data.total || 0;
-
-                    if (append) {
-                        state.products = [...state.products, ...newProducts];
-                    } else {
-                        state.products = newProducts;
-                    }
-
-                    renderProducts(newProducts, append);
+                if (append) {
+                    state.products = [...state.products, ...pageProducts];
                 } else {
-                    console.error('Failed to load products:', res.message);
-                    if (!append) {
-                        elements.productList.innerHTML = '';
-                        elements.emptyState.classList.remove('hidden');
-                    }
-                    showToast('Failed to load products', 'error');
+                    state.products = pageProducts;
                 }
+
+                renderProducts(pageProducts, append);
+                updatePagination();
             } catch (error) {
                 console.error('Error loading products:', error);
                 if (!append) {
                     elements.productList.innerHTML = '';
                     elements.emptyState.classList.remove('hidden');
                 }
-                showToast('Network error. Please try again.', 'error');
+                showToast('Failed to load products', 'error');
             } finally {
                 state.isLoading = false;
+            }
+        }
+
+        // ===== 更新分页信息 =====
+        function updatePagination() {
+            const hasMore = state.products.length < state.totalProducts;
+            elements.loadMoreContainer.classList.toggle('hidden', !hasMore);
+            if (hasMore) {
+                const remaining = state.totalProducts - state.products.length;
+                elements.loadMoreInfo.textContent = `${remaining} more products available`;
             }
         }
 
         // ===== 加载分类列表 =====
         async function loadCategories() {
             try {
-                const res = await client.db.from('categories').list().order('sort_order', 'asc');
-                if (res.success && res.data) {
-                    state.categories = res.data;
-                    // 更新分类标签
+                if (typeof productsData !== 'undefined' && productsData.categories) {
+                    state.categories = productsData.categories.map(cat => ({
+                        id: cat.id,
+                        name: cat.name,
+                        name_cn: cat.name_cn
+                    }));
                     updateCategoryTags();
                 }
             } catch (error) {
@@ -781,22 +793,5 @@
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', init);
     </script>
-
-    <script>
-    <!-- Product Data - loaded via script tag for static site compatibility -->
-    <script src="js/products-data.js"></script>
-
-    <script>
-        // ===== 本地产品数据 =====
-        let localProductsData = productsData;
-
-        // 页面加载完成后初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            if (localProductsData && localProductsData.categories) {
-                initProductList();
-            }
-            bindCategoryEvents();
-        });
-    </script>
-    </body>
+</body>
 </html>
