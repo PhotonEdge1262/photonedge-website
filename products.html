@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Components Products | PhotonEdge - Lenses, Mirrors, Prisms, Windows</title>
+    <meta name="description" content="Browse our complete catalog of precision optical components. Optical lenses, mirrors, windows, prisms, filters, beamsplitters and polarizing components. ISO 9001:2015 certified manufacturer. Request a quote.">
+    <meta property="og:title" content="Optical Components Products | PhotonEdge - Lenses, Mirrors, Prisms, Windows">
+    <meta property="og:description" content="Complete catalog of precision optical components for industrial and scientific applications. Lenses, mirrors, windows, prisms, filters, beamsplitters and polarizers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/products.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/og-image.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/products.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Photon<span>Edge</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="products-page">
+        <div class="container">
+            <h1 class="section-title" data-i18n="productsTitle">Products</h1>
+            
+            <div class="products-header">
+                <div class="products-filters">
+                    <div class="filter-group">
+                        <label data-i18n="filterCategory">Category:</label>
+                        <select id="categoryFilter">
+                            <option value="" data-i18n="filterAll">All</option>
+                            <option value="Optical Lenses">Optical Lenses</option>
+                            <option value="Optical Mirrors">Optical Mirrors</option>
+                            <option value="Optical Windows">Optical Windows</option>
+                            <option value="Optical Prisms">Optical Prisms</option>
+                            <option value="Optical Filters">Optical Filters</option>
+                            <option value="Optical Beamsplitters">Optical Beamsplitters</option>
+                            <option value="Optical Polarising Components">Optical Polarizing Components</option>
+                            <option value="Optical Ball Lenses">Optical Ball Lenses</option>
+                            <option value="Optical Cylindrical Lenses">Optical Cylindrical Lenses</option>
+                            <option value="Optical Half Ball Lenses">Optical Half Ball Lenses</option>
+                            <option value="Optical Spherical Lenses">Optical Spherical Lenses</option>
+                            <option value="Optical Rod Lenses">Optical Rod Lenses</option>
+                        </select>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" data-i18n-placeholder="searchPlaceholder" placeholder="Search product name...">
+                        <button onclick="filterProducts()">&#128269;</button>
+                    </div>
+                </div>
+                <div class="products-count">
+                    <span data-i18n="showingProducts">Showing</span> <span id="productCount">0</span> <span data-i18n="totalProducts">products</span>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <div class="loading">Loading products...</div>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>PhotonEdge</h3>
+                    <p data-i18n="footerDesc">Precision Optical Components Supplier</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="navProducts">Products</h4>
+                    <ul>
+                        <li><a href="products.html?category=Optical Lenses">Optical Lenses</a></li>
+                        <li><a href="products.html?category=Optical Mirrors">Optical Mirrors</a></li>
+                        <li><a href="products.html?category=Optical Prisms">Optical Prisms</a></li>
+                        <li><a href="products.html?category=Optical Filters">Optical Filters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="contactInfo">Contact</h4>
+                    <ul>
+                        <li>Email: sales@photonedgeoptics.com</li>
+                        <li>Phone: +86-13693009175</li>
+                        <li>WhatsApp: NexRay13693009175</li>
+                        <li>Contact: 林女士</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhotonEdge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/products-data.js"></script>
+    <script>
+        var filteredProducts = [];
+        var currentPage = 1;
+        var itemsPerPage = 24;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePageTranslations();
+            var lang = getCurrentLang();
+            document.querySelectorAll('.lang-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            var urlParams = new URLSearchParams(window.location.search);
+            var category = urlParams.get('category');
+            if (category) {
+                document.getElementById('categoryFilter').value = category;
+            }
+            
+            document.getElementById('categoryFilter').addEventListener('change', filterProducts);
+            document.getElementById('searchInput').addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') filterProducts();
+            });
+            
+            filterProducts();
+        });
+        
+        function filterProducts() {
+            var category = document.getElementById('categoryFilter').value;
+            var search = document.getElementById('searchInput').value.toLowerCase();
+            var lang = getCurrentLang();
+            
+            filteredProducts = PRODUCTS.filter(function(product) {
+                var matchCategory = !category || product.category === category;
+                var searchText = lang === 'zh' ? (product.nameZh + ' ' + product.categoryZh) : (product.name + ' ' + product.category);
+                var matchSearch = !search || searchText.toLowerCase().indexOf(search) !== -1;
+                return matchCategory && matchSearch;
+            });
+            
+            currentPage = 1;
+            renderProducts();
+        }
+        
+        function renderProducts() {
+            var lang = getCurrentLang();
+            var grid = document.getElementById('productsGrid');
+            var countEl = document.getElementById('productCount');
+            
+            countEl.textContent = filteredProducts.length;
+            
+            if (filteredProducts.length === 0) {
+                grid.innerHTML = '<div class="no-products"><h3 data-i18n="noProducts">No products found</h3></div>';
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+            
+            var start = (currentPage - 1) * itemsPerPage;
+            var end = start + itemsPerPage;
+            var pageProducts = filteredProducts.slice(start, end);
+            
+            grid.innerHTML = pageProducts.map(function(product) {
+                var name = lang === 'zh' ? product.nameZh : product.name;
+                var category = lang === 'zh' ? product.categoryZh : product.category;
+                var desc = product.description.substring(0, 100) + (product.description.length > 100 ? '...' : '');
+                var subCount = product.subProducts ? product.subProducts.length : 0;
+                var subText = subCount > 0 ? (lang === 'zh' ? ' (' + subCount + ' 型号)' : ' (' + subCount + ' models)') : '';
+                
+                return '<div class="product-card" onclick="window.location.href=\'product-detail.html?code=' + encodeURIComponent(product.name) + '\'">' +
+                    '<div class="product-image">' +
+                    '<img src="' + product.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>📦</span>\';">' +
+                    '</div>' +
+                    '<div class="product-info">' +
+                    '<h3 class="product-name">' + name + subText + '</h3>' +
+                    '<p class="product-category">' + category + '</p>' +
+                    '<p class="product-desc">' + desc + '</p>' +
+                    '</div>' +
+                    '<div class="product-card-actions">' +
+                    '<button class="btn btn-sm btn-outline inquiry-btn" onclick="event.stopPropagation(); inquiryProduct(\'' + encodeURIComponent(product.name) + '\', \'' + encodeURIComponent(name) + '\');">' + 
+                    (lang === 'zh' ? '询价' : 'Inquiry') + '</button>' +
+                    '</div>' +
+                    '</div>';
+            }).join('');
+            
+            renderPagination();
+        }
+        
+        function inquiryProduct(code, name) {
+            window.location.href = 'contact.html?product=' + code;
+        }
+        
+        function renderPagination() {
+            var totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
+            var pagination = document.getElementById('pagination');
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+            
+            var html = '';
+            for (var i = 1; i <= totalPages; i++) {
+                html += '<button class="' + (i === currentPage ? 'active' : '') + '" onclick="goToPage(' + i + ')">' + i + '</button>';
+            }
+            pagination.innerHTML = html;
+        }
+        
+        function goToPage(page) {
+            currentPage = page;
+            renderProducts();
+            window.scrollTo(0, 0);
+        }
+        
+        // Add translation
+        if (typeof translations !== 'undefined') {
+            translations.en.inquiry = 'Inquiry';
+            translations.zh.inquiry = '询价';
+        }
+    </script>
+</body>
+</html>

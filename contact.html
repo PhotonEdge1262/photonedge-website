@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact PhotonEdge - Get a Quote for Optical Components</title>
+    <meta name="description" content="Contact PhotonEdge for precision optical component inquiries and quotes. We supply optical lenses, mirrors, windows, prisms, filters and more. ISO 9001:2015 certified. Response within 24 hours.">
+    <meta property="og:title" content="Contact PhotonEdge - Get a Quote for Optical Components">
+    <meta property="og:description" content="Get in touch for optical component quotes and custom solutions. We respond to all inquiries within 24 hours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/contact.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/og-image.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/contact.html">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Photon<span>Edge</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-page">
+        <div class="container">
+            <h1 class="section-title" data-i18n="contactTitle">Contact Us</h1>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 data-i18n="contactInfo">Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#127970;</div>
+                        <div class="contact-text">
+                            <h4>Company</h4>
+                            <p>Beijing Hengdingguang Technology Co., Ltd.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128100;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="contactPerson">Contact Person</h4>
+                            <p>Ms. Lin / 林女士</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128222;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="phone">Phone</h4>
+                            <p>+86-13693009175</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9993;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="email">Email</h4>
+                            <p>sales@photonedgeoptics.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128172;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="whatsapp">WhatsApp</h4>
+                            <p>+86-13693009175</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#127760;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="website">Website</h4>
+                            <p>https://photonedgeoptics.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128187;</div>
+                        <div class="contact-text">
+                            <h4>WeChat</h4>
+                            <p>hengdingguang</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128205;</div>
+                        <div class="contact-text">
+                            <h4 data-i18n="address">Address</h4>
+                            <p>Room 308, Building 6, Leyuan District, Economic Development Zone, Pinggu District, Beijing, China</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2 data-i18n="sendMessage">Send Message</h2>
+
+                    <div id="inquiryProductInfo" class="inquiry-product-info" style="display: none;">
+                        <p>Inquiry for: <strong id="inquiryProductName"></strong></p>
+                    </div>
+
+                    <p class="form-prompt" data-i18n="formPrompt">Fill out the form below and we'll respond within 24 hours.</p>
+
+                    <form id="contactForm" onsubmit="submitForm(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="productName">Product Name / Part Number</label>
+                                <input type="text" id="productName" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="quantityRequired">Quantity Required</label>
+                                <input type="number" id="quantity" min="1" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="targetPrice">Target Price (USD)</label>
+                                <input type="text" id="targetPrice">
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="deliveryRequirement">Delivery Requirement</label>
+                                <input type="text" id="deliveryReq">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="detailedRequirements">Detailed Requirements</label>
+                            <textarea id="detailedReq" rows="4" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="uploadDrawings">Upload Drawings / Specs</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="drawings" accept=".pdf,.dwg,.step,.iges,.jpg,.png">
+                                <span class="file-hint">PDF, DWG, STEP, IGES, JPG, PNG</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="companyName">Company Name</label>
+                                <input type="text" id="companyName" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="fullName">Full Name</label>
+                                <input type="text" id="fullName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label data-i18n="yourEmail">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-i18n="phoneWhatsApp">Phone / WhatsApp</label>
+                                <input type="text" id="phoneWhatsApp">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn" data-i18n="submit">Submit</button>
+                    </form>
+
+                    <div id="formSuccess" class="form-success" style="display: none;">
+                        <div class="success-icon">&#10004;</div>
+                        <h3>Thank You!</h3>
+                        <p data-i18n="successMessage">Thank you for your inquiry! We will respond to your email shortly.</p>
+                        <button class="btn btn-secondary" onclick="resetForm()">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>PhotonEdge</h3>
+                    <p data-i18n="footerDesc">Precision Optical Components Supplier</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="navProducts">Products</h4>
+                    <ul>
+                        <li><a href="products.html?category=Optical Lenses">Optical Lenses</a></li>
+                        <li><a href="products.html?category=Optical Mirrors">Optical Mirrors</a></li>
+                        <li><a href="products.html?category=Optical Prisms">Optical Prisms</a></li>
+                        <li><a href="products.html?category=Optical Filters">Optical Filters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="contactInfo">Contact</h4>
+                    <ul>
+                        <li>Email: sales@photonedgeoptics.com</li>
+                        <li>Phone: +86-13693009175</li>
+                        <li>WhatsApp: NexRay13693009175</li>
+                        <li>Contact: 林女士</li>
+                        <li>Beijing, China</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PhotonEdge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script>
+        var inquiryProduct = '';
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePageTranslations();
+            var lang = getCurrentLang();
+            document.querySelectorAll('.lang-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Check for product parameter
+            var urlParams = new URLSearchParams(window.location.search);
+            inquiryProduct = urlParams.get('product');
+            
+            if (inquiryProduct) {
+                document.getElementById('inquiryProductInfo').style.display = 'block';
+                document.getElementById('inquiryProductName').textContent = decodeURIComponent(inquiryProduct);
+                
+                // Pre-fill message
+                var productName = decodeURIComponent(inquiryProduct);
+                var messageField = document.getElementById('message');
+                if (lang === 'zh') {
+                    messageField.placeholder = '您好，我想咨询 ' + productName + ' 的价格和货期...';
+                } else {
+                    messageField.placeholder = 'I would like to inquire about ' + productName + ' - pricing and delivery time...';
+                }
+            }
+        });
+        
+        function submitForm(event) {
+            event.preventDefault();
+
+            var productName = document.getElementById('productName').value;
+            var quantity = document.getElementById('quantity').value;
+            var targetPrice = document.getElementById('targetPrice').value;
+            var deliveryReq = document.getElementById('deliveryReq').value;
+            var detailedReq = document.getElementById('detailedReq').value;
+            var companyName = document.getElementById('companyName').value;
+            var fullName = document.getElementById('fullName').value;
+            var email = document.getElementById('email').value;
+            var phoneWhatsApp = document.getElementById('phoneWhatsApp').value;
+
+            // Build email content
+            var subject = 'Inquiry from ' + fullName + (companyName ? ' (' + companyName + ')' : '');
+            if (inquiryProduct) {
+                subject += ' - ' + decodeURIComponent(inquiryProduct);
+            } else if (productName) {
+                subject += ' - ' + productName;
+            }
+
+            var body = '========================================\n';
+            body += '  PHOTONEDGE OPTICAL - INQUIRY FORM\n';
+            body += '========================================\n\n';
+            body += 'PRODUCT INFORMATION\n';
+            body += '----------------------------------------\n';
+            body += 'Product / Part Number: ' + productName + '\n';
+            if (inquiryProduct) body += 'Inquiry Source: ' + decodeURIComponent(inquiryProduct) + '\n';
+            body += 'Quantity Required: ' + quantity + '\n';
+            if (targetPrice) body += 'Target Price (USD): ' + targetPrice + '\n';
+            if (deliveryReq) body += 'Delivery Requirement: ' + deliveryReq + '\n';
+            body += '\nDETAILED REQUIREMENTS\n';
+            body += '----------------------------------------\n';
+            body += detailedReq + '\n';
+            body += '\nCONTACT INFORMATION\n';
+            body += '----------------------------------------\n';
+            body += 'Company: ' + companyName + '\n';
+            body += 'Full Name: ' + fullName + '\n';
+            body += 'Email: ' + email + '\n';
+            if (phoneWhatsApp) body += 'Phone / WhatsApp: ' + phoneWhatsApp + '\n';
+            body += '\n========================================\n';
+            body += 'Submitted via PhotonEdge Website\n';
+            body += '========================================\n';
+
+            // Open email client
+            window.location.href = 'mailto:sales@photonedgeoptics.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+            // Show success message
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('inquiryProductInfo').style.display = 'none';
+            document.getElementById('formSuccess').style.display = 'block';
+        }
+        
+        function resetForm() {
+            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('inquiryProductInfo').style.display = inquiryProduct ? 'block' : 'none';
+            document.getElementById('formSuccess').style.display = 'none';
+            document.getElementById('contactForm').reset();
+
+            // Re-fill product info if applicable
+            if (inquiryProduct) {
+                document.getElementById('inquiryProductName').textContent = decodeURIComponent(inquiryProduct);
+            }
+        }
+        
+        // Add translations
+        if (typeof translations !== 'undefined') {
+            translations.en.successMessage = 'Thank you for your inquiry! We will respond to your email shortly.';
+            translations.zh.successMessage = '感谢您的询价，我们会尽快回复！';
+        }
+    </script>
+</body>
+</html>
