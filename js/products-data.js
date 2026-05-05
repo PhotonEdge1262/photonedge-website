@@ -24,17 +24,30 @@ const PRODUCTS = [
     "nameZh": "分光板",
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
-    "description": "Precision plate beamsplitters for splitting or combining optical beams. Available in various splitting ratios for laboratory and industrial applications. Anti-reflection coated surfaces minimize unwanted reflections.",
+    "description": "Optical beamsplitter plates split incident light into transmitted and reflected beams in various ratios such as 50/50, 60/40, 80/20, or 90/10 through dielectric coatings. The default configuration is 50/50 beam splitting. Custom splitting ratios are available upon request.",
     "image": "images/products/optical-beamsplitters/beamsplitter-plate.jpg",
     "parameters": {
       "material": "N-BK7 / K9",
-      "diameter": "12.7-50.8mm",
-      "thickness": "1-5mm",
-      "split_ratio": "50:50 / 70:30 / 90:10",
-      "wavelength_range": "400-700nm (VIS) / 700-1100nm (NIR)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
       "surface_quality": "40-20",
-      "surface_flatness": "λ/4@632.8nm"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "parallelism": "<1 arc min",
+      "split_ratio": "50/50 ±2%, T=(Ts+Tp)/2, R=(Rs+Rp)/2",
+      "coatings": "One side: dielectric partial reflection; other side: AR coating"
+    },
+    "partNumbers": [
+      {"partNumber": "LOBP12.7-450/650", "dimension": "Φ12.7×3.0mm", "wavelength": "450-650nm"},
+      {"partNumber": "LOBP20.0-450/650", "dimension": "Φ20.0×3.0mm", "wavelength": "450-650nm"},
+      {"partNumber": "LOBP25.4-450/650", "dimension": "Φ25.4×3.0mm", "wavelength": "450-650nm"},
+      {"partNumber": "LOBP50.8-450/650", "dimension": "Φ50.8×3.0mm", "wavelength": "450-650nm"},
+      {"partNumber": "LOBP12.7-650/900", "dimension": "Φ12.7×3.0mm", "wavelength": "650-900nm"},
+      {"partNumber": "LOBP25.4-650/900", "dimension": "Φ25.4×3.0mm", "wavelength": "650-900nm"},
+      {"partNumber": "LOBP50.8-650/900", "dimension": "Φ50.8×3.0mm", "wavelength": "650-900nm"},
+      {"partNumber": "LOBP12.7-900/1200", "dimension": "Φ12.7×3.0mm", "wavelength": "900-1200nm"},
+      {"partNumber": "LOBP25.4-900/1200", "dimension": "Φ25.4×3.0mm", "wavelength": "900-1200nm"},
+      {"partNumber": "LOBP50.8-900/1200", "dimension": "Φ50.8×3.0mm", "wavelength": "900-1200nm"}
+    ]
   },
   {
     "id": 3,
@@ -77,16 +90,30 @@ const PRODUCTS = [
     "nameZh": "光学立方体分光镜",
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
-    "description": "Premium cube beamsplitters with precision-aligned dielectric coating. Zero wedge design eliminates beam deviation. Perfect for OEM integration in optical instruments.",
+    "description": "Multilayer dielectric cube beamsplitters consist of two right-angle prisms cemented together. The beamsplitter divides incident light into reflected and transmitted beams in a 1:2 or 1:3 ratio. Both entry and exit faces are coated with multilayer anti-reflection coatings. Since dielectric coatings have virtually no absorption, incident light loss is minimal. Unlike plate beamsplitters, cube beamsplitters experience almost no optical axis shift or ghost images.",
     "image": "images/products/optical-beamsplitters/optical-cube-beamsplitters.jpg",
     "parameters": {
       "material": "N-BK7",
-      "size": "10-50mm",
-      "split_ratio": "50:50 (±3%)",
-      "wavelength_range": "400-700nm / 650-1050nm",
+      "size_tolerance": "±0.15mm",
+      "angle_tolerance": "±10 arc sec",
       "surface_quality": "40-20",
-      "extinction_ratio": "<100:1"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "parallelism": "<1 arc min",
+      "split_ratio": "50/50 ±3%",
+      "coatings": "Cemented face: dielectric; entry/exit faces: AR coating"
+    },
+    "partNumbers": [
+      {"partNumber": "LOCBS10-532", "dimension": "10.0×10.0×10.0mm", "wavelength": "532nm"},
+      {"partNumber": "LOCBS12.7-532", "dimension": "12.7×12.7×12.7mm", "wavelength": "532nm"},
+      {"partNumber": "LOCBS20-532", "dimension": "20.0×20.0×20.0mm", "wavelength": "532nm"},
+      {"partNumber": "LOCBS10-633", "dimension": "10.0×10.0×10.0mm", "wavelength": "633nm"},
+      {"partNumber": "LOCBS12.7-633", "dimension": "12.7×12.7×12.7mm", "wavelength": "633nm"},
+      {"partNumber": "LOCBS20-633", "dimension": "20.0×20.0×20.0mm", "wavelength": "633nm"},
+      {"partNumber": "LOCBS10-1064", "dimension": "10.0×10.0×10.0mm", "wavelength": "1064nm"},
+      {"partNumber": "LOCBS12.7-1064", "dimension": "12.7×12.7×12.7mm", "wavelength": "1064nm"},
+      {"partNumber": "LOCBS20-1064", "dimension": "20.0×20.0×20.0mm", "wavelength": "1064nm"},
+      {"partNumber": "LOCBS25.4-1064", "dimension": "25.4×25.4×25.4mm", "wavelength": "1064nm"}
+    ]
   },
   {
     "id": 6,
@@ -145,14 +172,16 @@ const PRODUCTS = [
     "nameZh": "圆形可变中性密度滤光片",
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
-    "description": "Continuously variable neutral density filters with rotary adjustment. Perfect for fine-tuning laser power, balancing illumination in microscopy, and photographic applications.",
+    "description": "Continuously variable neutral density filters with rotary adjustment for fine-tuning laser power and light attenuation. Perfect for balancing illumination in microscopy, photography, and laser applications. Available in various optical density ranges.",
     "image": "images/products/optical-filters/circular-variable-ndneutral-density-filters.jpg",
     "parameters": {
       "material": "Schott Glass / Dielectric",
       "diameter": "25-50mm",
       "od_range": "0.04-2.5",
       "wavelength_range": "400-700nm / 650-1050nm",
-      "surface_quality": "40-20"
+      "surface_quality": "40-20",
+      "surface_flatness": "λ/4@632.8nm",
+      "angular_tolerance": "±1°"
     }
   },
   {
@@ -292,16 +321,27 @@ const PRODUCTS = [
     "nameZh": "BK7与UV熔融石英双凹透镜",
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
-    "description": "High-performance double concave lenses for beam expansion and light divergence. Available in both standard BK7 and UV-grade fused silica for UV applications.",
+    "description": "Bi-concave lenses have a negative focal length and are primarily used for diverging parallel light and forming virtual images. Available in both standard BK7 for visible applications and UV-grade fused silica for UV and high-power laser applications. We can provide various specifications of bi-concave lenses. Please contact us for inquiries.",
     "image": "images/products/optical-lenses/bk7-and-uv-fused-silica-double-concave-lenses.jpg",
     "parameters": {
-      "material": "K9/BK7 / Fused Silica",
-      "diameter": "6-100mm",
-      "focal_length": "-20 to -200mm",
-      "coating": "Uncoated / AR coating",
+      "material": "K9/BK7 or Fused Silica (JGS1)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
+      "focal_length_tolerance": "±1%",
       "surface_quality": "40-20",
-      "center_thickness": "2-10mm"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "centration": "<3 arc min",
+      "clear_aperture": ">90%",
+      "beveling": "0.25mm × 45°",
+      "coatings": "Uncoated / AR coating available"
+    },
+    "partNumbers": [
+      {"partNumber": "LOBCCB6.35-12.5", "diameter": "6.35mm", "focalLength": "-12.50mm", "centerThickness": "2.50mm"},
+      {"partNumber": "LOBCCB12.7-15", "diameter": "12.70mm", "focalLength": "-15.00mm", "centerThickness": "2.30mm"},
+      {"partNumber": "LOBCCB12.7-25", "diameter": "12.70mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOBCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOBCCB25.4-50", "diameter": "25.40mm", "focalLength": "-50.00mm", "centerThickness": "3.00mm"}
+    ]
   },
   {
     "id": 19,
@@ -309,16 +349,32 @@ const PRODUCTS = [
     "nameZh": "BK7双凸透镜",
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
-    "description": "Versatile biconvex lenses with positive focal length for focusing and collimating light beams. Symmetric design minimizes spherical aberration for improved image quality.",
+    "description": "Bi-convex lenses have a positive focal length and are primarily used for collimating and focusing light. The symmetric design with equal curvature on both surfaces minimizes spherical aberration for improved image quality. Ideal for imaging, photometry, and beam collimation applications.",
     "image": "images/products/optical-lenses/bk7-double-convex-lenses.jpg",
     "parameters": {
-      "material": "K9/BK7",
-      "diameter": "6-100mm",
-      "focal_length": "20-300mm",
-      "coating": "Uncoated / AR coating",
+      "material": "K9 (BK7)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
+      "focal_length_tolerance": "±1%",
       "surface_quality": "40-20",
-      "center_thickness": "2-15mm"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "centration": "<3 arc min",
+      "clear_aperture": ">90%",
+      "beveling": "0.25mm × 45°",
+      "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
+    },
+    "partNumbers": [
+      {"partNumber": "LOBCXB6-6", "diameter": "6.00mm", "focalLength": "6.00mm", "centerThickness": "2.50mm"},
+      {"partNumber": "LOBCXB6-10", "diameter": "6.00mm", "focalLength": "10.00mm", "centerThickness": "2.40mm"},
+      {"partNumber": "LOBCXB9-12", "diameter": "9.00mm", "focalLength": "12.00mm", "centerThickness": "3.60mm"},
+      {"partNumber": "LOBCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "4.10mm"},
+      {"partNumber": "LOBCXB12.7-15", "diameter": "12.70mm", "focalLength": "15.00mm", "centerThickness": "4.70mm"},
+      {"partNumber": "LOBCXB12.7-20", "diameter": "12.70mm", "focalLength": "20.00mm", "centerThickness": "3.88mm"},
+      {"partNumber": "LOBCXB12.7-30", "diameter": "12.70mm", "focalLength": "30.00mm", "centerThickness": "3.14mm"},
+      {"partNumber": "LOBCXB15-25", "diameter": "15.00mm", "focalLength": "25.00mm", "centerThickness": "4.80mm"},
+      {"partNumber": "LOBCXB20-45", "diameter": "20.00mm", "focalLength": "45.00mm", "centerThickness": "8.00mm"},
+      {"partNumber": "LOBCXB25.4-50", "diameter": "25.40mm", "focalLength": "50.00mm", "centerThickness": "5.24mm"}
+    ]
   },
   {
     "id": 20,
@@ -358,16 +414,32 @@ const PRODUCTS = [
     "nameZh": "BK7平凹透镜",
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
-    "description": "Standard plano-concave lenses with negative focal length for diverging parallel light beams and forming virtual images. Ideal for beam expanders and light projection systems.",
+    "description": "Plano-concave lenses have a negative focal length. When parallel light passes through plano-concave lenses, it diverges. Our lenses feature excellent uniformity, no patterns, inclusions, or bubbles. Ideal for beam expanders and light projection systems.",
     "image": "images/products/optical-lenses/bk7-plano-concave-lenses.jpg",
     "parameters": {
-      "material": "K9/BK7",
-      "diameter": "6-100mm",
-      "focal_length": "-20 to -300mm",
-      "coating": "Uncoated / AR coating",
+      "material": "K9 (BK7)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
+      "focal_length_tolerance": "±1%",
       "surface_quality": "40-20",
-      "center_thickness": "2-10mm"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "centration": "<3 arc min",
+      "clear_aperture": ">90%",
+      "beveling": "0.25mm × 45°",
+      "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
+    },
+    "partNumbers": [
+      {"partNumber": "LOPCCB6-6", "diameter": "6.00mm", "focalLength": "-6.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB6-10", "diameter": "6.00mm", "focalLength": "-10.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB10-15", "diameter": "10.00mm", "focalLength": "-15.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB10-25", "diameter": "10.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB12.7-19", "diameter": "12.70mm", "focalLength": "-19.00mm", "centerThickness": "1.70mm"},
+      {"partNumber": "LOPCCB12.7-25.4", "diameter": "12.70mm", "focalLength": "-25.40mm", "centerThickness": "3.00mm"},
+      {"partNumber": "LOPCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.50mm"},
+      {"partNumber": "LOPCCB15-25", "diameter": "15.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB20-50", "diameter": "20.00mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCCB25.4-25", "diameter": "25.40mm", "focalLength": "-25.00mm", "centerThickness": "2.50mm"}
+    ]
   },
   {
     "id": 23,
@@ -391,16 +463,32 @@ const PRODUCTS = [
     "nameZh": "BK7平凸透镜",
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
-    "description": "Versatile plano-convex lenses with positive focal length for focusing and collimating light beams. Curved surface minimizes spherical aberration for better beam quality.",
+    "description": "Plano-convex lenses have a positive focal length and are widely used for focusing and collimating light beams. The curved surface minimizes spherical aberration for better beam quality. Our BK7 Plano Convex Lenses feature excellent uniformity, no patterns, inclusions, or bubbles. Custom coatings available upon request.",
     "image": "images/products/optical-lenses/bk7-plano-convex-lenses.jpg",
     "parameters": {
-      "material": "K9/BK7",
-      "diameter": "6-200mm",
-      "focal_length": "10-500mm",
-      "coating": "Uncoated / AR coating",
+      "material": "K9 (BK7)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
+      "focal_length_tolerance": "±1%",
       "surface_quality": "40-20",
-      "center_thickness": "2-20mm"
-    }
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "centration": "<3 arc min",
+      "clear_aperture": ">90%",
+      "beveling": "0.25mm × 45°",
+      "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
+    },
+    "partNumbers": [
+      {"partNumber": "LOPCXB2.5-3.9", "diameter": "2.50mm", "focalLength": "3.90mm", "centerThickness": "1.95mm"},
+      {"partNumber": "LOPCXB2.8-5.0", "diameter": "2.80mm", "focalLength": "5.00mm", "centerThickness": "1.62mm"},
+      {"partNumber": "LOPCXB3.0-8.0", "diameter": "3.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCXB4.0-8.0", "diameter": "4.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCXB5.0-10", "diameter": "5.00mm", "focalLength": "10.00mm", "centerThickness": "2.00mm"},
+      {"partNumber": "LOPCXB6.0-8.0", "diameter": "6.00mm", "focalLength": "8.00mm", "centerThickness": "2.30mm"},
+      {"partNumber": "LOPCXB6.0-12", "diameter": "6.00mm", "focalLength": "12.00mm", "centerThickness": "2.28mm"},
+      {"partNumber": "LOPCXB8.0-15", "diameter": "8.00mm", "focalLength": "15.00mm", "centerThickness": "3.00mm"},
+      {"partNumber": "LOPCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "3.80mm"},
+      {"partNumber": "LOPCXB12.7-19", "diameter": "12.70mm", "focalLength": "19.00mm", "centerThickness": "4.80mm"}
+    ]
   },
   {
     "id": 25,

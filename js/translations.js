@@ -264,15 +264,18 @@ var translations = {
         appIndustrialTitleZh: "工业成像",
         appIndustrialDescZh: "用于自动化检测、质量控制和制造过程的机器视觉镜头、照明光学元件和传感器。",
         appSpectroscopyTitleZh: "光谱学",
-        appSpectroscopyDescZh: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。"
+        appSpectroscopyDescZh: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。",
+        // WhatsApp
+        whatsappTooltip: "Chat with us",
+        whatsappTooltipZh: "在线咨询"
     },
     zh: {
         navHome: "首页",
         navProducts: "产品",
         navAbout: "关于我们",
         navContact: "联系我们",
-        heroTitle: "精密光学元件制造商",
-        heroSubtitle: "精密光学元件核心供应商",
+        heroTitle: "高精度光学元件 满足严苛应用需求",
+        heroSubtitle: "15年以上制造经验。500+全球客户信赖PhotonEdge，提供透镜、反射镜、窗口、棱镜及定制解决方案。",
         heroDesc: "北京恒鼎光科技有限公司",
         viewProducts: "浏览产品",
         learnMore: "了解更多",
@@ -468,7 +471,10 @@ var translations = {
         appIndustrialTitle: "工业成像",
         appIndustrialDesc: "用于自动化检测、质量控制和制造过程的机器视觉镜头、照明光学元件和传感器。",
         appSpectroscopyTitle: "光谱学",
-        appSpectroscopyDesc: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。"
+        appSpectroscopyDesc: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。",
+        // WhatsApp
+        whatsappTooltip: "Chat with us",
+        whatsappTooltipZh: "在线咨询"
     }
 };
 
