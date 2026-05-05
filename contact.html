@@ -9,7 +9,7 @@
     <meta property="og:description" content="Get in touch for optical component quotes and custom solutions. We respond to all inquiries within 24 hours.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://photonedgeoptics.com/contact.html">
-    <meta property="og:image" content="https://photonedgeoptics.com/images/og-image.jpg">
+    <meta property="og:image" content="https://photonedgeoptics.com/logo.png">
     <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/contact.html">
     <link rel="stylesheet" href="css/style.css">
@@ -115,56 +115,61 @@
 
                     <p class="form-prompt" data-i18n="formPrompt">Fill out the form below and we'll respond within 24 hours.</p>
 
-                    <form id="contactForm" onsubmit="submitForm(event)">
+                    <form id="contactForm" action="https://formsubmit.co/sales@photonedgeoptics.com" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_subject" id="formSubject" value="Product Inquiry from PhotonEdge Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="Inquiry_Source" id="inquirySourceField" value="Contact Page">
+                        
                         <div class="form-row">
                             <div class="form-group">
                                 <label data-i18n="productName">Product Name / Part Number</label>
-                                <input type="text" id="productName" required>
+                                <input type="text" name="Product_Name" id="productName" required>
                             </div>
                             <div class="form-group">
                                 <label data-i18n="quantityRequired">Quantity Required</label>
-                                <input type="number" id="quantity" min="1" required>
+                                <input type="number" name="Quantity" id="quantity" min="1" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label data-i18n="targetPrice">Target Price (USD)</label>
-                                <input type="text" id="targetPrice">
+                                <input type="text" name="Target_Price_USD" id="targetPrice">
                             </div>
                             <div class="form-group">
                                 <label data-i18n="deliveryRequirement">Delivery Requirement</label>
-                                <input type="text" id="deliveryReq">
+                                <input type="text" name="Delivery_Requirement" id="deliveryReq">
                             </div>
                         </div>
                         <div class="form-group">
                             <label data-i18n="detailedRequirements">Detailed Requirements</label>
-                            <textarea id="detailedReq" rows="4" required></textarea>
+                            <textarea name="Detailed_Requirements" id="detailedReq" rows="4" required></textarea>
                         </div>
                         <div class="form-group">
                             <label data-i18n="uploadDrawings">Upload Drawings / Specs</label>
                             <div class="file-input-wrapper">
-                                <input type="file" id="drawings" accept=".pdf,.dwg,.step,.iges,.jpg,.png">
+                                <input type="file" name="Attachment" id="drawings" accept=".pdf,.dwg,.step,.iges,.jpg,.png">
                                 <span class="file-hint">PDF, DWG, STEP, IGES, JPG, PNG</span>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label data-i18n="companyName">Company Name</label>
-                                <input type="text" id="companyName" required>
+                                <input type="text" name="Company_Name" id="companyName" required>
                             </div>
                             <div class="form-group">
                                 <label data-i18n="fullName">Full Name</label>
-                                <input type="text" id="fullName" required>
+                                <input type="text" name="Full_Name" id="fullName" required>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
                                 <label data-i18n="yourEmail">Email</label>
-                                <input type="email" id="email" required>
+                                <input type="email" name="Email" id="email" required>
                             </div>
                             <div class="form-group">
                                 <label data-i18n="phoneWhatsApp">Phone / WhatsApp</label>
-                                <input type="text" id="phoneWhatsApp">
+                                <input type="text" name="Phone_WhatsApp" id="phoneWhatsApp">
                             </div>
                         </div>
 
@@ -255,59 +260,6 @@
             }
         });
         
-        function submitForm(event) {
-            event.preventDefault();
-
-            var productName = document.getElementById('productName').value;
-            var quantity = document.getElementById('quantity').value;
-            var targetPrice = document.getElementById('targetPrice').value;
-            var deliveryReq = document.getElementById('deliveryReq').value;
-            var detailedReq = document.getElementById('detailedReq').value;
-            var companyName = document.getElementById('companyName').value;
-            var fullName = document.getElementById('fullName').value;
-            var email = document.getElementById('email').value;
-            var phoneWhatsApp = document.getElementById('phoneWhatsApp').value;
-
-            // Build email content
-            var subject = 'Inquiry from ' + fullName + (companyName ? ' (' + companyName + ')' : '');
-            if (inquiryProduct) {
-                subject += ' - ' + decodeURIComponent(inquiryProduct);
-            } else if (productName) {
-                subject += ' - ' + productName;
-            }
-
-            var body = '========================================\n';
-            body += '  PHOTONEDGE OPTICAL - INQUIRY FORM\n';
-            body += '========================================\n\n';
-            body += 'PRODUCT INFORMATION\n';
-            body += '----------------------------------------\n';
-            body += 'Product / Part Number: ' + productName + '\n';
-            if (inquiryProduct) body += 'Inquiry Source: ' + decodeURIComponent(inquiryProduct) + '\n';
-            body += 'Quantity Required: ' + quantity + '\n';
-            if (targetPrice) body += 'Target Price (USD): ' + targetPrice + '\n';
-            if (deliveryReq) body += 'Delivery Requirement: ' + deliveryReq + '\n';
-            body += '\nDETAILED REQUIREMENTS\n';
-            body += '----------------------------------------\n';
-            body += detailedReq + '\n';
-            body += '\nCONTACT INFORMATION\n';
-            body += '----------------------------------------\n';
-            body += 'Company: ' + companyName + '\n';
-            body += 'Full Name: ' + fullName + '\n';
-            body += 'Email: ' + email + '\n';
-            if (phoneWhatsApp) body += 'Phone / WhatsApp: ' + phoneWhatsApp + '\n';
-            body += '\n========================================\n';
-            body += 'Submitted via PhotonEdge Website\n';
-            body += '========================================\n';
-
-            // Open email client
-            window.location.href = 'mailto:sales@photonedgeoptics.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-
-            // Show success message
-            document.getElementById('contactForm').style.display = 'none';
-            document.getElementById('inquiryProductInfo').style.display = 'none';
-            document.getElementById('formSuccess').style.display = 'block';
-        }
-        
         function resetForm() {
             document.getElementById('contactForm').style.display = 'block';
             document.getElementById('inquiryProductInfo').style.display = inquiryProduct ? 'block' : 'none';
@@ -319,6 +271,18 @@
                 document.getElementById('inquiryProductName').textContent = decodeURIComponent(inquiryProduct);
             }
         }
+        
+        // FormSubmit handles submission, show success after redirect
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            setTimeout(function() {
+                // Check if URL contains ?success=formsubmit (FormSubmit redirect pattern)
+                if (window.location.href.indexOf('success') !== -1) {
+                    document.getElementById('contactForm').style.display = 'none';
+                    document.getElementById('inquiryProductInfo').style.display = 'none';
+                    document.getElementById('formSuccess').style.display = 'block';
+                }
+            }, 500);
+        });
         
         // Add translations
         if (typeof translations !== 'undefined') {

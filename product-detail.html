@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optical Component Specifications | PhotonEdge</title>
+    <title>Product Detail | PhotonEdge</title>
     <meta name="description" content="View detailed specifications for precision optical components. Request a quote for custom optical lenses, mirrors, windows, prisms and more from PhotonEdge.">
     <meta property="og:title" content="Product Detail - PhotonEdge">
     <meta property="og:description" content="View detailed specifications and pricing for precision optical components.">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="product">
     <meta property="og:url" content="https://photonedgeoptics.com/product-detail.html">
-    <meta property="og:image" content="https://photonedgeoptics.com/images/og-image.jpg">
+    <meta property="og:image" content="https://photonedgeoptics.com/logo.png">
+    <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/product-detail.html">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,23 +33,45 @@
         </div>
     </header>
 
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html" data-i18n="navHome">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="products.html" data-i18n="navProducts">Products</a>
+                <span class="breadcrumb-separator" id="breadcrumbCategorySep" style="display:none;">/</span>
+                <a href="#" id="breadcrumbCategory" style="display:none;"></a>
+                <span class="breadcrumb-separator">/</span>
+                <span id="breadcrumbProduct"></span>
+            </nav>
+        </div>
+    </div>
+
     <section class="product-detail">
         <div class="container">
-            <a href="products.html" class="back-btn">&larr; <span data-i18n="navProducts">Products</span></a>
-            
             <div class="product-detail-grid" id="productDetailGrid">
-                <div class="loading">Loading...</div>
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p data-i18n="loadingProduct">Loading product details...</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="product-inquiry-form" id="productInquiryForm" style="display: none; padding: 0 0 60px;">
+    <section class="product-inquiry-form" id="productInquiryForm" style="display: none;">
         <div class="container">
             <div class="inquiry-form-container">
                 <h2 class="section-title" data-i18n="quickInquiry">Quick Inquiry</h2>
                 <p class="inquiry-intro" data-i18n="inquiryIntro">Send us your requirements and we'll respond within 24 hours.</p>
                 
-                <form id="productDetailForm" onsubmit="submitProductInquiry(event)">
+                <form id="productDetailForm" action="https://formsubmit.co/sales@photonedgeoptics.com" method="POST" enctype="multipart/form-data">
+                    <input type="hidden" name="_subject" id="formSubject" value="Product Inquiry from PhotonEdge Website">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="Product_Name" id="hiddenProductName" value="">
+                    <input type="hidden" name="Product_Category" id="hiddenProductCategory" value="">
+                    
                     <div class="inquiry-product-header" id="inquiryProductHeader">
                         <span class="product-label" data-i18n="inquiryFor">Inquiry for:</span>
                         <strong id="inquiryProductTitle"></strong>
@@ -57,41 +80,41 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label data-i18n="fullName">Full Name *</label>
-                            <input type="text" id="inquiryName" required>
+                            <input type="text" name="Full_Name" id="inquiryName" required>
                         </div>
                         <div class="form-group">
                             <label data-i18n="companyName">Company Name</label>
-                            <input type="text" id="inquiryCompany">
+                            <input type="text" name="Company_Name" id="inquiryCompany">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label data-i18n="yourEmail">Email *</label>
-                            <input type="email" id="inquiryEmail" required>
+                            <input type="email" name="Email" id="inquiryEmail" required>
                         </div>
                         <div class="form-group">
                             <label data-i18n="phoneWhatsApp">Phone / WhatsApp</label>
-                            <input type="text" id="inquiryPhone">
+                            <input type="text" name="Phone_WhatsApp" id="inquiryPhone">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group">
                             <label data-i18n="quantityRequired">Quantity Required *</label>
-                            <input type="number" id="inquiryQuantity" min="1" required>
+                            <input type="number" name="Quantity" id="inquiryQuantity" min="1" required>
                         </div>
                         <div class="form-group">
                             <label data-i18n="targetPrice">Target Price (USD)</label>
-                            <input type="text" id="inquiryTargetPrice">
+                            <input type="text" name="Target_Price_USD" id="inquiryTargetPrice">
                         </div>
                     </div>
                     <div class="form-group">
                         <label data-i18n="detailedRequirements">Detailed Requirements</label>
-                        <textarea id="inquiryDetails" rows="4" data-i18n-placeholder="detailedReqPlaceholder"></textarea>
+                        <textarea name="Detailed_Requirements" id="inquiryDetails" rows="4" data-i18n-placeholder="detailedReqPlaceholder"></textarea>
                     </div>
                     <div class="form-group">
                         <label data-i18n="uploadDrawings">Upload Drawings / Specs</label>
                         <div class="file-input-wrapper">
-                            <input type="file" id="inquiryFile" accept=".pdf,.dwg,.step,.iges,.jpg,.png,.jpeg">
+                            <input type="file" name="Attachment" id="inquiryFile" accept=".pdf,.dwg,.step,.iges,.jpg,.png,.jpeg">
                             <span class="file-hint">PDF, DWG, STEP, IGES, JPG, PNG</span>
                         </div>
                     </div>
@@ -172,22 +195,30 @@
             var urlParams = new URLSearchParams(window.location.search);
             var productCode = urlParams.get('code');
             var productName = urlParams.get('name');
-            var productId = urlParams.get('id'); // Support id parameter from vercel.json
+            var productId = urlParams.get('id');
+            var category = urlParams.get('category');
             
-            // Try to find product by code first, then by name, then by id
+            // Try to find product by code first (this is what products.html uses)
             if (productCode) {
+                // Decode the code and try different matching approaches
+                var decodedCode = decodeURIComponent(productCode);
                 currentProduct = PRODUCTS.find(function(p) {
-                    return p.name === productCode || p.name.replace(/\s+/g, '-') === productCode;
+                    return p.name === decodedCode || 
+                           p.name === productCode ||
+                           p.name.replace(/\s+/g, '-') === decodedCode.replace(/\s+/g, '-') ||
+                           p.name.replace(/\s+/g, '-').toLowerCase() === decodedCode.replace(/\s+/g, '-').toLowerCase();
                 });
             }
             
+            // Try by name parameter
             if (!currentProduct && productName) {
+                var decodedName = decodeURIComponent(productName);
                 currentProduct = PRODUCTS.find(function(p) {
-                    return p.name === productName;
+                    return p.name === decodedName || p.nameZh === decodedName;
                 });
             }
             
-            // Support id parameter - find product by index (id=1 means first product)
+            // Support id parameter - find product by index
             if (!currentProduct && productId) {
                 var idNum = parseInt(productId, 10);
                 if (!isNaN(idNum) && idNum >= 1 && idNum <= PRODUCTS.length) {
@@ -201,34 +232,46 @@
                 }
             }
             
+            // Try URL path matching for SEO-friendly URLs
             if (!currentProduct) {
-                // Try URL path matching
-                var pathMatch = window.location.pathname.match(/\/product\/([^\/]+)/);
+                var pathMatch = window.location.pathname.match(/\/product[\/-]([^\/]+)/);
                 if (pathMatch) {
                     var code = decodeURIComponent(pathMatch[1]);
                     currentProduct = PRODUCTS.find(function(p) {
-                        return p.name === code || p.name.replace(/\s+/g, '-') === code;
+                        return p.name === code || 
+                               p.name.replace(/\s+/g, '-') === code ||
+                               p.name.replace(/\s+/g, '-').toLowerCase() === code.toLowerCase();
                     });
                 }
             }
             
             if (!currentProduct) {
-                document.getElementById('productDetailGrid').innerHTML = '<div class="no-products"><h3>Product not found</h3><p>Please return to the <a href="products.html">products page</a>.</p></div>';
+                // Product not found
+                document.getElementById('productDetailGrid').innerHTML = 
+                    '<div class="no-products" style="grid-column: 1/-1;">' +
+                    '<div class="not-found-icon">&#128533;</div>' +
+                    '<h3 data-i18n="productNotFound">Product Not Found</h3>' +
+                    '<p data-i18n="productNotFoundDesc">The product you are looking for does not exist or has been removed.</p>' +
+                    '<a href="products.html" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="backToProducts">Back to Products</a>' +
+                    '</div>';
+                updatePageTranslations();
                 return;
             }
             
             // Update page title
-            var pageTitle = lang === 'zh' ? currentProduct.nameZh : currentProduct.name;
-            document.title = pageTitle + ' - PhotonEdge';
+            var lang = getCurrentLang();
+            var productNameText = lang === 'zh' ? currentProduct.nameZh : currentProduct.name;
+            document.title = productNameText + ' - PhotonEdge';
             
-            // Update meta tags
+            // Update meta tags dynamically
             var metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) {
-                metaDesc.setAttribute('content', (lang === 'zh' ? currentProduct.nameZh : currentProduct.name) + ' - ' + currentProduct.description.substring(0, 150));
+                var descText = currentProduct.description;
+                metaDesc.setAttribute('content', productNameText + ' - ' + descText.substring(0, 150));
             }
             var ogTitle = document.querySelector('meta[property="og:title"]');
             if (ogTitle) {
-                ogTitle.setAttribute('content', pageTitle + ' - PhotonEdge');
+                ogTitle.setAttribute('content', productNameText + ' - PhotonEdge');
             }
             var ogDesc = document.querySelector('meta[property="og:description"]');
             if (ogDesc) {
@@ -238,6 +281,10 @@
             if (ogUrl) {
                 ogUrl.setAttribute('content', 'https://photonedgeoptics.com/product-detail.html?code=' + encodeURIComponent(currentProduct.name));
             }
+            var ogImage = document.querySelector('meta[property="og:image"]');
+            if (ogImage && currentProduct.image) {
+                ogImage.setAttribute('content', 'https://photonedgeoptics.com/' + currentProduct.image);
+            }
             
             // Update canonical link
             var canonical = document.querySelector('link[rel="canonical"]');
@@ -245,13 +292,34 @@
                 canonical.setAttribute('href', 'https://photonedgeoptics.com/product-detail.html?code=' + encodeURIComponent(currentProduct.name));
             }
             
-            // Show inquiry form
-            document.getElementById('inquiryProductTitle').textContent = name;
+            // Update breadcrumb
+            updateBreadcrumb(currentProduct, category);
+            
+            // Update inquiry form
+            document.getElementById('inquiryProductTitle').textContent = productNameText;
+            document.getElementById('hiddenProductName').value = currentProduct.name;
+            document.getElementById('hiddenProductCategory').value = currentProduct.category;
             document.getElementById('productInquiryForm').style.display = 'block';
             
             renderProductDetail();
             renderRelatedProducts();
         });
+        
+        function updateBreadcrumb(product, category) {
+            var lang = getCurrentLang();
+            var categoryName = category || product.category;
+            var categoryNameZh = product.categoryZh || product.category;
+            
+            var breadcrumbCategory = document.getElementById('breadcrumbCategory');
+            var breadcrumbCategorySep = document.getElementById('breadcrumbCategorySep');
+            var breadcrumbProduct = document.getElementById('breadcrumbProduct');
+            
+            breadcrumbCategory.textContent = lang === 'zh' ? categoryNameZh : categoryName;
+            breadcrumbCategory.href = 'products.html?category=' + encodeURIComponent(categoryName);
+            breadcrumbCategory.style.display = '';
+            breadcrumbCategorySep.style.display = '';
+            breadcrumbProduct.textContent = lang === 'zh' ? product.nameZh : product.name;
+        }
         
         function renderProductDetail() {
             var lang = getCurrentLang();
@@ -270,24 +338,24 @@
                 var paramLabels = {
                     en: {
                         material: "Material",
-                        diameter: "Diameter",
-                        focal_length: "Focal Length",
+                        diameter: "Diameter (mm)",
+                        size: "Size",
+                        focal_length: "Focal Length (mm)",
                         wavelength_range: "Wavelength Range",
                         surface_quality: "Surface Quality",
                         coating: "Coating",
                         substrate: "Substrate",
                         reflectivity: "Reflectivity",
                         surface_flatness: "Surface Flatness",
-                        thickness: "Thickness",
+                        thickness: "Thickness (mm)",
                         aperture: "Aperture",
                         angle_tolerance: "Angle Tolerance",
                         leg_length: "Leg Length",
                         extinction_ratio: "Extinction Ratio",
                         split_ratio: "Split Ratio",
-                        center_thickness: "Center Thickness",
-                        edge_thickness: "Edge Thickness",
-                        back_focal_length: "Back Focal Length",
-                        surface_flatness_632: "Surface Flatness",
+                        center_thickness: "Center Thickness (mm)",
+                        edge_thickness: "Edge Thickness (mm)",
+                        back_focal_length: "Back Focal Length (mm)",
                         clear_aperture: "Clear Aperture",
                         bevel: "Bevel",
                         parallelism: "Parallelism",
@@ -297,28 +365,30 @@
                         peak_transmittance: "Peak Transmittance",
                         cut_on_wavelength: "Cut-on Wavelength",
                         cut_off_wavelength: "Cut-off Wavelength",
-                        od_value: "OD Value"
+                        od_value: "OD Value",
+                        od_range: "OD Range",
+                        wavelength: "Wavelength (nm)"
                     },
                     zh: {
                         material: "材质",
-                        diameter: "直径",
-                        focal_length: "焦距",
+                        diameter: "直径 (mm)",
+                        size: "尺寸",
+                        focal_length: "焦距 (mm)",
                         wavelength_range: "波长范围",
                         surface_quality: "表面质量",
                         coating: "镀膜",
                         substrate: "基底",
                         reflectivity: "反射率",
                         surface_flatness: "面形精度",
-                        thickness: "厚度",
+                        thickness: "厚度 (mm)",
                         aperture: "通光孔径",
                         angle_tolerance: "角度公差",
                         leg_length: "直角边长",
                         extinction_ratio: "消光比",
                         split_ratio: "分光比",
-                        center_thickness: "中心厚度",
-                        edge_thickness: "边缘厚度",
-                        back_focal_length: "后焦距",
-                        surface_flatness_632: "面形精度",
+                        center_thickness: "中心厚度 (mm)",
+                        edge_thickness: "边缘厚度 (mm)",
+                        back_focal_length: "后焦距 (mm)",
                         clear_aperture: "通光孔径",
                         bevel: "倒边",
                         parallelism: "平行度",
@@ -328,7 +398,9 @@
                         peak_transmittance: "峰值透射率",
                         cut_on_wavelength: "截止波长",
                         cut_off_wavelength: "短波截止波长",
-                        od_value: "OD值"
+                        od_value: "OD值",
+                        od_range: "OD范围",
+                        wavelength: "波长 (nm)"
                     }
                 };
                 
@@ -343,20 +415,26 @@
             
             grid.innerHTML = 
                 '<div class="product-detail-image">' +
-                '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>📦</span>\';">' +
+                '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\'>🔬</div>\';">' +
                 '</div>' +
                 '<div class="product-detail-info">' +
                 '<h1>' + name + '</h1>' +
-                '<p class="product-detail-category">' + category + '</p>' +
+                '<p class="product-detail-category"><span class="category-badge">' + category + '</span></p>' +
                 '<div class="product-description">' +
                 '<h3>' + (lang === 'zh' ? '产品描述' : 'Description') + '</h3>' +
                 '<p>' + desc + '</p>' +
                 '</div>' +
                 specsHtml +
-                '<div style="margin-top: 30px;">' +
-                '<a href="contact.html?product=' + encodeURIComponent(currentProduct.name) + '" class="btn btn-primary request-quote-btn" data-i18n="requestQuote">Request Quote</a>' +
+                '<div class="product-actions">' +
+                '<a href="#productInquiryForm" class="btn btn-primary request-quote-btn" onclick="scrollToInquiry(event)" data-i18n="requestQuote">Request Quote</a>' +
+                '<a href="products.html" class="btn btn-secondary browse-more-btn" data-i18n="browseMore">Browse More Products</a>' +
                 '</div>' +
                 '</div>';
+        }
+        
+        function scrollToInquiry(e) {
+            e.preventDefault();
+            document.getElementById('productInquiryForm').scrollIntoView({ behavior: 'smooth' });
         }
         
         function renderRelatedProducts() {
@@ -376,85 +454,19 @@
             
             var grid = document.getElementById('relatedProducts');
             grid.innerHTML = related.map(function(product) {
-                var name = lang === 'zh' ? product.nameZh : product.name;
+                var prodName = lang === 'zh' ? product.nameZh : product.name;
                 var category = lang === 'zh' ? product.categoryZh : product.category;
                 
                 return '<div class="product-card" onclick="window.location.href=\'product-detail.html?code=' + encodeURIComponent(product.name) + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="' + product.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>📦</span>\';">' +
+                    '<img src="' + product.image + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>🔬</span>\';">' +
                     '</div>' +
                     '<div class="product-info">' +
-                    '<h3 class="product-name">' + name + '</h3>' +
+                    '<h3 class="product-name">' + prodName + '</h3>' +
                     '<p class="product-category">' + category + '</p>' +
                     '</div>' +
                     '</div>';
             }).join('');
-        }
-        
-        // Translation additions
-        var originalTranslations = translations;
-        if (typeof translations !== 'undefined') {
-            translations.en.requestQuote = 'Request Quote';
-            translations.zh.requestQuote = '询价';
-            // Inquiry form translations
-            translations.en.quickInquiry = 'Quick Inquiry';
-            translations.zh.quickInquiry = '快速询价';
-            translations.en.inquiryIntro = 'Send us your requirements and we\'ll respond within 24 hours.';
-            translations.zh.inquiryIntro = '请发送您的需求，我们将在24小时内回复。';
-            translations.en.inquiryFor = 'Inquiry for:';
-            translations.zh.inquiryFor = '询价产品：';
-            translations.en.submitInquiry = 'Submit Inquiry';
-            translations.zh.submitInquiry = '提交询价';
-            translations.en.inquirySuccessMsg = 'Thank you for your inquiry! We will respond to your email shortly.';
-            translations.zh.inquirySuccessMsg = '感谢您的询价，我们会尽快回复！';
-            translations.en.sendAnother = 'Send Another Inquiry';
-            translations.zh.sendAnother = '继续询价';
-            translations.en.detailedReqPlaceholder = 'Please describe your specific requirements, parameters needed, application details...';
-            translations.zh.detailedReqPlaceholder = '请描述您的具体需求、所需参数、应用详情...';
-        }
-        
-        function submitProductInquiry(event) {
-            event.preventDefault();
-            
-            var fullName = document.getElementById('inquiryName').value;
-            var companyName = document.getElementById('inquiryCompany').value;
-            var email = document.getElementById('inquiryEmail').value;
-            var phone = document.getElementById('inquiryPhone').value;
-            var quantity = document.getElementById('inquiryQuantity').value;
-            var targetPrice = document.getElementById('inquiryTargetPrice').value;
-            var details = document.getElementById('inquiryDetails').value;
-            
-            var subject = 'Product Inquiry from ' + fullName + (companyName ? ' (' + companyName + ')' : '');
-            if (currentProduct) {
-                subject += ' - ' + currentProduct.name;
-            }
-            
-            var body = '========================================\n';
-            body += '  PHOTONEDGE OPTICAL - PRODUCT INQUIRY\n';
-            body += '========================================\n\n';
-            body += 'PRODUCT INFORMATION\n';
-            body += '----------------------------------------\n';
-            body += 'Product: ' + (currentProduct ? (getCurrentLang() === 'zh' ? currentProduct.nameZh : currentProduct.name) : 'N/A') + '\n';
-            body += 'Category: ' + (currentProduct ? (getCurrentLang() === 'zh' ? currentProduct.categoryZh : currentProduct.category) : 'N/A') + '\n';
-            body += 'Quantity Required: ' + quantity + '\n';
-            if (targetPrice) body += 'Target Price (USD): ' + targetPrice + '\n';
-            body += '\nREQUIREMENTS\n';
-            body += '----------------------------------------\n';
-            body += details + '\n';
-            body += '\nCONTACT INFORMATION\n';
-            body += '----------------------------------------\n';
-            body += 'Full Name: ' + fullName + '\n';
-            if (companyName) body += 'Company: ' + companyName + '\n';
-            body += 'Email: ' + email + '\n';
-            if (phone) body += 'Phone / WhatsApp: ' + phone + '\n';
-            body += '\n========================================\n';
-            body += 'Submitted via PhotonEdge Website\n';
-            body += '========================================\n';
-            
-            window.location.href = 'mailto:sales@photonedgeoptics.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-            
-            document.getElementById('productDetailForm').style.display = 'none';
-            document.getElementById('inquirySuccess').style.display = 'block';
         }
         
         function resetProductInquiry() {
@@ -462,9 +474,22 @@
             document.getElementById('inquirySuccess').style.display = 'none';
             document.getElementById('productDetailForm').reset();
             if (currentProduct) {
-                document.getElementById('inquiryProductTitle').textContent = getCurrentLang() === 'zh' ? currentProduct.nameZh : currentProduct.name;
+                var lang = getCurrentLang();
+                document.getElementById('inquiryProductTitle').textContent = lang === 'zh' ? currentProduct.nameZh : currentProduct.name;
+                document.getElementById('hiddenProductName').value = currentProduct.name;
+                document.getElementById('hiddenProductCategory').value = currentProduct.category;
             }
         }
+        
+        // Handle form submission with FormSubmit
+        document.getElementById('productDetailForm').addEventListener('submit', function(e) {
+            // FormSubmit will handle the actual submission
+            // Show success message after redirect
+            setTimeout(function() {
+                document.getElementById('productDetailForm').style.display = 'none';
+                document.getElementById('inquirySuccess').style.display = 'block';
+            }, 500);
+        });
     </script>
 </body>
 </html>
