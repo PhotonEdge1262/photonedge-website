@@ -7,8 +7,9 @@ var translations = {
         navProducts: "Products",
         navAbout: "About Us",
         navContact: "Contact",
-        heroTitle: "Precision Optical Components Manufacturer",
-        heroSubtitle: "Precision Optical Components Supplier",
+        navDownloads: "Downloads",
+        heroTitle: "Precision Optical Components for Demanding Applications",
+        heroSubtitle: "15+ years of manufacturing excellence. 500+ global clients trust PhotonEdge for lenses, mirrors, windows, prisms & custom solutions.",
         heroDesc: "Beijing Hengdingguang Technology Co., Ltd.",
         viewProducts: "View Products",
         learnMore: "Learn More",
@@ -142,10 +143,6 @@ var translations = {
         statGlobalClients: "500+ Global Clients",
         statComponents: "10,000+ Components",
         statCountries: "30+ Countries",
-        statYearsExpZh: "15年以上经验",
-        statGlobalClientsZh: "500+全球客户",
-        statComponentsZh: "10,000+元件",
-        statCountriesZh: "30+国家",
         // Industry Labels
         industryLaser: "Laser Systems",
         industryMedical: "Medical Devices",
@@ -155,14 +152,6 @@ var translations = {
         industrySemiconductor: "Semiconductor",
         industryImaging: "Industrial Imaging",
         industrySpectroscopy: "Spectroscopy",
-        industryLaserZh: "激光系统",
-        industryMedicalZh: "医疗设备",
-        industryTelecomZh: "通信",
-        industryResearchZh: "科研机构",
-        industryDefenseZh: "国防与航空",
-        industrySemiconductorZh: "半导体",
-        industryImagingZh: "工业成像",
-        industrySpectroscopyZh: "光谱学",
         // Certifications
         certISO: "ISO 9001:2015",
         certISODesc: "Quality Management System",
@@ -170,30 +159,16 @@ var translations = {
         certCEDesc: "European Standards",
         certRoHS: "RoHS Compliant",
         certRoHSDesc: "Environmental Safety",
-        certISOZh: "ISO 9001:2015",
-        certISODescZh: "质量管理体系",
-        certCEZh: "CE认证",
-        certCEDescZh: "欧盟标准",
-        certRoHSZh: "RoHS认证",
-        certRoHSDescZh: "环境安全",
         // Product Detail
         loadingProduct: "Loading product details...",
         productNotFound: "Product Not Found",
         productNotFoundDesc: "The product you are looking for does not exist or has been removed.",
         backToProducts: "Back to Products",
         browseMore: "Browse More Products",
-        loadingProductZh: "正在加载产品详情...",
-        productNotFoundZh: "产品未找到",
-        productNotFoundDescZh: "您查找的产品不存在或已被删除。",
-        backToProductsZh: "返回产品列表",
-        browseMoreZh: "浏览更多产品",
         // About Page
         companyTimeline: "Company Timeline",
         factoryCapabilities: "Factory Capabilities",
         customerTestimonials: "Customer Testimonials",
-        companyTimelineZh: "公司历程",
-        factoryCapabilitiesZh: "生产能力",
-        customerTestimonialsZh: "客户评价",
         // Timeline items
         timeline2010Title: "Company Founded",
         timeline2010Desc: "PhotonEdge established in Beijing with focus on optical components R&D",
@@ -205,16 +180,6 @@ var translations = {
         timeline2020Desc: "Reached milestone of 500+ global clients across multiple industries",
         timeline2024Title: "Product Line Expansion",
         timeline2024Desc: "Expanded product portfolio to include advanced optical components",
-        timeline2010TitleZh: "公司成立",
-        timeline2010DescZh: "恒鼎光在北京成立，专注于光学元件研发",
-        timeline2013TitleZh: "ISO认证",
-        timeline2013DescZh: "获得ISO 9001:2015质量管理体系认证",
-        timeline2016TitleZh: "全球拓展",
-        timeline2016DescZh: "拓展海外市场，与欧美建立合作关系",
-        timeline2020TitleZh: "500+客户",
-        timeline2020DescZh: "达到500+全球客户里程碑，覆盖多个行业",
-        timeline2024TitleZh: "产品线扩展",
-        timeline2024DescZh: "扩展产品组合，包括先进光学元件",
         // Factory items
         factoryProdTitle: "Production Workshop",
         factoryProdDesc: "State-of-the-art optical processing equipment",
@@ -224,14 +189,6 @@ var translations = {
         factoryCleanDesc: "Class 1000 clean environment for assembly",
         factoryWarehouseTitle: "Warehouse & Logistics",
         factoryWarehouseDesc: "Efficient inventory and shipping system",
-        factoryProdTitleZh: "生产车间",
-        factoryProdDescZh: "先进的光学加工设备",
-        factoryTestTitleZh: "检测设备",
-        factoryTestDescZh: "精密测量和质量检测",
-        factoryCleanTitleZh: "无尘车间",
-        factoryCleanDescZh: "千级无尘装配环境",
-        factoryWarehouseTitleZh: "仓储物流",
-        factoryWarehouseDescZh: "高效库存和物流系统",
         // Applications Page
         appLaserTitle: "Laser Systems",
         appLaserDesc: "High-precision optical components for industrial, medical, and research laser applications. Our lenses, mirrors, and beam splitters ensure optimal beam quality and power delivery.",
@@ -249,31 +206,32 @@ var translations = {
         appIndustrialDesc: "Machine vision lenses, illumination optics, and sensors for automated inspection, quality control, and manufacturing processes.",
         appSpectroscopyTitle: "Spectroscopy",
         appSpectroscopyDesc: "High-transmission optics for analytical instruments, Raman spectroscopy, and material characterization applications.",
-        appLaserTitleZh: "激光系统",
-        appLaserDescZh: "用于工业、医疗和科研激光应用的高精度光学元件。我们的透镜、反射镜和分光器确保最佳光束质量和功率传输。",
-        appMedicalTitleZh: "医疗与生物技术",
-        appMedicalDescZh: "用于诊断设备、手术激光、显微镜和生物医学研究仪器的光学元件。符合严格的医疗设备标准。",
-        appTelecomTitleZh: "通信",
-        appTelecomDescZh: "用于光通信网络和数据传输系统的光纤耦合器、准直器和波长选择元件。",
-        appResearchTitleZh: "科研与教育",
-        appResearchDescZh: "用于实验室、大学和研究机构的高精度光学元件。适用于光谱学、干涉测量和光学实验。",
-        appDefenseTitleZh: "国防与航空",
-        appDefenseDescZh: "符合MIL规格的加固光学元件，用于瞄准系统、监视和导航应用。",
-        appSemiconductorTitleZh: "半导体与电子",
-        appSemiconductorDescZh: "用于半导体制造和电子器件制造的超紫外光学元件、检测透镜和精密元件。",
-        appIndustrialTitleZh: "工业成像",
-        appIndustrialDescZh: "用于自动化检测、质量控制和制造过程的机器视觉镜头、照明光学元件和传感器。",
-        appSpectroscopyTitleZh: "光谱学",
-        appSpectroscopyDescZh: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。",
+        // Downloads Page
+        downloadsTitle: "Download Center",
+        downloadsSubtitle: "Download our product catalogs and technical specifications",
+        downloadsCompleteCatalog: "PhotonEdge Product Catalog",
+        downloadsCompleteCatalogDesc: "Complete product catalog covering all optical components including lenses, mirrors, windows, prisms, filters, beamsplitters, waveplates, and polarizers.",
+        downloadsLenses: "Lenses Catalog",
+        downloadsLensesDesc: "BK7 plano-convex, bi-convex, plano-concave, cylindrical, aspheric, achromatic doublet, ball and rod lenses.",
+        downloadsWindowsMirrors: "Windows & Mirrors Catalog",
+        downloadsWindowsMirrorsDesc: "BK7, UV fused silica, sapphire, CaF2, Ge, Si, ZnSe windows. Laser line, broadband dielectric, metallic flat mirrors.",
+        downloadsBeamsplitters: "Beamsplitters & Waveplates Catalog",
+        downloadsBeamsplittersDesc: "Plate and cube beamsplitters, polarizing and non-polarizing. Multiple order, zero order, dual wavelength waveplates.",
+        downloadsPrisms: "Prisms & Filters Catalog",
+        downloadsPrismsDesc: "Right angle, penta, corner cube, dove, equilateral prisms. Narrow band, ND, color glass, bandpass filters.",
+        downloadsBtn: "Download PDF",
+        downloadsFileSize: "File Size",
+        // Part Numbers
+        partNumbersTitle: "Part Numbers & Specifications",
         // WhatsApp
-        whatsappTooltip: "Chat with us",
-        whatsappTooltipZh: "在线咨询"
+        whatsappTooltip: "Chat with us"
     },
     zh: {
         navHome: "首页",
         navProducts: "产品",
         navAbout: "关于我们",
         navContact: "联系我们",
+        navDownloads: "下载中心",
         heroTitle: "高精度光学元件 满足严苛应用需求",
         heroSubtitle: "15年以上制造经验。500+全球客户信赖PhotonEdge，提供透镜、反射镜、窗口、棱镜及定制解决方案。",
         heroDesc: "北京恒鼎光科技有限公司",
@@ -405,10 +363,10 @@ var translations = {
         trustedDesc: "我们的光学元件广泛应用于医疗设备、激光系统、科学研究和工业应用领域。",
         aboutMore: "凭借在光学行业的多年经验，我们与欧洲、北美、亚太等地区的客户建立了长期合作关系。",
         // Trust Elements Stats
-        statYearsExp: "15+ Years Experience",
-        statGlobalClients: "500+ Global Clients",
-        statComponents: "10,000+ Components",
-        statCountries: "30+ Countries",
+        statYearsExp: "15年以上经验",
+        statGlobalClients: "500+全球客户",
+        statComponents: "10,000+元件",
+        statCountries: "30+国家",
         // Industry Labels
         industryLaser: "激光系统",
         industryMedical: "医疗设备",
@@ -472,9 +430,25 @@ var translations = {
         appIndustrialDesc: "用于自动化检测、质量控制和制造过程的机器视觉镜头、照明光学元件和传感器。",
         appSpectroscopyTitle: "光谱学",
         appSpectroscopyDesc: "用于分析仪器、拉曼光谱和材料表征应用的高透射率光学元件。",
+        // Downloads Page
+        downloadsTitle: "下载中心",
+        downloadsSubtitle: "下载我们的产品目录和技术规格",
+        downloadsCompleteCatalog: "PhotonEdge 产品总目录",
+        downloadsCompleteCatalogDesc: "完整的产品目录，涵盖所有光学元件，包括透镜、反射镜、窗口、棱镜、滤光片、分光镜、波片和偏振片。",
+        downloadsLenses: "透镜目录",
+        downloadsLensesDesc: "BK7平凸、平凹、双凸、柱面、非球面、消色差双合、球形和棒状透镜。",
+        downloadsWindowsMirrors: "窗口片/反射镜目录",
+        downloadsWindowsMirrorsDesc: "BK7、紫外熔融石英、蓝宝石、CaF2、Ge、Si、ZnSe窗口片。激光线、宽带介质、金属平面反射镜。",
+        downloadsBeamsplitters: "分光镜/波片目录",
+        downloadsBeamsplittersDesc: "平板和立方体分光镜，偏振和非偏振。多级、零级、双波长波片。",
+        downloadsPrisms: "棱镜/滤光片目录",
+        downloadsPrismsDesc: "直角、五角、角锥、道威、等边棱镜。窄带、ND、玻璃色滤光片、带通滤光片。",
+        downloadsBtn: "下载PDF",
+        downloadsFileSize: "文件大小",
+        // Part Numbers
+        partNumbersTitle: "产品型号与规格",
         // WhatsApp
-        whatsappTooltip: "Chat with us",
-        whatsappTooltipZh: "在线咨询"
+        whatsappTooltip: "在线咨询"
     }
 };
 
@@ -498,35 +472,28 @@ function setLanguage(lang) {
 
 function updatePageTranslations() {
     var lang = getCurrentLang();
-    var t = translations[lang];
-    if (typeof document !== 'undefined') {
-        var i18nElements = document.querySelectorAll('[data-i18n]');
-        for (var i = 0; i < i18nElements.length; i++) {
-            var el = i18nElements[i];
-            var key = el.getAttribute('data-i18n');
-            if (t[key]) {
-                el.textContent = t[key];
-            }
-        }
-        var placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
-        for (var j = 0; j < placeholderElements.length; j++) {
-            var pel = placeholderElements[j];
-            var pkey = pel.getAttribute('data-i18n-placeholder');
-            if (t[pkey]) {
-                pel.placeholder = t[pkey];
-            }
+    var elements = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elements.length; i++) {
+        var key = elements[i].getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            elements[i].textContent = translations[lang][key];
         }
     }
+    
+    // Handle placeholders
+    var placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+    for (var j = 0; j < placeholderElements.length; j++) {
+        var pKey = placeholderElements[j].getAttribute('data-i18n-placeholder');
+        if (translations[lang] && translations[lang][pKey]) {
+            placeholderElements[j].placeholder = translations[lang][pKey];
+        }
+    }
+    
+    // Update document language
+    document.documentElement.lang = lang;
 }
 
-function t(key) {
-    var lang = getCurrentLang();
-    var trans = translations[lang];
-    return trans[key] || key;
-}
-
-function getCategoryName(category) {
-    var lang = getCurrentLang();
-    var catMap = translations[lang];
-    return catMap[category] || category;
-}
+// Initialize translations on page load
+document.addEventListener('DOMContentLoaded', function() {
+    updatePageTranslations();
+});

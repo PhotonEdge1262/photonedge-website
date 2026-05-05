@@ -23,6 +23,7 @@
                     <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
                     <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
                     <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="downloads.html" class="nav-link" data-i18n="navDownloads">Downloads</a></li>
                     <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
                 </ul>
                 <div class="lang-switcher">
@@ -158,6 +159,7 @@
                     <h4>Company</h4>
                     <ul>
                         <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="downloads.html" data-i18n="navDownloads">Downloads</a></li>
                         <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
                     </ul>
                 </div>
@@ -421,6 +423,60 @@
             
             specsHtml += '</table></div>';
             
+            // Part Numbers Table
+            var partNumbersHtml = '';
+            if (currentProduct.partNumbers && currentProduct.partNumbers.length > 0) {
+                var firstItem = currentProduct.partNumbers[0];
+                var columns = Object.keys(firstItem);
+                var columnLabels = {
+                    en: {
+                        partNumber: 'Part Number',
+                        dimension: 'Dimension',
+                        diameter: 'Diameter',
+                        focalLength: 'Focal Length',
+                        centerThickness: 'Center Thickness',
+                        wavelength: 'Wavelength',
+                        size: 'Size',
+                        thickness: 'Thickness'
+                    },
+                    zh: {
+                        partNumber: '型号',
+                        dimension: '尺寸',
+                        diameter: '直径',
+                        focalLength: '焦距',
+                        centerThickness: '中心厚度',
+                        wavelength: '波长',
+                        size: '尺寸',
+                        thickness: '厚度'
+                    }
+                };
+                var labels = columnLabels[lang] || columnLabels.en;
+                
+                partNumbersHtml = '<div class="part-numbers-section">' +
+                    '<h3>' + (lang === 'zh' ? '产品型号与规格' : 'Part Numbers & Specifications') + '</h3>' +
+                    '<div class="table-responsive">' +
+                    '<table class="part-table"><thead><tr>';
+                
+                columns.forEach(function(col) {
+                    partNumbersHtml += '<th>' + (labels[col] || col) + '</th>';
+                });
+                partNumbersHtml += '</tr></thead><tbody>';
+                
+                currentProduct.partNumbers.forEach(function(item) {
+                    partNumbersHtml += '<tr>';
+                    columns.forEach(function(col) {
+                        if (col === 'partNumber') {
+                            partNumbersHtml += '<td class="part-number-cell">' + item[col] + '</td>';
+                        } else {
+                            partNumbersHtml += '<td>' + item[col] + '</td>';
+                        }
+                    });
+                    partNumbersHtml += '</tr>';
+                });
+                
+                partNumbersHtml += '</tbody></table></div></div>';
+            }
+            
             grid.innerHTML = 
                 '<div class="product-detail-image">' +
                 '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\'>🔬</div>\';">' +
@@ -433,6 +489,7 @@
                 '<p>' + desc + '</p>' +
                 '</div>' +
                 specsHtml +
+                partNumbersHtml +
                 '<div class="product-actions">' +
                 '<a href="#productInquiryForm" class="btn btn-primary request-quote-btn" onclick="scrollToInquiry(event)" data-i18n="requestQuote">Request Quote</a>' +
                 '<a href="products.html" class="btn btn-secondary browse-more-btn" data-i18n="browseMore">Browse More Products</a>' +
