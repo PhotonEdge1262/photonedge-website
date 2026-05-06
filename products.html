@@ -125,6 +125,7 @@
 
     <script src="js/translations.js"></script>
     <script src="js/products-data.js"></script>
+    <script src="js/cart.js"></script>
     <script>
         var filteredProducts = [];
         var currentPage = 1;
@@ -193,6 +194,9 @@
                 var desc = product.description.substring(0, 100) + (product.description.length > 100 ? '...' : '');
                 var subCount = product.subProducts ? product.subProducts.length : 0;
                 var subText = subCount > 0 ? (lang === 'zh' ? ' (' + subCount + ' 型号)' : ' (' + subCount + ' models)') : '';
+                var price = product.price ? '$' + product.price.toFixed(2) : '';
+                var fromLabel = lang === 'zh' ? '起' : 'From';
+                var priceHtml = price ? '<span class="product-price">' + fromLabel + ' ' + price + '</span>' : '';
                 
                 return '<div class="product-card" onclick="window.location.href=\'product-detail.html?code=' + encodeURIComponent(product.name) + '\'">' +
                     '<div class="product-image">' +
@@ -201,9 +205,13 @@
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + name + subText + '</h3>' +
                     '<p class="product-category">' + category + '</p>' +
+                    priceHtml +
                     '<p class="product-desc">' + desc + '</p>' +
                     '</div>' +
                     '<div class="product-card-actions">' +
+                    '<button class="btn btn-sm btn-success add-cart-btn" onclick="event.stopPropagation(); quickAddToCart(' + product.id + ', \'' + encodeURIComponent(name) + '\');">' + 
+                    '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>' +
+                    (lang === 'zh' ? '加入' : 'Add') + '</button>' +
                     '<button class="btn btn-sm btn-outline inquiry-btn" onclick="event.stopPropagation(); inquiryProduct(\'' + encodeURIComponent(product.name) + '\', \'' + encodeURIComponent(name) + '\');">' + 
                     (lang === 'zh' ? '询价' : 'Inquiry') + '</button>' +
                     '</div>' +
@@ -215,6 +223,13 @@
         
         function inquiryProduct(code, name) {
             window.location.href = 'contact.html?product=' + code;
+        }
+        
+        function quickAddToCart(productId, productName) {
+            addToCart(productId, null, 1);
+            var lang = getCurrentLang();
+            var message = lang === 'zh' ? '已加入购物车！' : 'Added to cart!';
+            showToast(message);
         }
         
         function renderPagination() {

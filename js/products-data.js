@@ -1,5 +1,5 @@
 // PhotonEdge Products Data
-// Total: 66 products - Enhanced with detailed specifications
+// Total: 66 products - Enhanced with detailed specifications and pricing
 
 const PRODUCTS = [
   {
@@ -16,7 +16,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "40-20",
       "clear_aperture": ">90%"
-    }
+    },
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 2,
@@ -37,17 +41,21 @@ const PRODUCTS = [
       "coatings": "One side: dielectric partial reflection; other side: AR coating"
     },
     "partNumbers": [
-      {"partNumber": "LOBP12.7-450/650", "dimension": "Φ12.7×3.0mm", "wavelength": "450-650nm"},
-      {"partNumber": "LOBP20.0-450/650", "dimension": "Φ20.0×3.0mm", "wavelength": "450-650nm"},
-      {"partNumber": "LOBP25.4-450/650", "dimension": "Φ25.4×3.0mm", "wavelength": "450-650nm"},
-      {"partNumber": "LOBP50.8-450/650", "dimension": "Φ50.8×3.0mm", "wavelength": "450-650nm"},
-      {"partNumber": "LOBP12.7-650/900", "dimension": "Φ12.7×3.0mm", "wavelength": "650-900nm"},
-      {"partNumber": "LOBP25.4-650/900", "dimension": "Φ25.4×3.0mm", "wavelength": "650-900nm"},
-      {"partNumber": "LOBP50.8-650/900", "dimension": "Φ50.8×3.0mm", "wavelength": "650-900nm"},
-      {"partNumber": "LOBP12.7-900/1200", "dimension": "Φ12.7×3.0mm", "wavelength": "900-1200nm"},
-      {"partNumber": "LOBP25.4-900/1200", "dimension": "Φ25.4×3.0mm", "wavelength": "900-1200nm"},
-      {"partNumber": "LOBP50.8-900/1200", "dimension": "Φ50.8×3.0mm", "wavelength": "900-1200nm"}
-    ]
+      {"partNumber": "LOBP12.7-450/650", "dimension": "Φ12.7×3.0mm", "wavelength": "450-650nm", "price": 35},
+      {"partNumber": "LOBP20.0-450/650", "dimension": "Φ20.0×3.0mm", "wavelength": "450-650nm", "price": 45},
+      {"partNumber": "LOBP25.4-450/650", "dimension": "Φ25.4×3.0mm", "wavelength": "450-650nm", "price": 55},
+      {"partNumber": "LOBP50.8-450/650", "dimension": "Φ50.8×3.0mm", "wavelength": "450-650nm", "price": 75},
+      {"partNumber": "LOBP12.7-650/900", "dimension": "Φ12.7×3.0mm", "wavelength": "650-900nm", "price": 38},
+      {"partNumber": "LOBP25.4-650/900", "dimension": "Φ25.4×3.0mm", "wavelength": "650-900nm", "price": 58},
+      {"partNumber": "LOBP50.8-650/900", "dimension": "Φ50.8×3.0mm", "wavelength": "650-900nm", "price": 78},
+      {"partNumber": "LOBP12.7-900/1200", "dimension": "Φ12.7×3.0mm", "wavelength": "900-1200nm", "price": 40},
+      {"partNumber": "LOBP25.4-900/1200", "dimension": "Φ25.4×3.0mm", "wavelength": "900-1200nm", "price": 60},
+      {"partNumber": "LOBP50.8-900/1200", "dimension": "Φ50.8×3.0mm", "wavelength": "900-1200nm", "price": 85}
+    ],
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 3,
@@ -64,7 +72,11 @@ const PRODUCTS = [
       "wavelength_range": "400-700nm",
       "surface_quality": "40-20",
       "beam_deviation": "<5 arcmin"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 4,
@@ -82,7 +94,11 @@ const PRODUCTS = [
       "wavelength_range": "400-700nm",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 5,
@@ -103,17 +119,21 @@ const PRODUCTS = [
       "coatings": "Cemented face: dielectric; entry/exit faces: AR coating"
     },
     "partNumbers": [
-      {"partNumber": "LOCBS10-532", "dimension": "10.0×10.0×10.0mm", "wavelength": "532nm"},
-      {"partNumber": "LOCBS12.7-532", "dimension": "12.7×12.7×12.7mm", "wavelength": "532nm"},
-      {"partNumber": "LOCBS20-532", "dimension": "20.0×20.0×20.0mm", "wavelength": "532nm"},
-      {"partNumber": "LOCBS10-633", "dimension": "10.0×10.0×10.0mm", "wavelength": "633nm"},
-      {"partNumber": "LOCBS12.7-633", "dimension": "12.7×12.7×12.7mm", "wavelength": "633nm"},
-      {"partNumber": "LOCBS20-633", "dimension": "20.0×20.0×20.0mm", "wavelength": "633nm"},
-      {"partNumber": "LOCBS10-1064", "dimension": "10.0×10.0×10.0mm", "wavelength": "1064nm"},
-      {"partNumber": "LOCBS12.7-1064", "dimension": "12.7×12.7×12.7mm", "wavelength": "1064nm"},
-      {"partNumber": "LOCBS20-1064", "dimension": "20.0×20.0×20.0mm", "wavelength": "1064nm"},
-      {"partNumber": "LOCBS25.4-1064", "dimension": "25.4×25.4×25.4mm", "wavelength": "1064nm"}
-    ]
+      {"partNumber": "LOCBS10-532", "dimension": "10.0×10.0×10.0mm", "wavelength": "532nm", "price": 55},
+      {"partNumber": "LOCBS12.7-532", "dimension": "12.7×12.7×12.7mm", "wavelength": "532nm", "price": 65},
+      {"partNumber": "LOCBS20-532", "dimension": "20.0×20.0×20.0mm", "wavelength": "532nm", "price": 85},
+      {"partNumber": "LOCBS10-633", "dimension": "10.0×10.0×10.0mm", "wavelength": "633nm", "price": 55},
+      {"partNumber": "LOCBS12.7-633", "dimension": "12.7×12.7×12.7mm", "wavelength": "633nm", "price": 65},
+      {"partNumber": "LOCBS20-633", "dimension": "20.0×20.0×20.0mm", "wavelength": "633nm", "price": 85},
+      {"partNumber": "LOCBS10-1064", "dimension": "10.0×10.0×10.0mm", "wavelength": "1064nm", "price": 50},
+      {"partNumber": "LOCBS12.7-1064", "dimension": "12.7×12.7×12.7mm", "wavelength": "1064nm", "price": 60},
+      {"partNumber": "LOCBS20-1064", "dimension": "20.0×20.0×20.0mm", "wavelength": "1064nm", "price": 80},
+      {"partNumber": "LOCBS25.4-1064", "dimension": "25.4×25.4×25.4mm", "wavelength": "1064nm", "price": 105}
+    ],
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 6,
@@ -130,7 +150,11 @@ const PRODUCTS = [
       "wavelength_range": "400-700nm / 650-1050nm",
       "surface_quality": "40-20",
       "transmittance": ">90% (P-polarized)"
-    }
+    },
+    "price": 120,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 7,
@@ -147,7 +171,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "20-10",
       "coating": "Uncoated / AR coating"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 8,
@@ -164,7 +192,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "20-10",
       "coating": "Uncoated / AR coating"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 9,
@@ -182,7 +214,11 @@ const PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm",
       "angular_tolerance": "±1°"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 10,
@@ -198,7 +234,11 @@ const PRODUCTS = [
       "thickness": "1-5mm",
       "wavelength_range": "300-2000nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 11,
@@ -215,7 +255,11 @@ const PRODUCTS = [
       "wavelength_range": "400-700nm (VIS) / 250-2500nm (NIR)",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 20,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 12,
@@ -232,7 +276,11 @@ const PRODUCTS = [
       "bandwidth": "1-40nm (FWHM)",
       "peak_transmittance": ">70%",
       "blocking": ">OD4"
-    }
+    },
+    "price": 75,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 13,
@@ -248,7 +296,11 @@ const PRODUCTS = [
       "od_range": "0.1-2.5",
       "wavelength_range": "400-700nm / 650-1050nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 14,
@@ -264,7 +316,11 @@ const PRODUCTS = [
       "cut_on_wavelength": "300-400nm",
       "peak_transmittance": ">80%",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 30,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 15,
@@ -280,7 +336,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "40-20",
       "clear_aperture": ">85%"
-    }
+    },
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 16,
@@ -297,7 +357,11 @@ const PRODUCTS = [
       "coating": "AR coating (400-700nm)",
       "surface_quality": "40-20",
       "back_focal_length": "Customizable"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 17,
@@ -313,7 +377,11 @@ const PRODUCTS = [
       "focal_length": "-20 to -300mm",
       "coating": "Uncoated / AR coating",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 18,
@@ -336,12 +404,16 @@ const PRODUCTS = [
       "coatings": "Uncoated / AR coating available"
     },
     "partNumbers": [
-      {"partNumber": "LOBCCB6.35-12.5", "diameter": "6.35mm", "focalLength": "-12.50mm", "centerThickness": "2.50mm"},
-      {"partNumber": "LOBCCB12.7-15", "diameter": "12.70mm", "focalLength": "-15.00mm", "centerThickness": "2.30mm"},
-      {"partNumber": "LOBCCB12.7-25", "diameter": "12.70mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOBCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOBCCB25.4-50", "diameter": "25.40mm", "focalLength": "-50.00mm", "centerThickness": "3.00mm"}
-    ]
+      {"partNumber": "LOBCCB6.35-12.5", "diameter": "6.35mm", "focalLength": "-12.50mm", "centerThickness": "2.50mm", "price": 25},
+      {"partNumber": "LOBCCB12.7-15", "diameter": "12.70mm", "focalLength": "-15.00mm", "centerThickness": "2.30mm", "price": 28},
+      {"partNumber": "LOBCCB12.7-25", "diameter": "12.70mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 28},
+      {"partNumber": "LOBCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm", "price": 30},
+      {"partNumber": "LOBCCB25.4-50", "diameter": "25.40mm", "focalLength": "-50.00mm", "centerThickness": "3.00mm", "price": 38}
+    ],
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 19,
@@ -364,17 +436,21 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOBCXB6-6", "diameter": "6.00mm", "focalLength": "6.00mm", "centerThickness": "2.50mm"},
-      {"partNumber": "LOBCXB6-10", "diameter": "6.00mm", "focalLength": "10.00mm", "centerThickness": "2.40mm"},
-      {"partNumber": "LOBCXB9-12", "diameter": "9.00mm", "focalLength": "12.00mm", "centerThickness": "3.60mm"},
-      {"partNumber": "LOBCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "4.10mm"},
-      {"partNumber": "LOBCXB12.7-15", "diameter": "12.70mm", "focalLength": "15.00mm", "centerThickness": "4.70mm"},
-      {"partNumber": "LOBCXB12.7-20", "diameter": "12.70mm", "focalLength": "20.00mm", "centerThickness": "3.88mm"},
-      {"partNumber": "LOBCXB12.7-30", "diameter": "12.70mm", "focalLength": "30.00mm", "centerThickness": "3.14mm"},
-      {"partNumber": "LOBCXB15-25", "diameter": "15.00mm", "focalLength": "25.00mm", "centerThickness": "4.80mm"},
-      {"partNumber": "LOBCXB20-45", "diameter": "20.00mm", "focalLength": "45.00mm", "centerThickness": "8.00mm"},
-      {"partNumber": "LOBCXB25.4-50", "diameter": "25.40mm", "focalLength": "50.00mm", "centerThickness": "5.24mm"}
-    ]
+      {"partNumber": "LOBCXB6-6", "diameter": "6.00mm", "focalLength": "6.00mm", "centerThickness": "2.50mm", "price": 18},
+      {"partNumber": "LOBCXB6-10", "diameter": "6.00mm", "focalLength": "10.00mm", "centerThickness": "2.40mm", "price": 18},
+      {"partNumber": "LOBCXB9-12", "diameter": "9.00mm", "focalLength": "12.00mm", "centerThickness": "3.60mm", "price": 20},
+      {"partNumber": "LOBCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "4.10mm", "price": 22},
+      {"partNumber": "LOBCXB12.7-15", "diameter": "12.70mm", "focalLength": "15.00mm", "centerThickness": "4.70mm", "price": 25},
+      {"partNumber": "LOBCXB12.7-20", "diameter": "12.70mm", "focalLength": "20.00mm", "centerThickness": "3.88mm", "price": 25},
+      {"partNumber": "LOBCXB12.7-30", "diameter": "12.70mm", "focalLength": "30.00mm", "centerThickness": "3.14mm", "price": 25},
+      {"partNumber": "LOBCXB15-25", "diameter": "15.00mm", "focalLength": "25.00mm", "centerThickness": "4.80mm", "price": 30},
+      {"partNumber": "LOBCXB20-45", "diameter": "20.00mm", "focalLength": "45.00mm", "centerThickness": "8.00mm", "price": 38},
+      {"partNumber": "LOBCXB25.4-50", "diameter": "25.40mm", "focalLength": "50.00mm", "centerThickness": "5.24mm", "price": 42}
+    ],
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 20,
@@ -390,7 +466,11 @@ const PRODUCTS = [
       "wavelength_range": "350-2000nm",
       "surface_quality": "40-20",
       "clear_aperture": ">85%"
-    }
+    },
+    "price": 10,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 21,
@@ -406,7 +486,11 @@ const PRODUCTS = [
       "wavelength_range": "350-2000nm",
       "surface_quality": "40-20",
       "clear_aperture": ">90%"
-    }
+    },
+    "price": 10,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 22,
@@ -429,17 +513,21 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOPCCB6-6", "diameter": "6.00mm", "focalLength": "-6.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB6-10", "diameter": "6.00mm", "focalLength": "-10.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB10-15", "diameter": "10.00mm", "focalLength": "-15.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB10-25", "diameter": "10.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB12.7-19", "diameter": "12.70mm", "focalLength": "-19.00mm", "centerThickness": "1.70mm"},
-      {"partNumber": "LOPCCB12.7-25.4", "diameter": "12.70mm", "focalLength": "-25.40mm", "centerThickness": "3.00mm"},
-      {"partNumber": "LOPCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.50mm"},
-      {"partNumber": "LOPCCB15-25", "diameter": "15.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB20-50", "diameter": "20.00mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCCB25.4-25", "diameter": "25.40mm", "focalLength": "-25.00mm", "centerThickness": "2.50mm"}
-    ]
+      {"partNumber": "LOPCCB6-6", "diameter": "6.00mm", "focalLength": "-6.00mm", "centerThickness": "2.00mm", "price": 15},
+      {"partNumber": "LOPCCB6-10", "diameter": "6.00mm", "focalLength": "-10.00mm", "centerThickness": "2.00mm", "price": 15},
+      {"partNumber": "LOPCCB10-15", "diameter": "10.00mm", "focalLength": "-15.00mm", "centerThickness": "2.00mm", "price": 18},
+      {"partNumber": "LOPCCB10-25", "diameter": "10.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 18},
+      {"partNumber": "LOPCCB12.7-19", "diameter": "12.70mm", "focalLength": "-19.00mm", "centerThickness": "1.70mm", "price": 20},
+      {"partNumber": "LOPCCB12.7-25.4", "diameter": "12.70mm", "focalLength": "-25.40mm", "centerThickness": "3.00mm", "price": 22},
+      {"partNumber": "LOPCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.50mm", "price": 22},
+      {"partNumber": "LOPCCB15-25", "diameter": "15.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 25},
+      {"partNumber": "LOPCCB20-50", "diameter": "20.00mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm", "price": 28},
+      {"partNumber": "LOPCCB25.4-25", "diameter": "25.40mm", "focalLength": "-25.00mm", "centerThickness": "2.50mm", "price": 32}
+    ],
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 23,
@@ -455,7 +543,11 @@ const PRODUCTS = [
       "focal_length": "20-300mm",
       "coating": "Uncoated / AR coating",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 22,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 24,
@@ -478,17 +570,21 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOPCXB2.5-3.9", "diameter": "2.50mm", "focalLength": "3.90mm", "centerThickness": "1.95mm"},
-      {"partNumber": "LOPCXB2.8-5.0", "diameter": "2.80mm", "focalLength": "5.00mm", "centerThickness": "1.62mm"},
-      {"partNumber": "LOPCXB3.0-8.0", "diameter": "3.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCXB4.0-8.0", "diameter": "4.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCXB5.0-10", "diameter": "5.00mm", "focalLength": "10.00mm", "centerThickness": "2.00mm"},
-      {"partNumber": "LOPCXB6.0-8.0", "diameter": "6.00mm", "focalLength": "8.00mm", "centerThickness": "2.30mm"},
-      {"partNumber": "LOPCXB6.0-12", "diameter": "6.00mm", "focalLength": "12.00mm", "centerThickness": "2.28mm"},
-      {"partNumber": "LOPCXB8.0-15", "diameter": "8.00mm", "focalLength": "15.00mm", "centerThickness": "3.00mm"},
-      {"partNumber": "LOPCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "3.80mm"},
-      {"partNumber": "LOPCXB12.7-19", "diameter": "12.70mm", "focalLength": "19.00mm", "centerThickness": "4.80mm"}
-    ]
+      {"partNumber": "LOPCXB2.5-3.9", "diameter": "2.50mm", "focalLength": "3.90mm", "centerThickness": "1.95mm", "price": 18},
+      {"partNumber": "LOPCXB2.8-5.0", "diameter": "2.80mm", "focalLength": "5.00mm", "centerThickness": "1.62mm", "price": 18},
+      {"partNumber": "LOPCXB3.0-8.0", "diameter": "3.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm", "price": 18},
+      {"partNumber": "LOPCXB4.0-8.0", "diameter": "4.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm", "price": 20},
+      {"partNumber": "LOPCXB5.0-10", "diameter": "5.00mm", "focalLength": "10.00mm", "centerThickness": "2.00mm", "price": 20},
+      {"partNumber": "LOPCXB6.0-8.0", "diameter": "6.00mm", "focalLength": "8.00mm", "centerThickness": "2.30mm", "price": 22},
+      {"partNumber": "LOPCXB6.0-12", "diameter": "6.00mm", "focalLength": "12.00mm", "centerThickness": "2.28mm", "price": 22},
+      {"partNumber": "LOPCXB8.0-15", "diameter": "8.00mm", "focalLength": "15.00mm", "centerThickness": "3.00mm", "price": 25},
+      {"partNumber": "LOPCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "3.80mm", "price": 28},
+      {"partNumber": "LOPCXB12.7-19", "diameter": "12.70mm", "focalLength": "19.00mm", "centerThickness": "4.80mm", "price": 35}
+    ],
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 25,
@@ -505,7 +601,11 @@ const PRODUCTS = [
       "input_aperture": "5-30mm",
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
-    }
+    },
+    "price": 250,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 26,
@@ -521,7 +621,11 @@ const PRODUCTS = [
       "working_distance": "0.1-10mm",
       "thread": "RMS / M25 / Custom",
       "correction": "Achromatic / Plan Achromatic"
-    }
+    },
+    "price": 180,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 27,
@@ -538,7 +642,11 @@ const PRODUCTS = [
       "numerical_aperture": "Up to 0.80",
       "surface_quality": "40-20",
       "coating": "AR coating available"
-    }
+    },
+    "price": 40,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 28,
@@ -555,7 +663,11 @@ const PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20",
       "damage_threshold": ">20 J/cm² (10ns)"
-    }
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 29,
@@ -572,7 +684,11 @@ const PRODUCTS = [
       "reflectivity": ">99.5% at each wavelength",
       "surface_flatness": "λ/10@632.8nm",
       "surface_quality": "20-10"
-    }
+    },
+    "price": 65,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 30,
@@ -590,7 +706,11 @@ const PRODUCTS = [
       "surface_flatness": "λ/10@632.8nm",
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
-    }
+    },
+    "price": 40,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 31,
@@ -607,7 +727,11 @@ const PRODUCTS = [
       "coating": "Al + SiO2 / Ag + SiO2 / Au",
       "reflectivity": ">90% (Al) / >95% (Ag) / >98% (Au)",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 32,
@@ -624,7 +748,11 @@ const PRODUCTS = [
       "transmittance": "5-30% (at laser wavelength)",
       "surface_flatness": "λ/10@632.8nm",
       "damage_threshold": ">15 J/cm² (10ns)"
-    }
+    },
+    "price": 85,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 33,
@@ -641,7 +769,11 @@ const PRODUCTS = [
       "reflectivity": ">95% (design wavelength)",
       "transmittance": ">90% (other wavelengths)",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 34,
@@ -658,7 +790,11 @@ const PRODUCTS = [
       "coating": "Al + SiO2 (enhanced)",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 35,
@@ -675,7 +811,11 @@ const PRODUCTS = [
       "coating": "Au + SiO2 protective",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 60,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 36,
@@ -692,7 +832,11 @@ const PRODUCTS = [
       "coating": "Al + SiO2 protective",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 37,
@@ -709,7 +853,11 @@ const PRODUCTS = [
       "coating": "Ag + SiO2 protective",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 38,
@@ -726,7 +874,11 @@ const PRODUCTS = [
       "retardation": "λ/2 / λ/4",
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
-    }
+    },
+    "price": 95,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 39,
@@ -743,7 +895,11 @@ const PRODUCTS = [
       "retardation": "λ/2 / λ/4",
       "surface_quality": "40-20",
       "damage_threshold": ">5 J/cm² (10ns)"
-    }
+    },
+    "price": 65,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 40,
@@ -760,7 +916,11 @@ const PRODUCTS = [
       "retardation": "λ/2 / λ/4 (multi-order)",
       "surface_quality": "40-20",
       "damage_threshold": ">3 J/cm² (10ns)"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 41,
@@ -777,7 +937,11 @@ const PRODUCTS = [
       "extinction_ratio": ">100:1",
       "peak_transmittance": ">30% (circular)",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 85,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 42,
@@ -794,7 +958,11 @@ const PRODUCTS = [
       "extinction_ratio": ">10^5:1",
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
-    }
+    },
+    "price": 120,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 43,
@@ -811,7 +979,11 @@ const PRODUCTS = [
       "extinction_ratio": ">10^5:1",
       "surface_quality": "40-20",
       "damage_threshold": ">5 J/cm² (10ns)"
-    }
+    },
+    "price": 95,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 44,
@@ -827,7 +999,11 @@ const PRODUCTS = [
       "transmittance": ">85%",
       "aperture": "2-5mm",
       "damage_threshold": ">5 J/cm² (10ns)"
-    }
+    },
+    "price": 350,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 45,
@@ -844,7 +1020,11 @@ const PRODUCTS = [
       "extinction_ratio": ">1000:1",
       "peak_transmittance": ">42% (polarized)",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 46,
@@ -861,7 +1041,11 @@ const PRODUCTS = [
       "extinction_ratio": ">10^4:1",
       "beam_separation": "0.5-3°",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 85,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 47,
@@ -878,7 +1062,11 @@ const PRODUCTS = [
       "rotation_angle": "0-90° (customizable)",
       "extinction_ratio": ">500:1",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 75,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 48,
@@ -895,7 +1083,11 @@ const PRODUCTS = [
       "retardation": "λ/2 / λ/4",
       "surface_quality": "40-20",
       "damage_threshold": ">5 J/cm² (10ns)"
-    }
+    },
+    "price": 100,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 49,
@@ -912,7 +1104,11 @@ const PRODUCTS = [
       "angle_tolerance": "±30 arcsec",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 50,
@@ -928,7 +1124,11 @@ const PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm",
       "beam_deviation": "<3 arcmin"
-    }
+    },
+    "price": 30,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 51,
@@ -944,7 +1144,11 @@ const PRODUCTS = [
       "apex_angle": "60° (±30 arcsec)",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 52,
@@ -959,7 +1163,11 @@ const PRODUCTS = [
       "aperture": "10-30mm",
       "angle_tolerance": "±30 arcsec",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 53,
@@ -975,7 +1183,11 @@ const PRODUCTS = [
       "wedge_angle": "1-10°",
       "angle_tolerance": "±30 arcsec",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 54,
@@ -991,7 +1203,11 @@ const PRODUCTS = [
       "angle_tolerance": "±30 arcsec",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 55,
@@ -1007,7 +1223,11 @@ const PRODUCTS = [
       "angle_tolerance": "±30 arcsec",
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
-    }
+    },
+    "price": 22,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 56,
@@ -1023,7 +1243,11 @@ const PRODUCTS = [
       "length": "10-100mm",
       "surface_quality": "40-20",
       "numerical_aperture": "Up to 0.50"
-    }
+    },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 57,
@@ -1040,7 +1264,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "20-10",
       "coating": "Uncoated / AR coating"
-    }
+    },
+    "price": 30,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 58,
@@ -1057,7 +1285,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "20-10",
       "coating": "Uncoated / AR coating"
-    }
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 59,
@@ -1074,7 +1306,11 @@ const PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "surface_quality": "20-10",
       "coating": "Uncoated / AR coating"
-    }
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 60,
@@ -1091,7 +1327,11 @@ const PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20",
       "parallelism": "<3 arcmin"
-    }
+    },
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 61,
@@ -1108,7 +1348,11 @@ const PRODUCTS = [
       "wavelength_range": "1.2-8000nm",
       "surface_flatness": "λ/2@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 62,
@@ -1125,7 +1369,11 @@ const PRODUCTS = [
       "wavelength_range": "180nm-8μm",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 65,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 63,
@@ -1143,7 +1391,11 @@ const PRODUCTS = [
       "surface_flatness": "λ/2@632.8nm",
       "surface_quality": "40-20",
       "coating": "AR coating available"
-    }
+    },
+    "price": 75,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 64,
@@ -1160,7 +1412,11 @@ const PRODUCTS = [
       "wavelength_range": "150nm-4.5μm",
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
-    }
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 65,
@@ -1178,7 +1434,11 @@ const PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20",
       "damage_threshold": ">10 J/cm² (10ns, 10.6μm)"
-    }
+    },
+    "price": 85,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   },
   {
     "id": 66,
@@ -1196,12 +1456,16 @@ const PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20",
       "parallelism": "<3 arcmin"
-    }
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
   }
 ];
 
 // Category to first product image mapping for homepage categories
-const CATEGORY_IMAGES = {
+var CATEGORY_IMAGES = {
     "Optical Ball Lenses": "images/products/optical-ball-lenses/uv-fused-silica-ball-lenses.jpg",
     "Optical Beamsplitters": "images/products/optical-beamsplitters/beamsplitter-plate.jpg",
     "Optical Cylindrical Lenses": "images/products/optical-cylindrical-lenses/uv-fused-silica-plano-concave-cylindrical-lenses.jpg",

@@ -224,7 +224,39 @@ var translations = {
         // Part Numbers
         partNumbersTitle: "Part Numbers & Specifications",
         // WhatsApp
-        whatsappTooltip: "Chat with us"
+        whatsappTooltip: "Chat with us",
+        // Cart
+        cartTitle: "Shopping Cart",
+        cartEmpty: "Your cart is empty",
+        cartEmptyDesc: "Add products to your cart to get started.",
+        browseProducts: "Browse Products",
+        cartItem: "Item",
+        cartPrice: "Price",
+        cartQuantity: "Quantity",
+        cartSubtotal: "Subtotal",
+        cartTotal: "Estimated Total",
+        cartRemove: "Remove",
+        addToCart: "Add to Cart",
+        addedToCart: "Added to cart!",
+        submitRFQ: "Submit RFQ",
+        continueShopping: "Continue Shopping",
+        priceNote: "* Prices shown are reference prices. Final pricing subject to volume and specification confirmation.",
+        startingAt: "Starting at",
+        from: "From",
+        selectPartNumber: "Select Part Number",
+        rfqName: "Your Name",
+        rfqEmail: "Email",
+        rfqCompany: "Company",
+        rfqPhone: "Phone",
+        rfqCountry: "Country",
+        rfqMessage: "Additional Notes",
+        rfqSuccessTitle: "Thank You!",
+        rfqSuccess: "Thank you! Your RFQ has been submitted. We'll respond within 24 hours.",
+        rfqFormIntro: "Please fill out the form below and we'll respond within 24 hours.",
+        cartItemsSummary: "Items in Cart",
+        cartSummary: "Order Summary",
+        perUnit: "per unit",
+        backToCart: "Back to Cart"
     },
     zh: {
         navHome: "首页",
@@ -448,7 +480,39 @@ var translations = {
         // Part Numbers
         partNumbersTitle: "产品型号与规格",
         // WhatsApp
-        whatsappTooltip: "在线咨询"
+        whatsappTooltip: "在线咨询",
+        // Cart
+        cartTitle: "购物车",
+        cartEmpty: "购物车为空",
+        cartEmptyDesc: "将产品添加到购物车开始。",
+        browseProducts: "浏览产品",
+        cartItem: "商品",
+        cartPrice: "价格",
+        cartQuantity: "数量",
+        cartSubtotal: "小计",
+        cartTotal: "参考总价",
+        cartRemove: "删除",
+        addToCart: "加入购物车",
+        addedToCart: "已加入购物车！",
+        submitRFQ: "提交询价单",
+        continueShopping: "继续浏览",
+        priceNote: "* 以上为参考价格，最终价格以批量及规格确认为准。",
+        startingAt: "起售价",
+        from: "从",
+        selectPartNumber: "选择型号",
+        rfqName: "您的姓名",
+        rfqEmail: "邮箱",
+        rfqCompany: "公司",
+        rfqPhone: "电话",
+        rfqCountry: "国家",
+        rfqMessage: "补充说明",
+        rfqSuccessTitle: "感谢！",
+        rfqSuccess: "感谢！您的询价单已提交，我们将在24小时内回复。",
+        rfqFormIntro: "请填写以下表单，我们将在24小时内回复。",
+        cartItemsSummary: "购物车商品",
+        cartSummary: "订单摘要",
+        perUnit: "单价",
+        backToCart: "返回购物车"
     }
 };
 
