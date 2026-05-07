@@ -1,5 +1,4 @@
-// PhotonEdge Products Data
-// Total: 66 products - Enhanced with detailed specifications and pricing
+ // PhotonEdge Products Data
 
 const PRODUCTS = [
   {
@@ -41,16 +40,66 @@ const PRODUCTS = [
       "coatings": "One side: dielectric partial reflection; other side: AR coating"
     },
     "partNumbers": [
-      {"partNumber": "LOBP12.7-450/650", "dimension": "Φ12.7×3.0mm", "wavelength": "450-650nm", "price": 35},
-      {"partNumber": "LOBP20.0-450/650", "dimension": "Φ20.0×3.0mm", "wavelength": "450-650nm", "price": 45},
-      {"partNumber": "LOBP25.4-450/650", "dimension": "Φ25.4×3.0mm", "wavelength": "450-650nm", "price": 55},
-      {"partNumber": "LOBP50.8-450/650", "dimension": "Φ50.8×3.0mm", "wavelength": "450-650nm", "price": 75},
-      {"partNumber": "LOBP12.7-650/900", "dimension": "Φ12.7×3.0mm", "wavelength": "650-900nm", "price": 38},
-      {"partNumber": "LOBP25.4-650/900", "dimension": "Φ25.4×3.0mm", "wavelength": "650-900nm", "price": 58},
-      {"partNumber": "LOBP50.8-650/900", "dimension": "Φ50.8×3.0mm", "wavelength": "650-900nm", "price": 78},
-      {"partNumber": "LOBP12.7-900/1200", "dimension": "Φ12.7×3.0mm", "wavelength": "900-1200nm", "price": 40},
-      {"partNumber": "LOBP25.4-900/1200", "dimension": "Φ25.4×3.0mm", "wavelength": "900-1200nm", "price": 60},
-      {"partNumber": "LOBP50.8-900/1200", "dimension": "Φ50.8×3.0mm", "wavelength": "900-1200nm", "price": 85}
+      {
+        "partNumber": "LOBP12.7-450/650",
+        "dimension": "Φ12.7×3.0mm",
+        "wavelength": "450-650nm",
+        "price": 35
+      },
+      {
+        "partNumber": "LOBP20.0-450/650",
+        "dimension": "Φ20.0×3.0mm",
+        "wavelength": "450-650nm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOBP25.4-450/650",
+        "dimension": "Φ25.4×3.0mm",
+        "wavelength": "450-650nm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOBP50.8-450/650",
+        "dimension": "Φ50.8×3.0mm",
+        "wavelength": "450-650nm",
+        "price": 75
+      },
+      {
+        "partNumber": "LOBP12.7-650/900",
+        "dimension": "Φ12.7×3.0mm",
+        "wavelength": "650-900nm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOBP25.4-650/900",
+        "dimension": "Φ25.4×3.0mm",
+        "wavelength": "650-900nm",
+        "price": 58
+      },
+      {
+        "partNumber": "LOBP50.8-650/900",
+        "dimension": "Φ50.8×3.0mm",
+        "wavelength": "650-900nm",
+        "price": 78
+      },
+      {
+        "partNumber": "LOBP12.7-900/1200",
+        "dimension": "Φ12.7×3.0mm",
+        "wavelength": "900-1200nm",
+        "price": 40
+      },
+      {
+        "partNumber": "LOBP25.4-900/1200",
+        "dimension": "Φ25.4×3.0mm",
+        "wavelength": "900-1200nm",
+        "price": 60
+      },
+      {
+        "partNumber": "LOBP50.8-900/1200",
+        "dimension": "Φ50.8×3.0mm",
+        "wavelength": "900-1200nm",
+        "price": 85
+      }
     ],
     "price": 35,
     "priceUnit": "USD",
@@ -98,7 +147,51 @@ const PRODUCTS = [
     "price": 45,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LONPB-12.7-532",
+        "dimension": "12.7x12.7x12.7mm",
+        "wavelength": "532nm",
+        "price": 65
+      },
+      {
+        "partNumber": "LONPB-20-532",
+        "dimension": "20x20x20mm",
+        "wavelength": "532nm",
+        "price": 85
+      },
+      {
+        "partNumber": "LONPB-25.4-532",
+        "dimension": "25.4x25.4x25.4mm",
+        "wavelength": "532nm",
+        "price": 105
+      },
+      {
+        "partNumber": "LONPB-12.7-633",
+        "dimension": "12.7x12.7x12.7mm",
+        "wavelength": "633nm",
+        "price": 65
+      },
+      {
+        "partNumber": "LONPB-25.4-633",
+        "dimension": "25.4x25.4x25.4mm",
+        "wavelength": "633nm",
+        "price": 105
+      },
+      {
+        "partNumber": "LONPB-12.7-1064",
+        "dimension": "12.7x12.7x12.7mm",
+        "wavelength": "1064nm",
+        "price": 68
+      },
+      {
+        "partNumber": "LONPB-25.4-1064",
+        "dimension": "25.4x25.4x25.4mm",
+        "wavelength": "1064nm",
+        "price": 108
+      }
+    ]
   },
   {
     "id": 5,
@@ -119,16 +212,66 @@ const PRODUCTS = [
       "coatings": "Cemented face: dielectric; entry/exit faces: AR coating"
     },
     "partNumbers": [
-      {"partNumber": "LOCBS10-532", "dimension": "10.0×10.0×10.0mm", "wavelength": "532nm", "price": 55},
-      {"partNumber": "LOCBS12.7-532", "dimension": "12.7×12.7×12.7mm", "wavelength": "532nm", "price": 65},
-      {"partNumber": "LOCBS20-532", "dimension": "20.0×20.0×20.0mm", "wavelength": "532nm", "price": 85},
-      {"partNumber": "LOCBS10-633", "dimension": "10.0×10.0×10.0mm", "wavelength": "633nm", "price": 55},
-      {"partNumber": "LOCBS12.7-633", "dimension": "12.7×12.7×12.7mm", "wavelength": "633nm", "price": 65},
-      {"partNumber": "LOCBS20-633", "dimension": "20.0×20.0×20.0mm", "wavelength": "633nm", "price": 85},
-      {"partNumber": "LOCBS10-1064", "dimension": "10.0×10.0×10.0mm", "wavelength": "1064nm", "price": 50},
-      {"partNumber": "LOCBS12.7-1064", "dimension": "12.7×12.7×12.7mm", "wavelength": "1064nm", "price": 60},
-      {"partNumber": "LOCBS20-1064", "dimension": "20.0×20.0×20.0mm", "wavelength": "1064nm", "price": 80},
-      {"partNumber": "LOCBS25.4-1064", "dimension": "25.4×25.4×25.4mm", "wavelength": "1064nm", "price": 105}
+      {
+        "partNumber": "LOCBS10-532",
+        "dimension": "10.0×10.0×10.0mm",
+        "wavelength": "532nm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOCBS12.7-532",
+        "dimension": "12.7×12.7×12.7mm",
+        "wavelength": "532nm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOCBS20-532",
+        "dimension": "20.0×20.0×20.0mm",
+        "wavelength": "532nm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOCBS10-633",
+        "dimension": "10.0×10.0×10.0mm",
+        "wavelength": "633nm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOCBS12.7-633",
+        "dimension": "12.7×12.7×12.7mm",
+        "wavelength": "633nm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOCBS20-633",
+        "dimension": "20.0×20.0×20.0mm",
+        "wavelength": "633nm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOCBS10-1064",
+        "dimension": "10.0×10.0×10.0mm",
+        "wavelength": "1064nm",
+        "price": 50
+      },
+      {
+        "partNumber": "LOCBS12.7-1064",
+        "dimension": "12.7×12.7×12.7mm",
+        "wavelength": "1064nm",
+        "price": 60
+      },
+      {
+        "partNumber": "LOCBS20-1064",
+        "dimension": "20.0×20.0×20.0mm",
+        "wavelength": "1064nm",
+        "price": 80
+      },
+      {
+        "partNumber": "LOCBS25.4-1064",
+        "dimension": "25.4×25.4×25.4mm",
+        "wavelength": "1064nm",
+        "price": 105
+      }
     ],
     "price": 55,
     "priceUnit": "USD",
@@ -218,7 +361,57 @@ const PRODUCTS = [
     "price": 55,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LORVF01",
+        "odRange": "0.0-1.0",
+        "diameter": "25.00mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LORVF03",
+        "odRange": "0.0-1.0",
+        "diameter": "50.00mm",
+        "price": 120
+      },
+      {
+        "partNumber": "LORVF04",
+        "odRange": "0.0-1.5",
+        "diameter": "25.00mm",
+        "price": 90
+      },
+      {
+        "partNumber": "LORVF05",
+        "odRange": "0.0-1.5",
+        "diameter": "50.00mm",
+        "price": 130
+      },
+      {
+        "partNumber": "LORVF06",
+        "odRange": "0.0-2.0",
+        "diameter": "25.00mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LORVF07",
+        "odRange": "0.0-2.0",
+        "diameter": "50.00mm",
+        "price": 140
+      },
+      {
+        "partNumber": "LORVF08",
+        "odRange": "0.0-3.0",
+        "diameter": "25.00mm",
+        "price": 105
+      },
+      {
+        "partNumber": "LORVF09",
+        "odRange": "0.0-3.0",
+        "diameter": "50.00mm",
+        "price": 155
+      }
+    ]
   },
   {
     "id": 10,
@@ -259,7 +452,107 @@ const PRODUCTS = [
     "price": 20,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOFNF1-12.7",
+        "diameter": "12.7mm",
+        "od": "1.0",
+        "transmittance": "10%",
+        "price": 18
+      },
+      {
+        "partNumber": "LOFNF2-12.7",
+        "diameter": "12.7mm",
+        "od": "2.0",
+        "transmittance": "1.0%",
+        "price": 20
+      },
+      {
+        "partNumber": "LOFNF3-12.7",
+        "diameter": "12.7mm",
+        "od": "3.0",
+        "transmittance": "0.1%",
+        "price": 22
+      },
+      {
+        "partNumber": "LOFNF4-12.7",
+        "diameter": "12.7mm",
+        "od": "4.0",
+        "transmittance": "0.01%",
+        "price": 25
+      },
+      {
+        "partNumber": "LOFNF0.1-25.4",
+        "diameter": "25.4mm",
+        "od": "0.1",
+        "transmittance": "79%",
+        "price": 22
+      },
+      {
+        "partNumber": "LOFNF0.2-25.4",
+        "diameter": "25.4mm",
+        "od": "0.2",
+        "transmittance": "63%",
+        "price": 22
+      },
+      {
+        "partNumber": "LOFNF0.3-25.4",
+        "diameter": "25.4mm",
+        "od": "0.3",
+        "transmittance": "50%",
+        "price": 24
+      },
+      {
+        "partNumber": "LOFNF0.4-25.4",
+        "diameter": "25.4mm",
+        "od": "0.4",
+        "transmittance": "39.8%",
+        "price": 24
+      },
+      {
+        "partNumber": "LOFNF0.5-25.4",
+        "diameter": "25.4mm",
+        "od": "0.5",
+        "transmittance": "32%",
+        "price": 25
+      },
+      {
+        "partNumber": "LOFNF0.8-25.4",
+        "diameter": "25.4mm",
+        "od": "0.8",
+        "transmittance": "15.8%",
+        "price": 26
+      },
+      {
+        "partNumber": "LOFNF1-25.4",
+        "diameter": "25.4mm",
+        "od": "1.0",
+        "transmittance": "10%",
+        "price": 28
+      },
+      {
+        "partNumber": "LOFNF1.5-25.4",
+        "diameter": "25.4mm",
+        "od": "1.5",
+        "transmittance": "3.2%",
+        "price": 30
+      },
+      {
+        "partNumber": "LOFNF2-25.4",
+        "diameter": "25.4mm",
+        "od": "2.0",
+        "transmittance": "1%",
+        "price": 32
+      },
+      {
+        "partNumber": "LOFNF3-25.4",
+        "diameter": "25.4mm",
+        "od": "3.0",
+        "transmittance": "0.1%",
+        "price": 35
+      }
+    ]
   },
   {
     "id": 12,
@@ -361,7 +654,275 @@ const PRODUCTS = [
     "price": 55,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOADL5-7.5",
+        "diameter": "5.00mm",
+        "focalLength": "7.50mm",
+        "centerThickness": "4.50mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOADL5-10",
+        "diameter": "5.00mm",
+        "focalLength": "10.00mm",
+        "centerThickness": "4.40mm",
+        "price": 68
+      },
+      {
+        "partNumber": "LOADL5-15",
+        "diameter": "5.00mm",
+        "focalLength": "15.00mm",
+        "centerThickness": "4.80mm",
+        "price": 70
+      },
+      {
+        "partNumber": "LOADL6-10",
+        "diameter": "6.00mm",
+        "focalLength": "10.00mm",
+        "centerThickness": "4.00mm",
+        "price": 72
+      },
+      {
+        "partNumber": "LOADL6.25-20",
+        "diameter": "6.25mm",
+        "focalLength": "20.00mm",
+        "centerThickness": "3.60mm",
+        "price": 75
+      },
+      {
+        "partNumber": "LOADL6.25-25",
+        "diameter": "6.25mm",
+        "focalLength": "25.00mm",
+        "centerThickness": "3.20mm",
+        "price": 78
+      },
+      {
+        "partNumber": "LOADL6.25-30",
+        "diameter": "6.25mm",
+        "focalLength": "30.00mm",
+        "centerThickness": "3.20mm",
+        "price": 78
+      },
+      {
+        "partNumber": "LOADL8-20",
+        "diameter": "8.00mm",
+        "focalLength": "20.00mm",
+        "centerThickness": "4.00mm",
+        "price": 82
+      },
+      {
+        "partNumber": "LOADL9-27",
+        "diameter": "9.00mm",
+        "focalLength": "27.00mm",
+        "centerThickness": "5.19mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOADL9-36",
+        "diameter": "9.00mm",
+        "focalLength": "36.00mm",
+        "centerThickness": "4.00mm",
+        "price": 88
+      },
+      {
+        "partNumber": "LOADL9-40",
+        "diameter": "9.00mm",
+        "focalLength": "40.00mm",
+        "centerThickness": "5.06mm",
+        "price": 90
+      },
+      {
+        "partNumber": "LOADL9-45",
+        "diameter": "9.00mm",
+        "focalLength": "45.00mm",
+        "centerThickness": "4.30mm",
+        "price": 92
+      },
+      {
+        "partNumber": "LOADL9-75",
+        "diameter": "9.00mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "4.60mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LOADL12.5-40",
+        "diameter": "12.50mm",
+        "focalLength": "40.00mm",
+        "centerThickness": "5.06mm",
+        "price": 98
+      },
+      {
+        "partNumber": "LOADL12.5-45",
+        "diameter": "12.50mm",
+        "focalLength": "45.00mm",
+        "centerThickness": "5.00mm",
+        "price": 100
+      },
+      {
+        "partNumber": "LOADL12.5-50",
+        "diameter": "12.50mm",
+        "focalLength": "50.00mm",
+        "centerThickness": "5.00mm",
+        "price": 102
+      },
+      {
+        "partNumber": "LOADL12.5-60",
+        "diameter": "12.50mm",
+        "focalLength": "60.00mm",
+        "centerThickness": "5.00mm",
+        "price": 105
+      },
+      {
+        "partNumber": "LOADL12.5-75",
+        "diameter": "12.50mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "4.60mm",
+        "price": 108
+      },
+      {
+        "partNumber": "LOADL12.5-80",
+        "diameter": "12.50mm",
+        "focalLength": "80.00mm",
+        "centerThickness": "3.70mm",
+        "price": 110
+      },
+      {
+        "partNumber": "LOADL12.5-90",
+        "diameter": "12.50mm",
+        "focalLength": "90.00mm",
+        "centerThickness": "3.58mm",
+        "price": 115
+      },
+      {
+        "partNumber": "LOADL12.5-100",
+        "diameter": "12.50mm",
+        "focalLength": "100.00mm",
+        "centerThickness": "4.50mm",
+        "price": 118
+      },
+      {
+        "partNumber": "LOADL12.7-25",
+        "diameter": "12.70mm",
+        "focalLength": "25.00mm",
+        "centerThickness": "5.60mm",
+        "price": 105
+      },
+      {
+        "partNumber": "LOADL12.7-30",
+        "diameter": "12.70mm",
+        "focalLength": "30.00mm",
+        "centerThickness": "5.30mm",
+        "price": 108
+      },
+      {
+        "partNumber": "LOADL12.7-40",
+        "diameter": "12.70mm",
+        "focalLength": "40.00mm",
+        "centerThickness": "4.70mm",
+        "price": 112
+      },
+      {
+        "partNumber": "LOADL12.7-50",
+        "diameter": "12.70mm",
+        "focalLength": "50.00mm",
+        "centerThickness": "4.40mm",
+        "price": 115
+      },
+      {
+        "partNumber": "LOADL12.7-60",
+        "diameter": "12.70mm",
+        "focalLength": "60.00mm",
+        "centerThickness": "4.10mm",
+        "price": 118
+      },
+      {
+        "partNumber": "LOADL12.7-75",
+        "diameter": "12.70mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "3.90mm",
+        "price": 122
+      },
+      {
+        "partNumber": "LOADL15-50",
+        "diameter": "15.00mm",
+        "focalLength": "50.00mm",
+        "centerThickness": "6.50mm",
+        "price": 135
+      },
+      {
+        "partNumber": "LOADL15-75",
+        "diameter": "15.00mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "7.50mm",
+        "price": 145
+      },
+      {
+        "partNumber": "LOADL18-80",
+        "diameter": "18.00mm",
+        "focalLength": "80.00mm",
+        "centerThickness": "7.50mm",
+        "price": 155
+      },
+      {
+        "partNumber": "LOADL18-125",
+        "diameter": "18.00mm",
+        "focalLength": "125.00mm",
+        "centerThickness": "6.50mm",
+        "price": 165
+      },
+      {
+        "partNumber": "LOADL20-60",
+        "diameter": "20.00mm",
+        "focalLength": "60.00mm",
+        "centerThickness": "7.00mm",
+        "price": 165
+      },
+      {
+        "partNumber": "LOADL25-75",
+        "diameter": "25.00mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "9.50mm",
+        "price": 185
+      },
+      {
+        "partNumber": "LOADL25-100",
+        "diameter": "25.00mm",
+        "focalLength": "100.00mm",
+        "centerThickness": "8.50mm",
+        "price": 195
+      },
+      {
+        "partNumber": "LOADL25.4-40",
+        "diameter": "25.40mm",
+        "focalLength": "40.00mm",
+        "centerThickness": "12.50mm",
+        "price": 195
+      },
+      {
+        "partNumber": "LOADL25.4-60",
+        "diameter": "25.40mm",
+        "focalLength": "60.00mm",
+        "centerThickness": "10.50mm",
+        "price": 205
+      },
+      {
+        "partNumber": "LOADL25.4-75",
+        "diameter": "25.40mm",
+        "focalLength": "75.00mm",
+        "centerThickness": "9.50mm",
+        "price": 215
+      },
+      {
+        "partNumber": "LOADL25.4-100",
+        "diameter": "25.40mm",
+        "focalLength": "100.00mm",
+        "centerThickness": "6.50mm",
+        "price": 225
+      }
+    ]
   },
   {
     "id": 17,
@@ -385,14 +946,14 @@ const PRODUCTS = [
   },
   {
     "id": 18,
-    "name": "BK7 & UV Fused Silica Double Concave Lenses",
-    "nameZh": "BK7与UV熔融石英双凹透镜",
+    "name": "BK7 Double Concave Lenses",
+    "nameZh": "BK7双凹透镜",
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
-    "description": "Bi-concave lenses have a negative focal length and are primarily used for diverging parallel light and forming virtual images. Available in both standard BK7 for visible applications and UV-grade fused silica for UV and high-power laser applications. We can provide various specifications of bi-concave lenses. Please contact us for inquiries.",
-    "image": "images/products/optical-lenses/bk7-and-uv-fused-silica-double-concave-lenses.jpg",
+    "description": "Bi-concave lenses made from BK7 glass have a negative focal length and are primarily used for diverging parallel light and forming virtual images. Ideal for visible light applications. Various specifications available.",
+    "image": "images/products/optical-lenses/bk7-uv-fused-silica-double-concave-lenses.jpg",
     "parameters": {
-      "material": "K9/BK7 or Fused Silica (JGS1)",
+      "material": "K9 (BK7)",
       "diameter_tolerance": "±0.15mm",
       "thickness_tolerance": "±0.10mm",
       "focal_length_tolerance": "±1%",
@@ -401,16 +962,277 @@ const PRODUCTS = [
       "centration": "<3 arc min",
       "clear_aperture": ">90%",
       "beveling": "0.25mm × 45°",
+      "coatings": "Uncoated / AR coating available",
+      "wavelength_range": "400-700nm"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LOBCCB6.35-12.5",
+        "diameter": "6.35mm",
+        "focalLength": "-12.50mm",
+        "centerThickness": "2.50mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOBCCB12.7-15",
+        "diameter": "12.70mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.30mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOBCCB12.7-20",
+        "diameter": "12.70mm",
+        "focalLength": "-20.00mm",
+        "centerThickness": "2.00mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOBCCB12.7-25",
+        "diameter": "12.70mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.50mm",
+        "price": 30
+      },
+      {
+        "partNumber": "LOBCCB12.7-30",
+        "diameter": "12.70mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.70mm",
+        "price": 30
+      },
+      {
+        "partNumber": "LOBCCB12.7-40",
+        "diameter": "12.70mm",
+        "focalLength": "-40.00mm",
+        "centerThickness": "2.00mm",
+        "price": 32
+      },
+      {
+        "partNumber": "LOBCCB12.7-50",
+        "diameter": "12.70mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "3.50mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LOBCCB12.7-75",
+        "diameter": "12.70mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "2.50mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOBCCB25.4-50",
+        "diameter": "25.40mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "3.00mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOBCCB25.4-75",
+        "diameter": "25.40mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "3.50mm",
+        "price": 50
+      },
+      {
+        "partNumber": "LOBCCB25.4-100",
+        "diameter": "25.40mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "4.00mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOBCCB25.4-150",
+        "diameter": "25.40mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.50mm",
+        "price": 58
+      },
+      {
+        "partNumber": "LOBCCB25.4-200",
+        "diameter": "25.40mm",
+        "focalLength": "-200.00mm",
+        "centerThickness": "2.50mm",
+        "price": 60
+      },
+      {
+        "partNumber": "LOBCCB30-50",
+        "diameter": "30.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "price": 60
+      },
+      {
+        "partNumber": "LOBCCB30-60",
+        "diameter": "30.00mm",
+        "focalLength": "-60.00mm",
+        "centerThickness": "2.00mm",
+        "price": 62
+      },
+      {
+        "partNumber": "LOBCCB30-70",
+        "diameter": "30.00mm",
+        "focalLength": "-70.00mm",
+        "centerThickness": "2.00mm",
+        "price": 64
+      },
+      {
+        "partNumber": "LOBCCB30-80",
+        "diameter": "30.00mm",
+        "focalLength": "-80.00mm",
+        "centerThickness": "2.00mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOBCCB50.8-75",
+        "diameter": "50.80mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "2.50mm",
+        "price": 80
+      },
+      {
+        "partNumber": "LOBCCB50.8-100",
+        "diameter": "50.80mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "2.50mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOBCCB50.8-150",
+        "diameter": "50.80mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.50mm",
+        "price": 90
+      },
+      {
+        "partNumber": "LOBCCB50.8-200",
+        "diameter": "50.80mm",
+        "focalLength": "-200.00mm",
+        "centerThickness": "2.50mm",
+        "price": 95
+      }
+    ],
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 67,
+    "name": "UV Fused Silica Double Concave Lenses",
+    "nameZh": "UV熔融石英双凹透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "UV Fused Silica bi-concave lenses offer superior transmittance from UV to near-IR (185-2500nm) with low thermal expansion coefficient. Ideal for UV and high-power laser applications.",
+    "image": "images/products/optical-spherical-lenses/uv-fused-silica-double-concave-lenses.jpg",
+    "parameters": {
+      "material": "Fused Silica (JGS1)",
+      "diameter_tolerance": "±0.15mm",
+      "thickness_tolerance": "±0.10mm",
+      "focal_length_tolerance": "±1%",
+      "surface_quality": "40-20",
+      "surface_flatness": "λ/4 @ 632.8nm",
+      "centration": "<3 arc min",
+      "clear_aperture": ">90%",
+      "wavelength_range": "185-2500nm",
       "coatings": "Uncoated / AR coating available"
     },
     "partNumbers": [
-      {"partNumber": "LOBCCB6.35-12.5", "diameter": "6.35mm", "focalLength": "-12.50mm", "centerThickness": "2.50mm", "price": 25},
-      {"partNumber": "LOBCCB12.7-15", "diameter": "12.70mm", "focalLength": "-15.00mm", "centerThickness": "2.30mm", "price": 28},
-      {"partNumber": "LOBCCB12.7-25", "diameter": "12.70mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 28},
-      {"partNumber": "LOBCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm", "price": 30},
-      {"partNumber": "LOBCCB25.4-50", "diameter": "25.40mm", "focalLength": "-50.00mm", "centerThickness": "3.00mm", "price": 38}
+      {
+        "partNumber": "LOBCCU6.35-12.5",
+        "diameter": "6.35mm",
+        "focalLength": "-12.50mm",
+        "centerThickness": "2.50mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LOBCCU12.7-15",
+        "diameter": "12.70mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.30mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOBCCU12.7-20",
+        "diameter": "12.70mm",
+        "focalLength": "-20.00mm",
+        "centerThickness": "2.00mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOBCCU12.7-25",
+        "diameter": "12.70mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.50mm",
+        "price": 42
+      },
+      {
+        "partNumber": "LOBCCU12.7-30",
+        "diameter": "12.70mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.70mm",
+        "price": 42
+      },
+      {
+        "partNumber": "LOBCCU12.7-40",
+        "diameter": "12.70mm",
+        "focalLength": "-40.00mm",
+        "centerThickness": "2.00mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOBCCU12.7-50",
+        "diameter": "12.70mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "3.50mm",
+        "price": 48
+      },
+      {
+        "partNumber": "LOBCCU25.4-50",
+        "diameter": "25.40mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "3.00mm",
+        "price": 60
+      },
+      {
+        "partNumber": "LOBCCU25.4-75",
+        "diameter": "25.40mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "3.50mm",
+        "price": 68
+      },
+      {
+        "partNumber": "LOBCCU25.4-100",
+        "diameter": "25.40mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "4.00mm",
+        "price": 75
+      },
+      {
+        "partNumber": "LOBCCU50.8-75",
+        "diameter": "50.80mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "2.50mm",
+        "price": 110
+      },
+      {
+        "partNumber": "LOBCCU50.8-100",
+        "diameter": "50.80mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "2.50mm",
+        "price": 118
+      },
+      {
+        "partNumber": "LOBCCU50.8-150",
+        "diameter": "50.80mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.50mm",
+        "price": 125
+      }
     ],
-    "price": 25,
+    "price": 35,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价"
@@ -436,16 +1258,76 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOBCXB6-6", "diameter": "6.00mm", "focalLength": "6.00mm", "centerThickness": "2.50mm", "price": 18},
-      {"partNumber": "LOBCXB6-10", "diameter": "6.00mm", "focalLength": "10.00mm", "centerThickness": "2.40mm", "price": 18},
-      {"partNumber": "LOBCXB9-12", "diameter": "9.00mm", "focalLength": "12.00mm", "centerThickness": "3.60mm", "price": 20},
-      {"partNumber": "LOBCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "4.10mm", "price": 22},
-      {"partNumber": "LOBCXB12.7-15", "diameter": "12.70mm", "focalLength": "15.00mm", "centerThickness": "4.70mm", "price": 25},
-      {"partNumber": "LOBCXB12.7-20", "diameter": "12.70mm", "focalLength": "20.00mm", "centerThickness": "3.88mm", "price": 25},
-      {"partNumber": "LOBCXB12.7-30", "diameter": "12.70mm", "focalLength": "30.00mm", "centerThickness": "3.14mm", "price": 25},
-      {"partNumber": "LOBCXB15-25", "diameter": "15.00mm", "focalLength": "25.00mm", "centerThickness": "4.80mm", "price": 30},
-      {"partNumber": "LOBCXB20-45", "diameter": "20.00mm", "focalLength": "45.00mm", "centerThickness": "8.00mm", "price": 38},
-      {"partNumber": "LOBCXB25.4-50", "diameter": "25.40mm", "focalLength": "50.00mm", "centerThickness": "5.24mm", "price": 42}
+      {
+        "partNumber": "LOBCXB6-6",
+        "diameter": "6.00mm",
+        "focalLength": "6.00mm",
+        "centerThickness": "2.50mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOBCXB6-10",
+        "diameter": "6.00mm",
+        "focalLength": "10.00mm",
+        "centerThickness": "2.40mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOBCXB9-12",
+        "diameter": "9.00mm",
+        "focalLength": "12.00mm",
+        "centerThickness": "3.60mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOBCXB10-15",
+        "diameter": "10.00mm",
+        "focalLength": "15.00mm",
+        "centerThickness": "4.10mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOBCXB12.7-15",
+        "diameter": "12.70mm",
+        "focalLength": "15.00mm",
+        "centerThickness": "4.70mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOBCXB12.7-20",
+        "diameter": "12.70mm",
+        "focalLength": "20.00mm",
+        "centerThickness": "3.88mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOBCXB12.7-30",
+        "diameter": "12.70mm",
+        "focalLength": "30.00mm",
+        "centerThickness": "3.14mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOBCXB15-25",
+        "diameter": "15.00mm",
+        "focalLength": "25.00mm",
+        "centerThickness": "4.80mm",
+        "price": 30
+      },
+      {
+        "partNumber": "LOBCXB20-45",
+        "diameter": "20.00mm",
+        "focalLength": "45.00mm",
+        "centerThickness": "8.00mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOBCXB25.4-50",
+        "diameter": "25.40mm",
+        "focalLength": "50.00mm",
+        "centerThickness": "5.24mm",
+        "price": 42
+      }
     ],
     "price": 18,
     "priceUnit": "USD",
@@ -513,16 +1395,76 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOPCCB6-6", "diameter": "6.00mm", "focalLength": "-6.00mm", "centerThickness": "2.00mm", "price": 15},
-      {"partNumber": "LOPCCB6-10", "diameter": "6.00mm", "focalLength": "-10.00mm", "centerThickness": "2.00mm", "price": 15},
-      {"partNumber": "LOPCCB10-15", "diameter": "10.00mm", "focalLength": "-15.00mm", "centerThickness": "2.00mm", "price": 18},
-      {"partNumber": "LOPCCB10-25", "diameter": "10.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 18},
-      {"partNumber": "LOPCCB12.7-19", "diameter": "12.70mm", "focalLength": "-19.00mm", "centerThickness": "1.70mm", "price": 20},
-      {"partNumber": "LOPCCB12.7-25.4", "diameter": "12.70mm", "focalLength": "-25.40mm", "centerThickness": "3.00mm", "price": 22},
-      {"partNumber": "LOPCCB12.7-50", "diameter": "12.70mm", "focalLength": "-50.00mm", "centerThickness": "2.50mm", "price": 22},
-      {"partNumber": "LOPCCB15-25", "diameter": "15.00mm", "focalLength": "-25.00mm", "centerThickness": "2.00mm", "price": 25},
-      {"partNumber": "LOPCCB20-50", "diameter": "20.00mm", "focalLength": "-50.00mm", "centerThickness": "2.00mm", "price": 28},
-      {"partNumber": "LOPCCB25.4-25", "diameter": "25.40mm", "focalLength": "-25.00mm", "centerThickness": "2.50mm", "price": 32}
+      {
+        "partNumber": "LOPCCB6-6",
+        "diameter": "6.00mm",
+        "focalLength": "-6.00mm",
+        "centerThickness": "2.00mm",
+        "price": 15
+      },
+      {
+        "partNumber": "LOPCCB6-10",
+        "diameter": "6.00mm",
+        "focalLength": "-10.00mm",
+        "centerThickness": "2.00mm",
+        "price": 15
+      },
+      {
+        "partNumber": "LOPCCB10-15",
+        "diameter": "10.00mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.00mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOPCCB10-25",
+        "diameter": "10.00mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.00mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOPCCB12.7-19",
+        "diameter": "12.70mm",
+        "focalLength": "-19.00mm",
+        "centerThickness": "1.70mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOPCCB12.7-25.4",
+        "diameter": "12.70mm",
+        "focalLength": "-25.40mm",
+        "centerThickness": "3.00mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOPCCB12.7-50",
+        "diameter": "12.70mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.50mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOPCCB15-25",
+        "diameter": "15.00mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.00mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOPCCB20-50",
+        "diameter": "20.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOPCCB25.4-25",
+        "diameter": "25.40mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.50mm",
+        "price": 32
+      }
     ],
     "price": 15,
     "priceUnit": "USD",
@@ -570,16 +1512,76 @@ const PRODUCTS = [
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
     "partNumbers": [
-      {"partNumber": "LOPCXB2.5-3.9", "diameter": "2.50mm", "focalLength": "3.90mm", "centerThickness": "1.95mm", "price": 18},
-      {"partNumber": "LOPCXB2.8-5.0", "diameter": "2.80mm", "focalLength": "5.00mm", "centerThickness": "1.62mm", "price": 18},
-      {"partNumber": "LOPCXB3.0-8.0", "diameter": "3.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm", "price": 18},
-      {"partNumber": "LOPCXB4.0-8.0", "diameter": "4.00mm", "focalLength": "8.00mm", "centerThickness": "2.00mm", "price": 20},
-      {"partNumber": "LOPCXB5.0-10", "diameter": "5.00mm", "focalLength": "10.00mm", "centerThickness": "2.00mm", "price": 20},
-      {"partNumber": "LOPCXB6.0-8.0", "diameter": "6.00mm", "focalLength": "8.00mm", "centerThickness": "2.30mm", "price": 22},
-      {"partNumber": "LOPCXB6.0-12", "diameter": "6.00mm", "focalLength": "12.00mm", "centerThickness": "2.28mm", "price": 22},
-      {"partNumber": "LOPCXB8.0-15", "diameter": "8.00mm", "focalLength": "15.00mm", "centerThickness": "3.00mm", "price": 25},
-      {"partNumber": "LOPCXB10-15", "diameter": "10.00mm", "focalLength": "15.00mm", "centerThickness": "3.80mm", "price": 28},
-      {"partNumber": "LOPCXB12.7-19", "diameter": "12.70mm", "focalLength": "19.00mm", "centerThickness": "4.80mm", "price": 35}
+      {
+        "partNumber": "LOPCXB2.5-3.9",
+        "diameter": "2.50mm",
+        "focalLength": "3.90mm",
+        "centerThickness": "1.95mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOPCXB2.8-5.0",
+        "diameter": "2.80mm",
+        "focalLength": "5.00mm",
+        "centerThickness": "1.62mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOPCXB3.0-8.0",
+        "diameter": "3.00mm",
+        "focalLength": "8.00mm",
+        "centerThickness": "2.00mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOPCXB4.0-8.0",
+        "diameter": "4.00mm",
+        "focalLength": "8.00mm",
+        "centerThickness": "2.00mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOPCXB5.0-10",
+        "diameter": "5.00mm",
+        "focalLength": "10.00mm",
+        "centerThickness": "2.00mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOPCXB6.0-8.0",
+        "diameter": "6.00mm",
+        "focalLength": "8.00mm",
+        "centerThickness": "2.30mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOPCXB6.0-12",
+        "diameter": "6.00mm",
+        "focalLength": "12.00mm",
+        "centerThickness": "2.28mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOPCXB8.0-15",
+        "diameter": "8.00mm",
+        "focalLength": "15.00mm",
+        "centerThickness": "3.00mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOPCXB10-15",
+        "diameter": "10.00mm",
+        "focalLength": "15.00mm",
+        "centerThickness": "3.80mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOPCXB12.7-19",
+        "diameter": "12.70mm",
+        "focalLength": "19.00mm",
+        "centerThickness": "4.80mm",
+        "price": 35
+      }
     ],
     "price": 18,
     "priceUnit": "USD",
@@ -605,7 +1607,97 @@ const PRODUCTS = [
     "price": 250,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLLM20-532",
+        "wavelength": "532nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-532",
+        "wavelength": "532nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-532",
+        "wavelength": "532nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM20-1064",
+        "wavelength": "1064nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-1064",
+        "wavelength": "1064nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-1064",
+        "wavelength": "1064nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM35-1064",
+        "wavelength": "1064nm",
+        "diameter": "35mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOLLM50-1064",
+        "wavelength": "1064nm",
+        "diameter": "50mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 110
+      },
+      {
+        "partNumber": "LOLLM20-355",
+        "wavelength": "355nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOLLM30-355",
+        "wavelength": "355nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLLM25.4-1550",
+        "wavelength": "1550nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      }
+    ]
   },
   {
     "id": 26,
@@ -625,7 +1717,51 @@ const PRODUCTS = [
     "price": 180,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOOL-X4",
+        "magnification": "4x",
+        "na": "0.10",
+        "workingDistance": "15.5mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOOL-X10",
+        "magnification": "10x",
+        "na": "0.25",
+        "workingDistance": "6.3mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LOOL-X20",
+        "magnification": "20x",
+        "na": "0.40",
+        "workingDistance": "1.2mm",
+        "price": 115
+      },
+      {
+        "partNumber": "LOOL-X40",
+        "magnification": "40x",
+        "na": "0.65",
+        "workingDistance": "0.44mm",
+        "price": 135
+      },
+      {
+        "partNumber": "LOOL-X60",
+        "magnification": "60x",
+        "na": "0.85",
+        "workingDistance": "0.185mm",
+        "price": 165
+      },
+      {
+        "partNumber": "LOOL-X100",
+        "magnification": "100x",
+        "na": "1.25",
+        "workingDistance": "0.198mm",
+        "price": 195
+      }
+    ]
   },
   {
     "id": 27,
@@ -667,7 +1803,79 @@ const PRODUCTS = [
     "price": 45,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LODM12.7-3A1",
+        "wavelength": "400-700nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LODM20-3A1",
+        "wavelength": "400-700nm",
+        "diameter": "20.00mm",
+        "thickness": "3mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LODM25.4-3A1",
+        "wavelength": "400-700nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LODM30-5A1",
+        "wavelength": "400-700nm",
+        "diameter": "30.00mm",
+        "thickness": "5mm",
+        "price": 78
+      },
+      {
+        "partNumber": "LODM40-5A1",
+        "wavelength": "400-700nm",
+        "diameter": "40.00mm",
+        "thickness": "5mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LODM50-5A1",
+        "wavelength": "400-700nm",
+        "diameter": "50.00mm",
+        "thickness": "5mm",
+        "price": 115
+      },
+      {
+        "partNumber": "LODM12.7-31A2",
+        "wavelength": "650-1050nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "price": 48
+      },
+      {
+        "partNumber": "LODM25.4-31A2",
+        "wavelength": "650-1050nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "price": 68
+      },
+      {
+        "partNumber": "LODM12.7-3A3",
+        "wavelength": "400-1100nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "price": 48
+      },
+      {
+        "partNumber": "LODM25.4-4A3",
+        "wavelength": "400-1100nm",
+        "diameter": "25.40mm",
+        "thickness": "5mm",
+        "price": 72
+      }
+    ]
   },
   {
     "id": 29,
@@ -688,7 +1896,97 @@ const PRODUCTS = [
     "price": 65,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLLM20-532",
+        "wavelength": "532nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-532",
+        "wavelength": "532nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-532",
+        "wavelength": "532nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM20-1064",
+        "wavelength": "1064nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-1064",
+        "wavelength": "1064nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-1064",
+        "wavelength": "1064nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM35-1064",
+        "wavelength": "1064nm",
+        "diameter": "35mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOLLM50-1064",
+        "wavelength": "1064nm",
+        "diameter": "50mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 110
+      },
+      {
+        "partNumber": "LOLLM20-355",
+        "wavelength": "355nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOLLM30-355",
+        "wavelength": "355nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLLM25.4-1550",
+        "wavelength": "1550nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      }
+    ]
   },
   {
     "id": 30,
@@ -710,7 +2008,97 @@ const PRODUCTS = [
     "price": 40,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLLM20-532",
+        "wavelength": "532nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-532",
+        "wavelength": "532nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-532",
+        "wavelength": "532nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM20-1064",
+        "wavelength": "1064nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-1064",
+        "wavelength": "1064nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-1064",
+        "wavelength": "1064nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM35-1064",
+        "wavelength": "1064nm",
+        "diameter": "35mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOLLM50-1064",
+        "wavelength": "1064nm",
+        "diameter": "50mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 110
+      },
+      {
+        "partNumber": "LOLLM20-355",
+        "wavelength": "355nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOLLM30-355",
+        "wavelength": "355nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLLM25.4-1550",
+        "wavelength": "1550nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      }
+    ]
   },
   {
     "id": 31,
@@ -731,7 +2119,41 @@ const PRODUCTS = [
     "price": 35,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOAUM12.7-3",
+        "wavelength": "800-2000nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "reflectance": ">98%",
+        "price": 52
+      },
+      {
+        "partNumber": "LOAUM25.4-3",
+        "wavelength": "800-2000nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "reflectance": ">98%",
+        "price": 72
+      },
+      {
+        "partNumber": "LOAUM30-5",
+        "wavelength": "800-2000nm",
+        "diameter": "30.00mm",
+        "thickness": "5mm",
+        "reflectance": ">98%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOAUM50-5",
+        "wavelength": "800-2000nm",
+        "diameter": "50.00mm",
+        "thickness": "5mm",
+        "reflectance": ">98%",
+        "price": 115
+      }
+    ]
   },
   {
     "id": 32,
@@ -752,7 +2174,97 @@ const PRODUCTS = [
     "price": 85,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLLM20-532",
+        "wavelength": "532nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-532",
+        "wavelength": "532nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-532",
+        "wavelength": "532nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM20-1064",
+        "wavelength": "1064nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-1064",
+        "wavelength": "1064nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-1064",
+        "wavelength": "1064nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM35-1064",
+        "wavelength": "1064nm",
+        "diameter": "35mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOLLM50-1064",
+        "wavelength": "1064nm",
+        "diameter": "50mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 110
+      },
+      {
+        "partNumber": "LOLLM20-355",
+        "wavelength": "355nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOLLM30-355",
+        "wavelength": "355nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLLM25.4-1550",
+        "wavelength": "1550nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      }
+    ]
   },
   {
     "id": 33,
@@ -794,7 +2306,41 @@ const PRODUCTS = [
     "price": 28,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOEAM12.7-3",
+        "wavelength": "400-700nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "reflectance": ">90%",
+        "price": 42
+      },
+      {
+        "partNumber": "LOEAM25.4-3",
+        "wavelength": "400-700nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "reflectance": ">90%",
+        "price": 58
+      },
+      {
+        "partNumber": "LOEAM30-5",
+        "wavelength": "400-700nm",
+        "diameter": "30.00mm",
+        "thickness": "5mm",
+        "reflectance": ">90%",
+        "price": 72
+      },
+      {
+        "partNumber": "LOEAM50-5",
+        "wavelength": "400-700nm",
+        "diameter": "50.00mm",
+        "thickness": "5mm",
+        "reflectance": ">90%",
+        "price": 98
+      }
+    ]
   },
   {
     "id": 35,
@@ -815,7 +2361,41 @@ const PRODUCTS = [
     "price": 60,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOAUM12.7-3",
+        "wavelength": "800-2000nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "reflectance": ">98%",
+        "price": 52
+      },
+      {
+        "partNumber": "LOAUM25.4-3",
+        "wavelength": "800-2000nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "reflectance": ">98%",
+        "price": 72
+      },
+      {
+        "partNumber": "LOAUM30-5",
+        "wavelength": "800-2000nm",
+        "diameter": "30.00mm",
+        "thickness": "5mm",
+        "reflectance": ">98%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOAUM50-5",
+        "wavelength": "800-2000nm",
+        "diameter": "50.00mm",
+        "thickness": "5mm",
+        "reflectance": ">98%",
+        "price": 115
+      }
+    ]
   },
   {
     "id": 36,
@@ -857,7 +2437,41 @@ const PRODUCTS = [
     "price": 35,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOAGM12.7-3",
+        "wavelength": "400-2000nm",
+        "diameter": "12.70mm",
+        "thickness": "3mm",
+        "reflectance": ">95%",
+        "price": 48
+      },
+      {
+        "partNumber": "LOAGM25.4-3",
+        "wavelength": "400-2000nm",
+        "diameter": "25.40mm",
+        "thickness": "3mm",
+        "reflectance": ">95%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOAGM30-5",
+        "wavelength": "400-2000nm",
+        "diameter": "30.00mm",
+        "thickness": "5mm",
+        "reflectance": ">95%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOAGM50-5",
+        "wavelength": "400-2000nm",
+        "diameter": "50.00mm",
+        "thickness": "5mm",
+        "reflectance": ">95%",
+        "price": 105
+      }
+    ]
   },
   {
     "id": 38,
@@ -878,7 +2492,121 @@ const PRODUCTS = [
     "price": 95,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWPZ-10Q-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 95
+      },
+      {
+        "partNumber": "LOWPZ-10H-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 100
+      },
+      {
+        "partNumber": "LOWPZ-12.7Q-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 115
+      },
+      {
+        "partNumber": "LOWPZ-12.7H-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 120
+      },
+      {
+        "partNumber": "LOWPZ-20Q-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 145
+      },
+      {
+        "partNumber": "LOWPZ-20H-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 150
+      },
+      {
+        "partNumber": "LOWPZ-25.4Q-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 175
+      },
+      {
+        "partNumber": "LOWPZ-25.4H-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 180
+      },
+      {
+        "partNumber": "LOWPZ-10Q-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 100
+      },
+      {
+        "partNumber": "LOWPZ-10H-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 105
+      },
+      {
+        "partNumber": "LOWPZ-12.7Q-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 120
+      },
+      {
+        "partNumber": "LOWPZ-12.7H-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 125
+      },
+      {
+        "partNumber": "LOWPZ-20Q-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 155
+      },
+      {
+        "partNumber": "LOWPZ-20H-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 160
+      },
+      {
+        "partNumber": "LOWPZ-25.4Q-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 185
+      },
+      {
+        "partNumber": "LOWPZ-25.4H-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 190
+      }
+    ]
   },
   {
     "id": 39,
@@ -899,7 +2627,121 @@ const PRODUCTS = [
     "price": 65,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWPZ-10Q-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 95
+      },
+      {
+        "partNumber": "LOWPZ-10H-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 100
+      },
+      {
+        "partNumber": "LOWPZ-12.7Q-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 115
+      },
+      {
+        "partNumber": "LOWPZ-12.7H-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 120
+      },
+      {
+        "partNumber": "LOWPZ-20Q-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 145
+      },
+      {
+        "partNumber": "LOWPZ-20H-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 150
+      },
+      {
+        "partNumber": "LOWPZ-25.4Q-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 175
+      },
+      {
+        "partNumber": "LOWPZ-25.4H-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 180
+      },
+      {
+        "partNumber": "LOWPZ-10Q-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 100
+      },
+      {
+        "partNumber": "LOWPZ-10H-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 105
+      },
+      {
+        "partNumber": "LOWPZ-12.7Q-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 120
+      },
+      {
+        "partNumber": "LOWPZ-12.7H-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 125
+      },
+      {
+        "partNumber": "LOWPZ-20Q-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 155
+      },
+      {
+        "partNumber": "LOWPZ-20H-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 160
+      },
+      {
+        "partNumber": "LOWPZ-25.4Q-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 185
+      },
+      {
+        "partNumber": "LOWPZ-25.4H-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 190
+      }
+    ]
   },
   {
     "id": 40,
@@ -920,7 +2762,121 @@ const PRODUCTS = [
     "price": 35,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWPM-10Q-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 45
+      },
+      {
+        "partNumber": "LOWPM-10H-532",
+        "diameter": "10.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 48
+      },
+      {
+        "partNumber": "LOWPM-12.7Q-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 55
+      },
+      {
+        "partNumber": "LOWPM-12.7H-532",
+        "diameter": "12.70mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 58
+      },
+      {
+        "partNumber": "LOWPM-20Q-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 72
+      },
+      {
+        "partNumber": "LOWPM-20H-532",
+        "diameter": "20.00mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 75
+      },
+      {
+        "partNumber": "LOWPM-25.4Q-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Quarter Wave",
+        "price": 88
+      },
+      {
+        "partNumber": "LOWPM-25.4H-532",
+        "diameter": "25.40mm",
+        "wavelength": "532nm",
+        "phase": "Half Wave",
+        "price": 92
+      },
+      {
+        "partNumber": "LOWPM-10Q-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 48
+      },
+      {
+        "partNumber": "LOWPM-10H-1064",
+        "diameter": "10.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 50
+      },
+      {
+        "partNumber": "LOWPM-12.7Q-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 58
+      },
+      {
+        "partNumber": "LOWPM-12.7H-1064",
+        "diameter": "12.70mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 62
+      },
+      {
+        "partNumber": "LOWPM-20Q-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 78
+      },
+      {
+        "partNumber": "LOWPM-20H-1064",
+        "diameter": "20.00mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 82
+      },
+      {
+        "partNumber": "LOWPM-25.4Q-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Quarter Wave",
+        "price": 95
+      },
+      {
+        "partNumber": "LOWPM-25.4H-1064",
+        "diameter": "25.40mm",
+        "wavelength": "1064nm",
+        "phase": "Half Wave",
+        "price": 100
+      }
+    ]
   },
   {
     "id": 41,
@@ -962,7 +2918,97 @@ const PRODUCTS = [
     "price": 120,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLLM20-532",
+        "wavelength": "532nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-532",
+        "wavelength": "532nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-532",
+        "wavelength": "532nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM20-1064",
+        "wavelength": "1064nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 55
+      },
+      {
+        "partNumber": "LOLLM25.4-1064",
+        "wavelength": "1064nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 68
+      },
+      {
+        "partNumber": "LOLLM30-1064",
+        "wavelength": "1064nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 78
+      },
+      {
+        "partNumber": "LOLLM35-1064",
+        "wavelength": "1064nm",
+        "diameter": "35mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 88
+      },
+      {
+        "partNumber": "LOLLM50-1064",
+        "wavelength": "1064nm",
+        "diameter": "50mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 110
+      },
+      {
+        "partNumber": "LOLLM20-355",
+        "wavelength": "355nm",
+        "diameter": "20mm",
+        "thickness": "4mm",
+        "reflectance": ">99%",
+        "price": 65
+      },
+      {
+        "partNumber": "LOLLM30-355",
+        "wavelength": "355nm",
+        "diameter": "30mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLLM25.4-1550",
+        "wavelength": "1550nm",
+        "diameter": "25.4mm",
+        "thickness": "5mm",
+        "reflectance": ">99%",
+        "price": 85
+      }
+    ]
   },
   {
     "id": 43,
@@ -1024,7 +3070,23 @@ const PRODUCTS = [
     "price": 55,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOLP12.7",
+        "size": "12.7mm",
+        "wavelength": "400-700nm",
+        "transmittance": ">50%",
+        "price": 85
+      },
+      {
+        "partNumber": "LOLO25.4",
+        "size": "25.4mm",
+        "wavelength": "400-700nm",
+        "transmittance": ">50%",
+        "price": 115
+      }
+    ]
   },
   {
     "id": 46,
@@ -1108,7 +3170,45 @@ const PRODUCTS = [
     "price": 45,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOCCP12.7",
+        "diameter": "12.70mm",
+        "height": "10.20mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOCCP15",
+        "diameter": "15.00mm",
+        "height": "11.30mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOCCP25.4",
+        "diameter": "25.40mm",
+        "height": "19.00mm",
+        "price": 75
+      },
+      {
+        "partNumber": "LOCCP38",
+        "diameter": "38.00mm",
+        "height": "28.50mm",
+        "price": 120
+      },
+      {
+        "partNumber": "LOCCP50.8",
+        "diameter": "50.80mm",
+        "height": "37.50mm",
+        "price": 165
+      },
+      {
+        "partNumber": "LOCCP70",
+        "diameter": "70.00mm",
+        "height": "52.50mm",
+        "price": 250
+      }
+    ]
   },
   {
     "id": 50,
@@ -1128,7 +3228,39 @@ const PRODUCTS = [
     "price": 30,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LODP01",
+        "dimension": "9.3x2.6x1.3mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LODP02",
+        "dimension": "14x5x2.6mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LODP03",
+        "dimension": "80x20x20mm",
+        "price": 120
+      },
+      {
+        "partNumber": "LODP04",
+        "dimension": "21.1x5x5mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LODP05",
+        "dimension": "42.3x10x10mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LODP06",
+        "dimension": "63.4x15x15mm",
+        "price": 115
+      }
+    ]
   },
   {
     "id": 51,
@@ -1227,7 +3359,59 @@ const PRODUCTS = [
     "price": 22,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LORP3-3",
+        "dimension": "3x3x3mm",
+        "price": 12
+      },
+      {
+        "partNumber": "LORP3-5",
+        "dimension": "3x3x5mm",
+        "price": 13
+      },
+      {
+        "partNumber": "LORP5-5",
+        "dimension": "5x5x5mm",
+        "price": 15
+      },
+      {
+        "partNumber": "LORP10-10",
+        "dimension": "10x10x10mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LORP15-15",
+        "dimension": "15x15x15mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LORP20-20",
+        "dimension": "20x20x20mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LORP25-25",
+        "dimension": "25x25x25mm",
+        "price": 32
+      },
+      {
+        "partNumber": "LORP25.4-25.4",
+        "dimension": "25.4x25.4x25.4mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LORP30-30",
+        "dimension": "30x30x30mm",
+        "price": 42
+      },
+      {
+        "partNumber": "LORP50.8-50.8",
+        "dimension": "50.8x50.8x50.8mm",
+        "price": 65
+      }
+    ]
   },
   {
     "id": 56,
@@ -1331,7 +3515,81 @@ const PRODUCTS = [
     "price": 18,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWB6-2",
+        "diameter": "6.00mm",
+        "thickness": "2.00mm",
+        "price": 12
+      },
+      {
+        "partNumber": "LOWB10-3",
+        "diameter": "10.00mm",
+        "thickness": "3.00mm",
+        "price": 15
+      },
+      {
+        "partNumber": "LOWB12.7-3",
+        "diameter": "12.70mm",
+        "thickness": "3.00mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOWB15-3",
+        "diameter": "15.00mm",
+        "thickness": "3.00mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOWB20-3",
+        "diameter": "20.00mm",
+        "thickness": "3.00mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOWB25.4-3",
+        "diameter": "25.40mm",
+        "thickness": "3.00mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOWB30-3",
+        "diameter": "30.00mm",
+        "thickness": "3.00mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LOWB38.1-3",
+        "diameter": "38.10mm",
+        "thickness": "3.00mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOWB40-5",
+        "diameter": "40.00mm",
+        "thickness": "5.00mm",
+        "price": 52
+      },
+      {
+        "partNumber": "LOWB50.8-5",
+        "diameter": "50.80mm",
+        "thickness": "5.00mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOWB75-5",
+        "diameter": "75.00mm",
+        "thickness": "5.00mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LOWB100-10",
+        "diameter": "100.00mm",
+        "thickness": "10.00mm",
+        "price": 145
+      }
+    ]
   },
   {
     "id": 61,
@@ -1416,7 +3674,69 @@ const PRODUCTS = [
     "price": 55,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价"
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWS6-2",
+        "diameter": "6.00mm",
+        "thickness": "2.00mm",
+        "price": 35
+      },
+      {
+        "partNumber": "LOWS8-1",
+        "diameter": "8.00mm",
+        "thickness": "1.00mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOWS10-3",
+        "diameter": "10.00mm",
+        "thickness": "3.00mm",
+        "price": 42
+      },
+      {
+        "partNumber": "LOWS12.7-1",
+        "diameter": "12.70mm",
+        "thickness": "1.00mm",
+        "price": 48
+      },
+      {
+        "partNumber": "LOWS15-2",
+        "diameter": "15.00mm",
+        "thickness": "2.00mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LOWS20-2",
+        "diameter": "20.00mm",
+        "thickness": "2.00mm",
+        "price": 68
+      },
+      {
+        "partNumber": "LOWS25.4-2",
+        "diameter": "25.40mm",
+        "thickness": "2.00mm",
+        "price": 78
+      },
+      {
+        "partNumber": "LOWS30-3",
+        "diameter": "30.00mm",
+        "thickness": "3.00mm",
+        "price": 95
+      },
+      {
+        "partNumber": "LOWS38.1-5",
+        "diameter": "38.10mm",
+        "thickness": "5.00mm",
+        "price": 125
+      },
+      {
+        "partNumber": "LOWS50.8-5",
+        "diameter": "50.80mm",
+        "thickness": "5.00mm",
+        "price": 165
+      }
+    ]
   },
   {
     "id": 65,
@@ -1460,10 +3780,355 @@ const PRODUCTS = [
     "price": 35,
     "priceUnit": "USD",
     "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "partNumbers": [
+      {
+        "partNumber": "LOWF5-2",
+        "diameter": "5.00mm",
+        "thickness": "2.00mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LOWF6-2",
+        "diameter": "6.00mm",
+        "thickness": "2.00mm",
+        "price": 25
+      },
+      {
+        "partNumber": "LOWF10-3",
+        "diameter": "10.00mm",
+        "thickness": "3.00mm",
+        "price": 28
+      },
+      {
+        "partNumber": "LOWF12.7-2",
+        "diameter": "12.70mm",
+        "thickness": "2.00mm",
+        "price": 32
+      },
+      {
+        "partNumber": "LOWF15-3",
+        "diameter": "15.00mm",
+        "thickness": "3.00mm",
+        "price": 38
+      },
+      {
+        "partNumber": "LOWF20-3",
+        "diameter": "20.00mm",
+        "thickness": "3.00mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LOWF25.4-3",
+        "diameter": "25.40mm",
+        "thickness": "3.00mm",
+        "price": 52
+      },
+      {
+        "partNumber": "LOWF30-5",
+        "diameter": "30.00mm",
+        "thickness": "5.00mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LOWF38.1-5",
+        "diameter": "38.10mm",
+        "thickness": "5.00mm",
+        "price": 85
+      },
+      {
+        "partNumber": "LOWF50.8-5",
+        "diameter": "50.80mm",
+        "thickness": "5.00mm",
+        "price": 105
+      },
+      {
+        "partNumber": "LOWF75-10",
+        "diameter": "75.00mm",
+        "thickness": "10.00mm",
+        "price": 165
+      },
+      {
+        "partNumber": "LOWF100-12",
+        "diameter": "100.00mm",
+        "thickness": "12.00mm",
+        "price": 245
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Kinematic Mirror Mounts",
+    "nameZh": "反射镜调整架",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Precision kinematic mirror mounts with fine adjustment screws for accurate tip/tilt alignment. Compatible with mirrors from 12.7mm to 50.8mm diameter.",
+    "image": "images/products/optical-mounts/kinematic-mirror-mounts.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "aperture": "12.7-50.8mm",
+      "adjustment_range": "±4°",
+      "resolution": "0.003° per click"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LMMK12.7",
+        "size": "12.7mm",
+        "price": 45
+      },
+      {
+        "partNumber": "LMMK25.4",
+        "size": "25.4mm",
+        "price": 55
+      },
+      {
+        "partNumber": "LMMK50.8",
+        "size": "50.8mm",
+        "price": 75
+      }
+    ],
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 69,
+    "name": "Fixed Lens Mounts",
+    "nameZh": "固定透镜架",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "SM-threaded fixed lens mounts for securely holding optical lenses. Available in various thread sizes.",
+    "image": "images/products/optical-mounts/fixed-lens-mounts.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "thread_standard": "SM (Standard Metric)",
+      "clear_aperture": "Up to 90% of thread size"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LFM05",
+        "thread": "M5",
+        "price": 20
+      },
+      {
+        "partNumber": "LFM1",
+        "thread": "M10",
+        "price": 22
+      },
+      {
+        "partNumber": "LFM2",
+        "thread": "M20",
+        "price": 25
+      }
+    ],
+    "price": 20,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 70,
+    "name": "Rotation Mounts",
+    "nameZh": "旋转调整架",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Precision rotation mounts for waveplates, polarizers and other rotation-sensitive optics. 360° continuous rotation with fine scale adjustment.",
+    "image": "images/products/optical-mounts/rotation-mounts.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "aperture": "25.4mm",
+      "rotation_range": "360° continuous",
+      "resolution": "1° scale, 0.1° vernier"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LRM25.4",
+        "aperture": "25.4mm",
+        "price": 65
+      },
+      {
+        "partNumber": "LRM50.8",
+        "aperture": "50.8mm",
+        "price": 85
+      }
+    ],
+    "price": 65,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 71,
+    "name": "Optical Post & Base",
+    "nameZh": "光学接杆与底座",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Stainless steel optical posts with bases for stable optical mounting. Standard hole patterns compatible with optical tables.",
+    "image": "images/products/optical-mounts/optical-post-base.jpg",
+    "parameters": {
+      "material": "Stainless steel",
+      "base_size": "60x60mm",
+      "hole_pattern": "25mm grid, M6 threads"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LOP-50",
+        "length": "50mm",
+        "price": 15
+      },
+      {
+        "partNumber": "LOP-75",
+        "length": "75mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LOP-100",
+        "length": "100mm",
+        "price": 20
+      },
+      {
+        "partNumber": "LOP-150",
+        "length": "150mm",
+        "price": 25
+      }
+    ],
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 72,
+    "name": "Post Holders",
+    "nameZh": "杆座",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Sturdy post holders for securing optical posts to breadboards or optical tables. Quick-release mechanism for easy adjustment.",
+    "image": "images/products/optical-mounts/post-holders.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "post_diameter": "12.7mm",
+      "clamping": "Knurled thumb screw"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LPH-50",
+        "height": "50mm",
+        "price": 18
+      },
+      {
+        "partNumber": "LPH-75",
+        "height": "75mm",
+        "price": 22
+      },
+      {
+        "partNumber": "LPH-100",
+        "height": "100mm",
+        "price": 25
+      }
+    ],
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 73,
+    "name": "XY Translation Stages",
+    "nameZh": "XY平移台",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Compact XY translation stages for precise two-axis positioning. Micrometer-driven with fine resolution.",
+    "image": "images/products/optical-mounts/xy-translation-stages.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "platform_size": "60x60mm",
+      "load_capacity": "5kg"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LXY-25",
+        "travel": "±12.5mm",
+        "price": 120
+      },
+      {
+        "partNumber": "LXY-50",
+        "travel": "±25mm",
+        "price": 165
+      }
+    ],
+    "price": 120,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 74,
+    "name": "Optical Table Breadboards",
+    "nameZh": "光学面包板",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Stainless steel optical breadboards with standard hole patterns for flexible optical setup configurations.",
+    "image": "images/products/optical-mounts/optical-breadboard.jpg",
+    "parameters": {
+      "material": "Stainless steel",
+      "thickness": "12mm",
+      "hole_pattern": "25mm grid, M6 threads"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LBB-300x300",
+        "size": "300x300mm",
+        "price": 200
+      },
+      {
+        "partNumber": "LBB-450x450",
+        "size": "450x450mm",
+        "price": 320
+      },
+      {
+        "partNumber": "LBB-600x600",
+        "size": "600x600mm",
+        "price": 480
+      }
+    ],
+    "price": 200,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价"
+  },
+  {
+    "id": 75,
+    "name": "Cage Systems",
+    "nameZh": "笼式系统",
+    "category": "Optical Mounts & Accessories",
+    "categoryZh": "光学支架与配件",
+    "description": "Modular cage system components for building compact and stable optical assemblies. Compatible with standard cage system standards.",
+    "image": "images/products/optical-mounts/cage-system.jpg",
+    "parameters": {
+      "material": "Aluminum alloy, black anodized",
+      "standard": "30mm / 60mm cage",
+      "components": "Plates, rods, mounts"
+    },
+    "partNumbers": [
+      {
+        "partNumber": "LCS-30",
+        "size": "30mm cage",
+        "price": 30
+      },
+      {
+        "partNumber": "LCS-60",
+        "size": "60mm cage",
+        "price": 45
+      }
+    ],
+    "price": 30,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价"
   }
 ];
-
 // Category to first product image mapping for homepage categories
 var CATEGORY_IMAGES = {
     "Optical Ball Lenses": "images/products/optical-ball-lenses/uv-fused-silica-ball-lenses.jpg",
@@ -1477,5 +4142,6 @@ var CATEGORY_IMAGES = {
     "Optical Prisms": "images/products/optical-prisms/corner-cube-prisms.jpg",
     "Optical Rod Lenses": "images/products/optical-rod-lenses/optical-rod-lenses.jpg",
     "Optical Spherical Lenses": "images/products/optical-spherical-lenses/uv-fused-silica-double-convex-lenses.jpg",
-    "Optical Windows": "images/products/optical-windows/bk7-optical-windows.jpg"
+    "Optical Windows": "images/products/optical-windows/bk7-optical-windows.jpg",
+    "Optical Mounts & Accessories": "images/products/optical-mounts/kinematic-mirror-mounts.jpg"
 };

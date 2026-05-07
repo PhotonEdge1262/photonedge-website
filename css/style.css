@@ -905,7 +905,7 @@ ul { list-style: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 9999;
     transition: all 0.3s ease;
     text-decoration: none;
 }
