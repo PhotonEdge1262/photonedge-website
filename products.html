@@ -137,6 +137,7 @@
     <script src="js/translations.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
     <script>
         var filteredProducts = [];
         var currentPage = 1;
@@ -209,7 +210,7 @@
                 var fromLabel = lang === 'zh' ? '起' : 'From';
                 var priceHtml = price ? '<span class="product-price">' + fromLabel + ' ' + price + '</span>' : '';
                 
-                return '<div class="product-card" onclick="window.location.href=\'product-detail.html?code=' + encodeURIComponent(product.name) + '\'">' +
+                return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
                     '<img src="' + product.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>📦</span>\';">' +
                     '</div>' +

@@ -205,6 +205,7 @@
     <script src="js/translations.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/cart.js"></script>
+    <script src="js/search.js"></script>
     <script>
         var currentProduct = null;
         
@@ -222,7 +223,15 @@
             var productCode = urlParams.get('code');
             var productName = urlParams.get('name');
             var productId = urlParams.get('id');
+            var productSlug = urlParams.get('slug');
             var category = urlParams.get('category');
+            
+            // Try to find product by slug first (SEO-friendly URLs via vercel.json rewrite)
+            if (!currentProduct && productSlug) {
+                currentProduct = PRODUCTS.find(function(p) {
+                    return p.slug === productSlug;
+                });
+            }
             
             // Try to find product by code first (this is what products.html uses)
             if (productCode) {
@@ -305,7 +314,7 @@
             }
             var ogUrl = document.querySelector('meta[property="og:url"]');
             if (ogUrl) {
-                ogUrl.setAttribute('content', 'https://photonedgeoptics.com/product-detail.html?code=' + encodeURIComponent(currentProduct.name));
+                ogUrl.setAttribute('content', 'https://photonedgeoptics.com/products/' + currentProduct.slug);
             }
             var ogImage = document.querySelector('meta[property="og:image"]');
             if (ogImage && currentProduct.image) {
@@ -315,7 +324,7 @@
             // Update canonical link
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) {
-                canonical.setAttribute('href', 'https://photonedgeoptics.com/product-detail.html?code=' + encodeURIComponent(currentProduct.name));
+                canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug);
             }
             
             // Update breadcrumb
@@ -691,7 +700,7 @@
                 var prodName = lang === 'zh' ? product.nameZh : product.name;
                 var category = lang === 'zh' ? product.categoryZh : product.category;
                 
-                return '<div class="product-card" onclick="window.location.href=\'product-detail.html?code=' + encodeURIComponent(product.name) + '\'">' +
+                return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
                     '<img src="' + product.image + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>🔬</span>\';">' +
                     '</div>' +

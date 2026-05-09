@@ -65,5 +65,49 @@ var BLOG_POSTS = [
     "readTime": "5 min",
     "image": "images/blog/photonedge-partner.jpg",
     "author": "PhotonEdge Team"
+  },
+  {
+    "id": 7,
+    "title": "Custom vs Stock Optics: When to Invest in Custom Optical Components",
+    "slug": "custom-vs-stock-optics",
+    "excerpt": "A practical guide comparing custom optical components with stock optics. Learn when standard parts are sufficient and when the investment in custom manufacturing delivers better long-term value for your optical system.",
+    "category": "Buying Guide",
+    "date": "2025-05-10",
+    "readTime": "8 min",
+    "image": "images/blog/custom-vs-stock-optics.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 8,
+    "title": "Laser Optics Selection Guide: Mirrors, Lenses, and Windows for High-Power Applications",
+    "slug": "laser-optics-selection-guide",
+    "excerpt": "Everything you need to know about selecting laser optics including high power laser mirrors, laser-grade lenses, and precision windows. Covers damage thresholds, coating types, and material selection for Nd:YAG, CO2, and fiber lasers.",
+    "category": "Technical Guide",
+    "date": "2025-05-10",
+    "readTime": "10 min",
+    "image": "images/blog/laser-optics-guide.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 9,
+    "title": "Optical Coating Types Explained: AR, HR, Beamsplitter, and Filter Coatings",
+    "slug": "optical-coating-types-explained",
+    "excerpt": "A comprehensive overview of optical coating types including anti-reflection coatings, high-reflectance HR coatings, beamsplitter coatings, and optical filter coatings. Understand how each coating type works and how to choose the right one for your application.",
+    "category": "Technical Guide",
+    "date": "2025-05-10",
+    "readTime": "9 min",
+    "image": "images/blog/optical-coatings.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 10,
+    "title": "How to Verify Optical Component Quality: Testing Methods and Standards",
+    "slug": "optical-quality-testing-methods",
+    "excerpt": "Learn about optical quality testing methods including interferometer testing for surface flatness, scratch-dig inspection for surface quality, LIDT testing, and international standards like MIL-PRF-13830B and ISO 10110.",
+    "category": "Technical Guide",
+    "date": "2025-05-10",
+    "readTime": "9 min",
+    "image": "images/blog/optical-quality-testing.jpg",
+    "author": "PhotonEdge Quality Team"
   }
 ];
