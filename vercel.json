@@ -2,11 +2,13 @@
   "rewrites": [
     { "source": "/products/:slug", "destination": "/product-detail.html?slug=:slug" }
   ],
-  "redirects": [
+  "headers": [
     {
-      "source": "/product-detail.html",
-      "destination": "/products",
-      "permanent": false
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" }
+      ]
     }
   ]
 }

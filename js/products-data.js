@@ -1,6 +1,6 @@
 // PhotonEdge Products Data
 
-const PRODUCTS = [
+var PRODUCTS = [
   {
     "id": 1,
     "name": "UV Fused Silica Ball Lenses",
