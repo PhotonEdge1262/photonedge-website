@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/products/:slug", "destination": "/product-detail.html?slug=$slug" }
+    { "source": "/products/:slug", "destination": "/product-detail.html?slug=$slug" },
+    { "source": "/blog/:slug", "destination": "/blog-post.html?slug=$slug" }
   ],
   "headers": [
     {

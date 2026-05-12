@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post | PhotonEdge</title>
@@ -215,6 +216,14 @@
             var urlParams = new URLSearchParams(window.location.search);
             var slug = urlParams.get('slug');
 
+            // Also extract slug from URL path (for SEO-friendly URLs like /blog/slug)
+            if (!slug) {
+                var blogPathMatch = window.location.pathname.match(/^\/blog\/([a-z0-9-]+)$/);
+                if (blogPathMatch) {
+                    slug = blogPathMatch[1];
+                }
+            }
+
             if (!slug) {
                 window.location.href = 'blog.html';
                 return;
@@ -235,9 +244,9 @@
             var ogDesc = document.querySelector('meta[property="og:description"]');
             if (ogDesc) ogDesc.setAttribute('content', currentPost.excerpt);
             var ogUrl = document.querySelector('meta[property="og:url"]');
-            if (ogUrl) ogUrl.setAttribute('content', 'https://photonedgeoptics.com/blog-post.html?slug=' + slug);
+            if (ogUrl) ogUrl.setAttribute('content', 'https://photonedgeoptics.com/blog/' + slug);
             var canonical = document.querySelector('link[rel="canonical"]');
-            if (canonical) canonical.setAttribute('href', 'https://photonedgeoptics.com/blog-post.html?slug=' + slug);
+            if (canonical) canonical.setAttribute('href', 'https://photonedgeoptics.com/blog/' + slug);
 
             // Update breadcrumb
             document.getElementById('breadcrumbTitle').textContent = currentPost.title;
