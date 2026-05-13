@@ -322,7 +322,7 @@
             }
             var ogUrl = document.querySelector('meta[property="og:url"]');
             if (ogUrl) {
-                ogUrl.setAttribute('content', 'https://photonedgeoptics.com/products/' + currentProduct.slug);
+                ogUrl.setAttribute('content', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/' );
             }
             var ogImage = document.querySelector('meta[property="og:image"]');
             if (ogImage && currentProduct.image) {
@@ -332,7 +332,7 @@
             // Update canonical link
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) {
-                canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug);
+                canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/' );
             }
             
             // Update breadcrumb
