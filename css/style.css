@@ -2429,3 +2429,389 @@ ul { list-style: none; }
     .iso-banner-inner { flex-direction: column; gap: 20px; }
     .home-cert-grid { flex-direction: column; align-items: center; }
 }
+/* ===== TESTIMONIALS & TRUST SECTIONS ===== */
+
+/* Trusted Institutions Section */
+.trusted-institutions-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+.institutions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+.institution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background: var(--light);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.institution-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.institution-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.institution-type {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 5px;
+}
+.institution-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark);
+    line-height: 1.4;
+}
+
+/* Customer Testimonials Section */
+.customer-testimonials-section {
+    padding: 80px 0;
+    background: var(--light);
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.testimonial-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+.testimonial-quote {
+    font-size: 48px;
+    color: var(--accent);
+    opacity: 0.3;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    line-height: 1;
+}
+.testimonial-stars {
+    color: #f59e0b;
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+.testimonial-text {
+    font-size: 15px;
+    color: var(--dark);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+}
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+.testimonial-info h5 {
+    font-size: 15px;
+    color: var(--dark);
+    margin-bottom: 3px;
+}
+.testimonial-info span {
+    font-size: 13px;
+    color: var(--gray);
+}
+.testimonial-product-tag {
+    display: inline-block;
+    background: var(--light);
+    color: var(--accent);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Home Trust Banner */
+.home-trust-banner {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+}
+.home-trust-banner h2 {
+    color: var(--white);
+}
+.home-trust-banner-subtitle {
+    color: rgba(255,255,255,0.9);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.home-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+.home-testimonial-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+}
+.home-testimonial-text {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    opacity: 0.95;
+}
+.home-testimonial-author {
+    font-size: 13px;
+    opacity: 0.8;
+}
+.home-client-types {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+}
+.home-client-type-tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.home-client-type-tag-icon {
+    font-size: 16px;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+    padding: 80px 0;
+    background: var(--light);
+}
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.case-study-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+.case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+.case-study-header {
+    padding: 25px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: var(--white);
+}
+.case-study-industry {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+.case-study-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.case-study-product {
+    font-size: 13px;
+    opacity: 0.9;
+}
+.case-study-body {
+    padding: 25px;
+}
+.case-study-section {
+    margin-bottom: 15px;
+}
+.case-study-section:last-child {
+    margin-bottom: 0;
+}
+.case-study-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+}
+.case-study-content {
+    font-size: 14px;
+    color: var(--gray);
+    line-height: 1.6;
+}
+.case-study-result {
+    background: var(--light);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Case Studies Page */
+.case-studies-page {
+    padding: 120px 0 80px;
+}
+.case-studies-page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.case-studies-page-header h1 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+.case-studies-page-header p {
+    font-size: 16px;
+    color: var(--gray);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Team Section Enhancements */
+.team-section {
+    padding: 80px 0;
+    background: var(--white);
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.team-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+.team-avatar {
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.team-avatar-initials {
+    font-size: 60px;
+    font-weight: 700;
+    color: rgba(255,255,255,0.3);
+}
+.team-avatar-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.1);
+}
+.team-body {
+    padding: 25px;
+    text-align: center;
+}
+.team-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+.team-role {
+    font-size: 14px;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+.team-bio {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.team-contact-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+.team-contact-btn:hover {
+    background: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .trust-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .industries-trust-grid { grid-template-columns: repeat(2, 1fr); }
+    .factory-highlights { grid-template-columns: repeat(3, 1fr); }
+    .factory-facility-cards { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(3, 1fr); }
+    .quality-process-flow { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+    .quality-process-flow::after { display: none; }
+    .quality-capabilities { grid-template-columns: repeat(2, 1fr); }
+    .tech-resources-grid { grid-template-columns: repeat(2, 1fr); }
+    .home-trust-grid { grid-template-columns: repeat(2, 1fr); }
+    .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .institutions-grid { grid-template-columns: repeat(3, 1fr); }
+    .home-testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+    .case-studies-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+    .trust-stats-grid,
+    .industries-trust-grid,
+    .factory-highlights,
+    .factory-facility-cards,
+    .team-grid,
+    .quality-capabilities,
+    .tech-resources-grid,
+    .home-trust-grid,
+    .testimonials-grid,
+    .institutions-grid,
+    .home-testimonials-grid,
+    .case-studies-grid { grid-template-columns: 1fr; }
+    .quality-process-flow { grid-template-columns: 1fr; }
+    .iso-banner-inner { flex-direction: column; gap: 20px; }
+    .home-cert-grid { flex-direction: column; align-items: center; }
+    .section-title { font-size: 28px; }
+}
