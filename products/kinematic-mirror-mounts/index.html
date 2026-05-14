@@ -24,6 +24,12 @@
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/product-detail.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/product-detail.html?lang=zh">
+    <link rel="alternate" hreflang="x-default" href="https://photonedgeoptics.com/product-detail.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Detail - PhotonEdge">
+    <meta name="twitter:description" content="View detailed specifications and pricing for precision optical components.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/logo.png">
 </head>
 <body>
     <header class="header">
@@ -182,7 +188,7 @@
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e89b89848d9ba89880879c87868d8c8f8d87989c818b9bc68b8785">[email&#160;protected]</a></li>
+                        <li>Email: sales@photonedgeoptics.com</li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: NexRay13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -203,7 +209,7 @@
         <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/translations.js"></script>
+    <script src="js/translations.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/cart.js"></script>
     <script src="js/search.js"></script>
@@ -333,6 +339,14 @@
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) {
                 canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/' );
+
+            // Update hreflang tags for SEO-friendly URLs
+            var hreflangEn = document.querySelector('link[hreflang="en"]');
+            var hreflangZh = document.querySelector('link[hreflang="zh"]');
+            var hreflangDefault = document.querySelector('link[hreflang="x-default"]');
+            if (hreflangEn) hreflangEn.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
+            if (hreflangZh) hreflangZh.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/?lang=zh');
+            if (hreflangDefault) hreflangDefault.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
             }
             
             // Update breadcrumb
