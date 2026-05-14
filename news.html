@@ -85,6 +85,7 @@
     <!-- Products Data for Search -->
     <script src="js/products-data.js"></script>
     <!-- Search -->
+    <script src="js/blog-data.js"></script>
     <script src="js/search.js"></script>
     
     <style>
@@ -551,64 +552,40 @@
         }
         
         // Load Articles from BaaS
-        async function loadArticles(append = false) {
+        function loadArticles(append) {
             if (isLoading) return;
             isLoading = true;
             
             if (!append) {
-                // Show skeletons
-                skeletonCards.forEach(card => card.classList.remove('hidden'));
+                skeletonCards.forEach(function(card) { card.classList.remove('hidden'); });
                 newsGrid.innerHTML = '';
-                skeletonCards.forEach(card => newsGrid.appendChild(card.cloneNode(true)));
-            } else {
-                // Show loading state on button
-                loadMoreBtn.disabled = true;
-                loadMoreBtn.innerHTML = '<span class="animate-spin inline-block">⟳</span> Loading...';
+                skeletonCards.forEach(function(card) { newsGrid.appendChild(card.cloneNode(true)); });
             }
             
-            try {
-                // Build query
-                let query = client.db.from('news').page()
-                    .page(currentPage, pageSize)
-                    .order('publish_date', 'desc');
-                
-                if (currentCategory !== 'all') {
-                    query = query.eq('category', currentCategory);
-                }
-                
-                const response = await query;
-                
-                if (response.success && response.data) {
-                    const articles = response.data.records || response.data;
-                    totalArticles = response.data.total || articles.length;
-                    
-                    if (append) {
-                        allArticles = [...allArticles, ...articles];
-                    } else {
-                        allArticles = articles;
-                    }
-                    
-                    renderArticles();
-                    updateLoadMoreVisibility();
-                } else {
-                    // No data or error - show demo data
-                    if (!append) {
-                        allArticles = getDemoArticles();
-                        totalArticles = allArticles.length;
-                        renderArticles();
-                        updateLoadMoreVisibility();
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading articles:', error);
-                // Show demo data on error
-                if (!append) {
-                    allArticles = getDemoArticles();
-                    totalArticles = allArticles.length;
-                    renderArticles();
-                    updateLoadMoreVisibility();
-                }
-            }
+            // Use BLOG_POSTS data directly
+            var blogToNews = BLOG_POSTS.map(function(post) {
+                var categoryMap = {
+                    'Technical Guide': 'Technical Articles',
+                    'Buying Guide': 'Industry News',
+                    'Company News': 'Company News'
+                };
+                return {
+                    id: post.id,
+                    title: post.title,
+                    title_cn: post.titleZh || post.title,
+                    category: categoryMap[post.category] || 'Technical Articles',
+                    thumbnail: [post.image || 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop'],
+                    content: post.excerpt || '',
+                    content_cn: post.excerptZh || post.excerpt || '',
+                    publish_date: post.date || '2025-01-01',
+                    author: post.author || 'PhotonEdge Team'
+                };
+            });
+            
+            allArticles = blogToNews;
+            totalArticles = allArticles.length;
+            renderArticles();
+            updateLoadMoreVisibility();
             
             isLoading = false;
             loadMoreBtn.disabled = false;
