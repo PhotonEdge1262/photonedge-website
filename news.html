@@ -79,7 +79,6 @@
     </style>
     
     <!-- AiPexBase SDK -->
-    <script src="https://cdn.jsdelivr.net/npm/aipexbase-js/dist/aipexbase.umd.min.js"></script>
     <!-- Translations -->
     <script src="js/translations.js"></script>
     <!-- Products Data for Search -->
@@ -444,34 +443,25 @@
     </a>
 
     <script>
-        // BaaS Configuration
-        const config = {
-            baseUrl: 'https://baas.kuafuai.net/baas-api',
-            apiKey: 'baas_sGzz4VCE'
-        };
-        
-        // Initialize BaaS Client
-        const client = aipexbase.createClient(config);
-        
         // State
-        let currentCategory = 'all';
-        let currentPage = 1;
-        const pageSize = 6;
-        let totalArticles = 0;
-        let allArticles = [];
-        let isLoading = false;
-        let currentLang = localStorage.getItem('lang') || 'en';
+        var currentCategory = 'all';
+        var currentPage = 1;
+        var pageSize = 6;
+        var totalArticles = 0;
+        var allArticles = [];
+        var isLoading = false;
+        var currentLang = localStorage.getItem('lang') || 'en';
         
         // DOM Elements
-        const newsGrid = document.getElementById('newsGrid');
-        const emptyState = document.getElementById('emptyState');
-        const loadMoreContainer = document.getElementById('loadMoreContainer');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const skeletonCards = document.querySelectorAll('.skeleton-card');
-        const articleModal = document.getElementById('articleModal');
+        var newsGrid = document.getElementById('newsGrid');
+        var emptyState = document.getElementById('emptyState');
+        var loadMoreContainer = document.getElementById('loadMoreContainer');
+        var loadMoreBtn = document.getElementById('loadMoreBtn');
+        var skeletonCards = document.querySelectorAll('.skeleton-card');
+        var articleModal = document.getElementById('articleModal');
         
         // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListenerfunction('DOMContentLoaded', () {
             initLanguage();
             initMobileMenu();
             initFilterButtons();
@@ -481,12 +471,12 @@
         
         // Language Management
         function initLanguage() {
-            const langBtn = document.getElementById('langBtn');
-            const currentLangSpan = document.getElementById('currentLang');
+            var langBtn = document.getElementById('langBtn');
+            var currentLangSpan = document.getElementById('currentLang');
             
             updateLanguageUI();
             
-            langBtn.addEventListener('click', () => {
+            langBtn.addEventListenerfunction('click', () {
                 currentLang = currentLang === 'en' ? 'cn' : 'en';
                 localStorage.setItem('lang', currentLang);
                 updateLanguageUI();
@@ -500,9 +490,9 @@
         }
         
         function updatePageContent() {
-            const elements = document.querySelectorAll('[data-en]');
-            elements.forEach(el => {
-                const text = currentLang === 'en' ? el.dataset.en : el.dataset.cn;
+            var elements = document.querySelectorAll('[data-en]');
+            elements.forEach(function(el) {
+                var text = currentLang === 'en' ? el.dataset.en : el.dataset.cn;
                 if (text) el.textContent = text;
             });
         }
@@ -513,22 +503,22 @@
         
         // Mobile Menu
         function initMobileMenu() {
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
+            var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            var mobileMenu = document.getElementById('mobileMenu');
             
-            mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.addEventListenerfunction('click', () {
                 mobileMenu.classList.toggle('hidden');
             });
         }
         
         // Filter Buttons
         function initFilterButtons() {
-            const filterBtns = document.querySelectorAll('.filter-btn');
+            var filterBtns = document.querySelectorAll('.filter-btn');
             
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
+            filterBtns.forEach(function(btn) {
+                btn.addEventListenerfunction('click', () {
                     // Update active state
-                    filterBtns.forEach(b => {
+                    filterBtns.forEach(function(b) {
                         b.classList.remove('active', 'bg-primary-800', 'text-white', 'shadow-md');
                         b.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
                     });
@@ -545,7 +535,7 @@
         
         // Load More Button
         function initLoadMore() {
-            loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.addEventListenerfunction('click', () {
                 currentPage++;
                 loadArticles(true);
             });
@@ -689,7 +679,7 @@
         // Render Articles
         function renderArticles() {
             // Filter by category
-            let filteredArticles = allArticles;
+            var filteredArticles = allArticles;
             if (currentCategory !== 'all') {
                 filteredArticles = allArticles.filter(article => article.category === currentCategory);
             }
@@ -706,8 +696,8 @@
             emptyState.classList.add('hidden');
             
             // Render articles
-            filteredArticles.forEach((article, index) => {
-                const card = createArticleCard(article, index);
+            filteredArticles.forEachfunction((article, index) {
+                var card = createArticleCard(article, index);
                 newsGrid.appendChild(card);
             });
             
@@ -717,19 +707,19 @@
         
         // Create Article Card
         function createArticleCard(article, index) {
-            const card = document.createElement('div');
+            var card = document.createElement('div');
             card.className = 'bg-white rounded-2xl shadow-soft overflow-hidden card-hover animate-slide-up';
             card.style.animationDelay = `${index * 0.1}s`;
             
-            const thumbnail = article.thumbnail && article.thumbnail.length > 0 
+            var thumbnail = article.thumbnail && article.thumbnail.length > 0 
                 ? article.thumbnail[0] 
                 : 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
             
-            const title = getLocalizedText(article.title, article.title_cn);
-            const content = getLocalizedText(article.content, article.content_cn);
-            const summary = content.substring(0, 100) + (content.length > 100 ? '...' : '');
-            const categoryLabel = getCategoryLabel(article.category);
-            const date = formatDate(article.publish_date);
+            var title = getLocalizedText(article.title, article.title_cn);
+            var content = getLocalizedText(article.content, article.content_cn);
+            var summary = content.substring(0, 100) + (content.length > 100 ? '...' : '');
+            var categoryLabel = getCategoryLabel(article.category);
+            var date = formatDate(article.publish_date);
             
             card.innerHTML = `
                 <div class="relative overflow-hidden">
@@ -761,7 +751,7 @@
         
         // Get Category Label
         function getCategoryLabel(category) {
-            const labels = {
+            var labels = {
                 'Company News': currentLang === 'en' ? 'Company News' : '公司新闻',
                 'Technical Articles': currentLang === 'en' ? 'Technical Articles' : '技术文章',
                 'Industry News': currentLang === 'en' ? 'Industry News' : '行业动态'
@@ -772,25 +762,25 @@
         // Format Date
         function formatDate(dateStr) {
             if (!dateStr) return '';
-            const date = new Date(dateStr);
-            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            var date = new Date(dateStr);
+            var options = { year: 'numeric', month: 'short', day: 'numeric' };
             return date.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'zh-CN', options);
         }
         
         // Update Load More Visibility
         function updateLoadMoreVisibility() {
-            const hasMore = allArticles.length < totalArticles;
+            var hasMore = allArticles.length < totalArticles;
             loadMoreContainer.classList.toggle('hidden', !hasMore);
         }
         
         // Open Article Modal
         function openArticle(articleId) {
-            const article = allArticles.find(a => a.id === articleId);
+            var article = allArticles.find(a => a.id === articleId);
             if (!article) return;
             
-            const title = getLocalizedText(article.title, article.title_cn);
-            const content = getLocalizedText(article.content, article.content_cn);
-            const thumbnail = article.thumbnail && article.thumbnail.length > 0 
+            var title = getLocalizedText(article.title, article.title_cn);
+            var content = getLocalizedText(article.content, article.content_cn);
+            var thumbnail = article.thumbnail && article.thumbnail.length > 0 
                 ? article.thumbnail[0] 
                 : 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
             
@@ -813,7 +803,7 @@
         }
         
         // Close modal on Escape key
-        document.addEventListener('keydown', (e) => {
+        document.addEventListenerfunction('keydown', (e) {
             if (e.key === 'Escape') {
                 closeArticleModal();
             }
