@@ -1,140 +1,112 @@
-# PhotonEdge Products Data
+# PhotonEdge Website
 
-北京恒鼎光科技有限公司 (Beijing Hengding Optical Technology Co., Ltd.) 完整产品数据
+## 产品中心网站 - 静态版本
 
-## 产品分类 (Product Categories)
+本目录包含 PhotonEdge 官网的产品展示页面，**无需后端数据库**，可直接部署到任何静态托管平台。
 
-| 分类 ID | 英文分类名 | 中文分类名 | 图片目录 |
-|---------|-----------|-----------|----------|
-| optical-lenses | Optical Lenses | 光学透镜 | optical-lenses/ |
-| optical-windows | Optical Windows | 光学窗口 | optical-windows/ |
-| optical-mirrors | Optical Mirrors | 光学反射镜 | optical-mirrors/ |
-| optical-prisms | Optical Prisms | 光学棱镜 | optical-prisms/ |
-| optical-filters | Optical Filters | 光学滤光片 | optical-filters/ |
-| optical-beamsplitters | Optical Beamsplitters | 光学分光片 | optical-beamsplitters/ |
-| optical-waveplates | Optical Waveplates | 光学波片 | optical-waveplates/ |
-| optical-polarizers | Optical Polarizers | 光学偏振片 | optical-polarizers/ |
-
-## 包含产品数量
-
-- **光学透镜**: 平凸透镜、弯月透镜、石英透镜、柱面透镜、消色差透镜、C透镜、球透镜、棒镜、非球面透镜
-- **光学窗口**: K9窗口、UV石英窗口、蓝宝石窗口、CaF2窗口、Ge窗口、Si窗口、ZnSe窗口
-- **光学反射镜**: 介质反射镜、金属反射镜
-- **光学棱镜**: 直角棱镜、五角棱镜、角锥棱镜、道威棱镜、色散棱镜、屋脊棱镜
-- **光学滤光片**: 窄带滤光片、ND中性密度滤光片
-- **光学分光片**: 平板分光片、立方体分光片、消偏振分光片、偏振分光片
-- **光学波片**: 多级波片、双波长波片、胶合零级波片、空气隙零级波片
-- **光学偏振片**: 线偏振片、圆偏振片、红外偏振片、格兰泰勒棱镜、格兰激光棱镜、格兰汤普生棱镜、渥拉斯通棱镜
-
-## 数据文件格式
-
-```javascript
-// products-data.js
-const PRODUCTS = [
-  {
-    id: "lens-k9-plano-convex-001",
-    name: "K9 Plano-Convex Lens",
-    nameZh: "K9平凸透镜",
-    category: "optical-lenses",
-    categoryZh: "光学透镜",
-    description: "High-quality K9 glass plano-convex lens for general laser and imaging applications...",
-    image: "images/products/optical-lenses/k9-plano-convex.jpg",
-    parameters: {
-      material: "K9",
-      type: "Plano-Convex",
-      diameter: "6mm, 10mm, 12.7mm, 25mm, 50mm",
-      focalLength: "10mm, 20mm, 30mm, 50mm, 100mm, 200mm",
-      coating: "Uncoated, AR coating"
-    },
-    partNumbers: ["PCX-K9-6-10", "PCX-K9-6-20", "PCX-K9-10-20", "..."],
-    price: 8,
-    priceUnit: "USD",
-    priceNote: "Price varies by specification",
-    priceNoteZh: "价格根据规格不同",
-    slug: "k9-plano-convex"
-  }
-];
-```
-
-## 图片路径规范
-
-所有产品图片应放置在 `images/products/` 目录下：
+### 文件结构
 
 ```
-images/products/
-├── optical-lenses/
-│   ├── k9-plano-convex.jpg
-│   ├── bk7-plano-convex.jpg
-│   ├── ...
-├── optical-windows/
-├── optical-mirrors/
-├── optical-prisms/
-├── optical-filters/
-├── optical-beamsplitters/
-├── optical-waveplates/
-└── optical-polarizers/
+photonedge-website/
+├── index.html              # 首页
+├── products.html           # 产品中心页（动态加载）
+├── product-detail.html     # 产品详情页（动态加载）
+├── about.html              # 关于我们
+├── applications.html       # 应用领域
+├── news.html               # 新闻动态
+├── downloads.html          # 下载中心
+├── contact.html            # 联系我们
+├── logo.png                # Logo
+├── vercel.json             # Vercel 部署配置
+├── images/
+│   └── products/           # 产品图片（按分类组织）
+│       ├── optical-lenses/
+│       ├── optical-windows/
+│       ├── optical-mirrors/
+│       ├── optical-prisms/
+│       ├── optical-filters/
+│       ├── optical-beamsplitters/
+│       └── optical-polarizing-components/
+└── js/
+    └── products-data.js    # 产品数据（66个产品）
 ```
 
-## 使用方法
+### 产品数据
 
-### 在 Node.js 项目中
+- **总产品数**: 66 个
+- **总分类数**: 12 个
 
-```javascript
-// 方式1: ES Module
-import { PRODUCTS } from './products-data.js';
+#### 分类列表
 
-// 方式2: CommonJS
-const { PRODUCTS } = require('./products-data.js');
+| 分类ID | 英文名 | 中文名 | 产品数 |
+|--------|--------|--------|--------|
+| optical-lenses | Optical Lenses | 光学透镜 | 12 |
+| optical-spherical-lenses | Optical Spherical Lenses | 球面透镜 | 3 |
+| optical-cylindrical-lenses | Optical Cylindrical Lenses | 柱面透镜 | 2 |
+| optical-rod-lenses | Optical Rod Lenses | 棒状透镜 | 1 |
+| optical-half-ball-lenses | Optical Half Ball Lenses | 半球透镜 | 1 |
+| optical-ball-lenses | Optical Ball Lenses | 球面透镜 | 1 |
+| optical-windows | Optical Windows | 光学窗口 | 7 |
+| optical-mirrors | Optical Mirrors | 光学反射镜 | 10 |
+| optical-prisms | Optical Prisms | 光学棱镜 | 7 |
+| optical-filters | Optical Filters | 光学滤光片 | 5 |
+| optical-beamsplitters | Optical Beamsplitters | 光学分束器 | 5 |
+| optical-polarizing-components | Optical Polarising Components | 偏振光学组件 | 11 |
 
-// 获取所有产品
-console.log(PRODUCTS.length, 'products');
+### 使用说明
 
-// 按分类筛选
-const lenses = PRODUCTS.filter(p => p.category === 'optical-lenses');
+#### 本地预览
 
-// 按ID查找
-const product = PRODUCTS.find(p => p.id === 'lens-k9-plano-convex-001');
-```
+1. 直接用浏览器打开 `index.html`
+2. 或使用任意静态服务器：
+   ```bash
+   npx serve .
+   # 或
+   python -m http.server 8080
+   ```
 
-### 在浏览器中
+#### 部署到 Vercel
 
-```html
-<script src="./products-data.js"></script>
-<script>
-  console.log(PRODUCTS);
-</script>
-```
+1. 将此目录上传到 GitHub
+2. 在 Vercel 导入项目
+3. 点击 Deploy
 
-## 数据字段说明
+#### 部署到其他平台
 
-| 字段 | 类型 | 描述 |
-|------|------|------|
-| `id` | string | 产品唯一标识符 |
-| `name` | string | 产品英文名称 |
-| `nameZh` | string | 产品中文名称 |
-| `category` | string | 分类ID |
-| `categoryZh` | string | 分类中文名称 |
-| `description` | string | 英文SEO描述 |
-| `image` | string | 产品图片相对路径 |
-| `parameters` | object | 技术规格参数 |
-| `partNumbers` | array | 规格型号列表 |
-| `price` | number | 参考价格 |
-| `priceUnit` | string | 价格单位 (USD) |
-| `priceNote` | string | 价格说明（英文） |
-| `priceNoteZh` | string | 价格说明（中文） |
-| `slug` | string | URL友好标识符 |
+由于使用纯静态文件，可部署到：
+- GitHub Pages
+- Netlify
+- Cloudflare Pages
+- 任意 Web 服务器
 
-## 联系信息
+### 产品页面功能
 
-- **公司**: 北京恒鼎光科技有限公司 (PhotonEdge)
-- **网址**: https://www.photonedgeoptics.com
-- **邮箱**: sales@photonedgeoptics.com
-- **电话**: +86-13693009175
+#### 产品列表页 (products.html)
+- ✅ 按分类筛选
+- ✅ 搜索产品
+- ✅ 响应式布局
+- ✅ 产品卡片展示
+- ✅ 无限滚动/分页
 
-## 许可证
+#### 产品详情页 (product-detail.html)
+- ✅ 产品大图展示
+- ✅ 技术参数表
+- ✅ 相关产品推荐
+- ✅ 面包屑导航
+- ✅ 询价按钮
 
-本产品数据仅供内部使用。价格和信息如有变更，恕不另行通知。
+### 技术特点
 
----
+- 🎨 **Tailwind CSS** - 现代 CSS 框架
+- 📱 **完全响应式** - 适配所有设备
+- ⚡ **无后端依赖** - 纯静态网站
+- 🔄 **动态加载** - JS 按需渲染
+- 🖼️ **图片优化** - WebP 格式支持
 
-*最后更新: 2025年*
+### 数据来源
+
+产品数据来源于 `ltoptic.com` 爬取数据，已整合到 `js/products-data.js` 中。
+
+### 许可证
+
+© 2024 PhotonEdge. All rights reserved.

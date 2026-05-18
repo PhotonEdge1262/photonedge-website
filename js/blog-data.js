@@ -1,5 +1,4 @@
-// PhotonEdge Blog Posts Data - Updated with new technical articles
-
+// PhotonEdge Blog Posts Data
 var BLOG_POSTS = [
   {
     "id": 1,
@@ -110,60 +109,5 @@ var BLOG_POSTS = [
     "readTime": "9 min",
     "image": "images/blog/optical-quality-testing.jpg",
     "author": "PhotonEdge Quality Team"
-  },
-  {
-    "id": 11,
-    "title": "How to Specify Custom Optics: A Complete Engineering Guide",
-    "slug": "custom-optics-specification-guide",
-    "excerpt": "A comprehensive engineering guide to specifying custom optical components. Learn how to define material selection, surface quality, dimensional tolerances, coating requirements, and testing specifications to ensure your custom optics meet exact application needs.",
-    "category": "Technical Guide",
-    "date": "2025-05-15",
-    "readTime": "12 min",
-    "image": "images/blog/custom-optics-spec.jpg",
-    "author": "PhotonEdge Engineering Team"
-  },
-  {
-    "id": 12,
-    "title": "Laser Damage Threshold: What Engineers Need to Know",
-    "slug": "laser-damage-threshold-guide",
-    "excerpt": "Understanding laser-induced damage threshold (LIDT) is critical for selecting optics in high-power laser applications. This guide covers LIDT testing standards,影响因素, and practical specifications for CO2, Nd:YAG, and fiber lasers.",
-    "category": "Technical Guide",
-    "date": "2025-05-12",
-    "readTime": "11 min",
-    "image": "images/blog/laser-damage-threshold.jpg",
-    "author": "PhotonEdge Technical Team"
-  },
-  {
-    "id": 13,
-    "title": "Optical Coating Design: From Theory to Practice",
-    "slug": "optical-coating-design",
-    "excerpt": "An in-depth exploration of optical coating design principles from thin-film theory to practical manufacturing. Learn about quarter-wave stacks, dielectric materials, coating processes, and how to specify coatings that meet your performance requirements.",
-    "category": "Technical Guide",
-    "date": "2025-05-08",
-    "readTime": "14 min",
-    "image": "images/blog/coating-design.jpg",
-    "author": "PhotonEdge Engineering Team"
-  },
-  {
-    "id": 14,
-    "title": "Precision Optical Metrology: Interferometry and Beyond",
-    "slug": "precision-optical-metrology",
-    "excerpt": "A technical deep-dive into optical metrology techniques including Fizeau and Twyman-Green interferometry, profilometry, and wavefront sensing. Understand how measurement uncertainty affects optical component selection and quality assurance.",
-    "category": "Technical Guide",
-    "date": "2025-05-05",
-    "readTime": "13 min",
-    "image": "images/blog/optical-metrology.jpg",
-    "author": "PhotonEdge Quality Team"
-  },
-  {
-    "id": 15,
-    "title": "Choosing Optical Materials for High-Power Laser Applications",
-    "slug": "optical-materials-high-power-lasers",
-    "excerpt": "A technical guide to selecting optical materials for high-power laser systems. Compare fused silica, BK7, CaF2, ZnSe, and diamond for different laser wavelengths, power levels, and environmental conditions.",
-    "category": "Technical Guide",
-    "date": "2025-05-02",
-    "readTime": "11 min",
-    "image": "images/blog/high-power-laser-materials.jpg",
-    "author": "PhotonEdge Engineering Team"
   }
 ];

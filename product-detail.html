@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +24,12 @@
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/product-detail.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/product-detail.html?lang=zh">
+    <link rel="alternate" hreflang="x-default" href="https://photonedgeoptics.com/product-detail.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Detail - PhotonEdge">
+    <meta name="twitter:description" content="View detailed specifications and pricing for precision optical components.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/logo.png">
 </head>
 <body>
     <header class="header">
@@ -70,15 +71,7 @@
         </div>
     </div>
 
-    
-    <div class="request-quote-float">
-        <a href="contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
-            <span class="quote-icon">&#9993;</span>
-            <span>Request Quote</span>
-        </a>
-    </div>
-
-<section class="product-detail">
+    <section class="product-detail">
         <div class="container">
             <div class="product-detail-grid" id="productDetailGrid">
                 <div class="loading">
@@ -241,7 +234,7 @@
             var category = urlParams.get('category');
             // Also extract slug from URL path (for SEO-friendly URLs like /products/slug)
             if (!productSlug) {
-                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)$/);
+                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)\/?$/);
                 if (pathSlugMatch) {
                     productSlug = pathSlugMatch[1];
                 }
@@ -346,6 +339,14 @@
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) {
                 canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/' );
+
+            // Update hreflang tags for SEO-friendly URLs
+            var hreflangEn = document.querySelector('link[hreflang="en"]');
+            var hreflangZh = document.querySelector('link[hreflang="zh"]');
+            var hreflangDefault = document.querySelector('link[hreflang="x-default"]');
+            if (hreflangEn) hreflangEn.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
+            if (hreflangZh) hreflangZh.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/?lang=zh');
+            if (hreflangDefault) hreflangDefault.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
             }
             
             // Update breadcrumb
@@ -416,152 +417,89 @@
             var category = lang === 'zh' ? currentProduct.categoryZh : currentProduct.category;
             var desc = currentProduct.description;
             
-            // Build enhanced specifications with categorized sections
-            var specsHtml = '<div class="specs-container">';
-            specsHtml += '<h3 class="specs-title">' + (lang === 'zh' ? '技术规格' : 'Technical Specifications') + '</h3>';
+            // Build specifications table
+            var specsHtml = '<div class="specifications-table"><h3>' + (lang === 'zh' ? '技术参数' : 'Technical Specifications') + '</h3><table>';
+            specsHtml += '<tr><th>' + (lang === 'zh' ? '类别' : 'Category') + '</th><td>' + category + '</td></tr>';
             
-            // Categorize parameters
-            var opticalParams = ['wavelength_range', 'surface_quality', 'surface_flatness', 'reflectivity', 'transmittance', 'peak_transmittance', 'bandwidth', 'center_wavelength', 'extinction_ratio', 'split_ratio', 'damage_threshold', 'laser_damage_threshold', 'ldt', 'transmittance_vis', 'reflectance'];
-            var mechanicalParams = ['diameter', 'diameter_tolerance', 'thickness', 'thickness_tolerance', 'size', 'size_tolerance', 'focal_length', 'focal_length_tolerance', 'center_thickness', 'edge_thickness', 'back_focal_length', 'clear_aperture', 'centration', 'parallelism', 'angle_tolerance', 'beveling', 'chamfer', 'leg_length', 'radius_of_curvature'];
-            var materialParams = ['material', 'substrate', 'coating', 'coatings'];
-            var environmentalParams = ['working_temp', 'storage_temp', 'operating_humidity', 'thermal_expansion', 'thermal_shock_resistance'];
-            
-            var paramLabels = {
-                en: {
-                    // Optical
-                    wavelength_range: "Wavelength Range",
-                    surface_quality: "Surface Quality (Scratch-Dig)",
-                    surface_flatness: "Surface Flatness",
-                    reflectivity: "Reflectivity",
-                    transmittance: "Transmittance",
-                    peak_transmittance: "Peak Transmittance",
-                    bandwidth: "Bandwidth (FWHM)",
-                    center_wavelength: "Center Wavelength",
-                    extinction_ratio: "Extinction Ratio",
-                    split_ratio: "Split Ratio",
-                    damage_threshold: "Laser Damage Threshold",
-                    laser_damage_threshold: "Laser Damage Threshold",
-                    ldt: "LIDT (LIDT)",
-                    transmittance_vis: "Transmittance (VIS)",
-                    reflectance: "Reflectance",
-                    // Mechanical
-                    diameter: "Diameter",
-                    diameter_tolerance: "Diameter Tolerance",
-                    thickness: "Thickness",
-                    thickness_tolerance: "Thickness Tolerance",
-                    size: "Size",
-                    size_tolerance: "Size Tolerance",
-                    focal_length: "Focal Length",
-                    focal_length_tolerance: "Focal Length Tolerance",
-                    center_thickness: "Center Thickness",
-                    edge_thickness: "Edge Thickness",
-                    back_focal_length: "Back Focal Length",
-                    clear_aperture: "Clear Aperture",
-                    centration: "Centration",
-                    parallelism: "Parallelism",
-                    angle_tolerance: "Angle Tolerance",
-                    beveling: "Bevel",
-                    chamfer: "Chamfer",
-                    leg_length: "Leg Length",
-                    radius_of_curvature: "Radius of Curvature",
-                    // Material
-                    material: "Material / Substrate",
-                    substrate: "Substrate",
-                    coating: "Coating",
-                    coatings: "Coatings",
-                    coating_type: "Coating Type",
-                    refractive_index: "Refractive Index",
-                    abbe_number: "Abbe Number",
-                    // Environmental
-                    working_temp: "Working Temperature",
-                    storage_temp: "Storage Temperature",
-                    operating_humidity: "Operating Humidity",
-                    thermal_expansion: "Thermal Expansion",
-                    thermal_shock_resistance: "Thermal Shock Resistance"
-                },
-                zh: {
-                    // Optical
-                    wavelength_range: "波长范围",
-                    surface_quality: "表面质量 (划痕-麻点)",
-                    surface_flatness: "面形精度",
-                    reflectivity: "反射率",
-                    transmittance: "透射率",
-                    peak_transmittance: "峰值透射率",
-                    bandwidth: "带宽 (FWHM)",
-                    center_wavelength: "中心波长",
-                    extinction_ratio: "消光比",
-                    split_ratio: "分光比",
-                    damage_threshold: "激光损伤阈值",
-                    laser_damage_threshold: "激光损伤阈值",
-                    ldt: "激光损伤阈值",
-                    transmittance_vis: "透射率 (可见光)",
-                    reflectance: "反射率",
-                    // Mechanical
-                    diameter: "直径",
-                    diameter_tolerance: "直径公差",
-                    thickness: "厚度",
-                    thickness_tolerance: "厚度公差",
-                    size: "尺寸",
-                    size_tolerance: "尺寸公差",
-                    focal_length: "焦距",
-                    focal_length_tolerance: "焦距公差",
-                    center_thickness: "中心厚度",
-                    edge_thickness: "边缘厚度",
-                    back_focal_length: "后焦距",
-                    clear_aperture: "通光孔径",
-                    centration: "中心偏差",
-                    parallelism: "平行度",
-                    angle_tolerance: "角度公差",
-                    beveling: "倒边",
-                    chamfer: "倒角",
-                    leg_length: "直角边长",
-                    radius_of_curvature: "曲率半径",
-                    // Material
-                    material: "材料/基底",
-                    substrate: "基底",
-                    coating: "镀膜",
-                    coatings: "镀膜",
-                    coating_type: "镀膜类型",
-                    refractive_index: "折射率",
-                    abbe_number: "阿贝数",
-                    // Environmental
-                    working_temp: "工作温度",
-                    storage_temp: "存储温度",
-                    operating_humidity: "工作湿度",
-                    thermal_expansion: "热膨胀系数",
-                    thermal_shock_resistance: "热冲击稳定性"
+            // Add parameters if available
+            if (currentProduct.parameters) {
+                var paramLabels = {
+                    en: {
+                        material: "Material",
+                        diameter: "Diameter (mm)",
+                        size: "Size",
+                        focal_length: "Focal Length (mm)",
+                        wavelength_range: "Wavelength Range",
+                        surface_quality: "Surface Quality",
+                        coating: "Coating",
+                        substrate: "Substrate",
+                        reflectivity: "Reflectivity",
+                        surface_flatness: "Surface Flatness",
+                        thickness: "Thickness (mm)",
+                        aperture: "Aperture",
+                        angle_tolerance: "Angle Tolerance",
+                        leg_length: "Leg Length",
+                        extinction_ratio: "Extinction Ratio",
+                        split_ratio: "Split Ratio",
+                        center_thickness: "Center Thickness (mm)",
+                        edge_thickness: "Edge Thickness (mm)",
+                        back_focal_length: "Back Focal Length (mm)",
+                        clear_aperture: "Clear Aperture",
+                        bevel: "Bevel",
+                        parallelism: "Parallelism",
+                        transmittance: "Transmittance",
+                        bandwidth: "Bandwidth",
+                        center_wavelength: "Center Wavelength",
+                        peak_transmittance: "Peak Transmittance",
+                        cut_on_wavelength: "Cut-on Wavelength",
+                        cut_off_wavelength: "Cut-off Wavelength",
+                        od_value: "OD Value",
+                        od_range: "OD Range",
+                        wavelength: "Wavelength (nm)"
+                    },
+                    zh: {
+                        material: "材质",
+                        diameter: "直径 (mm)",
+                        size: "尺寸",
+                        focal_length: "焦距 (mm)",
+                        wavelength_range: "波长范围",
+                        surface_quality: "表面质量",
+                        coating: "镀膜",
+                        substrate: "基底",
+                        reflectivity: "反射率",
+                        surface_flatness: "面形精度",
+                        thickness: "厚度 (mm)",
+                        aperture: "通光孔径",
+                        angle_tolerance: "角度公差",
+                        leg_length: "直角边长",
+                        extinction_ratio: "消光比",
+                        split_ratio: "分光比",
+                        center_thickness: "中心厚度 (mm)",
+                        edge_thickness: "边缘厚度 (mm)",
+                        back_focal_length: "后焦距 (mm)",
+                        clear_aperture: "通光孔径",
+                        bevel: "倒边",
+                        parallelism: "平行度",
+                        transmittance: "透射率",
+                        bandwidth: "带宽",
+                        center_wavelength: "中心波长",
+                        peak_transmittance: "峰值透射率",
+                        cut_on_wavelength: "截止波长",
+                        cut_off_wavelength: "短波截止波长",
+                        od_value: "OD值",
+                        od_range: "OD范围",
+                        wavelength: "波长 (nm)"
+                    }
+                };
+                
+                var labels = paramLabels[lang] || paramLabels.en;
+                for (var key in currentProduct.parameters) {
+                    var label = labels[key] || key;
+                    specsHtml += '<tr><th>' + label + '</th><td>' + currentProduct.parameters[key] + '</td></tr>';
                 }
-            };
-            
-            var labels = paramLabels[lang] || paramLabels.en;
-            
-            // Build optical parameters section
-            var opticalSection = buildParamSection(currentProduct.parameters, opticalParams, labels, lang, 'optical');
-            var mechanicalSection = buildParamSection(currentProduct.parameters, mechanicalParams, labels, lang, 'mechanical');
-            var materialSection = buildParamSection(currentProduct.parameters, materialParams, labels, lang, 'material');
-            var environmentalSection = buildParamSection(currentProduct.parameters, environmentalParams, labels, lang, 'environmental');
-            
-            if (opticalSection) {
-                specsHtml += opticalSection;
-            }
-            if (mechanicalSection) {
-                specsHtml += mechanicalSection;
-            }
-            if (materialSection) {
-                specsHtml += materialSection;
-            }
-            if (environmentalSection) {
-                specsHtml += environmentalSection;
             }
             
-            // Add quality standard row
-            specsHtml += '<div class="specs-footer">';
-            specsHtml += '<div class="spec-quality-badge">';
-            specsHtml += '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>';
-            specsHtml += (lang === 'zh' ? '符合 ISO 9001:2015 质量标准' : 'ISO 9001:2015 Quality Standard');
-            specsHtml += '</div></div>';
-            
-            specsHtml += '</div>';
+            specsHtml += '</table></div>';
             
             // Part Numbers Table
             var partNumbersHtml = '';
@@ -590,15 +528,15 @@
                         thickness: '厚度'
                     }
                 };
-                var pLabels = columnLabels[lang] || columnLabels.en;
+                var labels = columnLabels[lang] || columnLabels.en;
                 
                 partNumbersHtml = '<div class="part-numbers-section">' +
-                    '<h3 class="specs-title">' + (lang === 'zh' ? '产品型号与规格' : 'Part Numbers & Specifications') + '</h3>' +
+                    '<h3>' + (lang === 'zh' ? '产品型号与规格' : 'Part Numbers & Specifications') + '</h3>' +
                     '<div class="table-responsive">' +
                     '<table class="part-table"><thead><tr>';
                 
                 columns.forEach(function(col) {
-                    partNumbersHtml += '<th>' + (pLabels[col] || col) + '</th>';
+                    partNumbersHtml += '<th>' + (labels[col] || col) + '</th>';
                 });
                 partNumbersHtml += '</tr></thead><tbody>';
                 
@@ -617,21 +555,9 @@
                 partNumbersHtml += '</tbody></table></div></div>';
             }
             
-            // Applications section
-            var applicationsHtml = '';
-            if (currentProduct.applications) {
-                applicationsHtml = '<div class="product-applications-section">' +
-                    '<h3 class="specs-title">' + (lang === 'zh' ? '应用场景' : 'Applications') + '</h3>' +
-                    '<div class="applications-grid">';
-                currentProduct.applications.forEach(function(app) {
-                    applicationsHtml += '<div class="app-tag">' + app + '</div>';
-                });
-                applicationsHtml += '</div></div>';
-            }
-            
             grid.innerHTML = 
                 '<div class="product-detail-image">' +
-                '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\' loading="lazy">🔬</div>\';">' +
+                '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\'>🔬</div>\';">' +
                 '</div>' +
                 '<div class="product-detail-info">' +
                 '<h1>' + name + '</h1>' +
@@ -643,44 +569,12 @@
                 '</div>' +
                 specsHtml +
                 partNumbersHtml +
-                applicationsHtml +
                 '<div class="product-actions" id="productActionsSection"></div>' +
                 '</div>';
             
             // Render price and cart controls
             renderPriceSection();
             renderProductActions();
-        }
-        
-        // Helper function to build parameter section
-        function buildParamSection(params, paramKeys, labels, lang, type) {
-            if (!params) return '';
-            
-            var typeLabels = {
-                en: { optical: 'Optical Parameters', mechanical: 'Mechanical Parameters', material: 'Material & Coating', environmental: 'Environmental & Thermal' },
-                zh: { optical: '光学参数', mechanical: '机械参数', material: '材料与镀膜', environmental: '环境与热性能' }
-            };
-            
-            var foundParams = [];
-            paramKeys.forEach(function(key) {
-                if (params[key] !== undefined) {
-                    foundParams.push({ key: key, value: params[key] });
-                }
-            });
-            
-            if (foundParams.length === 0) return '';
-            
-            var html = '<div class="spec-section spec-section-' + type + '">';
-            html += '<div class="spec-section-header">' + typeLabels[lang][type] + '</div>';
-            html += '<table class="spec-table">';
-            
-            foundParams.forEach(function(item) {
-                var label = labels[item.key] || item.key;
-                html += '<tr><th>' + label + '</th><td>' + item.value + '</td></tr>';
-            });
-            
-            html += '</table></div>';
-            return html;
         }
         
         function scrollToInquiry(e) {
@@ -830,7 +724,7 @@
                 
                 return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="' + product.image + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">🔬</span>\';">' +
+                    '<img src="' + product.image + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\'>🔬</span>\';">' +
                     '</div>' +
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + prodName + '</h3>' +
@@ -862,6 +756,5 @@
             }, 500);
         });
     </script>
-<script src="js/chat-widget.js"></script>
 </body>
 </html>
