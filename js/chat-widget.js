@@ -56,7 +56,7 @@ function getChatLanguage() {
     }
     var lang = 'en';
     if (typeof localStorage !== 'undefined') {
-        lang = localStorage.getItem('photonedge_lang') || 'en';
+        lang = localStorage.getItem('lang') || 'en';
     }
     return lang;
 }

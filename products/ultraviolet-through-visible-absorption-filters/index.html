@@ -24,12 +24,6 @@
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/product-detail.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/product-detail.html?lang=zh">
-    <link rel="alternate" hreflang="x-default" href="https://photonedgeoptics.com/product-detail.html">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Product Detail - PhotonEdge">
-    <meta name="twitter:description" content="View detailed specifications and pricing for precision optical components.">
-    <meta name="twitter:image" content="https://photonedgeoptics.com/logo.png">
 </head>
 <body>
     <header class="header">
@@ -234,7 +228,7 @@
             var category = urlParams.get('category');
             // Also extract slug from URL path (for SEO-friendly URLs like /products/slug)
             if (!productSlug) {
-                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)\/?$/);
+                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)$/);
                 if (pathSlugMatch) {
                     productSlug = pathSlugMatch[1];
                 }
@@ -339,14 +333,6 @@
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) {
                 canonical.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/' );
-
-            // Update hreflang tags for SEO-friendly URLs
-            var hreflangEn = document.querySelector('link[hreflang="en"]');
-            var hreflangZh = document.querySelector('link[hreflang="zh"]');
-            var hreflangDefault = document.querySelector('link[hreflang="x-default"]');
-            if (hreflangEn) hreflangEn.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
-            if (hreflangZh) hreflangZh.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/?lang=zh');
-            if (hreflangDefault) hreflangDefault.setAttribute('href', 'https://photonedgeoptics.com/products/' + currentProduct.slug + '/');
             }
             
             // Update breadcrumb
