@@ -423,14 +423,14 @@ var translations = {
 
 // Translation function
 function t(key) {
-    var lang = localStorage.getItem('photonedge_lang') || 'en';
+    var lang = localStorage.getItem('lang') || 'en';
     var translationsObj = translations[lang] || translations['en'];
     return translationsObj[key] || key;
 }
 
 // Apply translations to DOM elements with data-i18n attribute
 function applyTranslations() {
-    var lang = localStorage.getItem('photonedge_lang') || 'en';
+    var lang = localStorage.getItem('lang') || 'en';
     var translationsObj = translations[lang] || translations['en'];
     var elements = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < elements.length; i++) {
@@ -443,7 +443,7 @@ function applyTranslations() {
 
 // Set language
 function setLanguage(lang) {
-    localStorage.setItem('photonedge_lang', lang);
+    localStorage.setItem('lang', lang);
     applyTranslations();
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
@@ -457,7 +457,12 @@ function setLanguage(lang) {
 
 // Get current language
 function getCurrentLanguage() {
-    return localStorage.getItem('photonedge_lang') || 'en';
+    return localStorage.getItem('lang') || 'en';
+}
+
+// Alias used by many pages
+function getCurrentLang() {
+    return localStorage.getItem('lang') || 'en';
 }
 
 // Apply translations on page load
