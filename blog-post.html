@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +20,6 @@
     <link rel="canonical" href="https://photonedgeoptics.com/blog-post.html">
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog-post.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog-post.html?lang=zh">
-    <link rel="alternate" hreflang="x-default" href="https://photonedgeoptics.com/blog-post.html">
-
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
@@ -58,10 +61,229 @@
             .card-hover { @apply transition-smooth hover:shadow-soft-lg hover:-translate-y-1; }
         }
     </style>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Blog Post | PhotonEdge">
-    <meta name="twitter:description" content="Technical articles and guides about precision optical components from PhotonEdge.">
-    <meta name="twitter:image" content="https://photonedgeoptics.com/logo.png">
+<style>
+
+/* Social Share Section */
+.social-share-section {
+    background: #f9fafb;
+    margin-top: 0;
+}
+
+.social-share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.share-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.linkedin-btn {
+    background: #0077b5;
+    color: white;
+}
+
+.linkedin-btn:hover {
+    background: #006097;
+    color: white;
+}
+
+.twitter-btn {
+    background: #000000;
+    color: white;
+}
+
+.twitter-btn:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+.facebook-btn {
+    background: #1877f2;
+    color: white;
+}
+
+.facebook-btn:hover {
+    background: #166fe5;
+    color: white;
+}
+
+.email-share-btn {
+    background: #64748b;
+    color: white;
+}
+
+.email-share-btn:hover {
+    background: #475569;
+    color: white;
+}
+
+/* Email Subscription */
+.email-subscription-section {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    color: white;
+}
+
+.subscription-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.subscription-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.subscription-desc {
+    font-size: 15px;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto 15px;
+}
+
+.subscription-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.subscription-btn {
+    padding: 12px 24px;
+    background: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.subscription-btn:hover {
+    background: #2c5282;
+}
+
+.subscription-privacy {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+/* Related Articles */
+.related-articles-section {
+    background: #ffffff;
+}
+
+.related-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.related-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.related-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.related-card-image {
+    height: 160px;
+    background: linear-gradient(135deg, #ebf8ff 0%, #e2e8f0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.related-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.related-card-content {
+    padding: 16px;
+}
+
+.related-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a365d;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.related-card-date {
+    font-size: 12px;
+    color: #718096;
+}
+
+@media (max-width: 768px) {
+    .social-share-buttons {
+        gap: 8px;
+    }
+    
+    .share-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    
+    .subscription-form {
+        flex-direction: column;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
 </head>
 <body class="bg-gradient-subtle min-h-screen">
     <!-- Top Navigation Bar -->
@@ -143,6 +365,66 @@
                 <a href="products.html" class="px-6 py-3 bg-primary-900 text-white rounded-xl font-medium hover:bg-primary-950 transition-smooth border border-primary-500">Browse Products</a>
             </div>
         </div>
+    
+    <!-- Social Share Buttons -->
+    <section class="social-share-section">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-200">
+            <h4 class="text-center text-gray-700 font-medium mb-4">Share this article</h4>
+            <div class="social-share-buttons">
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://photonedgeoptics.com/blog-post.html&title=Precision Optical Components Guide" target="_blank" class="share-btn linkedin-btn" title="Share on LinkedIn">
+                    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://twitter.com/intent/tweet?url=https://photonedgeoptics.com/blog-post.html&text=Precision Optical Components Guide" target="_blank" class="share-btn twitter-btn" title="Share on Twitter">
+                    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    Twitter
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://photonedgeoptics.com/blog-post.html" target="_blank" class="share-btn facebook-btn" title="Share on Facebook">
+                    <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                    Facebook
+                </a>
+                <a href="mailto:?subject=Precision Optical Components Guide&body=https://photonedgeoptics.com/blog-post.html" class="share-btn email-share-btn" title="Share via Email">
+                    <svg class="share-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Subscription -->
+    <section class="email-subscription-section">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="subscription-box">
+                <h4 class="subscription-title">Subscribe to our newsletter</h4>
+                <p class="subscription-desc">Get the latest optical industry insights and PhotonEdge updates delivered to your inbox.</p>
+                <form class="subscription-form" action="#" method="post">
+                    <input type="email" placeholder="Enter your email address" required class="subscription-input">
+                    <button type="submit" class="subscription-btn">Subscribe</button>
+                </form>
+                <p class="subscription-privacy">We respect your privacy. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles -->
+    <section class="related-articles-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <h3 class="related-title">Related Articles</h3>
+            <div class="related-grid" id="relatedArticles">
+                <!-- Related articles will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer -->
@@ -224,7 +506,7 @@
 
             // Also extract slug from URL path (for SEO-friendly URLs like /blog/slug)
             if (!slug) {
-                var blogPathMatch = window.location.pathname.match(/^\/blog\/([a-z0-9-]+)\/?$/);
+                var blogPathMatch = window.location.pathname.match(/^\/blog\/([a-z0-9-]+)$/);
                 if (blogPathMatch) {
                     slug = blogPathMatch[1];
                 }
@@ -253,14 +535,6 @@
             if (ogUrl) ogUrl.setAttribute('content', 'https://photonedgeoptics.com/blog/' + slug + '/' );
             var canonical = document.querySelector('link[rel="canonical"]');
             if (canonical) canonical.setAttribute('href', 'https://photonedgeoptics.com/blog/' + slug + '/' );
-
-            // Update hreflang tags for SEO-friendly URLs
-            var hreflangEn = document.querySelector('link[hreflang="en"]');
-            var hreflangZh = document.querySelector('link[hreflang="zh"]');
-            var hreflangDefault = document.querySelector('link[hreflang="x-default"]');
-            if (hreflangEn) hreflangEn.setAttribute('href', 'https://photonedgeoptics.com/blog/' + slug + '/');
-            if (hreflangZh) hreflangZh.setAttribute('href', 'https://photonedgeoptics.com/blog/' + slug + '/?lang=zh');
-            if (hreflangDefault) hreflangDefault.setAttribute('href', 'https://photonedgeoptics.com/blog/' + slug + '/');
 
             // Update breadcrumb
             document.getElementById('breadcrumbTitle').textContent = currentPost.title;
@@ -330,5 +604,14 @@
             }
         }
     </script>
+<script src="js/chat-widget.js"></script>
+
+    <div class="request-quote-float">
+        <a href="contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
+            <span class="quote-icon">&#9993;</span>
+            <span>Request Quote</span>
+        </a>
+    </div>
+
 </body>
 </html>
