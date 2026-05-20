@@ -224,7 +224,7 @@
         var currentProduct = null;
         
         document.addEventListener('DOMContentLoaded', function() {
-            if (typeof updatePageTranslations === 'function') if (typeof updatePageTranslations === 'function') updatePageTranslations();
+            if (typeof updatePageTranslations === 'function') updatePageTranslations();
             var lang = getCurrentLang();
             document.querySelectorAll('.lang-btn').forEach(function(btn) {
                 btn.classList.remove('active');
@@ -241,7 +241,7 @@
             var category = urlParams.get('category');
             // Also extract slug from URL path (for SEO-friendly URLs like /products/slug)
             if (!productSlug) {
-                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)$/);
+                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)\/?$/);
                 if (pathSlugMatch) {
                     productSlug = pathSlugMatch[1];
                 }
@@ -310,7 +310,7 @@
                     '<p data-i18n="productNotFoundDesc">The product you are looking for does not exist or has been removed.</p>' +
                     '<a href="products.html" class="btn btn-primary" style="margin-top: 20px; display: inline-block;" data-i18n="backToProducts">Back to Products</a>' +
                     '</div>';
-                if (typeof updatePageTranslations === 'function') if (typeof updatePageTranslations === 'function') updatePageTranslations();
+                if (typeof updatePageTranslations === 'function') updatePageTranslations();
                 return;
             }
             

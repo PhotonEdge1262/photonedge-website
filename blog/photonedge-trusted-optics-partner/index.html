@@ -218,7 +218,7 @@
 
             // Also extract slug from URL path (for SEO-friendly URLs like /blog/slug)
             if (!slug) {
-                var blogPathMatch = window.location.pathname.match(/^\/blog\/([a-z0-9-]+)$/);
+                var blogPathMatch = window.location.pathname.match(/^\/blog\/([a-z0-9-]+)\/?$/);
                 if (blogPathMatch) {
                     slug = blogPathMatch[1];
                 }
