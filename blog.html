@@ -411,7 +411,17 @@
             grid.innerHTML = html;
         }
     </script>
-<script src="js/chat-widget.js"></script>
+<script>
+
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+
+    </script>
+
 
     <div class="request-quote-float">
         <a href="contact.html" class="quote-btn" data-i18n="requestQuoteBtn">

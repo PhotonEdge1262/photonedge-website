@@ -30,6 +30,8 @@
         <div class="container">
             <a href="index.html" class="logo">Photon<span>Edge</span></a>
             <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
                     <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
@@ -410,73 +412,145 @@
             // Add parameters if available
             if (currentProduct.parameters) {
                 var paramLabels = {
-                    en: {
-                        material: "Material",
-                        diameter: "Diameter (mm)",
-                        size: "Size",
-                        focal_length: "Focal Length (mm)",
-                        wavelength_range: "Wavelength Range",
-                        surface_quality: "Surface Quality",
-                        coating: "Coating",
-                        substrate: "Substrate",
-                        reflectivity: "Reflectivity",
-                        surface_flatness: "Surface Flatness",
-                        thickness: "Thickness (mm)",
-                        aperture: "Aperture",
-                        angle_tolerance: "Angle Tolerance",
-                        leg_length: "Leg Length",
-                        extinction_ratio: "Extinction Ratio",
-                        split_ratio: "Split Ratio",
-                        center_thickness: "Center Thickness (mm)",
-                        edge_thickness: "Edge Thickness (mm)",
-                        back_focal_length: "Back Focal Length (mm)",
-                        clear_aperture: "Clear Aperture",
-                        bevel: "Bevel",
-                        parallelism: "Parallelism",
-                        transmittance: "Transmittance",
-                        bandwidth: "Bandwidth",
-                        center_wavelength: "Center Wavelength",
-                        peak_transmittance: "Peak Transmittance",
-                        cut_on_wavelength: "Cut-on Wavelength",
-                        cut_off_wavelength: "Cut-off Wavelength",
-                        od_value: "OD Value",
-                        od_range: "OD Range",
-                        wavelength: "Wavelength (nm)"
-                    },
-                    zh: {
-                        material: "材质",
-                        diameter: "直径 (mm)",
-                        size: "尺寸",
-                        focal_length: "焦距 (mm)",
-                        wavelength_range: "波长范围",
-                        surface_quality: "表面质量",
-                        coating: "镀膜",
-                        substrate: "基底",
-                        reflectivity: "反射率",
-                        surface_flatness: "面形精度",
-                        thickness: "厚度 (mm)",
-                        aperture: "通光孔径",
-                        angle_tolerance: "角度公差",
-                        leg_length: "直角边长",
-                        extinction_ratio: "消光比",
-                        split_ratio: "分光比",
-                        center_thickness: "中心厚度 (mm)",
-                        edge_thickness: "边缘厚度 (mm)",
-                        back_focal_length: "后焦距 (mm)",
-                        clear_aperture: "通光孔径",
-                        bevel: "倒边",
-                        parallelism: "平行度",
-                        transmittance: "透射率",
-                        bandwidth: "带宽",
-                        center_wavelength: "中心波长",
-                        peak_transmittance: "峰值透射率",
-                        cut_on_wavelength: "截止波长",
-                        cut_off_wavelength: "短波截止波长",
-                        od_value: "OD值",
-                        od_range: "OD范围",
-                        wavelength: "波长 (nm)"
-                    }
-                };
+                en: {
+                    // Optical
+                    wavelength_range: "Wavelength Range",
+                    surface_quality: "Surface Quality (Scratch-Dig)",
+                    surface_flatness: "Surface Flatness",
+                    reflectivity: "Reflectivity",
+                    transmittance: "Transmittance",
+                    peak_transmittance: "Peak Transmittance",
+                    bandwidth: "Bandwidth (FWHM)",
+                    center_wavelength: "Center Wavelength",
+                    extinction_ratio: "Extinction Ratio",
+                    split_ratio: "Split Ratio",
+                    damage_threshold: "Laser Damage Threshold",
+                    laser_damage_threshold: "Laser Damage Threshold",
+                    ldt: "LIDT (LIDT)",
+                    transmittance_vis: "Transmittance (VIS)",
+                    reflectance: "Reflectance",
+                    // Mechanical
+                    diameter: "Diameter",
+                    diameter_tolerance: "Diameter Tolerance",
+                    thickness: "Thickness",
+                    thickness_tolerance: "Thickness Tolerance",
+                    size: "Size",
+                    size_tolerance: "Size Tolerance",
+                    focal_length: "Focal Length",
+                    focal_length_tolerance: "Focal Length Tolerance",
+                    center_thickness: "Center Thickness",
+                    edge_thickness: "Edge Thickness",
+                    back_focal_length: "Back Focal Length",
+                    clear_aperture: "Clear Aperture",
+                    centration: "Centration",
+                    parallelism: "Parallelism",
+                    angle_tolerance: "Angle Tolerance",
+                    beveling: "Bevel",
+                    chamfer: "Chamfer",
+                    leg_length: "Leg Length",
+                    radius_of_curvature: "Radius of Curvature",
+                    // Material
+                    material: "Material / Substrate",
+                    substrate: "Substrate",
+                    coating: "Coating",
+                    coatings: "Coatings",
+                    coating_type: "Coating Type",
+                    refractive_index: "Refractive Index",
+                    abbe_number: "Abbe Number",
+                    // Environmental
+                    working_temp: "Working Temperature",
+                    storage_temp: "Storage Temperature",
+                    operating_humidity: "Operating Humidity",
+                    thermal_expansion: "Thermal Expansion",
+                    thermal_shock_resistance: "Thermal Shock Resistance"
+                },
+                zh: {
+                    // Optical
+                    wavelength_range: "波长范围",
+                    surface_quality: "表面质量 (划痕-麻点)",
+                    surface_flatness: "面形精度",
+                    reflectivity: "反射率",
+                    transmittance: "透射率",
+                    peak_transmittance: "峰值透射率",
+                    bandwidth: "带宽 (FWHM)",
+                    center_wavelength: "中心波长",
+                    extinction_ratio: "消光比",
+                    split_ratio: "分光比",
+                    damage_threshold: "激光损伤阈值",
+                    laser_damage_threshold: "激光损伤阈值",
+                    ldt: "激光损伤阈值",
+                    transmittance_vis: "透射率 (可见光)",
+                    reflectance: "反射率",
+                    // Mechanical
+                    diameter: "直径",
+                    diameter_tolerance: "直径公差",
+                    thickness: "厚度",
+                    thickness_tolerance: "厚度公差",
+                    size: "尺寸",
+                    size_tolerance: "尺寸公差",
+                    focal_length: "焦距",
+                    focal_length_tolerance: "焦距公差",
+                    center_thickness: "中心厚度",
+                    edge_thickness: "边缘厚度",
+                    back_focal_length: "后焦距",
+                    clear_aperture: "通光孔径",
+                    centration: "中心偏差",
+                    parallelism: "平行度",
+                    angle_tolerance: "角度公差",
+                    beveling: "倒边",
+                    chamfer: "倒角",
+                    leg_length: "直角边长",
+                    radius_of_curvature: "曲率半径",
+                    // Material
+                    material: "材料/基底",
+                    substrate: "基底",
+                    coating: "镀膜",
+                    coatings: "镀膜",
+                    coating_type: "镀膜类型",
+                    refractive_index: "折射率",
+                    abbe_number: "阿贝数",
+                    // Environmental
+                    working_temp: "工作温度",
+                    storage_temp: "存储温度",
+                    operating_humidity: "工作湿度",
+                    thermal_expansion: "热膨胀系数",
+                    thermal_shock_resistance: "热冲击稳定性",
+                    // Additional parameters
+                    adjustment_range: "调节范围",
+                    angular_tolerance: "角度公差",
+                    aperture: "孔径",
+                    apex_angle: "顶角",
+                    base_size: "底座尺寸",
+                    beam_deviation: "光束偏移",
+                    beam_separation: "光束间距",
+                    blocking: "阻挡范围",
+                    clamping: "夹持方式",
+                    components: "组件",
+                    correction: "校正",
+                    cut_on_wavelength: "截止波长",
+                    hole_pattern: "孔阵列",
+                    input_aperture: "入射孔径",
+                    isolation: "隔离度",
+                    length: "长度",
+                    load_capacity: "承载能力",
+                    magnification: "放大率",
+                    numerical_aperture: "数值孔径",
+                    od_range: "光密度范围",
+                    od_value: "光密度",
+                    platform_size: "平台尺寸",
+                    post_diameter: "支杆直径",
+                    resolution: "分辨率",
+                    retardation: "相位延迟",
+                    rotation_angle: "旋转角度",
+                    rotation_range: "旋转范围",
+                    standard: "标准",
+                    thread: "螺纹",
+                    thread_standard: "螺纹标准",
+                    wavelength: "波长",
+                    wedge_angle: "楔角",
+                    working_distance: "工作距离"
+                }
+            };
                 
                 var labels = paramLabels[lang] || paramLabels.en;
                 for (var key in currentProduct.parameters) {
@@ -742,5 +816,15 @@
             }, 500);
         });
     </script>
-</body>
+<script>
+
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+
+    </script>
+
 </html>

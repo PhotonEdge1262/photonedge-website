@@ -35,6 +35,8 @@
         <div class="container">
             <a href="index.html" class="logo">Photon<span>Edge</span></a>
             <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
                     <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
@@ -755,6 +757,16 @@
             }, 500);
         });
     </script>
-<script src="js/chat-widget.js"></script>
+<script>
+
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+
+    </script>
+
 </body>
 </html>

@@ -3484,3 +3484,89 @@ ul { list-style: none; }
         font-size: 12px;
     }
 }
+
+/* ===== MOBILE RESPONSIVE V9 - PHOTONEDGE ===== */
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: var(--dark);
+    cursor: pointer;
+    padding: 8px;
+    line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle { display: block; }
+    .nav { position: relative; }
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 15px 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        gap: 0;
+        z-index: 1000;
+    }
+    .nav-list li { padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .nav-list li:last-child { border-bottom: none; }
+    .nav-list.active { display: flex; }
+    .lang-switcher { margin-top: 10px; }
+}
+
+/* Hero Mobile */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 28px; letter-spacing: 0; }
+    .hero .subtitle { font-size: 16px; }
+    .hero .company { font-size: 14px; }
+    .hero { padding: 120px 0 60px; }
+    .hero-btns { flex-direction: column; gap: 12px; }
+    .hero-btns .btn { width: 100%; text-align: center; }
+}
+
+/* Product Detail Mobile */
+@media (max-width: 768px) {
+    .product-detail-grid { grid-template-columns: 1fr; gap: 30px; }
+    .product-detail-image { height: 280px; }
+    .product-detail-info h1 { font-size: 22px; }
+}
+
+/* Table Responsive Mobile */
+@media (max-width: 768px) {
+    .table-responsive { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .spec-table, .part-table { min-width: 400px; }
+}
+
+/* Products Grid Mobile */
+@media (max-width: 767px) {
+    .products-grid { grid-template-columns: 1fr; }
+    .product-card { padding: 15px; }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Request Quote Float Mobile */
+@media (max-width: 768px) {
+    .request-quote-float { 
+        right: auto; left: 50%; top: auto; bottom: 90px; 
+        transform: translateX(-50%);
+    }
+    .quote-btn { 
+        writing-mode: horizontal-tb; text-orientation: initial;
+        padding: 10px 20px; font-size: 13px;
+    }
+}
+
+/* Footer Mobile */
+@media (max-width: 767px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .footer-brand { text-align: center; }
+}
