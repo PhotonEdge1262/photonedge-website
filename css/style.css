@@ -3570,3 +3570,112 @@ ul { list-style: none; }
     .footer-grid { grid-template-columns: 1fr; gap: 30px; text-align: center; }
     .footer-brand { text-align: center; }
 }
+
+
+/* Factory hero image in about.html */
+.factory-hero-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    max-height: 400px;
+}
+.factory-hero-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+.factory-hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    padding: 20px 30px;
+    color: white;
+}
+.factory-hero-overlay p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Factory facility card images */
+.factory-facility-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.factory-facility-img {
+    height: auto;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f7fa;
+    border-radius: 8px 8px 0 0;
+}
+.factory-facility-card .factory-facility-img img {
+    border-radius: 8px 8px 0 0;
+}
+.factory-img-placeholder {
+    height: 200px;
+    font-size: 48px;
+    background: linear-gradient(135deg, #e8ecf1, #d1d8e0);
+}
+
+/* Homepage facility showcase */
+.home-facility-showcase {
+    padding: 30px 0 40px;
+    background: #f8f9fb;
+}
+.facility-showcase-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 16px;
+    max-height: 360px;
+}
+.facility-showcase-main img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+.facility-showcase-side {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.facility-showcase-side img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Mobile responsive for facility showcase */
+@media (max-width: 768px) {
+    .factory-hero-image img {
+        height: 250px;
+    }
+    .factory-facility-img img {
+        height: 180px;
+    }
+    .facility-showcase-grid {
+        grid-template-columns: 1fr;
+        max-height: none;
+    }
+    .facility-showcase-main img {
+        height: 220px;
+    }
+    .facility-showcase-side {
+        flex-direction: row;
+    }
+    .facility-showcase-side img {
+        height: 140px;
+    }
+}
