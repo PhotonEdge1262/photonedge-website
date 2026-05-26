@@ -443,33 +443,33 @@
 
     <script>
         // BaaS Configuration
-        const config = {
+        var config = {
             baseUrl: 'https://baas.kuafuai.net/baas-api',
             apiKey: 'baas_sGzz4VCE'
         };
         
-        // Initialize BaaS Client
-        const client = aipexbase.createClient(config);
+        // Initialize BaaS Client - DISABLED due to ES6 incompatibility, use local demo data only
+        // var client = aipexbase.createClient(config);
         
         // State
-        let currentCategory = 'all';
-        let currentPage = 1;
-        const pageSize = 6;
-        let totalArticles = 0;
-        let allArticles = [];
-        let isLoading = false;
-        let currentLang = localStorage.getItem('lang') || 'en';
+        var currentCategory = 'all';
+        var currentPage = 1;
+        var pageSize = 6;
+        var totalArticles = 0;
+        var allArticles = [];
+        var isLoading = false;
+        var currentLang = localStorage.getItem('lang') || 'en';
         
         // DOM Elements
-        const newsGrid = document.getElementById('newsGrid');
-        const emptyState = document.getElementById('emptyState');
-        const loadMoreContainer = document.getElementById('loadMoreContainer');
-        const loadMoreBtn = document.getElementById('loadMoreBtn');
-        const skeletonCards = document.querySelectorAll('.skeleton-card');
-        const articleModal = document.getElementById('articleModal');
+        var newsGrid = document.getElementById('newsGrid');
+        var emptyState = document.getElementById('emptyState');
+        var loadMoreContainer = document.getElementById('loadMoreContainer');
+        var loadMoreBtn = document.getElementById('loadMoreBtn');
+        var skeletonCards = document.querySelectorAll('.skeleton-card');
+        var articleModal = document.getElementById('articleModal');
         
         // Initialize
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', function() {
             initLanguage();
             initMobileMenu();
             initFilterButtons();
@@ -479,12 +479,11 @@
         
         // Language Management
         function initLanguage() {
-            const langBtn = document.getElementById('langBtn');
-            const currentLangSpan = document.getElementById('currentLang');
+            var langBtn = document.getElementById('langBtn');
             
             updateLanguageUI();
             
-            langBtn.addEventListener('click', () => {
+            langBtn.addEventListener('click', function() {
                 currentLang = currentLang === 'en' ? 'cn' : 'en';
                 localStorage.setItem('lang', currentLang);
                 updateLanguageUI();
@@ -498,11 +497,12 @@
         }
         
         function updatePageContent() {
-            const elements = document.querySelectorAll('[data-en]');
-            elements.forEach(el => {
-                const text = currentLang === 'en' ? el.dataset.en : el.dataset.cn;
+            var elements = document.querySelectorAll('[data-en]');
+            for (var i = 0; i < elements.length; i++) {
+                var el = elements[i];
+                var text = currentLang === 'en' ? el.dataset.en : el.dataset.cn;
                 if (text) el.textContent = text;
-            });
+            }
         }
         
         function getLocalizedText(enText, cnText) {
@@ -511,110 +511,82 @@
         
         // Mobile Menu
         function initMobileMenu() {
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
+            var mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            var mobileMenu = document.getElementById('mobileMenu');
             
-            mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.addEventListener('click', function() {
                 mobileMenu.classList.toggle('hidden');
             });
         }
         
         // Filter Buttons
         function initFilterButtons() {
-            const filterBtns = document.querySelectorAll('.filter-btn');
+            var filterBtns = document.querySelectorAll('.filter-btn');
             
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
+            for (var i = 0; i < filterBtns.length; i++) {
+                var btn = filterBtns[i];
+                btn.addEventListener('click', function() {
                     // Update active state
-                    filterBtns.forEach(b => {
+                    for (var j = 0; j < filterBtns.length; j++) {
+                        var b = filterBtns[j];
                         b.classList.remove('active', 'bg-primary-800', 'text-white', 'shadow-md');
                         b.classList.add('bg-white', 'text-gray-600', 'border', 'border-gray-200');
-                    });
-                    btn.classList.add('active', 'bg-primary-800', 'text-white', 'shadow-md');
-                    btn.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
+                    }
+                    this.classList.add('active', 'bg-primary-800', 'text-white', 'shadow-md');
+                    this.classList.remove('bg-white', 'text-gray-600', 'border', 'border-gray-200');
                     
                     // Filter articles
-                    currentCategory = btn.dataset.category;
+                    currentCategory = this.dataset.category;
                     currentPage = 1;
                     loadArticles();
                 });
-            });
+            }
         }
         
         // Load More Button
         function initLoadMore() {
-            loadMoreBtn.addEventListener('click', () => {
+            loadMoreBtn.addEventListener('click', function() {
                 currentPage++;
                 loadArticles(true);
             });
         }
         
-        // Load Articles from BaaS
-        async function loadArticles(append = false) {
+        // Extract thumbnail URL from either object array or string array
+        function getThumbnailUrl(thumbnail) {
+            if (!thumbnail || thumbnail.length === 0) {
+                return 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            }
+            var first = thumbnail[0];
+            // Handle both string URLs and object format [{url: "..."}]
+            if (typeof first === 'object' && first !== null) {
+                return first.url || first.src || first.path || 
+                    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            }
+            return first;
+        }
+        
+        // Load Articles - Use local demo data only (BaaS has ES6 compatibility issues)
+        function loadArticles(append) {
             if (isLoading) return;
             isLoading = true;
             
+            append = append || false;
+            
             if (!append) {
-                // Show skeletons
-                skeletonCards.forEach(card => card.classList.remove('hidden'));
+                // Show skeletons briefly
                 newsGrid.innerHTML = '';
-                skeletonCards.forEach(card => newsGrid.appendChild(card.cloneNode(true)));
-            } else {
-                // Show loading state on button
-                loadMoreBtn.disabled = true;
-                loadMoreBtn.innerHTML = '<span class="animate-spin inline-block">⟳</span> Loading...';
             }
             
-            try {
-                // Build query
-                let query = client.db.from('news').page()
-                    .page(currentPage, pageSize)
-                    .order('publish_date', 'desc');
-                
-                if (currentCategory !== 'all') {
-                    query = query.eq('category', currentCategory);
-                }
-                
-                const response = await query;
-                
-                if (response.success && response.data) {
-                    const articles = response.data.records || response.data;
-                    totalArticles = response.data.total || articles.length;
-                    
-                    if (append) {
-                        allArticles = [...allArticles, ...articles];
-                    } else {
-                        allArticles = articles;
-                    }
-                    
-                    renderArticles();
-                    updateLoadMoreVisibility();
-                } else {
-                    // No data or error - show demo data
-                    if (!append) {
-                        allArticles = getDemoArticles();
-                        totalArticles = allArticles.length;
-                        renderArticles();
-                        updateLoadMoreVisibility();
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading articles:', error);
-                // Show demo data on error
-                if (!append) {
-                    allArticles = getDemoArticles();
-                    totalArticles = allArticles.length;
-                    renderArticles();
-                    updateLoadMoreVisibility();
-                }
-            }
+            // Always use demo data (BaaS disabled due to ES6 incompatibility)
+            allArticles = getDemoArticles();
+            totalArticles = allArticles.length;
+            renderArticles();
+            updateLoadMoreVisibility();
             
             isLoading = false;
-            loadMoreBtn.disabled = false;
-            loadMoreBtn.innerHTML = '<span data-en="Load More" data-cn="加载更多">Load More</span>';
         }
         
-        // Demo Articles (fallback)
+        // Demo Articles
         function getDemoArticles() {
             return [
                 {
@@ -682,28 +654,6 @@
                     content_cn: '医学成像设备市场正在快速增长，受益于内窥镜、显微镜和诊断成像系统方面的技术创新。这一增长转化为对高精度光学元件的需求增加。',
                     publish_date: '2024-02-15',
                     author: 'Industry Analyst'
-                },
-                {
-                    id: 7,
-                    title: 'PhotonEdge Launches New Series of Precision Aspheric Lenses',
-                    title_cn: 'PhotonEdge 推出新型精密非球面透镜系列',
-                    category: 'Company News',
-                    thumbnail: ['https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=600&h=400&fit=crop'],
-                    content: 'We are excited to introduce our new series of precision aspheric lenses designed for laser focusing and illumination applications. These lenses offer superior performance compared to traditional spherical lenses with reduced spherical aberration.',
-                    content_cn: '我们很高兴推出专为激光聚焦和照明应用设计的新型精密非球面透镜系列。与传统球面透镜相比，这些透镜具有卓越的性能，可减少球面像差。',
-                    publish_date: '2024-02-10',
-                    author: 'PhotonEdge Team'
-                },
-                {
-                    id: 8,
-                    title: 'Understanding Surface Quality Specifications in Optics',
-                    title_cn: '了解光学元件的表面质量规格',
-                    category: 'Technical Articles',
-                    thumbnail: ['https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop'],
-                    content: 'Surface quality is a critical parameter in precision optics that affects system performance. This article explains the Scratch-Dig standard, interferometric testing methods, and how to select appropriate specifications for your application.',
-                    content_cn: '表面质量是精密光学中的一个关键参数，会影响系统性能。本文解释了划痕-麻点标准、干涉测试方法以及如何为您的应用选择合适的规格。',
-                    publish_date: '2024-02-05',
-                    author: 'Dr. Zhang'
                 }
             ];
         }
@@ -711,9 +661,15 @@
         // Render Articles
         function renderArticles() {
             // Filter by category
-            let filteredArticles = allArticles;
+            var filteredArticles = allArticles;
             if (currentCategory !== 'all') {
-                filteredArticles = allArticles.filter(article => article.category === currentCategory);
+                var filtered = [];
+                for (var i = 0; i < allArticles.length; i++) {
+                    if (allArticles[i].category === currentCategory) {
+                        filtered.push(allArticles[i]);
+                    }
+                }
+                filteredArticles = filtered;
             }
             
             // Clear grid
@@ -728,62 +684,60 @@
             emptyState.classList.add('hidden');
             
             // Render articles
-            filteredArticles.forEach((article, index) => {
-                const card = createArticleCard(article, index);
+            for (var i = 0; i < filteredArticles.length; i++) {
+                var card = createArticleCard(filteredArticles[i], i);
                 newsGrid.appendChild(card);
-            });
+            }
             
-            // Show/hide load more based on count
-            loadMoreContainer.classList.toggle('hidden', filteredArticles.length < pageSize);
+            // Hide load more button
+            loadMoreContainer.classList.add('hidden');
         }
         
         // Create Article Card
         function createArticleCard(article, index) {
-            const card = document.createElement('div');
+            var card = document.createElement('div');
             card.className = 'bg-white rounded-2xl shadow-soft overflow-hidden card-hover animate-slide-up';
-            card.style.animationDelay = `${index * 0.1}s`;
+            card.style.animationDelay = (index * 0.1) + 's';
             
-            const thumbnail = article.thumbnail && article.thumbnail.length > 0 
-                ? article.thumbnail[0] 
-                : 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            var thumbnail = getThumbnailUrl(article.thumbnail);
+            var title = getLocalizedText(article.title, article.title_cn);
+            var content = getLocalizedText(article.content, article.content_cn);
+            var summary = content.substring(0, 100) + (content.length > 100 ? '...' : '');
+            var categoryLabel = getCategoryLabel(article.category);
+            var date = formatDate(article.publish_date);
             
-            const title = getLocalizedText(article.title, article.title_cn);
-            const content = getLocalizedText(article.content, article.content_cn);
-            const summary = content.substring(0, 100) + (content.length > 100 ? '...' : '');
-            const categoryLabel = getCategoryLabel(article.category);
-            const date = formatDate(article.publish_date);
+            var html = '' +
+                '<div class="relative overflow-hidden">' +
+                    '<img src="' + thumbnail + '" alt="' + title + '" class="w-full article-image transition-smooth hover:scale-105" loading="lazy">' +
+                    '<span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-primary-700 rounded-full text-xs font-semibold shadow-sm">' +
+                        categoryLabel +
+                    '</span>' +
+                '</div>' +
+                '<div class="p-6">' +
+                    '<div class="flex items-center space-x-3 mb-3">' +
+                        '<svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>' +
+                        '</svg>' +
+                        '<span class="text-sm text-gray-500">' + date + '</span>' +
+                    '</div>' +
+                    '<h3 class="text-lg font-bold text-gray-800 mb-3 line-clamp-2">' + title + '</h3>' +
+                    '<p class="text-gray-600 text-sm leading-relaxed mb-4">' + summary + '</p>' +
+                    '<button onclick="openArticle(' + article.id + ')" class="inline-flex items-center space-x-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium hover:bg-primary-100 transition-smooth">' +
+                        '<span data-en="Read More" data-cn="阅读更多">Read More</span>' +
+                        '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                            '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>' +
+                        '</svg>' +
+                    '</button>' +
+                '</div>';
             
-            card.innerHTML = `
-                <div class="relative overflow-hidden">
-                    <img src="${thumbnail}" alt="${title}" class="w-full article-image transition-smooth hover:scale-105" loading="lazy">
-                    <span class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-primary-700 rounded-full text-xs font-semibold shadow-sm">
-                        ${categoryLabel}
-                    </span>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-center space-x-3 mb-3">
-                        <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                        </svg>
-                        <span class="text-sm text-gray-500">${date}</span>
-                    </div>
-                    <h3 class="text-lg font-bold text-gray-800 mb-3 line-clamp-2">${title}</h3>
-                    <p class="text-gray-600 text-sm leading-relaxed mb-4">${summary}</p>
-                    <button onclick="openArticle(${article.id})" class="inline-flex items-center space-x-2 px-4 py-2 bg-primary-50 text-primary-700 rounded-lg text-sm font-medium hover:bg-primary-100 transition-smooth">
-                        <span data-en="Read More" data-cn="阅读更多">Read More</span>
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </button>
-                </div>
-            `;
+            card.innerHTML = html;
             
             return card;
         }
         
         // Get Category Label
         function getCategoryLabel(category) {
-            const labels = {
+            var labels = {
                 'Company News': currentLang === 'en' ? 'Company News' : '公司新闻',
                 'Technical Articles': currentLang === 'en' ? 'Technical Articles' : '技术文章',
                 'Industry News': currentLang === 'en' ? 'Industry News' : '行业动态'
@@ -794,27 +748,39 @@
         // Format Date
         function formatDate(dateStr) {
             if (!dateStr) return '';
-            const date = new Date(dateStr);
-            const options = { year: 'numeric', month: 'short', day: 'numeric' };
+            var date = new Date(dateStr);
+            var options = { year: 'numeric', month: 'short', day: 'numeric' };
             return date.toLocaleDateString(currentLang === 'en' ? 'en-US' : 'zh-CN', options);
         }
         
         // Update Load More Visibility
         function updateLoadMoreVisibility() {
-            const hasMore = allArticles.length < totalArticles;
-            loadMoreContainer.classList.toggle('hidden', !hasMore);
+            var hasMore = allArticles.length < totalArticles;
+            if (!hasMore) {
+                loadMoreContainer.classList.add('hidden');
+            } else {
+                loadMoreContainer.classList.remove('hidden');
+            }
+        }
+        
+        // Find article by id
+        function findArticleById(articleId) {
+            for (var i = 0; i < allArticles.length; i++) {
+                if (allArticles[i].id === articleId) {
+                    return allArticles[i];
+                }
+            }
+            return null;
         }
         
         // Open Article Modal
         function openArticle(articleId) {
-            const article = allArticles.find(a => a.id === articleId);
+            var article = findArticleById(articleId);
             if (!article) return;
             
-            const title = getLocalizedText(article.title, article.title_cn);
-            const content = getLocalizedText(article.content, article.content_cn);
-            const thumbnail = article.thumbnail && article.thumbnail.length > 0 
-                ? article.thumbnail[0] 
-                : 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            var title = getLocalizedText(article.title, article.title_cn);
+            var content = getLocalizedText(article.content, article.content_cn);
+            var thumbnail = getThumbnailUrl(article.thumbnail);
             
             document.getElementById('modalTitle').textContent = title;
             document.getElementById('modalImage').src = thumbnail;
@@ -835,7 +801,7 @@
         }
         
         // Close modal on Escape key
-        document.addEventListener('keydown', (e) => {
+        document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeArticleModal();
             }
