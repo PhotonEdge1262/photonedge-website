@@ -418,7 +418,30 @@ var translations = {
         specApplications: "应用",
         specCertifications: "认证",
         specQuality: "质量保证"
-    }
+    ,
+    "navDownloads": "资料下载",
+    "navCaseStudies": "案例研究",
+    "navApplications": "应用领域",
+    "requestQuote": "请求报价",
+    "requestQuoteBtn": "请求报价",
+    "sendMessage": "发送消息",
+    "submit": "提交",
+    "search": "搜索",
+    "searchPlaceholder": "搜索产品...",
+    "addToCart": "加入购物车",
+    "viewDetails": "查看详情",
+    "learnMore": "了解更多",
+    "companyInfo": "公司信息",
+    "ourFactory": "工厂展示",
+    "contactUs": "联系我们",
+    "quickLinks": "快速链接",
+    "resources": "资源",
+    "certifications": "认证资质",
+    "qualityControl": "质量控制",
+    "customSolutions": "定制方案",
+    "productCatalog": "产品目录",
+    "technicalSupport": "技术支持",
+    "faq": "常见问题"}
 };
 
 // Translation function
