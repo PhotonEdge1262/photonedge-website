@@ -413,7 +413,7 @@
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <span class="text-gray-400">sales@photonedgeoptics.com</span>
+                            <span class="text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="90e3f1fcf5e3d0e0f8ffe4fffef5f4f7f5ffe0e4f9f3e3bef3fffd">[email&#160;protected]</a></span>
                         </li>
                         <li class="flex items-center space-x-3">
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -439,7 +439,7 @@
             
             <div class="border-t border-gray-800 mt-10 pt-8 text-center">
                 <p class="text-gray-500 text-sm">
-                    © 2024 PhotonEdge. All rights reserved.
+                    © 2024-2026 PhotonEdge. All rights reserved.
                 </p>
             </div>
         </div>
@@ -462,7 +462,7 @@
         </div>
     </a>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // BaaS Configuration
         var config = {
             baseUrl: 'https://baas.kuafuai.net/baas-api',
@@ -572,18 +572,41 @@
             });
         }
         
-        // Extract thumbnail URL from either object array or string array
+        // Extract thumbnail URL - handle all formats: string, string[], object, object[]
         function getThumbnailUrl(thumbnail) {
-            if (!thumbnail || thumbnail.length === 0) {
-                return 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            var defaultUrl = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            
+            // Case 1: null/undefined/empty
+            if (!thumbnail) return defaultUrl;
+            
+            // Case 2: Direct string URL
+            if (typeof thumbnail === 'string') {
+                return thumbnail || defaultUrl;
             }
-            var first = thumbnail[0];
-            // Handle both string URLs and object format [{url: "..."}]
-            if (typeof first === 'object' && first !== null) {
-                return first.url || first.src || first.path || 
-                    'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            
+            // Case 3: Direct object {url: "..."}
+            if (typeof thumbnail === 'object' && !Array.isArray(thumbnail)) {
+                return thumbnail.url || thumbnail.src || thumbnail.path || defaultUrl;
             }
-            return first;
+            
+            // Case 4: Array - get first element
+            if (Array.isArray(thumbnail)) {
+                if (thumbnail.length === 0) return defaultUrl;
+                var first = thumbnail[0];
+                
+                // Case 4a: Array element is string
+                if (typeof first === 'string') {
+                    return first || defaultUrl;
+                }
+                
+                // Case 4b: Array element is object [{url: "..."}]
+                if (typeof first === 'object' && first !== null) {
+                    return first.url || first.src || first.path || defaultUrl;
+                }
+            }
+            
+            // Fallback
+            return defaultUrl;
         }
         
         // Load Articles - Use local demo data only (BaaS has ES6 compatibility issues)
