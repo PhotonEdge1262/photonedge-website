@@ -126,7 +126,7 @@ var BLOG_POSTS = [
     "id": 12,
     "title": "Laser Damage Threshold: What Engineers Need to Know",
     "slug": "laser-damage-threshold-guide",
-    "excerpt": "Understanding laser-induced damage threshold (LIDT) is critical for selecting optics in high-power laser applications. This guide covers LIDT testing standards,影响因素, and practical specifications for CO2, Nd:YAG, and fiber lasers.",
+    "excerpt": "Understanding laser-induced damage threshold (LIDT) is critical for selecting optics in high-power laser applications. This guide covers LIDT testing standards,influencing factors, and practical specifications for CO2, Nd:YAG, and fiber lasers.",
     "category": "Technical Guide",
     "date": "2025-05-12",
     "readTime": "11 min",
