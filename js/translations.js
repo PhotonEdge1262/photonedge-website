@@ -213,37 +213,8 @@ var translations = {
         // Team translations
         teamCEO: "CEO & Founder",
         teamTech: "Technical Director",
-        teamSales: "Sales Director",
-        statYears: '15+',
-        statYearsLabel: 'Years of Experience',
-        statCountries: '50+',
-        statCountriesLabel: 'Countries Served',
-        statProducts: '75+',
-        statProductsLabel: 'Product SKUs',
-        statClients: '500+',
-        statClientsLabel: 'Global Clients',
-        trustedByTitle: 'Trusted By Leading Organizations',
-        trustedBySubtitle: 'Serving research institutions, universities, and industry leaders worldwide'
-,
-        warrantyTitle: 'Quality Assurance & Support',
-        warrantySubtitle: 'We stand behind our products with comprehensive quality guarantees',
-        warranty1Title: '1-Year Warranty',
-        warranty1Desc: 'All standard products come with a 12-month warranty against manufacturing defects. Extended warranty options available for custom orders.',
-        warranty2Title: '100% Quality Inspection',
-        warranty2Desc: 'Every component undergoes rigorous inspection including surface quality, dimensional accuracy, coating thickness, and spectral performance testing.',
-        warranty3Title: 'Technical Support',
-        warranty3Desc: 'Our optical engineers provide expert technical support from material selection through installation, with 48-hour response guarantee.',
-        ceCertDesc: 'Products meet EU health, safety, and environmental protection standards for sale within the European Economic Area.',
-        rohsDesc: 'Restriction of Hazardous Substances compliant. Our products meet EU environmental protection requirements.',
-        traceTitle: 'Full Traceability',
-        traceDesc: 'Complete material and production traceability for every component, meeting aerospace and medical requirements.',
-        contactInfoTitle: 'Get In Touch',
-        contactInfoSubtitle: 'Our team is ready to help with your optical component needs',
-        contactAddressTitle: 'Visit Us',
-        contactPhoneTitle: 'Call Us',
-        contactEmailTitle: 'Email Us',
-        contactHours: 'Mon-Fri: 9:00 AM - 6:00 PM (GMT+8)',
-        emailResponse: 'Response within 24 business hours'    },
+        teamSales: "Sales Director"
+    },
     zh: {
         navHome: "首页",
         navProducts: "产品",
@@ -470,17 +441,6 @@ var translations = {
     "customSolutions": "定制方案",
     "productCatalog": "产品目录",
     "technicalSupport": "技术支持",
-        statYears: '15+',
-        statYearsLabel: '年行业经验',
-        statCountries: '50+',
-        statCountriesLabel: '服务国家',
-        statProducts: '75+',
-        statProductsLabel: '产品型号',
-        statClients: '500+',
-        statClientsLabel: '全球客户',
-        trustedByTitle: '深受领先机构信赖',
-        trustedBySubtitle: '服务于全球研究机构、大学和行业领导者'
-
     "faq": "常见问题"}
 };
 
