@@ -499,6 +499,13 @@ var translations = {
     "contactEmailTitle": "邮件联系",
     "contactHours": "周一至周五: 9:00 AM - 6:00 PM (GMT+8)",
     "emailResponse": "24个工作小时内回复",
+    "teamCEO": "首席执行官",
+    "teamTech": "技术总监",
+    "teamSales": "销售总监",
+    "matK9": "K9 (BK7) 光学玻璃",
+    "matZnSe": "硒化锌",
+    "matCaF2": "氟化钙",
+    "whatsapp": "WhatsApp即时通讯",
     "faq": "常见问题"}
 };
 
