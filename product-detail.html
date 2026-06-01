@@ -675,7 +675,7 @@
             
             grid.innerHTML = 
                 '<div class="product-detail-image">' +
-                '<img src="' + currentProduct.image + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\' loading="lazy">🔬</div>\';">' +
+                '<img src="' + getDetailImage(currentProduct.image) + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<div class=\\\'img-placeholder-large\\\' loading="lazy">🔬</div>\';">' +
                 '</div>' +
                 '<div class="product-detail-info">' +
                 '<h1>' + name + '</h1>' +
@@ -859,6 +859,15 @@
             var filename = imagePath.substring(lastSlash + 1);
             var basename = filename.substring(0, filename.lastIndexOf('.'));
             return dir + '/thumb/' + basename + '.webp';
+        }
+
+        // Convert product image path to optimized detail image
+        function getDetailImage(imagePath) {
+            var lastSlash = imagePath.lastIndexOf('/');
+            var dir = imagePath.substring(0, lastSlash);
+            var filename = imagePath.substring(lastSlash + 1);
+            var basename = filename.substring(0, filename.lastIndexOf('.'));
+            return dir + '/detail/' + basename + '.webp';
         }
 
         function renderRelatedProducts() {

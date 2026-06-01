@@ -3973,3 +3973,8 @@ ul { list-style: none; }
 .featured-product-actions .btn{padding:8px 16px;font-size:13px;flex:1;}
 .featured-view-all{text-align:center;margin-top:20px;}
 .featured-view-all .btn{padding:14px 40px;}
+
+img[loading="lazy"] {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
