@@ -7,6 +7,9 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotonEdge - Precision Optical Components Manufacturer | Optical Lenses, Mirrors, Prisms Supplier</title>
     <meta name="description" content="PhotonEdge - ISO 9001 certified manufacturer of precision optical components. Lenses, mirrors, windows, prisms & custom solutions. 15+ years experience, 500+ global clients.">
@@ -14,7 +17,7 @@
     <meta property="og:description" content="Leading precision optical components manufacturer in China. Supplying optical lenses, mirrors, windows, prisms, filters & polarizing components. ISO 9001:2015 certified.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://photonedgeoptics.com">
-    <meta property="og:image" content="https://photonedgeoptics.com/logo.png">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com">
     <link rel="stylesheet" href="css/style.css">
@@ -25,7 +28,7 @@
   "name": "PhotonEdge",
   "alternateName": "Beijing Hengdingguang Technology Co., Ltd.",
   "url": "https://photonedgeoptics.com",
-  "logo": "https://photonedgeoptics.com/logo.png",
+  "logo": "https://photonedgeoptics.com/images/logo.webp",
   "description": "Precision optical components manufacturer specializing in lenses, mirrors, windows, prisms and custom solutions. ISO 9001:2015 certified.",
   "address": {
     "@type": "PostalAddress",
@@ -45,7 +48,21 @@
   ]
 }
 </script>
-    <!-- Google Analytics 4 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "PhotonEdge",
+  "url": "https://photonedgeoptics.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://photonedgeoptics.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+    </script>
+    
+        <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -59,7 +76,12 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">Photon<span>Edge</span></a>
+            <a href="index.html" class="logo">
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
             <nav class="nav">
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
                 
@@ -196,6 +218,15 @@
         </div>
     </section>
 
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title" data-i18n="featuredTitle">Featured Products</h2>
+            <p class="section-subtitle" data-i18n="featuredSubtitle">Our most popular precision optical components</p>
+            <div class="featured-products-grid" id="featuredProductsGrid">
+            </div>
+        </div>
+    </section>
+
     <section class="features">
         <div class="container">
             <div class="features-grid">
@@ -301,36 +332,40 @@
     </section>
 
     <!-- Client Logo Wall -->
-    <section class="client-logo-section">
-        <div class="container">
-            <h2 class="section-title" data-i18n="trustedByTitle">Trusted By Leading Organizations</h2>
-            <p class="section-subtitle" data-i18n="trustedBySubtitle">Serving research institutions, universities, and industry leaders worldwide</p>
-            <div class="client-logo-grid">
-                <div class="client-logo-item">
-                    <div class="client-logo-text">OPTICAL CORP</div>
-                </div>
-                <div class="client-logo-item">
-                    <div class="client-logo-text">LASER TECH</div>
-                </div>
-                <div class="client-logo-item">
-                    <div class="client-logo-text">PHOTONICS INC</div>
-                </div>
-                <div class="client-logo-item">
-                    <div class="client-logo-text">PRECISION OPTICS</div>
-                </div>
-                <div class="client-logo-item">
-                    <div class="client-logo-text">IMAGE SYSTEMS</div>
-                </div>
-                <div class="client-logo-item">
-                    <div class="client-logo-text">SCIENCE LABS</div>
-                </div>
-            </div>
+        <section class="client-logo-section">
+<div class="container">
+    <h2 class="section-title" data-i18n="trustedByTitle">Trusted By Leading Organizations</h2>
+    <p class="section-subtitle" data-i18n="trustedBySubtitle">Serving research institutions, universities, and industry leaders worldwide</p>
+    <div class="client-industry-grid">
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x1F52C;</div>
+            <div class="client-industry-text">Laser Systems</div>
         </div>
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x2764;</div>
+            <div class="client-industry-text">Medical Devices</div>
+        </div>
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x1F4E1;</div>
+            <div class="client-industry-text">Telecommunications</div>
+        </div>
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x1F4DA;</div>
+            <div class="client-industry-text">Research Institutions</div>
+        </div>
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x2694;</div>
+            <div class="client-industry-text">Defense & Aerospace</div>
+        </div>
+        <div class="client-industry-item">
+            <div class="client-industry-icon">&#x1F4BB;</div>
+            <div class="client-industry-text">Semiconductor</div>
+        </div>
+    </div>
+</div>
     </section>
 
-
-
-    <section class="applications">
+<section class="applications">
         <div class="container">
             <h2 class="section-title" data-i18n="appTitle">Applications</h2>
             <div class="applications-grid">
@@ -465,5 +500,30 @@ function toggleMobileMenu() {
 
     </script>
 
+
+    <script>
+    function renderFeaturedProducts() {
+        var featuredSlugs = ['bk7-plano-convex-lenses', 'optical-silver-mirrors', 'bk7-optical-windows', 'right-angle-prisms', 'narrow-band-filter', 'optical-cube-beamsplitters', 'optical-linear-polarizer', 'uv-fused-silica-ball-lenses'];
+        var grid = document.getElementById('featuredProductsGrid');
+        if (!grid || typeof PRODUCTS === 'undefined') return;
+        var html = '';
+        for (var i = 0; i < PRODUCTS.length; i++) {
+            var p = PRODUCTS[i];
+            if (featuredSlugs.indexOf(p.slug) === -1) continue;
+            var priceText = p.price ? 'From $' + p.price : 'Request Quote';
+            html += '<div class="featured-product-card" onclick="window.location.href=\'products/' + p.slug + '/\'">';
+            html += '<img class="featured-product-img" src="' + p.image + '" alt="' + p.name + '" loading="lazy">';
+            html += '<div class="featured-product-info">';
+            html += '<div class="featured-product-category">' + p.category + '</div>';
+            html += '<div class="featured-product-name">' + p.name + '</div>';
+            html += '<div class="featured-product-price">' + priceText + '</div>';
+            html += '</div></div>';
+        }
+        html += '</div><div class="featured-view-all"><a href="products.html" class="btn btn-primary" data-i18n="featuredViewAll">View All Products</a></div>';
+        grid.innerHTML = html;
+    }
+    renderFeaturedProducts();
+    </script>
+
 </body>
 </html>

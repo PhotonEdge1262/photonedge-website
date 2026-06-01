@@ -7,6 +7,9 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optical Industry News & Updates | PhotonEdge</title>
     <meta name="description" content="Stay updated with the latest news, technical articles and industry insights from PhotonEdge, your trusted precision optical components manufacturer. ISO 9001:2015 certified.">
@@ -14,7 +17,7 @@
     <meta property="og:description" content="Latest news, technical articles and industry insights from PhotonEdge precision optical components manufacturer.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://photonedgeoptics.com/news.html">
-    <meta property="og:image" content="https://photonedgeoptics.com/images/og-image.jpg">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/news.html">
     
@@ -114,6 +117,13 @@
         /* Article card image aspect ratio */
         .article-image { aspect-ratio: 16/10; object-fit: cover; }
     </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"}, {"@type": "ListItem", "position": 2, "name": "News & Articles", "item": "https://photonedgeoptics.com/news.html"}]
+}
+    </script>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
     <script>
@@ -137,7 +147,7 @@
             "name": "PhotonEdge",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://photonedgeoptics.com/images/logo.png"
+                "url": "https://photonedgeoptics.com/images/logo.webp"
             }
         },
         "datePublished": "2024-01-01",
@@ -574,7 +584,7 @@
         
         // Extract thumbnail URL - handle all formats: string, string[], object, object[]
         function getThumbnailUrl(thumbnail) {
-            var defaultUrl = 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop';
+            var defaultUrl = 'images/factory/factory_1.jpg';
             
             // Case 1: null/undefined/empty
             if (!thumbnail) return defaultUrl;
@@ -638,7 +648,7 @@
                     title: 'PhotonEdge Expands Manufacturing Capacity with New Production Line',
                     title_cn: 'PhotonEdge 新增生产线扩大产能',
                     category: 'Company News',
-                    thumbnail: ['https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/factory/workshop.jpg'],
                     content: 'PhotonEdge is pleased to announce the expansion of our manufacturing facilities with a new state-of-the-art production line dedicated to precision optical components. This investment reflects our commitment to meeting the growing global demand for high-quality optical elements while maintaining our reputation for excellence in precision manufacturing.',
                     content_cn: 'PhotonEdge荣幸地宣布，我们扩建了生产设施，新增一条专注于精密光学元件的先进生产线。这一投资体现了我们致力于满足全球对高质量光学元件日益增长的需求，同时保持我们在精密制造领域的卓越声誉。',
                     publish_date: '2024-03-15',
@@ -649,7 +659,7 @@
                     title: 'Understanding AR Coating Technology for Optical Components',
                     title_cn: '了解光学元件的增透膜技术',
                     category: 'Technical Articles',
-                    thumbnail: ['https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/factory/clean-room.jpg'],
                     content: 'Anti-reflection (AR) coating is a crucial technology in modern optics that significantly reduces surface reflection and improves light transmission. This article explores the principles, types, and applications of AR coatings in precision optical components.',
                     content_cn: '增透膜（AR）是现代光学中的一项关键技术，能够显著减少表面反射并提高光透射率。本文探讨了精密光学元件中增透膜的原理、类型和应用。',
                     publish_date: '2024-03-10',
@@ -660,7 +670,7 @@
                     title: 'Global Optical Components Market Trends 2024',
                     title_cn: '2024年全球光学元件市场趋势',
                     category: 'Industry News',
-                    thumbnail: ['https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/factory/testing.jpg'],
                     content: 'The precision optics industry continues to experience significant growth driven by advancements in medical devices, laser technology, and fiber optic communications. This analysis examines the key market trends and future outlook for optical components.',
                     content_cn: '精密光学行业持续快速增长，主要得益于医疗设备、激光技术和光纤通信的进步。本文分析了光学元件的关键市场趋势和未来展望。',
                     publish_date: '2024-03-05',
@@ -671,7 +681,7 @@
                     title: 'PhotonEdge Achieves ISO 9001:2015 Recertification',
                     title_cn: 'PhotonEdge 获得 ISO 9001:2015 再认证',
                     category: 'Company News',
-                    thumbnail: ['https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/factory/factory_0.jpg'],
                     content: 'We are proud to announce that PhotonEdge has successfully passed the ISO 9001:2015 recertification audit. This achievement demonstrates our unwavering commitment to quality management and continuous improvement in all aspects of our operations.',
                     content_cn: '我们自豪地宣布，PhotonEdge已成功通过ISO 9001:2015再认证审核。这一成就证明了我们对质量管理和各业务领域持续改进的坚定承诺。',
                     publish_date: '2024-02-28',
@@ -682,7 +692,7 @@
                     title: 'Guide to Selecting Optical Lens Materials',
                     title_cn: '光学透镜材料选择指南',
                     category: 'Technical Articles',
-                    thumbnail: ['https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/products/optical-lenses/bk7-plano-convex-lenses.jpg'],
                     content: 'Choosing the right material for optical lenses is critical for achieving optimal performance in your application. This guide covers the properties of common optical materials including BK7, UV fused silica, and specialty materials like germanium and zinc selenide.',
                     content_cn: '为光学透镜选择合适的材料对于在应用中实现最佳性能至关重要。本指南介绍了常用光学材料的特性，包括BK7、紫外熔融石英以及锗和硒化锌等特殊材料。',
                     publish_date: '2024-02-20',
@@ -693,7 +703,7 @@
                     title: 'Medical Imaging Technology Advances Drive Optical Demand',
                     title_cn: '医学成像技术进步推动光学需求',
                     category: 'Industry News',
-                    thumbnail: ['https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=600&h=400&fit=crop'],
+                    thumbnail: ['images/products/optical-filters/narrow-band-filter.jpg'],
                     content: 'The medical imaging equipment market is experiencing rapid growth, fueled by technological innovations in endoscopy, microscopy, and diagnostic imaging systems. This growth translates to increased demand for high-precision optical components.',
                     content_cn: '医学成像设备市场正在快速增长，受益于内窥镜、显微镜和诊断成像系统方面的技术创新。这一增长转化为对高精度光学元件的需求增加。',
                     publish_date: '2024-02-15',
