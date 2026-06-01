@@ -502,6 +502,15 @@ function toggleMobileMenu() {
 
 
     <script>
+    // Convert product image path to optimized thumbnail
+    function getThumbImage(imagePath) {
+        var lastSlash = imagePath.lastIndexOf('/');
+        var dir = imagePath.substring(0, lastSlash);
+        var filename = imagePath.substring(lastSlash + 1);
+        var basename = filename.substring(0, filename.lastIndexOf('.'));
+        return dir + '/thumb/' + basename + '.webp';
+    }
+
     function renderFeaturedProducts() {
         var featuredSlugs = ['bk7-plano-convex-lenses', 'optical-silver-mirrors', 'bk7-optical-windows', 'right-angle-prisms', 'narrow-band-filter', 'optical-cube-beamsplitters', 'optical-linear-polarizer', 'uv-fused-silica-ball-lenses'];
         var grid = document.getElementById('featuredProductsGrid');
@@ -512,7 +521,7 @@ function toggleMobileMenu() {
             if (featuredSlugs.indexOf(p.slug) === -1) continue;
             var priceText = p.price ? 'From $' + p.price : 'Request Quote';
             html += '<div class="featured-product-card" onclick="window.location.href=\'products/' + p.slug + '/\'">';
-            html += '<img class="featured-product-img" src="' + p.image + '" alt="' + p.name + '" loading="lazy">';
+            html += '<img class="featured-product-img" src="' + getThumbImage(p.image) + '" alt="' + p.name + '" loading="lazy">';
             html += '<div class="featured-product-info">';
             html += '<div class="featured-product-category">' + p.category + '</div>';
             html += '<div class="featured-product-name">' + p.name + '</div>';

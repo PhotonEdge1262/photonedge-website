@@ -852,6 +852,15 @@
             showToast(message);
         }
         
+        // Convert product image path to optimized thumbnail
+        function getThumbImage(imagePath) {
+            var lastSlash = imagePath.lastIndexOf('/');
+            var dir = imagePath.substring(0, lastSlash);
+            var filename = imagePath.substring(lastSlash + 1);
+            var basename = filename.substring(0, filename.lastIndexOf('.'));
+            return dir + '/thumb/' + basename + '.webp';
+        }
+
         function renderRelatedProducts() {
             if (!currentProduct) return;
             
@@ -874,7 +883,7 @@
                 
                 return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="' + product.image + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">🔬</span>\';">' +
+                    '<img src="' + getThumbImage(product.image) + '" alt="' + prodName + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">🔬</span>\';">' +
                     '</div>' +
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + prodName + '</h3>' +
