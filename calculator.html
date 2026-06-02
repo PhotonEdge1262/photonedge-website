@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optical Calculators | PhotonEdge</title>
@@ -40,26 +39,39 @@
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
-                <picture>
-                    <source srcset="images/logo.webp" type="image/webp">
-                    <img src="logo.png" alt="PhotonEdge" width="160" height="40">
-                </picture>
-            </a>
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
             <nav class="nav">
-                <a href="products.html">Products</a>
-                <a href="about.html">About</a>
-                <a href="calculator.html" class="active">Tools</a>
-                <a href="news.html">News</a>
-                <a href="faq.html">FAQ</a>
-                <a href="contact.html" class="btn btn-primary">Contact</a>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="calculator.html" class="nav-link active" data-i18n="navTools">Tools</a></li>
+                    <li><a href="faq.html" class="nav-link" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
             </nav>
         </div>
     </header>
 
     <section class="page-hero">
         <div class="container">
-            <h1>Optical Calculators</h1>
-            <p>Free tools for your optical component calculations</p>
+            <h1 data-i18n="calculatorPageTitle">Optical Calculators</h1>
+            <p data-i18n="calculatorPageDesc">Free tools for your optical component calculations</p>
         </div>
     </section>
 
@@ -67,53 +79,54 @@
         <div class="container">
             <div class="calculator-grid">
                 <div class="calculator-card" onclick="showCalculator('focal')">
-                    <div class="calculator-icon">🔍</div>
-                    <h3 class="calculator-title">Focal Length Calculator</h3>
-                    <p class="calculator-desc">Calculate lens focal length, object distance, or image distance using the lens formula</p>
+                    <div class="calculator-icon">&#128269;</div>
+                    <h3 class="calculator-title" data-i18n="calcFocalTitle">Focal Length Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcFocalDesc">Calculate lens focal length, object distance, or image distance using the lens formula</p>
                 </div>
                 <div class="calculator-card" onclick="showCalculator('coating')">
-                    <div class="calculator-icon">💡</div>
-                    <h3 class="calculator-title">Coating Transmission Calculator</h3>
-                    <p class="calculator-desc">Estimate transmission and reflection for AR/HR optical coatings</p>
+                    <div class="calculator-icon">&#128161;</div>
+                    <h3 class="calculator-title" data-i18n="calcCoatingTitle">Coating Transmission Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcCoatingDesc">Estimate transmission and reflection for AR/HR optical coatings</p>
                 </div>
                 <div class="calculator-card" onclick="showCalculator('magnification')">
-                    <div class="calculator-icon">📐</div>
-                    <h3 class="calculator-title">Optical Magnification Calculator</h3>
-                    <p class="calculator-desc">Calculate magnification, focal length, and working distance relationships</p>
+                    <div class="calculator-icon">&#128208;</div>
+                    <h3 class="calculator-title" data-i18n="calcMagTitle">Optical Magnification Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcMagDesc">Calculate magnification, focal length, and working distance relationships</p>
                 </div>
             </div>
 
             <div id="calculator-content" class="tool-page" style="display: none;">
-                <a href="#" class="back-link" onclick="showCalculatorList()">← Back to Calculators</a>
+                <a href="#" class="back-link" data-i18n="calcBackToList" onclick="showCalculatorList(); return false;">&#8592; Back to Calculators</a>
+                
                 <div id="focal-calculator" class="calculator-box" style="display: none;">
-                    <h2 style="margin-bottom: 30px; color: var(--primary);">🔍 Focal Length Calculator</h2>
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcFocalH2">&#128269; Focal Length Calculator</h2>
                     <div class="input-group">
                         <label>Calculate:</label>
                         <select id="focal-calc-type" onchange="updateFocalInputs()">
                             <option value="focal">Focal Length (f)</option>
-                            <option value="object">Object Distance (d₀)</option>
-                            <option value="image">Image Distance (dᵢ)</option>
+                            <option value="object">Object Distance (d&#8320;)</option>
+                            <option value="image">Image Distance (d&#7522;)</option>
                         </select>
                     </div>
                     <div id="focal-inputs">
                         <div class="input-group" id="object-input">
-                            <label>Object Distance d₀ (mm):</label>
+                            <label>Object Distance d&#8320; (mm):</label>
                             <input type="number" id="object-distance" placeholder="e.g., 100" step="any">
                         </div>
                         <div class="input-group" id="image-input">
-                            <label>Image Distance dᵢ (mm):</label>
+                            <label>Image Distance d&#7522; (mm):</label>
                             <input type="number" id="image-distance" placeholder="e.g., 50" step="any">
                         </div>
                     </div>
-                    <button class="calc-btn" onclick="calculateFocal()">Calculate</button>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateFocal()">Calculate</button>
                     <div class="result-box" id="focal-result">
-                        <div class="result-label">Result</div>
+                        <div class="result-label" data-i18n="calcResult">Result</div>
                         <div class="result-value" id="focal-result-value"></div>
                     </div>
                 </div>
 
                 <div id="coating-calculator" class="calculator-box" style="display: none;">
-                    <h2 style="margin-bottom: 30px; color: var(--primary);">💡 Coating Transmission Calculator</h2>
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcCoatingH2">&#128161; Coating Transmission Calculator</h2>
                     <div class="input-group">
                         <label>Coating Type:</label>
                         <select id="coating-type" onchange="updateCoatingInputs()">
@@ -138,21 +151,21 @@
                         <label>Single Surface Reflectivity (%):</label>
                         <input type="number" id="custom-reflect" placeholder="e.g., 0.2" step="0.1" min="0" max="100">
                     </div>
-                    <button class="calc-btn" onclick="calculateCoating()">Calculate</button>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateCoating()">Calculate</button>
                     <div class="result-box" id="coating-result">
-                        <div class="result-label">Total Transmission</div>
+                        <div class="result-label" data-i18n="calcResult">Result</div>
                         <div class="result-value" id="coating-result-value"></div>
                     </div>
                 </div>
 
                 <div id="magnification-calculator" class="calculator-box" style="display: none;">
-                    <h2 style="margin-bottom: 30px; color: var(--primary);">📐 Optical Magnification Calculator</h2>
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcMagH2">&#128208; Optical Magnification Calculator</h2>
                     <div class="input-group">
                         <label>Calculate:</label>
                         <select id="mag-calc-type" onchange="updateMagInputs()">
                             <option value="mag">Magnification (M)</option>
                             <option value="focal">Focal Length (f)</option>
-                            <option value="distance">Object Distance (d₀)</option>
+                            <option value="distance">Object Distance (d&#8320;)</option>
                         </select>
                     </div>
                     <div id="mag-inputs">
@@ -161,25 +174,26 @@
                             <input type="number" id="mag-focal" placeholder="e.g., 50" step="any">
                         </div>
                         <div class="input-group" id="mag-distance-input">
-                            <label>Object Distance d₀ (mm):</label>
+                            <label>Object Distance d&#8320; (mm):</label>
                             <input type="number" id="mag-distance" placeholder="e.g., 100" step="any">
                         </div>
                     </div>
-                    <button class="calc-btn" onclick="calculateMagnification()">Calculate</button>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateMagnification()">Calculate</button>
                     <div class="result-box" id="mag-result">
-                        <div class="result-label">Result</div>
+                        <div class="result-label" data-i18n="calcResult">Result</div>
                         <div class="result-value" id="mag-result-value"></div>
                     </div>
                 </div>
 
                 <div class="disclaimer">
-                    <strong>⚠️ Disclaimer & Terms of Use:</strong><br><br>
-                    These optical calculators are provided for free and for reference only. Results are estimates based on ideal theoretical formulas and do not constitute professional engineering advice. Actual optical performance may vary due to material properties, manufacturing tolerances, coating variations, and environmental factors. PhotonEdge makes no warranties regarding the accuracy of these calculations. Always verify critical parameters with our engineering team before ordering. Use of these calculators is at your own risk.
+                    <strong data-i18n="disclaimerTitle">&#9888;&#65039; Disclaimer &amp; Terms of Use:</strong><br><br>
+                    <span data-i18n="disclaimerText">These optical calculators are provided for free and for reference only. Results are estimates based on ideal theoretical formulas and do not constitute professional engineering advice. Actual optical performance may vary due to material properties, manufacturing tolerances, coating variations, and environmental factors. PhotonEdge makes no warranties regarding the accuracy of these calculations. Always verify critical parameters with our engineering team before ordering. Use of these calculators is at your own risk.</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <script src="js/translations.js"></script>
     <script>
         function showCalculator(type) {
             document.querySelector('.calculator-grid').style.display = 'none';
@@ -205,7 +219,6 @@
         function showCalculatorList() {
             document.querySelector('.calculator-grid').style.display = 'grid';
             document.getElementById('calculator-content').style.display = 'none';
-            return false;
         }
 
         function updateFocalInputs() {
@@ -301,6 +314,26 @@
                 document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + ' mm';
             }
             document.getElementById('mag-result').style.display = 'block';
+        }
+
+        // Apply translations on load
+        if (typeof applyTranslations === 'function') {
+            applyTranslations();
+        }
+        var langBtns = document.querySelectorAll('.lang-btn');
+        var savedLang = localStorage.getItem('lang') || 'en';
+        for (var i = 0; i < langBtns.length; i++) {
+            langBtns[i].classList.remove('active');
+            if ((savedLang === 'en' && langBtns[i].textContent === 'EN') || (savedLang === 'zh' && langBtns[i].textContent === '中文')) {
+                langBtns[i].classList.add('active');
+            }
+        }
+
+        function toggleMobileMenu() {
+            var navList = document.querySelector('.nav-list');
+            if (navList) {
+                navList.classList.toggle('active');
+            }
         }
     </script>
 </body>
