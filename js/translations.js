@@ -675,3 +675,54 @@ var translations = {
     "yourName": "Your Name"
 }
 }
+
+// Translation function
+function t(key) {
+    var lang = localStorage.getItem('lang') || 'en';
+    var translationsObj = translations[lang] || translations['en'];
+    return translationsObj[key] || key;
+}
+
+// Apply translations to DOM elements with data-i18n attribute
+function applyTranslations() {
+    var lang = localStorage.getItem('lang') || 'en';
+    var translationsObj = translations[lang] || translations['en'];
+    var elements = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elements.length; i++) {
+        var key = elements[i].getAttribute('data-i18n');
+        if (translationsObj[key]) {
+            elements[i].textContent = translationsObj[key];
+        }
+    }
+}
+
+// Set language
+function setLanguage(lang) {
+    localStorage.setItem('lang', lang);
+    applyTranslations();
+    // Update active button
+    var buttons = document.querySelectorAll('.lang-btn');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('active');
+        if (buttons[i].textContent === (lang === 'en' ? 'EN' : '中文')) {
+            buttons[i].classList.add('active');
+        }
+    }
+}
+
+// Get current language
+function getCurrentLanguage() {
+    return localStorage.getItem('lang') || 'en';
+}
+
+// Alias used by many pages
+function getCurrentLang() {
+    return localStorage.getItem('lang') || 'en';
+}
+
+// Apply translations on page load
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', applyTranslations);
+} else {
+    applyTranslations();
+}
