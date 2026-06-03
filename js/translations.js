@@ -700,6 +700,18 @@ function applyTranslations() {
 function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     applyTranslations();
+    // Re-render featured products on homepage if function exists
+    if (typeof renderFeaturedProducts === 'function') {
+        renderFeaturedProducts();
+    }
+    // Re-render products on products page if function exists
+    if (typeof renderProducts === 'function') {
+        renderProducts();
+    }
+    // Re-render product detail if function exists
+    if (typeof renderProductDetail === 'function') {
+        renderProductDetail();
+    }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
     for (var i = 0; i < buttons.length; i++) {

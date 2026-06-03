@@ -509,16 +509,19 @@ function toggleMobileMenu() {
         var featuredSlugs = ['bk7-plano-convex-lenses', 'optical-silver-mirrors', 'bk7-optical-windows', 'right-angle-prisms', 'narrow-band-filter', 'optical-cube-beamsplitters', 'optical-linear-polarizer', 'uv-fused-silica-ball-lenses'];
         var grid = document.getElementById('featuredProductsGrid');
         if (!grid || typeof PRODUCTS === 'undefined') return;
+        var useZh = localStorage.getItem('lang') === 'zh';
         var html = '';
         for (var i = 0; i < PRODUCTS.length; i++) {
             var p = PRODUCTS[i];
             if (featuredSlugs.indexOf(p.slug) === -1) continue;
-            var priceText = p.price ? 'From $' + p.price : 'Request Quote';
+            var priceText = p.price ? (useZh ? '起售价 $' + p.price : 'From $' + p.price) : (useZh ? '联系报价' : 'Request Quote');
             html += '<div class="featured-product-card" onclick="window.location.href=\'products/' + p.slug + '/\'">';
-            html += '<img class="featured-product-img" src="' + getThumbImage(p.image) + '" alt="' + p.name + '" loading="lazy">';
+            var displayName = useZh && p.nameZh ? p.nameZh : p.name;
+            var displayCategory = useZh && p.categoryZh ? p.categoryZh : p.category;
+            html += '<img class="featured-product-img" src="' + getThumbImage(p.image) + '" alt="' + displayName + '" loading="lazy">';
             html += '<div class="featured-product-info">';
-            html += '<div class="featured-product-category">' + p.category + '</div>';
-            html += '<div class="featured-product-name">' + p.name + '</div>';
+            html += '<div class="featured-product-category">' + displayCategory + '</div>';
+            html += '<div class="featured-product-name">' + displayName + '</div>';
             html += '<div class="featured-product-price">' + priceText + '</div>';
             html += '<div class="featured-product-actions"><a href="contact.html?product=' + p.slug + '" class="btn btn-small btn-outline" onclick="event.stopPropagation();" data-i18n="requestQuoteSmall">Request Quote</a></div>';
             html += '</div></div>';
