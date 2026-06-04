@@ -21,10 +21,14 @@ function toggleDarkMode() {
 function updateThemeIcon(isDark) {
     var icon = isDark ? '☀️' : '🌙';
     var btns = document.querySelectorAll('.theme-toggle');
-    btns.forEach(function(btn) {
-        btn.textContent = icon;
-    });
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].textContent = icon;
+    }
 }
+
+// 暴露到全局
+window.toggleDarkMode = toggleDarkMode;
+window.initDarkMode = initDarkMode;
 
 // 页面加载时初始化
 if (document.readyState === 'loading') {
