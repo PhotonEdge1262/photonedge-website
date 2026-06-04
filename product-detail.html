@@ -240,7 +240,27 @@
     <script>
         var currentProduct = null;
         
-        document.addEventListener('DOMContentLoaded', function() {
+        function toggleProductCompare() {
+    if (currentProduct) {
+        toggleCompare(currentProduct.id, currentProduct.name);
+        // 更新按钮状态
+        var btn = document.getElementById('detailCompareBtn');
+        if (btn) {
+            var list = getCompareList();
+            if (list.indexOf(currentProduct.id) >= 0) {
+                btn.classList.add('active');
+                var lang = getCurrentLang();
+                btn.querySelector('span').textContent = lang === 'zh' ? '已加入对比' : 'In Compare';
+            } else {
+                btn.classList.remove('active');
+                var lang = getCurrentLang();
+                btn.querySelector('span').textContent = lang === 'zh' ? '加入对比' : 'Add to Compare';
+            }
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
             if (typeof updatePageTranslations === 'function') updatePageTranslations();
             var lang = getCurrentLang();
             document.querySelectorAll('.lang-btn').forEach(function(btn) {
