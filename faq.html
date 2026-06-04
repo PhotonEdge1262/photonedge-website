@@ -51,6 +51,7 @@
                 <div class="lang-switcher">
                     <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
                     <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                    <button class="theme-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
                 </div>
             </nav>
         </div>
@@ -193,6 +194,7 @@
     </section>
 
     <script src="js/translations.js"></script>
+    <script src="js/dark-mode.js"></script>
     <script>
         // FAQ accordion - ES5 only
         var faqQuestions = document.querySelectorAll('.faq-question');

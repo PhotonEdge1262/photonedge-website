@@ -1,3 +1,107 @@
+/* ================================
+   Dark Mode Support
+   ================================ */
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #f5f5f5;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --text-tertiary: #999999;
+    --border-color: #eeeeee;
+    --shadow-color: rgba(0,0,0,0.08);
+    --shadow-color-strong: rgba(0,0,0,0.12);
+    --card-bg: #ffffff;
+}
+
+body.dark-mode {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #252525;
+    --bg-tertiary: #2d2d2d;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --text-tertiary: #707070;
+    --border-color: #3a3a3a;
+    --shadow-color: rgba(0,0,0,0.3);
+    --shadow-color-strong: rgba(0,0,0,0.4);
+    --card-bg: #2a2a2a;
+}
+
+body.dark-mode {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+body.dark-mode .header {
+    background: var(--bg-secondary);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+body.dark-mode .nav-link {
+    color: var(--text-primary);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+    color: #4caf50;
+}
+
+body.dark-mode .container {
+    background-color: transparent;
+}
+
+body.dark-mode .footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: var(--text-primary);
+}
+
+body.dark-mode p {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .page-header {
+    background: linear-gradient(135deg, #1a2f1a 0%, #2a3f2a 100%);
+}
+
+body.dark-mode .btn-outline {
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode .btn-outline:hover {
+    background: var(--bg-tertiary);
+}
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    margin-left: 8px;
+}
+
+.theme-toggle:hover {
+    background: var(--bg-tertiary);
+    transform: scale(1.1);
+}
+
 /* PhotonEdge Website Styles */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 :root { --primary: #1a365d; --secondary: #2c5282; --accent: #3182ce; --light: #ebf8ff; --dark: #1a202c; --gray: #718096; --white: #ffffff; --border: #e2e8f0; }
@@ -4170,3 +4274,98 @@ img[loading="lazy"] {
         height: 80px;
     }
 }
+
+/* 更多深色模式覆盖 - 产品卡片和表单 */
+body.dark-mode .product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+body.dark-mode .product-name {
+    color: var(--text-primary);
+}
+
+body.dark-mode .product-category {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .product-desc {
+    color: var(--text-tertiary);
+}
+
+body.dark-mode .featured-product-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .featured-product-name {
+    color: var(--text-primary);
+}
+
+body.dark-mode .featured-product-category {
+    color: var(--text-secondary);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-primary);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: var(--text-tertiary);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+body.dark-mode .cart-icon svg {
+    color: var(--text-primary);
+}
+
+body.dark-mode .logo {
+    color: var(--text-primary);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1a2f1a 0%, #0a1f0a 100%);
+}
+
+body.dark-mode .stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .stat-number {
+    color: var(--text-primary);
+}
+
+body.dark-mode .stat-label {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .section-alt {
+    background: var(--bg-secondary);
+}
+
+body.dark-mode .footer-column a {
+    color: var(--text-secondary);
+}
+
+body.dark-mode .footer-column a:hover {
+    color: #4caf50;
+}
+
+body.dark-mode .footer-bottom {
+    border-top: 1px solid var(--border-color);
+    color: var(--text-tertiary);
+}
+
