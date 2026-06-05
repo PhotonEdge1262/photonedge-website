@@ -6,8 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
-    <base href="/">
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -312,6 +311,7 @@
                     <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-gray-100 transition-smooth" title="Toggle Dark Mode">🌙</button>
                     <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-smooth">
                         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -497,6 +497,7 @@
     <script src="js/blog-data.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/translations.js"></script>
+    <script src="js/dark-mode.js"></script>
     <script src="js/search.js"></script>
     <script>
         var currentPost = null;

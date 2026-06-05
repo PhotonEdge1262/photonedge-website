@@ -6,8 +6,7 @@
     <title>404 - Page Not Found | PhotonEdge Optics</title>
     <meta name="description" content="The page you're looking for doesn't exist. Browse our optical components catalog or search for products.">
     <link rel="stylesheet" href="css/style.css">
-    <base href="/">
-    <style>
+        <style>
         .error-page {
             min-height: 70vh;
             display: flex;
@@ -143,8 +142,37 @@
             }
         }
     </style>
+
+    <style>
+        .floating-dark-toggle {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 9999;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .floating-dark-toggle:hover {
+            transform: scale(1.1);
+        }
+        body.dark-mode .floating-dark-toggle {
+            background: rgba(30,30,50,0.9);
+            border-color: #4a5568;
+        }
+    </style>
 </head>
 <body>
+    <button class="floating-dark-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">🌙</button>
     <section class="error-page">
         <div class="error-container">
             <div class="error-code">404</div>
@@ -198,7 +226,6 @@
 
     <script src="js/translations.js"></script>
     <script src="js/dark-mode.js"></script>
-    <script src="js/i18n.js"></script>
     <script>
         // 搜索功能
         document.getElementById('errorSearch').addEventListener('keypress', function(e) {
