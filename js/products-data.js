@@ -1,3 +1,6 @@
+// PhotonEdge Products Data
+// Contains all product information for the website
+
 var PRODUCTS = [
   {
     "id": 1,
@@ -6,7 +9,7 @@ var PRODUCTS = [
     "category": "Optical Ball Lenses",
     "categoryZh": "光学球透镜",
     "description": "High-grade UV fused silica ball lenses featuring superior transmittance from UV to near-IR (185-2500nm). Ideal for fiber optic coupling, endoscopy, and laser diode collimation. Low thermal expansion coefficient ensures stability in demanding environments.",
-        "descriptionZh": "High-grade UV fused silica 球透镜 featuring 卓越的透过率 from UV to near-IR (185-2500nm). 适用于光纤耦合, 内窥镜, and 激光二极管准直. Low thermal expansion coefficient 确保稳定性 in 苛刻环境.",
+    "descriptionZh": "高品质UV熔融石英球透镜，在紫外到近红外波段(185-2500nm)具有卓越的透过率。适用于光纤耦合、内窥镜和激光二极管准直。低热膨胀系数确保在苛刻环境中的稳定性。",
     "image": "images/products/optical-ball-lenses/uv-fused-silica-ball-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -20,6 +23,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-ball-lenses"
+
   },
   {
     "id": 2,
@@ -28,7 +32,7 @@ var PRODUCTS = [
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
     "description": "Optical beamsplitter plates split incident light into transmitted and reflected beams in various ratios such as 50/50, 60/40, 80/20, or 90/10 through dielectric coatings. The default configuration is 50/50 beam splitting. Custom splitting ratios are available upon request.",
-        "descriptionZh": "Optical beamsplitter plates split incident light into transmitted and reflected beams in various ratios such as 50/50, 60/40, 80/20, or 90/10 through 介质镀膜. The default configuration is 50/50 beam splitting. Custom splitting ratios are available upon request.",
+    "descriptionZh": "光学分光板通过介质镀膜将入射光分成透射光和反射光，提供50/50、60/40、80/20、90/10等多种分光比。默认配置为50/50分光。可根据需求定制特殊分光比。",
     "image": "images/products/optical-beamsplitters/beamsplitter-plate.jpg",
     "parameters": {
       "material": "N-BK7 / K9",
@@ -40,6 +44,12 @@ var PRODUCTS = [
       "split_ratio": "50/50 ±2%, T=(Ts+Tp)/2, R=(Rs+Rp)/2",
       "coatings": "One side: dielectric partial reflection; other side: AR coating"
     },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "beamsplitter-plate"
+,
     "partNumbers": [
       {
         "partNumber": "LOBP12.7-450/650",
@@ -101,12 +111,7 @@ var PRODUCTS = [
         "wavelength": "900-1200nm",
         "price": 134
       }
-    ],
-    "price": 55,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "beamsplitter-plate"
+    ]
   },
   {
     "id": 3,
@@ -115,7 +120,7 @@ var PRODUCTS = [
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
     "description": "Non-polarizing cube beamsplitters provide equal splitting of incident light without affecting polarization state. Ideal for interferometry, microscopy, and optical metrology applications.",
-        "descriptionZh": "Non-polarizing cube 分光镜 provide equal splitting of incident light without affecting polarization state. 适用于interferometry, microscopy, and optical 计量检测应用.",
+    "descriptionZh": "Non-polarizing cube 分光镜 provide equal splitting of incident light 具有out affecting polarization state. 适用于interferometry, microscopy, 和 光学 计量检测应用.",
     "image": "images/products/optical-beamsplitters/non-polarising-beamsplitter-cubes.jpg",
     "parameters": {
       "material": "N-BK7",
@@ -130,6 +135,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "non-polarising-beamsplitter-cubes"
+
   },
   {
     "id": 4,
@@ -137,8 +143,8 @@ var PRODUCTS = [
     "nameZh": "非偏振分光板",
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
-    "description": "Non-polarizing plate beamsplitters designed for uniform beam splitting across a wide wavelength range. Suitable for RGB applications and general-purpose beam splitting needs.",
-        "descriptionZh": "Non-polarizing plate 分光镜 designed for uniform beam splitting across a wide wavelength range. Suitable for RGB应用 and general-purpose beam splitting needs.",
+    "description": "Optical beamsplitter plates split incident light into transmitted and reflected beams in various ratios such as 50/50, 60/40, 80/20, or 90/10 through dielectric coatings. The default configuration is 50/50 beam splitting. Custom splitting ratios are available upon request.",
+    "descriptionZh": "光学分光板通过介质镀膜将入射光分成透射光和反射光，提供50/50、60/40、80/20、90/10等多种分光比。默认配置为50/50分光。可根据需求定制特殊分光比。",
     "image": "images/products/optical-beamsplitters/non-polarizing-beamsplitter-plate.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -149,6 +155,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
     },
+    "price": 72,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "non-polarizing-beamsplitter-plate"
+,
     "partNumbers": [
       {
         "partNumber": "LONPB-12.7-532",
@@ -192,12 +204,7 @@ var PRODUCTS = [
         "wavelength": "1064nm",
         "price": 173
       }
-    ],
-    "price": 72,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "non-polarizing-beamsplitter-plate"
+    ]
   },
   {
     "id": 5,
@@ -205,8 +212,8 @@ var PRODUCTS = [
     "nameZh": "光学立方体分光镜",
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
-    "description": "Multilayer dielectric cube beamsplitters consist of two right-angle prisms cemented together. The beamsplitter divides incident light into reflected and transmitted beams in a 1:2 or 1:3 ratio. Both entry and exit faces are coated with multilayer anti-reflection coatings. Since dielectric coatings have virtually no absorption, incident light loss is minimal. Unlike plate beamsplitters, cube beamsplitters experience almost no optical axis shift or ghost images.",
-        "descriptionZh": "Multilayer dielectric cube 分光镜 consist of two right-angle 棱镜 cemented together. The beamsplitter divides incident light into reflected and transmitted beams in a 1:2 or 1:3 ratio. Both entry and exit faces are coated with multilayer anti-reflection coatings. Since 介质镀膜 have virtually no absorption, incident light loss is minimal. Unlike plate 分光镜, cube 分光镜 experience almost no optical axis shift or ghost images.",
+    "description": "Non-polarizing cube beamsplitters provide equal splitting of incident light without affecting polarization state. Ideal for interferometry, microscopy, and optical metrology applications.",
+    "descriptionZh": "非偏振立方分光镜在不影响偏振状态的前提下实现入射光均等分光。适用于干涉测量、显微镜和光学计量检测应用。",
     "image": "images/products/optical-beamsplitters/optical-cube-beamsplitters.jpg",
     "parameters": {
       "material": "N-BK7",
@@ -218,6 +225,12 @@ var PRODUCTS = [
       "split_ratio": "50/50 ±3%",
       "coatings": "Cemented face: dielectric; entry/exit faces: AR coating"
     },
+    "price": 88,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-cube-beamsplitters"
+,
     "partNumbers": [
       {
         "partNumber": "LOCBS10-532",
@@ -279,12 +292,7 @@ var PRODUCTS = [
         "wavelength": "1064nm",
         "price": 168
       }
-    ],
-    "price": 88,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-cube-beamsplitters"
+    ]
   },
   {
     "id": 6,
@@ -293,7 +301,7 @@ var PRODUCTS = [
     "category": "Optical Beamsplitters",
     "categoryZh": "光学分光镜",
     "description": "High-performance polarizing cube beamsplitters separating S and P polarizations with extinction ratios exceeding 1000:1. Essential for polarimetry, ellipsometry, and optical communication systems.",
-        "descriptionZh": "High-performance polarizing cube 分光镜 separating S and P polarizations with extinction ratios exceeding 1000:1. Essential for polarimetry, ellipsometry, and optical communication systems.",
+    "descriptionZh": "高-performance polarizing cube 分光镜 separating S 和 P polarizations 具有 extinction ratios exceeding 1000:1. Essential for polarimetry, ellipsometry, 和 光学 communication systems.",
     "image": "images/products/optical-beamsplitters/optical-polarizing-beamsplitter-cubes.jpg",
     "parameters": {
       "material": "N-BK7 / Calcite",
@@ -308,6 +316,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-polarizing-beamsplitter-cubes"
+
   },
   {
     "id": 7,
@@ -316,7 +325,7 @@ var PRODUCTS = [
     "category": "Optical Cylindrical Lenses",
     "categoryZh": "光学柱面透镜",
     "description": "UV-grade plano-concave cylindrical lenses for generating line-shaped laser beams or correcting astigmatism. Excellent for semiconductor inspection and laser material processing.",
-        "descriptionZh": "UV-grade plano-concave 柱面透镜 for generating line-shaped laser beams or correcting astigmatism. Excellent for semiconductor inspection and laser material processing.",
+    "descriptionZh": "UV-grade plano-concave 柱面透镜 for generating line-shaped laser beams or correcting astigmatism. 非常适用于 semiconductor inspection 和 laser material processing.",
     "image": "images/products/optical-cylindrical-lenses/uv-fused-silica-plano-concave-cylindrical-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -331,6 +340,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-plano-concave-cylindrical-lenses"
+
   },
   {
     "id": 8,
@@ -339,7 +349,7 @@ var PRODUCTS = [
     "category": "Optical Cylindrical Lenses",
     "categoryZh": "光学柱面透镜",
     "description": "UV-grade plano-convex cylindrical lenses for line generation and one-dimensional beam shaping. Ideal for barcode scanning, optical character recognition, and laser projection systems.",
-        "descriptionZh": "UV-grade plano-convex 柱面透镜 for line generation and one-dimensional beam shaping. 适用于barcode scanning, optical character recognition, and laser projection systems.",
+    "descriptionZh": "UV-grade plano-convex 柱面透镜 for line generation 和 one-dimensional beam shaping. 适用于barcode scanning, 光学 character recognition, 和 laser projection systems.",
     "image": "images/products/optical-cylindrical-lenses/uv-fused-silica-plano-convex-cylindrical-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -354,6 +364,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-plano-convex-cylindrical-lenses"
+
   },
   {
     "id": 9,
@@ -362,7 +373,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "Continuously variable neutral density filters with rotary adjustment for fine-tuning laser power and light attenuation. Perfect for balancing illumination in microscopy, photography, and laser applications. Available in various optical density ranges.",
-        "descriptionZh": "Continuously variable neutral density 滤光片 with rotary adjustment for fine-tuning laser power and light attenuation. Perfect for balancing illumination in microscopy, photography, and laser应用. Available in various optical density ranges.",
+    "descriptionZh": "Continuously variable neutral density 滤光片 具有 rotary adjustment for fine-tuning laser power 和 light attenuation. Perfect for balancing illumination in microscopy, photography, 和 laser应用. Available in various 光学 density ranges.",
     "image": "images/products/optical-filters/circular-variable-ndneutral-density-filters.jpg",
     "parameters": {
       "material": "Schott Glass / Dielectric",
@@ -373,6 +384,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "angular_tolerance": "±1°"
     },
+    "price": 95,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "circular-variable-ndneutral-density-filters"
+,
     "partNumbers": [
       {
         "partNumber": "LORVF01",
@@ -422,12 +439,7 @@ var PRODUCTS = [
         "diameter": "50.00mm",
         "price": 268
       }
-    ],
-    "price": 95,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "circular-variable-ndneutral-density-filters"
+    ]
   },
   {
     "id": 10,
@@ -436,7 +448,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "High-quality colored glass filters for wavelength selection and color correction. Made from Schott or Hoya glass with excellent spectral characteristics and thermal stability.",
-        "descriptionZh": "High-quality colored glass 滤光片 for wavelength selection and color correction. Made from Schott or Hoya glass with excellent spectral characteristics and thermal stability.",
+    "descriptionZh": "高品质有色玻璃滤光片，用于波长选择和色彩校正。采用肖特或保谷玻璃制造，具有优异的光谱特性和热稳定性。",
     "image": "images/products/optical-filters/color-glass-filter.jpg",
     "parameters": {
       "material": "Schott / Hoya Glass",
@@ -450,6 +462,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "color-glass-filter"
+
   },
   {
     "id": 11,
@@ -457,8 +470,8 @@ var PRODUCTS = [
     "nameZh": "固定中性密度滤光片",
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
-    "description": "Precision fixed ND filters providing uniform light attenuation across the visible spectrum. Available in standard OD values from 0.1 to 4.0 for laser power control and imaging applications.",
-        "descriptionZh": "Precision fixed ND 滤光片 providing uniform light attenuation across the 可见光谱. Available in standard OD values from 0.1 to 4.0 for laser power control and 成像应用.",
+    "description": "Continuously variable neutral density filters with rotary adjustment for fine-tuning laser power and light attenuation. Perfect for balancing illumination in microscopy, photography, and laser applications. Available in various optical density ranges.",
+    "descriptionZh": "连续可变中性密度滤光片，通过旋转调节实现激光功率和光衰减的精确控制。完美适用于显微镜、摄影和激光应用中的照明平衡。提供多种光密度范围选择。",
     "image": "images/products/optical-filters/fixed-neutral-density-filters.jpg",
     "parameters": {
       "material": "Schott Glass / Dielectric",
@@ -468,6 +481,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
     },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "fixed-neutral-density-filters"
+,
     "partNumbers": [
       {
         "partNumber": "LOFNF1-12.7",
@@ -567,12 +586,7 @@ var PRODUCTS = [
         "transmittance": "0.1%",
         "price": 61
       }
-    ],
-    "price": 35,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "fixed-neutral-density-filters"
+    ]
   },
   {
     "id": 12,
@@ -581,7 +595,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "High-performance narrow bandpass filters with steep edges and high transmission. Essential for fluorescence microscopy, Raman spectroscopy, and laser line isolation.",
-        "descriptionZh": "High-performance narrow bandpass 滤光片 with steep edges and high transmission. Essential for fluorescence microscopy, Raman spectroscopy, and laser line isolation.",
+    "descriptionZh": "高-performance narrow b和pass 滤光片 具有 steep edges 和 高 transmission. Essential for fluorescence microscopy, Raman spectroscopy, 和 laser line isolation.",
     "image": "images/products/optical-filters/narrow-band-filter.jpg",
     "parameters": {
       "material": "Dielectric Multilayer",
@@ -596,6 +610,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "narrow-band-filter"
+
   },
   {
     "id": 13,
@@ -604,7 +619,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "Linear gradient ND filters providing continuous optical density variation across the aperture. Ideal for spectrophotometry, photography, and balanced detection systems.",
-        "descriptionZh": "Linear gradient ND 滤光片 providing continuous optical density variation across the aperture. 适用于spectrophotometry, photography, and balanced detection systems.",
+    "descriptionZh": "Linear gradient ND 滤光片 providing continuous 光学 density variation across the aperture. 适用于spectrophotometry, photography, 和 balanced detection systems.",
     "image": "images/products/optical-filters/optical-linear-variable-neutral-density-nd-filters.jpg",
     "parameters": {
       "material": "Schott Glass / Dielectric",
@@ -618,6 +633,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-linear-variable-neutral-density-nd-filters"
+
   },
   {
     "id": 14,
@@ -626,7 +642,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "Specialized UV to visible absorption filters blocking UV radiation while transmitting visible light. Commonly used in photography, lighting, and safety applications.",
-        "descriptionZh": "Specialized UV to visible absorption 滤光片 blocking UV radiation while transmitting visible light. Commonly used in photography, lighting, and safety应用.",
+    "descriptionZh": "Specialized UV to visible absorption 滤光片 blocking UV radiation while transmitting visible light. Commonly used in photography, lighting, 和 safety应用.",
     "image": "images/products/optical-filters/ultraviolet-through-visible-absorption-filters.jpg",
     "parameters": {
       "material": "Schott UG / BG Series",
@@ -640,6 +656,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "ultraviolet-through-visible-absorption-filters"
+
   },
   {
     "id": 15,
@@ -648,7 +665,7 @@ var PRODUCTS = [
     "category": "Optical Half Ball Lenses",
     "categoryZh": "光学半球透镜",
     "description": "Half-ball lenses for fiber coupling and endoscopy applications. UV-grade fused silica provides excellent transmission in UV and deep UV applications.",
-        "descriptionZh": "Half-球透镜 for fiber coupling and 内窥镜应用. UV-grade fused silica provides excellent transmission in UV and deep UV应用.",
+    "descriptionZh": "Half-球透镜 for fiber coupling 和 内窥镜应用. UV-grade fused silica provides excellent transmission in UV 和 deep UV应用.",
     "image": "images/products/optical-half-ball-lenses/uv-fused-silica-half-ball-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -662,6 +679,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-half-ball-lenses"
+
   },
   {
     "id": 16,
@@ -670,7 +688,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Color-corrected achromatic doublets minimizing chromatic aberration across the visible spectrum. Essential for imaging, photometry, and beam collimation in multi-wavelength applications.",
-        "descriptionZh": "Color-corrected 消色差双胶合透镜 minimizing chromatic aberration across the 可见光谱. Essential for imaging, photometry, and beam collimation in multi-wavelength应用.",
+    "descriptionZh": "Color-corrected 消色差双胶合透镜 minimizing chromatic aberration across the 可见光谱. Essential for imaging, photometry, 和 beam collimation in multi-wavelength应用.",
     "image": "images/products/optical-lenses/achromatic-doublet-lenses.jpg",
     "parameters": {
       "material": "N-BK7 + F2",
@@ -680,6 +698,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "back_focal_length": "Customizable"
     },
+    "price": 95,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "achromatic-doublet-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOADL5-7.5",
@@ -947,12 +971,7 @@ var PRODUCTS = [
         "centerThickness": "6.50mm",
         "price": 389
       }
-    ],
-    "price": 95,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "achromatic-doublet-lenses"
+    ]
   },
   {
     "id": 17,
@@ -961,7 +980,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Standard BK7 plano-concave cylindrical lenses for light divergence and beam expansion. Cost-effective solution for general-purpose optical applications.",
-        "descriptionZh": "Standard BK7光学玻璃 plano-concave 柱面透镜 for light divergence and beam expansion. Cost-effective solution for general-purpose optical应用.",
+    "descriptionZh": "St和ard BK7光学玻璃 plano-concave 柱面透镜 for light divergence 和 beam expansion. Cost-effective solution for general-purpose 光学应用.",
     "image": "images/products/optical-lenses/bk7--plano-concave-cylindrical-lenses.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -975,6 +994,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "bk7-plano-concave-cylindrical-lenses"
+
   },
   {
     "id": 18,
@@ -983,7 +1003,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Bi-concave lenses made from BK7 glass have a negative focal length and are primarily used for diverging parallel light and forming virtual images. Ideal for visible light applications. Various specifications available.",
-        "descriptionZh": "Bi-concave 透镜 made from BK7光学玻璃 glass have a negative focal length and are primarily used for diverging parallel light and forming virtual images. 适用于visible light应用. Various specifications available.",
+    "descriptionZh": "Bi-concave 透镜 采用 BK7光学玻璃 glass have a negative focal length 和 are primarily used for diverging parallel light 和 forming virtual images. 适用于visible light应用. Various specifications available.",
     "image": "images/products/optical-lenses/bk7-uv-fused-silica-double-concave-lenses.jpg",
     "parameters": {
       "material": "K9 (BK7)",
@@ -998,6 +1018,12 @@ var PRODUCTS = [
       "coatings": "Uncoated / AR coating available",
       "wavelength_range": "400-700nm"
     },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "bk7-double-concave-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOBCCB6.35-12.5",
@@ -1146,12 +1172,7 @@ var PRODUCTS = [
         "centerThickness": "2.50mm",
         "price": 106
       }
-    ],
-    "price": 28,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "bk7-double-concave-lenses"
+    ]
   },
   {
     "id": 67,
@@ -1160,7 +1181,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "UV Fused Silica bi-concave lenses offer superior transmittance from UV to near-IR (185-2500nm) with low thermal expansion coefficient. Ideal for UV and high-power laser applications.",
-        "descriptionZh": "紫外熔融石英 双凹透镜 offer 卓越的透过率 from UV to near-IR (185-2500nm) with 低热膨胀系数. 适用于UV and high-power laser应用.",
+    "descriptionZh": "紫外熔融石英 双凹透镜 offer 卓越的透过率 from UV to near-IR (185-2500nm) 具有 低热膨胀系数. 适用于UV 和 高-power laser应用.",
     "image": "images/products/optical-spherical-lenses/uv-fused-silica-double-concave-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -1174,6 +1195,12 @@ var PRODUCTS = [
       "wavelength_range": "185-2500nm",
       "coatings": "Uncoated / AR coating available"
     },
+    "price": 52,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "uv-fused-silica-double-concave-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOBCCU6.35-12.5",
@@ -1266,12 +1293,7 @@ var PRODUCTS = [
         "centerThickness": "2.50mm",
         "price": 188
       }
-    ],
-    "price": 52,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "uv-fused-silica-double-concave-lenses"
+    ]
   },
   {
     "id": 19,
@@ -1280,7 +1302,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Bi-convex lenses have a positive focal length and are primarily used for collimating and focusing light. The symmetric design with equal curvature on both surfaces minimizes spherical aberration for improved image quality. Ideal for imaging, photometry, and beam collimation applications.",
-        "descriptionZh": "Bi-convex 透镜 have a positive focal length and are primarily used for collimating and focusing light. The symmetric design with equal curvature on both surfaces minimizes spherical aberration for improved image quality. 适用于imaging, photometry, and beam collimation应用.",
+    "descriptionZh": "Bi-convex 透镜 have a positive focal length 和 are primarily used for collimating 和 focusing light. The symmetric design 具有 equal curvature on both surfaces minimizes spherical aberration for improved image quality. 适用于imaging, photometry, 和 beam collimation应用.",
     "image": "images/products/optical-lenses/bk7-double-convex-lenses.jpg",
     "parameters": {
       "material": "K9 (BK7)",
@@ -1294,6 +1316,12 @@ var PRODUCTS = [
       "beveling": "0.25mm × 45°",
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
+    "price": 32,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "bk7-double-convex-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOBCXB6-6",
@@ -1365,12 +1393,7 @@ var PRODUCTS = [
         "centerThickness": "5.24mm",
         "price": 75
       }
-    ],
-    "price": 32,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "bk7-double-convex-lenses"
+    ]
   },
   {
     "id": 20,
@@ -1379,7 +1402,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Economical BK7 half-ball lenses for fiber coupling and light homogenization. Suitable for visible light applications with excellent cost-performance ratio.",
-        "descriptionZh": "Economical BK7光学玻璃 half-球透镜 for fiber coupling and light homogenization. Suitable for visible light应用 with excellent cost-performance ratio.",
+    "descriptionZh": "Economical BK7光学玻璃 half-球透镜 for fiber coupling 和 light homogenization. 适用于 visible light应用 具有 excellent cost-performance ratio.",
     "image": "images/products/optical-lenses/bk7-half-ball-lenses.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -1393,6 +1416,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "bk7-half-ball-lenses"
+
   },
   {
     "id": 21,
@@ -1401,7 +1425,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Standard BK7 ball lenses for fiber coupling and optical fiber illumination. Available in various diameters for different fiber core sizes.",
-        "descriptionZh": "Standard BK7光学玻璃 球透镜 for fiber coupling and optical fiber illumination. Available in various diameters for different fiber core sizes.",
+    "descriptionZh": "St和ard BK7光学玻璃 球透镜 for fiber coupling 和 光学 fiber illumination. Available in various diameters for different fiber core sizes.",
     "image": "images/products/optical-lenses/bk7-optical-ball-lenses.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -1415,6 +1439,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "bk7-optical-ball-lenses"
+
   },
   {
     "id": 22,
@@ -1423,7 +1448,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Plano-concave lenses have a negative focal length. When parallel light passes through plano-concave lenses, it diverges. Our lenses feature excellent uniformity, no patterns, inclusions, or bubbles. Ideal for beam expanders and light projection systems.",
-        "descriptionZh": "Plano-concave 透镜 have a negative focal length. When parallel light passes through 平凹透镜, it diverges. Our 透镜 feature excellent uniformity, no patterns, inclusions, or bubbles. 适用于beam expanders and light projection systems.",
+    "descriptionZh": "Plano-concave 透镜 have a negative focal length. When parallel light passes 通过 平凹透镜, it diverges. Our 透镜 feature excellent uniformity, no patterns, inclusions, or bubbles. 适用于beam exp和ers 和 light projection systems.",
     "image": "images/products/optical-lenses/bk7-plano-concave-lenses.jpg",
     "parameters": {
       "material": "K9 (BK7)",
@@ -1437,6 +1462,12 @@ var PRODUCTS = [
       "beveling": "0.25mm × 45°",
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
+    "price": 25,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "bk7-plano-concave-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOPCCB6-6",
@@ -1508,12 +1539,7 @@ var PRODUCTS = [
         "centerThickness": "2.50mm",
         "price": 53
       }
-    ],
-    "price": 25,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "bk7-plano-concave-lenses"
+    ]
   },
   {
     "id": 23,
@@ -1522,7 +1548,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Standard plano-convex cylindrical lenses for generating line-shaped beams and one-dimensional focusing. Widely used in laser scanning, spectroscopy, and optical metrology.",
-        "descriptionZh": "Standard plano-convex 柱面透镜 for generating line-shaped beams and one-dimensional focusing. Widely used in laser scanning, spectroscopy, and optical 计量检测.",
+    "descriptionZh": "St和ard plano-convex 柱面透镜 for generating line-shaped beams 和 one-dimensional focusing. Widely used in laser scanning, spectroscopy, 和 光学 计量检测.",
     "image": "images/products/optical-lenses/bk7-plano-convex-cylindrical-lenses.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -1536,6 +1562,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "bk7-plano-convex-cylindrical-lenses"
+
   },
   {
     "id": 24,
@@ -1544,7 +1571,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Plano-convex lenses have a positive focal length and are widely used for focusing and collimating light beams. The curved surface minimizes spherical aberration for better beam quality. Our BK7 Plano Convex Lenses feature excellent uniformity, no patterns, inclusions, or bubbles. Custom coatings available upon request.",
-        "descriptionZh": "Plano-convex 透镜 have a positive focal length and are widely used for focusing and collimating light beams. The curved surface minimizes spherical aberration for better beam quality. Our BK7光学玻璃 Plano Convex Lenses feature excellent uniformity, no patterns, inclusions, or bubbles. Custom coatings available upon request.",
+    "descriptionZh": "Plano-convex 透镜 have a positive focal length 和 are widely used for focusing 和 collimating light beams. The curved surface minimizes spherical aberration for better beam quality. Our BK7光学玻璃 Plano Convex 透镜 feature excellent uniformity, no patterns, inclusions, or bubbles. Custom coatings available upon request.",
     "image": "images/products/optical-lenses/bk7-plano-convex-lenses.jpg",
     "parameters": {
       "material": "K9 (BK7)",
@@ -1558,6 +1585,12 @@ var PRODUCTS = [
       "beveling": "0.25mm × 45°",
       "coatings": "A: AR 350-650nm / B: AR 650-950nm / C: AR 950-1250nm"
     },
+    "price": 32,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "bk7-plano-convex-lenses"
+,
     "partNumbers": [
       {
         "partNumber": "LOPCXB2.5-3.9",
@@ -1629,12 +1662,7 @@ var PRODUCTS = [
         "centerThickness": "4.80mm",
         "price": 62
       }
-    ],
-    "price": 32,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "bk7-plano-convex-lenses"
+    ]
   },
   {
     "id": 25,
@@ -1643,7 +1671,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Precision laser beam expanders for increasing beam diameter while maintaining collimation. Available in Galilean and Keplerian designs with various magnification ratios.",
-        "descriptionZh": "Precision laser beam expanders for increasing beam diameter while maintaining collimation. Available in Galilean and Keplerian designs with various magnification ratios.",
+    "descriptionZh": "Precision laser beam exp和ers for increasing beam diameter while maintaining collimation. Available in Galilean 和 Keplerian designs 具有 various magnification ratios.",
     "image": "images/products/optical-lenses/laser-beam-extender.jpg",
     "parameters": {
       "material": "N-BK7 / Fused Silica",
@@ -1653,6 +1681,12 @@ var PRODUCTS = [
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
     },
+    "price": 320,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "laser-beam-extender"
+,
     "partNumbers": [
       {
         "partNumber": "LOLLM20-532",
@@ -1742,12 +1776,7 @@ var PRODUCTS = [
         "reflectance": ">99%",
         "price": 109
       }
-    ],
-    "price": 320,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "laser-beam-extender"
+    ]
   },
   {
     "id": 26,
@@ -1756,7 +1785,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Precision microscope objectives for biological and industrial microscopy applications. Available in various magnification powers and correction levels.",
-        "descriptionZh": "Precision microscope objectives for biological and industrial microscopy应用. Available in various magnification powers and correction levels.",
+    "descriptionZh": "Precision microscope objectives for biological 和 industrial microscopy应用. Available in various magnification powers 和 correction levels.",
     "image": "images/products/optical-lenses/micro-objectives.jpg",
     "parameters": {
       "magnification": "4X, 10X, 20X, 40X, 60X, 100X",
@@ -1765,6 +1794,12 @@ var PRODUCTS = [
       "thread": "RMS / M25 / Custom",
       "correction": "Achromatic / Plan Achromatic"
     },
+    "price": 220,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "micro-objectives"
+,
     "partNumbers": [
       {
         "partNumber": "LOOL-X4",
@@ -1808,12 +1843,7 @@ var PRODUCTS = [
         "workingDistance": "0.198mm",
         "price": 238
       }
-    ],
-    "price": 220,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "micro-objectives"
+    ]
   },
   {
     "id": 27,
@@ -1822,7 +1852,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "Precision molded aspheric lenses eliminating spherical aberration for superior focusing performance. Ideal for laser diode collimation, LED coupling, and imaging systems.",
-        "descriptionZh": "Precision molded 非球面透镜 eliminating spherical aberration for superior focusing performance. 适用于激光二极管准直, LED coupling, and imaging systems.",
+    "descriptionZh": "Precision molded 非球面透镜 eliminating spherical aberration for 卓越的 focusing performance. 适用于激光二极管准直, LED coupling, 和 imaging systems.",
     "image": "images/products/optical-lenses/optical-aspheric-lenses.jpg",
     "parameters": {
       "material": "N-BK7 / Fused Silica / PMMA",
@@ -1837,6 +1867,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-aspheric-lenses"
+
   },
   {
     "id": 28,
@@ -1845,7 +1876,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "High-reflectivity dielectric mirrors with broad spectral bandwidth. Multi-layer coating technology provides >99% reflectivity across visible and near-infrared regions.",
-        "descriptionZh": "High-reflectivity dielectric 反射镜 with broad spectral bandwidth. Multi-layer coating technology provides >99% reflectivity across visible and 近红外 regions.",
+    "descriptionZh": "高-reflectivity dielectric 反射镜 具有 broad spectral b和width. Multi-layer coating technology provides >99% reflectivity across visible 和 近红外 regions.",
     "image": "images/products/optical-mirrors/broadband-dielectric-coated-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -1855,6 +1886,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "damage_threshold": ">20 J/cm² (10ns)"
     },
+    "price": 68,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "broadband-dielectric-coated-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LODM12.7-3A1",
@@ -1926,12 +1963,7 @@ var PRODUCTS = [
         "thickness": "5mm",
         "price": 109
       }
-    ],
-    "price": 68,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "broadband-dielectric-coated-mirrors"
+    ]
   },
   {
     "id": 29,
@@ -1940,7 +1972,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Specialized mirrors optimized for dual wavelength laser systems. Perfect for dual-frequency laser applications, interferometry, and harmonic generation.",
-        "descriptionZh": "Specialized 反射镜 optimized for dual wavelength 激光系统. Perfect for dual-frequency laser应用, interferometry, and harmonic generation.",
+    "descriptionZh": "Specialized 反射镜 optimized for dual wavelength 激光系统. Perfect for dual-frequency laser应用, interferometry, 和 harmonic generation.",
     "image": "images/products/optical-mirrors/dielectric-dual-wavelength-laser-line-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -1950,6 +1982,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/10@632.8nm",
       "surface_quality": "20-10"
     },
+    "price": 95,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "dielectric-dual-wavelength-laser-line-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOLLM20-532",
@@ -2039,12 +2077,7 @@ var PRODUCTS = [
         "reflectance": ">99%",
         "price": 124
       }
-    ],
-    "price": 95,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "dielectric-dual-wavelength-laser-line-mirrors"
+    ]
   },
   {
     "id": 30,
@@ -2053,7 +2086,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Laser line mirrors optimized for specific wavelengths with high reflectivity and damage threshold. Essential for laser resonator cavities and beam steering.",
-        "descriptionZh": "Laser line 反射镜 optimized for specific wavelengths with 高反射率 and damage threshold. Essential for laser resonator cavities and beam steering.",
+    "descriptionZh": "Laser line 反射镜 optimized for specific wavelengths 具有 高反射率 和 damage threshold. Essential for laser resonator cavities 和 beam steering.",
     "image": "images/products/optical-mirrors/dielectric-laser-line-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -2064,6 +2097,12 @@ var PRODUCTS = [
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
     },
+    "price": 65,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "dielectric-laser-line-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOLLM20-532",
@@ -2153,12 +2192,7 @@ var PRODUCTS = [
         "reflectance": ">99%",
         "price": 138
       }
-    ],
-    "price": 65,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "dielectric-laser-line-mirrors"
+    ]
   },
   {
     "id": 31,
@@ -2167,7 +2201,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Precision concave spherical mirrors with metal coatings for broadband reflection. Available with aluminum, silver, or gold coatings for different spectral regions.",
-        "descriptionZh": "Precision concave spherical 反射镜 with 金属镀膜 for broadband reflection. Available with aluminum, silver, or gold coatings for different spectral regions.",
+    "descriptionZh": "Precision concave spherical 反射镜 具有 金属镀膜 for broadb和 reflection. Available 具有 aluminum, silver, or gold coatings for different spectral regions.",
     "image": "images/products/optical-mirrors/metal-coated--concave-spherical-reflected-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -2177,6 +2211,12 @@ var PRODUCTS = [
       "reflectivity": ">90% (Al) / >95% (Ag) / >98% (Au)",
       "surface_flatness": "λ/4@632.8nm"
     },
+    "price": 52,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "metal-coated-concave-spherical-reflected-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOAUM12.7-3",
@@ -2210,12 +2250,7 @@ var PRODUCTS = [
         "reflectance": ">98%",
         "price": 171
       }
-    ],
-    "price": 52,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "metal-coated-concave-spherical-reflected-mirrors"
+    ]
   },
   {
     "id": 32,
@@ -2224,7 +2259,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Specialized output couplers for Nd:YAG laser systems with optimized transmission at 1064nm. Partial reflector design balances output power and laser efficiency.",
-        "descriptionZh": "Specialized output couplers for Nd:YAG 激光系统 with optimized transmission at 1064nm. Partial reflector design balances output power and laser efficiency.",
+    "descriptionZh": "Specialized output couplers for Nd:YAG 激光系统 具有 optimized transmission at 1064nm. Partial reflector design balances output power 和 laser efficiency.",
     "image": "images/products/optical-mirrors/ndyag-laser-output-coupler.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -2234,6 +2269,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/10@632.8nm",
       "damage_threshold": ">15 J/cm² (10ns)"
     },
+    "price": 110,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "ndyag-laser-output-coupler"
+,
     "partNumbers": [
       {
         "partNumber": "LOLLM20-532",
@@ -2323,12 +2364,7 @@ var PRODUCTS = [
         "reflectance": ">99%",
         "price": 110
       }
-    ],
-    "price": 110,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "ndyag-laser-output-coupler"
+    ]
   },
   {
     "id": 33,
@@ -2337,7 +2373,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Precision dichroic mirrors for separating or combining beams of different wavelengths. Multi-layer dielectric coating provides sharp cut-off and high transmission.",
-        "descriptionZh": "Precision dichroic 反射镜 for separating or combining beams of different wavelengths. Multi-layer dielectric coating provides sharp cut-off and high transmission.",
+    "descriptionZh": "Precision dichroic 反射镜 for separating or combining beams of different wavelengths. Multi-layer dielectric coating provides sharp cut-off 和 高 transmission.",
     "image": "images/products/optical-mirrors/optical-dichroic-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7",
@@ -2352,6 +2388,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-dichroic-mirrors"
+
   },
   {
     "id": 34,
@@ -2360,7 +2397,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Enhanced aluminum mirrors with improved reflectivity in the visible spectrum. SiO2 protective coating ensures long-term durability and environmental stability.",
-        "descriptionZh": "Enhanced aluminum 反射镜 with improved reflectivity in the 可见光谱. SiO2 protective coating ensures long-term durability and environmental stability.",
+    "descriptionZh": "Enhanced aluminum 反射镜 具有 improved reflectivity in the 可见光谱. SiO2 protective coating ensures long-term durability 和 environmental stability.",
     "image": "images/products/optical-mirrors/optical-enhanced-aluminum-coated-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Float Glass",
@@ -2370,6 +2407,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
     },
+    "price": 38,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-enhanced-aluminum-coated-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOEAM12.7-3",
@@ -2403,12 +2446,7 @@ var PRODUCTS = [
         "reflectance": ">90%",
         "price": 133
       }
-    ],
-    "price": 38,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-enhanced-aluminum-coated-mirrors"
+    ]
   },
   {
     "id": 35,
@@ -2417,7 +2455,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "High-reflectivity gold mirrors for infrared applications. Protected gold coating provides excellent reflectivity in the 650nm-20μm range with superior durability.",
-        "descriptionZh": "High-reflectivity gold 反射镜 for infrared应用. Protected gold coating provides excellent reflectivity in the 650nm-20μm range with superior durability.",
+    "descriptionZh": "高-reflectivity gold 反射镜 for infrared应用. Protected gold coating provides excellent reflectivity in the 650nm-20μm range 具有 卓越的 durability.",
     "image": "images/products/optical-mirrors/optical-gold-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Fused Silica",
@@ -2427,6 +2465,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
     },
+    "price": 90,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-gold-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOAUM12.7-3",
@@ -2460,12 +2504,7 @@ var PRODUCTS = [
         "reflectance": ">98%",
         "price": 172
       }
-    ],
-    "price": 90,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-gold-mirrors"
+    ]
   },
   {
     "id": 36,
@@ -2474,7 +2513,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Standard aluminum mirrors with SiO2 protective coating for improved durability. Cost-effective solution for general-purpose beam steering applications.",
-        "descriptionZh": "Standard aluminum 反射镜 with SiO2 protective coating for improved durability. Cost-effective solution for general-purpose beam steering应用.",
+    "descriptionZh": "St和ard aluminum 反射镜 具有 SiO2 protective coating for improved durability. Cost-effective solution for general-purpose beam steering应用.",
     "image": "images/products/optical-mirrors/optical-protective-aluminum-coated-mirrors.jpg",
     "parameters": {
       "substrate": "Float Glass / N-BK7",
@@ -2489,6 +2528,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-protective-aluminum-coated-mirrors"
+
   },
   {
     "id": 37,
@@ -2497,7 +2537,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "High-reflectivity silver mirrors with excellent visible light performance. Protected silver coating prevents tarnishing and ensures long-term stability.",
-        "descriptionZh": "High-reflectivity silver 反射镜 with excellent visible light performance. Protected silver coating prevents tarnishing and ensures long-term stability.",
+    "descriptionZh": "高-reflectivity silver 反射镜 具有 excellent visible light performance. Protected silver coating prevents tarnishing 和 ensures long-term stability.",
     "image": "images/products/optical-mirrors/optical-silver-mirrors.jpg",
     "parameters": {
       "substrate": "N-BK7 / Float Glass",
@@ -2507,6 +2547,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
     },
+    "price": 48,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-silver-mirrors"
+,
     "partNumbers": [
       {
         "partNumber": "LOAGM12.7-3",
@@ -2540,12 +2586,7 @@ var PRODUCTS = [
         "reflectance": ">95%",
         "price": 144
       }
-    ],
-    "price": 48,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-silver-mirrors"
+    ]
   },
   {
     "id": 38,
@@ -2554,7 +2595,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Zero-order wave plates with air gap design for high-power laser applications. Superior temperature bandwidth and damage threshold compared to cemented designs.",
-        "descriptionZh": "Zero-order wave plates with air gap design for high-power laser应用. Superior temperature bandwidth and damage threshold compared to cemented designs.",
+    "descriptionZh": "Zero-order wave plates 具有 air gap design for 高-power laser应用. 卓越的 temperature b和width 和 damage threshold compared to cemented designs.",
     "image": "images/products/optical-polarising-components/air-spaced-zero-order-high-power-waveplates.jpg",
     "parameters": {
       "material": "Crystal Quartz",
@@ -2564,6 +2605,12 @@ var PRODUCTS = [
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
     },
+    "price": 125,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "air-spaced-zero-order-high-power-waveplates"
+,
     "partNumbers": [
       {
         "partNumber": "LOWPZ-10Q-532",
@@ -2677,12 +2724,7 @@ var PRODUCTS = [
         "phase": "Half Wave",
         "price": 250
       }
-    ],
-    "price": 125,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "air-spaced-zero-order-high-power-waveplates"
+    ]
   },
   {
     "id": 39,
@@ -2691,7 +2733,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Cost-effective zero-order wave plates with optical contact cementing. Suitable for moderate power applications with excellent retardation accuracy.",
-        "descriptionZh": "Cost-effective zero-order wave plates with optical contact cementing. Suitable for moderate power应用 with excellent retardation accuracy.",
+    "descriptionZh": "Cost-effective zero-order wave plates 具有 光学 contact cementing. 适用于 moderate power应用 具有 excellent retardation accuracy.",
     "image": "images/products/optical-polarising-components/cemented-zero-order-waveplate.jpg",
     "parameters": {
       "material": "Crystal Quartz",
@@ -2701,6 +2743,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "damage_threshold": ">5 J/cm² (10ns)"
     },
+    "price": 88,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "cemented-zero-order-waveplate"
+,
     "partNumbers": [
       {
         "partNumber": "LOWPZ-10Q-532",
@@ -2814,12 +2862,7 @@ var PRODUCTS = [
         "phase": "Half Wave",
         "price": 257
       }
-    ],
-    "price": 88,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "cemented-zero-order-waveplate"
+    ]
   },
   {
     "id": 40,
@@ -2828,7 +2871,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Multi-order wave plates offering cost-effective polarization control. Lower price with wider temperature and wavelength bandwidth compared to zero-order designs.",
-        "descriptionZh": "Multi-order wave plates offering cost-effective polarization control. Lower price with wider temperature and wavelength bandwidth compared to zero-order designs.",
+    "descriptionZh": "Multi-order wave plates offering cost-effective polarization control. 低er price 具有 wider temperature 和 wavelength b和width compared to zero-order designs.",
     "image": "images/products/optical-polarising-components/multi-order-waveplate.jpg",
     "parameters": {
       "material": "Crystal Quartz / MgF2",
@@ -2838,6 +2881,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "damage_threshold": ">3 J/cm² (10ns)"
     },
+    "price": 48,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "multi-order-waveplate"
+,
     "partNumbers": [
       {
         "partNumber": "LOWPM-10Q-532",
@@ -2951,12 +3000,7 @@ var PRODUCTS = [
         "phase": "Half Wave",
         "price": 137
       }
-    ],
-    "price": 48,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "multi-order-waveplate"
+    ]
   },
   {
     "id": 41,
@@ -2965,7 +3009,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Broadband circular polarizers combining linear polarizers with quarter-wave plates. Essential for glare reduction, 3D displays, and optical isolation.",
-        "descriptionZh": "Broadband circular 偏振片 combining linear 偏振片 with quarter-wave plates. Essential for glare reduction, 3D displays, and optical isolation.",
+    "descriptionZh": "Broadb和 circular 偏振片 combining linear 偏振片 具有 quarter-wave plates. Essential for glare reduction, 3D displays, 和 光学 isolation.",
     "image": "images/products/optical-polarising-components/optical-circular-polarizer.jpg",
     "parameters": {
       "material": "Polarizing film + Quarter-wave plate",
@@ -2980,6 +3024,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-circular-polarizer"
+
   },
   {
     "id": 42,
@@ -2988,7 +3033,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Glan-laser prisms with high extinction ratio and laser-grade surface quality. Air-spaced design for high-power laser applications with excellent damage threshold.",
-        "descriptionZh": "Glan-laser 棱镜 with high extinction ratio and laser-grade surface quality. Air-spaced design for high-power laser应用 with excellent damage threshold.",
+    "descriptionZh": "Glan-laser 棱镜 具有 高 extinction ratio 和 laser-grade surface quality. Air-spaced design for 高-power laser应用 具有 excellent damage threshold.",
     "image": "images/products/optical-polarising-components/optical-glan-laser-prisms.jpg",
     "parameters": {
       "material": "Calcite / α-BBO",
@@ -2998,6 +3043,12 @@ var PRODUCTS = [
       "surface_quality": "20-10",
       "damage_threshold": ">10 J/cm² (10ns)"
     },
+    "price": 165,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-glan-laser-prisms"
+,
     "partNumbers": [
       {
         "partNumber": "LOLLM20-532",
@@ -3087,12 +3138,7 @@ var PRODUCTS = [
         "reflectance": ">99%",
         "price": 117
       }
-    ],
-    "price": 165,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-glan-laser-prisms"
+    ]
   },
   {
     "id": 43,
@@ -3101,7 +3147,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Glan-Taylor prisms providing high extinction ratio polarization separation. Standard choice for laboratory and instrumentation applications.",
-        "descriptionZh": "Glan-Taylor 棱镜 providing high extinction ratio polarization separation. Standard choice for laboratory and instrumentation应用.",
+    "descriptionZh": "Glan-Taylor 棱镜 providing 高 extinction ratio polarization separation. St和ard choice for laboratory 和 instrumentation应用.",
     "image": "images/products/optical-polarising-components/optical-glan-taylor-prisms.jpg",
     "parameters": {
       "material": "Calcite",
@@ -3116,6 +3162,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-glan-taylor-prisms"
+
   },
   {
     "id": 44,
@@ -3124,7 +3171,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "High-performance optical isolators protecting laser sources from back reflections. Essential for fiber lasers, semiconductor lasers, and precision measurement systems.",
-        "descriptionZh": "High-performance optical isolators protecting laser sources from back reflections. Essential for fiber lasers, semiconductor lasers, and precision measurement systems.",
+    "descriptionZh": "高-performance 光学 isolators protecting laser sources from back reflections. Essential for fiber lasers, semiconductor lasers, 和 precision measurement systems.",
     "image": "images/products/optical-polarising-components/optical-isolator.jpg",
     "parameters": {
       "wavelength_range": "532nm / 633nm / 1064nm / 1550nm",
@@ -3138,6 +3185,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-isolator"
+
   },
   {
     "id": 45,
@@ -3146,7 +3194,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "High-quality linear polarizers for producing polarized light. Available in various sizes and wavelength ranges for scientific and industrial applications.",
-        "descriptionZh": "High-quality linear 偏振片 for producing polarized light. Available in various sizes and wavelength ranges for scientific and industrial应用.",
+    "descriptionZh": "高-quality linear 偏振片 for producing polarized light. Available in various sizes 和 wavelength ranges for scientific 和 industrial应用.",
     "image": "images/products/optical-polarising-components/optical-linear-polarizer.jpg",
     "parameters": {
       "material": "Polarizing film / Glan / Calcite",
@@ -3156,6 +3204,12 @@ var PRODUCTS = [
       "peak_transmittance": ">42% (polarized)",
       "surface_quality": "40-20"
     },
+    "price": 72,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-linear-polarizer"
+,
     "partNumbers": [
       {
         "partNumber": "LOLP12.7",
@@ -3171,12 +3225,7 @@ var PRODUCTS = [
         "transmittance": ">50%",
         "price": 151
       }
-    ],
-    "price": 72,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-linear-polarizer"
+    ]
   },
   {
     "id": 46,
@@ -3185,7 +3234,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Wollaston prisms separating unpolarized light into two orthogonal polarized beams. Perfect for polarimetry, interferometry, and beam splitting applications.",
-        "descriptionZh": "Wollaston 棱镜 separating unpolarized light into two orthogonal polarized beams. Perfect for polarimetry, interferometry, and beam splitting应用.",
+    "descriptionZh": "Wollaston 棱镜 separating unpolarized light into two orthogonal polarized beams. Perfect for polarimetry, interferometry, 和 beam splitting应用.",
     "image": "images/products/optical-polarising-components/optical-wollaston-prisms.jpg",
     "parameters": {
       "material": "Calcite",
@@ -3200,6 +3249,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-wollaston-prisms"
+
   },
   {
     "id": 47,
@@ -3208,7 +3258,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Crystal quartz polarization rotators rotating the plane of polarization without changing beam properties. Rotation angle depends on crystal thickness and wavelength.",
-        "descriptionZh": "Crystal quartz polarization rotators rotating the plane of polarization without changing beam properties. Rotation angle depends on crystal thickness and wavelength.",
+    "descriptionZh": "Crystal quartz polarization rotators rotating the plane of polarization 具有out changing beam properties. Rotation angle depends on crystal thickness 和 wavelength.",
     "image": "images/products/optical-polarising-components/quartz-polarization-rotator.jpg",
     "parameters": {
       "material": "Crystal Quartz",
@@ -3223,6 +3273,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "quartz-polarization-rotator"
+
   },
   {
     "id": 48,
@@ -3231,7 +3282,7 @@ var PRODUCTS = [
     "category": "Optical Polarising Components",
     "categoryZh": "光学偏振组件",
     "description": "Achromatic wave plates with consistent retardation across a broad wavelength range. Ideal for broadband light sources and multi-wavelength laser systems.",
-        "descriptionZh": "Achromatic wave plates with consistent retardation across a 宽波长范围. 适用于broadband light sources and multi-wavelength 激光系统.",
+    "descriptionZh": "Achromatic wave plates 具有 consistent retardation across a 宽波长范围. 适用于broadb和 light sources 和 multi-wavelength 激光系统.",
     "image": "images/products/optical-polarising-components/wide-band-achromatic-wave-plate.jpg",
     "parameters": {
       "material": "Crystal Quartz + MgF2",
@@ -3246,6 +3297,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "wide-band-achromatic-wave-plate"
+
   },
   {
     "id": 49,
@@ -3254,7 +3306,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Precision corner cube prisms reflecting incident light back toward the source regardless of orientation. Essential for surveying, laser ranging, and optical alignment.",
-        "descriptionZh": "Precision corner cube 棱镜 reflecting incident light back toward the source regardless of orientation. Essential for surveying, laser ranging, and optical alignment.",
+    "descriptionZh": "Precision corner cube 棱镜 reflecting incident light back toward the source regardless of orientation. Essential for surveying, laser ranging, 和 光学 alignment.",
     "image": "images/products/optical-prisms/corner-cube-prisms.jpg",
     "parameters": {
       "material": "K9/BK7 / Fused Silica",
@@ -3264,6 +3316,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
     },
+    "price": 68,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "corner-cube-prisms"
+,
     "partNumbers": [
       {
         "partNumber": "LOCCP12.7",
@@ -3301,12 +3359,7 @@ var PRODUCTS = [
         "height": "52.50mm",
         "price": 375
       }
-    ],
-    "price": 68,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "corner-cube-prisms"
+    ]
   },
   {
     "id": 50,
@@ -3315,7 +3368,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Dove prisms for image rotation and inversion without deviating the beam path. Widely used in telescopes, optical alignment, and interferometer applications.",
-        "descriptionZh": "Dove 棱镜 for image rotation and inversion without deviating the beam path. Widely used in telescopes, optical alignment, and interferometer应用.",
+    "descriptionZh": "Dove 棱镜 for image rotation 和 inversion 具有out deviating the beam path. Widely used in telescopes, 光学 alignment, 和 interferometer应用.",
     "image": "images/products/optical-prisms/dove-prisms.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -3324,6 +3377,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "beam_deviation": "<3 arcmin"
     },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "dove-prisms"
+,
     "partNumbers": [
       {
         "partNumber": "LODP01",
@@ -3355,12 +3414,7 @@ var PRODUCTS = [
         "dimension": "63.4x15x15mm",
         "price": 172
       }
-    ],
-    "price": 45,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "dove-prisms"
+    ]
   },
   {
     "id": 51,
@@ -3369,7 +3423,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Three-sided prisms for spectral dispersion and wavelength separation. Essential for spectroscopy, color separation, and educational demonstrations.",
-        "descriptionZh": "Three-sided 棱镜 for spectral dispersion and wavelength separation. Essential for spectroscopy, color separation, and educational demonstrations.",
+    "descriptionZh": "Three-sided 棱镜 for spectral dispersion 和 wavelength separation. Essential for spectroscopy, color separation, 和 educational demonstrations.",
     "image": "images/products/optical-prisms/equilateral-prisms.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -3383,6 +3437,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "equilateral-prisms"
+
   },
   {
     "id": 52,
@@ -3391,7 +3446,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Half penta prisms deflecting light by 45° without inverting the image. Commonly used in camera viewfinders and optical sighting systems.",
-        "descriptionZh": "Half penta 棱镜 deflecting light by 45° without inverting the image. Commonly used in camera viewfinders and optical sighting systems.",
+    "descriptionZh": "Half penta 棱镜 deflecting light by 45° 具有out inverting the image. Commonly used in camera viewfinders 和 光学 sighting systems.",
     "image": "images/products/optical-prisms/half-penta-prisms.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -3404,6 +3459,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "half-penta-prisms"
+
   },
   {
     "id": 53,
@@ -3412,7 +3468,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Precision wedge prisms for beam steering and deviation. Multiple wedges can be combined for variable angle adjustment.",
-        "descriptionZh": "Precision wedge 棱镜 for beam steering and deviation. Multiple wedges can be combined for variable angle adjustment.",
+    "descriptionZh": "Precision wedge 棱镜 for beam steering 和 deviation. Multiple wedges can be combined for variable angle adjustment.",
     "image": "images/products/optical-prisms/optical-wedge-prisms.jpg",
     "parameters": {
       "material": "K9/BK7 / Fused Silica",
@@ -3426,6 +3482,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-wedge-prisms"
+
   },
   {
     "id": 54,
@@ -3434,7 +3491,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Five-sided prisms deflecting light by exactly 90° while maintaining image orientation. Essential for optical alignment, surveying instruments, and camera systems.",
-        "descriptionZh": "Five-sided 棱镜 deflecting light by exactly 90° while maintaining image orientation. Essential for optical alignment, surveying instruments, and camera systems.",
+    "descriptionZh": "Five-sided 棱镜 deflecting light by exactly 90° while maintaining image orientation. Essential for 光学 alignment, surveying instruments, 和 camera systems.",
     "image": "images/products/optical-prisms/penta-prisms.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -3448,6 +3505,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "penta-prisms"
+
   },
   {
     "id": 55,
@@ -3456,7 +3514,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Versatile right angle prisms for beam deflection and total internal reflection. Used in optical instruments, endoscopy, and laser systems.",
-        "descriptionZh": "Versatile right angle 棱镜 for beam deflection and total internal reflection. Used in optical instruments, 内窥镜, and 激光系统.",
+    "descriptionZh": "Versatile right angle 棱镜 for beam deflection 和 total internal reflection. Used in 光学 instruments, 内窥镜, 和 激光系统.",
     "image": "images/products/optical-prisms/right-angle-prisms.jpg",
     "parameters": {
       "material": "K9/BK7 / UV Fused Silica",
@@ -3465,6 +3523,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "surface_flatness": "λ/4@632.8nm"
     },
+    "price": 33,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "right-angle-prisms"
+,
     "partNumbers": [
       {
         "partNumber": "LORP3-3",
@@ -3516,12 +3580,7 @@ var PRODUCTS = [
         "dimension": "50.8x50.8x50.8mm",
         "price": 98
       }
-    ],
-    "price": 33,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "right-angle-prisms"
+    ]
   },
   {
     "id": 56,
@@ -3530,7 +3589,7 @@ var PRODUCTS = [
     "category": "Optical Rod Lenses",
     "categoryZh": "光学棒状透镜",
     "description": "Cylindrical rod lenses for line generation and light homogenization. High numerical aperture design for efficient fiber coupling and illumination systems.",
-        "descriptionZh": "Cylindrical 棒状透镜 for line generation and light homogenization. High numerical aperture design for efficient fiber coupling and illumination systems.",
+    "descriptionZh": "Cylindrical 棒状透镜 for line generation 和 light homogenization. 高 numerical aperture design for efficient fiber coupling 和 illumination systems.",
     "image": "images/products/optical-rod-lenses/optical-rod-lenses.jpg",
     "parameters": {
       "material": "K9/BK7 / Fused Silica",
@@ -3544,6 +3603,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-rod-lenses"
+
   },
   {
     "id": 57,
@@ -3552,7 +3612,7 @@ var PRODUCTS = [
     "category": "Optical Spherical Lenses",
     "categoryZh": "光学球面透镜",
     "description": "UV-grade biconvex lenses for UV and visible light focusing applications. Fused silica provides excellent transmission from 185nm to 2500nm.",
-        "descriptionZh": "UV-grade biconvex 透镜 for UV and visible light focusing应用. Fused silica provides excellent transmission from 185nm to 2500nm.",
+    "descriptionZh": "UV-grade biconvex 透镜 for UV 和 visible light focusing应用. Fused silica provides excellent transmission from 185nm to 2500nm.",
     "image": "images/products/optical-spherical-lenses/uv-fused-silica-double-convex-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -3567,6 +3627,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-double-convex-lenses"
+
   },
   {
     "id": 58,
@@ -3575,7 +3636,7 @@ var PRODUCTS = [
     "category": "Optical Spherical Lenses",
     "categoryZh": "光学球面透镜",
     "description": "UV-grade plano-concave lenses for beam expansion and divergence. Ideal for laser pulse stretching and optical path length extension.",
-        "descriptionZh": "UV-grade 平凹透镜 for beam expansion and divergence. 适用于laser pulse stretching and optical path length extension.",
+    "descriptionZh": "UV-grade 平凹透镜 for beam expansion 和 divergence. 适用于laser pulse stretching 和 光学 path length extension.",
     "image": "images/products/optical-spherical-lenses/uv-fused-silica-plano-concave-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -3590,6 +3651,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-plano-concave-lenses"
+
   },
   {
     "id": 59,
@@ -3598,7 +3660,7 @@ var PRODUCTS = [
     "category": "Optical Spherical Lenses",
     "categoryZh": "光学球面透镜",
     "description": "UV-grade plano-convex lenses with superior transmission in the UV spectrum. Excellent for UV curing, photolithography, and fluorescence excitation.",
-        "descriptionZh": "UV-grade 平凸透镜 with superior transmission in the UV spectrum. Excellent for UV curing, photolithography, and fluorescence excitation.",
+    "descriptionZh": "UV-grade 平凸透镜 具有 卓越的 transmission in the UV spectrum. 非常适用于 UV curing, photolithography, 和 fluorescence excitation.",
     "image": "images/products/optical-spherical-lenses/uv-fused-silica-plano-convex-lenses.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -3613,6 +3675,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "uv-fused-silica-plano-convex-lenses"
+
   },
   {
     "id": 60,
@@ -3621,7 +3684,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Standard optical windows for sealing and protecting optical systems. BK7 glass provides excellent transmittance in the visible spectrum with good thermal stability.",
-        "descriptionZh": "Standard optical 窗口片 for sealing and protecting optical systems. BK7光学玻璃 glass provides excellent transmittance in the 可见光谱 with good thermal stability.",
+    "descriptionZh": "St和ard 光学 窗口片 for sealing 和 protecting 光学 systems. BK7光学玻璃 glass provides excellent 透过率 in the 可见光谱 具有 good thermal stability.",
     "image": "images/products/optical-windows/bk7-optical-windows.jpg",
     "parameters": {
       "material": "K9/BK7",
@@ -3631,6 +3694,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "parallelism": "<3 arcmin"
     },
+    "price": 27,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "bk7-optical-windows"
+,
     "partNumbers": [
       {
         "partNumber": "LOWB6-2",
@@ -3704,12 +3773,7 @@ var PRODUCTS = [
         "thickness": "10.00mm",
         "price": 218
       }
-    ],
-    "price": 27,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "bk7-optical-windows"
+    ]
   },
   {
     "id": 61,
@@ -3718,7 +3782,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Silicon windows for NIR and FIR applications from 1.2μm to 8μm. Lightweight and cost-effective solution for infrared optical systems.",
-        "descriptionZh": "Silicon 窗口片 for NIR and FIR应用 from 1.2μm to 8μm. Lightweight and cost-effective solution for infrared optical systems.",
+    "descriptionZh": "Silicon 窗口片 for NIR 和 FIR应用 from 1.2μm to 8μm. Lightweight 和 cost-effective solution for infrared 光学 systems.",
     "image": "images/products/optical-windows/optical-silicon-windows.jpg",
     "parameters": {
       "material": "Si",
@@ -3733,6 +3797,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-silicon-windows"
+
   },
   {
     "id": 62,
@@ -3741,7 +3806,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Calcium fluoride windows for UV and mid-infrared applications. Extended transmission from 180nm to 8μm with excellent chemical resistance.",
-        "descriptionZh": "Calcium fluoride 窗口片 for UV and 中红外应用. Extended transmission from 180nm to 8μm with excellent chemical resistance.",
+    "descriptionZh": "Calcium fluoride 窗口片 for UV 和 中红外应用. Extended transmission from 180nm to 8μm 具有 excellent chemical resistance.",
     "image": "images/products/optical-windows/optical-caf2-windows.jpg",
     "parameters": {
       "material": "CaF2",
@@ -3756,6 +3821,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-caf2-windows"
+
   },
   {
     "id": 63,
@@ -3764,7 +3830,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Germanium windows for thermal imaging and MWIR applications. High refractive index provides excellent performance in the 3-12μm atmospheric window.",
-        "descriptionZh": "Germanium 窗口片 for thermal imaging and MWIR应用. High refractive index provides excellent performance in the 3-12μm atmospheric window.",
+    "descriptionZh": "Germanium 窗口片 for thermal imaging 和 MWIR应用. 高 refractive index provides excellent performance in the 3-12μm atmospheric window.",
     "image": "images/products/optical-windows/optical-germanium-windows.jpg",
     "parameters": {
       "material": "Ge",
@@ -3780,6 +3846,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-germanium-windows"
+
   },
   {
     "id": 64,
@@ -3788,7 +3855,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Synthetic sapphire windows for UV to MIR applications. Extremely hard and durable material with excellent scratch resistance and thermal conductivity.",
-        "descriptionZh": "Synthetic sapphire 窗口片 for UV to MIR应用. Extremely hard and durable material with excellent scratch resistance and thermal conductivity.",
+    "descriptionZh": "Synthetic sapphire 窗口片 for UV to MIR应用. Extremely hard 和 durable material 具有 excellent scratch resistance 和 thermal conductivity.",
     "image": "images/products/optical-windows/optical-sapphire-windows.jpg",
     "parameters": {
       "material": "Al2O3 (Sapphire)",
@@ -3798,6 +3865,12 @@ var PRODUCTS = [
       "surface_flatness": "λ/4@632.8nm",
       "surface_quality": "40-20"
     },
+    "price": 82,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-sapphire-windows"
+,
     "partNumbers": [
       {
         "partNumber": "LOWS6-2",
@@ -3859,12 +3932,7 @@ var PRODUCTS = [
         "thickness": "5.00mm",
         "price": 248
       }
-    ],
-    "price": 82,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-sapphire-windows"
+    ]
   },
   {
     "id": 65,
@@ -3873,7 +3941,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "Zinc selenide windows for CO2 laser and thermal imaging applications. Low absorption coefficient and high thermal shock resistance make it ideal for high-power laser systems.",
-        "descriptionZh": "Zinc selenide 窗口片 for CO2 laser and thermal 成像应用. Low absorption coefficient and high thermal shock resistance make it 适用于 high-power 激光系统.",
+    "descriptionZh": "Zinc selenide 窗口片 for CO2 laser 和 thermal 成像应用. 低 absorption coefficient 和 高 thermal shock resistance make it 适用于 高-power 激光系统.",
     "image": "images/products/optical-windows/optical-znse-windows.jpg",
     "parameters": {
       "material": "ZnSe",
@@ -3889,6 +3957,7 @@ var PRODUCTS = [
     "priceNote": "Starting price, contact for volume discount",
     "priceNoteZh": "起售价，批量询价",
     "slug": "optical-znse-windows"
+
   },
   {
     "id": 66,
@@ -3897,7 +3966,7 @@ var PRODUCTS = [
     "category": "Optical Windows",
     "categoryZh": "光学窗口",
     "description": "UV-grade fused silica windows for semiconductor and scientific applications. Ultra-low thermal expansion and excellent UV transmission from 185nm.",
-        "descriptionZh": "UV-grade fused silica 窗口片 for semiconductor and scientific应用. Ultra-low thermal expansion and excellent UV transmission from 185nm.",
+    "descriptionZh": "UV-grade fused silica 窗口片 for semiconductor 和 scientific应用. Ultra-低 thermal expansion 和 excellent UV transmission from 185nm.",
     "image": "images/products/optical-windows/uv-fused-silica-windows.jpg",
     "parameters": {
       "material": "Fused Silica (JGS1)",
@@ -3908,6 +3977,12 @@ var PRODUCTS = [
       "surface_quality": "40-20",
       "parallelism": "<3 arcmin"
     },
+    "price": 52,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "uv-fused-silica-windows"
+,
     "partNumbers": [
       {
         "partNumber": "LOWF5-2",
@@ -3981,12 +4056,7 @@ var PRODUCTS = [
         "thickness": "12.00mm",
         "price": 368
       }
-    ],
-    "price": 52,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "uv-fused-silica-windows"
+    ]
   },
   {
     "id": 68,
@@ -3995,7 +4065,7 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Precision kinematic mirror mounts with fine adjustment screws for accurate tip/tilt alignment. Compatible with mirrors from 12.7mm to 50.8mm diameter.",
-        "descriptionZh": "Precision kinematic mirror mounts with fine adjustment screws for accurate tip/tilt alignment. Compatible with 反射镜 from 12.7mm to 50.8mm diameter.",
+    "descriptionZh": "Precision kinematic mirror mounts 具有 fine adjustment screws for accurate tip/tilt alignment. Compatible 具有 反射镜 from 12.7mm to 50.8mm diameter.",
     "image": "images/products/optical-mounts/kinematic-mirror-mounts.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
@@ -4003,6 +4073,12 @@ var PRODUCTS = [
       "adjustment_range": "±4°",
       "resolution": "0.003° per click"
     },
+    "price": 68,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "kinematic-mirror-mounts"
+,
     "partNumbers": [
       {
         "partNumber": "LMMK12.7",
@@ -4019,12 +4095,7 @@ var PRODUCTS = [
         "size": "50.8mm",
         "price": 112
       }
-    ],
-    "price": 68,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "kinematic-mirror-mounts"
+    ]
   },
   {
     "id": 69,
@@ -4033,13 +4104,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "SM-threaded fixed lens mounts for securely holding optical lenses. Available in various thread sizes.",
-        "descriptionZh": "SM-threaded fixed lens mounts for securely holding optical 透镜. Available in various thread sizes.",
+    "descriptionZh": "SM-threaded fixed lens mounts for securely holding 光学 透镜. Available in various thread sizes.",
     "image": "images/products/optical-mounts/fixed-lens-mounts.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
       "thread_standard": "SM (Standard Metric)",
       "clear_aperture": "Up to 90% of thread size"
     },
+    "price": 30,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "fixed-lens-mounts"
+,
     "partNumbers": [
       {
         "partNumber": "LFM05",
@@ -4056,12 +4133,7 @@ var PRODUCTS = [
         "thread": "M20",
         "price": 38
       }
-    ],
-    "price": 30,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "fixed-lens-mounts"
+    ]
   },
   {
     "id": 70,
@@ -4070,7 +4142,7 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Precision rotation mounts for waveplates, polarizers and other rotation-sensitive optics. 360° continuous rotation with fine scale adjustment.",
-        "descriptionZh": "Precision rotation mounts for 波片, 偏振片 and other rotation-sensitive optics. 360° continuous rotation with fine scale adjustment.",
+    "descriptionZh": "Precision rotation mounts for 波片, 偏振片 和 other rotation-sensitive optics. 360° continuous rotation 具有 fine scale adjustment.",
     "image": "images/products/optical-mounts/rotation-mounts.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
@@ -4078,6 +4150,12 @@ var PRODUCTS = [
       "rotation_range": "360° continuous",
       "resolution": "1° scale, 0.1° vernier"
     },
+    "price": 98,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "rotation-mounts"
+,
     "partNumbers": [
       {
         "partNumber": "LRM25.4",
@@ -4089,12 +4167,7 @@ var PRODUCTS = [
         "aperture": "50.8mm",
         "price": 128
       }
-    ],
-    "price": 98,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "rotation-mounts"
+    ]
   },
   {
     "id": 71,
@@ -4103,13 +4176,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Stainless steel optical posts with bases for stable optical mounting. Standard hole patterns compatible with optical tables.",
-        "descriptionZh": "Stainless steel optical posts with bases for stable optical mounting. Standard hole patterns compatible with optical tables.",
+    "descriptionZh": "Stainless steel 光学 posts 具有 bases for stable 光学 mounting. St和ard hole patterns compatible 具有 光学 tables.",
     "image": "images/products/optical-mounts/optical-post-base.jpg",
     "parameters": {
       "material": "Stainless steel",
       "base_size": "60x60mm",
       "hole_pattern": "25mm grid, M6 threads"
     },
+    "price": 22,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-post-base"
+,
     "partNumbers": [
       {
         "partNumber": "LOP-50",
@@ -4131,12 +4210,7 @@ var PRODUCTS = [
         "length": "150mm",
         "price": 38
       }
-    ],
-    "price": 22,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-post-base"
+    ]
   },
   {
     "id": 72,
@@ -4145,13 +4219,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Sturdy post holders for securing optical posts to breadboards or optical tables. Quick-release mechanism for easy adjustment.",
-        "descriptionZh": "Sturdy post holders for securing optical posts to breadboards or optical tables. Quick-release mechanism for easy adjustment.",
+    "descriptionZh": "Sturdy post holders for securing 光学 posts to breadboards or 光学 tables. Quick-release mechanism for easy adjustment.",
     "image": "images/products/optical-mounts/post-holders.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
       "post_diameter": "12.7mm",
       "clamping": "Knurled thumb screw"
     },
+    "price": 27,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "post-holders"
+,
     "partNumbers": [
       {
         "partNumber": "LPH-50",
@@ -4168,12 +4248,7 @@ var PRODUCTS = [
         "height": "100mm",
         "price": 38
       }
-    ],
-    "price": 27,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "post-holders"
+    ]
   },
   {
     "id": 73,
@@ -4182,13 +4257,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Compact XY translation stages for precise two-axis positioning. Micrometer-driven with fine resolution.",
-        "descriptionZh": "Compact XY translation stages for precise two-axis positioning. Micrometer-driven with fine resolution.",
+    "descriptionZh": "Compact XY translation stages for precise two-axis positioning. Micrometer-driven 具有 fine resolution.",
     "image": "images/products/optical-mounts/xy-translation-stages.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
       "platform_size": "60x60mm",
       "load_capacity": "5kg"
     },
+    "price": 180,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "xy-translation-stages"
+,
     "partNumbers": [
       {
         "partNumber": "LXY-25",
@@ -4200,12 +4281,7 @@ var PRODUCTS = [
         "travel": "±25mm",
         "price": 248
       }
-    ],
-    "price": 180,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "xy-translation-stages"
+    ]
   },
   {
     "id": 74,
@@ -4214,13 +4290,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Stainless steel optical breadboards with standard hole patterns for flexible optical setup configurations.",
-        "descriptionZh": "Stainless steel optical breadboards with standard hole patterns for flexible optical setup configurations.",
+    "descriptionZh": "Stainless steel 光学 breadboards 具有 st和ard hole patterns for flexible 光学 setup configurations.",
     "image": "images/products/optical-mounts/optical-breadboard.jpg",
     "parameters": {
       "material": "Stainless steel",
       "thickness": "12mm",
       "hole_pattern": "25mm grid, M6 threads"
     },
+    "price": 300,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "optical-table-breadboards"
+,
     "partNumbers": [
       {
         "partNumber": "LBB-300x300",
@@ -4237,12 +4319,7 @@ var PRODUCTS = [
         "size": "600x600mm",
         "price": 720
       }
-    ],
-    "price": 300,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "optical-table-breadboards"
+    ]
   },
   {
     "id": 75,
@@ -4251,13 +4328,19 @@ var PRODUCTS = [
     "category": "Optical Mounts & Accessories",
     "categoryZh": "光学支架与配件",
     "description": "Modular cage system components for building compact and stable optical assemblies. Compatible with standard cage system standards.",
-        "descriptionZh": "Modular cage system components for building compact and stable optical assemblies. Compatible with standard cage system standards.",
+    "descriptionZh": "Modular cage system components for building compact 和 stable 光学 assemblies. Compatible 具有 st和ard cage system st和ards.",
     "image": "images/products/optical-mounts/cage-system.jpg",
     "parameters": {
       "material": "Aluminum alloy, black anodized",
       "standard": "30mm / 60mm cage",
       "components": "Plates, rods, mounts"
     },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Starting price, contact for volume discount",
+    "priceNoteZh": "起售价，批量询价",
+    "slug": "cage-systems"
+,
     "partNumbers": [
       {
         "partNumber": "LCS-30",
@@ -4269,11 +4352,6 @@ var PRODUCTS = [
         "size": "60mm cage",
         "price": 68
       }
-    ],
-    "price": 45,
-    "priceUnit": "USD",
-    "priceNote": "Starting price, contact for volume discount",
-    "priceNoteZh": "起售价，批量询价",
-    "slug": "cage-systems"
+    ]
   }
 ];
