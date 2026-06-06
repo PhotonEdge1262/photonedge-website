@@ -149,22 +149,22 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Home</a>
-                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Products</a>
-                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">About Us</a>
-                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Applications</a>
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navHome">Home</a>
+                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navProducts">Products</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navAbout">About Us</a>
+                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navApplications">Applications</a>
                     <a href="blog.html" class="px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium">Blog</a>
-                    <a href="calculator.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Tools</a>
-                    <a href="faq.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">FAQ</a>
-                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">News</a>
-                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Downloads</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Contact</a>
+                    <a href="calculator.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navTools">Tools</a>
+                    <a href="faq.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navFaq">FAQ</a>
+                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navNews">News</a>
+                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navDownloads">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium" data-i18n="navContact">Contact</a>
                 </div>
                 
                 <!-- Language Switcher & Mobile Menu -->
                 <div class="flex items-center space-x-3">
                     <div class="relative">
-                        <button id="langBtn" class="flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 transition-smooth">
+                        <button id="langBtn" class="flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 transition-smooth" onclick="toggleLanguage()">
                             <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
                             </svg>
@@ -185,16 +185,16 @@
         <!-- Mobile Navigation Menu -->
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-4 py-3 space-y-1">
-                <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Home</a>
-                <a href="products.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Products</a>
-                <a href="about.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">About Us</a>
-                <a href="applications.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Applications</a>
+                <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navHome">Home</a>
+                <a href="products.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navProducts">Products</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navAbout">About Us</a>
+                <a href="applications.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navApplications">Applications</a>
                 <a href="blog.html" class="block px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium">Blog</a>
-                <a href="calculator.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Tools</a>
-                <a href="faq.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">FAQ</a>
-                <a href="news.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">News</a>
-                <a href="downloads.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Downloads</a>
-                <a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth">Contact</a>
+                <a href="calculator.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navTools">Tools</a>
+                <a href="faq.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navFaq">FAQ</a>
+                <a href="news.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navNews">News</a>
+                <a href="downloads.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navDownloads">Downloads</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth" data-i18n="navContact">Contact</a>
             </div>
         </div>
     </nav>
@@ -202,8 +202,8 @@
     <!-- Page Header -->
     <header class="bg-gradient-to-r from-primary-800 to-primary-700 py-16 md:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in">Technical Blog</h1>
-            <p class="text-lg md:text-xl text-blue-100 animate-slide-up" style="animation-delay: 0.1s">Expert guides and insights on precision optical components</p>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-fade-in" data-i18n="blogTitle">Technical Blog</h1>
+            <p class="text-lg md:text-xl text-blue-100 animate-slide-up" style="animation-delay: 0.1s" data-i18n="blogSubtitle">Expert guides and insights on precision optical components</p>
         </div>
     </header>
 
@@ -217,22 +217,22 @@
                     <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
-                    <input type="text" id="blogSearch" placeholder="Search articles..." class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 bg-white shadow-soft focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-smooth text-gray-700">
+                    <input type="text" id="blogSearch" placeholder="Search articles..." data-i18n-placeholder="searchArticles" class="w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 bg-white shadow-soft focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-smooth text-gray-700">
                 </div>
             </div>
             
             <!-- Category Filter -->
             <div class="flex flex-wrap justify-center gap-3" id="categoryFilter">
-                <button class="filter-btn active px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-primary-800 text-white shadow-md" data-category="all">
+                <button class="filter-btn active px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-primary-800 text-white shadow-md" data-category="all" data-i18n="filterAll">
                     All
                 </button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Technical Guide">
+                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Technical Guide" data-i18n="filterTechnical">
                     Technical Guide
                 </button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Buying Guide">
+                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Buying Guide" data-i18n="filterBuying">
                     Buying Guide
                 </button>
-                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Company">
+                <button class="filter-btn px-5 py-2.5 rounded-full text-sm font-medium transition-smooth bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-700 border border-gray-200" data-category="Company" data-i18n="filterCompany">
                     Company
                 </button>
             </div>
@@ -248,8 +248,8 @@
             <svg class="w-20 h-20 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
-            <h3 class="text-xl font-semibold text-gray-600 mb-2">No articles found</h3>
-            <p class="text-gray-400">Try a different search term or category</p>
+            <h3 class="text-xl font-semibold text-gray-600 mb-2" data-i18n="noArticles">No articles found</h3>
+            <p class="text-gray-400" data-i18n="tryDifferentSearch">Try a different search term or category</p>
         </div>
     </main>
 
@@ -275,7 +275,7 @@
                 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerQuickLinks">Quick Links</h3>
                     <ul class="space-y-2">
                         <li><a href="index.html" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
                         <li><a href="products.html" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
@@ -287,19 +287,19 @@
                 
                 <!-- Products -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerProducts">Products</h3>
                     <ul class="space-y-2">
-                        <li><a href="products.html?category=Optical Lenses" class="text-gray-400 hover:text-white transition-smooth">Lenses</a></li>
-                        <li><a href="products.html?category=Optical Windows" class="text-gray-400 hover:text-white transition-smooth">Windows</a></li>
-                        <li><a href="products.html?category=Optical Mirrors" class="text-gray-400 hover:text-white transition-smooth">Mirrors</a></li>
-                        <li><a href="products.html?category=Optical Prisms" class="text-gray-400 hover:text-white transition-smooth">Prisms</a></li>
-                        <li><a href="products.html?category=Optical Filters" class="text-gray-400 hover:text-white transition-smooth">Filters</a></li>
+                        <li><a href="products.html?category=Optical Lenses" class="text-gray-400 hover:text-white transition-smooth" data-i18n="catLenses">Lenses</a></li>
+                        <li><a href="products.html?category=Optical Windows" class="text-gray-400 hover:text-white transition-smooth" data-i18n="catWindows">Windows</a></li>
+                        <li><a href="products.html?category=Optical Mirrors" class="text-gray-400 hover:text-white transition-smooth" data-i18n="catMirrors">Mirrors</a></li>
+                        <li><a href="products.html?category=Optical Prisms" class="text-gray-400 hover:text-white transition-smooth" data-i18n="catPrisms">Prisms</a></li>
+                        <li><a href="products.html?category=Optical Filters" class="text-gray-400 hover:text-white transition-smooth" data-i18n="catFilters">Filters</a></li>
                     </ul>
                 </div>
                 
                 <!-- Contact -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerContact">Contact Us</h3>
                     <ul class="space-y-3">
                         <li class="flex items-center space-x-3">
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -424,14 +424,16 @@
                 html += '  </div>';
                 html += '  <div class="p-6">';
                 html += '    <div class="flex items-center space-x-3 mb-3">';
-                html += '      <span class="px-3 py-1 ' + categoryColor + ' rounded-full text-xs font-medium">' + post.category + '</span>';
-                html += '      <span class="text-gray-400 text-xs">' + post.readTime + ' read</span>';
+                html += '      <span class="px-3 py-1 ' + categoryColor + ' rounded-full text-xs font-medium">' + getCategoryName(post.category) + '</span>';
+                html += '      <span class="text-gray-400 text-xs">' + getReadTimeText(post.readTime) + '</span>';
                 html += '    </div>';
-                html += '    <h3 class="text-lg font-bold text-gray-800 mb-2 line-clamp-2 hover:text-primary-700 transition-smooth">' + post.title + '</h3>';
-                html += '    <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">' + post.excerpt + '</p>';
+                var titleToShow = (lang === 'zh' && post.titleZh) ? post.titleZh : post.title;
+                html += '    <h3 class="text-lg font-bold text-gray-800 mb-2 line-clamp-2 hover:text-primary-700 transition-smooth">' + titleToShow + '</h3>';
+                var excerptToShow = (lang === 'zh' && post.excerptZh) ? post.excerptZh : post.excerpt;
+                html += '    <p class="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">' + excerptToShow + '</p>';
                 html += '    <div class="flex items-center justify-between">';
                 html += '      <span class="text-gray-400 text-xs">' + post.date + '</span>';
-                html += '      <span class="text-primary-600 text-sm font-medium hover:text-primary-800 transition-smooth">Read More &rarr;</span>';
+                html += '      <span class="text-primary-600 text-sm font-medium hover:text-primary-800 transition-smooth">' + getReadMoreText() + '</span>';
                 html += '    </div>';
                 html += '  </div>';
                 html += '</a>';
@@ -459,5 +461,15 @@ function toggleMobileMenu() {
         </a>
     </div>
 
+<script>
+function toggleLanguage() {
+    var currentLang = localStorage.getItem('lang') || 'en';
+    var newLang = currentLang === 'en' ? 'zh' : 'en';
+    setLanguage(newLang);
+    if (typeof renderBlogPosts === 'function') {
+        renderBlogPosts();
+    }
+}
+</script>
 </body>
 </html>

@@ -299,18 +299,24 @@
                     <span class="text-xl font-bold bg-gradient-to-r from-primary-800 to-primary-600 bg-clip-text text-transparent">PhotonEdge</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Home</a>
-                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Products</a>
-                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">About Us</a>
-                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Applications</a>
-                    <a href="blog.html" class="px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium">Blog</a>
-                    <a href="calculator.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Tools</a>
-                    <a href="faq.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">FAQ</a>
-                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">News</a>
-                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Downloads</a>
-                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium">Contact</a>
+                    <a href="index.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navHome">Home</a>
+                    <a href="products.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navProducts">Products</a>
+                    <a href="about.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navAbout">About Us</a>
+                    <a href="applications.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navApplications">Applications</a>
+                    <a href="blog.html" class="px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium data-i18n="navBlog">Blog</a>
+                    <a href="calculator.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navTools">Tools</a>
+                    <a href="faq.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navFAQ">FAQ</a>
+                    <a href="news.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navNews">News</a>
+                    <a href="downloads.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navDownloads">Downloads</a>
+                    <a href="contact.html" class="px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-smooth font-medium data-i18n="navContact">Contact</a>
                 </div>
                 <div class="flex items-center space-x-3">
+                    <button id="langBtn" class="hidden md:flex items-center space-x-1 px-3 py-1.5 rounded-lg bg-gray-100 hover:bg-gray-200 transition-smooth" onclick="toggleLanguage()">
+                        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                        <span class="text-sm font-medium text-gray-700" id="currentLang">EN</span>
+                    </button>
                     <button id="mobileMenuBtn" class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-smooth">
                         <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -321,15 +327,15 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
             <div class="px-4 py-3 space-y-1">
-                <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">Home</a>
-                <a href="products.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">Products</a>
-                <a href="about.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">About Us</a>
-                <a href="blog.html" class="block px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium">Blog</a>
-                <a href="calculator.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">Tools</a>
-                <a href="faq.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">FAQ</a>
-                <a href="news.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">News</a>
-                <a href="downloads.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">Downloads</a>
-                <a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50">Contact</a>
+                <a href="index.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navHome">Home</a>
+                <a href="products.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navProducts">Products</a>
+                <a href="about.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navAbout">About Us</a>
+                <a href="blog.html" class="block px-4 py-2 rounded-lg text-primary-700 bg-primary-50 font-medium data-i18n="navBlog">Blog</a>
+                <a href="calculator.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navTools">Tools</a>
+                <a href="faq.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navFAQ">FAQ</a>
+                <a href="news.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navNews">News</a>
+                <a href="downloads.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navDownloads">Downloads</a>
+                <a href="contact.html" class="block px-4 py-2 rounded-lg text-gray-600 hover:text-primary-700 hover:bg-primary-50 data-i18n="navContact">Contact</a>
             </div>
         </div>
     </nav>
@@ -338,9 +344,9 @@
     <div class="bg-white border-b border-gray-100">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <nav class="flex items-center space-x-2 text-sm text-gray-500">
-                <a href="index.html" class="hover:text-primary-600 transition-smooth">Home</a>
+                <a href="index.html" class="hover:text-primary-600 transition-smooth data-i18n="navHome">Home</a>
                 <span>/</span>
-                <a href="blog.html" class="hover:text-primary-600 transition-smooth">Blog</a>
+                <a href="blog.html" class="hover:text-primary-600 transition-smooth data-i18n="navBlog">Blog</a>
                 <span>/</span>
                 <span id="breadcrumbTitle" class="text-gray-800 font-medium"></span>
             </nav>
@@ -352,30 +358,30 @@
         <article id="articleContent" class="bg-white rounded-2xl shadow-soft p-8 md:p-12">
             <div class="text-center py-16">
                 <div class="loading-spinner w-12 h-12 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mx-auto mb-4"></div>
-                <p class="text-gray-500">Loading article...</p>
+                <p class="text-gray-500" data-i18n="loadingArticle">Loading article...</p>
             </div>
         </article>
 
         <!-- Related Posts -->
         <div id="relatedPosts" class="mt-12" style="display: none;">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Related Articles</h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6" data-i18n="relatedArticles">Related Articles</h2>
             <div id="relatedGrid" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
         </div>
 
         <!-- CTA -->
         <div class="mt-12 bg-gradient-to-r from-primary-800 to-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-            <h2 class="text-2xl font-bold mb-3">Need Custom Optical Components?</h2>
-            <p class="text-blue-100 mb-6">Get in touch with our team for a free consultation and quote.</p>
+            <h2 class="text-2xl font-bold mb-3" data-i18n="needCustom">Need Custom Optical Components?</h2>
+            <p class="text-blue-100 mb-6" data-i18n="getInTouch">Get in touch with our team for a free consultation and quote.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="contact.html" class="px-6 py-3 bg-white text-primary-800 rounded-xl font-medium hover:bg-blue-50 transition-smooth">Contact Us</a>
-                <a href="products.html" class="px-6 py-3 bg-primary-900 text-white rounded-xl font-medium hover:bg-primary-950 transition-smooth border border-primary-500">Browse Products</a>
+                <a href="contact.html" class="px-6 py-3 bg-white text-primary-800 rounded-xl font-medium hover:bg-blue-50 transition-smooth" data-i18n="contactUs">Contact Us</a>
+                <a href="products.html" class="px-6 py-3 bg-primary-900 text-white rounded-xl font-medium hover:bg-primary-950 transition-smooth border border-primary-500" data-i18n="browseProducts">Browse Products</a>
             </div>
         </div>
     
     <!-- Social Share Buttons -->
     <section class="social-share-section">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t border-gray-200">
-            <h4 class="text-center text-gray-700 font-medium mb-4">Share this article</h4>
+            <h4 class="text-center text-gray-700 font-medium mb-4" data-i18n="shareArticle">Share this article</h4>
             <div class="social-share-buttons">
                 <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://photonedgeoptics.com/blog-post.html&title=Precision Optical Components Guide" target="_blank" class="share-btn linkedin-btn" title="Share on LinkedIn">
                     <svg class="share-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -410,13 +416,13 @@
     <section class="email-subscription-section">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div class="subscription-box">
-                <h4 class="subscription-title">Subscribe to our newsletter</h4>
-                <p class="subscription-desc">Get the latest optical industry insights and PhotonEdge updates delivered to your inbox.</p>
+                <h4 class="subscription-title" data-i18n="subscribeNewsletter">Subscribe to our newsletter</h4>
+                <p class="subscription-desc" data-i18n="subscribeDesc">Get the latest optical industry insights and PhotonEdge updates delivered to your inbox.</p>
                 <form class="subscription-form" action="#" method="post">
-                    <input type="email" placeholder="Enter your email address" required class="subscription-input">
-                    <button type="submit" class="subscription-btn">Subscribe</button>
+                    <input type="email" placeholder="Enter your email address" data-i18n-placeholder="enterEmail" required class="subscription-input">
+                    <button type="submit" class="subscription-btn" data-i18n="subscribe">Subscribe</button>
                 </form>
-                <p class="subscription-privacy">We respect your privacy. Unsubscribe at any time.</p>
+                <p class="subscription-privacy" data-i18n="privacyText">We respect your privacy. Unsubscribe at any time.</p>
             </div>
         </div>
     </section>
@@ -424,7 +430,7 @@
     <!-- Related Articles -->
     <section class="related-articles-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <h3 class="related-title">Related Articles</h3>
+            <h3 class="related-title" data-i18n="relatedArticles">Related Articles</h3>
             <div class="related-grid" id="relatedArticles">
                 <!-- Related articles will be loaded dynamically -->
             </div>
@@ -448,26 +454,26 @@
                     <p class="text-gray-400 text-sm">Beijing Hengdingguang Technology Co., Ltd.</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerQuickLinks">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
-                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
-                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
-                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-smooth">Blog</a></li>
-                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-smooth data-i18n="navHome">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-smooth data-i18n="navProducts">Products</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-smooth data-i18n="navAbout">About Us</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-white transition-smooth data-i18n="navBlog">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth data-i18n="navContact">Contact</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerProducts">Products</h3>
                     <ul class="space-y-2">
-                        <li><a href="products.html?category=Optical Lenses" class="text-gray-400 hover:text-white transition-smooth">Lenses</a></li>
-                        <li><a href="products.html?category=Optical Windows" class="text-gray-400 hover:text-white transition-smooth">Windows</a></li>
-                        <li><a href="products.html?category=Optical Mirrors" class="text-gray-400 hover:text-white transition-smooth">Mirrors</a></li>
-                        <li><a href="products.html?category=Optical Prisms" class="text-gray-400 hover:text-white transition-smooth">Prisms</a></li>
+                        <li><a href="products.html?category=Optical Lenses" class="text-gray-400 hover:text-white transition-smooth data-i18n="catLenses">Lenses</a></li>
+                        <li><a href="products.html?category=Optical Windows" class="text-gray-400 hover:text-white transition-smooth data-i18n="catWindows">Windows</a></li>
+                        <li><a href="products.html?category=Optical Mirrors" class="text-gray-400 hover:text-white transition-smooth data-i18n="catMirrors">Mirrors</a></li>
+                        <li><a href="products.html?category=Optical Prisms" class="text-gray-400 hover:text-white transition-smooth data-i18n="catPrisms">Prisms</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footerContact">Contact Us</h3>
                     <ul class="space-y-3">
                         <li class="flex items-center space-x-3">
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
@@ -525,7 +531,7 @@
 
             currentPost = BLOG_POSTS.find(function(p) { return p.slug === slug; });
             if (!currentPost) {
-                document.getElementById('articleContent').innerHTML = '<div class="text-center py-16"><h2 class="text-2xl font-bold text-gray-800 mb-4">Article Not Found</h2><p class="text-gray-500 mb-6">The article you are looking for does not exist.</p><a href="blog.html" class="px-6 py-3 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-smooth">Back to Blog</a></div>';
+                document.getElementById('articleContent').innerHTML = '<div class="text-center py-16"><h2 class="text-2xl font-bold text-gray-800 mb-4" data-i18n="articleNotFound">Article Not Found</h2><p class="text-gray-500 mb-6" data-i18n="articleNotFoundDesc">The article you are looking for does not exist.</p><a href="blog.html" class="px-6 py-3 bg-primary-600 text-white rounded-xl font-medium hover:bg-primary-700 transition-smooth" data-i18n="backToBlog">Back to Blog</a></div>';
                 return;
             }
 
@@ -611,6 +617,17 @@
         }
     </script>
 <script>
+
+
+function toggleLanguage() {
+    var currentLang = localStorage.getItem('lang') || 'en';
+    var newLang = currentLang === 'en' ? 'zh' : 'en';
+    setLanguage(newLang);
+    // 重新加载文章内容以显示对应语言
+    if (currentPost) {
+        loadArticleContent(currentPost.slug);
+    }
+}
 
 function toggleMobileMenu() {
     var navList = document.querySelector('.nav-list');

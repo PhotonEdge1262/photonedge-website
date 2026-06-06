@@ -225,7 +225,7 @@
             } catch(e) {
                 console.error('Product page init error:', e);
                 var grid = document.getElementById('productsGrid');
-                if (grid) grid.innerHTML = '<div class="no-products"><h3>Error loading products. Please refresh the page.</h3></div>';
+                if (grid) grid.innerHTML = '<div class="no-products"><h3 data-i18n="errorLoadingProducts">Error loading products. Please refresh the page.</h3></div>';
             }
         });
         
@@ -235,7 +235,7 @@
             var lang = (typeof getCurrentLang === 'function') ? getCurrentLang() : 'en';
             
             if (typeof PRODUCTS === 'undefined' || !PRODUCTS || PRODUCTS.length === 0) {
-                document.getElementById('productsGrid').innerHTML = '<div class="no-products"><h3>Products are loading... Please wait or refresh.</h3></div>';
+                document.getElementById('productsGrid').innerHTML = '<div class="no-products"><h3 data-i18n="productsLoading">Products are loading... Please wait or refresh.</h3></div>';
                 return;
             }
             
