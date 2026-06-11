@@ -249,11 +249,7 @@
         
         // Convert product image path to optimized thumbnail
         function getThumbImage(imagePath) {
-            var lastSlash = imagePath.lastIndexOf('/');
-            var dir = imagePath.substring(0, lastSlash);
-            var filename = imagePath.substring(lastSlash + 1);
-            var basename = filename.substring(0, filename.lastIndexOf('.'));
-            return dir + '/thumb/' + basename + '.webp';
+            return imagePath;
         }
 
         function renderProducts() {
