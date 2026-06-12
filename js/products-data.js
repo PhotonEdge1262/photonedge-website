@@ -253,7 +253,7 @@ var PRODUCTS = [
         "backFocalLength": "22.10mm"
       },
       {
-        "partNumber": "LOPCXB15-30-",
+        "partNumber": "LOPCXB15-30",
         "diameter": "15.00mm",
         "focalLength": "30.00mm",
         "centerThickness": "3.90mm",
@@ -4927,177 +4927,177 @@ var PRODUCTS = [
         "partNumber": "LOCL01",
         "diameter": "1.00mm",
         "focalLength": "3.16mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "73"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "73mm"
       },
       {
         "partNumber": "LOCL02",
         "diameter": "1.00mm",
         "focalLength": "2.61mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "50"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "50mm"
       },
       {
         "partNumber": "LOCL03",
         "diameter": "1.00mm",
         "focalLength": "2.80mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "50"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "50mm"
       },
       {
         "partNumber": "LOCL04",
         "diameter": "1.00mm",
         "focalLength": "2.89mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "68"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "68mm"
       },
       {
         "partNumber": "LOCL04",
         "diameter": "1.00mm",
         "focalLength": "3.27mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "68"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "68mm"
       },
       {
         "partNumber": "LOCL05",
         "diameter": "1.00mm",
         "focalLength": "2.90mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "68"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "68mm"
       },
       {
         "partNumber": "LOCL06",
         "diameter": "1.00mm",
         "focalLength": "3.27mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "68"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "68mm"
       },
       {
         "partNumber": "LOCL07",
         "diameter": "1.00mm",
         "focalLength": "2.62mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "50"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "50mm"
       },
       {
         "partNumber": "LOCL08",
         "diameter": "1.00mm",
         "focalLength": "2.80mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "50"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "50mm"
       },
       {
         "partNumber": "LOCL09",
         "diameter": "1.00mm",
         "focalLength": "1.92mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "10"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "10mm"
       },
       {
         "partNumber": "LOCL10",
         "diameter": "1.00mm",
         "focalLength": "2.10mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "32"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "32mm"
       },
       {
         "partNumber": "LOCL11",
         "diameter": "1.00mm",
         "focalLength": "2.46mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "49"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "49mm"
       },
       {
         "partNumber": "LOCL12",
         "diameter": "1.00mm",
         "focalLength": "4.80mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "140"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "140mm"
       },
       {
         "partNumber": "LOCL13",
         "diameter": "1.80mm",
         "focalLength": "2.98mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "67"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "67mm"
       },
       {
         "partNumber": "LOCL14",
         "diameter": "1.80mm",
         "focalLength": "3.32mm",
-        "workingDistance": "8mm",
-        "length": "1310mm",
-        "NA": "67"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1310nm",
+        "workingDistance": "67mm"
       },
       {
         "partNumber": "LOCL15",
         "diameter": "1.80mm",
         "focalLength": "2.98mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "67"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "67mm"
       },
       {
         "partNumber": "LOCL16",
         "diameter": "1.80mm",
         "focalLength": "3.32mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "67"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "67mm"
       },
       {
         "partNumber": "LOCL17",
         "diameter": "1.80mm",
         "focalLength": "3.05mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "71"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "71mm"
       },
       {
         "partNumber": "LOCL18",
         "diameter": "1.80mm",
         "focalLength": "3.84mm",
-        "workingDistance": "8mm",
-        "length": "1320mm",
-        "NA": "100"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1320nm",
+        "workingDistance": "100mm"
       },
       {
         "partNumber": "LOCL19",
         "diameter": "1.80mm",
         "focalLength": "4.21mm",
-        "workingDistance": "8mm",
-        "length": "1320mm",
-        "NA": "100"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1320nm",
+        "workingDistance": "100mm"
       },
       {
         "partNumber": "LOCL20",
         "diameter": "1.80mm",
         "focalLength": "3.85mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "100"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "100mm"
       },
       {
         "partNumber": "LOCL21",
         "diameter": "1.80mm",
         "focalLength": "4.21mm",
-        "workingDistance": "8mm",
-        "length": "1550mm",
-        "NA": "100"
+        "wedgeAngle": "8°",
+        "workingWavelength": "1550nm",
+        "workingDistance": "100mm"
       }
     ]
   },
@@ -6363,7 +6363,7 @@ var PRODUCTS = [
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "80-50",
       "surfaceFlatness": "λ/2@632.8nm",
-      "clearAperture": ">80%",
+      "clearAperture": ">90%",
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
@@ -6475,7 +6475,7 @@ var PRODUCTS = [
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/2@632.8nm",
-      "clearAperture": ">80%",
+      "clearAperture": ">90%",
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
@@ -6717,7 +6717,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "centration": "<2 arc min",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7327,8 +7327,20 @@ var PRODUCTS = [
         "thickness": "3.00mm"
       },
       {
+        "partNumber": "LOEAM6-3-U",
+        "wavelength": "200-400nm",
+        "diameter": "6.00mm",
+        "thickness": "3.00mm"
+      },
+      {
         "partNumber": "LOEAM9-3",
         "wavelength": "400-700nm",
+        "diameter": "9.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM9-3-U",
+        "wavelength": "200-400nm",
         "diameter": "9.00mm",
         "thickness": "3.00mm"
       },
@@ -7339,8 +7351,20 @@ var PRODUCTS = [
         "thickness": "3.00mm"
       },
       {
+        "partNumber": "LOEAM12.7-3-U",
+        "wavelength": "200-400nm",
+        "diameter": "12.70mm",
+        "thickness": "3.00mm"
+      },
+      {
         "partNumber": "LOEAM18-3",
         "wavelength": "400-700nm",
+        "diameter": "18.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM18-3-U",
+        "wavelength": "200-400nm",
         "diameter": "18.00mm",
         "thickness": "3.00mm"
       },
@@ -7351,8 +7375,20 @@ var PRODUCTS = [
         "thickness": "3.00mm"
       },
       {
+        "partNumber": "LOEAM20-3-U",
+        "wavelength": "200-400nm",
+        "diameter": "20.00mm",
+        "thickness": "3.00mm"
+      },
+      {
         "partNumber": "LOEAM25.4-3",
         "wavelength": "400-700nm",
+        "diameter": "25.40mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM25.4-3-U",
+        "wavelength": "200-400nm",
         "diameter": "25.40mm",
         "thickness": "3.00mm"
       },
@@ -7363,8 +7399,20 @@ var PRODUCTS = [
         "thickness": "5.00mm"
       },
       {
+        "partNumber": "LOEAM30-5-U",
+        "wavelength": "200-400nm",
+        "diameter": "30.00mm",
+        "thickness": "5.00mm"
+      },
+      {
         "partNumber": "LOEAM40-5",
         "wavelength": "400-700nm",
+        "diameter": "40.00mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM40-5-U",
+        "wavelength": "200-400nm",
         "diameter": "40.00mm",
         "thickness": "5.00mm"
       },
@@ -7375,14 +7423,32 @@ var PRODUCTS = [
         "thickness": "5.00mm"
       },
       {
+        "partNumber": "LOEAM50-5-U",
+        "wavelength": "200-400nm",
+        "diameter": "50.00mm",
+        "thickness": "5.00mm"
+      },
+      {
         "partNumber": "LOEAM50-8",
         "wavelength": "400-700nm",
         "diameter": "50.00mm",
         "thickness": "8.00mm"
       },
       {
+        "partNumber": "LOEAM50-8-U",
+        "wavelength": "200-400nm",
+        "diameter": "50.00mm",
+        "thickness": "8.00mm"
+      },
+      {
         "partNumber": "LOEAM80-5",
         "wavelength": "400-700nm",
+        "diameter": "80.00mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM80-5-U",
+        "wavelength": "200-400nm",
         "diameter": "80.00mm",
         "thickness": "5.00mm"
       }
