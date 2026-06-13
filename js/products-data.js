@@ -1,5 +1,3 @@
-// PhotonEdge Products Data V34 - Based on Official Product Catalog
-
 var PRODUCTS = [
   {
     "id": 1,
@@ -5570,136 +5568,136 @@ var PRODUCTS = [
         "partNumber": "LOAL6.8-6.0",
         "diameter": "6.80mm",
         "focalLength": "6.00mm",
-        "centerThickness": "4.12mm",
-        "edgeThickness": "2.78mm",
-        "NA": "0.56",
-        "material": "B270"
+        "centerThickness": "2.78mm",
+        "edgeThickness": "0.56mm",
+        "material": "B270",
+        "backFocalLength": "4.12mm"
       },
       {
         "partNumber": "LOAL9-6.78",
         "diameter": "9.00mm",
         "focalLength": "6.78mm",
-        "centerThickness": "4.08mm",
-        "edgeThickness": "5.00mm",
-        "NA": "1.30",
-        "material": "B270"
+        "centerThickness": "5.00mm",
+        "edgeThickness": "1.30mm",
+        "material": "B270",
+        "backFocalLength": "4.08mm"
       },
       {
         "partNumber": "LOAL12-8.5",
         "diameter": "12.00mm",
         "focalLength": "8.50mm",
-        "centerThickness": "5.80mm",
-        "edgeThickness": "5.50mm",
-        "NA": "1.60",
-        "material": "B270"
+        "centerThickness": "5.50mm",
+        "edgeThickness": "1.60mm",
+        "material": "B270",
+        "backFocalLength": "5.80mm"
       },
       {
         "partNumber": "LOAL12-10.5",
         "diameter": "12.00mm",
         "focalLength": "10.50mm",
-        "centerThickness": "8.20mm",
-        "edgeThickness": "3.50mm",
-        "NA": "1.10",
-        "material": "B270"
+        "centerThickness": "3.50mm",
+        "edgeThickness": "1.10mm",
+        "material": "B270",
+        "backFocalLength": "8.20mm"
       },
       {
         "partNumber": "LOAL15-12.2",
         "diameter": "15.00mm",
         "focalLength": "12.20mm",
-        "centerThickness": "7.80mm",
-        "edgeThickness": "7.50mm",
-        "NA": "2.00",
-        "material": "B270"
+        "centerThickness": "7.50mm",
+        "edgeThickness": "2.00mm",
+        "material": "B270",
+        "backFocalLength": "7.80mm"
       },
       {
         "partNumber": "LOAL18-12.0",
         "diameter": "18.00mm",
         "focalLength": "12.00mm",
-        "centerThickness": "6.90mm",
-        "edgeThickness": "8.80mm",
-        "NA": "3.30",
-        "material": "B270"
+        "centerThickness": "8.80mm",
+        "edgeThickness": "3.30mm",
+        "material": "B270",
+        "backFocalLength": "6.90mm"
       },
       {
         "partNumber": "LOAL19-17.0",
         "diameter": "19.00mm",
         "focalLength": "17.00mm",
-        "centerThickness": "12.40mm",
-        "edgeThickness": "7.00mm",
-        "NA": "1.80",
-        "material": "B270"
+        "centerThickness": "7.00mm",
+        "edgeThickness": "1.80mm",
+        "material": "B270",
+        "backFocalLength": "12.40mm"
       },
       {
         "partNumber": "LOAL24-18.0",
         "diameter": "24.00mm",
         "focalLength": "18.00mm",
-        "centerThickness": "11.20mm",
-        "edgeThickness": "10.40mm",
-        "NA": "1.60",
-        "material": "B270"
+        "centerThickness": "10.40mm",
+        "edgeThickness": "1.60mm",
+        "material": "B270",
+        "backFocalLength": "11.20mm"
       },
       {
         "partNumber": "LOAL25-17",
         "diameter": "25.00mm",
         "focalLength": "17.00mm",
-        "centerThickness": "9.80mm",
-        "edgeThickness": "11.00mm",
-        "NA": "2.50",
-        "material": "B270"
+        "centerThickness": "11.00mm",
+        "edgeThickness": "2.50mm",
+        "material": "B270",
+        "backFocalLength": "9.80mm"
       },
       {
         "partNumber": "LOAL25-20.0",
         "diameter": "25.00mm",
         "focalLength": "20.00mm",
-        "centerThickness": "15.10mm",
-        "edgeThickness": "7.50mm",
-        "NA": "1.20",
-        "material": "B270"
+        "centerThickness": "7.50mm",
+        "edgeThickness": "1.20mm",
+        "material": "B270",
+        "backFocalLength": "15.10mm"
       },
       {
         "partNumber": "LOAL30-23.5",
         "diameter": "30.00mm",
         "focalLength": "23.50mm",
-        "centerThickness": "16.30mm",
-        "edgeThickness": "14.00mm",
-        "NA": "3.80",
-        "material": "B270"
+        "centerThickness": "14.00mm",
+        "edgeThickness": "3.80mm",
+        "material": "B270",
+        "backFocalLength": "16.30mm"
       },
       {
         "partNumber": "LOAL35-26.2",
         "diameter": "35.00mm",
         "focalLength": "26.20mm",
-        "centerThickness": "16.40mm",
-        "edgeThickness": "13.90mm",
-        "NA": "4.00",
-        "material": "B270"
+        "centerThickness": "13.90mm",
+        "edgeThickness": "4.00mm",
+        "material": "B270",
+        "backFocalLength": "16.40mm"
       },
       {
         "partNumber": "LOAL38-34.5",
         "diameter": "38.00mm",
         "focalLength": "34.50mm",
-        "centerThickness": "26.60mm",
-        "edgeThickness": "12.00mm",
-        "NA": "1.50",
-        "material": "B270"
+        "centerThickness": "12.00mm",
+        "edgeThickness": "1.50mm",
+        "material": "B270",
+        "backFocalLength": "26.60mm"
       },
       {
         "partNumber": "LOAL45-31.18",
         "diameter": "45.00mm",
         "focalLength": "31.18mm",
-        "centerThickness": "19.36mm",
-        "edgeThickness": "18.00mm",
-        "NA": "3.00",
-        "material": "B270"
+        "centerThickness": "18.00mm",
+        "edgeThickness": "3.00mm",
+        "material": "B270",
+        "backFocalLength": "19.36mm"
       },
       {
         "partNumber": "LOAL50-39.0",
         "diameter": "50.00mm",
         "focalLength": "39.00mm",
-        "centerThickness": "24.90mm",
-        "edgeThickness": "20.50mm",
-        "NA": "2.80",
-        "material": "B270"
+        "centerThickness": "20.50mm",
+        "edgeThickness": "2.80mm",
+        "material": "B270",
+        "backFocalLength": "24.90mm"
       }
     ]
   },
@@ -5713,10 +5711,10 @@ var PRODUCTS = [
     "descriptionZh": "激光扩束镜用于扩展或缩小激光束的直径，同时保持光束质量。提供多种扩束比和波长范围。",
     "image": "images/products/optical-lenses/laser-beam-expanders.jpg",
     "parameters": {
-      "wavelengthRange": "Custom Design",
-      "expansionRatio": "2X-10X",
-      "maxInputSpot": "Custom Design",
-      "maxOutputSpot": "Custom Design"
+      "wavelengthRange": "266-1064nm",
+      "expansionRatio": "2X-15X",
+      "maxInputSpotSize": "Up to 15mm",
+      "maxOutputSpotSize": "Up to 36mm"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -5726,195 +5724,227 @@ var PRODUCTS = [
     "partNumbers": [
       {
         "partNumber": "LOBE266-2",
-        "expansion": "266",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "266nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE266-3",
-        "expansion": "266",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "266nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE266-4",
-        "expansion": "266",
-        "maxInputSpot": "4mm",
-        "maxOutputSpot": "9mm"
+        "wavelength": "266nm",
+        "expansion": "4X",
+        "maxInputSpot": "9mm",
+        "maxOutputSpot": "36mm"
       },
       {
         "partNumber": "LOBE266-5",
-        "expansion": "266",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "266nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE266-10",
-        "expansion": "266",
-        "maxInputSpot": "10mm",
-        "maxOutputSpot": "3mm"
+        "wavelength": "266nm",
+        "expansion": "10X",
+        "maxInputSpot": "3mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE355-2",
-        "expansion": "355",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "355nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE355-3",
-        "expansion": "355",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "355nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE355-4",
-        "expansion": "355",
-        "maxInputSpot": "4mm",
-        "maxOutputSpot": "9mm"
+        "wavelength": "355nm",
+        "expansion": "4X",
+        "maxInputSpot": "9mm",
+        "maxOutputSpot": "36mm"
       },
       {
         "partNumber": "LOBE355-5",
-        "expansion": "355",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "355nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE355-10",
-        "expansion": "355",
-        "maxInputSpot": "10mm",
-        "maxOutputSpot": "3mm"
+        "wavelength": "355nm",
+        "expansion": "10X",
+        "maxInputSpot": "3mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE355-15",
-        "expansion": "355",
-        "maxInputSpot": "15mm",
-        "maxOutputSpot": "2mm"
+        "wavelength": "355nm",
+        "expansion": "15X",
+        "maxInputSpot": "2mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE532-2",
-        "expansion": "532",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "532nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE532-3",
-        "expansion": "532",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "532nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE532-5",
-        "expansion": "532",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "532nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE532-10",
-        "expansion": "532",
-        "maxInputSpot": "10mm",
-        "maxOutputSpot": "3mm"
+        "wavelength": "532nm",
+        "expansion": "10X",
+        "maxInputSpot": "3mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE532-15",
-        "expansion": "532",
-        "maxInputSpot": "15mm",
-        "maxOutputSpot": "2mm"
+        "wavelength": "532nm",
+        "expansion": "15X",
+        "maxInputSpot": "2mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE632.8-2",
-        "expansion": "632.8",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "632.8nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE632.8-3",
-        "expansion": "632.8",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "632.8nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE632.8-4",
-        "expansion": "632.8",
-        "maxInputSpot": "4mm",
-        "maxOutputSpot": "7.5mm"
+        "wavelength": "632.8nm",
+        "expansion": "4X",
+        "maxInputSpot": "7.5mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE780-2",
-        "expansion": "780",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "780nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE780-3",
-        "expansion": "780",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "780nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE780-5",
-        "expansion": "780",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "780nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE830-2",
-        "expansion": "830",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "830nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE830-3",
-        "expansion": "830",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "830nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE830-5",
-        "expansion": "830",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "830nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE830-10",
-        "expansion": "830",
-        "maxInputSpot": "10mm",
-        "maxOutputSpot": "3mm"
+        "wavelength": "830nm",
+        "expansion": "10X",
+        "maxInputSpot": "3mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE830-15",
-        "expansion": "830",
-        "maxInputSpot": "15mm",
-        "maxOutputSpot": "2mm"
+        "wavelength": "830nm",
+        "expansion": "15X",
+        "maxInputSpot": "2mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE1064-2",
-        "expansion": "1064",
-        "maxInputSpot": "2mm",
-        "maxOutputSpot": "15mm"
+        "wavelength": "1064nm",
+        "expansion": "2X",
+        "maxInputSpot": "15mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE1064-3",
-        "expansion": "1064",
-        "maxInputSpot": "3mm",
-        "maxOutputSpot": "10mm"
+        "wavelength": "1064nm",
+        "expansion": "3X",
+        "maxInputSpot": "10mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE1064-5",
-        "expansion": "1064",
-        "maxInputSpot": "5mm",
-        "maxOutputSpot": "6mm"
+        "wavelength": "1064nm",
+        "expansion": "5X",
+        "maxInputSpot": "6mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE1064-10",
-        "expansion": "1064",
-        "maxInputSpot": "10mm",
-        "maxOutputSpot": "3mm"
+        "wavelength": "1064nm",
+        "expansion": "10X",
+        "maxInputSpot": "3mm",
+        "maxOutputSpot": "30mm"
       },
       {
         "partNumber": "LOBE1064-15",
-        "expansion": "1064",
-        "maxInputSpot": "15mm",
-        "maxOutputSpot": "2mm"
+        "wavelength": "1064nm",
+        "expansion": "15X",
+        "maxInputSpot": "2mm",
+        "maxOutputSpot": "30mm"
       }
     ]
   },
@@ -5928,10 +5958,10 @@ var PRODUCTS = [
     "descriptionZh": "显微物镜是为高分辨率显微镜设计的精密光学元件。提供多种放大倍率和数值孔径。",
     "image": "images/products/optical-lenses/microscope-objectives.jpg",
     "parameters": {
-      "magnification": "5X-60X",
-      "numericalAperture": "0.1-0.85",
-      "parfocalDistance": "Custom Design",
-      "conjugateFocalDistance": "Custom Design"
+      "magnification": "4X-100X",
+      "numericalAperture": "0.1-1.25",
+      "conjugateFocalDistance": "195mm",
+      "parfocalDistance": "45mm"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -5943,37 +5973,49 @@ var PRODUCTS = [
         "partNumber": "LOOL-X4",
         "magnification": "X4",
         "NA": "0.1",
-        "focalLength": "15.5mm"
+        "workingDistance": "15.5mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       },
       {
         "partNumber": "LOOL-X10",
         "magnification": "X10",
         "NA": "0.25",
-        "focalLength": "6.3mm"
+        "workingDistance": "6.3mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       },
       {
         "partNumber": "LOOL-X20",
         "magnification": "X20",
         "NA": "0.4",
-        "focalLength": "1.2mm"
+        "workingDistance": "1.2mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       },
       {
         "partNumber": "LOOL-X40",
         "magnification": "X40",
         "NA": "0.65",
-        "focalLength": "0.44mm"
+        "workingDistance": "0.44mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       },
       {
         "partNumber": "LOOL-X60",
         "magnification": "X60",
         "NA": "0.85",
-        "focalLength": "0.185mm"
+        "workingDistance": "0.185mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       },
       {
         "partNumber": "LOOL-X100",
         "magnification": "X100",
         "NA": "1.25",
-        "focalLength": "0.198mm"
+        "workingDistance": "0.198mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
       }
     ]
   },
@@ -11798,8 +11840,8 @@ var PRODUCTS = [
     "descriptionZh": "激光护目镜在多种激光波长提供OD 6+光学密度防护。可见光透过率(VLT)60-85%，佩戴舒适。CE认证。",
     "image": "images/products/laser-protection/laser-safety-goggles.jpg",
     "parameters": {
-      "opticalDensity": "OD 6+",
-      "visibleLightTransmission": "60-85%",
+      "opticalDensity": "OD 4-6",
+      "visibleLightTransmission": "50-85%",
       "certification": "CE",
       "wavelengthRange": "Multiple laser wavelengths"
     },
@@ -11819,6 +11861,7 @@ var PRODUCTS = [
       {
         "partNumber": "LOG-02",
         "wavelength": "1064nm",
+        "laserType": "Nd:YAG Laser / IR Laser",
         "OD": "6",
         "VLT": "85%"
       },
@@ -11831,7 +11874,8 @@ var PRODUCTS = [
       },
       {
         "partNumber": "LOG-04",
-        "laserType": "Excimer/He-Cd Laser",
+        "wavelength": "200-540nm / 800-2000nm",
+        "laserType": "Excimer / He-Cd / Nd:YAG / Semiconductor Laser",
         "OD": "6",
         "VLT": "60%"
       },
@@ -11844,54 +11888,59 @@ var PRODUCTS = [
       },
       {
         "partNumber": "LOG-06",
-        "wavelength": "1064nm",
-        "OD": "5+",
-        "VLT": "40%"
+        "wavelength": "808nm",
+        "laserType": "Semiconductor Laser",
+        "OD": "6",
+        "VLT": "60%"
       },
       {
         "partNumber": "LOG-07",
-        "wavelength": "632.8nm",
-        "laserType": "He-Ne Laser",
-        "OD": "5+",
-        "VLT": "35%"
+        "wavelength": "980/10600nm",
+        "laserType": "Semiconductor Laser",
+        "OD": "4",
+        "VLT": "85%"
       },
       {
         "partNumber": "LOG-08",
-        "wavelength": "10600nm",
-        "laserType": "CO2 Laser",
-        "OD": "6+",
-        "VLT": "70%"
+        "wavelength": "600-700nm",
+        "laserType": "He-Ne Laser / Red Laser",
+        "OD": "4",
+        "VLT": "50%"
       },
       {
         "partNumber": "LOG-09",
-        "wavelength": "532/1064nm",
-        "OD": "5+",
-        "VLT": "40%"
+        "wavelength": "200-540nm",
+        "laserType": "Green Laser",
+        "OD": "4",
+        "VLT": "55%"
       },
       {
         "partNumber": "LOG-10",
-        "wavelength": "1064/532nm",
-        "OD": "5+",
-        "VLT": "30%"
+        "wavelength": "1064nm",
+        "laserType": "Nd:YAG Laser / IR Laser",
+        "OD": "6",
+        "VLT": "85%"
       },
       {
         "partNumber": "LOG-11",
-        "wavelength": "190-540nm",
-        "laserType": "UV Laser",
-        "OD": "5+",
-        "VLT": "40%"
+        "wavelength": "800-1100nm",
+        "laserType": "Red Laser / IR Laser",
+        "OD": "4",
+        "VLT": "75%"
       },
       {
         "partNumber": "LOG-12",
-        "wavelength": "800-1100nm",
-        "OD": "5+",
-        "VLT": "40%"
+        "wavelength": "190-420nm / 900-2000nm",
+        "laserType": "Excimer / He-Cd / Nd:YAG / Semiconductor Laser",
+        "OD": "4",
+        "VLT": "60%"
       },
       {
         "partNumber": "LOG-13",
-        "wavelength": "800-1700nm",
-        "OD": "5+",
-        "VLT": "30%"
+        "wavelength": "IPL",
+        "laserType": "IPL Treatment",
+        "OD": "6",
+        "VLT": "60%"
       }
     ]
   }
