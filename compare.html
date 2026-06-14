@@ -6,7 +6,7 @@
     <title>Product Compare - PhotonEdge</title>
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/product-card.css">
+    <link rel="stylesheet" href="https://photonedgeoptics.com/css/product-card.css">
 </head>
 <body>
     <header class="header">
@@ -14,7 +14,7 @@
             <a href="index.html" class="logo">
     <picture>
         <source srcset="images/logo.webp" type="image/webp">
-        <img src="logo.png" alt="PhotonEdge" width="160" height="40">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
     </picture>
 </a>
             <nav class="nav">
@@ -210,7 +210,7 @@
             products.forEach(function(p) {
                 var name = lang === 'zh' && p.nameZh ? p.nameZh : p.name;
                 html += '<th class="product-col">';
-                html += '<img src="' + (p.image || 'images/placeholder.svg') + '" alt="' + name + '" class="compare-product-img">';
+                html += '<img src="https://photonedgeoptics.com/'&#32;+&#32;(p.image&#32;||&#32;'images/placeholder.svg')&#32;+&#32;'" alt="' + name + '" class="compare-product-img">';
                 html += '<div class="compare-product-name">' + name + '</div>';
                 html += '<button class="btn-remove" onclick="removeFromCompare(' + p.id + '); renderCompareTable();">✕</button>';
                 html += '</th>';
