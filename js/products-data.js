@@ -8163,8 +8163,8 @@ var PRODUCTS = [
     "parameters": {
       "diameterTolerance": "±0.2mm",
       "centerWavelengthTolerance": "±0.2nm",
-      "surfaceQuality": "60-40",
-      "surfaceFlatness": "λ/2@632.8nm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%"
     },
     "price": 0,
@@ -8293,11 +8293,12 @@ var PRODUCTS = [
     "descriptionZh": "固定中性密度(ND)滤光片在整个光谱范围内均匀降低光强而不改变色彩平衡。提供多种光学密度。",
     "image": "images/products/optical-filters/fixed-neutral-density-filters.jpg",
     "parameters": {
-      "diameterTolerance": "±0.15mm",
-      "thicknessTolerance": "±0.10mm",
-      "surfaceQuality": "60-40",
-      "surfaceFlatness": "λ/4@632.8nm",
-      "odTolerance": "±1%"
+      "diameterTolerance": "±0.2mm",
+      "thicknessTolerance": "±0.15mm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/2@632.8nm",
+      "odTolerance": "±1%",
+      "clearAperture": ">80%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8470,7 +8471,8 @@ var PRODUCTS = [
       "diameterTolerance": "±0.2mm",
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/2@632.8nm",
-      "type": "Circular / Linear"
+      "type": "Circular / Linear",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8533,7 +8535,7 @@ var PRODUCTS = [
       "diameterTolerance": "±0.2mm",
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/2@632.8nm",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8904,7 +8906,7 @@ var PRODUCTS = [
       "diameterTolerance": "±0.2mm",
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/2@632.8nm",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10148,7 +10150,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10633,7 +10635,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10967,7 +10969,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">80%"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11288,7 +11290,8 @@ var PRODUCTS = [
       "wavelengthRange": "400-700nm",
       "surfaceQuality": "60-40",
       "parallelism": "<1 arc min",
-      "transmission": ">45%"
+      "transmission": ">45%",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11386,7 +11389,8 @@ var PRODUCTS = [
       "surfaceQuality": "20-10",
       "wavefrontDistortion": "λ/4",
       "extinctionRatio": ">100000:1",
-      "transmission": ">90%"
+      "transmission": ">90%",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11571,7 +11575,8 @@ var PRODUCTS = [
       "surfaceQuality": "20-10",
       "wavefrontDistortion": "λ/4",
       "extinctionRatio": ">100000:1",
-      "transmission": ">95%"
+      "transmission": ">95%",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11715,7 +11720,8 @@ var PRODUCTS = [
       "wavefrontDistortion": "λ/4",
       "extinctionRatio": ">100000:1",
       "transmission": ">90%",
-      "acceptanceAngle": ">26°"
+      "acceptanceAngle": ">26°",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11780,7 +11786,8 @@ var PRODUCTS = [
       "material": "Calcite",
       "surfaceQuality": "20-10",
       "wavefrontDistortion": "λ/4",
-      "separationAngle": "~19°"
+      "separationAngle": "~19°",
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11827,6 +11834,15 @@ var PRODUCTS = [
         "separationAngle": "19°",
         "clearAperture": "15.0mm",
         "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-20",
+        "material": "Calcite",
+        "wavelength": "350-2300nm",
+        "separationAngle": "19°",
+        "extinctionRatio": "1×10⁻⁵",
+        "diameter": "38.0mm",
+        "clearAperture": "20.0mm"
       }
     ]
   },
