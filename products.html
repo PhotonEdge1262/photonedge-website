@@ -7,9 +7,9 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
-    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Optical Components Products | PhotonEdge - Lenses, Mirrors, Prisms, Windows</title>
     <meta name="description" content="Browse PhotonEdge's complete catalog of precision optical components. 75+ products including lenses, mirrors, windows, prisms, filters and more.">
@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://photonedgeoptics.com/products.html">
     <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
-    <link rel="canonical" href="products.html">
+    <link rel="canonical" href="https://photonedgeoptics.com/products.html">
     <link rel="stylesheet" href="css/style.css">
     <script type="application/ld+json">
 {
@@ -36,8 +36,8 @@
     gtag('js', new Date());
     gtag('config', 'G-E6J791MXZY');
     </script>
-    <link rel="alternate" hreflang="en" href="products.html">
-    <link rel="alternate" hreflang="zh" href="products.html?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/products.html">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/products.html?lang=zh">
 
     <!-- CollectionPage Schema -->
     <script type="application/ld+json">
@@ -60,7 +60,7 @@
             <a href="index.html" class="logo">
     <picture>
         <source srcset="images/logo.webp" type="image/webp">
-        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+        <img src="logo.png" alt="PhotonEdge" width="160" height="40">
     </picture>
 </a>
             <nav class="nav">
@@ -148,10 +148,10 @@
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="products.html?category=Optical%20Lenses">Optical Lenses</a></li>
-                        <li><a href="products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
-                        <li><a href="products.html?category=Optical%20Prisms">Optical Prisms</a></li>
-                        <li><a href="products.html?category=Optical%20Filters">Optical Filters</a></li>
+                        <li><a href="products.html?category=Optical Lenses">Optical Lenses</a></li>
+                        <li><a href="products.html?category=Optical Mirrors">Optical Mirrors</a></li>
+                        <li><a href="products.html?category=Optical Prisms">Optical Prisms</a></li>
+                        <li><a href="products.html?category=Optical Filters">Optical Filters</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -164,7 +164,7 @@
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: <a href="https://photonedgeoptics.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7b4a6aba2b487b7afa8b3a8a9a2a3a0a2a8b7b3aea4b4e9a4a8aa">[email&#160;protected]</a></li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c7b4a6aba2b487b7afa8b3a8a9a2a3a0a2a8b7b3aea4b4e9a4a8aa">[email&#160;protected]</a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -185,7 +185,7 @@
         <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
     </a>
 
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/translations.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/translations.js"></script>
     <script src="js/products-data.js"></script>
     <script src="js/compare.js"></script>
     <script src="js/cart.js"></script>
@@ -273,7 +273,7 @@
                 var name = lang === 'zh' ? product.nameZh : product.name;
                 var category = lang === 'zh' ? product.categoryZh : product.category;
                 var desc = product.description.substring(0, 100) + (product.description.length > 100 ? '...' : '');
-                var subCount = product.partNumbers ? product.partNumbers.length : (product.subProducts ? product.subProducts.length : 0);
+                var subCount = product.subProducts ? product.subProducts.length : 0;
                 var subText = subCount > 0 ? (lang === 'zh' ? ' (' + subCount + ' 型号)' : ' (' + subCount + ' models)') : '';
                 var price = product.price ? '$' + product.price.toFixed(2) : '';
                 var fromLabel = lang === 'zh' ? '起' : 'From';
@@ -281,7 +281,7 @@
                 
                 return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="https://photonedgeoptics.com/' + getThumbImage(product.image) + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">📦</span>\';">' +
+                    '<img src="' + getThumbImage(product.image) + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">📦</span>\';">' +
                     '</div>' +
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + name + subText + '</h3>' +
