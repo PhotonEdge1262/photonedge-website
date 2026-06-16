@@ -4902,7 +4902,7 @@ var PRODUCTS = [
     "categoryZh": "光学透镜",
     "description": "C-lenses are mainly used for fiber optic beam collimation, isolation, conversion, and other laser applications. Compared to other lenses, C-lenses offer lower cost, lower insertion loss at long working distances, and wider working range.",
     "descriptionZh": "C透镜主要用于光纤的光束准直，隔离，转换，以及其他激光应用，相较于其他的透镜，C透镜的价格比较低，在长工作距离有较低的插入损失，比较宽的工作范围等优势。",
-    "image": "images/products/optical-lenses/bk7-c-lenses.jpg",
+    "image": "images/products/optical-lenses/bk7-c-lenses.png",
     "parameters": {
       "material": "K9(BK7)",
       "diameterTolerance": "±0.15mm",
@@ -7947,7 +7947,7 @@ var PRODUCTS = [
     "categoryZh": "光学棱镜",
     "description": "Corner cube prisms (retroreflectors) reflect light back to its source regardless of the angle of incidence. Ideal for alignment and measurement applications. Custom coating designs available.",
     "descriptionZh": "角锥棱镜（后向反射器）无论入射角如何都将光线反射回光源方向。适用于对准和测量应用。支持定制镀膜。",
-    "image": "images/products/optical-prisms/corner-cube-prisms.jpg",
+    "image": "images/products/optical-prisms/corner-cube-prisms.png",
     "parameters": {
       "material": "H-K9L(BK7)",
       "angleTolerance": "±10 arcsec",
@@ -8003,7 +8003,7 @@ var PRODUCTS = [
     "categoryZh": "光学棱镜",
     "description": "Dove prisms rotate an image by twice the prism rotation angle. When the prism is rotated, the image rotates at twice the rate. Custom coating designs available.",
     "descriptionZh": "道威棱镜将图像旋转棱镜旋转角度的两倍。当棱镜旋转时，图像以两倍速率旋转。支持定制镀膜。",
-    "image": "images/products/optical-prisms/dove-prisms.jpg",
+    "image": "images/products/optical-prisms/dove-prisms.png",
     "parameters": {
       "material": "H-K9L(BK7)",
       "angleTolerance": "±1 arcmin",
@@ -8064,7 +8064,7 @@ var PRODUCTS = [
     "categoryZh": "光学棱镜",
     "description": "Equilateral dispersing prisms separate white light into its component colors through dispersion. 60° angles with precise tolerance. Custom coating designs available.",
     "descriptionZh": "等边色散棱镜通过色散将白光分解成组成颜色。60°角，公差精确。支持定制镀膜。",
-    "image": "images/products/optical-prisms/equilateral-dispersing-prisms.jpg",
+    "image": "images/products/optical-prisms/equilateral-dispersing-prisms.png",
     "parameters": {
       "material": "H-K9L(BK7)",
       "angleTolerance": "±10 arcsec",
@@ -11709,7 +11709,7 @@ var PRODUCTS = [
     "categoryZh": "光学偏振片",
     "description": "Glan Thompson prisms are cemented calcite polarizing prisms with a wide acceptance angle. They provide high extinction ratio polarization for analytical and imaging applications.",
     "descriptionZh": "格兰汤普生棱镜是胶合方解石偏振棱镜，具有宽接收角。为分析和成像应用提供高消光比偏振。",
-    "image": "images/products/optical-polarizers/glan-thompson-prisms.jpg",
+    "image": "images/products/optical-polarizers/glan-thompson-prisms.png",
     "parameters": {
       "material": "Calcite",
       "surfaceQuality": "20-10",
@@ -11777,7 +11777,7 @@ var PRODUCTS = [
     "categoryZh": "光学偏振片",
     "description": "Wollaston prisms split incident light into two orthogonally polarized beams with a separation angle of approximately 19°. Ideal for polarization analysis and interferometry.",
     "descriptionZh": "渥拉斯通棱镜将入射光分成两束正交偏振光，分离角约为19°。适用于偏振分析和干涉测量。",
-    "image": "images/products/optical-polarizers/wollaston-prisms.jpg",
+    "image": "images/products/optical-polarizers/wollaston-prisms.png",
     "parameters": {
       "material": "Calcite",
       "surfaceQuality": "20-10",
