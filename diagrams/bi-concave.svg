@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <path d="M208,40 Q222,100 208,160" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M192,40 Q178,100 192,160" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <ellipse cx="200" cy="100" rx="8" ry="60" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="0.5"/>
+  <line x1="40" y1="70" x2="187" y2="78" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="40" y1="100" x2="187" y2="100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="40" y1="130" x2="187" y2="122" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="213" y1="75" x2="360" y2="50" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="213" y1="100" x2="360" y2="100" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="213" y1="125" x2="360" y2="150" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <text x="100" y="30" text-anchor="middle" font-size="11" fill="#64748b">Parallel Light</text>
+  <text x="280" y="30" text-anchor="middle" font-size="11" fill="#64748b">Diverging</text>
+</svg>

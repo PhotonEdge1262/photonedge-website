@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Penta prism (simplified) -->
+  <polygon points="160,60 240,60 270,130 130,130" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5"/>
+  <line x1="40" y1="95" x2="160" y2="95" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <line x1="270" y1="95" x2="370" y2="95" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="80" y="88" font-size="10" fill="#64748b">Input</text>
+  <text x="320" y="88" font-size="10" fill="#64748b">Output (90°)</text>
+  <text x="200" y="180" text-anchor="middle" font-size="10" fill="#64748b">90° deviation, independent of orientation</text>
+</svg>
