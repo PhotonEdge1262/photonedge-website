@@ -249,7 +249,9 @@
         
         // Convert product image path to optimized thumbnail
         function getThumbImage(imagePath) {
-            return imagePath;
+            if (!imagePath) return imagePath;
+            if (imagePath.charAt(0) === '/' || imagePath.indexOf('http') === 0) return imagePath;
+            return '/' + imagePath;
         }
 
         function renderProducts() {
@@ -281,7 +283,7 @@
                 
                 return '<div class="product-card" onclick="window.location.href=\'products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="https://photonedgeoptics.com/' + getThumbImage(product.image) + '" alt="' + name + '" onerror="this.style.display=\'none\'; this.parentElement.innerHTML=\'<span class=\\\'img-placeholder\\\' loading="lazy">📦</span>\';">' +
+                    '<img src="https://photonedgeoptics.com/' + getThumbImage(product.image) + '" alt="' + name + '" onerror="handleProductThumbError(this)">' +
                     '</div>' +
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + name + subText + '</h3>' +

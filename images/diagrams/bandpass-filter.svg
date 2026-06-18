@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Filter -->
+  <rect x="185" y="40" width="30" height="120" fill="rgba(59,130,246,0.12)" stroke="#3b82f6" stroke-width="1.5" rx="1"/>
+  <!-- Input (multi-color) -->
+  <line x1="30" y1="70" x2="183" y2="70" stroke="#ef4444" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <line x1="30" y1="90" x2="183" y2="90" stroke="#22c55e" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <line x1="30" y1="110" x2="183" y2="110" stroke="#3b82f6" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <line x1="30" y1="130" x2="183" y2="130" stroke="#8b5cf6" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <!-- Output (only one color passes) -->
+  <line x1="217" y1="90" x2="370" y2="90" stroke="#22c55e" stroke-width="2" marker-end="url(#arrowR)"/>
+  <!-- Blocked colors (reflected/absorbed) -->
+  <line x1="185" y1="65" x2="130" y2="30" stroke="#ef4444" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="185" y1="115" x2="130" y2="150" stroke="#3b82f6" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <line x1="185" y1="135" x2="130" y2="170" stroke="#8b5cf6" stroke-width="0.8" stroke-dasharray="3,3"/>
+  <text x="80" y="30" font-size="10" fill="#64748b">Broadband Input</text>
+  <text x="300" y="80" font-size="10" fill="#64748b">Selected λ</text>
+  <text x="200" y="180" text-anchor="middle" font-size="10" fill="#64748b">Bandpass filter: transmits selected wavelength range</text>
+</svg>

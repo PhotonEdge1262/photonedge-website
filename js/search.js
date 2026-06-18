@@ -676,7 +676,7 @@
                 html += '<a href="products/' + product.slug + '" class="search-result-item" onclick="closeHeaderSearch()">';
                 html += '<div class="search-result-image">';
                 if (product.image) {
-                    html += '<img src="' + product.image + '" alt="' + escapeHtml(productName) + '">';
+                    html += '<img src="' + (product.image.charAt(0) === '/' ? product.image : '/' + product.image) + '" alt="' + escapeHtml(productName) + '">';
                 } else {
                     html += '<div class="search-result-placeholder">&#128269;</div>';
                 }

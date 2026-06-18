@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Polarizer -->
+  <rect x="185" y="40" width="30" height="120" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5" rx="1"/>
+  <!-- Grid lines on polarizer -->
+  <line x1="190" y1="50" x2="190" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+  <line x1="195" y1="50" x2="195" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+  <line x1="200" y1="50" x2="200" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+  <line x1="205" y1="50" x2="205" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+  <line x1="210" y1="50" x2="210" y2="150" stroke="#3b82f6" stroke-width="0.5"/>
+  <!-- Unpolarized input (all directions) -->
+  <line x1="40" y1="70" x2="183" y2="85" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="40" y1="100" x2="183" y2="100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="40" y1="130" x2="183" y2="115" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <!-- Polarized output (one direction) -->
+  <line x1="217" y1="100" x2="370" y2="100" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowR)"/>
+  <text x="80" y="60" font-size="10" fill="#64748b">Unpolarized</text>
+  <text x="300" y="92" font-size="10" fill="#64748b">Linearly Polarized</text>
+  <text x="200" y="180" text-anchor="middle" font-size="10" fill="#64748b">Polarizer: transmits one polarization direction</text>
+</svg>

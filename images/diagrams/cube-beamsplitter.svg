@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Cube -->
+  <rect x="140" y="50" width="120" height="100" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Diagonal (coating) -->
+  <line x1="140" y1="150" x2="260" y2="50" stroke="#3b82f6" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Input beam -->
+  <line x1="30" y1="100" x2="138" y2="100" stroke="#3b82f6" stroke-width="2" marker-end="url(#arrowR)"/>
+  <!-- Transmitted beam -->
+  <line x1="262" y1="100" x2="370" y2="100" stroke="#3b82f6" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <!-- Reflected beam (up) -->
+  <line x1="200" y1="90" x2="200" y2="20" stroke="#ef4444" stroke-width="1.2" marker-end="url(#arrowR)"/>
+  <text x="80" y="92" font-size="10" fill="#64748b">Input</text>
+  <text x="310" y="92" font-size="10" fill="#64748b">Transmitted</text>
+  <text x="210" y="25" font-size="10" fill="#64748b">Reflected</text>
+  <text x="200" y="180" text-anchor="middle" font-size="10" fill="#64748b">50:50 cube beamsplitter</text>
+</svg>

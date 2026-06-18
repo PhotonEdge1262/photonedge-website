@@ -510,7 +510,9 @@ function toggleMobileMenu() {
     <script>
     // Convert product image path to optimized thumbnail
     function getThumbImage(imagePath) {
-        return imagePath;
+        if (!imagePath) return imagePath;
+        if (imagePath.charAt(0) === '/' || imagePath.indexOf('http') === 0) return imagePath;
+        return '/' + imagePath;
     }
 
     function renderFeaturedProducts() {

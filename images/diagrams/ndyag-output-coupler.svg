@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Partial mirror -->
+  <line x1="200" y1="40" x2="200" y2="160" stroke="#3b82f6" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <text x="185" y="35" font-size="9" fill="#64748b">R%</text>
+  <text x="210" y="35" font-size="9" fill="#64748b">T%</text>
+  <!-- Incoming laser beam -->
+  <line x1="30" y1="100" x2="196" y2="100" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowR)"/>
+  <!-- Reflected beam (back into cavity) -->
+  <line x1="196" y1="95" x2="30" y2="95" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <!-- Transmitted beam (output) -->
+  <line x1="204" y1="100" x2="370" y2="100" stroke="#ef4444" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  <text x="80" y="90" font-size="10" fill="#64748b">Laser Cavity</text>
+  <text x="280" y="90" font-size="10" fill="#64748b">Output Beam</text>
+  <text x="200" y="180" text-anchor="middle" font-size="10" fill="#64748b">Partial reflector: R% reflected, T% transmitted</text>
+</svg>

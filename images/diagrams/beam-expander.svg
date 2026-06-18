@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Input lens (small) -->
+  <line x1="120" y1="80" x2="120" y2="120" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M120,80 Q128,100 120,120" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Output lens (large) -->
+  <line x1="280" y1="55" x2="280" y2="145" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M280,55 Q290,100 280,145" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- Narrow input beam -->
+  <line x1="30" y1="92" x2="118" y2="96" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="30" y1="100" x2="118" y2="100" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="30" y1="108" x2="118" y2="104" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrowR)"/>
+  <!-- Expanding inside -->
+  <line x1="125" y1="96" x2="278" y2="72" stroke="#3b82f6" stroke-width="0.8"/>
+  <line x1="125" y1="100" x2="278" y2="100" stroke="#3b82f6" stroke-width="0.8"/>
+  <line x1="125" y1="104" x2="278" y2="128" stroke="#3b82f6" stroke-width="0.8"/>
+  <!-- Wide output beam -->
+  <line x1="283" y1="72" x2="370" y2="68" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="283" y1="86" x2="370" y2="84" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="283" y1="100" x2="370" y2="100" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="283" y1="114" x2="370" y2="116" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <line x1="283" y1="128" x2="370" y2="132" stroke="#ef4444" stroke-width="1" marker-end="url(#arrowR)"/>
+  <text x="70" y="30" text-anchor="middle" font-size="11" fill="#64748b">Input</text>
+  <text x="330" y="30" text-anchor="middle" font-size="11" fill="#64748b">Expanded</text>
+  <text x="200" y="180" text-anchor="middle" font-size="11" fill="#64748b">Beam Expander</text>
+</svg>

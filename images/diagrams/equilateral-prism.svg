@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#3b82f6"/></marker></defs>
+  <rect width="400" height="200" fill="#f8fafc" rx="4"/>
+  <!-- Equilateral prism -->
+  <polygon points="200,35 120,165 280,165" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="1.5"/>
+  <!-- White light input -->
+  <line x1="30" y1="120" x2="158" y2="138" stroke="#1e293b" stroke-width="2" marker-end="url(#arrowR)"/>
+  <!-- Dispersed output (rainbow) -->
+  <line x1="230" y1="140" x2="370" y2="60" stroke="#ef4444" stroke-width="1.2"/>
+  <line x1="232" y1="142" x2="370" y2="90" stroke="#f97316" stroke-width="1.2"/>
+  <line x1="234" y1="144" x2="370" y2="110" stroke="#eab308" stroke-width="1.2"/>
+  <line x1="236" y1="146" x2="370" y2="125" stroke="#22c55e" stroke-width="1.2"/>
+  <line x1="238" y1="148" x2="370" y2="138" stroke="#3b82f6" stroke-width="1.2"/>
+  <line x1="240" y1="150" x2="370" y2="148" stroke="#8b5cf6" stroke-width="1.2"/>
+  <text x="80" y="115" font-size="10" fill="#64748b">White Light</text>
+  <text x="330" y="55" font-size="9" fill="#64748b">Dispersion</text>
+  <text x="200" y="185" text-anchor="middle" font-size="10" fill="#64748b">Dispersive prism: separates wavelengths</text>
+</svg>
