@@ -148,14 +148,14 @@
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="products.html?category=Optical%20Lenses">Optical Lenses</a></li>
-                        <li><a href="products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
-                        <li><a href="products.html?category=Optical%20Prisms">Optical Prisms</a></li>
-                        <li><a href="products.html?category=Optical%20Filters">Optical Filters</a></li>
+                        <li><a href="products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
+                        <li><a href="products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
+                        <li><a href="products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
+                        <li><a href="products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4 data-i18n="companyName">Company</h4>
                     <ul>
                         <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
                         <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
@@ -215,10 +215,10 @@
                 
                 document.getElementById('categoryFilter').addEventListener('change', filterProducts);
                 document.getElementById('searchInput').addEventListener('keyup', function(e) {
-                    if (e.key === 'Enter') filterProducts();
+                    if (e.key === 'Enter') updateCategoryFilter(); filterProducts();
                 });
                 
-                filterProducts();
+                updateCategoryFilter(); filterProducts();
             } catch(e) {
                 console.error('Product page init error:', e);
                 var grid = document.getElementById('productsGrid');
@@ -254,6 +254,43 @@
             return '/' + imagePath;
         }
 
+        
+        function updateCategoryFilter() {
+            var lang = getCurrentLang();
+            var select = document.getElementById('categoryFilter');
+            if (!select) return;
+            var currentValue = select.value;
+            var categories = {
+                '': lang === 'zh' ? '全部' : 'All',
+                'Optical Lenses': lang === 'zh' ? '光学透镜' : 'Optical Lenses',
+                'Optical Windows': lang === 'zh' ? '光学窗口片' : 'Optical Windows',
+                'Optical Mirrors': lang === 'zh' ? '光学反射镜' : 'Optical Mirrors',
+                'Optical Prisms': lang === 'zh' ? '光学棱镜' : 'Optical Prisms',
+                'Optical Filters': lang === 'zh' ? '光学滤光片' : 'Optical Filters',
+                'Optical Beamsplitters': lang === 'zh' ? '光学分光镜' : 'Optical Beamsplitters',
+                'Optical Wave Plates': lang === 'zh' ? '光学波片' : 'Optical Wave Plates',
+                'Optical Polarizers': lang === 'zh' ? '光学偏振器' : 'Optical Polarizers',
+                'Laser Protection': lang === 'zh' ? '激光防护' : 'Laser Protection'
+            };
+            select.innerHTML = '';
+            var keys = Object.keys(categories);
+            for (var i = 0; i < keys.length; i++) {
+                var option = document.createElement('option');
+                option.value = keys[i];
+                option.textContent = categories[keys[i]];
+                select.appendChild(option);
+            }
+            select.value = currentValue;
+        }
+
+        function handleProductThumbError(img) {
+            img.style.display = "none";
+            var placeholder = document.createElement("span");
+            placeholder.className = "img-placeholder";
+            placeholder.textContent = "\u1F52C";
+            img.parentElement.insertBefore(placeholder, img.nextSibling);
+        }
+
         function renderProducts() {
             var lang = getCurrentLang();
             var grid = document.getElementById('productsGrid');
@@ -274,7 +311,7 @@
             grid.innerHTML = pageProducts.map(function(product) {
                 var name = lang === 'zh' ? product.nameZh : product.name;
                 var category = lang === 'zh' ? product.categoryZh : product.category;
-                var desc = product.description.substring(0, 100) + (product.description.length > 100 ? '...' : '');
+                var descText = lang === 'zh' && product.descriptionZh ? product.descriptionZh : product.description; var desc = descText.substring(0, 100) + (descText.length > 100 ? '...' : '');
                 var subCount = product.partNumbers ? product.partNumbers.length : (product.subProducts ? product.subProducts.length : 0);
                 var subText = subCount > 0 ? (lang === 'zh' ? ' (' + subCount + ' 型号)' : ' (' + subCount + ' models)') : '';
                 var price = product.price ? '$' + product.price.toFixed(2) : '';
@@ -330,7 +367,7 @@
             
             // Previous button
             if (currentPage > 1) {
-                html += '<button class="pagination-nav" onclick="goToPage(' + (currentPage - 1) + ')">Prev</button>';
+                html += '<button class="pagination-nav" onclick="goToPage(' + (currentPage - 1) + ')">' + (lang === 'zh' ? '上一页' : 'Prev') + '</button>';
             }
             
             // Page numbers with ellipsis logic
@@ -380,7 +417,7 @@
             
             // Next button
             if (currentPage < totalPages) {
-                html += '<button class="pagination-nav" onclick="goToPage(' + (currentPage + 1) + ')">Next</button>';
+                html += '<button class="pagination-nav" onclick="goToPage(' + (currentPage + 1) + ')">' + (lang === 'zh' ? '下一页' : 'Next') + '</button>';
             }
             
             pagination.innerHTML = html;

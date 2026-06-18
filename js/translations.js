@@ -831,11 +831,20 @@ function t(key) {
 function applyTranslations() {
     var lang = localStorage.getItem('lang') || 'en';
     var translationsObj = translations[lang] || translations['en'];
+    // Translate text content
     var elements = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < elements.length; i++) {
         var key = elements[i].getAttribute('data-i18n');
         if (translationsObj[key]) {
             elements[i].textContent = translationsObj[key];
+        }
+    }
+    // Translate placeholders
+    var placeholderElements = document.querySelectorAll('[data-i18n-placeholder]');
+    for (var j = 0; j < placeholderElements.length; j++) {
+        var pKey = placeholderElements[j].getAttribute('data-i18n-placeholder');
+        if (translationsObj[pKey]) {
+            placeholderElements[j].setAttribute('placeholder', translationsObj[pKey]);
         }
     }
 }
@@ -844,6 +853,10 @@ function applyTranslations() {
 function setLanguage(lang) {
     localStorage.setItem('lang', lang);
     applyTranslations();
+    // Update category filter on products page
+    if (typeof updateCategoryFilter === 'function') {
+        updateCategoryFilter();
+    }
     // Re-render featured products on homepage if function exists
     if (typeof renderFeaturedProducts === 'function') {
         renderFeaturedProducts();
@@ -855,6 +868,20 @@ function setLanguage(lang) {
     // Re-render product detail if function exists
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
+        // Also update breadcrumb and inquiry form on detail page
+        if (typeof currentProduct !== 'undefined' && currentProduct) {
+            var productNameText = lang === 'zh' ? currentProduct.nameZh : currentProduct.name;
+            var breadcrumbProduct = document.getElementById('breadcrumbProduct');
+            if (breadcrumbProduct) breadcrumbProduct.textContent = productNameText;
+            var inquiryTitle = document.getElementById('inquiryProductTitle');
+            if (inquiryTitle) inquiryTitle.textContent = productNameText;
+            // Update page title
+            document.title = productNameText + ' - PhotonEdge';
+        }
+    }
+    // Re-render related products if function exists
+    if (typeof renderRelatedProducts === 'function') {
+        renderRelatedProducts();
     }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
@@ -864,6 +891,8 @@ function setLanguage(lang) {
             buttons[i].classList.add('active');
         }
     }
+    // Dispatch language change event for search module
+    document.dispatchEvent(new CustomEvent('languageChange', { detail: { lang: lang } }));
 }
 
 // Get current language

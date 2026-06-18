@@ -393,7 +393,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update meta tags dynamically
             var metaDesc = document.querySelector('meta[name="description"]');
             if (metaDesc) {
-                var descText = currentProduct.description;
+                var descText = lang === 'zh' && currentProduct.descriptionZh ? currentProduct.descriptionZh : currentProduct.description;
                 metaDesc.setAttribute('content', productNameText + ' - ' + descText.substring(0, 150));
             }
             var ogTitle = document.querySelector('meta[property="og:title"]');
@@ -402,7 +402,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             var ogDesc = document.querySelector('meta[property="og:description"]');
             if (ogDesc) {
-                ogDesc.setAttribute('content', currentProduct.description.substring(0, 200));
+                var ogDescText = lang === 'zh' && currentProduct.descriptionZh ? currentProduct.descriptionZh : currentProduct.description;
+                ogDesc.setAttribute('content', ogDescText.substring(0, 200));
             }
             var ogUrl = document.querySelector('meta[property="og:url"]');
             if (ogUrl) {
