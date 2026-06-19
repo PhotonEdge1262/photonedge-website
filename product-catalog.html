@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog | PhotonEdge Optics</title>
+    <meta name="description" content="Download PhotonEdge optical components product catalog with company watermark.">
+    <link rel="stylesheet" href="/css/style.css">
+        <style>
+        .catalog-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            position: relative;
+        }
+        .catalog-watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-30deg);
+            font-size: 80px;
+            font-weight: 700;
+            color: rgba(26, 54, 93, 0.08);
+            pointer-events: none;
+            z-index: 1000;
+            white-space: nowrap;
+            user-select: none;
+        }
+        .catalog-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--primary, #1a365d);
+        }
+        .catalog-logo {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        .catalog-title {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--primary, #1a365d);
+            margin-bottom: 10px;
+        }
+        .catalog-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+        .catalog-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        body.dark-mode .catalog-info {
+            background: #1a1a2e;
+        }
+        .catalog-section {
+            margin-bottom: 40px;
+        }
+        .catalog-section-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--primary, #1a365d);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color, #e2e8f0);
+        }
+        .catalog-product-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .catalog-product-card {
+            padding: 16px;
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 8px;
+            background: var(--card-bg);
+        }
+        .catalog-product-name {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .catalog-product-category {
+            font-size: 12px;
+            color: var(--primary, #1a365d);
+            margin-bottom: 6px;
+        }
+        .catalog-product-specs {
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+        .catalog-footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid var(--primary, #1a365d);
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .catalog-footer-contact {
+            margin-top: 15px;
+        }
+        .download-bar {
+            position: sticky;
+            top: 0;
+            background: var(--primary, #1a365d);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            z-index: 100;
+        }
+        .download-btn {
+            padding: 10px 24px;
+            background: white;
+            color: var(--primary, #1a365d);
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .download-btn:hover {
+            background: #f1f5f9;
+        }
+        .catalog-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        .catalog-table th,
+        .catalog-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid var(--border-color, #e2e8f0);
+        }
+        .catalog-table th {
+            background: var(--primary, #1a365d);
+            color: white;
+            font-weight: 500;
+        }
+        @media print {
+            .download-bar {
+                display: none !important;
+            }
+            .catalog-watermark {
+                display: block !important;
+                position: fixed !important;
+            }
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            @page {
+                size: A4;
+                margin: 15mm;
+            }
+        }
+        @media (max-width: 768px) {
+            .catalog-product-grid {
+                grid-template-columns: 1fr;
+            }
+            .catalog-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+    <style>
+        .floating-dark-toggle {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 9999;
+            background: rgba(255,255,255,0.9);
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+        .floating-dark-toggle:hover {
+            transform: scale(1.1);
+        }
+        body.dark-mode .floating-dark-toggle {
+            background: rgba(30,30,50,0.9);
+            border-color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <div class="download-bar">
+        <button class="download-btn" onclick="window.print()">📥 Download as PDF</button>
+        <button class="download-btn" onclick="window.location.href='products.html'">📋 View All Products</button>
+    </div>
+    
+    <div class="catalog-watermark">PHOTONEDGE OPTICS</div>
+    
+    <div class="catalog-container">
+        <header class="catalog-header">
+            <picture class="catalog-logo">
+                <source srcset="images/logo.webp" type="image/webp">
+                <img src="logo.png" alt="PhotonEdge" style="width: 180px;">
+            </picture>
+            <h1 class="catalog-title" data-i18n="catalogTitle">Product Catalog</h1>
+            <p class="catalog-subtitle" data-i18n="catalogSubtitle">Precision Optical Components Manufacturer</p>
+        </header>
+        
+        <div class="catalog-info">
+            <div>
+                <strong data-i18n="companyName">Company:</strong> Beijing Hengdingguang Technology Co., Ltd.
+            </div>
+            <div>
+                <strong data-i18n="dateGenerated">Date:</strong> <span id="catalogDate"></span>
+            </div>
+            <div>
+                <strong>Products:</strong> <span id="productCount">75+</span>
+            </div>
+        </div>
+        
+        <section class="catalog-section">
+            <h2 class="catalog-section-title" data-i18n="productCategories">Product Categories</h2>
+            <table class="catalog-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="category">Category</th>
+                        <th data-i18n="products">Products</th>
+                        <th data-i18n="applications">Key Applications</th>
+                    </tr>
+                </thead>
+                <tbody id="categoryTable">
+                    <tr>
+                        <td>Optical Lenses</td>
+                        <td>Spherical, Cylindrical, Ball, Rod, Aspheric</td>
+                        <td>Imaging, Laser Systems, Medical</td>
+                    </tr>
+                    <tr>
+                        <td>Optical Mirrors</td>
+                        <td>Plane, Concave, Convex, Dielectric Coated</td>
+                        <td>Laser Optics, Metrology, Astronomy</td>
+                    </tr>
+                    <tr>
+                        <td>Optical Windows</td>
+                        <td>UV Fused Silica, BK7, Sapphire, ZnSe</td>
+                        <td>Protection, Viewports, Spectroscopy</td>
+                    </tr>
+                    <tr>
+                        <td>Optical Prisms</td>
+                        <td>Right Angle, Penta, Dove, Wedge, Rhomboid</td>
+                        <td>Beam Steering, Image Rotation</td>
+                    </tr>
+                    <tr>
+                        <td>Optical Filters</td>
+                        <td>Bandpass, Longpass, Shortpass, Neutral Density</td>
+                        <td>Imaging, Spectroscopy, Machine Vision</td>
+                    </tr>
+                    <tr>
+                        <td>Polarizing Components</td>
+                        <td>Polarizers, Waveplates, Polarizing Beamsplitters</td>
+                        <td>Laser Systems, Quantum Optics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="catalog-section">
+            <h2 class="catalog-section-title" data-i18n="specifications">Standard Specifications</h2>
+            <table class="catalog-table">
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Standard Range</th>
+                        <th>Precision Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diameter</td>
+                        <td>3mm - 300mm</td>
+                        <td>+0.00 / -0.05mm</td>
+                    </tr>
+                    <tr>
+                        <td>Surface Quality</td>
+                        <td>20-10 to 60-40</td>
+                        <td>10-5 scratch-dig</td>
+                    </tr>
+                    <tr>
+                        <td>Surface Flatness</td>
+                        <td>λ/4 to λ/10</td>
+                        <td>λ/20 @ 633nm</td>
+                    </tr>
+                    <tr>
+                        <td>Centration</td>
+                        <td>< 3 arcmin</td>
+                        <td>< 30 arcsec</td>
+                    </tr>
+                    <tr>
+                        <td>Coatings</td>
+                        <td>AR, HR, Al, Ag, Au, Dielectric</td>
+                        <td>R > 99.8% @ specific wavelength</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="catalog-section">
+            <h2 class="catalog-section-title" data-i18n="materials">Optical Materials</h2>
+            <div class="catalog-product-grid" id="materialsGrid">
+                <div class="catalog-product-card">
+                    <div class="catalog-product-name">BK7 (Borosilicate Crown)</div>
+                    <div class="catalog-product-specs">Transmission: 350-2000nm<br>Excellent homogeneity<br>Most cost-effective</div>
+                </div>
+                <div class="catalog-product-card">
+                    <div class="catalog-product-name">UV Fused Silica</div>
+                    <div class="catalog-product-specs">Transmission: 185-2100nm<br>High laser damage threshold<br>Excellent UV performance</div>
+                </div>
+                <div class="catalog-product-card">
+                    <div class="catalog-product-name">Sapphire</div>
+                    <div class="catalog-product-specs">Transmission: 150-5500nm<br>Extremely hard (Mohs 9)<br>High thermal conductivity</div>
+                </div>
+                <div class="catalog-product-card">
+                    <div class="catalog-product-name">ZnSe (Zinc Selenide)</div>
+                    <div class="catalog-product-specs">Transmission: 600-16000nm<br>CO2 laser applications<br>Low absorption in IR</div>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="catalog-footer">
+            <p><strong>Beijing Hengdingguang Technology Co., Ltd.</strong></p>
+            <p data-i18n="catalogContact">Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a> | Website: www.photonedgeoptics.com</p>
+            <div class="catalog-footer-contact">
+                <p data-i18n="catalogDisclaimer">All specifications subject to change without notice. Contact us for custom requirements.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/translations.js"></script>
+    <script>
+        // 设置日期
+        document.getElementById('catalogDate').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
