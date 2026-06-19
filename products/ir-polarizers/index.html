@@ -11,15 +11,15 @@
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail | PhotonEdge</title>
-    <meta name="description" content="View detailed specifications for precision optical components. Request a quote for custom optical lenses, mirrors, windows, prisms and more from PhotonEdge.">
+    <title>IR Polarizers | PhotonEdge</title>
+    <meta name="description" content="IR Polarizers - Precision Optical Components | PhotonEdge">
     <meta property="og:title" content="Product Detail - PhotonEdge">
     <meta property="og:description" content="View detailed specifications and pricing for precision optical components.">
     <meta property="og:type" content="product">
-    <meta property="og:url" content="https://photonedgeoptics.com/product-detail.html">
+    <meta property="og:url" content="https://photonedgeoptics.com/products/ir-polarizers/">
     <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
-    <link rel="canonical" href="https://photonedgeoptics.com/product-detail.html">
+    <link rel="canonical" href="https://photonedgeoptics.com/products/ir-polarizers/">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
@@ -483,6 +483,9 @@ document.addEventListener('DOMContentLoaded', function() {
         function renderProductDetail() {
             var lang = getCurrentLang();
             var grid = document.getElementById('productDetailGrid');
+            if (!currentProduct) return;
+            // Update breadcrumb for language change
+            updateBreadcrumb(currentProduct, null);
             
             var name = lang === 'zh' ? currentProduct.nameZh : currentProduct.name;
             var category = lang === 'zh' ? currentProduct.categoryZh : currentProduct.category;
@@ -838,7 +841,6 @@ document.addEventListener('DOMContentLoaded', function() {
             grid.innerHTML = 
                 '<div class="product-detail-image">' +
                 '<img src="' + getDetailImage(currentProduct.image) + '" alt="' + name + '" onerror="handleDetailImgError(this)">' +
-                (currentProduct.diagram ? '<div class="product-diagram-section"><h4 class="diagram-title">' + (lang === 'zh' ? '光路示意图' : 'Optical Path Diagram') + '</h4><div class="diagram-container"><img src="/' + currentProduct.diagram + '" alt="' + (lang === 'zh' ? '光路示意图' : 'Optical Path Diagram') + '" class="diagram-img" onerror="this.parentElement.parentElement.style.display=\'none\'"></div></div>' : '') +
                 '</div>' +
                 '<div class="product-detail-info">' +
                 '<h1>' + name + '</h1>' +
@@ -848,6 +850,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<h3>' + (lang === 'zh' ? '产品描述' : 'Description') + '</h3>' +
                 '<p>' + desc + '</p>' +
                 '</div>' +
+                (currentProduct.diagram ? '<div class="product-diagram-section"><h4 class="diagram-title">' + (lang === 'zh' ? '结构示意图' : 'Structure Diagram') + '</h4><div class="diagram-container"><img src="/' + currentProduct.diagram + '" alt="' + (lang === 'zh' ? '结构示意图' : 'Structure Diagram') + '" class="diagram-img" onerror="hideDiagramSection(this)"></div></div>' : '') +
                 specsHtml +
                 partNumbersHtml +
                 applicationsHtml +
@@ -1044,6 +1047,10 @@ document.addEventListener('DOMContentLoaded', function() {
             placeholder.className = 'img-placeholder';
             placeholder.textContent = '\U0001f52c';
             img.parentElement.insertBefore(placeholder, img.nextSibling);
+        }
+        
+        function hideDiagramSection(img) {
+            img.parentElement.parentElement.style.display = 'none';
         }
         function renderRelatedProducts() {
             if (!currentProduct) return;

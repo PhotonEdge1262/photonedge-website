@@ -516,13 +516,19 @@
         function initLanguage() {
             var langBtn = document.getElementById('langBtn');
             
+            // Normalize 'cn' to 'zh' for consistency with rest of site
+            if (currentLang === 'cn') {
+                currentLang = 'zh';
+                localStorage.setItem('lang', 'zh');
+            }
             updateLanguageUI();
             
             langBtn.addEventListener('click', function() {
-                currentLang = currentLang === 'en' ? 'cn' : 'en';
+                currentLang = currentLang === 'en' ? 'zh' : 'en';
                 localStorage.setItem('lang', currentLang);
                 updateLanguageUI();
                 updatePageContent();
+                if (typeof applyTranslations === 'function') applyTranslations();
                 renderArticles();
             });
         }

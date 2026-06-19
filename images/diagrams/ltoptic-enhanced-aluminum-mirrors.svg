@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .shape { fill: #e0f2fe; stroke: #3b82f6; stroke-width: 2; }
+      .arrow { fill: #3b82f6; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #334155; }
+      .label-arrow { font-family: Arial, sans-serif; font-size: 14px; fill: #3b82f6; font-weight: bold; }
+      .title { font-family: Arial, sans-serif; font-size: 12px; fill: #64748b; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="400" height="200"/>
+  <circle class="shape" cx="100" cy="100" r="60"/>
+  <text class="title" x="100" y="180">Front View</text>
+  <line x1="40" y1="100" x2="160" y2="100" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon class="arrow" points="40,95 45,100 40,105"/>
+  <polygon class="arrow" points="160,95 155,100 160,105"/>
+  <text class="label-arrow" x="100" y="90">Φ</text>
+  <rect class="shape" x="240" y="40" width="15" height="120"/>
+  <text class="title" x="247" y="180">Side View</text>
+  <line x1="220" y1="40" x2="260" y2="40" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon class="arrow" points="220,35 225,40 220,45"/>
+  <polygon class="arrow" points="260,35 255,40 260,45"/>
+  <text class="label-arrow" x="240" y="35">T</text>
+</svg>
