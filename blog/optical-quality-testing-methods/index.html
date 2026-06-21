@@ -187,7 +187,7 @@
                     <ul class="space-y-3">
                         <li class="flex items-center space-x-3">
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <span class="text-gray-400">sales@photonedgeoptics.com</span>
+                            <span class="text-gray-400"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bccfddd0d9cffcccd4d3c8d3d2d9d8dbd9d3ccc8d5dfcf92dfd3d1">[email&#160;protected]</a></span>
                         </li>
                         <li class="flex items-center space-x-3">
                             <svg class="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
@@ -209,7 +209,7 @@
         </div>
     </a>
 
-    <script src="/js/blog-data.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/blog-data.js"></script>
     <script src="/js/products-data.js"></script>
     <script src="/js/translations.js"></script>
     <script src="/js/search.js"></script>
@@ -270,7 +270,21 @@
 
         function loadArticleContent(slug) {
             var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'blog-content/' + slug + '.html', true);
+            var contentLang = getCurrentLang();
+            var contentFile = contentLang === 'zh' ? 'blog-content/' + slug + '_zh.html' : 'blog-content/' + slug + '.html';
+            xhr.open('GET', contentFile, true);
+            xhr.onerror = function() {
+                // Fallback to English if Chinese version fails
+                var fallbackXhr = new XMLHttpRequest();
+                fallbackXhr.open('GET', 'blog-content/' + slug + '.html', true);
+                fallbackXhr.onreadystatechange = function() {
+                    if (fallbackXhr.readyState === 4 && fallbackXhr.status === 200) {
+                        var contentDiv = document.getElementById('articleContent');
+                        if (contentDiv) contentDiv.innerHTML = fallbackXhr.responseText;
+                    }
+                };
+                fallbackXhr.send();
+            };
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4) {
                     var contentDiv = document.getElementById('articleContent');
