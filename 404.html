@@ -3,237 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | PhotonEdge Optics</title>
-    <meta name="description" content="The page you're looking for doesn't exist. Browse our optical components catalog or search for products.">
-    <link rel="stylesheet" href="css/style.css">
-        <style>
-        .error-page {
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .error-container {
-            max-width: 600px;
-        }
-        .error-code {
-            font-size: 120px;
-            font-weight: 700;
-            color: var(--primary, #1a365d);
-            line-height: 1;
-            margin-bottom: 20px;
-        }
-        body.dark-mode .error-code {
-            color: #6b8cff;
-        }
-        .error-title {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 16px;
-            color: var(--text-primary);
-        }
-        .error-desc {
-            font-size: 16px;
-            color: var(--text-secondary);
-            margin-bottom: 32px;
-            line-height: 1.6;
-        }
-        .search-box {
-            max-width: 400px;
-            margin: 0 auto 40px;
-            position: relative;
-        }
-        .search-input {
-            width: 100%;
-            padding: 16px 50px 16px 20px;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: border-color 0.3s;
-            background: var(--card-bg);
-            color: var(--text-primary);
-        }
-        .search-input:focus {
-            outline: none;
-            border-color: var(--primary, #1a365d);
-        }
-        .search-icon {
-            position: absolute;
-            right: 18px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #94a3b8;
-        }
-        .error-actions {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 48px;
-        }
-        .btn-error {
-            padding: 12px 28px;
-            border-radius: 6px;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .btn-error-primary {
-            background: var(--primary, #1a365d);
-            color: white;
-        }
-        .btn-error-primary:hover {
-            background: #2c5282;
-        }
-        .btn-error-secondary {
-            border: 2px solid var(--border-color, #e2e8f0);
-            color: var(--text-primary);
-            background: transparent;
-        }
-        .btn-error-secondary:hover {
-            border-color: var(--primary, #1a365d);
-            color: var(--primary);
-        }
-        .popular-section {
-            text-align: left;
-            padding-top: 32px;
-            border-top: 1px solid var(--border-color, #e2e8f0);
-        }
-        .popular-title {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: var(--text-primary);
-        }
-        .popular-links {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 12px;
-        }
-        .popular-link {
-            display: block;
-            padding: 12px 16px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color, #e2e8f0);
-            border-radius: 6px;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        .popular-link:hover {
-            border-color: var(--primary, #1a365d);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .popular-link svg {
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 8px;
-            color: var(--primary, #1a365d);
-        }
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 80px;
-            }
-            .error-title {
-                font-size: 24px;
-            }
-        }
-    </style>
-
-    <style>
-        .floating-dark-toggle {
-            position: fixed;
-            top: 16px;
-            right: 16px;
-            z-index: 9999;
-            background: rgba(255,255,255,0.9);
-            border: 1px solid #e2e8f0;
-            border-radius: 50%;
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            font-size: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s;
-        }
-        .floating-dark-toggle:hover {
-            transform: scale(1.1);
-        }
-        body.dark-mode .floating-dark-toggle {
-            background: rgba(30,30,50,0.9);
-            border-color: #4a5568;
-        }
-    </style>
+    <title>404 - Page Not Found | PhotonEdge</title>
+    <meta name="description" content="The page you are looking for does not exist. Browse our precision optical components or contact us for assistance.">
+    <meta property="og:title" content="404 - Page Not Found | PhotonEdge">
+    <meta property="og:description" content="The page you are looking for does not exist. Browse our precision optical components.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/404.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/404.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="404 - Page Not Found | PhotonEdge">
+    <meta name="twitter:description" content="The page you are looking for does not exist.">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section class="error-page">
-        <div class="error-container">
-            <div class="error-code">404</div>
-            <h1 class="error-title" data-i18n="error404Title">Page Not Found</h1>
-            <p class="error-desc" data-i18n="error404Desc">The page you're looking for doesn't exist or has been moved. Try searching for products or go back to homepage.</p>
-            
-            <div class="search-box">
-                <input type="text" class="search-input" id="errorSearch" placeholder="Search for products..." data-i18n-placeholder="searchPlaceholder">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"/>
-                    <path d="m21 21-4.35-4.35"/>
-                </svg>
-            </div>
-            
-            <div class="error-actions">
-                <a href="index.html" class="btn-error btn-error-primary" data-i18n="goHome">Go to Homepage</a>
-                <a href="products.html" class="btn-error btn-error-secondary" data-i18n="viewAllProducts">View All Products</a>
-            </div>
-            
-            <div class="popular-section">
-                <h3 class="popular-title" data-i18n="popularProducts">Popular Products</h3>
-                <div class="popular-links">
-                    <a href="products.html?category=Optical Lenses" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>
-                        <span data-i18n="catLenses">Optical Lenses</span>
-                    </a>
-                    <a href="products.html?category=Optical Mirrors" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/></svg>
-                        <span data-i18n="catMirrors">Optical Mirrors</span>
-                    </a>
-                    <a href="products.html?category=Optical Windows" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/></svg>
-                        <span data-i18n="catWindows">Optical Windows</span>
-                    </a>
-                    <a href="products.html?category=Optical Prisms" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12,2 22,20 2,20"/></svg>
-                        <span data-i18n="catPrisms">Optical Prisms</span>
-                    </a>
-                    <a href="products.html?category=Optical Filters" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><circle cx="9" cy="9" r="1"/><circle cx="15" cy="9" r="1"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="15" r="1"/></svg>
-                        <span data-i18n="catFilters">Optical Filters</span>
-                    </a>
-                    <a href="contact.html" class="popular-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                        <span data-i18n="requestQuoteSmall">Request Quote</span>
-                    </a>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="/images/logo.webp" type="image/webp">
+                    <img src="/images/logo.webp" alt="PhotonEdge" width="160" height="40">
+                </picture>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a></li>
+                    <li><a href="/faq.html" class="nav-link" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
                 </div>
-            </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container" style="text-align:center; padding:100px 20px; min-height:60vh;">
+        <h1 style="font-size:6rem; color:#3b82f6; margin-bottom:10px;" data-i18n="error404Code">404</h1>
+        <h2 style="font-size:1.8rem; margin-bottom:20px;" data-i18n="error404Title">Page Not Found</h2>
+        <p style="font-size:1.1rem; color:#64748b; max-width:600px; margin:0 auto 40px;" data-i18n="error404Desc">The page you're looking for doesn't exist or has been moved. Try searching for products or go back to homepage.</p>
+        <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+            <a href="/" class="btn btn-primary" data-i18n="goHome">Go to Homepage</a>
+            <a href="/products.html" class="btn btn-secondary" data-i18n="viewAllProducts">View All Products</a>
+            <a href="/contact.html" class="btn btn-secondary" data-i18n="navContact">Contact Us</a>
         </div>
     </section>
 
-    <script src="js/translations.js"></script>
-    <script>
-        // 搜索功能
-        document.getElementById('errorSearch').addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                var query = this.value.trim();
-                if (query) {
-                    window.location.href = 'products.html?search=' + encodeURIComponent(query);
-                }
-            }
-        });
-    </script>
+    <footer class="footer">
+        <div class="container" style="text-align:center; padding:30px 0;">
+            <p>&copy; 2025 PhotonEdge. <span data-i18n="copyright">All Rights Reserved</span></p>
+        </div>
+    </footer>
+
+    <script src="/js/translations.js"></script>
 </body>
 </html>
