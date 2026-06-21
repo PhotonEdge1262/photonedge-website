@@ -29,8 +29,8 @@
     gtag('js', new Date());
     gtag('config', 'G-E6J791MXZY');
     </script>
-    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/product-detail.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/product-detail.html?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/products/ir-bandpass-filters/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/products/ir-bandpass-filters/?lang=zh">
 
     <style>
     .product-diagram-section {
@@ -67,6 +67,10 @@
         border-radius: 8px;
     }
     </style>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Product Detail - PhotonEdge">
+    <meta name="twitter:description" content="View detailed specifications and pricing for precision optical components.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
 </head>
 <body>
     <header class="header">
@@ -131,6 +135,7 @@
 <section class="product-detail">
         <div class="container">
             <div class="product-detail-grid" id="productDetailGrid">
+                <h1 style="font-size:24px;color:#1e293b;margin-bottom:16px;">IR Transmission Visible Absorption Filters</h1>
                 <div class="loading">
                     <div class="loading-spinner"></div>
                     <p data-i18n="loadingProduct">Loading product details...</p>
@@ -312,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var category = urlParams.get('category');
             // Also extract slug from URL path (for SEO-friendly URLs like /products/slug)
             if (!productSlug) {
-                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)\/?$/);
+                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)(?:\/|\/index\.html)?$/);
                 if (pathSlugMatch) {
                     productSlug = pathSlugMatch[1];
                 }
@@ -474,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var breadcrumbProduct = document.getElementById('breadcrumbProduct');
             
             breadcrumbCategory.textContent = lang === 'zh' ? categoryNameZh : categoryName;
-            breadcrumbCategory.href = 'products.html?category=' + encodeURIComponent(categoryName);
+            breadcrumbCategory.href = '/products.html?category=' + encodeURIComponent(categoryName);
             breadcrumbCategory.style.display = '';
             breadcrumbCategorySep.style.display = '';
             breadcrumbProduct.textContent = lang === 'zh' ? product.nameZh : product.name;

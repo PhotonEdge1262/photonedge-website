@@ -6284,7 +6284,7 @@ var PRODUCTS = [
         "thickness": "8mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-bk7-windows.gif"
+    "diagram": "images/diagrams/ltoptic-bk7-windows.svg"
   },
   {
     "id": 25,
@@ -6486,7 +6486,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.gif"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.svg"
   },
   {
     "id": 26,
@@ -6622,7 +6622,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-sapphire-windows.gif"
+    "diagram": "images/diagrams/ltoptic-sapphire-windows.svg"
   },
   {
     "id": 27,
@@ -6764,7 +6764,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-caf2-windows.gif"
+    "diagram": "images/diagrams/ltoptic-caf2-windows.svg"
   },
   {
     "id": 28,
@@ -6888,7 +6888,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-ge-windows.gif"
+    "diagram": "images/diagrams/ltoptic-ge-windows.svg"
   },
   {
     "id": 29,
@@ -7036,7 +7036,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-si-windows.gif"
+    "diagram": "images/diagrams/ltoptic-si-windows.svg"
   },
   {
     "id": 30,
@@ -7154,7 +7154,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-znse-windows.gif"
+    "diagram": ""
   },
   {
     "id": 31,
@@ -7328,7 +7328,7 @@ var PRODUCTS = [
         "reflectivity": ">98"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.gif"
+    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.svg"
   },
   {
     "id": 32,
@@ -7827,7 +7827,7 @@ var PRODUCTS = [
         "wavelength": ""
       }
     ],
-    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.gif"
+    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.svg"
   },
   {
     "id": 34,
@@ -7966,7 +7966,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.svg"
   },
   {
     "id": 35,
@@ -8217,7 +8217,7 @@ var PRODUCTS = [
         "wavelength": "200-400nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg"
   },
   {
     "id": 36,
@@ -8356,7 +8356,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg"
   },
   {
     "id": 37,
@@ -8484,7 +8484,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.svg"
   },
   {
     "id": 38,
@@ -12204,7 +12204,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.gif"
+    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.svg"
   },
   {
     "id": 60,
@@ -12239,7 +12239,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.gif"
+    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.svg"
   },
   {
     "id": 61,

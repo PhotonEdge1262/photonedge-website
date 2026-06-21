@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://photonedgeoptics.com/cart.html">
     <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
-    <link rel="canonical" href="cart.html">
+    <link rel="canonical" href="https://photonedgeoptics.com/cart.html">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
@@ -29,13 +29,17 @@
     gtag('js', new Date());
     gtag('config', 'G-E6J791MXZY');
     </script>
-    <link rel="alternate" hreflang="en" href="cart.html">
-    <link rel="alternate" hreflang="zh" href="cart.html?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/cart.html">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/cart.html?lang=zh">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shopping Cart | PhotonEdge">
+    <meta name="twitter:description" content="Review your shopping cart and submit RFQ for precision optical components.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
     <picture>
         <source srcset="images/logo.webp" type="image/webp">
         <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
@@ -45,15 +49,15 @@
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
                 
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link " data-i18n="navHome">Home</a></li>
-                    <li><a href="products.html" class="nav-link " data-i18n="navProducts">Products</a></li>
-                    <li><a href="about.html" class="nav-link " data-i18n="navAbout">About Us</a></li>
-                    <li><a href="calculator.html" class="nav-link " data-i18n="navTools">Tools</a></li>
-                    <li><a href="faq.html" class="nav-link " data-i18n="navFAQ">FAQ</a></li>
-                    <li><a href="blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
-                    <li><a href="contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
+                    <li><a href="/" class="nav-link " data-i18n="navHome">Home</a></li>
+                    <li><a href="/products.html" class="nav-link " data-i18n="navProducts">Products</a></li>
+                    <li><a href="/about.html" class="nav-link " data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/calculator.html" class="nav-link " data-i18n="navTools">Tools</a></li>
+                    <li><a href="/faq.html" class="nav-link " data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
                 </ul>
-                <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                     <span class="cart-badge" id="cartBadge">0</span>
                 </a>
@@ -69,7 +73,7 @@
     <div class="breadcrumb-wrapper">
         <div class="container">
             <nav class="breadcrumb" aria-label="Breadcrumb">
-                <a href="index.html" data-i18n="navHome">Home</a>
+                <a href="/" data-i18n="navHome">Home</a>
                 <span class="breadcrumb-separator">/</span>
                 <span data-i18n="cartTitle">Shopping Cart</span>
             </nav>
@@ -78,7 +82,7 @@
 
     
     <div class="request-quote-float">
-        <a href="contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
+        <a href="/contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
             <span class="quote-icon">&#9993;</span>
             <span>Request Quote</span>
         </a>
@@ -99,7 +103,7 @@
                 </div>
                 <h2 data-i18n="cartEmpty">Your cart is empty</h2>
                 <p data-i18n="cartEmptyDesc">Add products to your cart to get started.</p>
-                <a href="products.html" class="btn btn-primary" data-i18n="browseProducts">Browse Products</a>
+                <a href="/products.html" class="btn btn-primary" data-i18n="browseProducts">Browse Products</a>
             </div>
             
             <!-- Cart Content -->
@@ -120,7 +124,7 @@
                     <button class="btn btn-success btn-block" id="submitRFQBtn" onclick="showRFQForm()">
                         <span data-i18n="submitRFQ">Submit RFQ</span>
                     </button>
-                    <a href="products.html" class="btn btn-secondary btn-block" data-i18n="continueShopping">Continue Shopping</a>
+                    <a href="/products.html" class="btn btn-secondary btn-block" data-i18n="continueShopping">Continue Shopping</a>
                 </div>
             </div>
             
@@ -183,7 +187,7 @@
                 <div class="success-icon">&#10004;</div>
                 <h2 data-i18n="rfqSuccessTitle">Thank You!</h2>
                 <p data-i18n="rfqSuccess">Thank you! Your RFQ has been submitted. We'll respond within 24 hours.</p>
-                <a href="products.html" class="btn btn-primary" data-i18n="continueShopping">Continue Shopping</a>
+                <a href="/products.html" class="btn btn-primary" data-i18n="continueShopping">Continue Shopping</a>
             </div>
         </div>
     </section>
@@ -198,24 +202,24 @@
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
-                        <li><a href="products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
-                        <li><a href="products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
-                        <li><a href="products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
+                        <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
+                        <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
+                        <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
+                        <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="companyName">Company</h4>
                     <ul>
-                        <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
-                        <li><a href="downloads.html" data-i18n="navDownloads">Downloads</a></li>
-                        <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+                        <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="/downloads.html" data-i18n="navDownloads">Downloads</a></li>
+                        <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: <a href="/cdn-cgi/l/email-protection#cebdafa2abbd8ebea6a1baa1a0abaaa9aba1bebaa7adbde0ada1a3"><span class="__cf_email__" data-cfemail="abd8cac7ced8ebdbc3c4dfc4c5cecfcccec4dbdfc2c8d885c8c4c6">[email&#160;protected]</span></a></li>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -236,7 +240,7 @@
         <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/translations.js"></script>
+    <script src="/js/translations.js"></script>
     <script src="/js/products-data.js"></script>
     <script src="/js/cart.js"></script>
     <script src="/js/search.js"></script>

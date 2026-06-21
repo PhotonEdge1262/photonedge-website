@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://photonedgeoptics.com/product-detail.html">
     <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
     <meta property="og:site_name" content="PhotonEdge">
-    <link rel="canonical" href="https://photonedgeoptics.com/product-detail.html">
+    <link rel="canonical" href="https://photonedgeoptics.com/products/">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
@@ -29,8 +29,8 @@
     gtag('js', new Date());
     gtag('config', 'G-E6J791MXZY');
     </script>
-    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/product-detail.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/product-detail.html?lang=zh">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/products/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/products/?lang=zh">
 
     <style>
     .product-diagram-section {
@@ -245,7 +245,7 @@
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: <a href="/cdn-cgi/l/email-protection#5023313c35231020383f243f3e353437353f20243933237e333f3d"><span class="__cf_email__" data-cfemail="1063717c75635060787f647f7e757477757f60647973633e737f7d">[email&#160;protected]</span></a></li>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -266,7 +266,7 @@
         <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
     </a>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/translations.js"></script>
+    <script src="/js/translations.js"></script>
     <script src="/js/products-data.js"></script>
     <script src="/js/compare.js"></script>
     <script src="/js/cart.js"></script>
@@ -312,7 +312,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var category = urlParams.get('category');
             // Also extract slug from URL path (for SEO-friendly URLs like /products/slug)
             if (!productSlug) {
-                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)\/?$/);
+                var pathSlugMatch = window.location.pathname.match(/^\/products\/([a-z0-9-]+)(?:\/|\/index\.html)?$/);
                 if (pathSlugMatch) {
                     productSlug = pathSlugMatch[1];
                 }
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var breadcrumbProduct = document.getElementById('breadcrumbProduct');
             
             breadcrumbCategory.textContent = lang === 'zh' ? categoryNameZh : categoryName;
-            breadcrumbCategory.href = 'products.html?category=' + encodeURIComponent(categoryName);
+            breadcrumbCategory.href = '/products.html?category=' + encodeURIComponent(categoryName);
             breadcrumbCategory.style.display = '';
             breadcrumbCategorySep.style.display = '';
             breadcrumbProduct.textContent = lang === 'zh' ? product.nameZh : product.name;
