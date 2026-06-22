@@ -11,7 +11,10 @@ var BLOG_POSTS = [
     "date": "2025-05-01",
     "readTime": "8 min",
     "image": "images/blog/choose-optical-lens.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "如何为您的应用选择合适的光学透镜",
+    "excerptZh": "根据焦距、材料和镀膜要求选择光学透镜的全面指南。了解平凸、双凹和消色差透镜类型的关键差异。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 2,
@@ -23,7 +26,10 @@ var BLOG_POSTS = [
     "date": "2025-04-28",
     "readTime": "7 min",
     "image": "images/blog/ar-coatings-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "增透膜实用指南",
+    "excerptZh": "关于光学元件增透膜(AR)您需要了解的一切。了解AR膜的工作原理、类型以及如何选择适合您波长和应用的镀膜。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 3,
@@ -35,7 +41,10 @@ var BLOG_POSTS = [
     "date": "2025-04-22",
     "readTime": "6 min",
     "image": "images/blog/bk7-vs-fused-silica.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "BK7与紫外熔石英：何时使用哪种材料",
+    "excerptZh": "BK7和紫外熔石英光学玻璃材料的详细对比。了解透过率范围、热性能和成本差异，做出正确的材料选择。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 4,
@@ -47,7 +56,10 @@ var BLOG_POSTS = [
     "date": "2025-04-15",
     "readTime": "6 min",
     "image": "images/blog/optical-windows-guide.jpg",
-    "author": "PhotonEdge Sales Team"
+    "author": "PhotonEdge Sales Team",
+    "titleZh": "购买光学窗口片需检查的5个关键规格",
+    "excerptZh": "选择光学窗口片时必须关注的5个关键规格参数。从材料、面形精度到镀膜，确保采购无忧。",
+    "categoryZh": "购买指南"
   },
   {
     "id": 5,
@@ -59,7 +71,10 @@ var BLOG_POSTS = [
     "date": "2025-04-10",
     "readTime": "9 min",
     "image": "images/blog/prism-types.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "光学棱镜类型及其应用详解",
+    "excerptZh": "直角棱镜、五角棱镜、角锥棱镜等各类型棱镜的工作原理和应用场景详解。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 6,
@@ -71,7 +86,10 @@ var BLOG_POSTS = [
     "date": "2025-04-05",
     "readTime": "5 min",
     "image": "images/blog/photonedge-partner.jpg",
-    "author": "PhotonEdge Team"
+    "author": "PhotonEdge Team",
+    "titleZh": "为什么恒鼎光是您值得信赖的精密光学合作伙伴",
+    "excerptZh": "了解恒鼎光如何以15年+行业经验和全体系质量保证，为全球客户提供优质光学元件。",
+    "categoryZh": "公司动态"
   },
   {
     "id": 7,
@@ -83,7 +101,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "8 min",
     "image": "images/blog/custom-vs-stock-optics.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "定制与标准光学元件：何时投资定制",
+    "excerptZh": "标准库存产品和定制加工的优缺点对比，帮助您做出最佳采购决策。",
+    "categoryZh": "购买指南"
   },
   {
     "id": 8,
@@ -95,7 +116,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "10 min",
     "image": "images/blog/laser-optics-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "激光光学元件选型指南",
+    "excerptZh": "涵盖反射镜、透镜和窗口片的激光光学元件选型要点，包括损伤阈值和镀膜选择。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 9,
@@ -107,7 +131,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "9 min",
     "image": "images/blog/optical-coatings.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "光学镀膜类型详解",
+    "excerptZh": "增透膜、高反膜、分光膜和滤光膜的原理、类型和应用场景全面介绍。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 10,
@@ -119,7 +146,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "9 min",
     "image": "images/blog/optical-quality-testing.jpg",
-    "author": "PhotonEdge Quality Team"
+    "author": "PhotonEdge Quality Team",
+    "titleZh": "如何验证光学元件质量：检测方法",
+    "excerptZh": "干涉测量、表面质量检查、尺寸测量和镀膜检测等光学元件质量检测方法详解。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 11,
@@ -131,7 +161,10 @@ var BLOG_POSTS = [
     "date": "2025-05-15",
     "readTime": "12 min",
     "image": "images/blog/custom-optics-spec.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "如何编写定制光学元件规格书",
+    "excerptZh": "从基本规格到光学参数、镀膜要求，完整的光学元件规格书编写指导。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 12,
@@ -143,7 +176,10 @@ var BLOG_POSTS = [
     "date": "2025-05-12",
     "readTime": "11 min",
     "image": "images/blog/laser-damage-threshold.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "激光损伤阈值：工程师需知",
+    "excerptZh": "理解和使用LIDT数据的关键指南，帮助工程师选择合适的激光光学元件。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 13,
@@ -155,7 +191,10 @@ var BLOG_POSTS = [
     "date": "2025-05-08",
     "readTime": "14 min",
     "image": "images/blog/coating-design.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "光学镀膜设计：从理论到实践",
+    "excerptZh": "薄膜干涉原理、设计方法、材料选择和实践经验的全面介绍。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 14,
@@ -167,7 +206,10 @@ var BLOG_POSTS = [
     "date": "2025-05-05",
     "readTime": "13 min",
     "image": "images/blog/optical-metrology.jpg",
-    "author": "PhotonEdge Quality Team"
+    "author": "PhotonEdge Quality Team",
+    "titleZh": "精密光学计量：干涉测量与波前检测",
+    "excerptZh": "Fizeau干涉仪、波前传感器和表面粗糙度测量等先进光学计量技术介绍。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 15,
@@ -179,6 +221,9 @@ var BLOG_POSTS = [
     "date": "2025-05-02",
     "readTime": "11 min",
     "image": "images/blog/high-power-laser-materials.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "高功率激光应用的光学材料选择",
+    "excerptZh": "为高功率激光系统选择合适材料的指导，包括LIDT对比和热性能分析。",
+    "categoryZh": "技术指南"
   }
 ];
