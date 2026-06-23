@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    
-        <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies - PhotonEdge Precision Optical Components</title>
-    <meta name="description" content="Explore PhotonEdge's success stories across research, medical, laser, and semiconductor industries. Learn how we solve complex optical challenges.">
-    <meta property="og:title" content="Case Studies - PhotonEdge Precision Optical Components">
-    <meta property="og:description" content="Explore PhotonEdge's success stories across research, medical, laser, and semiconductor industries.">
+    <title>Case Studies | PhotonEdge - Precision Optics in Action</title>
+    <meta name="description" content="Real-world case studies showing how PhotonEdge precision optical components solve challenges in medical, laser, defense, and research applications.">
+    <meta property="og:title" content="Case Studies | PhotonEdge - Precision Optics in Action">
+    <meta property="og:description" content="Real-world case studies showing how PhotonEdge precision optical components solve challenges in medical, laser, defense, and research applications.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://photonedgeoptics.com/case-studies.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/case-studies.html">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
     <script>
@@ -35,34 +36,76 @@
     {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "PhotonEdge - Case Studies",
-        "description": "Case studies of precision optical component solutions from PhotonEdge."
+        "name": "PhotonEdge Case Studies",
+        "description": "Real-world case studies of precision optical components in medical, laser, defense, and research applications.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge"
+        }
     }
     </script>
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Studies | PhotonEdge">
+    <meta name="twitter:description" content="Real-world case studies of precision optical components in action.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+
+    <style>
+        .case-hero { padding: 80px 0 40px; background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; text-align: center; }
+        .case-hero h1 { font-size: 36px; margin-bottom: 16px; }
+        .case-hero p { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .case-section { padding: 60px 0; }
+        .case-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px; }
+        .case-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.3s; }
+        .case-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); border-color: var(--accent); }
+        .case-card-header { padding: 30px 30px 20px; border-bottom: 1px solid var(--border); }
+        .case-card-industry { display: inline-block; background: var(--light); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
+        .case-card-title { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+        .case-card-subtitle { font-size: 14px; color: var(--gray-text); }
+        .case-card-body { padding: 24px 30px; }
+        .case-challenge { margin-bottom: 20px; }
+        .case-challenge h4, .case-solution h4, .case-result h4 { font-size: 14px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .case-challenge p, .case-solution p, .case-result p { font-size: 14px; color: var(--gray-text); line-height: 1.7; }
+        .case-result { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 16px; border-radius: 12px; }
+        .case-result-metric { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+        .case-result-metric:last-child { margin-bottom: 0; }
+        .case-result-number { font-size: 20px; font-weight: 700; color: var(--primary); }
+        .case-result-label { font-size: 13px; color: var(--gray-text); }
+        .case-cta-section { padding: 60px 0; background: var(--light); text-align: center; }
+        .case-cta-box { max-width: 600px; margin: 0 auto; }
+        .case-cta-box h2 { font-size: 28px; color: var(--dark); margin-bottom: 16px; }
+        .case-cta-box p { font-size: 16px; color: var(--gray-text); margin-bottom: 30px; line-height: 1.7; }
+        .case-cta-btn { display: inline-block; background: var(--accent); color: white; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; }
+        .case-cta-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
+        @media (max-width: 768px) {
+            .case-grid { grid-template-columns: 1fr; }
+            .case-hero h1 { font-size: 28px; }
+            .case-card-header { padding: 20px; }
+            .case-card-body { padding: 16px 20px; }
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
     <picture>
         <source srcset="images/logo.webp" type="image/webp">
-        <img src="logo.png" alt="PhotonEdge" width="160" height="40">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
     </picture>
 </a>
             <nav class="nav">
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
-                
                 <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link " data-i18n="navHome">Home</a></li>
-                    <li><a href="products.html" class="nav-link " data-i18n="navProducts">Products</a></li>
-                    <li><a href="about.html" class="nav-link " data-i18n="navAbout">About Us</a></li>
-                    <li><a href="calculator.html" class="nav-link " data-i18n="navTools">Tools</a></li>
-                    <li><a href="faq.html" class="nav-link " data-i18n="navFAQ">FAQ</a></li>
-                    <li><a href="blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
-                    <li><a href="contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
+                    <li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a></li>
+                    <li><a href="/faq.html" class="nav-link" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
                 </ul>
-                <a href="cart.html" class="cart-icon" title="Shopping Cart">
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                     <span class="cart-badge" id="cartBadge">0</span>
                 </a>
@@ -74,235 +117,159 @@
         </div>
     </header>
 
-    
-    <div class="request-quote-float">
-        <a href="contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
-            <span class="quote-icon">&#9993;</span>
-            <span>Request Quote</span>
-        </a>
-    </div>
-
-<section class="case-studies-page">
+    <section class="case-hero">
         <div class="container">
-            <div class="case-studies-page-header">
-                <h1 data-i18n="caseStudiesPageTitle">Case Studies</h1>
-                <p data-i18n="caseStudiesPageDesc">See how PhotonEdge delivers precision optical solutions across diverse industries and applications</p>
+            <h1 data-i18n="caseStudiesTitle">Case Studies</h1>
+            <p data-i18n="caseStudiesSubtitle">See how our precision optical components solve real-world challenges across industries</p>
+        </div>
+    </section>
+
+    <section class="case-section">
+        <div class="container">
+            <div class="case-grid">
+
+                <div class="case-card">
+                    <div class="case-card-header">
+                        <span class="case-card-industry" data-i18n="caseIndustryMedical">Medical Devices</span>
+                        <h3 class="case-card-title" data-i18n="caseMedTitle">High-Precision Lens Assembly for Surgical Microscope</h3>
+                        <p class="case-card-subtitle" data-i18n="caseMedSubtitle">European Medical Equipment Manufacturer</p>
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-challenge">
+                            <h4 data-i18n="caseChallenge">Challenge</h4>
+                            <p data-i18n="caseMedChallenge">A European medical equipment manufacturer needed custom plano-convex lenses with surface accuracy better than &lambda;/8 and centration under 1 arc minute for their next-generation surgical microscope. Their existing supplier could not consistently meet these tolerances at volume.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-i18n="caseSolution">Solution</h4>
+                            <p data-i18n="caseMedSolution">PhotonEdge provided UV Fused Silica plano-convex lenses with &lambda;/10 surface accuracy, &lt;30 arc second centration, and custom AR coatings (R&lt;0.25% @ 450-700nm). Each batch included full interferometer and spectrophotometer test reports.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4 data-i18n="caseResult">Result</h4>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">&lambda;/10</span>
+                                <span class="case-result-label" data-i18n="caseMedResult1">Surface accuracy achieved</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">100%</span>
+                                <span class="case-result-label" data-i18n="caseMedResult2">Inspection pass rate</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">3 weeks</span>
+                                <span class="case-result-label" data-i18n="caseMedResult3">Lead time (vs. 6+ weeks previous)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-card-header">
+                        <span class="case-card-industry" data-i18n="caseIndustryLaser">Laser Systems</span>
+                        <h3 class="case-card-title" data-i18n="caseLaserTitle">High-Power Laser Mirror for Industrial Cutting</h3>
+                        <p class="case-card-subtitle" data-i18n="caseLaserSubtitle">North American Laser Systems Integrator</p>
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-challenge">
+                            <h4 data-i18n="caseChallenge">Challenge</h4>
+                            <p data-i18n="caseLaserChallenge">A laser systems integrator required high-energy laser mirrors with damage threshold exceeding 15 J/cm&sup2; at 1064nm, 10ns pulse. Their previous mirror supplier had inconsistent coating adhesion, causing premature failure under high-power conditions.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-i18n="caseSolution">Solution</h4>
+                            <p data-i18n="caseLaserSolution">PhotonEdge supplied H-K9L(BK7) substrate laser line mirrors with e-beam deposited dielectric HR coatings. Each mirror was laser damage tested and came with spectral curve documentation. Custom beveling (0.25mm&times;45&deg;) prevented edge chipping during mounting.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4 data-i18n="caseResult">Result</h4>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">&gt;20 J/cm&sup2;</span>
+                                <span class="case-result-label" data-i18n="caseLaserResult1">Laser damage threshold achieved</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">R&gt;99.8%</span>
+                                <span class="case-result-label" data-i18n="caseLaserResult2">Reflectivity at 1064nm</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">0 failures</span>
+                                <span class="case-result-label" data-i18n="caseLaserResult3">In 12 months of field operation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-card-header">
+                        <span class="case-card-industry" data-i18n="caseIndustryResearch">Scientific Research</span>
+                        <h3 class="case-card-title" data-i18n="caseResearchTitle">Custom CaF2 Windows for UV Spectroscopy</h3>
+                        <p class="case-card-subtitle" data-i18n="caseResearchSubtitle">University Research Laboratory</p>
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-challenge">
+                            <h4 data-i18n="caseChallenge">Challenge</h4>
+                            <p data-i18n="caseResearchChallenge">A university spectroscopy lab needed CaF2 windows with exceptional UV transmission (T&gt;93% at 200nm), surface quality 20-10 scratch-dig, and precise wedge angle (&lt;30 arc seconds) for their vacuum UV spectrometer. Standard catalog windows could not meet these combined requirements.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-i18n="caseSolution">Solution</h4>
+                            <p data-i18n="caseResearchSolution">PhotonEdge manufactured custom CaF2 windows with 20-10 surface quality, &lambda;/8 flatness, parallelism &lt;30 arc seconds, and no anti-reflection coating (to preserve broadband UV transmission). Each window was individually tested with UV-VIS spectrophotometer and Zygo interferometer.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4 data-i18n="caseResult">Result</h4>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">T&gt;94%</span>
+                                <span class="case-result-label" data-i18n="caseResearchResult1">UV transmission at 200nm</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">20-10</span>
+                                <span class="case-result-label" data-i18n="caseResearchResult2">Surface quality achieved</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">2 weeks</span>
+                                <span class="case-result-label" data-i18n="caseResearchResult3">Delivery for first prototype batch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-card-header">
+                        <span class="case-card-industry" data-i18n="caseIndustryDefense">Defense &amp; Aerospace</span>
+                        <h3 class="case-card-title" data-i18n="caseDefenseTitle">IR Optical Assembly for Thermal Imaging</h3>
+                        <p class="case-card-subtitle" data-i18n="caseDefenseSubtitle">Defense Contractor</p>
+                    </div>
+                    <div class="case-card-body">
+                        <div class="case-challenge">
+                            <h4 data-i18n="caseChallenge">Challenge</h4>
+                            <p data-i18n="caseDefenseChallenge">A defense contractor required Germanium and ZnSe optics for a long-wave infrared (LWIR) thermal imaging system. Components needed to meet MIL-SPEC environmental requirements including thermal cycling (-40&deg;C to +70&deg;C) and humidity resistance while maintaining optical performance.</p>
+                        </div>
+                        <div class="case-solution">
+                            <h4 data-i18n="caseSolution">Solution</h4>
+                            <p data-i18n="caseDefenseSolution">PhotonEdge supplied Ge aspheric lenses and ZnSe windows with DLC (Diamond-Like Carbon) coatings for environmental protection. Full environmental testing reports and material certifications (conflict-free mineral sourcing) were provided with each shipment.</p>
+                        </div>
+                        <div class="case-result">
+                            <h4 data-i18n="caseResult">Result</h4>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">T&gt;95%</span>
+                                <span class="case-result-label" data-i18n="caseDefenseResult1">LWIR transmission achieved</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">MIL-SPEC</span>
+                                <span class="case-result-label" data-i18n="caseDefenseResult2">Environmental compliance verified</span>
+                            </div>
+                            <div class="case-result-metric">
+                                <span class="case-result-number">5+ years</span>
+                                <span class="case-result-label" data-i18n="caseDefenseResult3">Ongoing supply partnership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            
-            <div class="case-studies-grid">
-                <!-- Case Study 1: University Research Lab -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry" data-i18n="case1Industry">Research & Academia</div>
-                        <h3 class="case-study-title" data-i18n="case1Title">Custom Aspheric Lenses for Laser Spectroscopy Research</h3>
-                        <div class="case-study-product" data-i18n="case1Product">Custom Aspheric Lenses - UV Fused Silica</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseChallengeLabel">Challenge</div>
-                            <p class="case-study-content" data-i18n="case1Challenge">A leading physics research laboratory needed custom aspheric lenses for their advanced laser spectroscopy experiment. The project required sub-micron surface accuracy and exceptional wavefront quality to achieve the precision needed for their cutting-edge quantum physics research.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseSolutionLabel">Solution</div>
-                            <p class="case-study-content" data-i18n="case1Solution">PhotonEdge's engineering team worked closely with the research team to design and manufacture custom UVFS aspheric lenses. We utilized precision CNC grinding and computer-controlled polishing to achieve surface accuracy of λ/20 at 633nm, with scratch-dig specification of 10-5.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseResultLabel">Results</div>
-                            <p class="case-study-result" data-i18n="case1Result">Prototypes delivered in 18 days. Lenses exceeded wavefront requirements, enabling breakthrough measurements in quantum entanglement experiments.</p>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
 
-                <!-- Case Study 2: Medical Device -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry" data-i18n="case2Industry">Medical Devices</div>
-                        <h3 class="case-study-title" data-i18n="case2Title">High-Consistency Windows for Endoscope Production</h3>
-                        <div class="case-study-product" data-i18n="case2Product">BK7 Optical Windows - 500 Units</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseChallengeLabel">Challenge</div>
-                            <p class="case-study-content" data-i18n="case2Challenge">A major medical device manufacturer needed 500 high-consistency optical windows for their next-generation endoscopic imaging system. Tolerance uniformity across all units was critical, as even minor variations would affect image quality and diagnostic accuracy.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseSolutionLabel">Solution</div>
-                            <p class="case-study-content" data-i18n="case2Solution">PhotonEdge implemented strict statistical process control throughout production. We maintained center thickness tolerance of ±0.01mm and parallelism of <1 arcmin across all 500 units. Each window underwent 100% inspection with interferometric verification.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseResultLabel">Results</div>
-                            <p class="case-study-result" data-i18n="case2Result">Zero defects after 100% inspection. Customer reported 15% improvement in endoscope image consistency compared to previous supplier.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 3: Laser Processing -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry" data-i18n="case3Industry">Industrial Laser</div>
-                        <h3 class="case-study-title" data-i18n="case3Title">High-Damage-Threshold Mirrors for Laser Cutting Systems</h3>
-                        <div class="case-study-product" data-i18n="case3Product">Dielectric HR Mirrors - ZnSe Substrate</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseChallengeLabel">Challenge</div>
-                            <p class="case-study-content" data-i18n="case3Challenge">An industrial laser equipment manufacturer required high-reflectance mirrors capable of handling 5kW CO2 laser power for their metal cutting systems. Previous suppliers' mirrors suffered from premature laser-induced damage.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseSolutionLabel">Solution</div>
-                            <p class="case-study-content" data-i18n="case3Solution">PhotonEdge specified enhanced multilayer dielectric coatings with proprietary preconditioning processes. Our mirrors achieved reflectance >99.9% at 10.6μm with laser damage threshold exceeding 50 kW/cm² under CW operation.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseResultLabel">Results</div>
-                            <p class="case-study-result" data-i18n="case3Result">Mirror lifespan increased by 300% compared to previous supplier. Customer reported significant reduction in downtime and maintenance costs.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 4: Research Institute - IR Optics -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry" data-i18n="case4Industry">Research & Spectroscopy</div>
-                        <h3 class="case-study-title" data-i18n="case4Title">Specialty IR Optics for FTIR Spectrometer Upgrade</h3>
-                        <div class="case-study-product" data-i18n="case4Product">ZnSe & CaF2 Optical Components</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseChallengeLabel">Challenge</div>
-                            <p class="case-study-content" data-i18n="case4Challenge">A national research institute needed to upgrade their FTIR spectrometer with custom infrared optics. The project required specialty materials (ZnSe, CaF2) with broadband anti-reflection coatings across 2-20μm wavelength range.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseSolutionLabel">Solution</div>
-                            <p class="case-study-content" data-i18n="case4Solution">PhotonEdge supplied a complete set of custom IR optics including collimation lenses, beam splitters, and detector windows. Our proprietary broadband AR coating technology achieved >98% transmission across the entire mid-IR range.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label" data-i18n="caseResultLabel">Results</div>
-                            <p class="case-study-result" data-i18n="case4Result">Spectrometer sensitivity improved by 40%. The upgraded system has been used for groundbreaking materials characterization research.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 5: Laser Processing Industry -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry">Laser Processing</div>
-                        <h3 class="case-study-title">High-Power Fiber Laser Beam Delivery System</h3>
-                        <div class="case-study-product">Fused Silica Collimation Lenses & Fiber Adapters</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label">Challenge</div>
-                            <p class="case-study-content">A leading laser cutting machine manufacturer required custom beam delivery optics for their 6kW fiber laser system. The optics needed to handle extreme power densities while maintaining beam quality over long transmission distances.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Solution</div>
-                            <p class="case-study-content">PhotonEdge designed custom collimation lenses with proprietary AR coatings achieving LIDT >30 J/cm² (10ns pulse). Special mounting solutions ensured thermal stability under high-power operation. All components underwent 100% LIDT testing before shipment.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Results</div>
-                            <p class="case-study-result">Customer reported zero component failures in 18 months of production operation. Beam quality maintained at M²<1.1 throughout extended testing. Reduced downtime resulted in 25% improvement in overall equipment effectiveness.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 6: Semiconductor Inspection -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry">Semiconductor & Electronics</div>
-                        <h3 class="case-study-title">UV Optics for Wafer Inspection Systems</h3>
-                        <div class="case-study-product">Deep UV Fused Silica Lenses & Mirrors</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label">Challenge</div>
-                            <p class="case-study-content">A semiconductor equipment company needed precision UV optics for their next-generation wafer defect inspection system. Requirements included sub-nanometer surface accuracy and high laser damage threshold at 266nm wavelength for effective surface defect detection.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Solution</div>
-                            <p class="case-study-content">PhotonEdge supplied custom UV-grade fused silica lenses with λ/20 surface flatness and proprietary deep-UV AR coatings. Interferometric testing confirmed all specifications. Each lens underwent individual wavefront testing with full documentation provided.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Results</div>
-                            <p class="case-study-result">Defect detection sensitivity improved by 3x compared to previous system. Customer achieved sub-10nm defect detection capability, enabling detection of previously invisible killer defects. System throughput increased by 20% due to improved signal-to-noise ratio.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 7: Aerospace & Defense -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry">Aerospace & Defense</div>
-                        <h3 class="case-study-title">Ruggedized Optics for Satellite-borne Imaging</h3>
-                        <div class="case-study-product">Space-Grade Optical Windows & Filters</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label">Challenge</div>
-                            <p class="case-study-content">A satellite manufacturer needed radiation-hardened optical windows and filters for an Earth observation satellite. Components required survival in launch vibration, wide temperature range (-40°C to +85°C), and space radiation environment while maintaining optical performance.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Solution</div>
-                            <p class="case-study-content">PhotonEdge designed custom optics using radiation-resistant materials with specialized coatings. Extensive environmental testing included vibration, thermal cycling, and radiation exposure. All components met MIL-SPEC requirements with margin built into specifications.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Results</div>
-                            <p class="case-study-result">Components launched successfully aboard the satellite in Q4 2024. Two-year orbital performance confirms all optical specifications maintained. Zero degradation observed in optical performance over 10,000+ orbits.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 8: Machine Vision & Automation -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry">Industrial Automation</div>
-                        <h3 class="case-study-title">High-Speed Vision System for EV Battery Inspection</h3>
-                        <div class="case-study-product">Precision Lens Assemblies & Lighting Optics</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label">Challenge</div>
-                            <p class="case-study-content">An EV battery manufacturer required machine vision optics for 100% inspection of battery modules at production line speeds. Requirements included sub-pixel resolution over large fields of view and consistent performance in industrial environment.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Solution</div>
-                            <p class="case-study-content">PhotonEdge provided custom lens assemblies with integratedighting optics designed for maximum uniformity. Special anti-vibration mounting and sealed enclosures protected optics from production environment contamination. 100% incoming inspection ensured consistent quality across all 48 inspection stations.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Results</div>
-                            <p class="case-study-result">Inspection throughput achieved at 120 parts/minute, exceeding customer target of 100/min. Defect escape rate reduced to <50 PPM. System uptime maintained at 99.5% over 18-month production period. Customer reported ROI achieved in under 6 months.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Case Study 9: Fiber Optic Communications -->
-                <div class="case-study-card">
-                    <div class="case-study-header">
-                        <div class="case-study-industry">Telecommunications</div>
-                        <h3 class="case-study-title">DWDM Filter Components for Fiber Networks</h3>
-                        <div class="case-study-product">Narrow Bandpass Filters & WDM Components</div>
-                    </div>
-                    <div class="case-study-body">
-                        <div class="case-study-section">
-                            <div class="case-study-label">Challenge</div>
-                            <p class="case-study-content">A fiber optic equipment manufacturer needed precision wavelength-division multiplexing (WDM) components for their 100G/400G coherent optical systems. Tight wavelength accuracy (<±0.1nm) and excellent thermal stability were critical for dense WDM (DWDM) applications.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Solution</div>
-                            <p class="case-study-content">PhotonEdge manufactured custom narrow bandpass filters with proprietary coating designs achieving <±0.05nm wavelength accuracy. Advanced coating materials provided excellent thermal stability (drift <0.001nm/°C) over operating range. Each filter individually tested and calibrated.</p>
-                        </div>
-                        <div class="case-study-section">
-                            <div class="case-study-label">Results</div>
-                            <p class="case-study-result">Customer achieved first-pass yield improvement of 35% by using pre-calibrated components. System-level wavelength drift reduced by 60% compared to previous supplier. Long-term reliability testing confirmed excellent stability over accelerated lifetime testing equivalent to 20 years field operation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CTA Section -->
-            <div style="text-align: center; margin-top: 60px; padding: 40px; background: var(--light); border-radius: 12px;">
-                <h3 data-i18n="caseCtaTitle">Ready to Start Your Project?</h3>
-                <p style="color: var(--gray); margin: 15px 0 25px;" data-i18n="caseCtaDesc">Contact our technical team to discuss your optical component requirements</p>
-                <a href="contact.html" class="btn btn-primary" data-i18n="caseCtaButton">Contact Us</a>
+    <section class="case-cta-section">
+        <div class="container">
+            <div class="case-cta-box">
+                <h2 data-i18n="caseCtaTitle">Have a Similar Challenge?</h2>
+                <p data-i18n="caseCtaDesc">Our optical engineering team can help you find the right solution. From custom specifications to volume production, we deliver precision optics that meet your exact requirements.</p>
+                <a href="/contact.html" class="case-cta-btn" data-i18n="caseCtaBtn">Request a Custom Quote</a>
             </div>
         </div>
     </section>
@@ -317,24 +284,24 @@
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="products.html?category=Optical Lenses">Optical Lenses</a></li>
-                        <li><a href="products.html?category=Optical Mirrors">Optical Mirrors</a></li>
-                        <li><a href="products.html?category=Optical Prisms">Optical Prisms</a></li>
-                        <li><a href="products.html?category=Optical Filters">Optical Filters</a></li>
+                        <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
+                        <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
+                        <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
+                        <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
+                    <h4 data-i18n="companyName">Company</h4>
                     <ul>
-                        <li><a href="about.html" data-i18n="navAbout">About Us</a></li>
-                        <li><a href="case-studies.html">Case Studies</a></li>
-                        <li><a href="contact.html" data-i18n="navContact">Contact</a></li>
+                        <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                        <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: sales@photonedgeoptics.com</li>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -355,31 +322,24 @@
         <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
     </a>
 
-    <script src="js/translations.js"></script>
-    <script src="js/products-data.js"></script>
-    <script src="js/cart.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/cart.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof updatePageTranslations === 'function') updatePageTranslations();
-            var lang = getCurrentLang();
-            document.querySelectorAll('.lang-btn').forEach(function(btn) {
-                btn.classList.remove('active');
-                if ((btn.textContent === 'EN' && lang === 'en') || (btn.textContent === '中文' && lang === 'zh')) {
-                    btn.classList.add('active');
-                }
-            });
-        });
+        if (typeof applyTranslations === 'function') {
+            applyTranslations();
+        }
+        var langBtns = document.querySelectorAll('.lang-btn');
+        var savedLang = localStorage.getItem('lang') || 'en';
+        for (var i = 0; i < langBtns.length; i++) {
+            langBtns[i].classList.remove('active');
+            if ((savedLang === 'en' && langBtns[i].textContent === 'EN') || (savedLang === 'zh' && langBtns[i].textContent === '中文')) {
+                langBtns[i].classList.add('active');
+            }
+        }
+        function toggleMobileMenu() {
+            var navList = document.querySelector('.nav-list');
+            if (navList) { navList.classList.toggle('active'); }
+        }
     </script>
-<script>
-
-function toggleMobileMenu() {
-    var navList = document.querySelector('.nav-list');
-    if (navList) {
-        navList.classList.toggle('active');
-    }
-}
-
-    </script>
-
 </body>
 </html>

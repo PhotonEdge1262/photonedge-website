@@ -54,6 +54,7 @@
                     <li><a href="/calculator.html" class="nav-link " data-i18n="navTools">Tools</a></li>
                     <li><a href="/faq.html" class="nav-link " data-i18n="navFAQ">FAQ</a></li>
                     <li><a href="/blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/case-studies.html" class="nav-link" data-i18n="navCaseStudies">Case Studies</a></li>
                     <li><a href="/contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
                 </ul>
                 <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
@@ -222,7 +223,7 @@
                 var t = (lang === "zh" && a.titleZh) ? a.titleZh : a.title;
                 var e = (lang === "zh" && a.excerptZh) ? a.excerptZh : a.excerpt;
                 html += "<div class="blog-card" style="cursor:default;">";
-                html += "<div class="blog-card-icon" style="height:140px;overflow:hidden;"><img src="" + a.image + "" alt="" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"></div>";
+                html += "<div class="blog-card-icon" style="height:140px;overflow:hidden;"><img src="" + a.image + "" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'"></div>";
                 html += "<div class="blog-card-body">";
                 html += "<div class="blog-card-meta"><span class="blog-card-category " + cc + "">" + cn + "</span><span class="blog-card-date">" + a.date + "</span></div>";
                 html += "<h3 class="blog-card-title">" + t + "</h3>";
