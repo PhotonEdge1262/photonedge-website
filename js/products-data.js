@@ -6059,9 +6059,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
-      "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -6286,7 +6284,7 @@ var PRODUCTS = [
         "thickness": "8mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-bk7-windows.gif"
+    "diagram": "images/diagrams/ltoptic-bk7-windows.svg"
   },
   {
     "id": 25,
@@ -6305,9 +6303,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -6490,7 +6486,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.gif"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.svg"
   },
   {
     "id": 26,
@@ -6509,9 +6505,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -6628,7 +6622,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-sapphire-windows.gif"
+    "diagram": "images/diagrams/ltoptic-sapphire-windows.svg"
   },
   {
     "id": 27,
@@ -6647,9 +6641,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/2@632.8nm",
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -6772,7 +6764,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-caf2-windows.gif"
+    "diagram": "images/diagrams/ltoptic-caf2-windows.svg"
   },
   {
     "id": 28,
@@ -6791,9 +6783,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/2@632.8nm",
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -6898,7 +6888,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-ge-windows.gif"
+    "diagram": "images/diagrams/ltoptic-ge-windows.svg"
   },
   {
     "id": 29,
@@ -6917,9 +6907,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/2@632.8nm",
       "clearAperture": ">80%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7048,7 +7036,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-si-windows.gif"
+    "diagram": "images/diagrams/ltoptic-si-windows.svg"
   },
   {
     "id": 30,
@@ -7067,9 +7055,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/2@632.8nm",
       "clearAperture": ">80%",
       "parallelism": "<1 arc min",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7180,14 +7166,13 @@ var PRODUCTS = [
     "descriptionZh": "激光线高反镜采用介质膜在特定激光波长实现高反射率。适用于常见激光波长，具有高损伤阈值。",
     "image": "images/products/optical-mirrors/laser-line-high-reflected-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "centration": "<2 arc min",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7343,7 +7328,7 @@ var PRODUCTS = [
         "reflectivity": ">98"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.gif"
+    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.svg"
   },
   {
     "id": 32,
@@ -7355,13 +7340,12 @@ var PRODUCTS = [
     "descriptionZh": "高功率激光反射镜具有优异的表面质量和面型精度，适用于高功率激光应用。提供高损伤阈值介质膜。",
     "image": "images/products/optical-mirrors/high-energy-laser-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "20-10",
       "surfaceFlatness": "λ/10@632.8nm",
-      "clearAperture": ">80%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">80%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7529,15 +7513,13 @@ var PRODUCTS = [
     "descriptionZh": "宽带介质膜反射镜采用多层介质膜在宽波长范围内提供高反射率(>99%)。适用于各种激光和成像应用。",
     "image": "images/products/optical-mirrors/broadband-dielectric-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "20-10",
       "surfaceFlatness": "λ/10@632.8nm",
       "reflectivity": ">99%",
-      "clearAperture": ">80%",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">80%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7845,7 +7827,7 @@ var PRODUCTS = [
         "wavelength": ""
       }
     ],
-    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.gif"
+    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.svg"
   },
   {
     "id": 34,
@@ -7857,15 +7839,13 @@ var PRODUCTS = [
     "descriptionZh": "保护铝膜反射镜采用耐久铝膜加保护层，在可见和近红外光谱范围R>85%反射率。通用应用的经济选择。",
     "image": "images/products/optical-mirrors/protected-aluminum-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/2@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Protected Al R>85%",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Protected Al R>85%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -7986,7 +7966,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.svg"
   },
   {
     "id": 35,
@@ -7998,15 +7978,13 @@ var PRODUCTS = [
     "descriptionZh": "增强铝膜反射镜采用多层增强铝膜，提高反射率。R>90%反射率，性能优于标准保护铝膜。",
     "image": "images/products/optical-mirrors/enhanced-aluminum-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Enhanced Al R>90%",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Enhanced Al R>90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8239,7 +8217,7 @@ var PRODUCTS = [
         "wavelength": "200-400nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg"
   },
   {
     "id": 36,
@@ -8251,15 +8229,13 @@ var PRODUCTS = [
     "descriptionZh": "保护银膜反射镜在可见到近红外光谱范围提供高反射率(R>95%)，带有保护层增强耐久性。宽带应用的优秀选择。",
     "image": "images/products/optical-mirrors/protected-silver-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Protected Ag R>95%",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Protected Ag R>95%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8380,7 +8356,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg"
   },
   {
     "id": 37,
@@ -8392,15 +8368,13 @@ var PRODUCTS = [
     "descriptionZh": "保护金膜反射镜在红外光谱范围提供最高反射率(R>98%)。带有耐久保护层，是红外激光和热成像应用的理想选择。",
     "image": "images/products/optical-mirrors/protected-gold-mirrors.jpg",
     "parameters": {
-      "substrate": "H-K9L(BK7)",
+      "substrate": "BK7",
       "diameterTolerance": "±0.15mm",
       "thicknessTolerance": "±0.10mm",
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Protected Au R>98%",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Protected Au R>98%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8510,7 +8484,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.svg"
   },
   {
     "id": 38,
@@ -8528,8 +8502,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
       "pyramidError": "<1 arcmin",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8640,8 +8613,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
       "pyramidError": "<1 arcmin",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8751,9 +8723,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Custom Design",
-      "centration": "<3 arc min",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8810,8 +8780,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
       "beamDeviation": "<3 arcsec",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8867,8 +8836,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8930,8 +8898,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -8982,8 +8949,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">80%",
-      "coatings": "Custom Design",
-      "beveling": "0.25mm×45°"
+      "coatings": "Custom Design"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -9024,8 +8990,7 @@ var PRODUCTS = [
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%",
-      "parallelism": "<1 arc min",
-      "beveling": "0.25mm×45°"
+      "parallelism": "<1 arc min"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -9611,8 +9576,7 @@ var PRODUCTS = [
       "surfaceQuality": "60-40",
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%",
-      "parallelism": "<1 arc min",
-      "beveling": "0.25mm×45°"
+      "parallelism": "<1 arc min"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -9788,8 +9752,7 @@ var PRODUCTS = [
       "surfaceQuality": "80-50",
       "clearAperture": ">90%",
       "parallelism": "<3 arc min",
-      "type": "Circular / Linear Gradient",
-      "beveling": "0.25mm×45°"
+      "type": "Circular / Linear Gradient"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -9893,8 +9856,7 @@ var PRODUCTS = [
     "image": "images/products/optical-filters/uv-transmission-filters.jpg",
     "parameters": {
       "material": "UV Transmitting Glass (ZWB1/ZWB2/ZWB3)",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -9940,8 +9902,7 @@ var PRODUCTS = [
     "image": "images/products/optical-filters/ir-transmission-filters.jpg",
     "parameters": {
       "material": "Red Glass (HB Series)",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10022,8 +9983,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "parallelism": "<1 arc min",
-      "splitRatio": "50/50 ±2%",
-      "beveling": "0.25mm×45°"
+      "splitRatio": "50/50 ±2%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10193,8 +10153,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "parallelism": "<1 arc min",
-      "splitRatio": "50/50",
-      "beveling": "0.25mm×45°"
+      "splitRatio": "50/50"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10490,8 +10449,7 @@ var PRODUCTS = [
       "surfaceQuality": "40-20",
       "surfaceFlatness": "λ/4@632.8nm",
       "parallelism": "<1 arc min",
-      "transmissionPolarization": "T(P or S)=50±5%",
-      "beveling": "0.25mm×45°"
+      "transmissionPolarization": "T(P or S)=50±5%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -10789,8 +10747,7 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "extinctionRatio": ">500:1",
       "tp": ">95%",
-      "ts": "<1%",
-      "beveling": "0.25mm×45°"
+      "ts": "<1%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11117,8 +11074,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11453,8 +11409,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11606,8 +11561,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -11942,8 +11896,7 @@ var PRODUCTS = [
       "phaseAccuracy": "λ/100",
       "parallelism": "<1 arc min",
       "diameterTolerance": "±0.15mm",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -12232,8 +12185,7 @@ var PRODUCTS = [
       "surfaceQuality": "60-40",
       "parallelism": "<1 arc min",
       "transmission": ">50%",
-      "extinctionRatio": ">100:1",
-      "beveling": "0.25mm×45°"
+      "extinctionRatio": ">100:1"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -12252,7 +12204,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.gif"
+    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.svg"
   },
   {
     "id": 60,
@@ -12268,8 +12220,7 @@ var PRODUCTS = [
       "surfaceQuality": "60-40",
       "parallelism": "<1 arc min",
       "transmission": ">45%",
-      "clearAperture": ">90%",
-      "beveling": "0.25mm×45°"
+      "clearAperture": ">90%"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -12288,7 +12239,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.gif"
+    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.svg"
   },
   {
     "id": 61,
@@ -12964,8 +12915,7 @@ var PRODUCTS = [
       "clearAperture": ">90%",
       "parallelism": "<1 arc min",
       "coating": "Partial reflectance on one side, AR on the other",
-      "damageThreshold": ">10J/cm², 20ns, 20Hz, @1064nm",
-      "beveling": "0.25mm×45°"
+      "damageThreshold": ">10J/cm², 20ns, 20Hz, @1064nm"
     },
     "price": 0,
     "priceUnit": "USD",
@@ -13128,8 +13078,7 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/8@632.8nm",
       "clearAperture": ">90%",
       "coating": "Dichroic coating on incident side, AR on the other",
-      "damageThreshold": "8J/cm²",
-      "beveling": "0.25mm×45°"
+      "damageThreshold": "8J/cm²"
     },
     "price": 0,
     "priceUnit": "USD",

@@ -3,6 +3,14 @@
 
 var translations = {
 en: {
+        
+        blogTitle: "Technical Blog",
+        blogSubtitle: "Expert guides and insights on precision optical components",
+        searchArticles: "Search articles...",
+        filterTechGuide: "Technical Guide",
+        filterBuyingGuide: "Buying Guide",
+        filterCompany: "Company",
+        noResultsTitle: "No articles found",
         navHome: "Home",
         navProducts: "Products",
         navAbout: "About Us",
@@ -687,6 +695,14 @@ en: {
     "navContact": "联系我们",
     "navDownloads": "资料下载",
     "navFAQ": "常见问题",
+    
+    "blogTitle": "技术博客",
+    "blogSubtitle": "专业指南与精密光学元件见解",
+    "searchArticles": "搜索文章...",
+    "filterTechGuide": "技术指南",
+    "filterBuyingGuide": "购买指南",
+    "filterCompany": "公司动态",
+    "noResultsTitle": "未找到文章",
     "navHome": "首页",
     "navProducts": "产品",
     "navTools": "工具",
