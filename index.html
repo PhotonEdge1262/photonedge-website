@@ -130,11 +130,25 @@
             <p class="company" data-i18n="heroDesc">Beijing Hengdingguang Technology Co., Ltd.</p>
             <div class="hero-btns">
                 <a href="/products.html" class="btn btn-primary" data-i18n="viewProducts">View Products</a>
+                <a href="#aiSelectorContent" class="btn btn-secondary" onclick="document.getElementById('aiSelectorContent').scrollIntoView({behavior:'smooth'});return false;" data-i18n="heroAISelector">AI Product Advisor</a>
                 <a href="/about.html" class="btn btn-secondary" data-i18n="learnMore">Learn More</a>
             </div>
         </div>
     </section>
 
+    <!-- AI Product Selector -->
+    <section class="ai-selector-section">
+        <div class="container">
+            <div class="ai-selector-header">
+                <span class="ai-selector-badge" data-i18n="aiBadge">AI-Powered</span>
+                <h2 data-i18n="aiTitle">Smart Product Advisor</h2>
+                <p data-i18n="aiSubtitle">Tell us your application and wavelength — we will recommend the best optical components for your project</p>
+            </div>
+            <div class="ai-selector-box" id="aiSelectorContent">
+                <!-- Dynamic content rendered by ai-selector.js -->
+            </div>
+        </div>
+    </section>
 
     <!-- Home Trust Bar -->
     <section class="stats-bar-enhanced">
@@ -485,6 +499,7 @@
 
     <script src="/js/translations.js"></script>
     <script src="/js/products-data.js"></script>
+    <script src="/js/ai-selector.js"></script>
     <script src="/js/compare.js"></script>
     <script src="/js/cart.js"></script>
     <script src="/js/search.js"></script>
@@ -498,6 +513,9 @@
                     btn.classList.add('active');
                 }
             });
+            if (typeof AISelector !== 'undefined' && typeof AISelector.init === 'function') {
+                AISelector.init();
+            }
         });
     </script>
 <script>

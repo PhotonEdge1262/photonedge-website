@@ -101,6 +101,12 @@ en: {
         clientTypeLaserMfg: "Laser Manufacturers",
         clientTypeMedical: "Medical Device Companies",
         clientTypeDefense: "Defense Contractors",
+        aiBadge: "AI-Powered",
+        aiTitle: "Smart Product Advisor",
+        aiSubtitle: "Tell us your application and wavelength — we will recommend the best optical components for your project",
+        calcAISelectorTitle: "AI Product Advisor",
+        calcAISelectorDesc: "Smart recommendation engine — tell us your application and wavelength, get matched products instantly",
+        heroAISelector: "AI Product Advisor",
         homeIndustryStripTitle: "Serving precision optics needs across multiple industries",
         homeTrustBannerTitle: "Trusted by 500+ Clients Worldwide",
         homeTrustBannerSubtitle: "Join thousands of research institutions, manufacturers, and laboratories who rely on PhotonEdge",
@@ -586,6 +592,12 @@ en: {
     "clearAperture": "通光孔径",
     "clearFilters": "清除筛选",
     "clientTypeDefense": "国防承包商",
+    "aiBadge": "AI智能",
+    "aiTitle": "智能产品选型",
+    "aiSubtitle": "告诉我们您的应用场景和工作波长，我们将为您推荐最合适的光学元件",
+    "calcAISelectorTitle": "AI智能选型",
+    "calcAISelectorDesc": "智能推荐引擎 — 告诉我们您的应用场景和工作波长，即刻获取匹配产品",
+    "heroAISelector": "AI智能选型",
     "clientTypeLaserMfg": "激光设备制造商",
     "clientTypeMedical": "医疗设备公司",
     "clientTypeResearchLabs": "研究实验室",
@@ -1049,6 +1061,10 @@ function setLanguage(lang) {
     // Re-render product detail if function exists
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
+    }
+    // Re-render AI selector if function exists
+    if (typeof AISelector !== 'undefined' && typeof AISelector.init === 'function') {
+        AISelector.init();
     }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
