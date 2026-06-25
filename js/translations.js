@@ -101,12 +101,6 @@ en: {
         clientTypeLaserMfg: "Laser Manufacturers",
         clientTypeMedical: "Medical Device Companies",
         clientTypeDefense: "Defense Contractors",
-        aiBadge: "AI-Powered",
-        aiTitle: "Smart Product Advisor",
-        aiSubtitle: "Tell us your application and wavelength — we will recommend the best optical components for your project",
-        calcAISelectorTitle: "AI Product Advisor",
-        calcAISelectorDesc: "Smart recommendation engine — tell us your application and wavelength, get matched products instantly",
-        heroAISelector: "AI Product Advisor",
         homeIndustryStripTitle: "Serving precision optics needs across multiple industries",
         homeTrustBannerTitle: "Trusted by 500+ Clients Worldwide",
         homeTrustBannerSubtitle: "Join thousands of research institutions, manufacturers, and laboratories who rely on PhotonEdge",
@@ -534,6 +528,37 @@ en: {
         appViewImaging: "View Imaging Optics",
         appViewSpectroscopy: "View Spectroscopy",
 
+        // AI Selector
+        aiBadge: "AI-Powered",
+        aiTitle: "Smart Product Advisor",
+        aiSubtitle: "Tell us your application and wavelength — we will recommend the best optical components for your project",
+        heroAISelector: "AI Product Advisor",
+        aiSelectApplication: "Select Your Application",
+        aiSelectAppDesc: "Tell us your application and we'll recommend the most suitable optical components",
+        aiSelectWavelength: "Select Wavelength Range",
+        aiSelectWavelengthDesc: "Choose your operating wavelength for material recommendations",
+        aiSelectComponent: "Recommended Components",
+        aiSelectComponentDesc: "Based on your requirements, we recommend these products",
+        aiNext: "Next →",
+        aiBack: "← Back",
+        aiGetQuote: "Request Quote",
+        aiViewProduct: "View Product",
+        aiReset: "Start Over",
+
+        // Chatbot
+        chatbotName: "PhotonEdge Assistant",
+        chatbotStatus: "Online",
+        chatbotWelcome: "Hello! I'm the PhotonEdge Optical Assistant. How can I help you today?",
+        chatbotProductRecommend: "Product Recommendation",
+        chatbotCustomConsult: "Custom Solution Inquiry",
+        chatbotQuoteDelivery: "Pricing & Delivery",
+        chatbotOtherQuestion: "Other Questions",
+        chatbotBubble: "Need help choosing? Ask me anytime 💡",
+        chatbotExitTitle: "Haven't found the right optical component?",
+        chatbotExitDesc: "Tell me your application scenario and I'll recommend the perfect component in 10 seconds.",
+        chatbotExitBtn: "Start Chat",
+        chatbotExitDismiss: "No thanks",
+
     },
     zh: {
     "aboutCompany": "公司简介",
@@ -592,12 +617,6 @@ en: {
     "clearAperture": "通光孔径",
     "clearFilters": "清除筛选",
     "clientTypeDefense": "国防承包商",
-    "aiBadge": "AI智能",
-    "aiTitle": "智能产品选型",
-    "aiSubtitle": "告诉我们您的应用场景和工作波长，我们将为您推荐最合适的光学元件",
-    "calcAISelectorTitle": "AI智能选型",
-    "calcAISelectorDesc": "智能推荐引擎 — 告诉我们您的应用场景和工作波长，即刻获取匹配产品",
-    "heroAISelector": "AI智能选型",
     "clientTypeLaserMfg": "激光设备制造商",
     "clientTypeMedical": "医疗设备公司",
     "clientTypeResearchLabs": "研究实验室",
@@ -1024,6 +1043,37 @@ en: {
     "appViewImaging": "查看成像光学",
     "appViewSpectroscopy": "查看光谱分析",
 
+    // AI Selector
+    "aiBadge": "AI智能",
+    "aiTitle": "智能产品选型助手",
+    "aiSubtitle": "告诉我们您的应用场景和波长——我们为您推荐最佳光学元件",
+    "heroAISelector": "AI产品选型",
+    "aiSelectApplication": "选择您的应用场景",
+    "aiSelectAppDesc": "告诉我们您的应用，我们将推荐最合适的光学元件",
+    "aiSelectWavelength": "选择波长范围",
+    "aiSelectWavelengthDesc": "选择您的工作波长以获得材料推荐",
+    "aiSelectComponent": "推荐产品",
+    "aiSelectComponentDesc": "根据您的需求，我们推荐以下产品",
+    "aiNext": "下一步 →",
+    "aiBack": "← 返回",
+    "aiGetQuote": "获取报价",
+    "aiViewProduct": "查看产品",
+    "aiReset": "重新开始",
+
+    // Chatbot
+    "chatbotName": "PhotonEdge 助手",
+    "chatbotStatus": "在线",
+    "chatbotWelcome": "您好！我是PhotonEdge光学助手，请问有什么可以帮您的？",
+    "chatbotProductRecommend": "产品选型推荐",
+    "chatbotCustomConsult": "定制方案咨询",
+    "chatbotQuoteDelivery": "报价/交期查询",
+    "chatbotOtherQuestion": "其他问题",
+    "chatbotBubble": "有选型疑问？随时问我 💡",
+    "chatbotExitTitle": "还没找到合适的光学元件？",
+    "chatbotExitDesc": "告诉我您的应用场景，10秒为您推荐合适的产品。",
+    "chatbotExitBtn": "开始咨询",
+    "chatbotExitDismiss": "不了，谢谢",
+
 }
 }
 // Translation function
@@ -1061,10 +1111,6 @@ function setLanguage(lang) {
     // Re-render product detail if function exists
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
-    }
-    // Re-render AI selector if function exists
-    if (typeof AISelector !== 'undefined' && typeof AISelector.init === 'function') {
-        AISelector.init();
     }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
