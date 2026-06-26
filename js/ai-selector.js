@@ -13,7 +13,7 @@ var AISelector = (function() {
             en: 'Laser Processing',
             zh: '激光加工',
             categories: ['Optical Mirrors', 'Optical Lenses', 'Optical Windows', 'Optical Beamsplitters'],
-            prioritySlugs: ['laser-line-high-reflected-mirrors', 'high-energy-laser-mirrors', 'ndyag-output-couplers', 'bk7-plano-convex', 'laser-beam-expanders', 'bk7-windows', 'cube-beamsplitters'],
+            prioritySlugs: ['laser-line-high-reflected-mirrors', 'high-energy-laser-mirrors', 'ndyag-output-couplers', 'bk7-plano-convex', 'bk7-bi-convex', 'bk7-plano-concave', 'laser-beam-expanders', 'bk7-windows', 'uv-fused-silica-windows', 'sapphire-windows', 'cube-beamsplitters', 'beamsplitter-plates', 'broadband-dielectric-mirrors', 'protected-aluminum-mirrors'],
             reason: {
                 en: 'Laser processing demands high damage thresholds, precise beam control, and wavelength-specific coatings.',
                 zh: '激光加工需要高损伤阈值、精确光束控制和特定波长镀膜。'
@@ -23,7 +23,7 @@ var AISelector = (function() {
             en: 'Medical Imaging',
             zh: '医疗成像',
             categories: ['Optical Lenses', 'Optical Windows', 'Optical Filters', 'Optical Prisms'],
-            prioritySlugs: ['achromatic-doublet', 'aspherical-lenses', 'uv-fused-silica-windows', 'sapphire-windows', 'narrow-band-interference-filters', 'dichroic-mirrors', 'bk7-right-angle-prisms'],
+            prioritySlugs: ['achromatic-doublet', 'aspherical-lenses', 'microscope-objectives', 'bk7-plano-convex', 'bk7-bi-convex', 'uv-fused-silica-windows', 'sapphire-windows', 'caf2-windows', 'narrow-band-interference-filters', 'uv-bandpass-filters', 'dichroic-mirrors', 'bk7-right-angle-prisms', 'cube-beamsplitters'],
             reason: {
                 en: 'Medical imaging requires high transmission, biocompatible materials, and precise spectral filtering.',
                 zh: '医疗成像需要高透过率、生物相容性材料和精确的光谱过滤。'
@@ -33,7 +33,7 @@ var AISelector = (function() {
             en: 'Spectroscopy',
             zh: '光谱分析',
             categories: ['Optical Prisms', 'Optical Windows', 'Optical Filters', 'Optical Lenses'],
-            prioritySlugs: ['equilateral-dispersing-prisms', 'caf2-windows', 'uv-fused-silica-windows', 'sapphire-windows', 'narrow-band-interference-filters', 'uv-bandpass-filters', 'uv-fused-silica-plano-convex'],
+            prioritySlugs: ['equilateral-dispersing-prisms', 'penta-prisms', 'bk7-right-angle-prisms', 'caf2-windows', 'uv-fused-silica-windows', 'sapphire-windows', 'znse-windows', 'narrow-band-interference-filters', 'uv-bandpass-filters', 'ir-bandpass-filters', 'uv-fused-silica-plano-convex', 'uv-fused-silica-bi-convex', 'bk7-plano-convex', 'achromatic-doublet'],
             reason: {
                 en: 'Spectroscopy applications need broadband UV transmission, dispersion elements, and precise wavelength selection.',
                 zh: '光谱分析需要宽带紫外透过、色散元件和精确的波长选择。'
@@ -218,9 +218,9 @@ var AISelector = (function() {
             reasons.push(appData.reason[lang] || appData.reason.en);
         }
 
-        // 2. Application category match (0-20 points)
+        // 2. Application category match (0-30 points)
         if (appData.categories.indexOf(product.category) !== -1) {
-            score += 20;
+            score += 30;
         }
 
         // 3. Wavelength material match (0-25 points)
@@ -275,7 +275,7 @@ var AISelector = (function() {
         var results = [];
         for (var i = 0; i < PRODUCTS.length; i++) {
             var scored = scoreProduct(PRODUCTS[i], application, wavelength, componentType);
-            if (scored.score > 10) {
+            if (scored.score > 5) {
                 results.push({
                     product: PRODUCTS[i],
                     score: scored.score,

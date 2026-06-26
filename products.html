@@ -57,7 +57,7 @@
     <meta name="twitter:title" content="Optical Components Products | PhotonEdge - Lenses, Mirrors, Prisms, Windows">
     <meta name="twitter:description" content="Browse our complete range of precision optical components including lenses, mirrors, prisms, windows, filters and more.">
     <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
-    <link rel="stylesheet" href="/css/chatbot.css">
+<link rel="stylesheet" href="/css/chatbot.css">
 </head>
 <body>
     <header class="header">
@@ -326,7 +326,7 @@
                 
                 return '<div class="product-card" onclick="window.location.href=\'/products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
-                    '<img src="https://photonedgeoptics.com/' + getThumbImage(product.image) + '" alt="' + name + '" loading="lazy" onerror="handleProductThumbError(this)">' +
+                    '<img src="https://photonedgeoptics.com' + getThumbImage(product.image) + '" alt="' + name + '" loading="lazy" onerror="handleProductThumbError(this)">' +
                     '</div>' +
                     '<div class="product-info">' +
                     '<h3 class="product-name">' + name + subText + '</h3>' +
@@ -453,6 +453,8 @@ function toggleMobileMenu() {
 
     </script>
 
-    <script src="/js/chatbot.js"></script>
+
+<script src="/js/chat-bot.js"></script>
+<script src="/js/chatbot.js"></script>
 </body>
 </html>

@@ -1101,7 +1101,7 @@ ul { list-style: none; }
 /* ===== WHATSAPP FLOATING BUTTON ===== */
 .whatsapp-float {
     position: fixed;
-    bottom: 100px;
+    bottom: 24px;
     right: 24px;
     width: 60px;
     height: 60px;
