@@ -532,3 +532,12 @@ var AISelector = (function() {
     };
 
 })();
+
+// Auto-initialize when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AISelector !== 'undefined') AISelector.init();
+    });
+} else {
+    if (typeof AISelector !== 'undefined') AISelector.init();
+}

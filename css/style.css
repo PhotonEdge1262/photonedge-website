@@ -1101,8 +1101,8 @@ ul { list-style: none; }
 /* ===== WHATSAPP FLOATING BUTTON ===== */
 .whatsapp-float {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 100px;
+    right: 24px;
     width: 60px;
     height: 60px;
     background-color: #25D366;
@@ -1189,8 +1189,8 @@ ul { list-style: none; }
 
 @media (max-width: 767px) {
     .whatsapp-float {
-        bottom: 20px;
-        right: 20px;
+        bottom: 90px;
+        right: 16px;
         width: 55px;
         height: 55px;
     }
@@ -3610,8 +3610,8 @@ ul { list-style: none; }
 /* Request Quote Float Mobile */
 @media (max-width: 768px) {
     .request-quote-float { 
-        right: auto; left: 50%; top: auto; bottom: 90px; 
-        transform: translateX(-50%);
+        right: 16px; left: auto; top: auto; bottom: 160px; 
+        transform: none;
     }
     .quote-btn { 
         writing-mode: horizontal-tb; text-orientation: initial;
