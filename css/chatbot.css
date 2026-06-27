@@ -991,3 +991,102 @@
     border-radius: 12px;
     border-left: 4px solid #3b82f6;
 }
+
+/* ===== AI Selector Mobile Responsive ===== */
+@media (max-width: 768px) {
+    .ai-selector-section {
+        padding: 40px 0;
+    }
+    .ai-selector-header h2 {
+        font-size: 22px;
+    }
+    .ai-selector-header p {
+        font-size: 14px;
+    }
+    .ai-selector-box {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+    .ai-options-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 10px;
+        margin: 16px 0;
+    }
+    .ai-wavelength-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+    .ai-component-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    .ai-option-card {
+        padding: 14px 8px;
+        min-height: 80px;
+        border-radius: 10px;
+    }
+    .ai-option-icon {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+    .ai-option-label {
+        font-size: 12px;
+    }
+    .ai-step-title {
+        font-size: 17px;
+    }
+    .ai-step-desc {
+        font-size: 13px;
+    }
+    .ai-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .ai-btn {
+        width: 100%;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+    .ai-result-card {
+        padding: 12px;
+    }
+    .ai-result-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .vision-text {
+        font-size: 14px;
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-options-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .ai-wavelength-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ai-component-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ai-option-card {
+        padding: 12px 6px;
+        min-height: 70px;
+    }
+    .ai-option-icon {
+        font-size: 20px;
+        margin-bottom: 4px;
+    }
+    .ai-option-label {
+        font-size: 11px;
+    }
+    .ai-step-title {
+        font-size: 15px;
+    }
+    .ai-selector-box {
+        padding: 16px 12px;
+    }
+    .ai-selector-header h2 {
+        font-size: 20px;
+    }
+}

@@ -301,6 +301,54 @@ var AISelector = (function() {
         selectedWavelength = '';
         selectedComponent = '';
         renderWizard();
+        
+        // Event delegation for reliable click/touch handling
+        var container = document.getElementById('aiSelectorContent');
+        if (container) {
+            container.addEventListener('click', function(e) {
+                var target = e.target;
+                // Walk up to find element with data-action
+                while (target && target !== container) {
+                    if (target.getAttribute && target.getAttribute('data-action')) {
+                        var action = target.getAttribute('data-action');
+                        var value = target.getAttribute('data-value') || '';
+                        if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (action === 'selectApp') selectApp(value);
+                        else if (action === 'selectWavelength') selectWavelength(value);
+                        else if (action === 'selectComponent') selectComponent(value);
+                        else if (action === 'nextStep') nextStep();
+                        else if (action === 'prevStep') prevStep();
+                        else if (action === 'showResults') showResults();
+                        else if (action === 'reset') reset();
+                        return;
+                    }
+                    target = target.parentNode;
+                }
+            });
+            // Touch support for mobile
+            container.addEventListener('touchend', function(e) {
+                var target = e.target;
+                while (target && target !== container) {
+                    if (target.getAttribute && target.getAttribute('data-action')) {
+                        var action = target.getAttribute('data-action');
+                        var value = target.getAttribute('data-value') || '';
+                        if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
+                        e.preventDefault();
+                        if (action === 'selectApp') selectApp(value);
+                        else if (action === 'selectWavelength') selectWavelength(value);
+                        else if (action === 'selectComponent') selectComponent(value);
+                        else if (action === 'nextStep') nextStep();
+                        else if (action === 'prevStep') prevStep();
+                        else if (action === 'showResults') showResults();
+                        else if (action === 'reset') reset();
+                        return;
+                    }
+                    target = target.parentNode;
+                }
+            });
+        }
     }
 
     function renderWizard() {
@@ -346,7 +394,7 @@ var AISelector = (function() {
             var app = applicationMap[key];
             var icon = icons[i] || '💡';
             var isSelected = selectedApp === key ? ' selected' : '';
-            html += '<div class="ai-option-card' + isSelected + '" onclick="AISelector.selectApp(\'' + key + '\')">';
+            html += '<div class="ai-option-card' + isSelected + '" data-action="selectApp" data-value="' + key + '">';
             html += '<div class="ai-option-icon">' + icon + '</div>';
             html += '<div class="ai-option-label">' + (lang === 'zh' ? app.zh : app.en) + '</div>';
             html += '</div>';
@@ -354,7 +402,7 @@ var AISelector = (function() {
 
         html += '</div>';
         html += '<div class="ai-nav">';
-        html += '<button class="ai-btn ai-btn-next' + (!selectedApp ? ' disabled' : '') + '" onclick="AISelector.nextStep()"' + (!selectedApp ? ' disabled' : '') + '>' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
+        html += '<button class="ai-btn ai-btn-next' + (!selectedApp ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedApp ? ' disabled' : '') + '>' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
         html += '</div>';
         return html;
     }
@@ -372,7 +420,7 @@ var AISelector = (function() {
             var wl = wavelengthMap[key];
             var icon = wlIcons[i] || '💡';
             var isSelected = selectedWavelength === key ? ' selected' : '';
-            html += '<div class="ai-option-card' + isSelected + '" onclick="AISelector.selectWavelength(\'' + key + '\')">';
+            html += '<div class="ai-option-card' + isSelected + '" data-action="selectWavelength" data-value="' + key + '">';
             html += '<div class="ai-option-icon">' + icon + '</div>';
             html += '<div class="ai-option-label">' + (lang === 'zh' ? wl.zh : wl.en) + '</div>';
             html += '</div>';
@@ -380,8 +428,8 @@ var AISelector = (function() {
 
         html += '</div>';
         html += '<div class="ai-nav">';
-        html += '<button class="ai-btn ai-btn-back" onclick="AISelector.prevStep()">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
-        html += '<button class="ai-btn ai-btn-next' + (!selectedWavelength ? ' disabled' : '') + '" onclick="AISelector.nextStep()"' + (!selectedWavelength ? ' disabled' : '') + '">' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
+        html += '<button class="ai-btn ai-btn-back" data-action="prevStep">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
+        html += '<button class="ai-btn ai-btn-next' + (!selectedWavelength ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedWavelength ? ' disabled' : '') + '">' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
         html += '</div>';
         return html;
     }
@@ -399,7 +447,7 @@ var AISelector = (function() {
             var comp = componentTypeMap[key];
             var icon = compIcons[i] || '💡';
             var isSelected = selectedComponent === key ? ' selected' : '';
-            html += '<div class="ai-option-card' + isSelected + '" onclick="AISelector.selectComponent(\'' + key + '\')">';
+            html += '<div class="ai-option-card' + isSelected + '" data-action="selectComponent" data-value="' + key + '">';
             html += '<div class="ai-option-icon">' + icon + '</div>';
             html += '<div class="ai-option-label">' + (lang === 'zh' ? comp.zh : comp.en) + '</div>';
             html += '</div>';
@@ -407,8 +455,8 @@ var AISelector = (function() {
 
         html += '</div>';
         html += '<div class="ai-nav">';
-        html += '<button class="ai-btn ai-btn-back" onclick="AISelector.prevStep()">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
-        html += '<button class="ai-btn ai-btn-recommend" onclick="AISelector.showResults()">✨ ' + (lang === 'zh' ? '获取推荐' : 'Get Recommendations') + '</button>';
+        html += '<button class="ai-btn ai-btn-back" data-action="prevStep">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
+        html += '<button class="ai-btn ai-btn-recommend" data-action="showResults">✨ ' + (lang === 'zh' ? '获取推荐' : 'Get Recommendations') + '</button>';
         html += '</div>';
         return html;
     }
@@ -467,7 +515,7 @@ var AISelector = (function() {
         }
 
         html += '<div class="ai-nav ai-nav-results">';
-        html += '<button class="ai-btn ai-btn-back" onclick="AISelector.reset()">← ' + (lang === 'zh' ? '重新选择' : 'Start Over') + '</button>';
+        html += '<button class="ai-btn ai-btn-back" data-action="reset">← ' + (lang === 'zh' ? '重新选择' : 'Start Over') + '</button>';
         html += '<a href="/products.html" class="ai-btn ai-btn-outline">' + (lang === 'zh' ? '浏览全部产品' : 'Browse All Products') + '</a>';
         html += '<a href="/contact.html" class="ai-btn ai-btn-primary">' + (lang === 'zh' ? '联系工程师' : 'Contact Engineer') + '</a>';
         html += '</div>';
