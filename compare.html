@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
     <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
-    <title>Product Compare - PhotonEdge</title>
-        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔬</text></svg>">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://photonedgeoptics.com/css/product-card.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Material Comparison | PhotonEdge - Compare BK7, Fused Silica, CaF2, ZnSe, Ge, Si, Sapphire</title>
+    <meta name="description" content="Compare optical materials: BK7, Fused Silica, CaF2, ZnSe, Ge, Si, Sapphire. View refractive index, Abbe number, transmission range, and more.">
+    <meta property="og:title" content="Optical Material Comparison | PhotonEdge">
+    <meta property="og:description" content="Interactive comparison tool for optical materials. Compare BK7, UVFS, CaF2, ZnSe, Ge, Si, Sapphire properties.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/compare.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/compare.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PhotonEdge">
-    <meta name="twitter:description" content="Precision Optical Components Manufacturer">
-    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"}, {"@type": "ListItem", "position": 2, "name": "Compare", "item": "https://photonedgeoptics.com/compare.html"}]
+}
+    </script>
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
     <script>
@@ -28,6 +38,27 @@
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/compare.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/compare.html?lang=zh">
+
+    <!-- Tool Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PhotonEdge Optical Material Comparison Tool",
+        "description": "Compare optical materials including BK7, Fused Silica, CaF2, ZnSe, Ge, Si, Sapphire",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web Browser",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge"
+        }
+    }
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Optical Material Comparison | PhotonEdge">
+    <meta name="twitter:description" content="Compare optical materials: BK7, Fused Silica, CaF2, ZnSe, Ge, Si, Sapphire.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
     <link rel="stylesheet" href="/css/chatbot.css">
 </head>
 <body>
@@ -51,11 +82,8 @@
                     <li><a href="/blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
                     <li><a href="/case-studies.html" class="nav-link" data-i18n="navCaseStudies">Case Studies</a></li>
                     <li><a href="/contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
+                    <li><a href="/news.html" class="nav-link" data-i18n="navNews">News</a></li>
                 </ul>
-                <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    <span class="cart-badge" id="compareBadge">0</span>
-                </a>
                 <a href="/cart.html" class="cart-icon" title="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                     <span class="cart-badge" id="cartBadge">0</span>
@@ -68,249 +96,449 @@
         </div>
     </header>
 
-    <main>
-        <section class="page-header">
-            <div class="container">
-                <h1 data-i18n="compareTitle">Product Comparison</h1>
-                <p data-i18n="compareSubtitle">Compare specifications of different optical components</p>
-            </div>
-        </section>
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="comparePageTitle">Optical Material Comparison</h1>
+            <p class="page-subtitle" data-i18n="comparePageSubtitle">Compare optical material properties for your application</p>
+        </div>
+    </section>
 
-        <section class="container compare-section">
-            <div class="compare-header">
-                <h2 data-i18n="compareSelected">Selected Products</h2>
-                <div class="compare-actions">
-                    <button onclick="clearCompare(); renderCompareTable();" class="btn btn-sm" data-i18n="compareClear">Clear All</button>
-                    <a href="/products.html" class="btn btn-sm btn-success" data-i18n="compareAdd">Add Products</a>
+    <div class="request-quote-float">
+        <a href="/contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
+            <span class="quote-icon">&#9993;</span>
+            <span>Request Quote</span>
+        </a>
+    </div>
+
+    <!-- Comparison Tool Section -->
+    <section class="compare-page">
+        <div class="container">
+            <div class="compare-intro">
+                <p data-i18n="compareIntroDesc">Select materials to compare their optical, thermal, and mechanical properties. This tool helps you choose the right material for your specific application.</p>
+            </div>
+
+            <!-- Material Selector -->
+            <div class="material-selector">
+                <h3 data-i18n="compareSelectTitle">Select Materials to Compare</h3>
+                <div class="material-checkboxes" id="materialCheckboxes">
+                    <!-- Generated by JavaScript -->
                 </div>
             </div>
 
-            <div id="compareContainer">
-                <!-- 对比表格将在这里渲染 -->
+            <!-- Comparison Table -->
+            <div class="compare-table-container">
+                <table class="compare-table" id="compareTable">
+                    <thead>
+                        <tr>
+                            <th data-i18n="compareProperty">Property</th>
+                            <th data-i18n="compareMaterial">Material</th>
+                        </tr>
+                    </thead>
+                    <tbody id="compareTableBody">
+                        <!-- Generated by JavaScript -->
+                    </tbody>
+                </table>
             </div>
-        </section>
-    </main>
+
+            <!-- Notes Section -->
+            <div class="compare-notes">
+                <h3 data-i18n="compareNotesTitle">Application Guide</h3>
+                <div class="notes-grid">
+                    <div class="note-card">
+                        <h4 data-i18n="compareNoteVisible">Visible & Near-IR</h4>
+                        <p data-i18n="compareNoteVisibleDesc">BK7 and Fused Silica are ideal for applications in the visible and near-infrared spectrum. BK7 offers excellent value, while UVFS provides superior UV performance.</p>
+                    </div>
+                    <div class="note-card">
+                        <h4 data-i18n="compareNoteUV">UV Applications</h4>
+                        <p data-i18n="compareNoteUVDesc">For deep UV and UV spectroscopy, CaF2 and MgF2 offer excellent transmission. Fused Silica (JGS1) is also suitable for UV applications down to 185nm.</p>
+                    </div>
+                    <div class="note-card">
+                        <h4 data-i18n="compareNoteIR">IR Applications</h4>
+                        <p data-i18n="compareNoteIRDesc">ZnSe is the preferred choice for CO2 laser systems (10.6μm). Ge and Si cover the mid-wave and long-wave IR spectrum for thermal imaging applications.</p>
+                    </div>
+                    <div class="note-card">
+                        <h4 data-i18n="compareNoteHarsh">Harsh Environments</h4>
+                        <p data-i18n="compareNoteHarshDesc">Sapphire offers exceptional hardness and chemical resistance. DLC-coated ZnSe or Ge provides environmental protection for demanding conditions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="compare-cta">
+                <p data-i18n="compareCtaText">Need help selecting the right material for your application?</p>
+                <a href="/contact.html" class="btn btn-primary" data-i18n="compareCtaBtn">Contact Our Engineers</a>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h4>PhotonEdge</h4>
-                    <p>Precision Optical Component Manufacturer</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>PhotonEdge</h3>
+                    <p data-i18n="footerDesc">Precision Optical Components Supplier</p>
                 </div>
-                <div class="footer-column">
-                    <h4>Products</h4>
+                <div class="footer-col">
+                    <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="/products.html?cat=Lenses">Lenses</a></li>
-                        <li><a href="/products.html?cat=Mirrors">Mirrors</a></li>
-                        <li><a href="/products.html?cat=Windows">Windows</a></li>
+                        <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
+                        <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
+                        <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
+                        <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Support</h4>
+                <div class="footer-col">
+                    <h4 data-i18n="companyName">Company</h4>
                     <ul>
-                        <li><a href="/contact.html">Contact Us</a></li>
-                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                        <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="contactInfo">Contact</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                        <li>Phone: +86-13693009175</li>
+                        <li>WhatsApp: +86-13693009175</li>
+                        <li>Contact: Ms. Lin</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 PhotonEdge. All rights reserved.</p>
+                <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
+    </a>
+
     <script src="/js/translations.js"></script>
-    <script src="/js/products-data.js"></script>
-    <script src="/js/compare.js"></script>
     <script src="/js/cart.js"></script>
-
+    <script src="/js/search.js"></script>
     <script>
-        // 参数标签翻译
-        var paramLabels = {
-            en: {
-                material: "Material",
-                diameter: "Diameter",
-                diameter_tolerance: "Diameter Tolerance",
-                thickness_tolerance: "Thickness Tolerance",
-                surface_quality: "Surface Quality",
-                surface_flatness: "Surface Flatness",
-                wavelength_range: "Wavelength Range",
-                center_thickness: "Center Thickness",
-                edge_thickness: "Edge Thickness",
-                focal_length: "Focal Length",
-                coating: "Coating",
-                coatings: "Coatings",
-                reflectivity: "Reflectivity",
-                clear_aperture: "Clear Aperture",
-                chamfer: "Chamfer",
-                angular_deviation: "Angular Deviation",
-                beam_deviation: "Beam Deviation",
-                flatness: "Flatness",
-                transmittance: "Transmittance",
-                parallelism: "Parallelism",
-                ar_coating: "AR Coating",
-                dimensions: "Dimensions",
-                price: "Price",
-                category: "Category",
-                remove: "Remove"
-            },
-            zh: {
-                material: "材质",
-                diameter: "直径",
-                diameter_tolerance: "直径公差",
-                thickness_tolerance: "厚度公差",
-                surface_quality: "表面质量",
-                surface_flatness: "表面平面度",
-                wavelength_range: "波长范围",
-                center_thickness: "中心厚度",
-                edge_thickness: "边缘厚度",
-                focal_length: "焦距",
-                coating: "镀膜",
-                coatings: "镀膜",
-                reflectivity: "反射率",
-                clear_aperture: "通光孔径",
-                chamfer: "倒角",
-                angular_deviation: "角度偏差",
-                beam_deviation: "光束偏差",
-                flatness: "平面度",
-                transmittance: "透过率",
-                parallelism: "平行度",
-                ar_coating: "增透膜",
-                dimensions: "尺寸",
-                price: "价格",
-                category: "分类",
-                remove: "移除"
+    // Material Data
+    var materialsData = {
+        'BK7': {
+            nd: '1.5168',
+            v: '64.17',
+            transmission: '0.35-2.0',
+            thermal: '7.1',
+            density: '2.51',
+            hardness: '6 Mohs',
+            applications: 'Lenses, Prisms, Windows (VIS/NIR)',
+            color: '#3498db'
+        },
+        'Fused Silica': {
+            nd: '1.4585',
+            v: '67.82',
+            transmission: '0.18-3.5',
+            thermal: '0.55',
+            density: '2.20',
+            hardness: '6-7 Mohs',
+            applications: 'UV Optics, Lasers, High-Power',
+            color: '#9b59b6'
+        },
+        'CaF2': {
+            nd: '1.4338',
+            v: '95.23',
+            transmission: '0.13-8.0',
+            thermal: '18.85',
+            density: '3.18',
+            hardness: '4 Mohs',
+            applications: 'UV Spectroscopy, Excimer Lasers',
+            color: '#e67e22'
+        },
+        'ZnSe': {
+            nd: '2.4026',
+            v: 'N/A',
+            transmission: '0.5-20',
+            thermal: '7.5',
+            density: '5.27',
+            hardness: '5 Mohs',
+            applications: 'CO2 Lasers, Thermal Imaging',
+            color: '#f1c40f'
+        },
+        'Ge': {
+            nd: '4.0242',
+            v: 'N/A',
+            transmission: '2.0-14',
+            thermal: '6.1',
+            density: '5.32',
+            hardness: '6 Mohs',
+            applications: 'LWIR Thermal Imaging, FTIR',
+            color: '#27ae60'
+        },
+        'Si': {
+            nd: '3.4180',
+            v: 'N/A',
+            transmission: '1.2-8.0',
+            thermal: '2.6',
+            density: '2.33',
+            hardness: '7 Mohs',
+            applications: 'MWIR Optics, IR Cameras',
+            color: '#34495e'
+        },
+        'Sapphire': {
+            nd: '1.7682',
+            v: '72.2',
+            transmission: '0.2-5.5',
+            thermal: '5.0',
+            density: '3.98',
+            hardness: '9 Mohs',
+            applications: 'Harsh Environment, Watches, UV-VIS',
+            color: '#1abc9c'
+        }
+    };
+
+    var selectedMaterials = ['BK7', 'Fused Silica', 'CaF2'];
+
+    var propertyLabels = {
+        en: {
+            'nd': 'Refractive Index (nd)',
+            'v': 'Abbe Number',
+            'transmission': 'Transmission Range (μm)',
+            'thermal': 'Thermal Expansion (×10⁻⁶/K)',
+            'density': 'Density (g/cm³)',
+            'hardness': 'Hardness',
+            'applications': 'Typical Applications'
+        },
+        zh: {
+            'nd': '折射率 (nd)',
+            'v': '阿贝数',
+            'transmission': '透过范围 (μm)',
+            'thermal': '热膨胀系数 (×10⁻⁶/K)',
+            'density': '密度 (g/cm³)',
+            'hardness': '硬度',
+            'applications': '典型应用'
+        }
+    };
+
+    function getCurrentLangCompare() {
+        return localStorage.getItem('lang') || 'en';
+    }
+
+    function initMaterialSelector() {
+        var container = document.getElementById('materialCheckboxes');
+        var lang = getCurrentLangCompare();
+        var html = '';
+        var keys = Object.keys(materialsData);
+        for (var i = 0; i < keys.length; i++) {
+            var key = keys[i];
+            var checked = selectedMaterials.indexOf(key) !== -1 ? 'checked' : '';
+            html += '<label class="material-checkbox">' +
+                '<input type="checkbox" value="' + key + '" ' + checked + ' onchange="updateComparison()">' +
+                '<span class="material-dot" style="background:' + materialsData[key].color + '"></span>' +
+                '<span class="material-name">' + key + '</span>' +
+                '</label>';
+        }
+        container.innerHTML = html;
+    }
+
+    function updateComparison() {
+        var checkboxes = document.querySelectorAll('#materialCheckboxes input[type="checkbox"]');
+        selectedMaterials = [];
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                selectedMaterials.push(checkboxes[i].value);
             }
-        };
+        }
+        if (selectedMaterials.length === 0) {
+            selectedMaterials = ['BK7', 'Fused Silica'];
+        }
+        renderTable();
+    }
 
-        // 渲染对比表格
-        function renderCompareTable() {
-            var container = document.getElementById('compareContainer');
-            var compareList = getCompareList();
-            var lang = getCurrentLang();
-            var labels = paramLabels[lang] || paramLabels.en;
+    function renderTable() {
+        var lang = getCurrentLangCompare();
+        var tbody = document.getElementById('compareTableBody');
+        var labels = propertyLabels[lang] || propertyLabels.en;
+        
+        var properties = ['nd', 'v', 'transmission', 'thermal', 'density', 'hardness', 'applications'];
+        var html = '';
 
-            if (compareList.length === 0) {
-                container.innerHTML = '\
-                    <div class="empty-compare">\
-                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>\
-                        <h3 data-i18n="compareEmptyTitle">No products selected</h3>\
-                        <p data-i18n="compareEmptyDesc">Go to products page and add products to compare</p>\
-                        <a href="/products.html" class="btn btn-success" data-i18n="compareGoProducts">Browse Products</a>\
-                    </div>';
-                return;
+        for (var p = 0; p < properties.length; p++) {
+            var prop = properties[p];
+            html += '<tr class="compare-row">';
+            html += '<td class="compare-label">' + labels[prop] + '</td>';
+            for (var m = 0; m < selectedMaterials.length; m++) {
+                var mat = selectedMaterials[m];
+                var value = materialsData[mat][prop];
+                var color = materialsData[mat].color;
+                html += '<td class="compare-value" style="border-left: 3px solid ' + color + ';">' + value + '</td>';
             }
-
-            // 获取产品数据
-            var products = [];
-            for (var i = 0; i < compareList.length; i++) {
-                for (var j = 0; j < PRODUCTS.length; j++) {
-                    if (PRODUCTS[j].id === compareList[i]) {
-                        products.push(PRODUCTS[j]);
-                        break;
-                    }
-                }
-            }
-
-            // 收集所有参数key
-            var allParams = {};
-            products.forEach(function(p) {
-                if (p.parameters) {
-                    for (var key in p.parameters) {
-                        allParams[key] = true;
-                    }
-                }
-            });
-
-            var paramKeys = Object.keys(allParams);
-
-            // 构建表格HTML
-            var html = '<div class="compare-table-wrapper"><table class="compare-table">';
-            
-            // 表头：产品图片和名称
-            html += '<thead><tr><th class="param-col"></th>';
-            products.forEach(function(p) {
-                var name = lang === 'zh' && p.nameZh ? p.nameZh : p.name;
-                html += '<th class="product-col">';
-                html += '<img src="https://photonedgeoptics.com/' + (p.image || 'images/placeholder.svg') + '" alt="' + name + '" class="compare-product-img">';
-                html += '<div class="compare-product-name">' + name + '</div>';
-                html += '<button class="btn-remove" onclick="removeFromCompare(' + p.id + '); renderCompareTable();">✕</button>';
-                html += '</th>';
-            });
-            html += '</tr></thead>';
-
-            // 表体：参数对比
-            html += '<tbody>';
-            
-            // 分类
-            html += '<tr><td class="param-name">' + labels.category + '</td>';
-            products.forEach(function(p) {
-                var category = lang === 'zh' && p.categoryZh ? p.categoryZh : p.category;
-                html += '<td class="param-value">' + category + '</td>';
-            });
             html += '</tr>';
-
-            // 价格
-            html += '<tr><td class="param-name">' + labels.price + '</td>';
-            products.forEach(function(p) {
-                var price = p.price ? '$' + p.price : '-';
-                html += '<td class="param-value">' + price + '</td>';
-            });
-            html += '</tr>';
-
-            // 其他参数
-            paramKeys.forEach(function(key) {
-                var label = labels[key] || key;
-                html += '<tr><td class="param-name">' + label + '</td>';
-                products.forEach(function(p) {
-                    var value = p.parameters && p.parameters[key] ? p.parameters[key] : '-';
-                    html += '<td class="param-value">' + value + '</td>';
-                });
-                html += '</tr>';
-            });
-
-            html += '</tbody></table></div>';
-
-            // 添加底部操作区
-            html += '<div class="compare-footer">';
-            html += '<button onclick="sendCompareInquiry()" class="btn btn-success" data-i18n="compareInquiry">Send Inquiry for These Products</button>';
-            html += '</div>';
-
-            container.innerHTML = html;
         }
 
-        // 发送对比产品询价
-        function sendCompareInquiry() {
-            var compareList = getCompareList();
-            if (compareList.length === 0) return;
+        tbody.innerHTML = html;
+    }
 
-            var lang = getCurrentLang();
-            
-            // 收集产品名称
-            var productNames = [];
-            for (var i = 0; i < compareList.length; i++) {
-                for (var j = 0; j < PRODUCTS.length; j++) {
-                    if (PRODUCTS[j].id === compareList[i]) {
-                        var name = lang === 'zh' && PRODUCTS[j].nameZh ? PRODUCTS[j].nameZh : PRODUCTS[j].name;
-                        productNames.push(name);
-                        break;
-                    }
-                }
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof updatePageTranslations === 'function') updatePageTranslations();
+        var lang = getCurrentLang();
+        document.querySelectorAll('.lang-btn').forEach(function(btn) {
+            btn.classList.remove('active');
+            if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+                btn.classList.add('active');
             }
-
-            // 构建主题
-            var subject = 'Product Inquiry: ' + productNames.join(', ');
-            
-            // 跳转到联系页，带上主题
-            window.location.href = 'contact.html?subject=' + encodeURIComponent(subject);
-        }
-
-        // 页面加载时渲染
-        document.addEventListener('DOMContentLoaded', function() {
-            renderCompareTable();
         });
+        initMaterialSelector();
+        renderTable();
+    });
+    </script>
+<script>
+
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+
     </script>
     <script src="/js/chatbot.js"></script>
+    <style>
+        .compare-page {
+            padding: 40px 0;
+        }
+        .compare-intro {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: var(--gray);
+        }
+        .material-selector {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        }
+        .material-selector h3 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+        .material-checkboxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .material-checkbox {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 15px;
+            background: var(--light);
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .material-checkbox:hover {
+            background: var(--light-dark);
+        }
+        .material-checkbox input {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+        .material-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        .material-name {
+            font-weight: 500;
+        }
+        .compare-table-container {
+            overflow-x: auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        .compare-table th,
+        .compare-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--light);
+        }
+        .compare-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        .compare-table th:not(:first-child) {
+            min-width: 150px;
+        }
+        .compare-label {
+            font-weight: 600;
+            color: var(--primary-dark);
+            background: var(--light);
+            width: 220px;
+        }
+        .compare-value {
+            background: white;
+        }
+        .compare-row:hover td {
+            background: var(--light);
+        }
+        .compare-notes {
+            margin-top: 40px;
+        }
+        .compare-notes h3 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--primary);
+        }
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .note-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+        .note-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .note-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .compare-cta {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            border-radius: 12px;
+            color: white;
+        }
+        .compare-cta p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        @media (max-width: 768px) {
+            .compare-table {
+                font-size: 0.85rem;
+            }
+            .compare-label {
+                width: 160px;
+            }
+        }
+    </style>
 </body>
 </html>
