@@ -6,9 +6,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optical Calculators | PhotonEdge</title>
-    <meta name="description" content="Free optical calculators for lens focal length, coating transmission, and optical magnification. Calculate your optical component needs with our free tools.">
-    <meta name="keywords" content="光学元件,光学透镜,棱镜,反射镜,滤光片,激光扩束镜,偏振片,光学窗口片,光学镀膜,定制光学,北京恒鼎光,PhotonEdge">
+    <title>Free Optical Calculators | Focal Length, Coating & Magnification Tools - PhotonEdge</title>
+    <meta name="description" content="Free online optical calculators for engineers. Calculate focal length, coating transmission, magnification, laser safety OD, beam divergence, Fresnel reflection, Snell's law & diffraction limit. Professional tools from precision optics manufacturer PhotonEdge.">
+    <meta name="keywords" content="focal length calculator, optical magnification calculator, laser safety calculator, beam divergence calculator, optical coating calculator, Fresnel reflection calculator, Snell's law calculator, diffraction limit calculator, free optical tools, PhotonEdge calculators, optical components manufacturer, custom optics, precision lenses supplier, 焦距计算器,光学计算器,激光安全计算器">
     <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
     <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
     <link rel="stylesheet" href="/css/style.css">
@@ -34,8 +34,10 @@
         .calc-btn:hover { background: var(--accent-dark); transform: translateY(-2px); }
         .back-link { display: inline-block; margin-bottom: 20px; color: var(--accent); text-decoration: none; font-weight: 500; }
         @media (max-width: 768px) {
-            .calculator-grid { grid-template-columns: 1fr; }
-            .calculator-box { padding: 24px; }
+            .calculator-grid { grid-template-columns: 1fr; gap: 16px; }
+            .calculator-box { padding: 16px; }
+            .input-group input, .input-group select { font-size: 16px; }
+            input[type="number"] { font-size: 16px; }
         }
     </style>
     
@@ -190,7 +192,7 @@
                 <div id="focal-calculator" class="calculator-box" style="display: none;">
                     <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcFocalH2">&#128269; Focal Length Calculator</h2>
                     <div class="input-group">
-                        <label>Calculate:</label>
+                        <label data-i18n="calcCalcLabel">Calculate:</label>
                         <select id="focal-calc-type" onchange="updateFocalInputs()">
                             <option value="focal">Focal Length (f)</option>
                             <option value="object">Object Distance (d&#8320;)</option>
@@ -199,11 +201,11 @@
                     </div>
                     <div id="focal-inputs">
                         <div class="input-group" id="object-input">
-                            <label>Object Distance d&#8320; (mm):</label>
+                            <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
                             <input type="number" id="object-distance" placeholder="e.g., 100" step="any">
                         </div>
                         <div class="input-group" id="image-input">
-                            <label>Image Distance d&#7522; (mm):</label>
+                            <label data-i18n="calcImgDistLabel">Image Distance d&#7522; (mm):</label>
                             <input type="number" id="image-distance" placeholder="e.g., 50" step="any">
                         </div>
                     </div>
@@ -217,7 +219,7 @@
                 <div id="coating-calculator" class="calculator-box" style="display: none;">
                     <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcCoatingH2">&#128161; Coating Transmission Calculator</h2>
                     <div class="input-group">
-                        <label>Coating Type:</label>
+                        <label data-i18n="calcCoatTypeLabel">Coating Type:</label>
                         <select id="coating-type" onchange="updateCoatingInputs()">
                             <option value="ar">Anti-Reflection (AR) Coating</option>
                             <option value="hr">High-Reflection (HR) Coating</option>
@@ -225,11 +227,11 @@
                         </select>
                     </div>
                     <div class="input-group" id="wavelength-input">
-                        <label>Wavelength (nm):</label>
+                        <label data-i18n="calcWavelenLabel">Wavelength (nm):</label>
                         <input type="number" id="wavelength" placeholder="e.g., 1064" value="1064">
                     </div>
                     <div class="input-group" id="surface-count-input">
-                        <label>Number of Surfaces:</label>
+                        <label data-i18n="calcSurfacesLabel">Number of Surfaces:</label>
                         <select id="surface-count">
                             <option value="1">1 Surface</option>
                             <option value="2" selected>2 Surfaces (typical lens)</option>
@@ -237,7 +239,7 @@
                         </select>
                     </div>
                     <div class="input-group" id="custom-reflect-input" style="display: none;">
-                        <label>Single Surface Reflectivity (%):</label>
+                        <label data-i18n="calcReflectLabel">Single Surface Reflectivity (%):</label>
                         <input type="number" id="custom-reflect" placeholder="e.g., 0.2" step="0.1" min="0" max="100">
                     </div>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateCoating()">Calculate</button>
@@ -250,7 +252,7 @@
                 <div id="magnification-calculator" class="calculator-box" style="display: none;">
                     <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcMagH2">&#128208; Optical Magnification Calculator</h2>
                     <div class="input-group">
-                        <label>Calculate:</label>
+                        <label data-i18n="calcCalcLabel">Calculate:</label>
                         <select id="mag-calc-type" onchange="updateMagInputs()">
                             <option value="mag">Magnification (M)</option>
                             <option value="focal">Focal Length (f)</option>
@@ -259,11 +261,11 @@
                     </div>
                     <div id="mag-inputs">
                         <div class="input-group" id="mag-focal-input">
-                            <label>Focal Length f (mm):</label>
+                            <label data-i18n="calcFocalLenLabel">Focal Length f (mm):</label>
                             <input type="number" id="mag-focal" placeholder="e.g., 50" step="any">
                         </div>
                         <div class="input-group" id="mag-distance-input">
-                            <label>Object Distance d&#8320; (mm):</label>
+                            <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
                             <input type="number" id="mag-distance" placeholder="e.g., 100" step="any">
                         </div>
                     </div>
@@ -780,5 +782,9 @@
         }
     </script>
     <script src="/js/chatbot.js"></script>
+    <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+        <h2>Free Optical Calculators for Engineers</h2>
+        <p>PhotonEdge provides free online optical calculators for optical engineers and researchers. Our tools include focal length calculator, optical magnification calculator, laser safety OD calculator, beam divergence calculator, Fresnel reflection calculator, Snell's law calculator, and diffraction limit calculator. As a leading optical components manufacturer and custom optics provider, PhotonEdge helps engineers select precision lenses, mirrors, prisms, and optical coatings. Whether you need BK7 plano-convex lenses, fused silica windows, or custom optical solutions, our calculators help you make informed decisions. Precision lenses supplier PhotonEdge serves 500+ global clients with high-quality optical components.</p>
+    </div>
 </body>
 </html>

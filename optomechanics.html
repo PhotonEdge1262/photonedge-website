@@ -11,8 +11,9 @@
     <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optomechanical Solutions | PhotonEdge - Precision Optical Mounts & Stages</title>
-    <meta name="description" content="Professional optomechanical components including optical mounts,镜筒, stages, and custom integration solutions for precision optical systems.">
+    <title>Optomechanical Solutions | Optical Mounts, Stages & Posts - PhotonEdge Custom Optics</title>
+    <meta name="description" content="Professional optomechanical solutions: precision optical mounts, lens tubes, translation stages, rotation stages, optical posts & breadboards. Custom integration from trusted optical components manufacturer PhotonEdge.">
+    <meta name="keywords" content="optomechanical solutions, optical mounts, precision stages, lens tubes, optical posts, breadboards, custom optics manufacturer, optical component integration, PhotonEdge">
     <meta property="og:title" content="Optomechanical Solutions | PhotonEdge">
     <meta property="og:description" content="Precision optomechanical components for optical systems. Mirror mounts, tubes, translation stages, rotation stages, and custom integration.">
     <meta property="og:type" content="website">
@@ -102,9 +103,9 @@
     </section>
 
     <div class="request-quote-float">
-        <a href="/contact.html" class="quote-btn" data-i18n="requestQuoteBtn">
+        <a href="/contact.html" class="quote-btn">
             <span class="quote-icon">&#9993;</span>
-            <span>Request Quote</span>
+            <span data-i18n="requestQuoteBtn">Request Quote</span>
         </a>
     </div>
 
@@ -428,6 +429,22 @@ function toggleMobileMenu() {
             color: rgba(255,255,255,0.9);
             max-width: 600px;
             margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .container { padding-left: 16px; padding-right: 16px; }
+            section { padding-top: 40px; padding-bottom: 40px; }
+            .section-title h2 { font-size: 24px; }
+            .section-title p { font-size: 14px; }
+            .product-grid { grid-template-columns: 1fr; gap: 20px; }
+            .product-card { padding: 20px; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .cta-content h2 { font-size: 22px; }
+            table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            input, select, textarea { font-size: 16px !important; }
+        }
+        @media (max-width: 480px) {
+            .section-title h2 { font-size: 20px; }
+            .product-card { padding: 16px; }
         }
     </style>
 </body>

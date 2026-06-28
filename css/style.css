@@ -4501,3 +4501,38 @@ img[loading="lazy"] {
     .blog-hero h1 { font-size: 28px; }
     .blog-hero { padding: 100px 0 40px; }
 }
+
+/* ===== V56 Mobile Global Improvements ===== */
+@media (max-width: 768px) {
+    /* Prevent iOS zoom on form inputs */
+    input[type="number"],
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+    /* Improve touch targets */
+    a.btn, button.btn, .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Table horizontal scroll on mobile */
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    /* Reduce padding on mobile */
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

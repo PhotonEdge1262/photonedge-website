@@ -180,5 +180,65 @@ var BLOG_POSTS = [
     "readTime": "11 min",
     "image": "images/blog/high-power-laser-materials.jpg",
     "author": "PhotonEdge Engineering Team"
+  },
+  {
+    "id": 16,
+    "title": "How to Choose a Precision Lenses Supplier: BK7 Plano-Convex vs Bi-Convex Guide",
+    "slug": "precision-lenses-supplier-bk7-guide",
+    "url": "/blog.html",
+    "excerpt": "Comparing BK7 plano-convex and bi-convex lenses for optical system design. Learn when to choose each lens type, key specifications to verify with your precision lenses supplier, and how custom optics manufacturers like PhotonEdge ensure quality.",
+    "category": "Technical Guide",
+    "date": "2026-06-28",
+    "readTime": "7 min",
+    "image": "images/blog/choose-optical-lens.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 17,
+    "title": "Optical Components Manufacturer Guide: Mirrors, Prisms & Beamsplitters for Laser Systems",
+    "slug": "optical-components-laser-systems-guide",
+    "url": "/blog.html",
+    "excerpt": "Complete guide to selecting optical components for laser systems from a trusted optical components manufacturer. Covers mirror coatings, prism types, beamsplitter specifications, and custom optics capabilities for industrial and research applications.",
+    "category": "Technical Guide",
+    "date": "2026-06-28",
+    "readTime": "8 min",
+    "image": "images/blog/laser-optics-guide.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 18,
+    "title": "UV Fused Silica vs BK7 Glass: Complete Material Selection Guide for Optical Engineers",
+    "slug": "uv-fused-silica-vs-bk7-material-guide",
+    "url": "/blog.html",
+    "excerpt": "Detailed comparison of UV fused silica and BK7 optical glass for engineers. Covers transmission range, thermal properties, laser damage threshold, and cost considerations. Use our BK7 vs fused silica comparison to make the right material choice.",
+    "category": "Technical Guide",
+    "date": "2026-06-28",
+    "readTime": "8 min",
+    "image": "images/blog/bk7-vs-fused-silica.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 19,
+    "title": "Custom Optics Manufacturing: From Specification to Delivery at PhotonEdge",
+    "slug": "custom-optics-manufacturing-process",
+    "url": "/blog.html",
+    "excerpt": "Inside look at the custom optics manufacturing process. Learn how precision optics manufacturers handle custom specifications, quality control, coating processes, and delivery timelines for OEM optical components and bespoke optical solutions.",
+    "category": "Technical Guide",
+    "date": "2026-06-28",
+    "readTime": "6 min",
+    "image": "images/blog/custom-optics-spec.jpg",
+    "author": "PhotonEdge Technical Team"
+  },
+  {
+    "id": 20,
+    "title": "Anti-Reflection Coating Selection: AR Coatings for Visible, UV, and IR Applications",
+    "slug": "anti-reflection-coating-selection-guide",
+    "url": "/blog.html",
+    "excerpt": "Comprehensive guide to anti-reflection coating selection across visible, UV, and IR wavelengths. Covers single-layer MgF2, broadband AR coatings, V-coat designs, laser damage threshold considerations, and how to specify AR coatings for your optical components.",
+    "category": "Technical Guide",
+    "date": "2026-06-28",
+    "readTime": "7 min",
+    "image": "images/blog/ar-coatings-guide.jpg",
+    "author": "PhotonEdge Technical Team"
   }
 ];
