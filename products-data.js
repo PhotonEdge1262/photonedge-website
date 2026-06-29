@@ -587,7 +587,7 @@ var PRODUCTS = [
         "backFocalLength": "498.20mm"
       }
     ],
-    "diagram": "images/diagrams/plano-convex.svg"
+    "diagram": ""
   },
   {
     "id": 2,
@@ -1025,7 +1025,7 @@ var PRODUCTS = [
         "backFocalLength": "199.00mm"
       }
     ],
-    "diagram": "images/diagrams/bi-convex.svg"
+    "diagram": ""
   },
   {
     "id": 3,
@@ -1430,7 +1430,7 @@ var PRODUCTS = [
         "backFocalLength": "-101.65mm"
       }
     ],
-    "diagram": "images/diagrams/plano-concave.svg"
+    "diagram": ""
   },
   {
     "id": 4,
@@ -1643,7 +1643,7 @@ var PRODUCTS = [
         "backFocalLength": "-500.85mm"
       }
     ],
-    "diagram": "images/diagrams/bi-concave.svg"
+    "diagram": ""
   },
   {
     "id": 5,
@@ -1817,7 +1817,7 @@ var PRODUCTS = [
         "backFocalLength": "995.42mm"
       }
     ],
-    "diagram": "images/diagrams/meniscus.svg"
+    "diagram": ""
   },
   {
     "id": 6,
@@ -1919,7 +1919,7 @@ var PRODUCTS = [
         "backFocalLength": "-995.30mm"
       }
     ],
-    "diagram": "images/diagrams/meniscus.svg"
+    "diagram": ""
   },
   {
     "id": 7,
@@ -2173,7 +2173,7 @@ var PRODUCTS = [
         "backFocalLength": "246.02mm"
       }
     ],
-    "diagram": "images/diagrams/plano-convex.svg"
+    "diagram": ""
   },
   {
     "id": 8,
@@ -2451,7 +2451,7 @@ var PRODUCTS = [
         "backFocalLength": "499.00mm"
       }
     ],
-    "diagram": "images/diagrams/bi-convex.svg"
+    "diagram": ""
   },
   {
     "id": 9,
@@ -2689,7 +2689,7 @@ var PRODUCTS = [
         "backFocalLength": "-1001.71mm"
       }
     ],
-    "diagram": "images/diagrams/plano-concave.svg"
+    "diagram": ""
   },
   {
     "id": 10,
@@ -2991,7 +2991,7 @@ var PRODUCTS = [
         "backFocalLength": "-176.00mm"
       }
     ],
-    "diagram": "images/diagrams/bi-concave.svg"
+    "diagram": ""
   },
   {
     "id": 11,
@@ -3561,7 +3561,7 @@ var PRODUCTS = [
         "backFocalLength": "126.91mm"
       }
     ],
-    "diagram": "images/diagrams/cylindrical.svg"
+    "diagram": ""
   },
   {
     "id": 12,
@@ -4061,7 +4061,7 @@ var PRODUCTS = [
         "backFocalLength": "-401.98mm"
       }
     ],
-    "diagram": "images/diagrams/cylindrical.svg"
+    "diagram": ""
   },
   {
     "id": 13,
@@ -4201,7 +4201,7 @@ var PRODUCTS = [
         "backFocalLength": "72.60mm"
       }
     ],
-    "diagram": "images/diagrams/cylindrical.svg"
+    "diagram": ""
   },
   {
     "id": 14,
@@ -4341,7 +4341,7 @@ var PRODUCTS = [
         "backFocalLength": "-202.60mm"
       }
     ],
-    "diagram": "images/diagrams/cylindrical.svg"
+    "diagram": ""
   },
   {
     "id": 15,
@@ -4907,7 +4907,7 @@ var PRODUCTS = [
         "backFocalLength": "994.60mm"
       }
     ],
-    "diagram": "images/diagrams/achromatic.svg"
+    "diagram": ""
   },
   {
     "id": 16,
@@ -5113,7 +5113,7 @@ var PRODUCTS = [
         "workingDistance": "100mm"
       }
     ],
-    "diagram": "images/diagrams/plano-convex.svg"
+    "diagram": ""
   },
   {
     "id": 17,
@@ -5195,7 +5195,7 @@ var PRODUCTS = [
         "diameter": "15.00mm"
       }
     ],
-    "diagram": "images/diagrams/ball-lens.svg"
+    "diagram": ""
   },
   {
     "id": 18,
@@ -5276,7 +5276,7 @@ var PRODUCTS = [
         "diameter": "15.00mm"
       }
     ],
-    "diagram": "images/diagrams/ball-lens.svg"
+    "diagram": ""
   },
   {
     "id": 19,
@@ -5417,7 +5417,7 @@ var PRODUCTS = [
         "length": "20.00mm"
       }
     ],
-    "diagram": "images/diagrams/rod-lens.svg"
+    "diagram": ""
   },
   {
     "id": 20,
@@ -5557,7 +5557,7 @@ var PRODUCTS = [
         "length": "20.00mm"
       }
     ],
-    "diagram": "images/diagrams/rod-lens.svg"
+    "diagram": ""
   },
   {
     "id": 21,
@@ -5720,7 +5720,7 @@ var PRODUCTS = [
         "backFocalLength": "24.90mm"
       }
     ],
-    "diagram": "images/diagrams/aspherical.svg"
+    "diagram": ""
   },
   {
     "id": 22,
@@ -5968,7 +5968,7 @@ var PRODUCTS = [
         "maxOutputSpot": "30mm"
       }
     ],
-    "diagram": "images/diagrams/beam-expander.svg"
+    "diagram": ""
   },
   {
     "id": 23,
@@ -6040,7 +6040,7 @@ var PRODUCTS = [
         "parfocalDistance": "45mm"
       }
     ],
-    "diagram": "images/diagrams/microscope-objective.svg"
+    "diagram": ""
   },
   {
     "id": 24,
@@ -6284,7 +6284,7 @@ var PRODUCTS = [
         "thickness": "8mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-bk7-windows.svg"
   },
   {
     "id": 25,
@@ -6486,7 +6486,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.svg"
   },
   {
     "id": 26,
@@ -6622,7 +6622,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-sapphire-windows.svg"
   },
   {
     "id": 27,
@@ -6764,7 +6764,7 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-caf2-windows.svg"
   },
   {
     "id": 28,
@@ -6888,7 +6888,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-ge-windows.svg"
   },
   {
     "id": 29,
@@ -7036,7 +7036,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": "images/diagrams/ltoptic-si-windows.svg"
   },
   {
     "id": 30,
@@ -7154,7 +7154,7 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/window.svg"
+    "diagram": ""
   },
   {
     "id": 31,
@@ -7328,7 +7328,7 @@ var PRODUCTS = [
         "reflectivity": ">98"
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.svg"
   },
   {
     "id": 32,
@@ -7501,7 +7501,7 @@ var PRODUCTS = [
         "reflectivity": ""
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": ""
   },
   {
     "id": 33,
@@ -7827,7 +7827,7 @@ var PRODUCTS = [
         "wavelength": ""
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.svg"
   },
   {
     "id": 34,
@@ -7966,7 +7966,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.svg"
   },
   {
     "id": 35,
@@ -8217,7 +8217,7 @@ var PRODUCTS = [
         "wavelength": "200-400nm"
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg"
   },
   {
     "id": 36,
@@ -8356,7 +8356,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg"
   },
   {
     "id": 37,
@@ -8484,7 +8484,7 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/mirror.svg"
+    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.svg"
   },
   {
     "id": 38,
@@ -8595,7 +8595,7 @@ var PRODUCTS = [
         "edgeC": "50.80mm"
       }
     ],
-    "diagram": "images/diagrams/right-angle-prism.svg"
+    "diagram": "images/diagrams/ltoptic-bk7-right-angle-prisms.png"
   },
   {
     "id": 39,
@@ -8706,7 +8706,7 @@ var PRODUCTS = [
         "edgeC": "50.80mm"
       }
     ],
-    "diagram": "images/diagrams/right-angle-prism.svg"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-right-angle-prisms.png"
   },
   {
     "id": 40,
@@ -8762,7 +8762,7 @@ var PRODUCTS = [
         "dimensionH": "25.40mm"
       }
     ],
-    "diagram": "images/diagrams/penta-prism.svg"
+    "diagram": "images/diagrams/ltoptic-penta-prisms.png"
   },
   {
     "id": 41,
@@ -8819,7 +8819,7 @@ var PRODUCTS = [
         "height": "52.50mm"
       }
     ],
-    "diagram": "images/diagrams/corner-cube-prism.svg"
+    "diagram": "images/diagrams/ltoptic-corner-cube-prisms.png"
   },
   {
     "id": 42,
@@ -8881,7 +8881,7 @@ var PRODUCTS = [
         "base": "15.00mm"
       }
     ],
-    "diagram": "images/diagrams/dove-prism.svg"
+    "diagram": "images/diagrams/ltoptic-dove-prisms.png"
   },
   {
     "id": 43,
@@ -8932,7 +8932,7 @@ var PRODUCTS = [
         "dimensionH": "38.10mm"
       }
     ],
-    "diagram": "images/diagrams/equilateral-prism.svg"
+    "diagram": "images/diagrams/ltoptic-equilateral-dispersing-prisms.png"
   },
   {
     "id": 44,
@@ -8973,7 +8973,7 @@ var PRODUCTS = [
         "dimensionH": "56.60mm"
       }
     ],
-    "diagram": "images/diagrams/roof-prism.svg"
+    "diagram": ""
   },
   {
     "id": 45,
@@ -9559,7 +9559,7 @@ var PRODUCTS = [
         "peakTransmission": ">70"
       }
     ],
-    "diagram": "images/diagrams/bandpass-filter.svg"
+    "diagram": ""
   },
   {
     "id": 46,
@@ -9735,7 +9735,7 @@ var PRODUCTS = [
         "transmission": "0.1%"
       }
     ],
-    "diagram": "images/diagrams/nd-filter.svg"
+    "diagram": ""
   },
   {
     "id": 47,
@@ -9843,7 +9843,7 @@ var PRODUCTS = [
         "diameter": "100.00mm"
       }
     ],
-    "diagram": "images/diagrams/nd-filter.svg"
+    "diagram": ""
   },
   {
     "id": 48,
@@ -9889,7 +9889,7 @@ var PRODUCTS = [
         "transmissionAt334nm": ">=86.0%"
       }
     ],
-    "diagram": "images/diagrams/bandpass-filter.svg"
+    "diagram": ""
   },
   {
     "id": 49,
@@ -9965,7 +9965,7 @@ var PRODUCTS = [
         "diameter": "25.4mm"
       }
     ],
-    "diagram": "images/diagrams/bandpass-filter.svg"
+    "diagram": ""
   },
   {
     "id": 51,
@@ -10136,7 +10136,7 @@ var PRODUCTS = [
         "shape": "Square"
       }
     ],
-    "diagram": "images/diagrams/plate-beamsplitter.svg"
+    "diagram": "images/diagrams/ltoptic-beamsplitter-plates.gif"
   },
   {
     "id": 52,
@@ -10432,7 +10432,7 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": "images/diagrams/cube-beamsplitter.svg"
+    "diagram": "images/diagrams/ltoptic-cube-beamsplitters.gif"
   },
   {
     "id": 53,
@@ -10728,7 +10728,7 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": "images/diagrams/cube-beamsplitter.svg"
+    "diagram": ""
   },
   {
     "id": 54,
@@ -11056,7 +11056,7 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": "images/diagrams/cube-beamsplitter.svg"
+    "diagram": ""
   },
   {
     "id": 55,
@@ -11391,7 +11391,7 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/waveplate.svg"
+    "diagram": "images/diagrams/ltoptic-multiple-order-waveplates.png"
   },
   {
     "id": 56,
@@ -11543,7 +11543,7 @@ var PRODUCTS = [
         "retardation": "λ/4@ 1064nm λ@ 532nm"
       }
     ],
-    "diagram": "images/diagrams/waveplate.svg"
+    "diagram": ""
   },
   {
     "id": 57,
@@ -11878,7 +11878,7 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/waveplate.svg"
+    "diagram": "images/diagrams/ltoptic-cemented-zero-order-waveplates.png"
   },
   {
     "id": 58,
@@ -12169,7 +12169,7 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/waveplate.svg"
+    "diagram": "images/diagrams/ltoptic-air-spaced-zero-order-waveplates.gif"
   },
   {
     "id": 59,
@@ -12204,7 +12204,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/polarizer.svg"
+    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.svg"
   },
   {
     "id": 60,
@@ -12239,7 +12239,7 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/polarizer.svg"
+    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.svg"
   },
   {
     "id": 61,
@@ -12305,7 +12305,7 @@ var PRODUCTS = [
         "extinctionRatio": ">1000:1"
       }
     ],
-    "diagram": "images/diagrams/polarizer.svg"
+    "diagram": ""
   },
   {
     "id": 62,
@@ -12492,7 +12492,7 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁶"
       }
     ],
-    "diagram": "images/diagrams/glan-prism.svg"
+    "diagram": "images/diagrams/ltoptic-glan-taylor-prisms.jpg"
   },
   {
     "id": 63,
@@ -12637,7 +12637,7 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁶"
       }
     ],
-    "diagram": "images/diagrams/glan-prism.svg"
+    "diagram": "images/diagrams/ltoptic-glan-laser-prisms.jpg"
   },
   {
     "id": 64,
@@ -12706,7 +12706,7 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁵"
       }
     ],
-    "diagram": "images/diagrams/glan-prism.svg"
+    "diagram": ""
   },
   {
     "id": 65,
@@ -12780,7 +12780,7 @@ var PRODUCTS = [
         "clearAperture": "20.0mm"
       }
     ],
-    "diagram": "images/diagrams/wollaston-prism.svg"
+    "diagram": "images/diagrams/ltoptic-wollaston-prisms.png"
   },
   {
     "id": 66,
@@ -12895,7 +12895,7 @@ var PRODUCTS = [
         "VLT": "60%"
       }
     ],
-    "diagram": "images/diagrams/laser-safety.svg"
+    "diagram": ""
   },
   {
     "id": 81,
@@ -13060,7 +13060,7 @@ var PRODUCTS = [
         "angleOfIncidence": "0°"
       }
     ],
-    "diagram": "images/diagrams/ndyag-output-coupler.svg"
+    "diagram": "images/diagrams/ltoptic-ndyag-output-couplers.jpg"
   },
   {
     "id": 82,
@@ -13183,6 +13183,6 @@ var PRODUCTS = [
         "angleOfIncidence": "45°"
       }
     ],
-    "diagram": "images/diagrams/dichroic-mirror.svg"
+    "diagram": "images/diagrams/ltoptic-dichroic-mirrors.png"
   }
 ];

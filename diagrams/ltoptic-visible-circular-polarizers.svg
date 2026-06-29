@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .shape { fill: #dbeafe; stroke: #3b82f6; stroke-width: 2; }
+      .inner { fill: #bfdbfe; stroke: #3b82f6; stroke-width: 1.5; }
+      .arrow { fill: #3b82f6; }
+      .label { font-family: Arial, sans-serif; font-size: 14px; fill: #334155; }
+      .label-arrow { font-family: Arial, sans-serif; font-size: 14px; fill: #3b82f6; font-weight: bold; }
+      .title { font-family: Arial, sans-serif; font-size: 12px; fill: #64748b; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect class="bg" width="400" height="200"/>
+  <circle class="shape" cx="200" cy="100" r="60"/>
+  <circle class="inner" cx="200" cy="100" r="40"/>
+  <text class="title" x="200" y="180">Front View</text>
+  <line x1="140" y1="100" x2="260" y2="100" stroke="#3b82f6" stroke-width="1.5"/>
+  <polygon class="arrow" points="140,95 145,100 140,105"/>
+  <polygon class="arrow" points="260,95 255,100 260,105"/>
+  <text class="label-arrow" x="200" y="90">Φ</text>
+</svg>
