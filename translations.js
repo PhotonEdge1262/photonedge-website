@@ -408,6 +408,32 @@ en: {
         calcFocal: "Focal Length Calculator",
         calcCoating: "Coating Transmission Calculator",
         calcMagnification: "Optical Magnification Calculator",
+        calcNATitle: "Numerical Aperture Calculator",
+        calcNADesc: "Calculate NA, acceptance angle, f-number, and resolution for optical systems",
+        calcNAH2: "\uD83D\uDD2C Numerical Aperture Calculator",
+        calcNANote: "Calculate numerical aperture, acceptance half-angle, f-number, and theoretical resolution limit.",
+        calcNAHalfAngleLabel: "Acceptance Half-Angle \u03B1 (degrees):",
+        calcNAFormula: "NA = n \u00D7 sin(\u03B1), f/# \u2248 1/(2\u00D7NA), Resolution \u2248 0.61\u00D7\u03BB/NA",
+        calcRayleighTitle: "Rayleigh Range Calculator",
+        calcRayleighDesc: "Calculate Rayleigh range, confocal parameter, and Gaussian beam propagation",
+        calcRayleighH2: "\uD83D\uDCA1 Rayleigh Range Calculator",
+        calcRayleighNote: "Calculate Rayleigh range, confocal parameter, and beam size at distance for Gaussian beams.",
+        calcBeamWaistLabel: "Beam Waist Radius w\u2080 (mm):",
+        calcRayleighFormula: "z_R = \u03C0\u00D7w\u2080\u00B2/\u03BB, Beam at z: w(z) = w\u2080\u00D7\u221A(1+(z/z_R)\u00B2)",
+        calcLIDTTitle: "LIDT Scaling Calculator",
+        calcLIDTDesc: "Scale laser damage threshold between different wavelengths, pulse durations, and beam sizes",
+        calcLIDTH2: "\u26A0 LIDT Scaling Calculator",
+        calcLIDTNote: "Scale laser-induced damage threshold between different wavelengths, pulse durations, and beam diameters.",
+        calcLIDTSection1: "Known LIDT Parameters",
+        calcLIDTSection2: "New Application Parameters",
+        calcLIDT1Label: "LIDT (J/cm\u00B2):",
+        calcLIDTWL1Label: "Wavelength \u03BB\u2081 (nm):",
+        calcLIDTTau1Label: "Pulse Duration \u03C4\u2081 (ns):",
+        calcLIDTDiam1Label: "Beam Diameter \u2205\u2081 (mm):",
+        calcLIDTWL2Label: "Wavelength \u03BB\u2082 (nm):",
+        calcLIDTTau2Label: "Pulse Duration \u03C4\u2082 (ns):",
+        calcLIDTDiam2Label: "Beam Diameter \u2205\u2082 (mm):",
+        calcLIDTFormula: "LIDT\u2082 \u2248 LIDT\u2081 \u00D7 (\u03BB\u2082/\u03BB\u2081) \u00D7 \u221A(\u03C4\u2082/\u03C4\u2081) \u00D7 (\u2205\u2081/\u2205\u2082)^0.5",
         industriesTitle: "Industries We Serve",
         catLensesDesc: "Spherical, Cylindrical, Aspheric, Ball, Rod",
         catMirrorsDesc: "Dielectric, Aluminum, Silver, Gold",
@@ -1405,6 +1431,32 @@ en: {
         "calcFocal": "焦距计算器",
         "calcCoating": "镀膜透过率计算器",
         "calcMagnification": "光学放大率计算器",
+    "calcNATitle": "数值孔径计算器",
+    "calcNADesc": "计算数值孔径、接收角、F数和光学分辨率",
+    "calcNAH2": "\uD83D\uDD2C 数值孔径计算器",
+    "calcNANote": "计算数值孔径、接收半角、F数和理论分辨率极限。",
+    "calcNAHalfAngleLabel": "接收半角 α (度):",
+    "calcNAFormula": "NA = n × sin(α), f/# ≈ 1/(2×NA), 分辨率 ≈ 0.61×λ/NA",
+    "calcRayleighTitle": "瑞利长度计算器",
+    "calcRayleighDesc": "计算瑞利长度、共焦参数和高斯光束传输特性",
+    "calcRayleighH2": "\uD83D\uDCA1 瑞利长度计算器",
+    "calcRayleighNote": "计算高斯光束的瑞利长度、共焦参数和指定距离处的光束尺寸。",
+    "calcBeamWaistLabel": "束腰半径 w₀ (mm):",
+    "calcRayleighFormula": "z_R = π×w₀²/λ，位置z处: w(z) = w₀×√(1+(z/z_R)²)",
+    "calcLIDTTitle": "LIDT缩放计算器",
+    "calcLIDTDesc": "在不同波长、脉冲宽度和光束尺寸之间缩放激光损伤阈值",
+    "calcLIDTH2": "\u26A0 LIDT缩放计算器",
+    "calcLIDTNote": "在不同波长、脉冲宽度和光束直径之间缩放激光诱导损伤阈值。",
+    "calcLIDTSection1": "已知LIDT参数",
+    "calcLIDTSection2": "新应用参数",
+    "calcLIDT1Label": "LIDT值 (J/cm²):",
+    "calcLIDTWL1Label": "波长 λ₁ (nm):",
+    "calcLIDTTau1Label": "脉冲宽度 τ₁ (ns):",
+    "calcLIDTDiam1Label": "光束直径 Ø₁ (mm):",
+    "calcLIDTWL2Label": "波长 λ₂ (nm):",
+    "calcLIDTTau2Label": "脉冲宽度 τ₂ (ns):",
+    "calcLIDTDiam2Label": "光束直径 Ø₂ (mm):",
+    "calcLIDTFormula": "LIDT₂ ≈ LIDT₁ × (λ₂/λ₁) × (τ₂/τ₁) × (Ø₁/Ø₂)^0.5",
         "industriesTitle": "服务行业",
         "catLensesDesc": "球面、柱面、非球面、球透镜、棒镜",
         "catMirrorsDesc": "介质膜、铝膜、银膜、金膜",
@@ -1850,11 +1902,20 @@ function t(key) {
 function applyTranslations() {
     var lang = localStorage.getItem('lang') || 'en';
     var translationsObj = translations[lang] || translations['en'];
+    // Translate text content
     var elements = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < elements.length; i++) {
         var key = elements[i].getAttribute('data-i18n');
         if (translationsObj[key]) {
             elements[i].textContent = translationsObj[key];
+        }
+    }
+    // Translate placeholder attributes
+    var placeholders = document.querySelectorAll('[data-i18n-placeholder]');
+    for (var j = 0; j < placeholders.length; j++) {
+        var pkey = placeholders[j].getAttribute('data-i18n-placeholder');
+        if (translationsObj[pkey]) {
+            placeholders[j].setAttribute('placeholder', translationsObj[pkey]);
         }
     }
 }
@@ -1874,6 +1935,22 @@ function setLanguage(lang) {
     // Re-render product detail if function exists
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
+    }
+    // Re-render blog posts if function exists
+    if (typeof renderBlogPosts === 'function') {
+        renderBlogPosts();
+    }
+    // Re-render news articles if function exists
+    if (typeof renderNews === 'function') {
+        renderNews();
+    }
+    // Re-render cart if function exists
+    if (typeof renderCart === 'function') {
+        renderCart();
+    }
+    // Re-render comparison table if function exists
+    if (typeof renderTable === 'function') {
+        renderTable();
     }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
