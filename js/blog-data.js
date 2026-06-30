@@ -1,4 +1,4 @@
-// PhotonEdge Blog Posts Data - Updated with new technical articles
+// PhotonEdge Blog Posts Data - Updated with Chinese translations
 
 var BLOG_POSTS = [
   {
@@ -11,7 +11,10 @@ var BLOG_POSTS = [
     "date": "2025-05-01",
     "readTime": "8 min",
     "image": "images/blog/choose-optical-lens.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "如何为您的应用选择合适的光学透镜",
+    "excerptZh": "全面指南：根据焦距、材料和镀膜要求为不同应用选择光学透镜。了解平凸透镜、双凹透镜和消色差透镜的关键区别。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 2,
@@ -23,7 +26,10 @@ var BLOG_POSTS = [
     "date": "2025-04-28",
     "readTime": "7 min",
     "image": "images/blog/ar-coatings-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "理解减反射镀膜：实用指南",
+    "excerptZh": "全面了解光学元件减反射（AR）镀膜。了解AR镀膜的工作原理、不同类型以及如何为波长和应用选择合适的镀膜。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 3,
@@ -35,7 +41,10 @@ var BLOG_POSTS = [
     "date": "2025-04-22",
     "readTime": "6 min",
     "image": "images/blog/bk7-vs-fused-silica.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "BK7与紫外熔融石英：何时使用哪种材料",
+    "excerptZh": "BK7和紫外熔融石英光学玻璃材料的详细对比。了解透过范围、热性能和成本的差异，为您的光学系统做出正确的材料选择。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 4,
@@ -47,7 +56,10 @@ var BLOG_POSTS = [
     "date": "2025-04-15",
     "readTime": "6 min",
     "image": "images/blog/optical-windows-guide.jpg",
-    "author": "PhotonEdge Sales Team"
+    "author": "PhotonEdge Sales Team",
+    "titleZh": "购买光学窗口时需检查的5个关键规格",
+    "excerptZh": "购买光学窗口时需评估的五个最关键规格：表面平整度、平行度、材料透过率、通光孔径和表面质量。避免代价高昂的错误。",
+    "categoryZh": "购买指南"
   },
   {
     "id": 5,
@@ -59,7 +71,10 @@ var BLOG_POSTS = [
     "date": "2025-04-10",
     "readTime": "9 min",
     "image": "images/blog/prism-types.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "光学棱镜类型及其应用详解",
+    "excerptZh": "深入介绍不同类型的光学棱镜，包括直角棱镜、五棱镜、道威棱镜和角锥棱镜。了解每种类型的工作原理及其在光学系统中的应用。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 6,
@@ -71,7 +86,10 @@ var BLOG_POSTS = [
     "date": "2025-04-05",
     "readTime": "5 min",
     "image": "images/blog/photonedge-partner.jpg",
-    "author": "PhotonEdge Team"
+    "author": "PhotonEdge Team",
+    "titleZh": "为什么选择恒鼎光作为您值得信赖的精密光学合作伙伴",
+    "excerptZh": "了解为何超过500家全球客户信赖恒鼎光作为精密光学供应商。ISO 9001:2015认证制造、定制解决方案，北京工厂快速交付。",
+    "categoryZh": "公司动态"
   },
   {
     "id": 7,
@@ -83,7 +101,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "8 min",
     "image": "images/blog/custom-vs-stock-optics.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "定制光学 vs 标准光学：何时投资定制光学元件",
+    "excerptZh": "实用指南：比较定制光学元件与标准光学的差异。了解标准件何时足够，何时定制制造能为光学系统带来更好的长期价值。",
+    "categoryZh": "购买指南"
   },
   {
     "id": 8,
@@ -95,7 +116,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "10 min",
     "image": "images/blog/laser-optics-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "激光光学选型指南：高功率应用的反射镜、透镜和窗口",
+    "excerptZh": "激光光学选型全攻略，包括高功率激光反射镜、激光级透镜和精密窗口。涵盖损伤阈值、镀膜类型以及Nd:YAG、CO2和光纤激光的材料选择。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 9,
@@ -107,7 +131,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "9 min",
     "image": "images/blog/optical-coatings.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "光学镀膜类型详解：AR、HR、分光片和滤光片镀膜",
+    "excerptZh": "光学镀膜类型全面概述，包括减反射镀膜、高反射HR镀膜、分光镀膜和光学滤光片镀膜。了解每种镀膜的工作原理及如何为应用选择合适的镀膜。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 10,
@@ -119,7 +146,10 @@ var BLOG_POSTS = [
     "date": "2025-05-10",
     "readTime": "9 min",
     "image": "images/blog/optical-quality-testing.jpg",
-    "author": "PhotonEdge Quality Team"
+    "author": "PhotonEdge Quality Team",
+    "titleZh": "如何验证光学元件质量：测试方法与标准",
+    "excerptZh": "了解光学质量测试方法，包括干涉仪表面平整度检测、划痕-麻点表面质量检查、LIDT测试以及MIL-PRF-13830B和ISO 10110等国际标准。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 11,
@@ -131,7 +161,10 @@ var BLOG_POSTS = [
     "date": "2025-05-15",
     "readTime": "12 min",
     "image": "images/blog/custom-optics-spec.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "如何制定定制光学规格：完整工程指南",
+    "excerptZh": "定制光学元件规格制定的完整工程指南。学习如何定义材料选择、表面质量、尺寸公差、镀膜要求和测试规格，确保定制光学满足应用需求。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 12,
@@ -143,7 +176,10 @@ var BLOG_POSTS = [
     "date": "2025-05-12",
     "readTime": "11 min",
     "image": "images/blog/laser-damage-threshold.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "激光损伤阈值：工程师必知指南",
+    "excerptZh": "了解激光损伤阈值（LIDT）对高功率激光应用中光学元件选型至关重要。本指南涵盖LIDT测试标准、影响因素以及CO2、Nd:YAG和光纤激光的实用规格。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 13,
@@ -155,7 +191,10 @@ var BLOG_POSTS = [
     "date": "2025-05-08",
     "readTime": "14 min",
     "image": "images/blog/coating-design.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "光学镀膜设计：从理论到实践",
+    "excerptZh": "深入探讨光学镀膜设计原理，从薄膜理论到实际制造。了解四分之一波长堆栈、介电材料、镀膜工艺以及如何指定满足性能要求的镀膜。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 14,
@@ -167,7 +206,10 @@ var BLOG_POSTS = [
     "date": "2025-05-05",
     "readTime": "13 min",
     "image": "images/blog/optical-metrology.jpg",
-    "author": "PhotonEdge Quality Team"
+    "author": "PhotonEdge Quality Team",
+    "titleZh": "精密光学计量学：干涉测量及其他",
+    "excerptZh": "光学计量技术深度解析，包括Fizeau和Twyman-Green干涉测量、轮廓测量和波前传感。了解测量不确定度如何影响光学元件选型和质量保证。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 15,
@@ -179,7 +221,10 @@ var BLOG_POSTS = [
     "date": "2025-05-02",
     "readTime": "11 min",
     "image": "images/blog/high-power-laser-materials.jpg",
-    "author": "PhotonEdge Engineering Team"
+    "author": "PhotonEdge Engineering Team",
+    "titleZh": "高功率激光应用中的光学材料选择",
+    "excerptZh": "高功率激光系统光学材料选择技术指南。比较熔融石英、BK7、CaF2、ZnSe和金刚石在不同激光波长、功率水平和环境条件下的应用。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 16,
@@ -191,7 +236,10 @@ var BLOG_POSTS = [
     "date": "2026-06-28",
     "readTime": "7 min",
     "image": "images/blog/choose-optical-lens.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "如何选择精密透镜供应商：BK7平凸与双凸透镜指南",
+    "excerptZh": "光学系统设计中BK7平凸和双凸透镜的对比。了解每种透镜类型的适用场景、向精密透镜供应商验证的关键规格，以及恒鼎光等定制光学制造商如何保证质量。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 17,
@@ -203,7 +251,10 @@ var BLOG_POSTS = [
     "date": "2026-06-28",
     "readTime": "8 min",
     "image": "images/blog/laser-optics-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "光学元件制造商指南：激光系统的反射镜、棱镜和分光片",
+    "excerptZh": "来自可靠光学元件制造商的激光系统光学元件选型完整指南。涵盖反射镜镀膜、棱镜类型、分光片规格以及工业和研究应用的定制光学能力。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 18,
@@ -215,7 +266,10 @@ var BLOG_POSTS = [
     "date": "2026-06-28",
     "readTime": "8 min",
     "image": "images/blog/bk7-vs-fused-silica.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "紫外熔融石英 vs BK7玻璃：光学工程师的完整材料选择指南",
+    "excerptZh": "面向工程师的紫外熔融石英和BK7光学玻璃详细对比。涵盖透过范围、热性能、激光损伤阈值和成本考量。使用BK7与熔融石英对比做出正确材料选择。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 19,
@@ -227,7 +281,10 @@ var BLOG_POSTS = [
     "date": "2026-06-28",
     "readTime": "6 min",
     "image": "images/blog/custom-optics-spec.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "定制光学制造：从规格到交付——恒鼎光全流程解析",
+    "excerptZh": "定制光学制造流程深度解析。了解精密光学制造商如何处理定制规格、质量控制、镀膜工艺和交付周期，提供OEM光学元件和定制光学解决方案。",
+    "categoryZh": "技术指南"
   },
   {
     "id": 20,
@@ -239,6 +296,9 @@ var BLOG_POSTS = [
     "date": "2026-06-28",
     "readTime": "7 min",
     "image": "images/blog/ar-coatings-guide.jpg",
-    "author": "PhotonEdge Technical Team"
+    "author": "PhotonEdge Technical Team",
+    "titleZh": "减反射镀膜选型：可见光、紫外和红外应用的AR镀膜",
+    "excerptZh": "可见光、紫外和红外波段的减反射镀膜选型全面指南。涵盖单层MgF2、宽带AR镀膜、V涂层设计、激光损伤阈值考量以及如何为光学元件指定AR镀膜。",
+    "categoryZh": "技术指南"
   }
 ];

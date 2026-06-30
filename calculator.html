@@ -470,6 +470,13 @@
             }
         }
 
+
+        // Language helper for calculator results
+        function calcLang(en, zh) {
+            var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+            return lang === 'zh' ? zh : en;
+        }
+
         function calculateFocal() {
             var type = document.getElementById('focal-calc-type').value;
             var d0 = parseFloat(document.getElementById('object-distance').value);
@@ -613,8 +620,8 @@
             
             var resultText = thetaMrad.toFixed(3) + ' mrad';
             resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
-            resultText += 'Half-angle: ' + (thetaMrad/2).toFixed(3) + ' mrad<br>';
-            resultText += 'Spot size at ' + distance + 'm: ' + spotSizeMm.toFixed(2) + ' mm';
+            resultText += calcLang('Half-angle: ', '半角：') + (thetaMrad/2).toFixed(3) + ' mrad<br>';
+            resultText += calcLang('Spot size at ', '传输距离 ') + distance + 'm' + calcLang(': ', ' 处光斑：') + spotSizeMm.toFixed(2) + ' mm';
             resultText += '</div>';
             
             document.getElementById('beam-divergence-result-value').innerHTML = resultText;
@@ -677,8 +684,8 @@
             
             var resultText = reflectPct.toFixed(2) + '% reflection';
             resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
-            resultText += 'Single surface transmission: ' + transmitPerSurface.toFixed(2) + '%<br>';
-            resultText += 'Total transmission (' + surfaces + ' surfaces): ' + totalTransmit.toFixed(2) + '%';
+            resultText += calcLang('Single surface transmission: ', '单面透过率：') + transmitPerSurface.toFixed(2) + '%<br>';
+            resultText += calcLang('Total transmission (', '总透过率（') + surfaces + calcLang(' surfaces): ', ' 面)：') + totalTransmit.toFixed(2) + '%';
             resultText += '</div>';
             
             document.getElementById('fresnel-result-value').innerHTML = resultText;
@@ -765,9 +772,9 @@
             
             var resultText = airyDiskUm.toFixed(2) + ' &mu;m';
             resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
-            resultText += 'Airy disk diameter: ' + airyDiskUm.toFixed(2) + ' &mu;m<br>';
-            resultText += 'Spatial resolution: ' + resolutionLpMm.toFixed(1) + ' lp/mm<br>';
-            resultText += 'At f/' + fNumber + ', &lambda;=' + wavelength + 'nm, M=' + mag;
+            resultText += calcLang('Airy disk diameter: ', '艾里斑直径：') + airyDiskUm.toFixed(2) + ' &mu;m<br>';
+            resultText += calcLang('Spatial resolution: ', '空间分辨率：') + resolutionLpMm.toFixed(1) + ' lp/mm<br>';
+            resultText += calcLang('At f/', '在 f/') + fNumber + ', &lambda;=' + wavelength + 'nm, M=' + mag;
             resultText += '</div>';
             
             document.getElementById('diffraction-result-value').innerHTML = resultText;

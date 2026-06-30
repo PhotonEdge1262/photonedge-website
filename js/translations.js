@@ -1869,6 +1869,21 @@ function setLanguage(lang) {
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
     }
+    // Re-render AI Selector if visible
+    if (typeof AISelector !== 'undefined' && AISelector.init) {
+        var aiContainer = document.getElementById('aiSelectorContent');
+        if (aiContainer && aiContainer.innerHTML) {
+            AISelector.init();
+        }
+    }
+    // Re-render blog posts if on blog page
+    if (typeof renderBlogPosts === 'function') {
+        renderBlogPosts();
+    }
+    // Re-render chatbot messages if visible
+    if (typeof renderChatMessages === 'function') {
+        renderChatMessages();
+    }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
     for (var i = 0; i < buttons.length; i++) {
