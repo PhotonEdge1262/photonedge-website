@@ -1682,7 +1682,14 @@ ul { list-style: none; }
     font-size: 16px;
     font-weight: 600;
     color: #38a169;
+    margin-bottom: 4px;
+}
+.product-price-note {
+    display: block;
+    font-size: 12px;
+    color: #718096;
     margin-bottom: 8px;
+    font-style: italic;
 }
 .product-card-actions {
     display: flex;

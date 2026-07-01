@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var priceSection = document.getElementById('productPriceSection');
             var price = currentProduct.price || 0;
             var hasPartNumbers = currentProduct.partNumbers && currentProduct.partNumbers.length > 0;
-            var startingLabel = lang === 'zh' ? '起售价' : 'Starting at';
+            var startingLabel = lang === 'zh' ? '行业参考价' : 'Industry Reference';
             
             var html = '<div class="price-display">';
             html += '<span class="price-label">' + startingLabel + ' </span>';
@@ -999,7 +999,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!select || !select.value) {
                 // Reset to base price
                 var price = currentProduct.price || 0;
-                var startingLabel = lang === 'zh' ? '起售价' : 'Starting at';
+                var startingLabel = lang === 'zh' ? '行业参考价' : 'Industry Reference';
                 priceSection.querySelector('.price-value').textContent = '$' + price.toFixed(2);
                 priceSection.querySelector('.price-label').textContent = startingLabel + ' ';
                 return;

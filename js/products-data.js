@@ -20,10 +20,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 8,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $8 - $68",
+    "priceNoteZh": "参考价：¥56 - ¥476",
     "slug": "bk7-plano-convex",
     "partNumbers": [
       {
@@ -610,10 +610,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 10,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $10 - $65",
+    "priceNoteZh": "参考价：¥70 - ¥455",
     "slug": "bk7-bi-convex",
     "partNumbers": [
       {
@@ -1047,10 +1047,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 8,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $8 - $60",
+    "priceNoteZh": "参考价：¥56 - ¥420",
     "slug": "bk7-plano-concave",
     "partNumbers": [
       {
@@ -1452,10 +1452,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 10,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $10 - $62",
+    "priceNoteZh": "参考价：¥70 - ¥434",
     "slug": "bk7-bi-concave",
     "partNumbers": [
       {
@@ -1666,10 +1666,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 12,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $12 - $70",
+    "priceNoteZh": "参考价：¥84 - ¥490",
     "slug": "bk7-positive-meniscus",
     "partNumbers": [
       {
@@ -1840,10 +1840,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 12,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $12 - $68",
+    "priceNoteZh": "参考价：¥84 - ¥476",
     "slug": "bk7-negative-meniscus",
     "partNumbers": [
       {
@@ -1942,10 +1942,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $130",
+    "priceNoteZh": "参考价：¥245 - ¥910",
     "slug": "uv-fused-silica-plano-convex",
     "partNumbers": [
       {
@@ -2196,10 +2196,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 38,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $38 - $125",
+    "priceNoteZh": "参考价：¥266 - ¥875",
     "slug": "uv-fused-silica-bi-convex",
     "partNumbers": [
       {
@@ -2474,10 +2474,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $120",
+    "priceNoteZh": "参考价：¥245 - ¥840",
     "slug": "uv-fused-silica-plano-concave",
     "partNumbers": [
       {
@@ -2712,10 +2712,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 38,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $38 - $120",
+    "priceNoteZh": "参考价：¥266 - ¥840",
     "slug": "uv-fused-silica-bi-concave",
     "partNumbers": [
       {
@@ -3014,10 +3014,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 12,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $12 - $55",
+    "priceNoteZh": "参考价：¥84 - ¥385",
     "slug": "bk7-plano-convex-cylindrical",
     "partNumbers": [
       {
@@ -3584,10 +3584,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 12,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $12 - $50",
+    "priceNoteZh": "参考价：¥84 - ¥350",
     "slug": "bk7-plano-concave-cylindrical",
     "partNumbers": [
       {
@@ -4084,10 +4084,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $95",
+    "priceNoteZh": "参考价：¥245 - ¥665",
     "slug": "uv-fused-silica-plano-convex-cylindrical",
     "partNumbers": [
       {
@@ -4224,10 +4224,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $90",
+    "priceNoteZh": "参考价：¥245 - ¥630",
     "slug": "uv-fused-silica-plano-concave-cylindrical",
     "partNumbers": [
       {
@@ -4364,10 +4364,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $210",
+    "priceNoteZh": "参考价：¥245 - ¥1470",
     "slug": "achromatic-doublet",
     "partNumbers": [
       {
@@ -4930,10 +4930,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 15,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $15 - $65",
+    "priceNoteZh": "参考价：¥105 - ¥455",
     "slug": "bk7-c-lenses",
     "partNumbers": [
       {
@@ -5132,10 +5132,10 @@ var PRODUCTS = [
       "centration": "<3 arc min",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 8,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $8 - $45",
+    "priceNoteZh": "参考价：¥56 - ¥315",
     "slug": "bk7-ball-lenses",
     "partNumbers": [
       {
@@ -5213,10 +5213,10 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 25,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $25 - $85",
+    "priceNoteZh": "参考价：¥175 - ¥595",
     "slug": "uv-fused-silica-ball-lenses",
     "partNumbers": [
       {
@@ -5295,10 +5295,10 @@ var PRODUCTS = [
       "centration": "<3 arc min",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 10,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $10 - $50",
+    "priceNoteZh": "参考价：¥70 - ¥350",
     "slug": "bk7-rod-lenses",
     "partNumbers": [
       {
@@ -5435,10 +5435,10 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/4@632.8nm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 28,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $28 - $75",
+    "priceNoteZh": "参考价：¥196 - ¥525",
     "slug": "uv-fused-silica-rod-lenses",
     "partNumbers": [
       {
@@ -5578,10 +5578,10 @@ var PRODUCTS = [
       "beveling": "0.25mm×45°",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $350",
+    "priceNoteZh": "参考价：¥315 - ¥2450",
     "slug": "aspherical-lenses",
     "partNumbers": [
       {
@@ -5737,10 +5737,10 @@ var PRODUCTS = [
       "maxInputSpotSize": "Up to 15mm",
       "maxOutputSpotSize": "Up to 36mm"
     },
-    "price": 0,
+    "price": 50,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $50 - $280",
+    "priceNoteZh": "参考价：¥350 - ¥1960",
     "slug": "laser-beam-expanders",
     "partNumbers": [
       {
@@ -5985,10 +5985,10 @@ var PRODUCTS = [
       "conjugateFocalDistance": "195mm",
       "parfocalDistance": "45mm"
     },
-    "price": 0,
+    "price": 80,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $80 - $1500",
+    "priceNoteZh": "参考价：¥560 - ¥10500",
     "slug": "microscope-objectives",
     "partNumbers": [
       {
@@ -6061,10 +6061,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "A:AR 350-650nm / B:AR 650-950nm / C:AR 950-1250nm"
     },
-    "price": 0,
+    "price": 8,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $8 - $55",
+    "priceNoteZh": "参考价：¥56 - ¥385",
     "slug": "bk7-windows",
     "partNumbers": [
       {
@@ -6305,10 +6305,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 18,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $18 - $120",
+    "priceNoteZh": "参考价：¥126 - ¥840",
     "slug": "uv-fused-silica-windows",
     "partNumbers": [
       {
@@ -6507,10 +6507,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $200",
+    "priceNoteZh": "参考价：¥245 - ¥1400",
     "slug": "sapphire-windows",
     "partNumbers": [
       {
@@ -6643,10 +6643,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 30,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $30 - $180",
+    "priceNoteZh": "参考价：¥210 - ¥1260",
     "slug": "caf2-windows",
     "partNumbers": [
       {
@@ -6785,10 +6785,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 80,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $80 - $450",
+    "priceNoteZh": "参考价：¥560 - ¥3150",
     "slug": "ge-windows",
     "partNumbers": [
       {
@@ -6909,10 +6909,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 60,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $60 - $350",
+    "priceNoteZh": "参考价：¥420 - ¥2450",
     "slug": "si-windows",
     "partNumbers": [
       {
@@ -7057,10 +7057,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 70,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $70 - $400",
+    "priceNoteZh": "参考价：¥490 - ¥2800",
     "slug": "znse-windows",
     "partNumbers": [
       {
@@ -7174,10 +7174,10 @@ var PRODUCTS = [
       "centration": "<2 arc min",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 25,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $25 - $180",
+    "priceNoteZh": "参考价：¥175 - ¥1260",
     "slug": "laser-line-high-reflected-mirrors",
     "partNumbers": [
       {
@@ -7347,10 +7347,10 @@ var PRODUCTS = [
       "surfaceFlatness": "λ/10@632.8nm",
       "clearAperture": ">80%"
     },
-    "price": 0,
+    "price": 60,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $60 - $350",
+    "priceNoteZh": "参考价：¥420 - ¥2450",
     "slug": "high-energy-laser-mirrors",
     "partNumbers": [
       {
@@ -7521,10 +7521,10 @@ var PRODUCTS = [
       "reflectivity": ">99%",
       "clearAperture": ">80%"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $280",
+    "priceNoteZh": "参考价：¥315 - ¥1960",
     "slug": "broadband-dielectric-mirrors",
     "partNumbers": [
       {
@@ -7847,10 +7847,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Protected Al R>85%"
     },
-    "price": 0,
+    "price": 15,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $15 - $72",
+    "priceNoteZh": "参考价：¥105 - ¥504",
     "slug": "protected-aluminum-mirrors",
     "partNumbers": [
       {
@@ -7986,10 +7986,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Enhanced Al R>90%"
     },
-    "price": 0,
+    "price": 18,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $18 - $85",
+    "priceNoteZh": "参考价：¥126 - ¥595",
     "slug": "enhanced-aluminum-mirrors",
     "partNumbers": [
       {
@@ -8237,10 +8237,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Protected Ag R>95%"
     },
-    "price": 0,
+    "price": 20,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $20 - $95",
+    "priceNoteZh": "参考价：¥140 - ¥665",
     "slug": "protected-silver-mirrors",
     "partNumbers": [
       {
@@ -8376,10 +8376,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Protected Au R>98%"
     },
-    "price": 0,
+    "price": 25,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $25 - $150",
+    "priceNoteZh": "参考价：¥175 - ¥1050",
     "slug": "protected-gold-mirrors",
     "partNumbers": [
       {
@@ -8504,10 +8504,10 @@ var PRODUCTS = [
       "pyramidError": "<1 arcmin",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 8,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $8 - $65",
+    "priceNoteZh": "参考价：¥56 - ¥455",
     "slug": "bk7-right-angle-prisms",
     "partNumbers": [
       {
@@ -8615,10 +8615,10 @@ var PRODUCTS = [
       "pyramidError": "<1 arcmin",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 28,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $28 - $120",
+    "priceNoteZh": "参考价：¥196 - ¥840",
     "slug": "uv-fused-silica-right-angle-prisms",
     "partNumbers": [
       {
@@ -8725,10 +8725,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $160",
+    "priceNoteZh": "参考价：¥315 - ¥1120",
     "slug": "penta-prisms",
     "partNumbers": [
       {
@@ -8782,10 +8782,10 @@ var PRODUCTS = [
       "beamDeviation": "<3 arcsec",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 70,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $70 - $240",
+    "priceNoteZh": "参考价：¥490 - ¥1680",
     "slug": "corner-cube-prisms",
     "partNumbers": [
       {
@@ -8838,10 +8838,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 30,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $30 - $140",
+    "priceNoteZh": "参考价：¥210 - ¥980",
     "slug": "dove-prisms",
     "partNumbers": [
       {
@@ -8900,10 +8900,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 15,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $15 - $100",
+    "priceNoteZh": "参考价：¥105 - ¥700",
     "slug": "equilateral-dispersing-prisms",
     "partNumbers": [
       {
@@ -8951,10 +8951,10 @@ var PRODUCTS = [
       "clearAperture": ">80%",
       "coatings": "Custom Design"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $150",
+    "priceNoteZh": "参考价：¥245 - ¥1050",
     "slug": "roof-prisms",
     "partNumbers": [
       {
@@ -8992,10 +8992,10 @@ var PRODUCTS = [
       "clearAperture": ">90%",
       "parallelism": "<1 arc min"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $290",
+    "priceNoteZh": "参考价：¥315 - ¥2030",
     "slug": "narrow-band-interference-filters",
     "partNumbers": [
       {
@@ -9578,10 +9578,10 @@ var PRODUCTS = [
       "clearAperture": ">90%",
       "parallelism": "<1 arc min"
     },
-    "price": 0,
+    "price": 20,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $20 - $120",
+    "priceNoteZh": "参考价：¥140 - ¥840",
     "slug": "fixed-neutral-density-filters",
     "partNumbers": [
       {
@@ -9754,10 +9754,10 @@ var PRODUCTS = [
       "parallelism": "<3 arc min",
       "type": "Circular / Linear Gradient"
     },
-    "price": 0,
+    "price": 55,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $55 - $280",
+    "priceNoteZh": "参考价：¥385 - ¥1960",
     "slug": "variable-neutral-density-filters",
     "partNumbers": [
       {
@@ -9858,10 +9858,10 @@ var PRODUCTS = [
       "material": "UV Transmitting Glass (ZWB1/ZWB2/ZWB3)",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 40,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $40 - $170",
+    "priceNoteZh": "参考价：¥280 - ¥1190",
     "slug": "uv-bandpass-filters",
     "partNumbers": [
       {
@@ -9904,10 +9904,10 @@ var PRODUCTS = [
       "material": "Red Glass (HB Series)",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $290",
+    "priceNoteZh": "参考价：¥315 - ¥2030",
     "slug": "ir-bandpass-filters",
     "partNumbers": [
       {
@@ -9985,10 +9985,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "splitRatio": "50/50 ±2%"
     },
-    "price": 0,
+    "price": 18,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $18 - $95",
+    "priceNoteZh": "参考价：¥126 - ¥665",
     "slug": "beamsplitter-plates",
     "partNumbers": [
       {
@@ -10155,10 +10155,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "splitRatio": "50/50"
     },
-    "price": 0,
+    "price": 35,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $35 - $180",
+    "priceNoteZh": "参考价：¥245 - ¥1260",
     "slug": "cube-beamsplitters",
     "partNumbers": [
       {
@@ -10451,10 +10451,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "transmissionPolarization": "T(P or S)=50±5%"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $250",
+    "priceNoteZh": "参考价：¥315 - ¥1750",
     "slug": "non-polarizing-cube-beamsplitters",
     "partNumbers": [
       {
@@ -10749,10 +10749,10 @@ var PRODUCTS = [
       "tp": ">95%",
       "ts": "<1%"
     },
-    "price": 0,
+    "price": 55,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $55 - $300",
+    "priceNoteZh": "参考价：¥385 - ¥2100",
     "slug": "polarizing-cube-beamsplitters",
     "partNumbers": [
       {
@@ -11076,10 +11076,10 @@ var PRODUCTS = [
       "diameterTolerance": "±0.15mm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 30,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $30 - $150",
+    "priceNoteZh": "参考价：¥210 - ¥1050",
     "slug": "multiple-order-waveplates",
     "partNumbers": [
       {
@@ -11411,10 +11411,10 @@ var PRODUCTS = [
       "diameterTolerance": "±0.15mm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 60,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $60 - $250",
+    "priceNoteZh": "参考价：¥420 - ¥1750",
     "slug": "dual-wavelength-waveplates",
     "partNumbers": [
       {
@@ -11563,10 +11563,10 @@ var PRODUCTS = [
       "diameterTolerance": "±0.15mm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 80,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $80 - $350",
+    "priceNoteZh": "参考价：¥560 - ¥2450",
     "slug": "cemented-zero-order-waveplates",
     "partNumbers": [
       {
@@ -11898,10 +11898,10 @@ var PRODUCTS = [
       "diameterTolerance": "±0.15mm",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 100,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $100 - $450",
+    "priceNoteZh": "参考价：¥700 - ¥3150",
     "slug": "air-spaced-zero-order-waveplates",
     "partNumbers": [
       {
@@ -12187,10 +12187,10 @@ var PRODUCTS = [
       "transmission": ">50%",
       "extinctionRatio": ">100:1"
     },
-    "price": 0,
+    "price": 15,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $15 - $110",
+    "priceNoteZh": "参考价：¥105 - ¥770",
     "slug": "visible-linear-polarizers",
     "partNumbers": [
       {
@@ -12222,10 +12222,10 @@ var PRODUCTS = [
       "transmission": ">45%",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 20,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $20 - $130",
+    "priceNoteZh": "参考价：¥140 - ¥910",
     "slug": "visible-circular-polarizers",
     "partNumbers": [
       {
@@ -12256,10 +12256,10 @@ var PRODUCTS = [
       "parallelism": "<1 arc min",
       "extinctionRatio": ">1000:1"
     },
-    "price": 0,
+    "price": 45,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $45 - $250",
+    "priceNoteZh": "参考价：¥315 - ¥1750",
     "slug": "ir-polarizers",
     "partNumbers": [
       {
@@ -12324,10 +12324,10 @@ var PRODUCTS = [
       "transmission": ">90%",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 180,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $180 - $670",
+    "priceNoteZh": "参考价：¥1260 - ¥4690",
     "slug": "glan-taylor-prisms",
     "partNumbers": [
       {
@@ -12511,10 +12511,10 @@ var PRODUCTS = [
       "transmission": ">95%",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 200,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $200 - $800",
+    "priceNoteZh": "参考价：¥1400 - ¥5600",
     "slug": "glan-laser-prisms",
     "partNumbers": [
       {
@@ -12657,10 +12657,10 @@ var PRODUCTS = [
       "acceptanceAngle": ">26°",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 150,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $150 - $550",
+    "priceNoteZh": "参考价：¥1050 - ¥3850",
     "slug": "glan-thompson-prisms",
     "partNumbers": [
       {
@@ -12724,10 +12724,10 @@ var PRODUCTS = [
       "separationAngle": "~19°",
       "clearAperture": ">90%"
     },
-    "price": 0,
+    "price": 180,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $180 - $650",
+    "priceNoteZh": "参考价：¥1260 - ¥4550",
     "slug": "wollaston-prisms",
     "partNumbers": [
       {
@@ -12797,10 +12797,10 @@ var PRODUCTS = [
       "certification": "CE",
       "wavelengthRange": "Multiple laser wavelengths"
     },
-    "price": 0,
+    "price": 55,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $55 - $320",
+    "priceNoteZh": "参考价：¥385 - ¥2240",
     "slug": "laser-safety-goggles",
     "partNumbers": [
       {
@@ -12917,10 +12917,10 @@ var PRODUCTS = [
       "coating": "Partial reflectance on one side, AR on the other",
       "damageThreshold": ">10J/cm², 20ns, 20Hz, @1064nm"
     },
-    "price": 0,
+    "price": 50,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $50 - $250",
+    "priceNoteZh": "参考价：¥350 - ¥1750",
     "slug": "ndyag-output-couplers",
     "partNumbers": [
       {
@@ -13080,10 +13080,10 @@ var PRODUCTS = [
       "coating": "Dichroic coating on incident side, AR on the other",
       "damageThreshold": "8J/cm²"
     },
-    "price": 0,
+    "price": 40,
     "priceUnit": "USD",
-    "priceNote": "Contact for pricing",
-    "priceNoteZh": "询价",
+    "priceNote": "Reference: $40 - $280",
+    "priceNoteZh": "参考价：¥280 - ¥1960",
     "slug": "dichroic-mirrors",
     "partNumbers": [
       {

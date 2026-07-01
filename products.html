@@ -338,8 +338,10 @@
                 var subCount = product.partNumbers ? product.partNumbers.length : (product.subProducts ? product.subProducts.length : 0);
                 var subText = subCount > 0 ? (lang === 'zh' ? ' (' + subCount + ' 型号)' : ' (' + subCount + ' models)') : '';
                 var price = product.price ? '$' + product.price.toFixed(2) : '';
-                var fromLabel = lang === 'zh' ? '起' : 'From';
+                var fromLabel = lang === 'zh' ? '参考价' : 'Ref.';
                 var priceHtml = price ? '<span class="product-price">' + fromLabel + ' ' + price + '</span>' : '';
+                var priceNoteText = product.priceNoteZh && lang === 'zh' ? product.priceNoteZh : (product.priceNote ? product.priceNote : '');
+                var priceNoteHtml = priceNoteText ? '<p class="product-price-note">' + priceNoteText + '</p>' : '';
                 
                 return '<div class="product-card" onclick="window.location.href=\'/products/' + product.slug + '\'">' +
                     '<div class="product-image">' +
@@ -349,6 +351,7 @@
                     '<h3 class="product-name">' + name + subText + '</h3>' +
                     '<p class="product-category">' + category + '</p>' +
                     priceHtml +
+                    priceNoteHtml +
                     '<p class="product-desc">' + desc + '</p>' +
                     '</div>' +
                     '<div class="product-card-actions">' +
