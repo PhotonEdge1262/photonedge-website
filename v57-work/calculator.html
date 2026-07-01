@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Optical Calculators | Focal Length, Coating & Magnification Tools - PhotonEdge</title>
+    <meta name="description" content="Free online optical calculators for engineers. Calculate focal length, coating transmission, magnification, laser safety OD, beam divergence, Fresnel reflection, Snell's law & diffraction limit. Professional tools from precision optics manufacturer PhotonEdge.">
+    <meta name="keywords" content="focal length calculator, optical magnification calculator, laser safety calculator, beam divergence calculator, optical coating calculator, Fresnel reflection calculator, Snell's law calculator, diffraction limit calculator, free optical tools, PhotonEdge calculators, optical components manufacturer, custom optics, precision lenses supplier, 焦距计算器,光学计算器,激光安全计算器">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .calculator-section { padding: 60px 0; background: var(--white); }
+        .calculator-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; margin: 40px 0; }
+        .calculator-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; padding: 30px; transition: all 0.3s; cursor: pointer; text-align: center; }
+        .calculator-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); border-color: var(--accent); }
+        .calculator-icon { font-size: 48px; margin-bottom: 20px; }
+        .calculator-title { font-size: 20px; font-weight: 600; color: var(--primary); margin-bottom: 10px; }
+        .calculator-desc { color: var(--gray-text); line-height: 1.6; }
+        .tool-page { padding: 40px 0; }
+        .calculator-box { max-width: 600px; margin: 0 auto; background: var(--white); border-radius: 16px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--primary); }
+        .input-group input, .input-group select { width: 100%; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; font-size: 16px; box-sizing: border-box; }
+        .result-box { margin-top: 30px; padding: 20px; background: linear-gradient(135deg,#eff6ff 0%,#dbeafe 100%); border-radius: 12px; display: none; }
+        .result-value { font-size: 32px; font-weight: 700; color: #1d4ed8; text-align: center; }
+        .result-label { font-size: 14px; color: #1d4ed8; text-align: center; margin-top: 5px; }
+        .disclaimer { margin-top: 40px; padding: 20px; background: #fff3cd; border-radius: 12px; font-size: 13px; color: #856404; line-height: 1.6; }
+        .disclaimer strong { color: #856404; }
+        .calc-btn { background: var(--accent); color: white; border: none; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: all 0.3s; }
+        .calc-btn:hover { background: var(--accent-dark); transform: translateY(-2px); }
+        .back-link { display: inline-block; margin-bottom: 20px; color: var(--accent); text-decoration: none; font-weight: 500; }
+        @media (max-width: 768px) {
+            .calculator-grid { grid-template-columns: 1fr; gap: 16px; }
+            .calculator-box { padding: 16px; }
+            .input-group input, .input-group select { font-size: 16px; }
+            input[type="number"] { font-size: 16px; }
+        }
+    </style>
+    
+    <meta property="og:title" content="Free Optical Calculators | PhotonEdge">
+    <meta property="og:description" content="Free online optical calculators for focal length, coating transmission, magnification, laser safety, beam divergence, and more. Professional tools for optical engineers.">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:url" content="https://photonedgeoptics.com/calculator.html">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://photonedgeoptics.com/calculator.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PhotonEdge">
+    <meta name="twitter:description" content="Precision Optical Components Manufacturer">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/calculator.html">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/calculator.html?lang=zh">
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'http://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "PhotonEdge Optical Calculators",
+        "url": "https://photonedgeoptics.com/calculator.html",
+        "description": "Free online optical calculators for focal length, coating transmission, magnification, laser safety, beam divergence, Fresnel reflection, Snell's law, and diffraction limit.",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge",
+            "url": "https://photonedgeoptics.com"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/calculator.html" class="nav-link active" data-i18n="navTools">Tools</a></li>
+                    <li><a href="/faq.html" class="nav-link" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/case-studies.html" class="nav-link" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                    <li><a href="/news.html" class="nav-link" data-i18n="navNews">News</a></li>
+                </ul>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-i18n="calculatorPageTitle">Optical Calculators</h1>
+            <p data-i18n="calculatorPageDesc">Free tools for your optical component calculations</p>
+        </div>
+    </section>
+
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-grid">
+                <div class="calculator-card" onclick="showCalculator('focal')">
+                    <div class="calculator-icon">&#128269;</div>
+                    <h3 class="calculator-title" data-i18n="calcFocalTitle">Focal Length Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcFocalDesc">Calculate lens focal length, object distance, or image distance using the lens formula</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('coating')">
+                    <div class="calculator-icon">&#128161;</div>
+                    <h3 class="calculator-title" data-i18n="calcCoatingTitle">Coating Transmission Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcCoatingDesc">Estimate transmission and reflection for AR/HR optical coatings</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('magnification')">
+                    <div class="calculator-icon">&#128208;</div>
+                    <h3 class="calculator-title" data-i18n="calcMagTitle">Optical Magnification Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcMagDesc">Calculate magnification, focal length, and working distance relationships</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('laser-safety')">
+                    <div class="calculator-icon">&#9888;</div>
+                    <h3 class="calculator-title" data-i18n="calcLaserSafetyTitle">Laser Safety OD Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcLaserSafetyDesc">Calculate required optical density for laser safety goggles based on laser power and beam parameters</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('beam-divergence')">
+                    <div class="calculator-icon">&#10024;</div>
+                    <h3 class="calculator-title" data-i18n="calcBeamDivTitle">Beam Divergence Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcBeamDivDesc">Calculate far-field beam divergence angle and spot size at distance for Gaussian beams</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('fresnel')">
+                    <div class="calculator-icon">&#128300;</div>
+                    <h3 class="calculator-title" data-i18n="calcFresnelTitle">Fresnel Reflection Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcFresnelDesc">Calculate reflection and transmission at optical interfaces between different materials</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('snell')">
+                    <div class="calculator-icon">&#128207;</div>
+                    <h3 class="calculator-title" data-i18n="calcSnellTitle">Snell's Law Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcSnellDesc">Calculate refraction angle and check for total internal reflection at optical interfaces</p>
+                </div>
+                <div class="calculator-card" onclick="showCalculator('diffraction')">
+                    <div class="calculator-icon">&#127919;</div>
+                    <h3 class="calculator-title" data-i18n="calcDiffractionTitle">Diffraction Limit Calculator</h3>
+                    <p class="calculator-desc" data-i18n="calcDiffractionDesc">Calculate Airy disk diameter and spatial resolution limit for optical systems</p>
+                </div>
+            </div>
+
+            <div id="calculator-content" class="tool-page" style="display: none;">
+                <a href="calculator.html#" class="back-link" data-i18n="calcBackToList" onclick="showCalculatorList(); return false;">&#8592; Back to Calculators</a>
+                
+                <div id="focal-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcFocalH2">&#128269; Focal Length Calculator</h2>
+                    <div class="input-group">
+                        <label data-i18n="calcCalcLabel">Calculate:</label>
+                        <select id="focal-calc-type" onchange="updateFocalInputs()">
+                            <option value="focal">Focal Length (f)</option>
+                            <option value="object">Object Distance (d&#8320;)</option>
+                            <option value="image">Image Distance (d&#7522;)</option>
+                        </select>
+                    </div>
+                    <div id="focal-inputs">
+                        <div class="input-group" id="object-input">
+                            <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
+                            <input type="number" id="object-distance" placeholder="e.g., 100" step="any">
+                        </div>
+                        <div class="input-group" id="image-input">
+                            <label data-i18n="calcImgDistLabel">Image Distance d&#7522; (mm):</label>
+                            <input type="number" id="image-distance" placeholder="e.g., 50" step="any">
+                        </div>
+                    </div>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateFocal()">Calculate</button>
+                    <div class="result-box" id="focal-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="focal-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="coating-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcCoatingH2">&#128161; Coating Transmission Calculator</h2>
+                    <div class="input-group">
+                        <label data-i18n="calcCoatTypeLabel">Coating Type:</label>
+                        <select id="coating-type" onchange="updateCoatingInputs()">
+                            <option value="ar">Anti-Reflection (AR) Coating</option>
+                            <option value="hr">High-Reflection (HR) Coating</option>
+                            <option value="custom">Custom Reflectivity</option>
+                        </select>
+                    </div>
+                    <div class="input-group" id="wavelength-input">
+                        <label data-i18n="calcWavelenLabel">Wavelength (nm):</label>
+                        <input type="number" id="wavelength" placeholder="e.g., 1064" value="1064">
+                    </div>
+                    <div class="input-group" id="surface-count-input">
+                        <label data-i18n="calcSurfacesLabel">Number of Surfaces:</label>
+                        <select id="surface-count">
+                            <option value="1">1 Surface</option>
+                            <option value="2" selected>2 Surfaces (typical lens)</option>
+                            <option value="4">4 Surfaces</option>
+                        </select>
+                    </div>
+                    <div class="input-group" id="custom-reflect-input" style="display: none;">
+                        <label data-i18n="calcReflectLabel">Single Surface Reflectivity (%):</label>
+                        <input type="number" id="custom-reflect" placeholder="e.g., 0.2" step="0.1" min="0" max="100">
+                    </div>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateCoating()">Calculate</button>
+                    <div class="result-box" id="coating-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="coating-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="magnification-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcMagH2">&#128208; Optical Magnification Calculator</h2>
+                    <div class="input-group">
+                        <label data-i18n="calcCalcLabel">Calculate:</label>
+                        <select id="mag-calc-type" onchange="updateMagInputs()">
+                            <option value="mag">Magnification (M)</option>
+                            <option value="focal">Focal Length (f)</option>
+                            <option value="distance">Object Distance (d&#8320;)</option>
+                        </select>
+                    </div>
+                    <div id="mag-inputs">
+                        <div class="input-group" id="mag-focal-input">
+                            <label data-i18n="calcFocalLenLabel">Focal Length f (mm):</label>
+                            <input type="number" id="mag-focal" placeholder="e.g., 50" step="any">
+                        </div>
+                        <div class="input-group" id="mag-distance-input">
+                            <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
+                            <input type="number" id="mag-distance" placeholder="e.g., 100" step="any">
+                        </div>
+                    </div>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateMagnification()">Calculate</button>
+                    <div class="result-box" id="mag-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="mag-result-value"></div>
+                    </div>
+                </div>
+
+                
+                <div id="laser-safety-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcLaserSafetyH2">&#9888; Laser Safety OD Calculator</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcLaserSafetyNote">Calculate the minimum optical density (OD) required for laser safety eyewear.</p>
+                    <div class="input-group">
+                        <label data-i18n="calcLaserPowerLabel">Laser Power (mW):</label>
+                        <input type="number" id="laser-power" placeholder="e.g., 500" step="any">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcBeamDiamLabel">Beam Diameter (mm):</label>
+                        <input type="number" id="beam-diameter" placeholder="e.g., 2" step="any" value="2">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcMPELabel">Max Permissible Exposure MPE (mW/cm&sup2;):</label>
+                        <input type="number" id="mpe-value" placeholder="e.g., 1" step="any" value="1">
+                    </div>
+                    <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcLaserSafetyFormula">Formula: OD = log<sub>10</sub>(Irradiance / MPE), where Irradiance = Power / Beam Area</p>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateLaserSafety()">Calculate</button>
+                    <div class="result-box" id="laser-safety-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="laser-safety-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="beam-divergence-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcBeamDivH2">&#10024; Beam Divergence Calculator</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcBeamDivNote">Calculate far-field divergence angle for Gaussian laser beams.</p>
+                    <div class="input-group">
+                        <label data-i18n="calcWavelengthLabel">Wavelength &lambda; (nm):</label>
+                        <input type="number" id="div-wavelength" placeholder="e.g., 1064" step="any" value="1064">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcInputBeamDiamLabel">Input Beam Diameter D (mm):</label>
+                        <input type="number" id="div-beam-diam" placeholder="e.g., 5" step="any" value="5">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcDistanceLabel">Distance for Spot Size (m):</label>
+                        <input type="number" id="div-distance" placeholder="e.g., 10" step="any" value="10">
+                    </div>
+                    <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcBeamDivFormula">Formula: &theta; = 4&lambda; / (&pi;&times;D) for Gaussian beams</p>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateBeamDivergence()">Calculate</button>
+                    <div class="result-box" id="beam-divergence-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="beam-divergence-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="fresnel-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcFresnelH2">&#128300; Fresnel Reflection Calculator</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcFresnelNote">Calculate reflection and transmission at an interface between two optical media.</p>
+                    <div class="input-group">
+                        <label data-i18n="calcN1Label">Refractive Index n<sub>1</sub> (incident medium):</label>
+                        <input type="number" id="fresnel-n1" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcN2Label">Refractive Index n<sub>2</sub> (transmitting medium):</label>
+                        <select id="fresnel-n2-select" onchange="updateFresnelN2()">
+                            <option value="1.4585">Fused Silica (1.4585)</option>
+                            <option value="1.5168" selected>BK7 (1.5168)</option>
+                            <option value="1.4338">CaF2 (1.4338)</option>
+                            <option value="1.7682">Sapphire (1.7682)</option>
+                            <option value="2.4026">ZnSe (2.4026)</option>
+                            <option value="3.4180">Si (3.4180)</option>
+                            <option value="4.0242">Ge (4.0242)</option>
+                            <option value="custom">Custom...</option>
+                        </select>
+                        <input type="number" id="fresnel-n2" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcIncAngleLabel">Angle of Incidence (degrees):</label>
+                        <input type="number" id="fresnel-angle" placeholder="e.g., 0" step="any" value="0" min="0" max="89">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcSurfacesLabel">Number of Surfaces:</label>
+                        <select id="fresnel-surfaces">
+                            <option value="1">1 Surface</option>
+                            <option value="2" selected>2 Surfaces (window/lens)</option>
+                            <option value="4">4 Surfaces</option>
+                        </select>
+                    </div>
+                    <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcFresnelFormula">Normal incidence: R = ((n<sub>1</sub>-n<sub>2</sub>)/(n<sub>1</sub>+n<sub>2</sub>))&sup2;</p>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateFresnel()">Calculate</button>
+                    <div class="result-box" id="fresnel-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="fresnel-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="snell-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcSnellH2">&#128207; Snell's Law Calculator</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcSnellNote">Calculate refraction angle using Snell's law: n<sub>1</sub>sin&theta;<sub>1</sub> = n<sub>2</sub>sin&theta;<sub>2</sub></p>
+                    <div class="input-group">
+                        <label data-i18n="calcSnellN1Label">Refractive Index n<sub>1</sub>:</label>
+                        <input type="number" id="snell-n1" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcSnellN2Label">Refractive Index n<sub>2</sub>:</label>
+                        <select id="snell-n2-select" onchange="updateSnellN2()">
+                            <option value="1.4585">Fused Silica (1.4585)</option>
+                            <option value="1.5168" selected>BK7 (1.5168)</option>
+                            <option value="1.4338">CaF2 (1.4338)</option>
+                            <option value="1.7682">Sapphire (1.7682)</option>
+                            <option value="2.4026">ZnSe (2.4026)</option>
+                            <option value="3.4180">Si (3.4180)</option>
+                            <option value="4.0242">Ge (4.0242)</option>
+                            <option value="custom">Custom...</option>
+                        </select>
+                        <input type="number" id="snell-n2" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcSnellAngleLabel">Angle of Incidence &theta;<sub>1</sub> (degrees):</label>
+                        <input type="number" id="snell-angle" placeholder="e.g., 30" step="any" value="30">
+                    </div>
+                    <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcSnellFormula">Formula: n<sub>1</sub>&times;sin(&theta;<sub>1</sub>) = n<sub>2</sub>&times;sin(&theta;<sub>2</sub>)</p>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateSnell()">Calculate</button>
+                    <div class="result-box" id="snell-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="snell-result-value"></div>
+                    </div>
+                </div>
+
+                <div id="diffraction-calculator" class="calculator-box" style="display: none;">
+                    <h2 style="margin-bottom: 30px; color: var(--primary);" data-i18n="calcDiffractionH2">&#127919; Diffraction Limit Calculator</h2>
+                    <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcDiffractionNote">Calculate the Airy disk diameter and spatial resolution limit of an optical system.</p>
+                    <div class="input-group">
+                        <label data-i18n="calcWavelengthLabel">Wavelength &lambda; (nm):</label>
+                        <input type="number" id="diff-wavelength" placeholder="e.g., 550" step="any" value="550">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcFNumberLabel">F-number (f/#):</label>
+                        <input type="number" id="diff-fnumber" placeholder="e.g., 2" step="any" value="2">
+                    </div>
+                    <div class="input-group">
+                        <label data-i18n="calcMagnificationLabel">Magnification M:</label>
+                        <input type="number" id="diff-mag" placeholder="e.g., 1" step="any" value="1">
+                    </div>
+                    <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcDiffractionFormula">Airy disk diameter = 2.44 &times; &lambda; &times; f/# &times; (1+M)</p>
+                    <button class="calc-btn" data-i18n="calcBtn" onclick="calculateDiffraction()">Calculate</button>
+                    <div class="result-box" id="diffraction-result">
+                        <div class="result-label" data-i18n="calcResult">Result</div>
+                        <div class="result-value" id="diffraction-result-value"></div>
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <strong data-i18n="disclaimerTitle">&#9888;&#65039; Disclaimer &amp; Terms of Use:</strong><br><br>
+                    <span data-i18n="disclaimerText">These optical calculators are provided for free and for reference only. Results are estimates based on ideal theoretical formulas and do not constitute professional engineering advice. Actual optical performance may vary due to material properties, manufacturing tolerances, coating variations, and environmental factors. PhotonEdge makes no warranties regarding the accuracy of these calculations. Always verify critical parameters with our engineering team before ordering. Use of these calculators is at your own risk.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/translations.js"></script>
+    <script>
+        function showCalculator(type) {
+            document.querySelector('.calculator-grid').style.display = 'none';
+            document.getElementById('calculator-content').style.display = 'block';
+            
+            var allCalcs = ['focal', 'coating', 'magnification', 'laser-safety', 'beam-divergence', 'fresnel', 'snell', 'diffraction'];
+            for (var i = 0; i < allCalcs.length; i++) {
+                var el = document.getElementById(allCalcs[i] + '-calculator');
+                if (el) el.style.display = 'none';
+            }
+            
+            var target = document.getElementById(type + '-calculator');
+            if (target) target.style.display = 'block';
+            
+            var allResults = ['focal-result', 'coating-result', 'mag-result', 'laser-safety-result', 'beam-divergence-result', 'fresnel-result', 'snell-result', 'diffraction-result'];
+            for (var i = 0; i < allResults.length; i++) {
+                var el = document.getElementById(allResults[i]);
+                if (el) el.style.display = 'none';
+            }
+            window.scrollTo(0, 0);
+        }
+        
+        function showCalculatorList() {
+            document.querySelector('.calculator-grid').style.display = 'grid';
+            document.getElementById('calculator-content').style.display = 'none';
+        }
+
+        function updateFocalInputs() {
+            var type = document.getElementById('focal-calc-type').value;
+            if (type === 'focal') {
+                document.getElementById('object-input').style.display = 'block';
+                document.getElementById('image-input').style.display = 'block';
+            } else if (type === 'object') {
+                document.getElementById('object-input').style.display = 'none';
+                document.getElementById('image-input').style.display = 'block';
+            } else {
+                document.getElementById('object-input').style.display = 'block';
+                document.getElementById('image-input').style.display = 'none';
+            }
+        }
+
+
+        // Language helper for calculator results
+        function calcLang(en, zh) {
+            var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+            return lang === 'zh' ? zh : en;
+        }
+
+        function calculateFocal() {
+            var type = document.getElementById('focal-calc-type').value;
+            var d0 = parseFloat(document.getElementById('object-distance').value);
+            var di = parseFloat(document.getElementById('image-distance').value);
+            var result;
+            if (type === 'focal') {
+                result = 1 / (1/d0 + 1/di);
+                document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
+            } else if (type === 'object') {
+                var f = parseFloat(document.getElementById('image-distance').value);
+                result = 1 / (1/f - 1/di);
+                document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
+            } else {
+                var f = parseFloat(document.getElementById('object-distance').value);
+                result = 1 / (1/f - 1/d0);
+                document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
+            }
+            document.getElementById('focal-result').style.display = 'block';
+        }
+
+        function updateCoatingInputs() {
+            var type = document.getElementById('coating-type').value;
+            if (type === 'custom') {
+                document.getElementById('custom-reflect-input').style.display = 'block';
+            } else {
+                document.getElementById('custom-reflect-input').style.display = 'none';
+            }
+        }
+
+        function calculateCoating() {
+            var type = document.getElementById('coating-type').value;
+            var surfaces = parseInt(document.getElementById('surface-count').value);
+            var reflectPerSurface;
+            if (type === 'ar') {
+                reflectPerSurface = 0.25;
+            } else if (type === 'hr') {
+                reflectPerSurface = 99.5;
+            } else {
+                reflectPerSurface = parseFloat(document.getElementById('custom-reflect').value);
+            }
+            var transmitPerSurface = 100 - reflectPerSurface;
+            var totalTransmission = Math.pow(transmitPerSurface / 100, surfaces) * 100;
+            document.getElementById('coating-result-value').innerHTML = totalTransmission.toFixed(2) + '%';
+            document.getElementById('coating-result').style.display = 'block';
+        }
+
+        function updateMagInputs() {
+            var type = document.getElementById('mag-calc-type').value;
+            if (type === 'mag') {
+                document.getElementById('mag-focal-input').style.display = 'block';
+                document.getElementById('mag-distance-input').style.display = 'block';
+            } else if (type === 'focal') {
+                document.getElementById('mag-focal-input').style.display = 'none';
+                document.getElementById('mag-distance-input').style.display = 'block';
+            } else {
+                document.getElementById('mag-focal-input').style.display = 'block';
+                document.getElementById('mag-distance-input').style.display = 'none';
+            }
+        }
+
+        function calculateMagnification() {
+            var type = document.getElementById('mag-calc-type').value;
+            var f = parseFloat(document.getElementById('mag-focal').value);
+            var d0 = parseFloat(document.getElementById('mag-distance').value);
+            var result;
+            if (type === 'mag') {
+                var di = 1 / (1/f - 1/d0);
+                result = -di / d0;
+                document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + 'x';
+            } else if (type === 'focal') {
+                var m = parseFloat(document.getElementById('mag-focal').value);
+                result = (m * d0) / (1 - m);
+                document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + ' mm';
+            } else {
+                var m = parseFloat(document.getElementById('mag-distance').value);
+                result = (m * f) / (m - 1);
+                document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + ' mm';
+            }
+            document.getElementById('mag-result').style.display = 'block';
+        }
+
+        // Apply translations on load
+        if (typeof applyTranslations === 'function') {
+            applyTranslations();
+        }
+        var langBtns = document.querySelectorAll('.lang-btn');
+        var savedLang = localStorage.getItem('lang') || 'en';
+        for (var i = 0; i < langBtns.length; i++) {
+            langBtns[i].classList.remove('active');
+            if ((savedLang === 'en' && langBtns[i].textContent === 'EN') || (savedLang === 'zh' && langBtns[i].textContent === '中文')) {
+                langBtns[i].classList.add('active');
+            }
+        }
+
+
+        // === Laser Safety OD Calculator ===
+        function calculateLaserSafety() {
+            var power = parseFloat(document.getElementById('laser-power').value);
+            var beamDiam = parseFloat(document.getElementById('beam-diameter').value);
+            var mpe = parseFloat(document.getElementById('mpe-value').value);
+            
+            if (!power || !beamDiam || !mpe || power <= 0 || beamDiam <= 0 || mpe <= 0) {
+                document.getElementById('laser-safety-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('laser-safety-result').style.display = 'block';
+                return;
+            }
+            
+            // Beam area in cm^2: pi * (d/2)^2 where d is in mm -> cm
+            var radiusCm = (beamDiam / 2) / 10;
+            var areaCm2 = Math.PI * radiusCm * radiusCm;
+            var irradiance = power / areaCm2;
+            var od = Math.log10(irradiance / mpe);
+            
+            var resultText = 'OD ' + od.toFixed(1) + '+';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">Irradiance: ' + irradiance.toFixed(1) + ' mW/cm&sup2;</div>';
+            
+            document.getElementById('laser-safety-result-value').innerHTML = resultText;
+            document.getElementById('laser-safety-result').style.display = 'block';
+        }
+
+        // === Beam Divergence Calculator ===
+        function calculateBeamDivergence() {
+            var wavelength = parseFloat(document.getElementById('div-wavelength').value);
+            var beamDiam = parseFloat(document.getElementById('div-beam-diam').value);
+            var distance = parseFloat(document.getElementById('div-distance').value);
+            
+            if (!wavelength || !beamDiam || !distance || wavelength <= 0 || beamDiam <= 0 || distance <= 0) {
+                document.getElementById('beam-divergence-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('beam-divergence-result').style.display = 'block';
+                return;
+            }
+            
+            // theta = 4*lambda / (pi*D), lambda in nm -> m, D in mm -> m
+            var lambdaM = wavelength * 1e-9;
+            var dM = beamDiam * 1e-3;
+            var thetaRad = 4 * lambdaM / (Math.PI * dM);
+            var thetaMrad = thetaRad * 1000;
+            
+            // Spot size at distance: D_spot = D + 2*theta*distance
+            var spotSizeMm = beamDiam + 2 * thetaRad * distance * 1000;
+            
+            var resultText = thetaMrad.toFixed(3) + ' mrad';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
+            resultText += calcLang('Half-angle: ', '半角：') + (thetaMrad/2).toFixed(3) + ' mrad<br>';
+            resultText += calcLang('Spot size at ', '传输距离 ') + distance + 'm' + calcLang(': ', ' 处光斑：') + spotSizeMm.toFixed(2) + ' mm';
+            resultText += '</div>';
+            
+            document.getElementById('beam-divergence-result-value').innerHTML = resultText;
+            document.getElementById('beam-divergence-result').style.display = 'block';
+        }
+
+        // === Fresnel Reflection Calculator ===
+        function updateFresnelN2() {
+            var sel = document.getElementById('fresnel-n2-select').value;
+            var customInput = document.getElementById('fresnel-n2');
+            if (sel === 'custom') {
+                customInput.style.display = 'block';
+                customInput.focus();
+            } else {
+                customInput.style.display = 'none';
+                customInput.value = sel;
+            }
+        }
+        
+        function calculateFresnel() {
+            var n1 = parseFloat(document.getElementById('fresnel-n1').value);
+            var n2 = parseFloat(document.getElementById('fresnel-n2').value);
+            var angleDeg = parseFloat(document.getElementById('fresnel-angle').value);
+            var surfaces = parseInt(document.getElementById('fresnel-surfaces').value);
+            
+            if (!n1 || !n2 || isNaN(angleDeg) || n1 <= 0 || n2 <= 0) {
+                document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid values</span>';
+                document.getElementById('fresnel-result').style.display = 'block';
+                return;
+            }
+            
+            var angleRad = angleDeg * Math.PI / 180;
+            var reflectance;
+            
+            if (angleDeg === 0 || angleDeg === 0.0) {
+                // Normal incidence: R = ((n1-n2)/(n1+n2))^2
+                reflectance = Math.pow((n1 - n2) / (n1 + n2), 2);
+            } else {
+                // Snell's law for transmission angle
+                var sinTheta1 = Math.sin(angleRad);
+                var ratio = n1 * sinTheta1 / n2;
+                if (Math.abs(ratio) > 1) {
+                    document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Total Internal Reflection!</span>';
+                    document.getElementById('fresnel-result').style.display = 'block';
+                    return;
+                }
+                var theta2 = Math.asin(ratio);
+                var cosTheta1 = Math.cos(angleRad);
+                var cosTheta2 = Math.cos(theta2);
+                
+                // Rs and Rp
+                var rs = Math.pow((n1 * cosTheta1 - n2 * cosTheta2) / (n1 * cosTheta1 + n2 * cosTheta2), 2);
+                var rp = Math.pow((n1 * cosTheta2 - n2 * cosTheta1) / (n1 * cosTheta2 + n2 * cosTheta1), 2);
+                reflectance = (rs + rp) / 2;
+            }
+            
+            var reflectPct = reflectance * 100;
+            var transmitPerSurface = (1 - reflectance) * 100;
+            var totalTransmit = Math.pow(1 - reflectance, surfaces) * 100;
+            
+            var resultText = reflectPct.toFixed(2) + '% reflection';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
+            resultText += calcLang('Single surface transmission: ', '单面透过率：') + transmitPerSurface.toFixed(2) + '%<br>';
+            resultText += calcLang('Total transmission (', '总透过率（') + surfaces + calcLang(' surfaces): ', ' 面)：') + totalTransmit.toFixed(2) + '%';
+            resultText += '</div>';
+            
+            document.getElementById('fresnel-result-value').innerHTML = resultText;
+            document.getElementById('fresnel-result').style.display = 'block';
+        }
+
+        // === Snell's Law Calculator ===
+        function updateSnellN2() {
+            var sel = document.getElementById('snell-n2-select').value;
+            var customInput = document.getElementById('snell-n2');
+            if (sel === 'custom') {
+                customInput.style.display = 'block';
+                customInput.focus();
+            } else {
+                customInput.style.display = 'none';
+                customInput.value = sel;
+            }
+        }
+        
+        function calculateSnell() {
+            var n1 = parseFloat(document.getElementById('snell-n1').value);
+            var n2 = parseFloat(document.getElementById('snell-n2').value);
+            var theta1Deg = parseFloat(document.getElementById('snell-angle').value);
+            
+            if (!n1 || !n2 || isNaN(theta1Deg) || n1 <= 0 || n2 <= 0) {
+                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid values</span>';
+                document.getElementById('snell-result').style.display = 'block';
+                return;
+            }
+            
+            var theta1Rad = theta1Deg * Math.PI / 180;
+            var sinTheta2 = n1 * Math.sin(theta1Rad) / n2;
+            
+            // Critical angle (only when n1 > n2)
+            var criticalAngle = '';
+            if (n1 > n2) {
+                var critRad = Math.asin(n2 / n1);
+                var critDeg = critRad * 180 / Math.PI;
+                criticalAngle = '<br>Critical angle: ' + critDeg.toFixed(2) + '&deg;';
+            }
+            
+            if (Math.abs(sinTheta2) > 1) {
+                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Total Internal Reflection! &theta;<sub>1</sub> exceeds critical angle.' + criticalAngle + '</span>';
+                document.getElementById('snell-result').style.display = 'block';
+                return;
+            }
+            
+            var theta2Rad = Math.asin(sinTheta2);
+            var theta2Deg = theta2Rad * 180 / Math.PI;
+            
+            var resultText = theta2Deg.toFixed(2) + '&deg;';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
+            resultText += 'n<sub>1</sub>&times;sin(' + theta1Deg + '&deg;) = n<sub>2</sub>&times;sin(' + theta2Deg.toFixed(2) + '&deg;)<br>';
+            resultText += n1.toFixed(4) + ' &times; ' + Math.sin(theta1Rad).toFixed(4) + ' = ' + n2.toFixed(4) + ' &times; ' + Math.sin(theta2Rad).toFixed(4);
+            if (criticalAngle) {
+                resultText += criticalAngle;
+            }
+            resultText += '</div>';
+            
+            document.getElementById('snell-result-value').innerHTML = resultText;
+            document.getElementById('snell-result').style.display = 'block';
+        }
+
+        // === Diffraction Limit Calculator ===
+        function calculateDiffraction() {
+            var wavelength = parseFloat(document.getElementById('diff-wavelength').value);
+            var fNumber = parseFloat(document.getElementById('diff-fnumber').value);
+            var mag = parseFloat(document.getElementById('diff-mag').value);
+            
+            if (!wavelength || !fNumber || isNaN(mag) || wavelength <= 0 || fNumber <= 0 || mag < 0) {
+                document.getElementById('diffraction-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('diffraction-result').style.display = 'block';
+                return;
+            }
+            
+            // Airy disk diameter = 2.44 * lambda * f/# * (1 + M)
+            // lambda in nm -> um for result
+            var airyDiskUm = 2.44 * wavelength * fNumber * (1 + mag) / 1000;
+            
+            // Spatial resolution (Rayleigh criterion): 1/(1.22*lambda*f/#) in cycles/mm
+            // Actually: resolution = 1 / (airy_disk_in_mm)
+            var airyDiskMm = airyDiskUm / 1000;
+            var resolutionLpMm = 1 / airyDiskMm;
+            
+            var resultText = airyDiskUm.toFixed(2) + ' &mu;m';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
+            resultText += calcLang('Airy disk diameter: ', '艾里斑直径：') + airyDiskUm.toFixed(2) + ' &mu;m<br>';
+            resultText += calcLang('Spatial resolution: ', '空间分辨率：') + resolutionLpMm.toFixed(1) + ' lp/mm<br>';
+            resultText += calcLang('At f/', '在 f/') + fNumber + ', &lambda;=' + wavelength + 'nm, M=' + mag;
+            resultText += '</div>';
+            
+            document.getElementById('diffraction-result-value').innerHTML = resultText;
+            document.getElementById('diffraction-result').style.display = 'block';
+        }
+
+        function toggleMobileMenu() {
+            var navList = document.querySelector('.nav-list');
+            if (navList) {
+                navList.classList.toggle('active');
+            }
+        }
+    </script>
+    <script src="/js/chatbot.js"></script>
+    <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+        <h2>Free Optical Calculators for Engineers</h2>
+        <p>PhotonEdge provides free online optical calculators for optical engineers and researchers. Our tools include focal length calculator, optical magnification calculator, laser safety OD calculator, beam divergence calculator, Fresnel reflection calculator, Snell's law calculator, and diffraction limit calculator. As a leading optical components manufacturer and custom optics provider, PhotonEdge helps engineers select precision lenses, mirrors, prisms, and optical coatings. Whether you need BK7 plano-convex lenses, fused silica windows, or custom optical solutions, our calculators help you make informed decisions. Precision lenses supplier PhotonEdge serves 500+ global clients with high-quality optical components.</p>
+    </div>
+</body>
+</html>

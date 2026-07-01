@@ -153,6 +153,8 @@ en: {
         feature3Desc: "Precision optical processing and testing equipment",
         feature4Title: "Custom Solutions",
         feature4Desc: "OEM customization available, fast delivery",
+        feature5Title: "Quality Assurance",
+        feature5Desc: "ISO 9001:2015 certified, strict quality control system",
         aboutTitle: "About Us",
         aboutCompany: "PhotonEdge — Precision Optics, Global Reach",
         aboutDesc: "Beijing Hengdingguang Technology Co., Ltd. is a professional company specializing in R&D, production, and sales of optical components.",
@@ -550,6 +552,7 @@ en: {
         noResultsDesc: "Check back later for updates",
 
         aboutAdvTeam: "Professional Team",
+        aboutAdvTeamDesc: "High-quality R&D personnel, senior management, and experienced production/sales team",
         qualityCustomerFirst: "Customer First",
         qualityCustomerFirstDesc: "Customer satisfaction is our top priority",
         qualityQualityFirst: "Quality First",
@@ -1124,6 +1127,8 @@ en: {
     "feature3Title": "先进设备",
     "feature4Desc": "支持OEM定制，快速交付",
     "feature4Title": "定制方案",
+    "feature5Title": "品质保障",
+    "feature5Desc": "ISO 9001:2015认证，严格质量管控体系",
     "filterAll": "全部",
     "filterBy": "筛选",
     "filterCategory": "分类",
@@ -1447,6 +1452,7 @@ en: {
     "noResultsDesc": "请稍后再来看看",
 
     "aboutAdvTeam": "专业团队",
+    "aboutAdvTeamDesc": "高素质研发人员、资深管理团队及经验丰富的生产/销售团队",
     "qualityCustomerFirst": "客户至上",
     "qualityCustomerFirstDesc": "客户满意是我们最大的追求",
     "qualityQualityFirst": "品质第一",
@@ -1856,6 +1862,8 @@ function applyTranslations() {
 // Set language
 function setLanguage(lang) {
     localStorage.setItem('lang', lang);
+    // Update <html lang> attribute for SEO and accessibility
+    document.documentElement.lang = lang;
     applyTranslations();
     // Re-render featured products on homepage if function exists
     if (typeof renderFeaturedProducts === 'function') {
@@ -1869,11 +1877,11 @@ function setLanguage(lang) {
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
     }
-    // Re-render AI Selector if visible
-    if (typeof AISelector !== 'undefined' && AISelector.init) {
+    // Re-render AI Selector if visible (use render() to avoid resetting state and re-binding events)
+    if (typeof AISelector !== 'undefined' && AISelector.render) {
         var aiContainer = document.getElementById('aiSelectorContent');
         if (aiContainer && aiContainer.innerHTML) {
-            AISelector.init();
+            AISelector.render();
         }
     }
     // Re-render blog posts if on blog page
@@ -1905,8 +1913,14 @@ function getCurrentLang() {
 }
 
 // Apply translations on page load
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyTranslations);
-} else {
+function initLanguage() {
+    var savedLang = getCurrentLang();
+    document.documentElement.lang = savedLang;
     applyTranslations();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+} else {
+    initLanguage();
 }

@@ -456,42 +456,57 @@
             document.getElementById('calculator-content').style.display = 'none';
         }
 
-        function updateFocalInputs() {
-            var type = document.getElementById('focal-calc-type').value;
-            if (type === 'focal') {
-                document.getElementById('object-input').style.display = 'block';
-                document.getElementById('image-input').style.display = 'block';
-            } else if (type === 'object') {
-                document.getElementById('object-input').style.display = 'none';
-                document.getElementById('image-input').style.display = 'block';
-            } else {
-                document.getElementById('object-input').style.display = 'block';
-                document.getElementById('image-input').style.display = 'none';
-            }
-        }
-
-
         // Language helper for calculator results
         function calcLang(en, zh) {
             var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
             return lang === 'zh' ? zh : en;
         }
 
+        function updateFocalInputs() {
+            var type = document.getElementById('focal-calc-type').value;
+            var label1 = document.querySelector('#object-input label');
+            var label2 = document.querySelector('#image-input label');
+            var input1 = document.getElementById('object-distance');
+            var input2 = document.getElementById('image-distance');
+            if (type === 'focal') {
+                // Need d0 and di
+                label1.innerHTML = (typeof calcLang === 'function') ? calcLang('Object Distance d\u2080 (mm):', '物距 d\u2080 (mm)：') : 'Object Distance d\u2080 (mm):';
+                input1.placeholder = 'e.g., 100';
+                label2.innerHTML = (typeof calcLang === 'function') ? calcLang('Image Distance d\u1d62 (mm):', '像距 d\u1d62 (mm)：') : 'Image Distance d\u1d62 (mm):';
+                input2.placeholder = 'e.g., 50';
+            } else if (type === 'object') {
+                // Need f and di
+                label1.innerHTML = (typeof calcLang === 'function') ? calcLang('Focal Length f (mm):', '焦距 f (mm)：') : 'Focal Length f (mm):';
+                input1.placeholder = 'e.g., 50';
+                label2.innerHTML = (typeof calcLang === 'function') ? calcLang('Image Distance d\u1d62 (mm):', '像距 d\u1d62 (mm)：') : 'Image Distance d\u1d62 (mm):';
+                input2.placeholder = 'e.g., 100';
+            } else {
+                // Need f and d0
+                label1.innerHTML = (typeof calcLang === 'function') ? calcLang('Focal Length f (mm):', '焦距 f (mm)：') : 'Focal Length f (mm):';
+                input1.placeholder = 'e.g., 50';
+                label2.innerHTML = (typeof calcLang === 'function') ? calcLang('Object Distance d\u2080 (mm):', '物距 d\u2080 (mm)：') : 'Object Distance d\u2080 (mm):';
+                input2.placeholder = 'e.g., 100';
+            }
+            document.getElementById('object-input').style.display = 'block';
+            document.getElementById('image-input').style.display = 'block';
+        }
+
         function calculateFocal() {
             var type = document.getElementById('focal-calc-type').value;
-            var d0 = parseFloat(document.getElementById('object-distance').value);
-            var di = parseFloat(document.getElementById('image-distance').value);
+            var val1 = parseFloat(document.getElementById('object-distance').value);
+            var val2 = parseFloat(document.getElementById('image-distance').value);
             var result;
             if (type === 'focal') {
-                result = 1 / (1/d0 + 1/di);
+                // val1=d0, val2=di → f = 1/(1/d0 + 1/di)
+                result = 1 / (1/val1 + 1/val2);
                 document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
             } else if (type === 'object') {
-                var f = parseFloat(document.getElementById('image-distance').value);
-                result = 1 / (1/f - 1/di);
+                // val1=f, val2=di → d0 = 1/(1/f - 1/di)
+                result = 1 / (1/val1 - 1/val2);
                 document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
             } else {
-                var f = parseFloat(document.getElementById('object-distance').value);
-                result = 1 / (1/f - 1/d0);
+                // val1=f, val2=d0 → di = 1/(1/f - 1/d0)
+                result = 1 / (1/val1 - 1/val2);
                 document.getElementById('focal-result-value').innerHTML = result.toFixed(2) + ' mm';
             }
             document.getElementById('focal-result').style.display = 'block';
@@ -525,15 +540,38 @@
 
         function updateMagInputs() {
             var type = document.getElementById('mag-calc-type').value;
+            var focalLabel = document.querySelector('#mag-focal-input label');
+            var distLabel = document.querySelector('#mag-distance-input label');
+            var focalInput = document.getElementById('mag-focal');
+            var distInput = document.getElementById('mag-distance');
             if (type === 'mag') {
+                // Need f and d0
+                focalLabel.setAttribute('data-i18n', 'calcFocalLenLabel');
+                focalLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Focal Length f (mm):', '焦距 f (mm)：') : 'Focal Length f (mm):';
+                focalInput.placeholder = 'e.g., 50';
+                distLabel.setAttribute('data-i18n', 'calcObjDistLabel');
+                distLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Object Distance d\u2080 (mm):', '物距 d\u2080 (mm)：') : 'Object Distance d\u2080 (mm):';
+                distInput.placeholder = 'e.g., 100';
                 document.getElementById('mag-focal-input').style.display = 'block';
                 document.getElementById('mag-distance-input').style.display = 'block';
             } else if (type === 'focal') {
-                document.getElementById('mag-focal-input').style.display = 'none';
+                // Need M and d0
+                focalLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Magnification M:', '放大倍率 M：') : 'Magnification M:';
+                focalInput.placeholder = 'e.g., 2';
+                distLabel.setAttribute('data-i18n', 'calcObjDistLabel');
+                distLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Object Distance d\u2080 (mm):', '物距 d\u2080 (mm)：') : 'Object Distance d\u2080 (mm):';
+                distInput.placeholder = 'e.g., 100';
+                document.getElementById('mag-focal-input').style.display = 'block';
                 document.getElementById('mag-distance-input').style.display = 'block';
             } else {
+                // Need M and f
+                focalLabel.setAttribute('data-i18n', 'calcFocalLenLabel');
+                focalLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Focal Length f (mm):', '焦距 f (mm)：') : 'Focal Length f (mm):';
+                focalInput.placeholder = 'e.g., 50';
+                distLabel.innerHTML = (typeof calcLang === 'function') ? calcLang('Magnification M:', '放大倍率 M：') : 'Magnification M:';
+                distInput.placeholder = 'e.g., 2';
                 document.getElementById('mag-focal-input').style.display = 'block';
-                document.getElementById('mag-distance-input').style.display = 'none';
+                document.getElementById('mag-distance-input').style.display = 'block';
             }
         }
 
@@ -543,16 +581,21 @@
             var d0 = parseFloat(document.getElementById('mag-distance').value);
             var result;
             if (type === 'mag') {
+                // Given f and d0, calculate M = -di/d0 where 1/di = 1/f - 1/d0
                 var di = 1 / (1/f - 1/d0);
                 result = -di / d0;
                 document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + 'x';
             } else if (type === 'focal') {
-                var m = parseFloat(document.getElementById('mag-focal').value);
-                result = (m * d0) / (1 - m);
+                // Given M (in mag-focal field) and d0 (in mag-distance field), calculate f
+                // f = M * d0 / (M - 1)
+                var m = f; // mag-focal field contains M in this mode
+                result = (m * d0) / (m - 1);
                 document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + ' mm';
             } else {
-                var m = parseFloat(document.getElementById('mag-distance').value);
-                result = (m * f) / (m - 1);
+                // Given f (in mag-focal field) and M (in mag-distance field), calculate d0
+                // d0 = f * (M - 1) / M
+                var m = d0; // mag-distance field contains M in this mode
+                result = (f * (m - 1)) / m;
                 document.getElementById('mag-result-value').innerHTML = result.toFixed(2) + ' mm';
             }
             document.getElementById('mag-result').style.display = 'block';
@@ -579,7 +622,7 @@
             var mpe = parseFloat(document.getElementById('mpe-value').value);
             
             if (!power || !beamDiam || !mpe || power <= 0 || beamDiam <= 0 || mpe <= 0) {
-                document.getElementById('laser-safety-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('laser-safety-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Please enter valid positive values', '请输入有效的正数值') + '</span>';
                 document.getElementById('laser-safety-result').style.display = 'block';
                 return;
             }
@@ -604,7 +647,7 @@
             var distance = parseFloat(document.getElementById('div-distance').value);
             
             if (!wavelength || !beamDiam || !distance || wavelength <= 0 || beamDiam <= 0 || distance <= 0) {
-                document.getElementById('beam-divergence-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('beam-divergence-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Please enter valid positive values', '请输入有效的正数值') + '</span>';
                 document.getElementById('beam-divergence-result').style.display = 'block';
                 return;
             }
@@ -648,7 +691,7 @@
             var surfaces = parseInt(document.getElementById('fresnel-surfaces').value);
             
             if (!n1 || !n2 || isNaN(angleDeg) || n1 <= 0 || n2 <= 0) {
-                document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid values</span>';
+                document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Please enter valid values', '请输入有效数值') + '</span>';
                 document.getElementById('fresnel-result').style.display = 'block';
                 return;
             }
@@ -664,7 +707,7 @@
                 var sinTheta1 = Math.sin(angleRad);
                 var ratio = n1 * sinTheta1 / n2;
                 if (Math.abs(ratio) > 1) {
-                    document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Total Internal Reflection!</span>';
+                    document.getElementById('fresnel-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Total Internal Reflection!', '全内反射！') + '</span>';
                     document.getElementById('fresnel-result').style.display = 'block';
                     return;
                 }
@@ -682,7 +725,7 @@
             var transmitPerSurface = (1 - reflectance) * 100;
             var totalTransmit = Math.pow(1 - reflectance, surfaces) * 100;
             
-            var resultText = reflectPct.toFixed(2) + '% reflection';
+            var resultText = reflectPct.toFixed(2) + '%' + calcLang(' reflection', ' 反射率');
             resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">';
             resultText += calcLang('Single surface transmission: ', '单面透过率：') + transmitPerSurface.toFixed(2) + '%<br>';
             resultText += calcLang('Total transmission (', '总透过率（') + surfaces + calcLang(' surfaces): ', ' 面)：') + totalTransmit.toFixed(2) + '%';
@@ -711,7 +754,7 @@
             var theta1Deg = parseFloat(document.getElementById('snell-angle').value);
             
             if (!n1 || !n2 || isNaN(theta1Deg) || n1 <= 0 || n2 <= 0) {
-                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid values</span>';
+                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Please enter valid values', '请输入有效数值') + '</span>';
                 document.getElementById('snell-result').style.display = 'block';
                 return;
             }
@@ -724,11 +767,11 @@
             if (n1 > n2) {
                 var critRad = Math.asin(n2 / n1);
                 var critDeg = critRad * 180 / Math.PI;
-                criticalAngle = '<br>Critical angle: ' + critDeg.toFixed(2) + '&deg;';
+                criticalAngle = '<br>' + calcLang('Critical angle: ', '临界角：') + critDeg.toFixed(2) + '&deg;';
             }
             
             if (Math.abs(sinTheta2) > 1) {
-                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Total Internal Reflection! &theta;<sub>1</sub> exceeds critical angle.' + criticalAngle + '</span>';
+                document.getElementById('snell-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Total Internal Reflection!', '全内反射！') + ' &theta;<sub>1</sub> ' + calcLang('exceeds critical angle.', '超过临界角。') + criticalAngle + '</span>';
                 document.getElementById('snell-result').style.display = 'block';
                 return;
             }
@@ -756,7 +799,7 @@
             var mag = parseFloat(document.getElementById('diff-mag').value);
             
             if (!wavelength || !fNumber || isNaN(mag) || wavelength <= 0 || fNumber <= 0 || mag < 0) {
-                document.getElementById('diffraction-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">Please enter valid positive values</span>';
+                document.getElementById('diffraction-result-value').innerHTML = '<span style="font-size:16px;color:#dc3545;">' + calcLang('Please enter valid positive values', '请输入有效的正数值') + '</span>';
                 document.getElementById('diffraction-result').style.display = 'block';
                 return;
             }
