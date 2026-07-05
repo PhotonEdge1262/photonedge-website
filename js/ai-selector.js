@@ -295,71 +295,60 @@ var AISelector = (function() {
     var selectedWavelength = '';
     var selectedComponent = '';
 
-    var _initialized = false;
-
     function init() {
         currentStep = 1;
         selectedApp = '';
         selectedWavelength = '';
         selectedComponent = '';
+        renderWizard();
         
-        // Only bind events once to prevent duplicate listeners
-        if (!_initialized) {
-            _initialized = true;
-            // Event delegation for reliable click/touch handling
-            var container = document.getElementById('aiSelectorContent');
-            if (container) {
-                container.addEventListener('click', function(e) {
-                    var target = e.target;
-                    // Walk up to find element with data-action
-                    while (target && target !== container) {
-                        if (target.getAttribute && target.getAttribute('data-action')) {
-                            var action = target.getAttribute('data-action');
-                            var value = target.getAttribute('data-value') || '';
-                            if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
-                            e.preventDefault();
-                            e.stopPropagation();
-                            if (action === 'selectApp') selectApp(value);
-                            else if (action === 'selectWavelength') selectWavelength(value);
-                            else if (action === 'selectComponent') selectComponent(value);
-                            else if (action === 'nextStep') nextStep();
-                            else if (action === 'prevStep') prevStep();
-                            else if (action === 'showResults') showResults();
-                            else if (action === 'reset') reset();
-                            return;
-                        }
-                        target = target.parentNode;
+        // Event delegation for reliable click/touch handling
+        var container = document.getElementById('aiSelectorContent');
+        if (container) {
+            container.addEventListener('click', function(e) {
+                var target = e.target;
+                // Walk up to find element with data-action
+                while (target && target !== container) {
+                    if (target.getAttribute && target.getAttribute('data-action')) {
+                        var action = target.getAttribute('data-action');
+                        var value = target.getAttribute('data-value') || '';
+                        if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
+                        e.preventDefault();
+                        e.stopPropagation();
+                        if (action === 'selectApp') selectApp(value);
+                        else if (action === 'selectWavelength') selectWavelength(value);
+                        else if (action === 'selectComponent') selectComponent(value);
+                        else if (action === 'nextStep') nextStep();
+                        else if (action === 'prevStep') prevStep();
+                        else if (action === 'showResults') showResults();
+                        else if (action === 'reset') reset();
+                        return;
                     }
-                });
-                // Touch support for mobile
-                container.addEventListener('touchend', function(e) {
-                    var target = e.target;
-                    while (target && target !== container) {
-                        if (target.getAttribute && target.getAttribute('data-action')) {
-                            var action = target.getAttribute('data-action');
-                            var value = target.getAttribute('data-value') || '';
-                            if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
-                            e.preventDefault();
-                            if (action === 'selectApp') selectApp(value);
-                            else if (action === 'selectWavelength') selectWavelength(value);
-                            else if (action === 'selectComponent') selectComponent(value);
-                            else if (action === 'nextStep') nextStep();
-                            else if (action === 'prevStep') prevStep();
-                            else if (action === 'showResults') showResults();
-                            else if (action === 'reset') reset();
-                            return;
-                        }
-                        target = target.parentNode;
+                    target = target.parentNode;
+                }
+            });
+            // Touch support for mobile
+            container.addEventListener('touchend', function(e) {
+                var target = e.target;
+                while (target && target !== container) {
+                    if (target.getAttribute && target.getAttribute('data-action')) {
+                        var action = target.getAttribute('data-action');
+                        var value = target.getAttribute('data-value') || '';
+                        if (target.hasAttribute('disabled') || target.classList.contains('disabled')) return;
+                        e.preventDefault();
+                        if (action === 'selectApp') selectApp(value);
+                        else if (action === 'selectWavelength') selectWavelength(value);
+                        else if (action === 'selectComponent') selectComponent(value);
+                        else if (action === 'nextStep') nextStep();
+                        else if (action === 'prevStep') prevStep();
+                        else if (action === 'showResults') showResults();
+                        else if (action === 'reset') reset();
+                        return;
                     }
-                });
-            }
+                    target = target.parentNode;
+                }
+            });
         }
-        renderWizard();
-    }
-
-    // Public render method - re-renders without resetting state or re-binding events
-    function render() {
-        renderWizard();
     }
 
     function renderWizard() {
@@ -580,7 +569,6 @@ var AISelector = (function() {
     /* ===== Public API ===== */
     return {
         init: init,
-        render: render,
         selectApp: selectApp,
         selectWavelength: selectWavelength,
         selectComponent: selectComponent,

@@ -1311,53 +1311,6 @@ ul { list-style: none; }
 .download-btn i {
     font-size: 16px;
 }
-/* Tech Spec Filter Buttons */
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-}
-.filter-btn {
-    padding: 8px 24px;
-    border-radius: 20px;
-    border: 1px solid #e2e8f0;
-    background: #fff;
-    color: #64748b;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s;
-}
-.filter-btn:hover {
-    border-color: #3b82f6;
-    color: #3b82f6;
-}
-.filter-btn.active {
-    background: #3b82f6;
-    color: #fff;
-    border-color: #3b82f6;
-}
-/* Tech Spec Category */
-.tech-spec-category {
-    margin-bottom: 40px;
-}
-.tech-spec-category h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e2e8f0;
-}
-.section-subtitle {
-    text-align: center;
-    color: #64748b;
-    font-size: 16px;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    line-height: 1.6;
-}
 /* Part Numbers Section */
 .part-numbers-section {
     margin-top: 30px;
@@ -4589,4 +4542,57 @@ img[loading="lazy"] {
         padding-top: 40px;
         padding-bottom: 40px;
     }
+}
+
+/* Tech Specs Download Section */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+}
+
+.filter-btn.active {
+    background: #3b82f6;
+    color: #fff;
+    border-color: #3b82f6;
+}
+
+.tech-spec-category {
+    margin-bottom: 40px;
+}
+
+.tech-spec-category h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
 }

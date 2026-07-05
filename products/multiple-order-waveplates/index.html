@@ -121,6 +121,34 @@
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
+<script type="application/ld+json" id="static-product-schema">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Multiple Order Waveplates",
+  "description": "Multiple order waveplates provide precise retardation at specific wavelengths. Made from high-quality quartz crystal with excellent surface quality and wavefront distortion control.",
+  "image": "https://photonedgeoptics.com/images/products/optical-wave-plates/multiple-order-waveplates.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "PhotonEdge"
+  },
+  "manufacturer": {
+    "@type": "Organization",
+    "name": "Beijing Hengdingguang Technology Co., Ltd."
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": 30,
+    "priceValidUntil": "2026-12-31",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "PhotonEdge"
+    }
+  }
+}
+</script>
 </head>
 <body>
     <header class="header">
@@ -961,7 +989,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var priceSection = document.getElementById('productPriceSection');
             var price = currentProduct.price || 0;
             var hasPartNumbers = currentProduct.partNumbers && currentProduct.partNumbers.length > 0;
-            var startingLabel = lang === 'zh' ? '行业参考价' : 'Industry Reference';
+            var startingLabel = lang === 'zh' ? '起售价' : 'Starting at';
             
             var html = '<div class="price-display">';
             html += '<span class="price-label">' + startingLabel + ' </span>';
@@ -999,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!select || !select.value) {
                 // Reset to base price
                 var price = currentProduct.price || 0;
-                var startingLabel = lang === 'zh' ? '行业参考价' : 'Industry Reference';
+                var startingLabel = lang === 'zh' ? '起售价' : 'Starting at';
                 priceSection.querySelector('.price-value').textContent = '$' + price.toFixed(2);
                 priceSection.querySelector('.price-label').textContent = startingLabel + ' ';
                 return;
