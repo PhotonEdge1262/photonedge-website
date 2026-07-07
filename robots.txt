@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /cart.html
-Disallow: /downloads/
 
 Sitemap: https://photonedgeoptics.com/sitemap.xml
