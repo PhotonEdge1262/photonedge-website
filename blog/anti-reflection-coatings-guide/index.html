@@ -170,8 +170,151 @@
     </div>
     
     <div class="article-body" id="articleBody">
-        <p data-en-content="Everything you need to know about anti-reflection (AR) coatings for optical components. Discover how AR coatings work, the different types available, and how to choose the right coating for your wavelength and application." data-zh-content="全面了解光学元件减反射（AR）镀膜。了解AR镀膜的工作原理、不同类型以及如何为波长和应用选择合适的镀膜。">Everything you need to know about anti-reflection (AR) coatings for optical components. Discover how AR coatings work, the different types available, and how to choose the right coating for your wavelength and application.</p>
+    <div id="articleContentEn">
+        <h2>Introduction</h2>
+<p>Every air-glass interface in an optical system reflects approximately 4% of incident light at normal incidence (for n ≈ 1.5). In a multi-element system with 10 surfaces, this amounts to a total transmission loss of about 34% — before accounting for absorption. Anti-reflection (AR) coatings are thin-film coatings designed to reduce this Fresnel reflection, maximizing transmission and eliminating ghost images. Understanding AR coating types and their specifications is essential for optimizing any optical system.</p>
+
+<h2>How AR Coatings Work</h2>
+<p>AR coatings operate on the principle of destructive interference. A thin film of controlled thickness and refractive index is deposited on the glass surface. Light reflected from the film-air interface and light reflected from the film-glass interface interfere destructively, canceling the reflected beam and transmitting more light into the optic.</p>
+<p>For a single-layer quarter-wave coating at design wavelength &lambda;<sub>0</sub>, the film thickness is &lambda;<sub>0</sub>/4n<sub>f</sub>, where n<sub>f</sub> is the film refractive index. Perfect cancellation occurs when n<sub>f</sub> = &radic;(n<sub>s</sub>), where n<sub>s</sub> is the substrate index. For BK7 (n = 1.517), the ideal film index is 1.233 — lower than any practical deposition material.</p>
+
+<h2>Single-Layer AR Coatings</h2>
+<p>The most common single-layer AR coating is magnesium fluoride (MgF<sub>2</sub>), with a refractive index of approximately 1.38. While this does not achieve perfect index matching, it reduces single-surface reflection from 4.0% to about 1.5% at the design wavelength for BK7. MgF<sub>2</sub> coatings are inexpensive, durable, and widely available.</p>
+<ul>
+<li>Material: MgF<sub>2</sub> (n &asymp; 1.38)</li>
+<li>Reflection per surface: ~1.5% at design wavelength for BK7</li>
+<li>Effective bandwidth: Narrow (R increases rapidly away from design wavelength)</li>
+<li>Best for: Cost-sensitive applications, single-wavelength systems</li>
+<li>Laser damage threshold: High (>10 J/cm<sup>2</sup> at 1064 nm, 10 ns)</li>
+</ul>
+
+<h2>Multi-Layer Broadband AR Coatings</h2>
+<p>Multi-layer AR coatings use two or more thin films of alternating high and low refractive index materials (e.g., TiO<sub>2</sub>/SiO<sub>2</sub> or ZrO<sub>2</sub>/MgF<sub>2</sub>) to achieve low reflectance over a broad wavelength range. A typical broadband AR (BBAR) coating for the visible spectrum (400–700 nm) achieves less than 0.5% reflectance per surface across the entire range.</p>
+<ul>
+<li>Typical layers: 2–5 per surface</li>
+<li>Reflectance: &lt;0.5% per surface across the specified bandwidth</li>
+<li>Common broadband ranges: VIS (400–700 nm), NIR (650–1050 nm), SWIR (900–1700 nm)</li>
+<li>Best for: Imaging systems, broadband sources, white-light applications</li>
+</ul>
+
+<h2>V-Coat vs Broadband AR</h2>
+<p>The choice between V-coat and broadband AR coatings depends on the spectral characteristics of your light source:</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Feature</th><th style="border:1px solid #e2e8f0;padding:8px;">V-Coat</th><th style="border:1px solid #e2e8f0;padding:8px;">Broadband AR</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Shape</td><td style="border:1px solid #e2e8f0;padding:8px;">V-shaped R(&lambda;) curve</td><td style="border:1px solid #e2e8f0;padding:8px;">Flat, low R over broad range</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Min. reflectance</td><td style="border:1px solid #e2e8f0;padding:8px;">&lt;0.1% at design wavelength</td><td style="border:1px solid #e2e8f0;padding:8px;">&lt;0.5% across bandwidth</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Effective bandwidth</td><td style="border:1px solid #e2e8f0;padding:8px;">Narrow (~&plusmn;5% of &lambda;<sub>0</sub>)</td><td style="border:1px solid #e2e8f0;padding:8px;">Broad (hundreds of nm)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Laser damage threshold</td><td style="border:1px solid #e2e8f0;padding:8px;">Highest (fewer interfaces)</td><td style="border:1px solid #e2e8f0;padding:8px;">Good (more layers)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Cost</td><td style="border:1px solid #e2e8f0;padding:8px;">Moderate</td><td style="border:1px solid #e2e8f0;padding:8px;">Moderate to High</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Best application</td><td style="border:1px solid #e2e8f0;padding:8px;">Single-wavelength lasers</td><td style="border:1px solid #e2e8f0;padding:8px;">Imaging, broadband sources</td></tr>
+</table>
+
+<h2>Selecting AR Coatings by Wavelength</h2>
+
+<h3>UV Applications (190–400 nm)</h3>
+<p>UV applications require coatings on UV-grade fused silica substrates with UV-transparent materials. Standard MgF<sub>2</sub>/LiF coatings work down to about 200 nm. For deep UV (below 200 nm), special coating designs and ultra-high-vacuum deposition processes are needed. Avoid epoxy cements in UV beam paths, as they yellow and absorb.</p>
+
+<h3>Visible Applications (400–700 nm)</h3>
+<p>The visible range is the easiest to coat effectively. MgF<sub>2</sub> single-layer coatings work for monochromatic visible lasers. For broadband visible applications (microscopy, photography), multi-layer BBAR coatings (400–700 nm or 350–700 nm) are standard. These achieve less than 0.5% reflectance per surface.</p>
+
+<h3>NIR and IR Applications (700 nm – 20 &mu;m)</h3>
+<p>NIR coatings typically use SiO<sub>2</sub>/TiO<sub>2</sub> or SiO<sub>2</sub>/Ta<sub>2</sub>O<sub>5</sub> layer pairs. For mid-IR applications on ZnSe or Ge substrates, different material systems (e.g., ThF<sub>4</sub>/ZnSe) are required. IR coatings must also consider absorption in the coating layers, which can cause thermal lensing in high-power CO<sub>2</sub> laser systems.</p>
+
+<h2>Impact on System Performance</h2>
+<p>AR coatings affect system performance in several ways beyond simple transmission improvement:</p>
+<ul>
+<li><strong>Ghost image suppression:</strong> Uncoated surfaces create parasitic reflections (ghost images) that reduce image contrast. AR coatings minimize these reflections, improving MTF and signal-to-noise ratio.</li>
+<li><strong>Laser damage threshold:</strong> The coating is typically the weakest link in a laser optics chain. V-coats generally offer higher LIDT than broadband coatings at their design wavelength.</li>
+<li><strong>Environmental durability:</strong> Coatings must survive humidity, temperature cycling, and cleaning. MgF<sub>2</sub> single-layer coatings pass MIL-C-675 adhesion and abrasion tests; multi-layer coatings should meet similar durability standards.</li>
+<li><strong>Cosmetic inspection:</strong> Coating defects (pinholes, spatter, uncoated spots) can create localized high-reflection zones. Specify acceptable defect density for critical applications.</li>
+</ul>
+
+<h2>PhotonEdge Coated Optics</h2>
+<p>PhotonEdge offers a full range of AR-coated optical components with coating options to match your application:</p>
+<ul>
+<li><a href="/products/laser-line-high-reflected-mirrors/">Laser Line Mirrors</a> — With precision V-coat AR on the rear surface</li>
+<li><a href="/products/broadband-dielectric-mirrors/">Broadband Dielectric Mirrors</a> — With BBAR coating options on transmissive optics</li>
+<li>Custom AR coatings for any wavelength range from 193 nm to 10.6 &mu;m</li>
+<li>Coating quality verified by spectrophotometry with certificates of conformance</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>AR coatings are a small but crucial part of optical system design. For single-wavelength laser applications, V-coats provide the lowest reflection and highest damage threshold. For broadband imaging, multi-layer BBAR coatings deliver consistent performance across the spectrum. Even a simple MgF<sub>2</sub> coating can reduce reflection from 4% to 1.5%, a meaningful improvement in multi-element systems. When specifying AR coatings, always match the coating bandwidth to your source spectrum and verify LIDT for laser applications. PhotonEdge can help you select and specify the right coating for any application.</p>
     </div>
+    <div id="articleContentZh" style="display:none;">
+        <h2>引言</h2>
+<p>光学系统中每个空气-玻璃界面在垂直入射时反射约4%的入射光（n ≈ 1.5时）。在具有10个表面的多元件系统中，总透过损失约达34%——这还未计入吸收。减反射（AR）镀膜是旨在减少这种菲涅尔反射的薄膜镀层，最大化透过率并消除鬼像。了解AR镀膜类型及其规格对优化任何光学系统都至关重要。</p>
+
+<h2>AR镀膜的工作原理</h2>
+<p>AR镀膜基于相消干涉原理工作。在玻璃表面沉积一层受控厚度和折射率的薄膜。从膜-空气界面反射的光和从膜-玻璃界面反射的光发生相消干涉，抵消反射光束，使更多光透入光学元件。</p>
+<p>对于设计波长&lambda;<sub>0</sub>处的单层四分之一波长镀膜，膜厚为&lambda;<sub>0</sub>/4n<sub>f</sub>，其中n<sub>f</sub>是薄膜折射率。当n<sub>f</sub> = &radic;(n<sub>s</sub>)时实现完美抵消，其中n<sub>s</sub>是基底折射率。对于BK7（n = 1.517），理想膜层折射率为1.233——低于任何实际沉积材料。</p>
+
+<h2>单层AR镀膜</h2>
+<p>最常见的单层AR镀膜是氟化镁（MgF<sub>2</sub>），折射率约1.38。虽然这不能实现完美的折射率匹配，但它将BK7在设计波长处的单面反射从4.0%降至约1.5%。MgF<sub>2</sub>镀膜价格低廉、耐用且广泛可用。</p>
+<ul>
+<li>材料：MgF<sub>2</sub>（n ≈ 1.38）</li>
+<li>每面反射：BK7设计波长处约1.5%</li>
+<li>有效带宽：窄（偏离设计波长后R快速增加）</li>
+<li>最佳用途：成本敏感应用、单波长系统</li>
+<li>激光损伤阈值：高（>10 J/cm²，1064 nm，10 ns）</li>
+</ul>
+
+<h2>多层宽带AR镀膜</h2>
+<p>多层AR镀膜使用两层或更多交替高低折射率材料薄膜（如TiO<sub>2</sub>/SiO<sub>2</sub>或ZrO<sub>2</sub>/MgF<sub>2</sub>），在宽波长范围内实现低反射率。典型的可见光谱（400–700 nm）宽带AR（BBAR）镀膜在整个范围内实现每面低于0.5%的反射率。</p>
+<ul>
+<li>典型层数：每面2–5层</li>
+<li>反射率：指定带宽内每面&lt;0.5%</li>
+<li>常见宽带范围：VIS（400–700 nm）、NIR（650–1050 nm）、SWIR（900–1700 nm）</li>
+<li>最佳用途：成像系统、宽带光源、白光应用</li>
+</ul>
+
+<h2>V涂层与宽带AR对比</h2>
+<p>V涂层和宽带AR镀膜的选择取决于光源的光谱特性：</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">特性</th><th style="border:1px solid #e2e8f0;padding:8px;">V涂层</th><th style="border:1px solid #e2e8f0;padding:8px;">宽带AR</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">形状</td><td style="border:1px solid #e2e8f0;padding:8px;">V形R(λ)曲线</td><td style="border:1px solid #e2e8f0;padding:8px;">宽带范围内平坦低R</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">最低反射率</td><td style="border:1px solid #e2e8f0;padding:8px;">设计波长处&lt;0.1%</td><td style="border:1px solid #e2e8f0;padding:8px;">带宽内&lt;0.5%</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">有效带宽</td><td style="border:1px solid #e2e8f0;padding:8px;">窄（约±5% &lambda;<sub>0</sub>）</td><td style="border:1px solid #e2e8f0;padding:8px;">宽（数百nm）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">激光损伤阈值</td><td style="border:1px solid #e2e8f0;padding:8px;">最高（界面较少）</td><td style="border:1px solid #e2e8f0;padding:8px;">良好（层数更多）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">成本</td><td style="border:1px solid #e2e8f0;padding:8px;">中等</td><td style="border:1px solid #e2e8f0;padding:8px;">中等到高</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">最佳应用</td><td style="border:1px solid #e2e8f0;padding:8px;">单波长激光</td><td style="border:1px solid #e2e8f0;padding:8px;">成像、宽带光源</td></tr>
+</table>
+
+<h2>按波长选择AR镀膜</h2>
+
+<h3>紫外应用（190–400 nm）</h3>
+<p>紫外应用需要紫外级熔融石英基底上的紫外透明材料镀膜。标准MgF<sub>2</sub>/LiF镀膜可工作至约200 nm。对于深紫外（200 nm以下），需要特殊镀膜设计和超高真空沉积工艺。避免在紫外光路中使用环氧胶，它们会变黄并吸收。</p>
+
+<h3>可见光应用（400–700 nm）</h3>
+<p>可见光范围最容易有效镀膜。MgF<sub>2</sub>单层镀膜适用于单色可见激光。对于宽带可见光应用（显微镜、摄影），多层BBAR镀膜（400–700 nm或350–700 nm）是标准选择，每面反射率低于0.5%。</p>
+
+<h3>近红外和红外应用（700 nm – 20 μm）</h3>
+<p>近红外镀膜通常使用SiO<sub>2</sub>/TiO<sub>2</sub>或SiO<sub>2</sub>/Ta<sub>2</sub>O<sub>5</sub>层对。对于ZnSe或Ge基底上的中红外应用，需要不同的材料系统（如ThF<sub>4</sub>/ZnSe）。红外镀膜还必须考虑膜层吸收，这会在高功率CO<sub>2</sub>激光系统中引起热透镜效应。</p>
+
+<h2>对系统性能的影响</h2>
+<p>AR镀膜以多种方式影响系统性能，不仅限于透过率提升：</p>
+<ul>
+<li><strong>鬼像抑制：</strong>未镀膜表面产生寄生反射（鬼像），降低图像对比度。AR镀膜最小化这些反射，改善MTF和信噪比。</li>
+<li><strong>激光损伤阈值：</strong>镀膜通常是激光光学链中最薄弱的环节。V涂层在其设计波长处通常提供比宽带镀膜更高的LIDT。</li>
+<li><strong>环境耐久性：</strong>镀膜必须经受湿度、温度循环和清洁。MgF<sub>2</sub>单层镀膜通过MIL-C-675附着和磨损测试；多层镀膜应满足类似的耐久性标准。</li>
+<li><strong>外观检查：</strong>镀膜缺陷（针孔、飞溅、未镀膜斑点）会产生局部高反射区。对于关键应用，应规定可接受的缺陷密度。</li>
+</ul>
+
+<h2>恒鼎光镀膜光学元件</h2>
+<p>恒鼎光提供全系列AR镀膜光学元件，镀膜选项匹配您的应用：</p>
+<ul>
+<li><a href="/products/laser-line-high-reflected-mirrors/">激光线反射镜</a> — 后表面配有精密V涂层AR镀膜</li>
+<li><a href="/products/broadband-dielectric-mirrors/">宽带介质反射镜</a> — 透射光学元件配有BBAR镀膜选项</li>
+<li>定制AR镀膜，覆盖193 nm至10.6 μm的任何波长范围</li>
+<li>镀膜质量通过分光光度法验证，附合格证书</li>
+</ul>
+
+<h2>结论</h2>
+<p>AR镀膜是光学系统设计中虽小但关键的部分。对于单波长激光应用，V涂层提供最低反射率和最高损伤阈值。对于宽带成像，多层BBAR镀膜在整个光谱范围内提供一致的性能。即使简单的MgF<sub>2</sub>镀膜也能将反射率从4%降至1.5%，在多元件系统中这是显著的改善。指定AR镀膜时，务必将镀膜带宽与光源光谱匹配，并验证激光应用的LIDT。恒鼎光可以帮助您为任何应用选择和指定合适的镀膜。</p>
+    </div>
+</div>
     
     <div class="article-cta">
         <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
@@ -230,45 +373,26 @@
 <script src="/js/products-data.js"></script>
 <script src="/js/search.js"></script>
 <script>
-// Blog article language switching
+// Blog article language switching (enhanced for full content)
 document.addEventListener('DOMContentLoaded', function() {
     var lang = getCurrentLanguage();
-    updateArticleLang(lang);
+    updateArticleMetaLang(lang);
 });
 
-function updateArticleLang(lang) {
+function updateArticleMetaLang(lang) {
     var title = document.getElementById('articleTitle');
     var category = document.getElementById('articleCategory');
     var readTime = document.getElementById('articleReadTime');
-    var body = document.getElementById('articleBody');
     
     if (lang === 'zh') {
         if (title && title.getAttribute('data-zh-title')) title.textContent = title.getAttribute('data-zh-title');
         if (category && category.getAttribute('data-zh-category')) category.textContent = category.getAttribute('data-zh-category');
         if (readTime && readTime.getAttribute('data-zh-time')) readTime.textContent = readTime.getAttribute('data-zh-time');
-        if (body) {
-            var p = body.querySelector('p[data-zh-content]');
-            if (p && p.getAttribute('data-zh-content')) p.textContent = p.getAttribute('data-zh-content');
-        }
     } else {
         if (title && title.getAttribute('data-en-title')) title.textContent = title.getAttribute('data-en-title');
         if (category && category.getAttribute('data-en-category')) category.textContent = category.getAttribute('data-en-category');
         if (readTime && readTime.getAttribute('data-en-time')) readTime.textContent = readTime.getAttribute('data-en-time');
-        if (body) {
-            var p = body.querySelector('p[data-en-content]');
-            if (p && p.getAttribute('data-en-content')) p.textContent = p.getAttribute('data-en-content');
-        }
     }
-}
-
-// Override setLanguage to also update article
-var originalSetLanguage = typeof setLanguage === 'function' ? setLanguage : null;
-if (originalSetLanguage) {
-    var wrappedSetLanguage = function(lang) {
-        originalSetLanguage(lang);
-        updateArticleLang(lang);
-    };
-    window.setLanguage = wrappedSetLanguage;
 }
 </script>
 <script>
@@ -280,5 +404,31 @@ function toggleMobileMenu() {
 }
 </script>
 <script src="/js/chatbot.js"></script>
+<script>
+(function() {
+    var enDiv = document.getElementById('articleContentEn');
+    var zhDiv = document.getElementById('articleContentZh');
+    if (!enDiv || !zhDiv) return;
+    // Check current language
+    if (typeof getCurrentLanguage === 'function' && getCurrentLanguage() === 'zh') {
+        enDiv.style.display = 'none';
+        zhDiv.style.display = 'block';
+    }
+    // Listen for language switch
+    var origSetLang = (typeof setLanguage === 'function') ? setLanguage : null;
+    if (origSetLang) {
+        window.setLanguage = function(lang) {
+            origSetLang(lang);
+            if (lang === 'zh') {
+                enDiv.style.display = 'none';
+                zhDiv.style.display = 'block';
+            } else {
+                enDiv.style.display = 'block';
+                zhDiv.style.display = 'none';
+            }
+        };
+    }
+})();
+</script>
 </body>
 </html>
