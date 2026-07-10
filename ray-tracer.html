@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PhotonEdge Ray Tracer - Free Online Optical Simulation Tool</title>
+<meta name="description" content="Free interactive ray tracing simulator for optical system design. Simulate lenses, mirrors, prisms with real-time ray tracing. Built by PhotonEdge precision optics.">
+<meta name="keywords" content="ray tracer, optical simulation, lens simulator, ray tracing online, optical design tool, photonics simulator">
+<meta property="og:title" content="PhotonEdge Ray Tracer - Online Optical Simulation">
+<meta property="og:description" content="Interactive ray tracing simulator for optical systems. Drag and drop lenses, mirrors, prisms to design and visualize light paths.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://photonedgeoptics.com/ray-tracer.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"PhotonEdge Ray Tracer","description":"Free online ray tracing simulator for optical system design","applicationCategory":"DesignApplication","offers":{"@type":"Offer","price":"0"},"creator":{"@type":"Organization","name":"PhotonEdge Optics","url":"https://photonedgeoptics.com"}}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--brand:#3b82f6;--brand-dark:#1d4ed8;--brand-light:#dbeafe;--bg:#f8fafc;--surface:#ffffff;--text:#1e293b;--text-secondary:#64748b;--border:#e2e8f0;--success:#10b981;--warning:#f59e0b;--danger:#ef4444;--ray:#ef4444;--toolbar-w:200px;--props-w:230px;--nav-h:56px}
+html,body{height:100%;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}
+
+/* NAV */
+.nav{height:var(--nav-h);background:linear-gradient(135deg,#1e3a5f 0%,#1e40af 100%);display:flex;align-items:center;justify-content:space-between;padding:0 20px;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15);z-index:100;position:relative}
+.nav-brand{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;letter-spacing:-.5px}
+.nav-brand svg{width:28px;height:28px}
+.nav-links{display:flex;align-items:center;gap:16px}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-size:13px;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-lang{background:rgba(255,255,255,.15);padding:4px 10px;border-radius:4px;font-size:12px;font-weight:600}
+
+/* LAYOUT */
+.app{display:flex;height:calc(100vh - var(--nav-h) - 32px);overflow:hidden}
+
+/* TOOLBAR */
+.toolbar{width:var(--toolbar-w);background:var(--surface);border-right:1px solid var(--border);overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column}
+.toolbar-title{padding:14px 16px 8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-secondary)}
+.tool-item{display:flex;align-items:center;gap:10px;padding:10px 16px;cursor:pointer;transition:all .15s;border-left:3px solid transparent;user-select:none}
+.tool-item:hover{background:var(--brand-light);border-left-color:var(--brand)}
+.tool-item.active{background:var(--brand-light);border-left-color:var(--brand)}
+.tool-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tool-icon svg{width:24px;height:24px}
+.tool-label{font-size:12px;font-weight:500;line-height:1.3}
+.tool-label small{display:block;font-size:10px;color:var(--text-secondary);font-weight:400}
+
+.toolbar-section{border-top:1px solid var(--border);margin-top:4px;padding-top:4px}
+
+.tool-color-source{background:#fef3c7;color:#d97706}
+.tool-color-lens{background:var(--brand-light);color:var(--brand)}
+.tool-color-mirror{background:#d1fae5;color:#059669}
+.tool-color-prism{background:#ede9fe;color:#7c3aed}
+.tool-color-screen{background:#f1f5f9;color:#475569}
+
+/* CANVAS AREA */
+.canvas-wrap{flex:1;position:relative;overflow:hidden;background:#fdfdfe}
+.canvas-wrap canvas{display:block;width:100%;height:100%}
+.canvas-controls{position:absolute;top:12px;left:12px;display:flex;gap:6px;z-index:10;flex-wrap:wrap}
+.ctrl-btn{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 12px;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:4px;transition:all .15s;color:var(--text);font-weight:500;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.ctrl-btn:hover{background:var(--brand-light);border-color:var(--brand);color:var(--brand)}
+.ctrl-btn.danger:hover{background:#fef2f2;border-color:var(--danger);color:var(--danger)}
+.ctrl-btn svg{width:14px;height:14px}
+
+.dropdown{position:relative;display:inline-block}
+.dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--surface);border:1px solid var(--border);border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.1);min-width:200px;z-index:20;padding:4px;margin-top:4px}
+.dropdown-menu.show{display:block}
+.dropdown-item{padding:8px 12px;border-radius:4px;cursor:pointer;font-size:12px;transition:background .1s}
+.dropdown-item:hover{background:var(--brand-light)}
+.dropdown-item strong{display:block;font-size:12px}
+.dropdown-item span{font-size:11px;color:var(--text-secondary)}
+
+.canvas-status{position:absolute;bottom:8px;left:12px;font-size:11px;color:var(--text-secondary);background:rgba(255,255,255,.9);padding:4px 10px;border-radius:4px;pointer-events:none;z-index:10}
+
+/* PROPERTY PANEL */
+.props{width:var(--props-w);background:var(--surface);border-left:1px solid var(--border);overflow-y:auto;flex-shrink:0;display:flex;flex-direction:column}
+.props-header{padding:14px 16px 10px;border-bottom:1px solid var(--border)}
+.props-header h3{font-size:14px;font-weight:600}
+.props-header p{font-size:11px;color:var(--text-secondary);margin-top:2px}
+.props-body{padding:12px 16px;flex:1}
+.props-empty{padding:30px 16px;text-align:center;color:var(--text-secondary);font-size:12px}
+.prop-group{margin-bottom:14px}
+.prop-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;font-size:11px;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.5px}
+.prop-value{font-size:12px;font-weight:600;color:var(--brand)}
+.prop-input{width:100%;padding:6px 8px;border:1px solid var(--border);border-radius:4px;font-size:13px;outline:none;transition:border .15s}
+.prop-input:focus{border-color:var(--brand)}
+input[type=range]{-webkit-appearance:none;width:100%;height:4px;border-radius:2px;background:var(--border);outline:none;margin:6px 0}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--brand);cursor:pointer;box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.prop-pos{font-size:12px;color:var(--text-secondary);padding:6px 0}
+
+.product-rec{margin-top:16px;padding:12px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:8px;border:1px solid #bfdbfe}
+.product-rec p{font-size:12px;color:#1e40af;margin-bottom:6px;font-weight:500}
+.product-rec a{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--brand);text-decoration:none;font-weight:600;transition:color .15s}
+.product-rec a:hover{color:var(--brand-dark)}
+
+.props-footer{padding:12px 16px;border-top:1px solid var(--border);font-size:11px}
+.props-footer a{color:var(--brand);text-decoration:none}
+.props-footer a:hover{text-decoration:underline}
+
+.prop-delete{width:100%;padding:8px;background:#fef2f2;border:1px solid #fecaca;border-radius:6px;color:var(--danger);font-size:12px;font-weight:500;cursor:pointer;margin-top:12px;transition:all .15s}
+.prop-delete:hover{background:#fee2e2}
+
+/* FOOTER */
+.footer{height:32px;background:linear-gradient(135deg,#1e3a5f 0%,#1e40af 100%);display:flex;align-items:center;justify-content:center;gap:16px;color:rgba(255,255,255,.7);font-size:11px}
+.footer a{color:rgba(255,255,255,.85);text-decoration:none}
+.footer a:hover{color:#fff}
+
+/* TOOLTIP */
+.tooltip{position:fixed;background:#1e293b;color:#fff;padding:4px 10px;border-radius:4px;font-size:11px;pointer-events:none;z-index:1000;white-space:nowrap;display:none}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .toolbar{width:60px}
+  .tool-label{display:none}
+  .tool-item{padding:8px;justify-content:center}
+  .tool-item{border-left:none;border-bottom:3px solid transparent}
+  .tool-item:hover{border-bottom-color:var(--brand);border-left:none}
+  .toolbar-title{display:none}
+  .props{width:200px}
+}
+@media(max-width:768px){
+  .toolbar{width:50px}
+  .tool-icon{width:30px;height:30px}
+  .tool-icon svg{width:20px;height:20px}
+  .props{position:absolute;right:0;top:0;bottom:0;z-index:20;box-shadow:-4px 0 12px rgba(0,0,0,.1);transform:translateX(100%);transition:transform .3s}
+  .props.open{transform:translateX(0)}
+  .nav-links .hide-mobile{display:none}
+}
+
+/* PREVIEW GHOST */
+.ghost{position:absolute;pointer-events:none;z-index:5;opacity:.5}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <svg viewBox="0 0 28 28" fill="none"><path d="M14 2L2 14l12 12 12-12L14 2z" fill="rgba(255,255,255,.15)" stroke="#fff" stroke-width="1.5"/><path d="M8 14h12M14 8v12" stroke="#fff" stroke-width="1.5"/><circle cx="14" cy="14" r="3" fill="#60a5fa"/></svg>
+    PhotonEdge Ray Tracer
+  </div>
+  <div class="nav-links">
+    <a href="/" class="hide-mobile">&larr; Back to Site</a>
+    <a href="/products.html" class="hide-mobile">Products</a>
+    <a href="/ray-tracer.html" class="hide-mobile" style="color:#fff;font-weight:600">Ray Tracer</a>
+    <a href="/materials.html" class="hide-mobile">Materials</a>
+    <a href="/product-advisor.html" class="hide-mobile">Product Advisor</a>
+    <a href="/calculator.html" class="hide-mobile">Calculator</a>
+    <a href="/ray-tracer-zh.html" class="hide-mobile">中文</a>
+  </div>
+</nav>
+
+<!-- APP -->
+<div class="app">
+
+  <!-- TOOLBAR -->
+  <div class="toolbar" id="toolbar">
+    <div class="toolbar-title">Light Sources</div>
+    
+    <div class="tool-item" data-type="point_source">
+      <div class="tool-icon tool-color-source">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="5" y1="5" x2="8" y2="8"/><line x1="16" y1="16" x2="19" y2="19"/><line x1="5" y1="19" x2="8" y2="16"/><line x1="16" y1="8" x2="19" y2="5"/></svg>
+      </div>
+      <div class="tool-label">Point Source<small>Radial rays</small></div>
+    </div>
+    
+    <div class="tool-item" data-type="collimated_beam">
+      <div class="tool-icon tool-color-source">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="7" x2="18" y2="7"/><line x1="3" y1="12" x2="18" y2="12"/><line x1="3" y1="17" x2="18" y2="17"/><polyline points="18,7 21,7"/><polyline points="18,12 21,12"/><polyline points="18,17 21,17"/></svg>
+      </div>
+      <div class="tool-label">Collimated Beam<small>Parallel rays</small></div>
+    </div>
+
+    <div class="toolbar-title toolbar-section">Optics</div>
+    
+    <div class="tool-item" data-type="convex_lens">
+      <div class="tool-icon tool-color-lens">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="5" ry="10"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><polyline points="10,2 12,1 14,2" fill="none"/><polyline points="10,22 12,23 14,22" fill="none"/></svg>
+      </div>
+      <div class="tool-label">Convex Lens<small>Converging, f&gt;0</small></div>
+    </div>
+    
+    <div class="tool-item" data-type="concave_lens">
+      <div class="tool-icon tool-color-lens">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 2c4 4 4 16 0 20"/><path d="M15 2c-4 4-4 16 0 20"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/></svg>
+      </div>
+      <div class="tool-label">Concave Lens<small>Diverging, f&lt;0</small></div>
+    </div>
+    
+    <div class="tool-item" data-type="flat_mirror">
+      <div class="tool-icon tool-color-mirror">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="20" x2="20" y2="4" stroke-width="2.5"/><line x1="6" y1="18" x2="4" y2="20" stroke-width="1"/><line x1="9" y1="15" x2="7" y2="17" stroke-width="1"/><line x1="12" y1="12" x2="10" y2="14" stroke-width="1"/><line x1="15" y1="9" x2="13" y2="11" stroke-width="1"/><line x1="18" y1="6" x2="16" y2="8" stroke-width="1"/></svg>
+      </div>
+      <div class="tool-label">Flat Mirror<small>Reflective surface</small></div>
+    </div>
+    
+    <div class="tool-item" data-type="right_angle_prism">
+      <div class="tool-icon tool-color-prism">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="4,20 20,20 4,4"/><rect x="4" y="17" width="3" height="3" fill="none" stroke-width="1"/></svg>
+      </div>
+      <div class="tool-label">Right-Angle Prism<small>90&deg; deflection</small></div>
+    </div>
+    
+    <div class="tool-item" data-type="screen">
+      <div class="tool-icon tool-color-screen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="3" x2="12" y2="21" stroke-width="3"/><line x1="8" y1="21" x2="16" y2="21"/><circle cx="12" cy="10" r="2" fill="currentColor" opacity=".3"/></svg>
+      </div>
+      <div class="tool-label">Screen<small>Detection surface</small></div>
+    </div>
+  </div>
+
+  <!-- CANVAS -->
+  <div class="canvas-wrap" id="canvasWrap">
+    <canvas id="canvas"></canvas>
+    <div class="canvas-controls">
+      <div class="dropdown">
+        <button class="ctrl-btn" id="btnExamples" onclick="toggleDropdown('exMenu')">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="8" y="1" width="5" height="5" rx="1"/><rect x="1" y="8" width="5" height="5" rx="1"/><rect x="8" y="8" width="5" height="5" rx="1"/></svg>
+          Examples
+        </button>
+        <div class="dropdown-menu" id="exMenu">
+          <div class="dropdown-item" onclick="loadExample('simpleFocus')"><strong>Simple Lens Focus</strong><span>Point source + convex lens</span></div>
+          <div class="dropdown-item" onclick="loadExample('beamExpander')"><strong>Beam Expander (2x)</strong><span>Concave + convex lens combo</span></div>
+          <div class="dropdown-item" onclick="loadExample('periscope')"><strong>Periscope</strong><span>Two-mirror beam redirect</span></div>
+          <div class="dropdown-item" onclick="loadExample('prismDeflect')"><strong>Prism Deflection</strong><span>90&deg; right-angle prism</span></div>
+        </div>
+      </div>
+      <button class="ctrl-btn" onclick="resetView()" title="Reset zoom & pan">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><line x1="7" y1="4" x2="7" y2="10"/><line x1="4" y1="7" x2="10" y2="7"/></svg>
+        Reset View
+      </button>
+      <button class="ctrl-btn" onclick="exportPNG()" title="Export as PNG image">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10v2h10v-2"/><polyline points="4,7 7,10 10,7"/><line x1="7" y1="2" x2="7" y2="10"/></svg>
+        Export PNG
+      </button>
+      <button class="ctrl-btn" onclick="shareScene()" title="Copy shareable link">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="4" cy="7" r="2"/><circle cx="10" cy="4" r="2"/><circle cx="10" cy="10" r="2"/><line x1="6" y1="6" x2="8" y2="5"/><line x1="6" y1="8" x2="8" y2="9"/></svg>
+        Share
+      </button>
+      <button class="ctrl-btn danger" onclick="clearAll()" title="Remove all components">
+        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="2,4 12,4"/><path d="M5,4V3a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1"/><path d="M3,4l1,8a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1l1-8"/></svg>
+        Clear
+      </button>
+    </div>
+    <div class="canvas-status" id="statusBar">Ready - Drag components from toolbar</div>
+  </div>
+
+  <!-- PROPERTY PANEL -->
+  <div class="props" id="propsPanel">
+    <div class="props-header">
+      <h3 id="propsTitle">Properties</h3>
+      <p id="propsSubtitle">Select a component</p>
+    </div>
+    <div class="props-body" id="propsBody">
+      <div class="props-empty">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg>
+        <br>Click on a component in the canvas to view and edit its properties.
+        <br><br>
+        <strong>Quick Start:</strong><br>
+        Drag a component from the left toolbar onto the canvas.
+      </div>
+    </div>
+    <div class="props-footer" id="propsFooter">
+      Using PhotonEdge optical components:<br>
+      <a href="https://photonedgeoptics.com/products.html?category=Optical%20Lenses" target="_blank">Lenses</a> &middot;
+      <a href="https://photonedgeoptics.com/products.html?category=Optical%20Mirrors" target="_blank">Mirrors</a> &middot;
+      <a href="https://photonedgeoptics.com/products.html?category=Optical%20Prisms" target="_blank">Prisms</a>
+      <br><br>
+      <a href="https://photonedgeoptics.com/calculator.html" target="_blank">Optical Calculator &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span>&copy; 2024 PhotonEdge Optics</span>
+  <a href="https://photonedgeoptics.com">Home</a>
+  <a href="https://photonedgeoptics.com/products.html">Products</a>
+  <a href="https://photonedgeoptics.com/calculator.html">Calculator</a>
+  <span>Built by PhotonEdge &mdash; Your Precision Optics Partner</span>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+
+<script>
+(function(){
+'use strict';
+
+/* ============================================================
+   CONFIGURATION
+   ============================================================ */
+var MAX_BOUNCES = 5;
+var GRID_MM = 50;
+var RAY_MAX_DIST = 4000;
+var RAY_COLOR = '#ef4444';
+var RAY_WIDTH = 1.5;
+var GLASS_N = 1.5;
+var GLASS_N_RED = 1.510;
+var GLASS_N_GRN = 1.520;
+var GLASS_N_BLU = 1.530;
+var DISPERSION_COLORS = ['#ff4444','#22cc44','#4488ff'];
+var DISPERSION_NS = [1.510, 1.520, 1.530];
+
+/* ============================================================
+   STATE
+   ============================================================ */
+var state = {
+  components: [],
+  selectedId: null,
+  segments: [],
+  screenHits: [],
+  panX: 0,
+  panY: 0,
+  zoom: 1.5,
+  nextId: 1
+};
+
+var canvas, ctx;
+var canvasW = 800, canvasH = 600;
+var isDragging = false;
+var isCreating = false;
+var isPanning = false;
+var creatingType = null;
+var dragComp = null;
+var dragOX = 0, dragOY = 0;
+var lastMX = 0, lastMY = 0;
+var mouseWX = 0, mouseWY = 0;
+var renderQueued = false;
+var spaceDown = false;
+
+/* ============================================================
+   VECTOR UTILITIES
+   ============================================================ */
+function vLen(x,y){ return Math.sqrt(x*x+y*y); }
+function vNorm(x,y){ var l=vLen(x,y); return l<1e-12?{x:0,y:0}:{x:x/l,y:y/l}; }
+function vDot(ax,ay,bx,by){ return ax*bx+ay*by; }
+
+/* ============================================================
+   COORDINATE TRANSFORMS
+   ============================================================ */
+function w2s(wx,wy){
+  return { x: canvasW/2 + state.panX + wx*state.zoom, y: canvasH/2 + state.panY - wy*state.zoom };
+}
+function s2w(sx,sy){
+  return { x: (sx - canvasW/2 - state.panX)/state.zoom, y: -(sy - canvasH/2 - state.panY)/state.zoom };
+}
+function getCanvasXY(e){
+  var r = canvas.getBoundingClientRect();
+  return { x: e.clientX - r.left, y: e.clientY - r.top };
+}
+
+/* ============================================================
+   COMPONENT FACTORIES
+   ============================================================ */
+function makeComponent(type, x, y){
+  var c = { id: state.nextId++, type: type, x: x, y: y };
+  switch(type){
+    case 'point_source':
+      c.direction = 0; c.numRays = 12; c.raySpread = 25;
+      break;
+    case 'collimated_beam':
+      c.direction = 0; c.numRays = 8; c.beamWidth = 60;
+      break;
+    case 'convex_lens':
+      c.focalLength = 150; c.height = 100;
+      break;
+    case 'concave_lens':
+      c.focalLength = -150; c.height = 100;
+      break;
+    case 'flat_mirror':
+      c.angle = 45; c.mirrorWidth = 80;
+      break;
+    case 'right_angle_prism':
+      c.prismSize = 70; c.angle = 0;
+      break;
+    case 'screen':
+      c.height = 100;
+      break;
+  }
+  return c;
+}
+
+function findComp(id){
+  for(var i=0;i<state.components.length;i++){
+    if(state.components[i].id===id) return state.components[i];
+  }
+  return null;
+}
+function findCompIdx(id){
+  for(var i=0;i<state.components.length;i++){
+    if(state.components[i].id===id) return i;
+  }
+  return -1;
+}
+
+/* ============================================================
+   GEOMETRY: RAY - LINE SEGMENT INTERSECTION
+   ============================================================ */
+function raySegIntersect(ox,oy,dx,dy, x1,y1,x2,y2){
+  var sx=x2-x1, sy=y2-y1;
+  var denom = dx*sy - dy*sx;
+  if(Math.abs(denom)<1e-10) return null;
+  var t = ((x1-ox)*sy - (y1-oy)*sx) / denom;
+  var u = ((x1-ox)*dy - (y1-oy)*dx) / denom;
+  if(t<0.01 || u<-0.001 || u>1.001) return null;
+  return { t:t, x:ox+t*dx, y:oy+t*dy, u:u };
+}
+
+/* ============================================================
+   GET COMPONENT FACES (line segments)
+   ============================================================ */
+function getCompFaces(c){
+  var faces = [];
+  switch(c.type){
+    case 'convex_lens':
+    case 'concave_lens':
+      faces.push({x1:c.x, y1:c.y-c.height/2, x2:c.x, y2:c.y+c.height/2, comp:c, faceType:'lens'});
+      break;
+    case 'flat_mirror':
+      var rad = c.angle * Math.PI/180;
+      var hw = c.mirrorWidth/2;
+      faces.push({
+        x1: c.x - hw*Math.cos(rad), y1: c.y - hw*Math.sin(rad),
+        x2: c.x + hw*Math.cos(rad), y2: c.y + hw*Math.sin(rad),
+        comp:c, faceType:'mirror'
+      });
+      break;
+    case 'right_angle_prism':
+      var s = c.prismSize;
+      var a = c.angle * Math.PI/180;
+      var ca=Math.cos(a), sa=Math.sin(a);
+      var verts = [
+        {x: -s/2, y: -s/2},
+        {x:  s/2, y: -s/2},
+        {x: -s/2, y:  s/2}
+      ];
+      for(var i=0;i<3;i++){
+        var v0=verts[i], v1=verts[(i+1)%3];
+        var rx0 = v0.x*ca - v0.y*sa + c.x;
+        var ry0 = v0.x*sa + v0.y*ca + c.y;
+        var rx1 = v1.x*ca - v1.y*sa + c.x;
+        var ry1 = v1.x*sa + v1.y*ca + c.y;
+        faces.push({x1:rx0,y1:ry0,x2:rx1,y2:ry1,comp:c,faceType:'prism',faceIdx:i});
+      }
+      break;
+    case 'screen':
+      faces.push({x1:c.x, y1:c.y-c.height/2, x2:c.x, y2:c.y+c.height/2, comp:c, faceType:'screen'});
+      break;
+  }
+  return faces;
+}
+
+/* ============================================================
+   GET PRISM VERTICES (for rendering and point-in-triangle)
+   ============================================================ */
+function getPrismVerts(c){
+  var s = c.prismSize;
+  var a = c.angle * Math.PI/180;
+  var ca=Math.cos(a), sa=Math.sin(a);
+  var raw = [{x:-s/2,y:-s/2},{x:s/2,y:-s/2},{x:-s/2,y:s/2}];
+  var out = [];
+  for(var i=0;i<3;i++){
+    out.push({
+      x: raw[i].x*ca - raw[i].y*sa + c.x,
+      y: raw[i].x*sa + raw[i].y*ca + c.y
+    });
+  }
+  return out;
+}
+
+function pointInPrism(px,py,c){
+  var v = getPrismVerts(c);
+  var d1 = (px-v[1].x)*(v[0].y-v[1].y) - (v[0].x-v[1].x)*(py-v[1].y);
+  var d2 = (px-v[2].x)*(v[1].y-v[2].y) - (v[1].x-v[2].x)*(py-v[2].y);
+  var d3 = (px-v[0].x)*(v[2].y-v[0].y) - (v[2].x-v[0].x)*(py-v[0].y);
+  var hasNeg = (d1<0)||(d2<0)||(d3<0);
+  var hasPos = (d1>0)||(d2>0)||(d3>0);
+  return !(hasNeg && hasPos);
+}
+
+/* ============================================================
+   FACE OUTWARD NORMAL
+   ============================================================ */
+function faceOutwardNormal(face){
+  var dx = face.x2-face.x1, dy = face.y2-face.y1;
+  var l = vLen(dx,dy);
+  if(l<1e-10) return {x:0,y:1};
+  // For CCW polygon, outward = right perpendicular = (dy, -dx)/len
+  // But we compute it and check orientation
+  var nx = dy/l, ny = -dx/l;
+  // For prism faces, we need CCW ordering. For mirrors and lenses, either side works.
+  return {x:nx, y:ny};
+}
+
+/* ============================================================
+   SNELL'S LAW (vector form)
+   Returns {dx, dy, tir}
+   ============================================================ */
+function snellRefract(idx,idy, nx,ny, n1,n2){
+  var cosI = -(idx*nx + idy*ny);
+  var nnx=nx, nny=ny;
+  if(cosI < 0){
+    nnx = -nx; nny = -ny;
+    cosI = -cosI;
+  }
+  var ratio = n1/n2;
+  var sin2T = ratio*ratio*(1 - cosI*cosI);
+  if(sin2T > 1){
+    // TIR
+    return { dx: idx + 2*cosI*nnx, dy: idy + 2*cosI*nny, tir: true };
+  }
+  var cosT = Math.sqrt(1 - sin2T);
+  return { dx: ratio*idx + (ratio*cosI - cosT)*nnx, dy: ratio*idy + (ratio*cosI - cosT)*nny, tir: false };
+}
+
+function reflectVec(idx,idy, nx,ny){
+  var dot = idx*nx + idy*ny;
+  return { dx: idx - 2*dot*nx, dy: idy - 2*dot*ny };
+}
+
+/* ============================================================
+   RAY TRACING ENGINE
+   ============================================================ */
+function generateRays(comp){
+  var rays = [];
+  var rad = (comp.direction||0) * Math.PI/180;
+  var dx = Math.cos(rad), dy = Math.sin(rad);
+
+  if(comp.type === 'point_source'){
+    var spread = (comp.raySpread||25) * Math.PI/180;
+    var n = comp.numRays || 12;
+    for(var i=0;i<n;i++){
+      var a;
+      if(n===1) a = 0;
+      else a = -spread + 2*spread*i/(n-1);
+      var ca = Math.cos(rad+a), sa = Math.sin(rad+a);
+      rays.push({ ox:comp.x, oy:comp.y, dx:ca, dy:sa, color:RAY_COLOR, inPrism:null, n:1 });
+    }
+  }
+  else if(comp.type === 'collimated_beam'){
+    var hw = (comp.beamWidth||60)/2;
+    var n = comp.numRays || 8;
+    // perpendicular direction
+    var px = -dy, py = dx;
+    for(var i=0;i<n;i++){
+      var t = (n===1)? 0 : -hw + 2*hw*i/(n-1);
+      rays.push({ ox:comp.x+t*px, oy:comp.y+t*py, dx:dx, dy:dy, color:RAY_COLOR, inPrism:null, n:1 });
+    }
+  }
+  return rays;
+}
+
+function traceAllRays(){
+  state.segments = [];
+  state.screenHits = [];
+  
+  // Collect all faces from non-source components
+  var allFaces = [];
+  for(var i=0;i<state.components.length;i++){
+    var c = state.components[i];
+    if(c.type==='point_source'||c.type==='collimated_beam') continue;
+    var ff = getCompFaces(c);
+    for(var j=0;j<ff.length;j++) allFaces.push(ff[j]);
+  }
+
+  // Generate rays from all sources
+  var initRays = [];
+  for(var i=0;i<state.components.length;i++){
+    var c = state.components[i];
+    if(c.type==='point_source'||c.type==='collimated_beam'){
+      var rr = generateRays(c);
+      for(var j=0;j<rr.length;j++) initRays.push(rr[j]);
+    }
+  }
+
+  // Trace each ray
+  for(var i=0;i<initRays.length;i++){
+    traceRay(initRays[i], allFaces, 0);
+  }
+}
+
+function traceRay(ray, allFaces, depth){
+  if(depth > MAX_BOUNCES) return;
+
+  var bestT = Infinity, bestHit = null, bestFace = null;
+
+  for(var i=0;i<allFaces.length;i++){
+    var f = allFaces[i];
+    // If ray is inside a prism, only consider faces of that prism
+    if(ray.inPrism !== null){
+      if(f.comp.id !== ray.inPrism) continue;
+    }
+    var hit = raySegIntersect(ray.ox,ray.oy,ray.dx,ray.dy, f.x1,f.y1,f.x2,f.y2);
+    if(hit && hit.t < bestT){
+      bestT = hit.t;
+      bestHit = hit;
+      bestFace = f;
+    }
+  }
+
+  if(!bestHit){
+    // Ray goes to max distance
+    var ex = ray.ox + ray.dx * RAY_MAX_DIST;
+    var ey = ray.oy + ray.dy * RAY_MAX_DIST;
+    state.segments.push({x1:ray.ox, y1:ray.oy, x2:ex, y2:ey, color:ray.color});
+    return;
+  }
+
+  // Add segment to hit point
+  state.segments.push({x1:ray.ox, y1:ray.oy, x2:bestHit.x, y2:bestHit.y, color:ray.color});
+
+  // Process interaction
+  var ft = bestFace.faceType;
+  var comp = bestFace.comp;
+
+  if(ft === 'screen'){
+    state.screenHits.push({x:bestHit.x, y:bestHit.y, color:ray.color});
+    return;
+  }
+
+  if(ft === 'lens'){
+    // Thin lens refraction
+    var h = bestHit.y - comp.y; // height relative to lens center
+    var f = comp.focalLength;
+    // angle_out = angle_in - h/f
+    var theta = Math.atan2(ray.dy, ray.dx);
+    var dTheta = -h / f;
+    var newTheta = theta + dTheta;
+    var ndx = Math.cos(newTheta), ndy = Math.sin(newTheta);
+    
+    // Check for dispersion (only on first lens interaction for white rays)
+    traceRay({ox:bestHit.x, oy:bestHit.y, dx:ndx, dy:ndy, color:ray.color, inPrism:ray.inPrism, n:ray.n}, allFaces, depth+1);
+    return;
+  }
+
+  if(ft === 'mirror'){
+    var mdx = bestFace.x2-bestFace.x1, mdy = bestFace.y2-bestFace.y1;
+    var ml = vLen(mdx,mdy);
+    var nx = -mdy/ml, ny = mdx/ml; // normal
+    var ref = reflectVec(ray.dx, ray.dy, nx, ny);
+    // Make sure reflected ray goes in correct direction (away from surface)
+    traceRay({ox:bestHit.x, oy:bestHit.y, dx:ref.dx, dy:ref.dy, color:ray.color, inPrism:ray.inPrism, n:ray.n}, allFaces, depth+1);
+    return;
+  }
+
+  if(ft === 'prism'){
+    var fn = faceOutwardNormal(bestFace);
+    var dot = vDot(ray.dx, ray.dy, fn.x, fn.y);
+    var entering = dot < 0;
+    
+    var n1, n2, snx, sny;
+    if(entering){
+      n1 = 1.0; n2 = ray.n || GLASS_N;
+      snx = fn.x; sny = fn.y;
+    } else {
+      n1 = ray.n || GLASS_N; n2 = 1.0;
+      snx = -fn.x; sny = -fn.y;
+    }
+
+    var result = snellRefract(ray.dx, ray.dy, snx, sny, n1, n2);
+    var newInPrism = ray.inPrism;
+    
+    if(entering){
+      newInPrism = comp.id;
+      // Check if we should split for dispersion
+      if(ray.color === RAY_COLOR && Math.abs(dot) < 0.99){
+        // Non-perpendicular entry: split into 3 colors
+        for(var ci=0;ci<3;ci++){
+          var rn = DISPERSION_NS[ci];
+          var res = snellRefract(ray.dx, ray.dy, snx, sny, 1.0, rn);
+          traceRay({
+            ox:bestHit.x, oy:bestHit.y,
+            dx:res.dx, dy:res.dy,
+            color:DISPERSION_COLORS[ci],
+            inPrism: comp.id,
+            n: rn
+          }, allFaces, depth+1);
+        }
+        return;
+      }
+    } else {
+      newInPrism = null;
+    }
+
+    if(result.tir){
+      // TIR: keep inside prism
+      traceRay({
+        ox:bestHit.x, oy:bestHit.y,
+        dx:result.dx, dy:result.dy,
+        color:ray.color,
+        inPrism: comp.id,
+        n: ray.n
+      }, allFaces, depth+1);
+    } else {
+      traceRay({
+        ox:bestHit.x, oy:bestHit.y,
+        dx:result.dx, dy:result.dy,
+        color:ray.color,
+        inPrism: newInPrism,
+        n: entering ? (ray.n||GLASS_N) : 1
+      }, allFaces, depth+1);
+    }
+    return;
+  }
+}
+
+/* ============================================================
+   HIT TESTING (select component under cursor)
+   ============================================================ */
+function hitTest(wx,wy){
+  // Test in reverse order (top components first)
+  for(var i=state.components.length-1;i>=0;i--){
+    var c = state.components[i];
+    if(hitComp(c,wx,wy)) return c;
+  }
+  return null;
+}
+
+function hitComp(c,wx,wy){
+  var tol = 10/state.zoom; // tolerance in world units
+  switch(c.type){
+    case 'point_source':
+    case 'collimated_beam':
+      return vLen(wx-c.x, wy-c.y) < 20/state.zoom;
+    case 'convex_lens':
+    case 'concave_lens':
+      return Math.abs(wx-c.x)<tol && Math.abs(wy-c.y)<c.height/2+tol;
+    case 'flat_mirror':
+      return distToSeg(wx,wy, c) < tol;
+    case 'right_angle_prism':
+      return pointInPrism(wx,wy,c) || distToPrismEdge(wx,wy,c) < tol;
+    case 'screen':
+      return Math.abs(wx-c.x)<tol && Math.abs(wy-c.y)<c.height/2+tol;
+  }
+  return false;
+}
+
+function distToSeg(px,py,c){
+  var rad = c.angle*Math.PI/180;
+  var hw = c.mirrorWidth/2;
+  var x1=c.x-hw*Math.cos(rad), y1=c.y-hw*Math.sin(rad);
+  var x2=c.x+hw*Math.cos(rad), y2=c.y+hw*Math.sin(rad);
+  return distPointToSeg(px,py,x1,y1,x2,y2);
+}
+
+function distToPrismEdge(px,py,c){
+  var verts = getPrismVerts(c);
+  var minD = Infinity;
+  for(var i=0;i<3;i++){
+    var j=(i+1)%3;
+    var d = distPointToSeg(px,py, verts[i].x,verts[i].y, verts[j].x,verts[j].y);
+    if(d<minD) minD = d;
+  }
+  return minD;
+}
+
+function distPointToSeg(px,py,x1,y1,x2,y2){
+  var dx=x2-x1, dy=y2-y1;
+  var l2 = dx*dx+dy*dy;
+  if(l2<1e-10) return vLen(px-x1,py-y1);
+  var t = ((px-x1)*dx+(py-y1)*dy)/l2;
+  t = Math.max(0,Math.min(1,t));
+  return vLen(px-(x1+t*dx), py-(y1+t*dy));
+}
+
+/* ============================================================
+   RENDERING
+   ============================================================ */
+function render(){
+  renderQueued = false;
+  ctx.clearRect(0,0,canvasW,canvasH);
+  
+  // Background
+  ctx.fillStyle = '#fdfdfe';
+  ctx.fillRect(0,0,canvasW,canvasH);
+  
+  drawGrid();
+  drawSegments();
+  drawScreenHits();
+  drawComponents();
+  drawSelection();
+  updateStatus();
+}
+
+function queueRender(){
+  if(!renderQueued){
+    renderQueued = true;
+    requestAnimationFrame(render);
+  }
+}
+
+function drawGrid(){
+  var tl = s2w(0,0);
+  var br = s2w(canvasW, canvasH);
+  var minX = Math.floor(tl.x/GRID_MM)*GRID_MM;
+  var maxX = Math.ceil(br.x/GRID_MM)*GRID_MM;
+  var minY = Math.floor(br.y/GRID_MM)*GRID_MM;
+  var maxY = Math.ceil(tl.y/GRID_MM)*GRID_MM;
+
+  // Minor grid
+  ctx.strokeStyle = '#f0f1f3';
+  ctx.lineWidth = 0.5;
+  ctx.beginPath();
+  for(var x=minX;x<=maxX;x+=GRID_MM){
+    var s1=w2s(x,minY), s2=w2s(x,maxY);
+    ctx.moveTo(s1.x,s1.y); ctx.lineTo(s2.x,s2.y);
+  }
+  for(var y=minY;y<=maxY;y+=GRID_MM){
+    var s1=w2s(minX,y), s2=w2s(maxX,y);
+    ctx.moveTo(s1.x,s1.y); ctx.lineTo(s2.x,s2.y);
+  }
+  ctx.stroke();
+
+  // Major grid (every 100mm)
+  ctx.strokeStyle = '#e2e4e8';
+  ctx.lineWidth = 0.8;
+  ctx.beginPath();
+  for(var x=Math.floor(minX/100)*100;x<=maxX;x+=100){
+    var s1=w2s(x,minY), s2=w2s(x,maxY);
+    ctx.moveTo(s1.x,s1.y); ctx.lineTo(s2.x,s2.y);
+  }
+  for(var y=Math.floor(minY/100)*100;y<=maxY;y+=100){
+    var s1=w2s(minX,y), s2=w2s(maxX,y);
+    ctx.moveTo(s1.x,s1.y); ctx.lineTo(s2.x,s2.y);
+  }
+  ctx.stroke();
+
+  // Axes
+  ctx.strokeStyle = '#cbd5e1';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  var ox1=w2s(minX,0), ox2=w2s(maxX,0);
+  ctx.moveTo(ox1.x,ox1.y); ctx.lineTo(ox2.x,ox2.y);
+  var oy1=w2s(0,minY), oy2=w2s(0,maxY);
+  ctx.moveTo(oy1.x,oy1.y); ctx.lineTo(oy2.x,oy2.y);
+  ctx.stroke();
+}
+
+function drawSegments(){
+  for(var i=0;i<state.segments.length;i++){
+    var s = state.segments[i];
+    var p1 = w2s(s.x1,s.y1);
+    var p2 = w2s(s.x2,s.y2);
+    ctx.strokeStyle = s.color || RAY_COLOR;
+    ctx.lineWidth = RAY_WIDTH;
+    ctx.globalAlpha = 0.85;
+    ctx.beginPath();
+    ctx.moveTo(p1.x,p1.y);
+    ctx.lineTo(p2.x,p2.y);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+  }
+}
+
+function drawScreenHits(){
+  for(var i=0;i<state.screenHits.length;i++){
+    var h = state.screenHits[i];
+    var p = w2s(h.x, h.y);
+    // Glow
+    var grad = ctx.createRadialGradient(p.x,p.y,0,p.x,p.y,8);
+    grad.addColorStop(0, h.color||'#ffaa00');
+    grad.addColorStop(1, 'rgba(255,170,0,0)');
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,8,0,Math.PI*2);
+    ctx.fill();
+    // Core
+    ctx.fillStyle = '#fff';
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,2,0,Math.PI*2);
+    ctx.fill();
+  }
+}
+
+function drawComponents(){
+  for(var i=0;i<state.components.length;i++){
+    drawComp(state.components[i]);
+  }
+}
+
+function drawComp(c){
+  switch(c.type){
+    case 'point_source': drawPointSource(c); break;
+    case 'collimated_beam': drawCollimatedBeam(c); break;
+    case 'convex_lens': drawConvexLens(c); break;
+    case 'concave_lens': drawConcaveLens(c); break;
+    case 'flat_mirror': drawFlatMirror(c); break;
+    case 'right_angle_prism': drawPrism(c); break;
+    case 'screen': drawScreen(c); break;
+  }
+}
+
+function drawPointSource(c){
+  var p = w2s(c.x,c.y);
+  var r = 8;
+  // Glow
+  ctx.fillStyle = 'rgba(245,158,11,0.2)';
+  ctx.beginPath(); ctx.arc(p.x,p.y,r*2,0,Math.PI*2); ctx.fill();
+  // Core
+  ctx.fillStyle = '#f59e0b';
+  ctx.beginPath(); ctx.arc(p.x,p.y,r,0,Math.PI*2); ctx.fill();
+  ctx.strokeStyle = '#d97706';
+  ctx.lineWidth = 1.5;
+  ctx.stroke();
+  // Rays indicator
+  var rad = (c.direction||0)*Math.PI/180;
+  ctx.strokeStyle = '#d97706';
+  ctx.lineWidth = 1;
+  for(var i=0;i<4;i++){
+    var a = rad + (i-1.5)*0.3;
+    ctx.beginPath();
+    ctx.moveTo(p.x+Math.cos(a)*(r+2), p.y-Math.sin(a)*(r+2));
+    ctx.lineTo(p.x+Math.cos(a)*(r+8), p.y-Math.sin(a)*(r+8));
+    ctx.stroke();
+  }
+  // Label
+  ctx.fillStyle = '#92400e';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Source', p.x, p.y+r+14);
+}
+
+function drawCollimatedBeam(c){
+  var p = w2s(c.x,c.y);
+  var hw = (c.beamWidth||60)/2*state.zoom;
+  var rad = (c.direction||0)*Math.PI/180;
+  var px = -Math.sin(rad), py = -Math.cos(rad); // perp in screen coords (y flipped)
+  // Actually in screen coords y is flipped, so let me just draw a rectangle
+  var dx = Math.cos(rad)*10, dy = -Math.sin(rad)*10; // direction indicator (screen coords)
+  var x1 = p.x + Math.sin(rad)*hw;
+  var y1 = p.y + Math.cos(rad)*hw;
+  var x2 = p.x - Math.sin(rad)*hw;
+  var y2 = p.y - Math.cos(rad)*hw;
+
+  // Draw body
+  ctx.strokeStyle = '#d97706';
+  ctx.lineWidth = 2;
+  ctx.fillStyle = 'rgba(245,158,11,0.1)';
+  ctx.beginPath();
+  ctx.moveTo(x1-dx, y1-dy);
+  ctx.lineTo(x1+dx, y1+dy);
+  ctx.lineTo(x2+dx, y2+dy);
+  ctx.lineTo(x2-dx, y2-dy);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  // Arrow
+  var mx = (x1+x2)/2, my = (y1+y2)/2;
+  ctx.fillStyle = '#d97706';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Beam', mx, my + Math.cos(rad)*hw + 16);
+}
+
+function drawConvexLens(c){
+  var p = w2s(c.x, c.y);
+  var sh = c.height/2*state.zoom;
+  var sw = Math.min(14, Math.max(6, 1000/Math.abs(c.focalLength||150)));
+
+  ctx.fillStyle = 'rgba(59,130,246,0.12)';
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 2;
+
+  ctx.beginPath();
+  ctx.moveTo(p.x, p.y-sh);
+  ctx.quadraticCurveTo(p.x+sw, p.y, p.x, p.y+sh);
+  ctx.quadraticCurveTo(p.x-sw, p.y, p.x, p.y-sh);
+  ctx.fill();
+  ctx.stroke();
+
+  // Arrow tips
+  var as = 6;
+  ctx.beginPath();
+  ctx.moveTo(p.x-as, p.y-sh+as); ctx.lineTo(p.x, p.y-sh); ctx.lineTo(p.x+as, p.y-sh+as);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(p.x-as, p.y+sh-as); ctx.lineTo(p.x, p.y+sh); ctx.lineTo(p.x+as, p.y+sh-as);
+  ctx.stroke();
+
+  // Focal length label
+  ctx.fillStyle = '#1d4ed8';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('f='+c.focalLength+'mm', p.x, p.y+sh+14);
+}
+
+function drawConcaveLens(c){
+  var p = w2s(c.x, c.y);
+  var sh = c.height/2*state.zoom;
+  var sw = Math.min(14, Math.max(6, 1000/Math.abs(c.focalLength||150)));
+
+  ctx.fillStyle = 'rgba(59,130,246,0.08)';
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 2;
+
+  ctx.beginPath();
+  ctx.moveTo(p.x, p.y-sh);
+  ctx.quadraticCurveTo(p.x-sw, p.y, p.x, p.y+sh);
+  ctx.quadraticCurveTo(p.x+sw, p.y, p.x, p.y-sh);
+  ctx.fill();
+  ctx.stroke();
+
+  // Inward arrows
+  var as = 6;
+  ctx.beginPath();
+  ctx.moveTo(p.x-as, p.y-sh-as+as); ctx.lineTo(p.x, p.y-sh); ctx.lineTo(p.x+as, p.y-sh-as+as);
+  // Actually inward pointing
+  ctx.moveTo(p.x-as, p.y-sh+as*2); ctx.lineTo(p.x, p.y-sh); ctx.lineTo(p.x+as, p.y-sh+as*2);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(p.x-as, p.y+sh-as*2); ctx.lineTo(p.x, p.y+sh); ctx.lineTo(p.x+as, p.y+sh-as*2);
+  ctx.stroke();
+
+  ctx.fillStyle = '#1d4ed8';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('f='+c.focalLength+'mm', p.x, p.y+sh+14);
+}
+
+function drawFlatMirror(c){
+  var rad = c.angle*Math.PI/180;
+  var hw = c.mirrorWidth/2*state.zoom;
+  var x1 = c.x-state.zoom*hw/state.zoom*Math.cos(rad);
+  // Recalculate properly
+  var hwW = c.mirrorWidth/2;
+  var p1 = w2s(c.x - hwW*Math.cos(rad), c.y - hwW*Math.sin(rad));
+  var p2 = w2s(c.x + hwW*Math.cos(rad), c.y + hwW*Math.sin(rad));
+
+  // Mirror surface
+  ctx.strokeStyle = '#059669';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(p1.x,p1.y); ctx.lineTo(p2.x,p2.y);
+  ctx.stroke();
+
+  // Hatching on back side
+  var nx = Math.sin(rad), ny = Math.cos(rad); // perpendicular (back side)
+  var hatchCount = 8;
+  ctx.strokeStyle = '#059669';
+  ctx.lineWidth = 1;
+  for(var i=1;i<hatchCount;i++){
+    var t = i/hatchCount;
+    var hx = p1.x + (p2.x-p1.x)*t;
+    var hy = p1.y + (p2.y-p1.y)*t;
+    ctx.beginPath();
+    ctx.moveTo(hx, hy);
+    ctx.lineTo(hx + nx*8, hy + ny*8);
+    ctx.stroke();
+  }
+
+  // Label
+  var mx = (p1.x+p2.x)/2, my = (p1.y+p2.y)/2;
+  ctx.fillStyle = '#065f46';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(c.angle+'\u00B0', mx + nx*14, my + ny*14);
+}
+
+function drawPrism(c){
+  var verts = getPrismVerts(c);
+  var sv = [];
+  for(var i=0;i<3;i++) sv.push(w2s(verts[i].x, verts[i].y));
+
+  ctx.fillStyle = 'rgba(139,92,246,0.12)';
+  ctx.strokeStyle = '#7c3aed';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(sv[0].x, sv[0].y);
+  ctx.lineTo(sv[1].x, sv[1].y);
+  ctx.lineTo(sv[2].x, sv[2].y);
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+
+  // Right angle marker
+  var ms = 8;
+  // The right angle is at vertex 0 (before rotation)
+  // After rotation, compute the marker
+  var v0 = sv[0], v1 = sv[1], v2 = sv[2];
+  var d1x = (v1.x-v0.x), d1y = (v1.y-v0.y);
+  var l1 = vLen(d1x,d1y); d1x/=l1; d1y/=l1;
+  var d2x = (v2.x-v0.x), d2y = (v2.y-v0.y);
+  var l2 = vLen(d2x,d2y); d2x/=l2; d2y/=l2;
+  ctx.strokeStyle = '#7c3aed';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(v0.x+d1x*ms, v0.y+d1y*ms);
+  ctx.lineTo(v0.x+d1x*ms+d2x*ms, v0.y+d1y*ms+d2y*ms);
+  ctx.lineTo(v0.x+d2x*ms, v0.y+d2y*ms);
+  ctx.stroke();
+}
+
+function drawScreen(c){
+  var p = w2s(c.x, c.y);
+  var sh = c.height/2*state.zoom;
+
+  ctx.strokeStyle = '#475569';
+  ctx.lineWidth = 4;
+  ctx.beginPath();
+  ctx.moveTo(p.x, p.y-sh);
+  ctx.lineTo(p.x, p.y+sh);
+  ctx.stroke();
+
+  // Base
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(p.x-10, p.y+sh);
+  ctx.lineTo(p.x+10, p.y+sh);
+  ctx.stroke();
+
+  ctx.fillStyle = '#334155';
+  ctx.font = '10px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Screen', p.x, p.y+sh+14);
+}
+
+function drawSelection(){
+  if(!state.selectedId) return;
+  var c = findComp(state.selectedId);
+  if(!c) return;
+
+  var bounds = getCompBounds(c);
+  if(!bounds) return;
+  var p1 = w2s(bounds.x1, bounds.y1);
+  var p2 = w2s(bounds.x2, bounds.y2);
+  var pad = 6;
+
+  ctx.strokeStyle = '#3b82f6';
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([4,4]);
+  ctx.strokeRect(p1.x-pad, p1.y-pad, p2.x-p1.x+pad*2, p2.y-p1.y+pad*2);
+  ctx.setLineDash([]);
+}
+
+function getCompBounds(c){
+  switch(c.type){
+    case 'point_source':
+    case 'collimated_beam':
+      return {x1:c.x-15, y1:c.y-15, x2:c.x+15, y2:c.y+15};
+    case 'convex_lens':
+    case 'concave_lens':
+      return {x1:c.x-10, y1:c.y-c.height/2, x2:c.x+10, y2:c.y+c.height/2};
+    case 'flat_mirror':
+      var rad = c.angle*Math.PI/180;
+      var hw = c.mirrorWidth/2;
+      var x1=c.x-hw*Math.cos(rad), y1=c.y-hw*Math.sin(rad);
+      var x2=c.x+hw*Math.cos(rad), y2=c.y+hw*Math.sin(rad);
+      return {x1:Math.min(x1,x2)-5, y1:Math.min(y1,y2)-5, x2:Math.max(x1,x2)+5, y2:Math.max(y1,y2)+5};
+    case 'right_angle_prism':
+      var v = getPrismVerts(c);
+      var mnx=v[0].x, mny=v[0].y, mxx=v[0].x, mxy=v[0].y;
+      for(var i=1;i<3;i++){
+        if(v[i].x<mnx)mnx=v[i].x; if(v[i].y<mny)mny=v[i].y;
+        if(v[i].x>mxx)mxx=v[i].x; if(v[i].y>mxy)mxy=v[i].y;
+      }
+      return {x1:mnx-5, y1:mny-5, x2:mxx+5, y2:mxy+5};
+    case 'screen':
+      return {x1:c.x-5, y1:c.y-c.height/2, x2:c.x+5, y2:c.y+c.height/2};
+  }
+  return null;
+}
+
+function updateStatus(){
+  var sb = document.getElementById('statusBar');
+  var nRays = 0, nComps = state.components.length;
+  for(var i=0;i<state.components.length;i++){
+    var c = state.components[i];
+    if(c.type==='point_source') nRays += c.numRays||0;
+    if(c.type==='collimated_beam') nRays += c.numRays||0;
+  }
+  sb.textContent = 'X: ' + Math.round(mouseWX) + 'mm  Y: ' + Math.round(mouseWY) + 'mm  |  Zoom: ' + (state.zoom*100).toFixed(0) + '%  |  Rays: ' + nRays + '  Segments: ' + state.segments.length + '  Components: ' + nComps;
+}
+
+/* ============================================================
+   PROPERTY PANEL
+   ============================================================ */
+function updateProps(){
+  var title = document.getElementById('propsTitle');
+  var sub = document.getElementById('propsSubtitle');
+  var body = document.getElementById('propsBody');
+  var c = state.selectedId ? findComp(state.selectedId) : null;
+
+  if(!c){
+    title.textContent = 'Properties';
+    sub.textContent = 'Select a component';
+    body.innerHTML = '<div class="props-empty"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg><br>Click on a component in the canvas to view and edit its properties.<br><br><strong>Quick Start:</strong><br>Drag a component from the left toolbar onto the canvas.</div>';
+    return;
+  }
+
+  var names = {
+    point_source:'Point Source', collimated_beam:'Collimated Beam',
+    convex_lens:'Convex Lens', concave_lens:'Concave Lens',
+    flat_mirror:'Flat Mirror', right_angle_prism:'Right-Angle Prism',
+    screen:'Screen'
+  };
+  title.textContent = names[c.type] || c.type;
+  sub.textContent = 'ID: ' + c.id + ' | Position: (' + Math.round(c.x) + ', ' + Math.round(c.y) + ') mm';
+
+  var html = '<div class="prop-group"><div class="prop-label">Position</div>';
+  html += '<div class="prop-pos">X: ' + Math.round(c.x) + ' mm &nbsp; Y: ' + Math.round(c.y) + ' mm</div></div>';
+
+  if(c.type==='point_source'){
+    html += propSlider('Number of Rays','numRays',c.numRays,3,30,1);
+    html += propSlider('Ray Spread (\u00B0)','raySpread',c.raySpread,5,90,1);
+    html += propSlider('Direction (\u00B0)','direction',c.direction,0,360,1);
+  }
+  else if(c.type==='collimated_beam'){
+    html += propSlider('Number of Rays','numRays',c.numRays,2,20,1);
+    html += propSlider('Beam Width (mm)','beamWidth',c.beamWidth,10,200,5);
+    html += propSlider('Direction (\u00B0)','direction',c.direction,0,360,1);
+  }
+  else if(c.type==='convex_lens'){
+    html += propSlider('Focal Length (mm)','focalLength',c.focalLength,50,500,5);
+    html += propSlider('Aperture Height (mm)','height',c.height,20,200,5);
+    html += '<div class="product-rec"><p>Need a lens with '+c.focalLength+'mm focal length?</p>';
+    html += '<a href="https://photonedgeoptics.com/products.html?category=Optical%20Lenses" target="_blank">Browse Our Lenses \u2192</a></div>';
+  }
+  else if(c.type==='concave_lens'){
+    html += propSlider('Focal Length (mm)','focalLength',c.focalLength,-500,-50,5);
+    html += propSlider('Aperture Height (mm)','height',c.height,20,200,5);
+    html += '<div class="product-rec"><p>Need a lens with '+Math.abs(c.focalLength)+'mm focal length?</p>';
+    html += '<a href="https://photonedgeoptics.com/products.html?category=Optical%20Lenses" target="_blank">Browse Our Lenses \u2192</a></div>';
+  }
+  else if(c.type==='flat_mirror'){
+    html += propSlider('Angle (\u00B0)','angle',c.angle,0,180,1);
+    html += propSlider('Width (mm)','mirrorWidth',c.mirrorWidth,20,200,5);
+    html += '<div class="product-rec"><p>Looking for precision mirrors?</p>';
+    html += '<a href="https://photonedgeoptics.com/products.html?category=Optical%20Mirrors" target="_blank">Browse Our Mirrors \u2192</a></div>';
+  }
+  else if(c.type==='right_angle_prism'){
+    html += propSlider('Size (mm)','prismSize',c.prismSize,30,150,5);
+    html += propSlider('Rotation (\u00B0)','angle',c.angle,0,360,1);
+    html += '<div class="product-rec"><p>Need a precision prism?</p>';
+    html += '<a href="https://photonedgeoptics.com/products.html?category=Optical%20Prisms" target="_blank">Browse Our Prisms \u2192</a></div>';
+  }
+  else if(c.type==='screen'){
+    html += propSlider('Height (mm)','height',c.height,20,300,5);
+  }
+
+  html += '<button class="prop-delete" onclick="deleteSelected()">\u2716 Delete Component</button>';
+  body.innerHTML = html;
+
+  // Attach event listeners
+  var inputs = body.querySelectorAll('input[type=range]');
+  for(var i=0;i<inputs.length;i++){
+    inputs[i].addEventListener('input', onPropChange);
+  }
+}
+
+function propSlider(label, prop, val, min, max, step){
+  return '<div class="prop-group"><div class="prop-label"><span>'+label+'</span><span class="prop-value" id="pv_'+prop+'">'+val+'</span></div>' +
+    '<input type="range" min="'+min+'" max="'+max+'" step="'+step+'" value="'+val+'" data-prop="'+prop+'"></div>';
+}
+
+function onPropChange(e){
+  var prop = e.target.getAttribute('data-prop');
+  var val = parseFloat(e.target.value);
+  var c = findComp(state.selectedId);
+  if(!c) return;
+  c[prop] = val;
+  var pvEl = document.getElementById('pv_'+prop);
+  if(pvEl) pvEl.textContent = val;
+  retrace();
+  queueRender();
+  // Update subtitle with position
+  var sub = document.getElementById('propsSubtitle');
+  sub.textContent = 'ID: ' + c.id + ' | Position: (' + Math.round(c.x) + ', ' + Math.round(c.y) + ') mm';
+}
+
+/* ============================================================
+   RETRACE & RENDER
+   ============================================================ */
+function retrace(){
+  traceAllRays();
+}
+
+function retraceAndRender(){
+  retrace();
+  queueRender();
+}
+
+/* ============================================================
+   INTERACTION HANDLERS
+   ============================================================ */
+function onMouseDown(e){
+  if(e.button === 1 || (e.button === 0 && spaceDown)){
+    // Pan
+    isPanning = true;
+    lastMX = e.clientX;
+    lastMY = e.clientY;
+    canvas.style.cursor = 'grabbing';
+    e.preventDefault();
+    return;
+  }
+  if(e.button !== 0) return;
+
+  var pos = getCanvasXY(e);
+  var wpos = s2w(pos.x, pos.y);
+
+  // Hit test
+  var hit = hitTest(wpos.x, wpos.y);
+  if(hit){
+    state.selectedId = hit.id;
+    isDragging = true;
+    dragComp = hit;
+    dragOX = wpos.x - hit.x;
+    dragOY = wpos.y - hit.y;
+    canvas.style.cursor = 'move';
+    updateProps();
+    queueRender();
+  } else {
+    state.selectedId = null;
+    updateProps();
+    queueRender();
+  }
+}
+
+function onMouseMove(e){
+  var pos = getCanvasXY(e);
+  var wpos = s2w(pos.x, pos.y);
+  mouseWX = wpos.x;
+  mouseWY = wpos.y;
+
+  if(isPanning){
+    state.panX += e.clientX - lastMX;
+    state.panY += e.clientY - lastMY;
+    lastMX = e.clientX;
+    lastMY = e.clientY;
+    queueRender();
+    return;
+  }
+
+  if(isDragging && dragComp){
+    dragComp.x = wpos.x - dragOX;
+    dragComp.y = wpos.y - dragOY;
+    retraceAndRender();
+    // Update position display
+    var sub = document.getElementById('propsSubtitle');
+    if(sub && state.selectedId){
+      sub.textContent = 'ID: ' + dragComp.id + ' | Position: (' + Math.round(dragComp.x) + ', ' + Math.round(dragComp.y) + ') mm';
+    }
+    return;
+  }
+
+  // Hover cursor
+  var hit = hitTest(wpos.x, wpos.y);
+  canvas.style.cursor = hit ? 'pointer' : (spaceDown ? 'grab' : 'default');
+  
+  // Show creating preview
+  if(isCreating){
+    queueRender();
+  }
+
+  updateStatus();
+}
+
+function onMouseUp(e){
+  if(isPanning){
+    isPanning = false;
+    canvas.style.cursor = 'default';
+    return;
+  }
+  if(isDragging){
+    isDragging = false;
+    dragComp = null;
+    canvas.style.cursor = 'default';
+    updateProps();
+    return;
+  }
+}
+
+function onWheel(e){
+  e.preventDefault();
+  var pos = getCanvasXY(e);
+  var wposBefore = s2w(pos.x, pos.y);
+  
+  var factor = e.deltaY > 0 ? 0.9 : 1.1;
+  state.zoom = Math.max(0.2, Math.min(5, state.zoom * factor));
+
+  // Adjust pan so the point under cursor stays fixed
+  var wposAfter = s2w(pos.x, pos.y);
+  state.panX += (wposAfter.x - wposBefore.x) * state.zoom;
+  state.panY -= (wposAfter.y - wposBefore.y) * state.zoom;
+
+  queueRender();
+}
+
+function onKeyDown(e){
+  if(e.keyCode === 32){ // Space
+    spaceDown = true;
+    canvas.style.cursor = 'grab';
+    e.preventDefault();
+  }
+  if(e.keyCode === 46 || e.keyCode === 8){ // Delete or Backspace
+    if(state.selectedId && document.activeElement === document.body){
+      deleteSelected();
+      e.preventDefault();
+    }
+  }
+  if(e.keyCode === 27){ // Escape
+    state.selectedId = null;
+    updateProps();
+    queueRender();
+  }
+}
+
+function onKeyUp(e){
+  if(e.keyCode === 32){
+    spaceDown = false;
+    canvas.style.cursor = 'default';
+  }
+}
+
+/* ============================================================
+   TOOLBAR DRAG & DROP
+   ============================================================ */
+function onToolMouseDown(e){
+  var item = e.target.closest('.tool-item');
+  if(!item) return;
+  var type = item.getAttribute('data-type');
+  if(!type) return;
+
+  isCreating = true;
+  creatingType = type;
+  e.preventDefault();
+}
+
+function onDocMouseMove(e){
+  if(!isCreating) return;
+  var rect = canvas.getBoundingClientRect();
+  if(e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom){
+    var pos = {x: e.clientX - rect.left, y: e.clientY - rect.top};
+    var wpos = s2w(pos.x, pos.y);
+    mouseWX = wpos.x;
+    mouseWY = wpos.y;
+    // Draw ghost preview
+    queueRender();
+    // Draw ghost
+    drawGhostComponent(creatingType, wpos.x, wpos.y);
+  }
+}
+
+function onDocMouseUp(e){
+  if(!isCreating) return;
+  var rect = canvas.getBoundingClientRect();
+  if(e.clientX >= rect.left && e.clientX <= rect.right && e.clientY >= rect.top && e.clientY <= rect.bottom){
+    var pos = {x: e.clientX - rect.left, y: e.clientY - rect.top};
+    var wpos = s2w(pos.x, pos.y);
+    var comp = makeComponent(creatingType, wpos.x, wpos.y);
+    state.components.push(comp);
+    state.selectedId = comp.id;
+    retraceAndRender();
+    updateProps();
+  }
+  isCreating = false;
+  creatingType = null;
+  queueRender();
+}
+
+function drawGhostComponent(type, wx, wy){
+  var ghost = {type:type, x:wx, y:wy, focalLength:150, height:100, angle:45, mirrorWidth:80, prismSize:70, numRays:8, beamWidth:60, raySpread:25, direction:0};
+  ctx.globalAlpha = 0.4;
+  drawComp(ghost);
+  ctx.globalAlpha = 1;
+}
+
+/* ============================================================
+   TOUCH SUPPORT
+   ============================================================ */
+function onTouchStart(e){
+  if(e.touches.length === 1){
+    var t = e.touches[0];
+    onMouseDown({button:0, clientX:t.clientX, clientY:t.clientY, target:e.target, preventDefault:function(){}});
+    e.preventDefault();
+  }
+}
+function onTouchMove(e){
+  if(e.touches.length === 1){
+    var t = e.touches[0];
+    onMouseMove({clientX:t.clientX, clientY:t.clientY, preventDefault:function(){}});
+    e.preventDefault();
+  }
+}
+function onTouchEnd(e){
+  onMouseUp({});
+  if(isCreating){
+    // For touch, create at last known position
+    var comp = makeComponent(creatingType, mouseWX, mouseWY);
+    state.components.push(comp);
+    state.selectedId = comp.id;
+    retraceAndRender();
+    updateProps();
+    isCreating = false;
+    creatingType = null;
+  }
+}
+
+/* ============================================================
+   ACTIONS
+   ============================================================ */
+function deleteSelected(){
+  if(!state.selectedId) return;
+  var idx = findCompIdx(state.selectedId);
+  if(idx >= 0){
+    state.components.splice(idx, 1);
+    state.selectedId = null;
+    retraceAndRender();
+    updateProps();
+  }
+}
+
+function clearAll(){
+  state.components = [];
+  state.selectedId = null;
+  state.segments = [];
+  state.screenHits = [];
+  retraceAndRender();
+  updateProps();
+}
+
+function resetView(){
+  state.panX = 0;
+  state.panY = 0;
+  state.zoom = 1.5;
+  queueRender();
+}
+
+function exportPNG(){
+  // Create a temporary high-res render
+  var link = document.createElement('a');
+  link.download = 'photonedge-ray-tracer.png';
+  link.href = canvas.toDataURL('image/png');
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+function shareScene(){
+  var data = [];
+  for(var i=0;i<state.components.length;i++){
+    var c = state.components[i];
+    var o = {t:c.type, x:Math.round(c.x), y:Math.round(c.y)};
+    if(c.focalLength!==undefined) o.f=c.focalLength;
+    if(c.height!==undefined) o.h=c.height;
+    if(c.angle!==undefined) o.a=c.angle;
+    if(c.mirrorWidth!==undefined) o.mw=c.mirrorWidth;
+    if(c.prismSize!==undefined) o.ps=c.prismSize;
+    if(c.numRays!==undefined) o.nr=c.numRays;
+    if(c.beamWidth!==undefined) o.bw=c.beamWidth;
+    if(c.raySpread!==undefined) o.rs=c.raySpread;
+    if(c.direction!==undefined) o.d=c.direction;
+    data.push(o);
+  }
+  var json = JSON.stringify(data);
+  var encoded = encodeURIComponent(btoa(json));
+  var url = window.location.href.split('?')[0] + '?scene=' + encoded;
+  
+  if(navigator.clipboard){
+    navigator.clipboard.writeText(url).then(function(){
+      alert('Share link copied to clipboard!');
+    });
+  } else {
+    prompt('Copy this share link:', url);
+  }
+}
+
+function loadSceneFromURL(){
+  var match = window.location.search.match(/[?&]scene=([^&]+)/);
+  if(!match) return false;
+  try {
+    var json = atob(decodeURIComponent(match[1]));
+    var data = JSON.parse(json);
+    state.components = [];
+    state.nextId = 1;
+    for(var i=0;i<data.length;i++){
+      var d = data[i];
+      var c = makeComponent(d.t, d.x, d.y);
+      if(d.f!==undefined) c.focalLength = d.f;
+      if(d.h!==undefined) c.height = d.h;
+      if(d.a!==undefined) c.angle = d.a;
+      if(d.mw!==undefined) c.mirrorWidth = d.mw;
+      if(d.ps!==undefined) c.prismSize = d.ps;
+      if(d.nr!==undefined) c.numRays = d.nr;
+      if(d.bw!==undefined) c.beamWidth = d.bw;
+      if(d.rs!==undefined) c.raySpread = d.rs;
+      if(d.d!==undefined) c.direction = d.d;
+      state.components.push(c);
+    }
+    retraceAndRender();
+    return true;
+  } catch(e){
+    return false;
+  }
+}
+
+/* ============================================================
+   EXAMPLE SCENES
+   ============================================================ */
+var EXAMPLES = {
+  simpleFocus: function(){
+    state.components = [];
+    state.nextId = 1;
+    state.components.push(makeComponent('point_source', -250, 0));
+    state.components[0].numRays = 15;
+    state.components[0].raySpread = 12;
+    state.components[0].direction = 0;
+    state.components.push(makeComponent('convex_lens', 0, 0));
+    state.components[1].focalLength = 150;
+    state.components[1].height = 120;
+    state.components.push(makeComponent('screen', 375, 0));
+    state.components[2].height = 100;
+    state.panX = 0; state.panY = 0; state.zoom = 1.2;
+  },
+  beamExpander: function(){
+    state.components = [];
+    state.nextId = 1;
+    state.components.push(makeComponent('collimated_beam', -250, 0));
+    state.components[0].numRays = 6;
+    state.components[0].beamWidth = 40;
+    state.components.push(makeComponent('concave_lens', -80, 0));
+    state.components[1].focalLength = -100;
+    state.components[1].height = 80;
+    state.components.push(makeComponent('convex_lens', 80, 0));
+    state.components[2].focalLength = 200;
+    state.components[2].height = 130;
+    state.components.push(makeComponent('screen', 350, 0));
+    state.components[3].height = 150;
+    state.panX = 0; state.panY = 0; state.zoom = 1.2;
+  },
+  periscope: function(){
+    state.components = [];
+    state.nextId = 1;
+    state.components.push(makeComponent('collimated_beam', -250, -60));
+    state.components[0].numRays = 5;
+    state.components[0].beamWidth = 30;
+    state.components[0].direction = 0;
+    state.components.push(makeComponent('flat_mirror', 0, -60));
+    state.components[1].angle = 45;
+    state.components[1].mirrorWidth = 60;
+    state.components.push(makeComponent('flat_mirror', 0, 60));
+    state.components[2].angle = 45;
+    state.components[2].mirrorWidth = 60;
+    state.components.push(makeComponent('screen', 200, 60));
+    state.components[3].height = 60;
+    state.panX = 0; state.panY = 0; state.zoom = 1.3;
+  },
+  prismDeflect: function(){
+    state.components = [];
+    state.nextId = 1;
+    state.components.push(makeComponent('collimated_beam', -250, -10));
+    state.components[0].numRays = 5;
+    state.components[0].beamWidth = 30;
+    state.components[0].direction = 0;
+    state.components.push(makeComponent('right_angle_prism', 0, 0));
+    state.components[1].prismSize = 70;
+    state.components[1].angle = 0;
+    state.components.push(makeComponent('screen', 0, -200));
+    state.components[2].height = 100;
+    state.panX = 0; state.panY = 50; state.zoom = 1.3;
+  }
+};
+
+/* ============================================================
+   DROPDOWN
+   ============================================================ */
+function toggleDropdown(id){
+  var menu = document.getElementById(id);
+  var isOpen = menu.classList.contains('show');
+  closeAllDropdowns();
+  if(!isOpen) menu.classList.add('show');
+}
+
+function closeAllDropdowns(){
+  var menus = document.querySelectorAll('.dropdown-menu');
+  for(var i=0;i<menus.length;i++) menus[i].classList.remove('show');
+}
+
+/* ============================================================
+   RESIZE
+   ============================================================ */
+function onResize(){
+  var wrap = document.getElementById('canvasWrap');
+  canvasW = wrap.clientWidth;
+  canvasH = wrap.clientHeight;
+  canvas.width = canvasW;
+  canvas.height = canvasH;
+  queueRender();
+}
+
+/* ============================================================
+   INITIALIZATION
+   ============================================================ */
+function init(){
+  canvas = document.getElementById('canvas');
+  ctx = canvas.getContext('2d');
+  
+  onResize();
+  
+  // Events
+  canvas.addEventListener('mousedown', onMouseDown);
+  canvas.addEventListener('mousemove', onMouseMove);
+  canvas.addEventListener('mouseup', onMouseUp);
+  canvas.addEventListener('mouseleave', onMouseUp);
+  canvas.addEventListener('wheel', onWheel, {passive:false});
+  canvas.addEventListener('touchstart', onTouchStart, {passive:false});
+  canvas.addEventListener('touchmove', onTouchMove, {passive:false});
+  canvas.addEventListener('touchend', onTouchEnd);
+  
+  document.addEventListener('mousemove', onDocMouseMove);
+  document.addEventListener('mouseup', onDocMouseUp);
+  document.addEventListener('keydown', onKeyDown);
+  document.addEventListener('keyup', onKeyUp);
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.dropdown')) closeAllDropdowns();
+  });
+  
+  window.addEventListener('resize', onResize);
+  
+  // Toolbar
+  var toolbar = document.getElementById('toolbar');
+  toolbar.addEventListener('mousedown', onToolMouseDown);
+  toolbar.addEventListener('touchstart', function(e){
+    var item = e.target.closest('.tool-item');
+    if(!item) return;
+    var type = item.getAttribute('data-type');
+    if(!type) return;
+    isCreating = true;
+    creatingType = type;
+    e.preventDefault();
+  });
+
+  // Try to load from URL
+  if(!loadSceneFromURL()){
+    // Default: show simple lens focus
+    EXAMPLES.simpleFocus();
+  }
+  
+  retraceAndRender();
+  updateProps();
+}
+
+// Make functions globally accessible
+window.deleteSelected = deleteSelected;
+window.clearAll = clearAll;
+window.resetView = resetView;
+window.exportPNG = exportPNG;
+window.shareScene = shareScene;
+window.loadExample = function(name){
+  closeAllDropdowns();
+  if(EXAMPLES[name]){
+    EXAMPLES[name]();
+    state.selectedId = null;
+    retraceAndRender();
+    updateProps();
+  }
+};
+window.toggleDropdown = toggleDropdown;
+
+// Start
+if(document.readyState === 'loading'){
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+
+})();
+</script>
+</body>
+</html>

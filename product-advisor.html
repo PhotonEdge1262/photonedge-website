@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Component Selector - Find the Right Optics for Your Application | PhotonEdge</title>
+    <meta name="description" content="Use our Smart Product Advisor to find the perfect optical components for your application. Select wavelength, application area, and get instant recommendations from PhotonEdge.">
+    <meta name="keywords" content="optical component selector, optical advisor, lens selector, optical window recommendation, photon edge advisor, smart product finder">
+    <meta property="og:title" content="Optical Component Selector - Smart Product Advisor | PhotonEdge">
+    <meta property="og:description" content="Find the right optical components for your application in 4 simple steps. AI-powered recommendations for lenses, mirrors, windows, filters and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/product-advisor.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/product-advisor.html">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .advisor-page { padding: 100px 0 60px; min-height: 100vh; background: #f8fafc; }
+        .advisor-header { text-align: center; margin-bottom: 40px; }
+        .advisor-header h1 { font-size: 40px; font-weight: 800; color: #3b82f6; margin-bottom: 10px; }
+        .advisor-header p { font-size: 18px; color: #718096; max-width: 600px; margin: 0 auto; }
+
+        /* Progress Bar */
+        .progress-bar { display: flex; justify-content: center; align-items: center; margin-bottom: 50px; padding: 0 20px; }
+        .progress-step { display: flex; align-items: center; }
+        .step-circle { width: 44px; height: 44px; border-radius: 50%; background: #e2e8f0; color: #718096; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; transition: all 0.4s ease; border: 3px solid transparent; }
+        .step-circle.active { background: #3b82f6; color: #fff; border-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59,130,246,0.2); transform: scale(1.1); }
+        .step-circle.done { background: #10b981; color: #fff; border-color: #10b981; }
+        .step-label { margin-left: 10px; font-size: 14px; color: #718096; font-weight: 500; white-space: nowrap; }
+        .step-label.active { color: #3b82f6; font-weight: 700; }
+        .step-label.done { color: #10b981; }
+        .step-connector { width: 60px; height: 3px; background: #e2e8f0; margin: 0 12px; border-radius: 2px; transition: background 0.4s ease; }
+        .step-connector.done { background: #10b981; }
+
+        /* Step Container */
+        .step-container { max-width: 900px; margin: 0 auto; }
+        .step-panel { display: none; animation: fadeSlideIn 0.4s ease; }
+        .step-panel.active { display: block; }
+        @keyframes fadeSlideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+        .step-title { text-align: center; font-size: 26px; font-weight: 700; color: #1a202c; margin-bottom: 8px; }
+        .step-subtitle { text-align: center; font-size: 15px; color: #718096; margin-bottom: 30px; }
+
+        /* Option Cards */
+        .options-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+        .option-card { background: #fff; border: 2px solid #e2e8f0; border-radius: 12px; padding: 24px 16px; text-align: center; cursor: pointer; transition: all 0.3s ease; position: relative; }
+        .option-card:hover { border-color: #3b82f6; box-shadow: 0 4px 16px rgba(59,130,246,0.12); transform: translateY(-3px); }
+        .option-card.selected { border-color: #3b82f6; background: #eff6ff; box-shadow: 0 4px 16px rgba(59,130,246,0.18); }
+        .option-card.selected::after { content: '\2713'; position: absolute; top: 8px; right: 10px; background: #3b82f6; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; }
+        .option-icon { font-size: 36px; margin-bottom: 12px; display: block; }
+        .option-title { font-size: 15px; font-weight: 600; color: #1a202c; margin-bottom: 4px; }
+        .option-desc { font-size: 12px; color: #718096; line-height: 1.4; }
+
+        /* Multi-select hint */
+        .multiselect-hint { text-align: center; font-size: 13px; color: #3b82f6; margin-bottom: 20px; font-weight: 500; }
+
+        /* Navigation buttons */
+        .step-nav { display: flex; justify-content: center; gap: 16px; margin-top: 40px; }
+        .btn-advisor { padding: 12px 32px; border-radius: 8px; font-weight: 600; font-size: 15px; cursor: pointer; transition: all 0.3s; border: none; }
+        .btn-next { background: #3b82f6; color: #fff; }
+        .btn-next:hover { background: #2563eb; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(59,130,246,0.3); }
+        .btn-next:disabled { background: #cbd5e1; cursor: not-allowed; transform: none; box-shadow: none; }
+        .btn-back { background: #fff; color: #3b82f6; border: 2px solid #3b82f6; }
+        .btn-back:hover { background: #eff6ff; }
+        .btn-restart { background: #f1f5f9; color: #3b82f6; border: 2px solid #e2e8f0; }
+        .btn-restart:hover { background: #e2e8f0; }
+
+        /* Results */
+        .results-section { margin-top: 10px; }
+        .results-summary { background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%); color: #fff; border-radius: 16px; padding: 30px; margin-bottom: 30px; text-align: center; }
+        .results-summary h2 { font-size: 24px; margin-bottom: 8px; }
+        .results-summary p { font-size: 15px; opacity: 0.9; }
+        .results-tags { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 16px; }
+        .results-tag { background: rgba(255,255,255,0.2); padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 500; }
+
+        .result-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; padding: 28px; margin-bottom: 20px; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .result-card:hover { box-shadow: 0 8px 24px rgba(59,130,246,0.1); border-color: #3b82f6; }
+        .result-card-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 14px; }
+        .result-card-icon { font-size: 40px; flex-shrink: 0; width: 60px; height: 60px; background: #eff6ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+        .result-card-title { font-size: 20px; font-weight: 700; color: #1a202c; margin-bottom: 4px; }
+        .result-card-category { font-size: 13px; color: #3b82f6; font-weight: 500; }
+        .result-card-reason { background: #f0f9ff; border-left: 3px solid #3b82f6; padding: 12px 16px; border-radius: 0 8px 8px 0; margin-bottom: 14px; font-size: 14px; color: #334155; line-height: 1.6; }
+        .result-card-params { margin-bottom: 16px; }
+        .result-card-params h4 { font-size: 14px; font-weight: 600; color: #1a202c; margin-bottom: 8px; }
+        .param-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .param-badge { background: #f1f5f9; border: 1px solid #e2e8f0; padding: 4px 12px; border-radius: 6px; font-size: 12px; color: #475569; }
+        .result-card-links { display: flex; gap: 12px; flex-wrap: wrap; }
+        .result-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; border-radius: 6px; font-size: 14px; font-weight: 500; text-decoration: none; transition: all 0.2s; }
+        .result-link-primary { background: #3b82f6; color: #fff; }
+        .result-link-primary:hover { background: #2563eb; }
+        .result-link-secondary { background: #fff; color: #3b82f6; border: 1px solid #3b82f6; }
+        .result-link-secondary:hover { background: #eff6ff; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .options-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .advisor-header h1 { font-size: 28px; }
+            .step-label { display: none; }
+            .step-connector { width: 30px; margin: 0 6px; }
+            .result-card-header { flex-direction: column; }
+            .progress-bar { flex-wrap: wrap; gap: 8px; }
+        }
+        @media (max-width: 480px) {
+            .options-grid { grid-template-columns: 1fr; }
+            .option-card { padding: 16px 12px; }
+            .result-card { padding: 18px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Smart Product Advisor - Optical Component Selector",
+        "url": "https://photonedgeoptics.com/product-advisor.html",
+        "description": "Interactive tool to help select the right optical components based on your application, wavelength, and requirements.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge",
+            "url": "https://photonedgeoptics.com",
+            "logo": "https://photonedgeoptics.com/images/logo.webp"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+                </picture>
+            </a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/products.html" class="nav-link">Products</a></li>
+                    <li><a href="/about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
+                        <a href="/calculator.html" class="nav-link">Tools</a>
+                        <div class="dropdown-menu">
+                            <a href="/calculator.html" class="dropdown-item">
+                                <span class="dropdown-icon">🧮</span>
+                                <span>Optical Calculators</span>
+                            </a>
+                            <a href="/ray-tracer.html" class="dropdown-item">
+                                <span class="dropdown-icon">🔬</span>
+                                <span>Ray Tracer Simulator</span>
+                            </a>
+                            <a href="/materials.html" class="dropdown-item">
+                                <span class="dropdown-icon">📊</span>
+                                <span>Materials Database</span>
+                            </a>
+                            <a href="/product-advisor.html" class="dropdown-item">
+                                <span class="dropdown-icon">🎯</span>
+                                <span>Product Selector</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/downloads.html" class="nav-link">Downloads</a></li>
+                    <li><a href="/case-studies.html" class="nav-link">Case Studies</a></li>
+                    <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="/news.html" class="nav-link">News</a></li>
+                </ul>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="advisor-page">
+        <div class="container">
+            <div class="advisor-header">
+                <h1>Smart Product Advisor</h1>
+                <p>Find the perfect optical components for your project in 4 simple steps</p>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-step">
+                    <div class="step-circle active" id="stepCircle1">1</div>
+                    <span class="step-label active" id="stepLabel1">Application</span>
+                </div>
+                <div class="step-connector" id="connector1"></div>
+                <div class="progress-step">
+                    <div class="step-circle" id="stepCircle2">2</div>
+                    <span class="step-label" id="stepLabel2">Wavelength</span>
+                </div>
+                <div class="step-connector" id="connector2"></div>
+                <div class="progress-step">
+                    <div class="step-circle" id="stepCircle3">3</div>
+                    <span class="step-label" id="stepLabel3">Components</span>
+                </div>
+                <div class="step-connector" id="connector3"></div>
+                <div class="progress-step">
+                    <div class="step-circle" id="stepCircle4">4</div>
+                    <span class="step-label" id="stepLabel4">Results</span>
+                </div>
+            </div>
+
+            <!-- Step Container -->
+            <div class="step-container">
+
+                <!-- Step 1: Application Area -->
+                <div class="step-panel active" id="step1">
+                    <h2 class="step-title">Select Your Application</h2>
+                    <p class="step-subtitle">Choose the primary application area for your optical system</p>
+                    <div class="options-grid" id="appOptions"></div>
+                    <div class="step-nav">
+                        <button class="btn-advisor btn-next" id="btn1Next" disabled onclick="goToStep(2)">Next: Wavelength &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Step 2: Wavelength -->
+                <div class="step-panel" id="step2">
+                    <h2 class="step-title">Select Working Wavelength</h2>
+                    <p class="step-subtitle">Choose the wavelength range of your optical system</p>
+                    <div class="options-grid" id="waveOptions"></div>
+                    <div class="step-nav">
+                        <button class="btn-advisor btn-back" onclick="goToStep(1)">&larr; Back</button>
+                        <button class="btn-advisor btn-next" id="btn2Next" disabled onclick="goToStep(3)">Next: Components &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Component Type -->
+                <div class="step-panel" id="step3">
+                    <h2 class="step-title">Select Component Types</h2>
+                    <p class="step-subtitle">We recommend components based on your selections. You can also customize.</p>
+                    <p class="multiselect-hint">&#10003; Multi-select: Choose one or more component types</p>
+                    <div class="options-grid" id="compOptions"></div>
+                    <div class="step-nav">
+                        <button class="btn-advisor btn-back" onclick="goToStep(2)">&larr; Back</button>
+                        <button class="btn-advisor btn-next" id="btn3Next" disabled onclick="goToStep(4)">Get Recommendations &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- Step 4: Results -->
+                <div class="step-panel" id="step4">
+                    <div class="results-section" id="resultsSection"></div>
+                    <div class="step-nav">
+                        <button class="btn-advisor btn-back" onclick="goToStep(3)">&larr; Modify Selections</button>
+                        <button class="btn-advisor btn-restart" onclick="restartAdvisor()">&#8634; Start Over</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>PhotonEdge</h3>
+                    <p>Precision Optical Components Supplier</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                        <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                        <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                        <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                        <li>Phone: +86-13693009175</li>
+                        <li>WhatsApp: +86-13693009175</li>
+                        <li>Contact: Ms. Lin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script>
+    /* =============================================
+       PhotonEdge Smart Product Advisor
+       ES5 Compatible - No let/const/arrow/template literals
+       ============================================= */
+
+    // ===== Data Definitions =====
+    var applications = [
+        { id: 'laser', icon: '\uD83D\uDD2C', title: 'Laser Systems', desc: 'Industrial, scientific & medical lasers' },
+        { id: 'medical', icon: '\u2764\uFE0F', title: 'Medical Devices', desc: 'Ophthalmic, endoscopic & diagnostic' },
+        { id: 'telecom', icon: '\uD83D\uDCE1', title: 'Telecommunications', desc: 'Fiber optics & signal processing' },
+        { id: 'research', icon: '\uD83D\uDCDA', title: 'Research & Lab', desc: 'Spectroscopy, microscopy & more' },
+        { id: 'defense', icon: '\u2694\uFE0F', title: 'Defense & Aerospace', desc: 'Military & space applications' },
+        { id: 'semiconductor', icon: '\uD83D\uDCBB', title: 'Semiconductor', desc: 'Inspection & lithography optics' },
+        { id: 'industrial', icon: '\uD83C\uDFED', title: 'Industrial Metrology', desc: 'Measurement & quality control' },
+        { id: 'imaging', icon: '\uD83D\uDCF7', title: 'Imaging Systems', desc: 'Camera, display & vision systems' }
+    ];
+
+    var wavelengths = [
+        { id: 'uv', icon: '\uD83D\uDFE3', title: 'UV', desc: '180-400nm' },
+        { id: 'visible', icon: '\uD83C\uDF08', title: 'Visible', desc: '400-700nm' },
+        { id: 'nir', icon: '\uD83D\uDD34', title: 'Near-IR', desc: '700-1550nm' },
+        { id: 'swir', icon: '\uD83D\uDFE0', title: 'SWIR', desc: '1.5-3\u03BCm' },
+        { id: 'mwir', icon: '\uD83D\uDFE1', title: 'MWIR', desc: '3-5\u03BCm' },
+        { id: 'lwir', icon: '\uD83D\uDD25', title: 'LWIR / CO\u2082 Laser', desc: '8-14\u03BCm' },
+        { id: 'broadband', icon: '\u26AA', title: 'Broadband', desc: 'Multi-wavelength' }
+    ];
+
+    var componentTypes = [
+        { id: 'lenses', icon: '\uD83D\uDD0D', title: 'Lenses', desc: 'Plano-convex, aspheric, achromatic & more', link: '/products.html?category=Optical%20Lenses' },
+        { id: 'windows', icon: '\u25A1', title: 'Windows', desc: 'BK7, UV quartz, sapphire, ZnSe, Ge & more', link: '/products.html?category=Optical%20Windows' },
+        { id: 'mirrors', icon: '\uD83E\uDE9E', title: 'Mirrors', desc: 'Dielectric, aluminum, silver, gold coatings', link: '/products.html?category=Optical%20Mirrors' },
+        { id: 'prisms', icon: '\uD83D\uDD3A', title: 'Prisms', desc: 'Right-angle, penta, dove, dispersive, corner cube', link: '/products.html?category=Optical%20Prisms' },
+        { id: 'filters', icon: '\uD83C\uDFAD', title: 'Filters', desc: 'Narrowband, ND, UV/IR cut filters', link: '/products.html?category=Optical%20Filters' },
+        { id: 'beamsplitters', icon: '\u25C6', title: 'Beamsplitters', desc: 'Plate, cube, polarizing types', link: '/products.html?category=Optical%20Beamsplitters' },
+        { id: 'waveplates', icon: '\uD83C\uDF00', title: 'Wave Plates', desc: 'Multi-order, zero-order, dual-wavelength', link: '/products.html?category=Optical%20Wave%20Plates' },
+        { id: 'polarizers', icon: '\u2195\uFE0F', title: 'Polarizers', desc: 'Linear, circular, Glan prisms', link: '/products.html?category=Optical%20Polarizers' }
+    ];
+
+    // ===== Recommendation Logic =====
+    // Key: wavelength + "_" + application => recommended component IDs
+    var recommendationMap = {
+        'uv_laser': {
+            windows: { reason: 'UV-grade fused silica and CaF2 windows offer excellent transmission down to 180nm with high laser damage threshold.', params: ['Transmission: >90% at 193-355nm', 'LIDT: >10 J/cm\u00B2 (ns)', 'Material: UV Fused Silica, CaF2, MgF2'], materials: 'UV Fused Silica / CaF2 / MgF2' },
+            lenses: { reason: 'UV-grade plano-convex and meniscus lenses optimized for laser wavelengths (193nm, 248nm, 355nm).', params: ['Focal length: 25-500mm', 'AR coating: MgF2 or broadband UV', 'Surface quality: 20-10 scratch-dig'], materials: 'UV Fused Silica / CaF2' },
+            filters: { reason: 'Narrowband UV interference filters for laser line selection and background rejection.', params: ['Center wavelength: 193/248/355nm', 'Bandwidth: 1-10nm', 'OD: >6 out-of-band'], materials: 'Fused Silica substrate' }
+        },
+        'uv_medical': {
+            windows: { reason: 'UV quartz windows for fluorescence imaging and UV sterilization applications in medical devices.', params: ['Transmission: >92% at 250-400nm', 'Biocompatible grade', 'Flatness: \u03BB/4'], materials: 'UV Fused Silica / CaF2' },
+            lenses: { reason: 'UV-transmitting lenses for endoscopic fluorescence and UV curing in medical instruments.', params: ['Focal length: 10-200mm', 'AR coating: broadband UV', 'Sterilization compatible'], materials: 'UV Fused Silica / CaF2' }
+        },
+        'uv_research': {
+            windows: { reason: 'High-purity CaF2 and UV quartz windows for spectroscopy and vacuum UV experiments.', params: ['Transmission: >90% at 150-400nm', 'High homogeneity', 'Various sizes available'], materials: 'CaF2 / UV Fused Silica / MgF2' },
+            lenses: { reason: 'UV achromatic doublets corrected for common laser lines, ideal for fluorescence microscopy setups.', params: ['Focal length: 15-300mm', 'Chromatic correction: 2-3 lines', 'Surface quality: 20-10'], materials: 'UV Fused Silica / CaF2' },
+            prisms: { reason: 'UV-grade dispersive prisms for spectroscopy and beam steering in research instruments.', params: ['Material: CaF2 or UV quartz', 'Deviation angle: 30-90\u00B0', 'High transmission UV'], materials: 'CaF2 / UV Fused Silica' }
+        },
+        'uv_imaging': {
+            windows: { reason: 'UV-transmitting protection windows for UV imaging systems and fluorescence cameras.', params: ['Transmission: >90% at 250-400nm', 'Flatness: \u03BB/4', 'AR coated both sides'], materials: 'UV Fused Silica / CaF2' },
+            lenses: { reason: 'UV achromatic lenses corrected for fluorescence imaging wavelengths (DAPI, FITC, TRITC).', params: ['Focal length: 25-200mm', 'AR coating: broadband UV', 'High transmission efficiency'], materials: 'UV Fused Silica / CaF2' }
+        },
+        'uv_defense': {
+            windows: { reason: 'Rugged UV-transmitting windows for missile warning sensors and UV communications systems.', params: ['Shock & thermal resistant', 'Transmission: 200-400nm', 'MIL-spec coatings'], materials: 'UV Fused Silica / Sapphire' },
+            mirrors: { reason: 'UV-enhanced aluminum mirrors for UV beam steering in defense sensing systems.', params: ['Reflectance: >88% at 200-400nm', 'Protected Al coating', 'MIL-spec durability'], materials: 'BK7 substrate / Protected Al' }
+        },
+        'uv_industrial': {
+            windows: { reason: 'Durable UV windows for laser machining monitoring and UV curing process inspection.', params: ['High LIDT', 'AR coated for UV', 'Industrial-grade durability'], materials: 'UV Fused Silica' },
+            lenses: { reason: 'UV plano-convex lenses for UV laser beam focusing in industrial marking and processing.', params: ['Focal length: 50-500mm', 'High laser damage threshold', 'MgF2 AR coating'], materials: 'UV Fused Silica' }
+        },
+        'uv_semiconductor': {
+            windows: { reason: 'Ultra-clean UV windows for semiconductor inspection and lithography systems.', params: ['Surface quality: 10-5 scratch-dig', 'Contamination-free grade', 'Transmission: >90%'], materials: 'UV Fused Silica / CaF2' },
+            lenses: { reason: 'Precision UV lenses for DUV lithography and wafer inspection systems.', params: ['Wavefront error: <\u03BB/10', 'Surface quality: 10-5', 'Sub-nm surface roughness'], materials: 'CaF2 / UV Fused Silica' }
+        },
+        'uv_telecom': {
+            windows: { reason: 'UV-grade windows for specialized UV fiber coupling and free-space UV communication.', params: ['AR coated: 250-400nm', 'High flatness', 'Compact form factor'], materials: 'UV Fused Silica' }
+        },
+        'visible_laser': {
+            lenses: { reason: 'BK7 plano-convex and aspheric lenses optimized for common visible laser wavelengths (488nm, 532nm, 633nm, 650nm).', params: ['Focal length: 10-1000mm', 'AR coating: V-type for laser line', 'Surface quality: 40-20 or better'], materials: 'BK7 / Fused Silica' },
+            mirrors: { reason: 'Dielectric high-reflection mirrors for visible laser beam steering with >99.9% reflectance.', params: ['Reflectance: >99.5% at laser line', 'LIDT: >40 J/cm\u00B2 (ns)', 'Flatness: \u03BB/10'], materials: 'BK7 / Dielectric coating' },
+            filters: { reason: 'Narrowband interference filters for laser line filtering, Raman spectroscopy, and fluorescence.', params: ['Center wavelength: custom', 'Bandwidth: 1-10nm FWHM', 'OD: >6 blocking'], materials: 'BK7 substrate' },
+            windows: { reason: 'BK7 windows with laser-grade AR coatings for visible laser systems.', params: ['AR coating: <0.2% per surface', 'Parallelism: <30 arcsec', 'Surface quality: 40-20'], materials: 'BK7' }
+        },
+        'visible_medical': {
+            lenses: { reason: 'BK7 achromatic doublets for ophthalmic instruments, endoscopes, and medical imaging optics.', params: ['Focal length: 15-500mm', 'Chromatic correction: visible range', 'Biocompatible mounting'], materials: 'BK7 Achromatic Doublet' },
+            beamsplitters: { reason: 'Non-polarizing beamsplitters for OCT, microscopy, and multi-channel medical imaging systems.', params: ['Split ratio: 50/50 or custom', 'Broadband visible AR', 'High wavefront quality'], materials: 'BK7' },
+            polarizers: { reason: 'Thin-film polarizers for polarization-sensitive medical imaging and diagnostic instruments.', params: ['Extinction ratio: >100:1', 'Transmission: >85% (p-pol)', 'Wavelength: 400-700nm'], materials: 'BK7 / Glass substrate' }
+        },
+        'visible_imaging': {
+            lenses: { reason: 'High-performance achromatic doublets and aspheric lenses for camera optics and machine vision systems.', params: ['Focal length: 8-300mm', 'Low distortion design', 'Broadband visible AR'], materials: 'BK7 Achromatic / Aspheric Glass' },
+            filters: { reason: 'Color separation, IR-cut and bandpass filters for imaging sensor optimization.', params: ['Sharp cut-off edges', 'High transmission in-band', 'Various standard sizes'], materials: 'Optical glass / Absorptive' },
+            windows: { reason: 'Camera protection windows and sensor cover glass with broadband AR coatings.', params: ['AR coating: <0.5% R avg', 'Scratch resistant', 'Custom sizes available'], materials: 'BK7 / Borosilicate' }
+        },
+        'visible_telecom': {
+            windows: { reason: 'Precision windows for free-space optical communication and visible light fiber coupling.', params: ['AR coated: visible range', 'High flatness: \u03BB/4', 'Low beam distortion'], materials: 'BK7 / Fused Silica' },
+            lenses: { reason: 'Aspheric and achromatic lenses for free-space optical communication beam collimation.', params: ['Focal length: 10-200mm', 'Low wavefront error', 'Compact form factor'], materials: 'BK7 Aspheric / Achromatic' }
+        },
+        'visible_research': {
+            lenses: { reason: 'Versatile BK7 lens kits for optics lab experiments, beam expansion, and laser alignment.', params: ['Focal length: 15-500mm', 'Various types available', 'Student/research grade options'], materials: 'BK7' },
+            windows: { reason: 'General-purpose BK7 windows for laboratory optical setups and prototyping.', params: ['AR options: broadband visible', 'Multiple sizes in stock', 'Cost-effective'], materials: 'BK7' },
+            prisms: { reason: 'Right-angle and dispersive prisms for beam steering, periscopes, and spectroscopy experiments.', params: ['Accuracy: \u00B110 arcsec', 'Various sizes', 'High transmission'], materials: 'BK7' },
+            filters: { reason: 'ND filters, UV/IR cut filters, and bandpass filters for research applications.', params: ['ND density: 0.1-4.0', 'Sharp cut-off filters', 'Standard sizes in stock'], materials: 'Optical glass / Absorptive' },
+            polarizers: { reason: 'Wire-grid and film polarizers for polarization optics experiments.', params: ['Extinction ratio: >1000:1', 'Various apertures', 'Broadband visible'], materials: 'Glass substrate' },
+            mirrors: { reason: 'Protected aluminum and silver mirrors for general lab beam steering.', params: ['Reflectance: >90% visible', 'Protected coatings', 'Various sizes'], materials: 'BK7 / Protected Al or Ag' }
+        },
+        'visible_defense': {
+            mirrors: { reason: 'Rugged protected silver and dielectric mirrors for visible/near-IR defense targeting systems.', params: ['Reflectance: >95%', 'MIL-spec environmental', 'Shock & vibration rated'], materials: 'BK7 / Protected Silver' },
+            windows: { reason: 'Hardened windows for electro-optical targeting, rangefinding, and surveillance systems.', params: ['Impact resistant', 'Broadband AR visible-NIR', 'MIL-STD-810 rated'], materials: 'BK7 / Sapphire' },
+            filters: { reason: 'Laser protection filters and narrowband filters for defense sensing and countermeasure systems.', params: ['OD: >6 at threat wavelength', 'High visible transmission', 'Fast response'], materials: 'Glass / Dielectric' },
+            prisms: { reason: 'Corner cube retroreflectors for rangefinding and target designation in defense systems.', params: ['Return accuracy: <5 arcsec', 'Wide acceptance angle', 'Ruggedized housing'], materials: 'BK7 / Fused Silica' }
+        },
+        'visible_semiconductor': {
+            lenses: { reason: 'Precision lenses for wafer inspection, photolithography alignment, and semiconductor metrology.', params: ['Surface quality: 10-5', 'Wavefront: <\u03BB/10', 'Low birefringence'], materials: 'BK7 / Fused Silica' },
+            windows: { reason: 'Ultra-flat windows for semiconductor process monitoring and inspection chambers.', params: ['Flatness: \u03BB/10', 'Surface quality: 10-5', 'Cleanroom compatible'], materials: 'BK7 / Fused Silica' }
+        },
+        'visible_industrial': {
+            lenses: { reason: 'Robust industrial lenses for machine vision, laser processing monitoring, and quality inspection.', params: ['Focal length: 8-200mm', 'Industrial AR coatings', 'Vibration resistant'], materials: 'BK7 / Aspheric' },
+            mirrors: { reason: 'Durable protected aluminum mirrors for industrial laser beam delivery and inspection systems.', params: ['Reflectance: >92% visible', 'Industrial coating durability', 'Large sizes available'], materials: 'BK7 / Protected Al' },
+            windows: { reason: 'Protective windows for industrial sensors, cameras, and laser processing equipment.', params: ['Scratch resistant coating', 'AR for operating wavelength', 'Easy to clean'], materials: 'BK7 / Borosilicate' }
+        },
+        'nir_laser': {
+            lenses: { reason: 'BK7 and fused silica lenses optimized for 1064nm Nd:YAG and 1550nm fiber laser systems.', params: ['Focal length: 25-1000mm', 'AR at 1064nm or 1550nm', 'High LIDT'], materials: 'BK7 / Fused Silica' },
+            mirrors: { reason: 'Dielectric HR mirrors for 1064nm and 1550nm with extremely high reflectance and damage threshold.', params: ['Reflectance: >99.9%', 'LIDT: >40 J/cm\u00B2', 'Flatness: \u03BB/10'], materials: 'Fused Silica / Dielectric' },
+            windows: { reason: 'Silicon and fused silica windows for NIR laser beam delivery and enclosure windows.', params: ['Transmission: >95% at 1064nm', 'High thermal conductivity (Si)', 'AR coated'], materials: 'Fused Silica / Silicon' }
+        },
+        'nir_telecom': {
+            windows: { reason: 'Precision windows for 1310nm/1550nm fiber optic coupling and free-space telecom systems.', params: ['AR at 1310/1550nm', 'Telecom-grade quality', 'Fiber-compatible apertures'], materials: 'Fused Silica / InGaAs-compatible' },
+            lenses: { reason: 'Aspheric lenses optimized for single-mode and multi-mode fiber coupling at telecom wavelengths.', params: ['NA matching: SMF/MMF', 'AR at 1310/1550nm', 'Compact package'], materials: 'Fused Silica / Glass Aspheric' },
+            beamsplitters: { reason: 'Fused fiber couplers and plate beamsplitters for WDM and signal monitoring applications.', params: ['Split ratio: customizable', 'Low polarization dependency', 'Telecom wavelength optimized'], materials: 'Fused Silica' }
+        },
+        'nir_medical': {
+            lenses: { reason: 'NIR-optimized lenses for OCT, NIRS, and near-IR surgical laser systems.', params: ['AR at 800-1550nm', 'Low autofluorescence', 'Medical-grade quality'], materials: 'BK7 / Fused Silica' },
+            filters: { reason: 'NIR bandpass and longpass filters for medical imaging and tissue spectroscopy.', params: ['Center wavelength: 800-1550nm', 'Narrow bandwidth options', 'High blocking OD6+'], materials: 'Glass substrate' }
+        },
+        'nir_research': {
+            lenses: { reason: 'NIR achromatic doublets and aspheres for spectroscopy, LIDAR, and NIR imaging research.', params: ['Focal length: 15-500mm', 'AR: broadband NIR', 'Various aperture sizes'], materials: 'BK7 / Fused Silica' },
+            windows: { reason: 'General NIR windows for lab setups, sensor protection, and optical experiments.', params: ['AR: 700-1550nm', 'Standard sizes in stock', 'Good transmission'], materials: 'BK7 / Fused Silica' },
+            mirrors: { reason: 'Broadband NIR mirrors for research beam steering and cavity applications.', params: ['Reflectance: >95% at 700-1550nm', 'Protected coatings', 'Various sizes'], materials: 'BK7 / Protected Ag' }
+        },
+        'nir_defense': {
+            windows: { reason: 'Silicon and germanium windows for NIR/short-wave IR defense imaging and rangefinding systems.', params: ['Transmission: >95% 1-3\u03BCm', 'MIL-spec environmental', 'Thermal shock resistant'], materials: 'Silicon / Germanium' },
+            mirrors: { reason: 'Ruggedized gold and protected silver mirrors for NIR defense targeting and LIDAR.', params: ['Reflectance: >98% NIR', 'MIL-spec rated', 'Vibration resistant'], materials: 'Silicon / Gold coating' }
+        },
+        'nir_industrial': {
+            lenses: { reason: 'NIR lenses for industrial laser processing (1064nm cutting/welding) and NIR inspection systems.', params: ['High LIDT for 1064nm', 'AR at processing wavelength', 'Industrial durability'], materials: 'Fused Silica / BK7' },
+            windows: { reason: 'Protective windows for industrial NIR sensors, pyrometers, and laser processing chambers.', params: ['High temperature resistant', 'AR at 1064nm', 'Easy maintenance'], materials: 'Fused Silica / Silicon' }
+        },
+        'nir_semiconductor': {
+            windows: { reason: 'Silicon windows for NIR wafer inspection and backside alignment in semiconductor processing.', params: ['Transmission: >50% at 1.1-7\u03BCm', 'Polished both sides', 'EPI-grade cleanliness'], materials: 'Silicon' },
+            lenses: { reason: 'NIR lenses for wafer backside inspection and subsurface defect detection.', params: ['Wavefront: <\u03BB/4', 'AR at 1064/1300nm', 'Cleanroom grade'], materials: 'Silicon / Germanium' }
+        },
+        'nir_imaging': {
+            lenses: { reason: 'NIR-corrected lenses for SWIR camera systems and multi-spectral imaging applications.', params: ['Focal length: 12-200mm', 'AR: broadband NIR', 'Low distortion'], materials: 'Fused Silica / NIR Glass' },
+            filters: { reason: 'NIR bandpass and longpass filters for multi-spectral imaging and night vision systems.', params: ['Center wavelength: 700-1550nm', 'High transmission in-band', 'Sharp cut-off'], materials: 'Glass substrate' }
+        },
+        'swir_semiconductor': {
+            windows: { reason: 'Silicon and germanium windows ideal for SWIR wafer inspection (transmission >50% at 1.1-7\u03BCm).', params: ['Transmission: >50% at 1.1-7\u03BCm', 'Double-side polished', 'Semiconductor grade'], materials: 'Silicon / Germanium' },
+            lenses: { reason: 'Silicon and germanium aspheric lenses for SWIR inspection and metrology systems.', params: ['Focal length: 25-500mm', 'AR at 1.5-3\u03BCm', 'Wavefront: <\u03BB/4'], materials: 'Silicon / Germanium' }
+        },
+        'swir_laser': {
+            windows: { reason: 'SWIR-compatible windows for short-wave IR laser systems and beam delivery.', params: ['High transmission 1.5-3\u03BCm', 'AR coated', 'Good thermal properties'], materials: 'Silicon / Fused Silica' },
+            lenses: { reason: 'SWIR laser focusing and collimating lenses for materials processing.', params: ['AR at 1.5-3\u03BCm', 'High LIDT', 'Precision focal length'], materials: 'Silicon / Fused Silica' }
+        },
+        'swir_defense': {
+            windows: { reason: 'Silicon and germanium windows for SWIR surveillance, target identification, and guidance systems.', params: ['MIL-spec environmental', 'Transmission: >50% SWIR', 'Shock & thermal resistant'], materials: 'Silicon / Germanium' },
+            mirrors: { reason: 'Gold-coated mirrors for SWIR defense imaging beam steering with high reflectance.', params: ['Reflectance: >98% at 1.5-3\u03BCm', 'Protected gold coating', 'Rugged construction'], materials: 'Silicon / Gold coating' },
+            lenses: { reason: 'SWIR imaging lenses for defense surveillance and target recognition systems.', params: ['Focal length: 50-500mm', 'AR: SWIR optimized', 'Wide temperature range'], materials: 'Silicon / Germanium' }
+        },
+        'swir_research': {
+            windows: { reason: 'SWIR windows for spectroscopy, hyperspectral imaging, and atmospheric research.', params: ['Wide SWIR transmission', 'Research-grade quality', 'Multiple sizes'], materials: 'Silicon / CaF2 / Fused Silica' },
+            lenses: { reason: 'SWIR lenses for hyperspectral imaging and gas detection research systems.', params: ['AR: 1.5-3\u03BCm', 'Low aberration', 'Research quantities available'], materials: 'Silicon / CaF2' }
+        },
+        'swir_industrial': {
+            windows: { reason: 'SWIR windows for industrial process monitoring, hot metal inspection, and glass quality control.', params: ['High temperature rated', 'AR at SWIR wavelengths', 'Durable coating'], materials: 'Silicon / Sapphire' },
+            lenses: { reason: 'SWIR lenses for industrial inspection and process camera systems.', params: ['Ruggedized design', 'AR: SWIR broadband', 'Industrial AR coating'], materials: 'Silicon' }
+        },
+        'swir_medical': {
+            windows: { reason: 'SWIR windows for near-IR medical imaging devices and tissue diagnostics.', params: ['Biocompatible materials', 'Transmission: SWIR range', 'Medical-grade finish'], materials: 'Silicon / Fused Silica' },
+            lenses: { reason: 'SWIR-corrected lenses for optical coherence tomography and NIR medical imaging.', params: ['Low chromatic aberration', 'AR: NIR-SWIR', 'Medical instrument grade'], materials: 'Fused Silica / NIR Glass' }
+        },
+        'swir_telecom': {
+            windows: { reason: 'SWIR windows for extended telecom wavelength monitoring and O-band/L-band systems.', params: ['AR at 1.3-1.7\u03BCm', 'Telecom grade', 'Low insertion loss'], materials: 'Fused Silica' },
+            lenses: { reason: 'Lenses for extended-wavelength fiber coupling and free-space optical links.', params: ['AR: 1.3-1.7\u03BCm', 'Fiber NA matched', 'Compact design'], materials: 'Fused Silica / NIR Glass' }
+        },
+        'swir_imaging': {
+            windows: { reason: 'SWIR camera protection windows for industrial and scientific imaging systems.', params: ['High transmission SWIR', 'Scratch resistant', 'AR coated'], materials: 'Silicon / Sapphire' },
+            lenses: { reason: 'SWIR camera lenses for multi-spectral imaging and quality inspection systems.', params: ['Focal length: 12-200mm', 'Low distortion SWIR', 'CS/C-mount compatible'], materials: 'Silicon / Germanium' }
+        },
+        'mwir_defense': {
+            windows: { reason: 'Germanium and ZnSe windows for MWIR thermal imaging, FLIR, and missile warning systems.', params: ['AR at 3-5\u03BCm', 'MIL-spec rated', 'Thermal shock resistant'], materials: 'Germanium / ZnSe' },
+            mirrors: { reason: 'Gold-coated mirrors for MWIR beam steering in thermal imaging and targeting systems.', params: ['Reflectance: >98% at 3-5\u03BCm', 'Protected gold', 'Defense-grade durability'], materials: 'Silicon / Gold coating' },
+            lenses: { reason: 'Germanium and ZnSe lenses for MWIR thermal cameras and IR search & track systems.', params: ['AR: broadband 3-5\u03BCm', 'Athermal design available', 'High refractive index (Ge: n=4.0)'], materials: 'Germanium / ZnSe' }
+        },
+        'mwir_research': {
+            windows: { reason: 'MWIR windows for gas spectroscopy, thermal physics experiments, and IR calibration.', params: ['Wide MWIR transmission', 'Research-grade quality', 'Various apertures'], materials: 'ZnSe / Ge / CaF2' },
+            lenses: { reason: 'MWIR achromatic options for thermal imaging research and IR optics development.', params: ['AR: 3-5\u03BCm broadband', 'Low aberration design', 'Custom available'], materials: 'Germanium / ZnSe' },
+            mirrors: { reason: 'Protected gold mirrors for MWIR cavity and beam steering research applications.', params: ['Reflectance: >98.5% MWIR', 'Low absorption coating', 'Various sizes'], materials: 'BK7 / Protected Gold' }
+        },
+        'mwir_industrial': {
+            windows: { reason: 'Rugged MWIR windows for thermal process monitoring, furnace viewing, and hot metal detection.', params: ['High temperature rated', 'AR at 3-5\u03BCm', 'Thermal shock resistant'], materials: 'ZnSe / Germanium' },
+            lenses: { reason: 'MWIR lenses for industrial thermal cameras and process quality monitoring.', params: ['Athermalized design', 'AR: 3-5\u03BCm', 'Long working distance'], materials: 'Germanium / ZnSe' }
+        },
+        'mwir_semiconductor': {
+            windows: { reason: 'MWIR-transparent windows for semiconductor process monitoring and wafer temperature measurement.', params: ['Transmission: 3-5\u03BCm', 'Cleanroom compatible', 'Stable at high temp'], materials: 'Germanium / ZnSe' },
+            lenses: { reason: 'MWIR optics for wafer backside pyrometry and process chamber monitoring.', params: ['AR: 3-5\u03BCm', 'High thermal stability', 'Precision optics'], materials: 'Germanium / ZnSe' }
+        },
+        'mwir_medical': {
+            windows: { reason: 'MWIR windows for thermal imaging medical devices and body temperature screening.', params: ['Biocompatible housing', 'AR: 3-5\u03BCm', 'Medical device grade'], materials: 'Germanium / ZnSe' },
+            lenses: { reason: 'MWIR lenses for medical thermal cameras and diagnostic imaging systems.', params: ['Focal length: 12-100mm', 'AR: broadband MWIR', 'Compact f-theta design'], materials: 'Germanium / ZnSe' }
+        },
+        'mwir_laser': {
+            windows: { reason: 'MWIR laser windows for CO laser (5.3\u03BCm) and mid-IR laser systems.', params: ['High LIDT at MWIR', 'AR at 5-5.5\u03BCm', 'Low absorption'], materials: 'ZnSe / Ge' },
+            mirrors: { reason: 'Gold mirrors for mid-IR laser beam delivery with minimal absorption.', params: ['Reflectance: >99% MWIR', 'Protected gold coating', 'High flatness'], materials: 'Silicon / Gold' }
+        },
+        'mwir_telecom': {
+            windows: { reason: 'MWIR windows for mid-IR free-space optical communication test and monitoring.', params: ['Transmission: 3-5\u03BCm', 'AR coated', 'Low beam distortion'], materials: 'ZnSe / CaF2' }
+        },
+        'mwir_imaging': {
+            windows: { reason: 'MWIR camera protection windows for thermal imaging and IR surveillance systems.', params: ['AR: 3-5\u03BCm', 'Scratch resistant', 'Environmental sealed'], materials: 'Germanium / ZnSe' },
+            lenses: { reason: 'MWIR camera lenses for thermal imaging, building inspection, and night vision.', params: ['Focal length: 6-150mm', 'f/# options: f/1.0-f/2.0', 'Athermal design'], materials: 'Germanium / ZnSe' }
+        },
+        'lwir_defense': {
+            windows: { reason: 'Germanium and ZnSe windows optimized for 8-14\u03BCm LWIR thermal imaging and CO2 laser systems (10.6\u03BCm).', params: ['AR at 8-14\u03BCm', 'MIL-STD-810 rated', 'Thermal shock resistant'], materials: 'Germanium / ZnSe' },
+            mirrors: { reason: 'Gold-coated mirrors for LWIR beam steering in thermal countermeasure and targeting systems.', params: ['Reflectance: >99% at 10.6\u03BCm', 'Protected gold coating', 'MIL-spec durability'], materials: 'Molybdenum or Silicon / Gold' },
+            lenses: { reason: 'Germanium aspheric and ZnSe lenses for LWIR thermal cameras, FLIR, and CO2 laser optics.', params: ['AR: 8-14\u03BCm or 10.6\u03BCm', 'Athermal design standard', 'High Ge index (n=4.0)'], materials: 'Germanium / ZnSe' }
+        },
+        'lwir_laser': {
+            windows: { reason: 'ZnSe output couplers and windows for CO2 laser systems at 10.6\u03BCm with high power handling.', params: ['AR at 10.6\u03BCm', 'LIDT: >20 kW/cm\u00B2 (CW)', 'Low absorption ZnSe'], materials: 'ZnSe' },
+            mirrors: { reason: 'Bare or protected gold mirrors for CO2 laser beam delivery with >99% reflectance at 10.6\u03BCm.', params: ['Reflectance: >99.5% at 10.6\u03BCm', 'Gold or protected gold', 'High flatness for beam quality'], materials: 'Silicon / Copper / Gold coating' },
+            lenses: { reason: 'ZnSe plano-convex and meniscus lenses for CO2 laser focusing and beam shaping.', params: ['Focal length: 50-500mm', 'AR: 10.6\u03BCm single-layer', 'Low absorption <0.001/cm'], materials: 'ZnSe' }
+        },
+        'lwir_industrial': {
+            windows: { reason: 'LWIR windows for industrial thermal monitoring, furnace viewing, and process temperature measurement.', params: ['AR: 8-14\u03BCm', 'High temperature rated', 'Chemically inert (ZnSe)'], materials: 'ZnSe / Germanium' },
+            lenses: { reason: 'LWIR lenses for industrial thermal cameras, predictive maintenance, and quality control.', params: ['Ruggedized housing', 'AR: 8-14\u03BCm', 'Wide temperature range'], materials: 'Germanium / ZnSe' }
+        },
+        'lwir_research': {
+            windows: { reason: 'LWIR windows for thermal physics research, blackbody calibration, and LWIR spectroscopy.', params: ['Wide LWIR transmission', 'Research grade polish', 'Various sizes available'], materials: 'ZnSe / Ge / KBr' },
+            lenses: { reason: 'LWIR research lenses for thermal imaging experiments and IR optics development.', params: ['AR: 8-14\u03BCm', 'Custom designs available', 'Small quantity orders OK'], materials: 'ZnSe / Germanium' },
+            mirrors: { reason: 'Protected gold mirrors for LWIR cavity experiments and beam steering research.', params: ['Reflectance: >99% LWIR', 'Protected gold', 'Research sizes available'], materials: 'Silicon / Protected Gold' }
+        },
+        'lwir_medical': {
+            windows: { reason: 'LWIR windows for medical thermal imaging devices and non-contact temperature screening.', params: ['AR: 8-14\u03BCm', 'Medical-grade quality', 'Biocompatible housing'], materials: 'Germanium / ZnSe' },
+            lenses: { reason: 'Compact LWIR lenses for medical thermal cameras and body temperature measurement systems.', params: ['Compact form factor', 'AR: 8-14\u03BCm', 'Close-focus capability'], materials: 'Germanium' }
+        },
+        'lwir_telecom': {
+            windows: { reason: 'LWIR windows for free-space optical communication at CO2 laser wavelengths.', params: ['AR at 10.6\u03BCm', 'Low absorption', 'Beam quality maintained'], materials: 'ZnSe' }
+        },
+        'lwir_semiconductor': {
+            windows: { reason: 'LWIR-transparent windows for semiconductor process monitoring (wafer temperature, plasma monitoring).', params: ['Transmission: 8-14\u03BCm', 'Process compatible', 'Thermal stability'], materials: 'ZnSe / Germanium' },
+            lenses: { reason: 'LWIR optics for wafer temperature measurement in CVD/etch process chambers.', params: ['AR: 8-14\u03BCm', 'Chemical resistant', 'Long-term stability'], materials: 'Germanium / ZnSe' }
+        },
+        'lwir_imaging': {
+            windows: { reason: 'LWIR camera protection windows for thermal imaging systems and infrared surveillance.', params: ['AR: 8-14\u03BCm', 'Durable coating', 'Environmental sealed options'], materials: 'Germanium / ZnSe' },
+            lenses: { reason: 'LWIR camera lenses for building inspection, security, and night vision thermal imaging.', params: ['Focal length: 6-100mm', 'Fast f/# for sensitivity', 'Athermalized design'], materials: 'Germanium / ZnSe' }
+        },
+        'broadband_research': {
+            windows: { reason: 'CaF2 and sapphire windows offering broadband transmission from UV to MWIR for versatile lab setups.', params: ['Transmission: 0.15-6\u03BCm (CaF2)', 'Excellent chemical resistance', 'Multi-purpose grade'], materials: 'CaF2 / Sapphire / BK7' },
+            lenses: { reason: 'Broadband AR-coated lenses for multi-wavelength experiments and white light optics.', params: ['AR: 350-2000nm broadband', 'Low chromatic aberration', 'Various focal lengths'], materials: 'BK7 / Fused Silica / CaF2' },
+            mirrors: { reason: 'Protected silver or broadband dielectric mirrors for white light and multi-wavelength experiments.', params: ['Reflectance: >95% across visible-NIR', 'Low GDD options', 'Broadband design'], materials: 'BK7 / Protected Ag / Dielectric' },
+            filters: { reason: 'Broadband ND, UV/IR cut, and tunable filters for multi-wavelength research setups.', params: ['ND: flat across spectrum', 'UV/IR cut: sharp edges', 'Standard & custom sizes'], materials: 'Optical glass / Absorptive' },
+            polarizers: { reason: 'Broadband polarizers for spectroscopy and multi-wavelength polarization experiments.', params: ['Extinction: >1000:1', 'Range: 350-2600nm', 'Large aperture options'], materials: 'Glass substrate / Polymer' },
+            prisms: { reason: 'Broadband BK7 prisms for spectroscopy and beam routing across multiple wavelengths.', params: ['High transmission: UV-NIR', 'Precision angles', 'Stock & custom'], materials: 'BK7 / Fused Silica' },
+            beamsplitters: { reason: 'Broadband non-polarizing beamsplitters for multi-wavelength interferometry and imaging.', params: ['50/50 across 400-1000nm', 'Low wavefront distortion', 'Various sizes'], materials: 'BK7' },
+            waveplates: { reason: 'Achromatic waveplates for broadband polarization control across visible-NIR.', params: ['Retardance accuracy: <\u03BB/200', 'Multi-order achromatic', '400-1000nm range'], materials: 'MgF2 / Quartz (compound)' }
+        },
+        'broadband_laser': {
+            windows: { reason: 'Broadband windows for supercontinuum sources and multi-wavelength laser systems.', params: ['Ultra-broadband AR', 'High LIDT', 'Low dispersion options'], materials: 'CaF2 / Sapphire / Fused Silica' },
+            lenses: { reason: 'Broadband AR aspheric lenses for ultrafast and supercontinuum laser beam shaping.', params: ['AR: 400-2400nm', 'Low GDD for ultrafast', 'Aspheric for low aberration'], materials: 'Fused Silica / CaF2' },
+            mirrors: { reason: 'Broadband dielectric mirrors for ultrafast and supercontinuum laser systems.', params: ['Reflectance: >99% broadband', 'Low GDD: <10 fs\u00B2', 'Chirped mirror options'], materials: 'Fused Silica / Dielectric' },
+            waveplates: { reason: 'Achromatic waveplates for polarization control in ultrafast and broadband laser systems.', params: ['Retardance: <\u03BB/200', 'Bandwidth: octave+', 'High LIDT'], materials: 'MgF2 / Quartz compound' },
+            polarizers: { reason: 'Broadband thin-film polarizers for high-extinction across wide spectral range.', params: ['Extinction: >10000:1', 'Range: 350-2600nm', 'High transmission p-pol'], materials: 'Glass substrate / Thin film' }
+        },
+        'broadband_imaging': {
+            windows: { reason: 'Multi-spectral camera windows from UV to NIR for hyperspectral and multi-band imaging.', params: ['Broadband AR: 350-1100nm', 'High transmission', 'Anti-reflective both sides'], materials: 'BK7 / Fused Silica / Sapphire' },
+            lenses: { reason: 'Broadband imaging lenses for multi-spectral cameras and color inspection systems.', params: ['AR: 400-1000nm broadband', 'Low chromatic aberration', 'High resolution'], materials: 'BK7 Achromatic / Apochromatic' },
+            filters: { reason: 'Multi-band and tunable filters for hyperspectral imaging applications.', params: ['Multi-bandpass options', 'Tunable: 400-1000nm', 'High out-of-band blocking'], materials: 'Glass substrate / Dielectric' }
+        },
+        'broadband_medical': {
+            windows: { reason: 'Broadband windows for multi-modal medical imaging systems combining visible and NIR channels.', params: ['AR: 400-1700nm', 'Medical-grade quality', 'Autoclavable options'], materials: 'BK7 / Fused Silica / Sapphire' },
+            lenses: { reason: 'Broadband achromatic lenses for multi-channel medical imaging and endoscopy.', params: ['AR: visible-NIR', 'Low distortion', 'Compact designs'], materials: 'BK7 Achromatic' },
+            beamsplitters: { reason: 'Dichroic beamsplitters for multi-channel fluorescence and multi-modal imaging.', params: ['Custom cut-on wavelengths', 'High transmission/reflection', 'Steep transition edges'], materials: 'BK7 / Dielectric coating' }
+        },
+        'broadband_defense': {
+            windows: { reason: 'Multi-spectral windows for day/night vision and multi-band EO/IR defense systems.', params: ['Dual/multi-band AR', 'MIL-spec rated', 'Environmental sealed'], materials: 'Sapphire / ZnSe / Fused Silica' },
+            mirrors: { reason: 'Broadband mirrors for multi-spectral defense targeting and surveillance systems.', params: ['Reflectance: >95% VIS-NIR', 'MIL-spec durability', 'Multi-band optimized'], materials: 'BK7 / Protected Ag' },
+            lenses: { reason: 'Multi-spectral EO/IR lenses for day/night targeting and wide-area surveillance.', params: ['AR: multi-band', 'Athermalized design', 'Long-life coatings'], materials: 'Germanium / ZnSe / BK7' }
+        },
+        'broadband_industrial': {
+            windows: { reason: 'Multi-purpose broadband windows for multi-sensor industrial inspection systems.', params: ['AR: 400-1700nm', 'Industrial durability', 'Easy to clean'], materials: 'BK7 / Sapphire' },
+            lenses: { reason: 'Broadband machine vision lenses for multi-sensor quality inspection and sorting.', params: ['Low distortion', 'Broadband AR', 'C/CS-mount options'], materials: 'BK7 Achromatic' },
+            mirrors: { reason: 'Broadband mirrors for multi-wavelength industrial laser and inspection systems.', params: ['Reflectance: >93% broad', 'Durable industrial coating', 'Various sizes'], materials: 'BK7 / Protected Al' }
+        },
+        'broadband_semiconductor': {
+            windows: { reason: 'Broadband windows for multi-spectral wafer inspection and process monitoring systems.', params: ['AR: multi-band', 'Cleanroom grade', 'High flatness'], materials: 'Fused Silica / Sapphire' },
+            lenses: { reason: 'Multi-wavelength inspection lenses for broadband defect detection systems.', params: ['Low aberration broadband', 'AR: 350-1100nm', 'Precision optics'], materials: 'BK7 Achromatic / Fused Silica' }
+        },
+        'broadband_telecom': {
+            windows: { reason: 'Broadband windows for O/C/L-band monitoring and multi-wavelength telecom systems.', params: ['AR: 1260-1650nm', 'Telecom grade', 'Low insertion loss'], materials: 'Fused Silica' },
+            lenses: { reason: 'Broadband collimating lenses for multi-wavelength free-space optical links.', params: ['AR: O/C/L bands', 'Low chromatic aberration', 'Fiber NA matched'], materials: 'Fused Silica / NIR Glass' }
+        }
+    };
+
+    // Default/fallback recommendation
+    var defaultRecommendations = {
+        windows: { reason: 'General-purpose optical windows suitable for a wide range of applications.', params: ['AR coated options', 'Standard sizes available', 'Good transmission'], materials: 'BK7 / Fused Silica' },
+        lenses: { reason: 'Standard optical lenses for beam control and focusing applications.', params: ['Multiple focal lengths', 'AR coating options', 'Various types available'], materials: 'BK7' },
+        mirrors: { reason: 'General-purpose mirrors for beam steering applications.', params: ['Reflectance: >90%', 'Protected coatings', 'Standard sizes'], materials: 'BK7 / Protected Al' },
+        prisms: { reason: 'Versatile prisms for beam steering and dispersion applications.', params: ['Standard angles', 'High transmission', 'BK7 material'], materials: 'BK7' },
+        filters: { reason: 'Optical filters for spectral control and background rejection.', params: ['Various types available', 'Standard sizes', 'Custom options'], materials: 'Optical glass' },
+        beamsplitters: { reason: 'Beamsplitters for dividing optical beams in multi-path systems.', params: ['Multiple ratios available', 'Broadband AR options', 'Plate and cube types'], materials: 'BK7' },
+        waveplates: { reason: 'Wave plates for polarization state control.', params: ['Standard retardance', 'Various apertures', 'Multiple wavelengths'], materials: 'MgF2 / Quartz' },
+        polarizers: { reason: 'Polarizers for polarization control and filtering.', params: ['High extinction ratio', 'Various apertures', 'Multiple types'], materials: 'Glass substrate' }
+    };
+
+    // ===== State =====
+    var currentStep = 1;
+    var selectedApp = '';
+    var selectedWave = '';
+    var selectedComponents = [];
+
+    // ===== Initialization =====
+    function init() {
+        renderApplications();
+        renderWavelengths();
+        updateProgress();
+    }
+
+    function renderApplications() {
+        var container = document.getElementById('appOptions');
+        var html = '';
+        for (var i = 0; i < applications.length; i++) {
+            var app = applications[i];
+            html += '<div class="option-card" data-id="' + app.id + '" onclick="selectApplication(\'' + app.id + '\')">';
+            html += '<span class="option-icon">' + app.icon + '</span>';
+            html += '<div class="option-title">' + app.title + '</div>';
+            html += '<div class="option-desc">' + app.desc + '</div>';
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    function renderWavelengths() {
+        var container = document.getElementById('waveOptions');
+        var html = '';
+        for (var i = 0; i < wavelengths.length; i++) {
+            var wave = wavelengths[i];
+            html += '<div class="option-card" data-id="' + wave.id + '" onclick="selectWavelength(\'' + wave.id + '\')">';
+            html += '<span class="option-icon">' + wave.icon + '</span>';
+            html += '<div class="option-title">' + wave.title + '</div>';
+            html += '<div class="option-desc">' + wave.desc + '</div>';
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    function renderComponents() {
+        var recommendations = getRecommendations();
+        var recommendedIds = [];
+        for (var key in recommendations) {
+            if (recommendations.hasOwnProperty(key)) {
+                recommendedIds.push(key);
+            }
+        }
+
+        var container = document.getElementById('compOptions');
+        var html = '';
+        for (var i = 0; i < componentTypes.length; i++) {
+            var comp = componentTypes[i];
+            var isRecommended = false;
+            for (var j = 0; j < recommendedIds.length; j++) {
+                if (recommendedIds[j] === comp.id) {
+                    isRecommended = true;
+                    break;
+                }
+            }
+            var isSelected = false;
+            for (var k = 0; k < selectedComponents.length; k++) {
+                if (selectedComponents[k] === comp.id) {
+                    isSelected = true;
+                    break;
+                }
+            }
+            var selectedClass = isSelected ? ' selected' : '';
+            var badge = isRecommended ? ' <span style="color:#3b82f6;font-size:11px;font-weight:600;">&#9733; Recommended</span>' : '';
+
+            html += '<div class="option-card' + selectedClass + '" data-id="' + comp.id + '" onclick="toggleComponent(\'' + comp.id + '\')">';
+            html += '<span class="option-icon">' + comp.icon + '</span>';
+            html += '<div class="option-title">' + comp.title + badge + '</div>';
+            html += '<div class="option-desc">' + comp.desc + '</div>';
+            html += '</div>';
+        }
+        container.innerHTML = html;
+    }
+
+    // ===== Selection Handlers =====
+    function selectApplication(id) {
+        selectedApp = id;
+        var cards = document.getElementById('appOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < cards.length; i++) {
+            if (cards[i].getAttribute('data-id') === id) {
+                cards[i].className = 'option-card selected';
+            } else {
+                cards[i].className = 'option-card';
+            }
+        }
+        document.getElementById('btn1Next').disabled = false;
+    }
+
+    function selectWavelength(id) {
+        selectedWave = id;
+        var cards = document.getElementById('waveOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < cards.length; i++) {
+            if (cards[i].getAttribute('data-id') === id) {
+                cards[i].className = 'option-card selected';
+            } else {
+                cards[i].className = 'option-card';
+            }
+        }
+        document.getElementById('btn2Next').disabled = false;
+    }
+
+    function toggleComponent(id) {
+        var idx = -1;
+        for (var i = 0; i < selectedComponents.length; i++) {
+            if (selectedComponents[i] === id) {
+                idx = i;
+                break;
+            }
+        }
+        if (idx >= 0) {
+            selectedComponents.splice(idx, 1);
+        } else {
+            selectedComponents.push(id);
+        }
+
+        // Update card visual state
+        var cards = document.getElementById('compOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < cards.length; i++) {
+            var cardId = cards[i].getAttribute('data-id');
+            var isSelected = false;
+            for (var j = 0; j < selectedComponents.length; j++) {
+                if (selectedComponents[j] === cardId) {
+                    isSelected = true;
+                    break;
+                }
+            }
+            if (isSelected) {
+                cards[i].className = 'option-card selected';
+            } else {
+                cards[i].className = 'option-card';
+            }
+        }
+
+        document.getElementById('btn3Next').disabled = selectedComponents.length === 0;
+    }
+
+    // ===== Navigation =====
+    function goToStep(step) {
+        // Validate before moving forward
+        if (step === 2 && !selectedApp) return;
+        if (step === 3 && !selectedWave) return;
+        if (step === 4 && selectedComponents.length === 0) return;
+
+        currentStep = step;
+
+        // Hide all panels, show current
+        var panels = document.getElementsByClassName('step-panel');
+        for (var i = 0; i < panels.length; i++) {
+            panels[i].className = 'step-panel';
+        }
+        document.getElementById('step' + step).className = 'step-panel active';
+
+        // If going to step 3, render components based on selections
+        if (step === 3) {
+            selectedComponents = [];
+            renderComponents();
+            // Auto-select recommended components
+            autoSelectRecommended();
+        }
+
+        // If going to step 4, render results
+        if (step === 4) {
+            renderResults();
+        }
+
+        updateProgress();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function autoSelectRecommended() {
+        var recommendations = getRecommendations();
+        selectedComponents = [];
+        for (var key in recommendations) {
+            if (recommendations.hasOwnProperty(key)) {
+                selectedComponents.push(key);
+            }
+        }
+        // Update card visuals
+        var cards = document.getElementById('compOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < cards.length; i++) {
+            var cardId = cards[i].getAttribute('data-id');
+            var isSelected = false;
+            for (var j = 0; j < selectedComponents.length; j++) {
+                if (selectedComponents[j] === cardId) {
+                    isSelected = true;
+                    break;
+                }
+            }
+            if (isSelected) {
+                cards[i].className = 'option-card selected';
+            } else {
+                cards[i].className = 'option-card';
+            }
+        }
+        document.getElementById('btn3Next').disabled = selectedComponents.length === 0;
+    }
+
+    function updateProgress() {
+        for (var i = 1; i <= 4; i++) {
+            var circle = document.getElementById('stepCircle' + i);
+            var label = document.getElementById('stepLabel' + i);
+            if (i < currentStep) {
+                circle.className = 'step-circle done';
+                label.className = 'step-label done';
+            } else if (i === currentStep) {
+                circle.className = 'step-circle active';
+                label.className = 'step-label active';
+            } else {
+                circle.className = 'step-circle';
+                label.className = 'step-label';
+            }
+        }
+        // Connectors
+        for (var j = 1; j <= 3; j++) {
+            var connector = document.getElementById('connector' + j);
+            if (j < currentStep) {
+                connector.className = 'step-connector done';
+            } else {
+                connector.className = 'step-connector';
+            }
+        }
+    }
+
+    function restartAdvisor() {
+        selectedApp = '';
+        selectedWave = '';
+        selectedComponents = [];
+        currentStep = 1;
+
+        // Reset card selections
+        var appCards = document.getElementById('appOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < appCards.length; i++) { appCards[i].className = 'option-card'; }
+        var waveCards = document.getElementById('waveOptions').getElementsByClassName('option-card');
+        for (var i = 0; i < waveCards.length; i++) { waveCards[i].className = 'option-card'; }
+
+        document.getElementById('btn1Next').disabled = true;
+        document.getElementById('btn2Next').disabled = true;
+        document.getElementById('btn3Next').disabled = true;
+
+        goToStep(1);
+    }
+
+    // ===== Recommendation Engine =====
+    function getRecommendations() {
+        var key = selectedWave + '_' + selectedApp;
+        if (recommendationMap[key]) {
+            return recommendationMap[key];
+        }
+        // Try fallback to broadband recommendations
+        var broadbandKey = 'broadband_' + selectedApp;
+        if (recommendationMap[broadbandKey]) {
+            return recommendationMap[broadbandKey];
+        }
+        // Generic fallback
+        return defaultRecommendations;
+    }
+
+    function getComponentLink(compId) {
+        for (var i = 0; i < componentTypes.length; i++) {
+            if (componentTypes[i].id === compId) {
+                return componentTypes[i].link;
+            }
+        }
+        return '/products.html';
+    }
+
+    function getComponentTitle(compId) {
+        for (var i = 0; i < componentTypes.length; i++) {
+            if (componentTypes[i].id === compId) {
+                return componentTypes[i].title;
+            }
+        }
+        return compId;
+    }
+
+    function getComponentIcon(compId) {
+        for (var i = 0; i < componentTypes.length; i++) {
+            if (componentTypes[i].id === compId) {
+                return componentTypes[i].icon;
+            }
+        }
+        return '\uD83D\uDD27';
+    }
+
+    // ===== Results Rendering =====
+    function renderResults() {
+        var recommendations = getRecommendations();
+        var appName = '';
+        var waveName = '';
+        for (var i = 0; i < applications.length; i++) {
+            if (applications[i].id === selectedApp) { appName = applications[i].title; break; }
+        }
+        for (var i = 0; i < wavelengths.length; i++) {
+            if (wavelengths[i].id === selectedWave) { waveName = wavelengths[i].title + ' (' + wavelengths[i].desc + ')'; break; }
+        }
+
+        var html = '';
+
+        // Summary box
+        html += '<div class="results-summary">';
+        html += '<h2>Your Recommendations Are Ready</h2>';
+        html += '<p>Based on your selections, we recommend the following optical components</p>';
+        html += '<div class="results-tags">';
+        html += '<span class="results-tag">&#128205; ' + appName + '</span>';
+        html += '<span class="results-tag">&#127752; ' + waveName + '</span>';
+        for (var i = 0; i < selectedComponents.length; i++) {
+            html += '<span class="results-tag">' + getComponentIcon(selectedComponents[i]) + ' ' + getComponentTitle(selectedComponents[i]) + '</span>';
+        }
+        html += '</div>';
+        html += '</div>';
+
+        // Result cards
+        for (var i = 0; i < selectedComponents.length; i++) {
+            var compId = selectedComponents[i];
+            var rec = recommendations[compId] || defaultRecommendations[compId];
+            var title = getComponentTitle(compId);
+            var icon = getComponentIcon(compId);
+            var link = getComponentLink(compId);
+
+            html += '<div class="result-card">';
+            html += '<div class="result-card-header">';
+            html += '<div class="result-card-icon">' + icon + '</div>';
+            html += '<div>';
+            html += '<div class="result-card-title">' + title + '</div>';
+            html += '<div class="result-card-category">' + (rec.materials || '') + '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            html += '<div class="result-card-reason">';
+            html += '<strong>Why we recommend this:</strong> ' + rec.reason;
+            html += '</div>';
+
+            html += '<div class="result-card-params">';
+            html += '<h4>Key Parameters</h4>';
+            html += '<div class="param-list">';
+            for (var p = 0; p < rec.params.length; p++) {
+                html += '<span class="param-badge">' + rec.params[p] + '</span>';
+            }
+            html += '</div>';
+            html += '</div>';
+
+            html += '<div class="result-card-links">';
+            html += '<a href="' + link + '" class="result-link result-link-primary" rel="nofollow">View Products &rarr;</a>';
+            html += '<a href="/contact.html" class="result-link result-link-secondary" rel="nofollow">Request Quote</a>';
+            html += '</div>';
+            html += '</div>';
+        }
+
+        document.getElementById('resultsSection').innerHTML = html;
+    }
+
+    // ===== Mobile menu =====
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) {
+            if (navList.style.display === 'flex') {
+                navList.style.display = 'none';
+            } else {
+                navList.style.display = 'flex';
+                navList.style.flexDirection = 'column';
+                navList.style.position = 'absolute';
+                navList.style.top = '70px';
+                navList.style.left = '0';
+                navList.style.right = '0';
+                navList.style.background = '#fff';
+                navList.style.padding = '20px';
+                navList.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                navList.style.zIndex = '999';
+            }
+        }
+    }
+
+    // ===== Language stub =====
+    function setLanguage(lang) {
+        // Stub for language switching (uses external translations.js in production)
+        var btns = document.querySelectorAll('.lang-btn');
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].className = 'lang-btn';
+        }
+        if (lang === 'en') {
+            btns[0].className = 'lang-btn active';
+        } else {
+            btns[1].className = 'lang-btn active';
+        }
+    }
+
+    // ===== Initialize on DOM ready =====
+    document.addEventListener('DOMContentLoaded', function() {
+        init();
+    });
+    </script>
+</body>
+</html>

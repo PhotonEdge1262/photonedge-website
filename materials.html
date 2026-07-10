@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Optical Materials Guide - BK7, Fused Silica, ZnSe, Ge | PhotonEdge</title>
+<meta name="description" content="Complete optical materials database featuring BK7, UV Fused Silica, Sapphire, CaF2, ZnSe, Germanium, Silicon, MgF2. Compare refractive index, transmission range, density and more for precision optics applications.">
+<meta name="keywords" content="optical materials, BK7 refractive index, fused silica, sapphire, ZnSe, germanium optics, silicon IR, CaF2, MgF2, sellmeier equation, PhotonEdge">
+<meta property="og:title" content="Optical Materials Guide | PhotonEdge Precision Optics">
+<meta property="og:description" content="Explore 8 key optical materials with complete parameters, Sellmeier calculations, and application guides.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://photonedge.github.io/materials.html">
+<meta property="og:site_name" content="PhotonEdge">
+<link rel="canonical" href="https://photonedge.github.io/materials.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Optical Materials Guide",
+  "description": "Complete optical materials database with refractive index, transmission, density and application data.",
+  "url": "https://photonedge.github.io/materials.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "url": "https://photonedge.github.io"
+  },
+  "mainContentOfPage": {
+    "@type": "WebPageElement",
+    "cssSelector": ".materials-grid"
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+
+/* NAV */
+.nav{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.06);}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:#3b82f6;}
+.nav-logo svg{width:32px;height:32px;}
+.nav-links{display:flex;gap:28px;align-items:center;}
+.nav-links a{font-size:14px;font-weight:500;color:#475569;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:#3b82f6;}
+.nav-cta{background:#3b82f6;color:#fff!important;padding:8px 18px;border-radius:6px;font-size:13px;transition:background .2s;}
+.nav-cta:hover{background:#2563eb;}
+.nav-mobile-btn{display:none;background:none;border:none;cursor:pointer;padding:4px;}
+.nav-mobile-btn svg{width:24px;height:24px;color:#475569;}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 50%,#3b82f6 100%);color:#fff;padding:72px 24px 56px;text-align:center;}
+.hero h1{font-size:40px;font-weight:800;margin-bottom:16px;letter-spacing:-.5px;}
+.hero p{font-size:18px;max-width:680px;margin:0 auto 32px;opacity:.9;line-height:1.7;}
+
+/* FILTER BAR */
+.filter-bar{max-width:1280px;margin:0 auto;padding:24px 24px 0;}
+.filter-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:16px;}
+.filter-label{font-size:13px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:.5px;min-width:80px;}
+.filter-btn{padding:6px 16px;border:1px solid #cbd5e1;border-radius:20px;background:#fff;font-size:13px;color:#475569;cursor:pointer;transition:all .2s;}
+.filter-btn:hover{border-color:#3b82f6;color:#3b82f6;}
+.filter-btn.active{background:#3b82f6;color:#fff;border-color:#3b82f6;}
+
+/* COMPARE BAR */
+.compare-bar{max-width:1280px;margin:0 auto;padding:0 24px;}
+.compare-strip{display:none;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:14px 20px;margin-bottom:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.compare-strip.show{display:flex;}
+.compare-strip-text{font-size:14px;color:#1e40af;font-weight:500;}
+.compare-strip-text span{font-weight:700;}
+.compare-strip-actions{display:flex;gap:8px;}
+.btn-compare{padding:8px 20px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:all .2s;}
+.btn-compare-go{background:#3b82f6;color:#fff;}
+.btn-compare-go:hover{background:#2563eb;}
+.btn-compare-clear{background:#fff;color:#64748b;border:1px solid #cbd5e1;}
+.btn-compare-clear:hover{background:#f1f5f9;}
+
+/* MATERIALS GRID */
+.materials-grid{max-width:1280px;margin:0 auto;padding:24px;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+.mat-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:24px;cursor:pointer;transition:all .25s;position:relative;overflow:hidden;}
+.mat-card:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(59,130,246,.12);border-color:#93c5fd;}
+.mat-card.selected{border-color:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,246,.25);}
+.mat-card-head{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+.mat-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#fff;flex-shrink:0;}
+.mat-card-title{flex:1;}
+.mat-card-title h3{font-size:16px;font-weight:700;color:#0f172a;margin-bottom:2px;}
+.mat-card-title .mat-sub{font-size:12px;color:#94a3b8;}
+.mat-card-params{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;}
+.mat-param{display:flex;justify-content:space-between;font-size:13px;}
+.mat-param-label{color:#64748b;}
+.mat-param-value{font-weight:600;color:#1e293b;}
+.mat-app-tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:500;background:#eff6ff;color:#3b82f6;}
+.mat-card-check{position:absolute;top:12px;right:12px;width:22px;height:22px;border:2px solid #cbd5e1;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .2s;}
+.mat-card.selected .mat-card-check{background:#3b82f6;border-color:#3b82f6;}
+.mat-card.selected .mat-card-check::after{content:"\2713";color:#fff;font-size:12px;font-weight:700;}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(15,23,42,.55);z-index:200;overflow-y:auto;padding:40px 24px;}
+.modal-overlay.show{display:block;}
+.modal-box{background:#fff;border-radius:16px;max-width:900px;margin:0 auto;overflow:hidden;animation:modalIn .25s ease;}
+@keyframes modalIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.modal-header{padding:28px 32px 20px;border-bottom:1px solid #e2e8f0;display:flex;align-items:flex-start;justify-content:space-between;}
+.modal-header h2{font-size:24px;font-weight:800;color:#0f172a;}
+.modal-header .modal-sub{font-size:14px;color:#64748b;margin-top:4px;}
+.modal-close{width:36px;height:36px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
+.modal-close:hover{background:#f1f5f9;border-color:#94a3b8;}
+.modal-body{padding:28px 32px 32px;}
+.modal-section{margin-bottom:28px;}
+.modal-section:last-child{margin-bottom:0;}
+.modal-section h3{font-size:16px;font-weight:700;color:#0f172a;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.modal-section h3::before{content:"";display:inline-block;width:4px;height:18px;background:#3b82f6;border-radius:2px;}
+.param-table{width:100%;border-collapse:collapse;font-size:14px;}
+.param-table th,.param-table td{padding:10px 14px;text-align:left;border-bottom:1px solid #f1f5f9;}
+.param-table th{color:#64748b;font-weight:500;background:#f8fafc;}
+.param-table td{color:#1e293b;font-weight:600;}
+.canvas-wrap{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px;text-align:center;}
+.canvas-wrap canvas{max-width:100%;height:auto;}
+.spectrum-bar{height:40px;border-radius:8px;position:relative;margin-top:8px;overflow:hidden;}
+.spectrum-labels{display:flex;justify-content:space-between;font-size:11px;color:#64748b;margin-top:6px;}
+.modal-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+.modal-link{padding:8px 16px;border:1px solid #e2e8f0;border-radius:8px;font-size:13px;color:#475569;transition:all .2s;display:inline-flex;align-items:center;gap:6px;}
+.modal-link:hover{border-color:#3b82f6;color:#3b82f6;background:#eff6ff;}
+.modal-link svg{width:14px;height:14px;}
+
+/* COMPARE MODAL */
+.compare-modal .modal-box{max-width:1000px;}
+.compare-table{width:100%;border-collapse:collapse;font-size:13px;}
+.compare-table th,.compare-table td{padding:10px 12px;text-align:center;border-bottom:1px solid #f1f5f9;}
+.compare-table th{color:#64748b;font-weight:500;background:#f8fafc;font-size:12px;text-transform:uppercase;letter-spacing:.3px;}
+.compare-table td:first-child{text-align:left;font-weight:600;color:#475569;}
+.compare-table td{font-weight:600;color:#1e293b;}
+.recommend-box{background:linear-gradient(135deg,#eff6ff,#dbeafe);border:1px solid #bfdbfe;border-radius:10px;padding:20px;margin-top:20px;}
+.recommend-box h4{font-size:15px;font-weight:700;color:#1e40af;margin-bottom:10px;}
+.recommend-box p{font-size:13px;color:#334155;line-height:1.7;}
+.recommend-box .rec-item{margin-bottom:8px;display:flex;gap:8px;align-items:flex-start;}
+.recommend-box .rec-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:5px;}
+
+/* FOOTER */
+.footer{background:#0f172a;color:#94a3b8;padding:48px 24px 24px;}
+.footer-inner{max-width:1280px;margin:0 auto;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:36px;}
+.footer h4{color:#fff;font-size:14px;font-weight:600;margin-bottom:14px;}
+.footer p,.footer a{font-size:13px;line-height:1.8;}
+.footer a{display:block;transition:color .2s;}
+.footer a:hover{color:#3b82f6;}
+.footer-brand p{margin-top:12px;max-width:280px;}
+.footer-bottom{border-top:1px solid #1e293b;padding-top:20px;text-align:center;font-size:12px;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.nav-links{display:none;position:absolute;top:64px;left:0;width:100%;background:#fff;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:1px solid #e2e8f0;box-shadow:0 4px 12px rgba(0,0,0,.08);}
+.nav-links.open{display:flex;}
+.nav-mobile-btn{display:block;}
+.hero{padding:48px 20px 40px;}
+.hero h1{font-size:28px;}
+.hero p{font-size:15px;}
+.materials-grid{grid-template-columns:1fr 1fr;gap:14px;padding:16px;}
+.modal-body{padding:20px;}
+.modal-header{padding:20px;}
+.footer-grid{grid-template-columns:1fr 1fr;gap:24px;}
+}
+@media(max-width:480px){
+.materials-grid{grid-template-columns:1fr;padding:12px;}
+.footer-grid{grid-template-columns:1fr;}
+.filter-row{gap:8px;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+<div class="nav-inner">
+<a href="/" class="nav-logo">
+<svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#3b82f6" stroke-width="2.5"/><path d="M10 16h12M16 10v12" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="5" stroke="#3b82f6" stroke-width="1.5"/><circle cx="16" cy="16" r="1.5" fill="#3b82f6"/></svg>
+PhotonEdge
+</a>
+<div class="nav-links" id="navLinks">
+<a href="/">Home</a>
+<a href="/products.html">Products</a>
+<a href="/materials.html" class="active">Materials</a>
+<a href="/calculator.html">Calculators</a>
+<a href="/ray-tracer.html">Ray Tracer</a>
+<a href="/product-advisor.html">Product Advisor</a>
+<a href="/about.html">About</a>
+<a href="/contact.html" class="nav-cta">Get Quote</a>
+</div>
+<button class="nav-mobile-btn" onclick="document.getElementById('navLinks').className=document.getElementById('navLinks').className==='nav-links open'?'nav-links':'nav-links open'">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Optical Materials Database</h1>
+<p>Comprehensive guide to 8 essential optical materials. Compare refractive indices, transmission ranges, and find the perfect material for your precision optics application.</p>
+</section>
+
+<!-- FILTER -->
+<div class="filter-bar">
+<div class="filter-row">
+<span class="filter-label">Application</span>
+<button class="filter-btn active" onclick="filterApp('all',this)">All</button>
+<button class="filter-btn" onclick="filterApp('uv',this)">UV</button>
+<button class="filter-btn" onclick="filterApp('vis',this)">Visible</button>
+<button class="filter-btn" onclick="filterApp('ir',this)">IR</button>
+<button class="filter-btn" onclick="filterApp('laser',this)">Laser</button>
+<button class="filter-btn" onclick="filterApp('general',this)">General</button>
+</div>
+<div class="filter-row">
+<span class="filter-label">Type</span>
+<button class="filter-btn active" onclick="filterType('all',this)">All</button>
+<button class="filter-btn" onclick="filterType('glass',this)">Glass</button>
+<button class="filter-btn" onclick="filterType('crystal',this)">Crystal</button>
+<button class="filter-btn" onclick="filterType('semiconductor',this)">Semiconductor</button>
+</div>
+</div>
+
+<!-- COMPARE STRIP -->
+<div class="compare-bar">
+<div class="compare-strip" id="compareStrip">
+<div class="compare-strip-text"><span id="compareCount">0</span> materials selected for comparison</div>
+<div class="compare-strip-actions">
+<button class="btn-compare btn-compare-go" onclick="openCompare()">Compare</button>
+<button class="btn-compare btn-compare-clear" onclick="clearCompare()">Clear</button>
+</div>
+</div>
+</div>
+
+<!-- MATERIALS GRID -->
+<div class="materials-grid" id="materialsGrid"></div>
+
+<!-- DETAIL MODAL -->
+<div class="modal-overlay" id="detailModal">
+<div class="modal-box">
+<div class="modal-header">
+<div>
+<h2 id="modalTitle"></h2>
+<div class="modal-sub" id="modalSub"></div>
+</div>
+<button class="modal-close" onclick="closeModal('detailModal')">&times;</button>
+</div>
+<div class="modal-body" id="modalBody"></div>
+</div>
+</div>
+
+<!-- COMPARE MODAL -->
+<div class="modal-overlay compare-modal" id="compareModal">
+<div class="modal-box">
+<div class="modal-header">
+<div>
+<h2>Material Comparison</h2>
+<div class="modal-sub">Side-by-side parameter analysis</div>
+</div>
+<button class="modal-close" onclick="closeModal('compareModal')">&times;</button>
+</div>
+<div class="modal-body" id="compareBody"></div>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-grid">
+<div class="footer-brand">
+<h4>PhotonEdge</h4>
+<p>Precision optics manufacturer specializing in custom lenses, windows, prisms, and advanced optical assemblies for research and industry.</p>
+</div>
+<div>
+<h4>Products</h4>
+<a href="/products.html?category=Optical+Lenses">Optical Lenses</a>
+<a href="/products.html?category=Optical+Windows">Optical Windows</a>
+<a href="/products.html?category=Prisms">Prisms</a>
+<a href="/products.html?category=Filters">Filters</a>
+</div>
+<div>
+<h4>Resources</h4>
+<a href="/materials.html">Materials Guide</a>
+<a href="/ray-tracer.html">Ray Tracer</a>
+<a href="/capabilities.html">Capabilities</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="/contact.html">Request Quote</a>
+<a href="/about.html">About Us</a>
+<a href="mailto:info@photonedge.com">info@photonedge.com</a>
+</div>
+</div>
+<div class="footer-bottom">&copy; 2024 PhotonEdge Precision Optics. All rights reserved.</div>
+</div>
+</footer>
+
+<script>
+var materials = [
+  {
+    id:"bk7",name:"BK7 (K9)",nameZh:"BK7 \u5149\u5b66\u73bb\u7483",nd:1.5168,vd:64.17,
+    transShort:"350nm - 2\u03bcm",transMin:0.35,transMax:2.0,
+    density:2.51,cte:"7.1\u00d710\u207b\u2076",
+    type:"glass",apps:["vis","general","laser"],
+    iconColor:"#3b82f6",iconText:"BK7",
+    appText:"Lenses / Prisms / Windows",
+    sellmeier:{B1:1.03961212,B2:0.231792344,B3:1.01046945,C1:0.00600069867,C2:0.0200179144,C3:103.560631},
+    links:[
+      {text:"BK7 Lenses",href:"/products.html?category=Optical+Lenses&material=BK7"},
+      {text:"BK7 Windows",href:"/products.html?category=Optical+Windows&material=BK7"},
+      {text:"BK7 Prisms",href:"/products.html?category=Prisms&material=BK7"}
+    ]
+  },
+  {
+    id:"fuses",name:"UV Fused Silica",nameZh:"\u7d2b\u5916\u878d\u5408\u77f3\u82f1",nd:1.4585,vd:67.82,
+    transShort:"180nm - 2.5\u03bcm",transMin:0.18,transMax:2.5,
+    density:2.20,cte:"0.55\u00d710\u207b\u2076",
+    type:"glass",apps:["uv","vis","laser","general"],
+    iconColor:"#8b5cf6",iconText:"FS",
+    appText:"UV Optics / Laser Windows",
+    sellmeier:{B1:0.6961663,B2:0.4079426,B3:0.8974794,C1:0.0046791482,C2:0.0135120631,C3:97.9340025},
+    links:[
+      {text:"Fused Silica Windows",href:"/products.html?category=Optical+Windows&material=Fused+Silica"},
+      {text:"UV Lenses",href:"/products.html?category=Optical+Lenses&material=Fused+Silica"}
+    ]
+  },
+  {
+    id:"sapphire",name:"Sapphire",nameZh:"\u84dd\u5b9d\u77f3",nd:1.7682,vd:72.2,
+    transShort:"150nm - 5.5\u03bcm",transMin:0.15,transMax:5.5,
+    density:3.98,cte:"5.0\u00d710\u207b\u2076",
+    type:"crystal",apps:["uv","vis","ir","general"],
+    iconColor:"#0ea5e9",iconText:"Sp",
+    appText:"Durable Windows / Watch Crystals",
+    sellmeier:null,
+    links:[
+      {text:"Sapphire Windows",href:"/products.html?category=Optical+Windows&material=Sapphire"},
+      {text:"Sapphire Lenses",href:"/products.html?category=Optical+Lenses&material=Sapphire"}
+    ]
+  },
+  {
+    id:"caf2",name:"CaF\u2082",nameZh:"\u6c1f\u5316\u9499",nd:1.4338,vd:95.3,
+    transShort:"130nm - 10\u03bcm",transMin:0.13,transMax:10.0,
+    density:3.18,cte:"18.9\u00d710\u207b\u2076",
+    type:"crystal",apps:["uv","vis","ir","laser"],
+    iconColor:"#10b981",iconText:"Ca",
+    appText:"IR Optics / Achromatic Lenses",
+    sellmeier:null,
+    links:[
+      {text:"CaF2 Windows",href:"/products.html?category=Optical+Windows&material=CaF2"},
+      {text:"CaF2 Lenses",href:"/products.html?category=Optical+Lenses&material=CaF2"}
+    ]
+  },
+  {
+    id:"znse",name:"ZnSe",nameZh:"\u7852\u5316\u950c",nd:2.4027,vd:null,
+    transShort:"0.5\u03bcm - 20\u03bcm",transMin:0.5,transMax:20.0,
+    density:5.42,cte:"7.1\u00d710\u207b\u2076",
+    type:"crystal",apps:["ir","laser"],
+    iconColor:"#f59e0b",iconText:"Zn",
+    appText:"CO\u2082 Laser / IR Optics",
+    sellmeier:null,
+    links:[
+      {text:"ZnSe Windows",href:"/products.html?category=Optical+Windows&material=ZnSe"},
+      {text:"ZnSe Lenses",href:"/products.html?category=Optical+Lenses&material=ZnSe"}
+    ]
+  },
+  {
+    id:"ge",name:"Ge",nameZh:"\u9536",nd:4.0026,vd:null,
+    transShort:"2\u03bcm - 14\u03bcm",transMin:2.0,transMax:14.0,
+    density:5.32,cte:"6.1\u00d710\u207b\u2076",
+    type:"semiconductor",apps:["ir"],
+    iconColor:"#6366f1",iconText:"Ge",
+    appText:"Thermal Imaging IR",
+    sellmeier:null,
+    links:[
+      {text:"Ge Windows",href:"/products.html?category=Optical+Windows&material=Germanium"},
+      {text:"Ge Lenses",href:"/products.html?category=Optical+Lenses&material=Germanium"}
+    ]
+  },
+  {
+    id:"si",name:"Si",nameZh:"\u7845",nd:3.4180,vd:null,
+    transShort:"1.2\u03bcm - 8\u03bcm",transMin:1.2,transMax:8.0,
+    density:2.33,cte:"2.6\u00d710\u207b\u2076",
+    type:"semiconductor",apps:["ir"],
+    iconColor:"#64748b",iconText:"Si",
+    appText:"SWIR / MWIR Optics",
+    sellmeier:null,
+    links:[
+      {text:"Si Windows",href:"/products.html?category=Optical+Windows&material=Silicon"},
+      {text:"Si Lenses",href:"/products.html?category=Optical+Lenses&material=Silicon"}
+    ]
+  },
+  {
+    id:"mgf2",name:"MgF\u2082",nameZh:"\u6c1f\u5316\u9541",nd:1.3796,vd:92.3,
+    transShort:"110nm - 8\u03bcm",transMin:0.11,transMax:8.0,
+    density:3.15,cte:"13.7\u00d710\u207b\u2076",
+    type:"crystal",apps:["uv","vis","ir","general"],
+    iconColor:"#14b8a6",iconText:"Mg",
+    appText:"AR Coating / Windows",
+    sellmeier:null,
+    links:[
+      {text:"MgF2 Windows",href:"/products.html?category=Optical+Windows&material=MgF2"},
+      {text:"MgF2 Lenses",href:"/products.html?category=Optical+Lenses&material=MgF2"}
+    ]
+  }
+];
+
+var compareList = [];
+var currentAppFilter = "all";
+var currentTypeFilter = "all";
+
+// --- Sellmeier calculation ---
+function sellmeierN(sm, wavelengthUm) {
+  var l2 = wavelengthUm * wavelengthUm;
+  var n2 = 1 + sm.B1 * l2 / (l2 - sm.C1) + sm.B2 * l2 / (l2 - sm.C2) + sm.B3 * l2 / (l2 - sm.C3);
+  return Math.sqrt(n2);
+}
+
+// --- Render cards ---
+function renderCards() {
+  var grid = document.getElementById("materialsGrid");
+  var html = "";
+  for (var i = 0; i < materials.length; i++) {
+    var m = materials[i];
+    var show = true;
+    if (currentAppFilter !== "all") {
+      var found = false;
+      for (var a = 0; a < m.apps.length; a++) { if (m.apps[a] === currentAppFilter) { found = true; break; } }
+      if (!found) show = false;
+    }
+    if (currentTypeFilter !== "all" && m.type !== currentTypeFilter) show = false;
+    if (!show) continue;
+
+    var sel = false;
+    for (var c = 0; c < compareList.length; c++) { if (compareList[c] === m.id) { sel = true; break; } }
+    var vdStr = m.vd !== null ? m.vd : "\u2014";
+
+    html += '<div class="mat-card' + (sel ? " selected" : "") + '" onclick="toggleCard(\'" + m.id + "\',event)" data-id="' + m.id + '">';
+    html += '<div class="mat-card-check"></div>';
+    html += '<div class="mat-card-head">';
+    html += '<div class="mat-icon" style="background:' + m.iconColor + '">' + m.iconText + "</div>";
+    html += '<div class="mat-card-title"><h3>' + m.name + "</h3>";
+    html += '<div class="mat-sub">' + m.nameZh + "</div></div></div>";
+    html += '<div class="mat-card-params">';
+    html += '<div class="mat-param"><span class="mat-param-label">Refractive Index (nd)</span><span class="mat-param-value">' + m.nd + "</span></div>";
+    html += '<div class="mat-param"><span class="mat-param-label">Abbe Number (\u03bdd)</span><span class="mat-param-value">' + vdStr + "</span></div>";
+    html += '<div class="mat-param"><span class="mat-param-label">Transmission</span><span class="mat-param-value">' + m.transShort + "</span></div>";
+    html += "</div>";
+    html += '<span class="mat-app-tag">' + m.appText + "</span>";
+    html += "</div>";
+  }
+  grid.innerHTML = html;
+}
+
+// --- Toggle card for compare (double-click for detail) ---
+function toggleCard(id, evt) {
+  var idx = -1;
+  for (var i = 0; i < compareList.length; i++) { if (compareList[i] === id) { idx = i; break; } }
+  if (idx >= 0) {
+    compareList.splice(idx, 1);
+  } else {
+    if (compareList.length >= 4) {
+      compareList.shift();
+    }
+    compareList.push(id);
+  }
+  updateCompareStrip();
+  renderCards();
+  // Single click opens detail
+  openDetail(id);
+}
+
+function updateCompareStrip() {
+  var strip = document.getElementById("compareStrip");
+  var cnt = document.getElementById("compareCount");
+  cnt.textContent = compareList.length;
+  if (compareList.length >= 2) {
+    strip.className = "compare-strip show";
+  } else {
+    strip.className = "compare-strip";
+  }
+}
+
+function clearCompare() {
+  compareList = [];
+  updateCompareStrip();
+  renderCards();
+}
+
+// --- Detail modal ---
+function openDetail(id) {
+  var m = null;
+  for (var i = 0; i < materials.length; i++) { if (materials[i].id === id) { m = materials[i]; break; } }
+  if (!m) return;
+
+  document.getElementById("modalTitle").textContent = m.name;
+  document.getElementById("modalSub").textContent = m.nameZh;
+
+  var vdStr = m.vd !== null ? m.vd : "\u2014";
+  var body = "";
+
+  // Params table
+  body += '<div class="modal-section"><h3>Material Properties</h3>';
+  body += '<table class="param-table"><tbody>';
+  body += '<tr><th>Property</th><th>Value</th></tr>';
+  body += '<tr><td>Refractive Index (nd)</td><td>' + m.nd + "</td></tr>";
+  body += '<tr><td>Abbe Number (\u03bdd)</td><td>' + vdStr + "</td></tr>";
+  body += '<tr><td>Transmission Range</td><td>' + m.transShort + "</td></tr>";
+  body += '<tr><td>Density</td><td>' + m.density + " g/cm\u00b3</td></tr>";
+  body += '<tr><td>CTE (\u03b1)</td><td>' + m.cte + " /K</td></tr>";
+  body += '<tr><td>Material Type</td><td>' + m.type.charAt(0).toUpperCase() + m.type.slice(1) + "</td></tr>";
+  body += '<tr><td>Typical Applications</td><td>' + m.appText + "</td></tr>";
+  body += "</tbody></table></div>";
+
+  // Refractive index curve
+  if (m.sellmeier) {
+    body += '<div class="modal-section"><h3>Refractive Index vs Wavelength</h3>';
+    body += '<div class="canvas-wrap"><canvas id="sellCanvas" width="800" height="350"></canvas></div></div>';
+  } else {
+    body += '<div class="modal-section"><h3>Refractive Index</h3>';
+    body += '<div class="canvas-wrap"><canvas id="fixedCanvas" width="800" height="280"></canvas></div></div>';
+  }
+
+  // Transmission band
+  body += '<div class="modal-section"><h3>Transmission Range</h3>';
+  body += '<div class="canvas-wrap"><div class="spectrum-bar" id="spectrumBar"></div>';
+  body += '<div class="spectrum-labels"><span>100nm</span><span>400nm</span><span>700nm</span><span>2\u03bcm</span><span>5\u03bcm</span><span>10\u03bcm</span><span>20\u03bcm</span></div></div></div>';
+
+  // Product links
+  body += '<div class="modal-section"><h3>Related Products</h3>';
+  body += '<div class="modal-links">';
+  for (var l = 0; l < m.links.length; l++) {
+    body += '<a class="modal-link" href="' + m.links[l].href + '"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 3h5l3 3v7a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M9 3v3h3"/></svg>' + m.links[l].text + "</a>";
+  }
+  body += '<a class="modal-link" href="/contact.html"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l6 4 6-4M2 4v8h12V4H2z"/></svg>Contact for Custom Quote</a>';
+  body += "</div></div>";
+
+  document.getElementById("modalBody").innerHTML = body;
+  document.getElementById("detailModal").className = "modal-overlay show";
+
+  // Draw charts after DOM update
+  setTimeout(function() {
+    if (m.sellmeier) {
+      drawSellmeierCurve(m);
+    } else {
+      drawFixedIndex(m);
+    }
+    drawSpectrumBar(m);
+  }, 50);
+}
+
+function closeModal(id) {
+  document.getElementById(id).className = "modal-overlay";
+}
+
+// --- Sellmeier curve ---
+function drawSellmeierCurve(m) {
+  var canvas = document.getElementById("sellCanvas");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var W = canvas.width, H = canvas.height;
+  var pad = {t:30,r:30,b:50,l:60};
+  var plotW = W - pad.l - pad.r, plotH = H - pad.t - pad.b;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // wavelength range
+  var minL = 0.2, maxL = 2.5;
+  var points = [];
+  var nMin = 999, nMax = 0;
+  for (var wl = minL; wl <= maxL; wl += 0.02) {
+    var n = sellmeierN(m.sellmeier, wl);
+    points.push({wl:wl, n:n});
+    if (n < nMin) nMin = n;
+    if (n > nMax) nMax = n;
+  }
+  nMin = Math.floor(nMin * 100) / 100 - 0.01;
+  nMax = Math.ceil(nMax * 100) / 100 + 0.01;
+
+  function xPos(wl) { return pad.l + (wl - minL) / (maxL - minL) * plotW; }
+  function yPos(n) { return pad.t + (1 - (n - nMin) / (nMax - nMin)) * plotH; }
+
+  // Grid
+  ctx.strokeStyle = "#e2e8f0"; ctx.lineWidth = 1;
+  for (var g = 0; g <= 5; g++) {
+    var gy = pad.t + g * plotH / 5;
+    ctx.beginPath(); ctx.moveTo(pad.l, gy); ctx.lineTo(pad.l + plotW, gy); ctx.stroke();
+    var gval = nMax - g * (nMax - nMin) / 5;
+    ctx.fillStyle = "#94a3b8"; ctx.font = "11px sans-serif"; ctx.textAlign = "right";
+    ctx.fillText(gval.toFixed(3), pad.l - 8, gy + 4);
+  }
+  var wlTicks = [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.5, 2.0, 2.5];
+  for (var t = 0; t < wlTicks.length; t++) {
+    var tx = xPos(wlTicks[t]);
+    ctx.beginPath(); ctx.moveTo(tx, pad.t); ctx.lineTo(tx, pad.t + plotH); ctx.stroke();
+    ctx.fillStyle = "#94a3b8"; ctx.font = "11px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText(wlTicks[t] + "\u03bcm", tx, H - pad.b + 18);
+  }
+
+  // Axis labels
+  ctx.fillStyle = "#64748b"; ctx.font = "12px sans-serif"; ctx.textAlign = "center";
+  ctx.fillText("Wavelength (\u03bcm)", pad.l + plotW / 2, H - 6);
+  ctx.save(); ctx.translate(14, pad.t + plotH / 2); ctx.rotate(-Math.PI / 2);
+  ctx.fillText("Refractive Index (n)", 0, 0); ctx.restore();
+
+  // Curve
+  ctx.beginPath(); ctx.strokeStyle = m.iconColor; ctx.lineWidth = 2.5;
+  for (var p = 0; p < points.length; p++) {
+    var px = xPos(points[p].wl), py = yPos(points[p].n);
+    if (p === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+  }
+  ctx.stroke();
+
+  // Fill under curve
+  ctx.lineTo(xPos(points[points.length-1].wl), pad.t + plotH);
+  ctx.lineTo(xPos(points[0].wl), pad.t + plotH);
+  ctx.closePath();
+  ctx.fillStyle = m.iconColor + "18";
+  ctx.fill();
+
+  // nd marker
+  var ndX = xPos(0.5876), ndY = yPos(m.nd);
+  ctx.beginPath(); ctx.arc(ndX, ndY, 5, 0, Math.PI * 2);
+  ctx.fillStyle = m.iconColor; ctx.fill();
+  ctx.fillStyle = "#0f172a"; ctx.font = "bold 11px sans-serif"; ctx.textAlign = "left";
+  ctx.fillText("nd = " + m.nd + " (587.6nm)", ndX + 10, ndY - 6);
+}
+
+// --- Fixed index display ---
+function drawFixedIndex(m) {
+  var canvas = document.getElementById("fixedCanvas");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  // Transmission range band on a wavelength axis
+  var pad = {t:30,r:30,b:50,l:60};
+  var plotW = W - pad.l - pad.r, plotH = H - pad.t - pad.b;
+  var minL = 0.1, maxL = 22;
+
+  function xPos(wl) {
+    if (wl < 1) return pad.l + (wl - 0.1) / 0.9 * plotW * 0.15;
+    return pad.l + plotW * 0.15 + (wl - 1) / (maxL - 1) * plotW * 0.85;
+  }
+
+  // Axis
+  ctx.strokeStyle = "#e2e8f0"; ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(pad.l, pad.t + plotH / 2); ctx.lineTo(pad.l + plotW, pad.t + plotH / 2); ctx.stroke();
+
+  // Transmission band
+  var bandL = xPos(m.transMin), bandR = xPos(m.transMax);
+  ctx.fillStyle = m.iconColor + "30";
+  ctx.fillRect(bandL, pad.t, bandR - bandL, plotH);
+  ctx.strokeStyle = m.iconColor; ctx.lineWidth = 2;
+  ctx.strokeRect(bandL, pad.t, bandR - bandL, plotH);
+
+  // nd line
+  var barY = pad.t + plotH / 2;
+  var nScale = (m.nd - 1) / 4;
+  var barH = plotH * 0.6 * (1 - nScale) + plotH * 0.1;
+  ctx.fillStyle = m.iconColor + "60";
+  ctx.fillRect(bandL, pad.t + plotH - barH, bandR - bandL, barH);
+
+  // Label
+  ctx.fillStyle = "#0f172a"; ctx.font = "bold 14px sans-serif"; ctx.textAlign = "center";
+  ctx.fillText("nd = " + m.nd, (bandL + bandR) / 2, pad.t + plotH / 2 - 10);
+  ctx.fillStyle = "#64748b"; ctx.font = "12px sans-serif";
+  ctx.fillText("Transmission: " + m.transShort, (bandL + bandR) / 2, pad.t + plotH / 2 + 14);
+
+  // Wavelength labels
+  var wlLabels = ["0.1\u03bcm","0.2\u03bcm","0.4\u03bcm","1\u03bcm","5\u03bcm","10\u03bcm","20\u03bcm"];
+  var wlVals = [0.1,0.2,0.4,1,5,10,20];
+  ctx.fillStyle = "#94a3b8"; ctx.font = "11px sans-serif"; ctx.textAlign = "center";
+  for (var i = 0; i < wlVals.length; i++) {
+    ctx.fillText(wlLabels[i], xPos(wlVals[i]), H - pad.b + 18);
+  }
+  ctx.fillStyle = "#64748b"; ctx.font = "12px sans-serif";
+  ctx.fillText("Wavelength", pad.l + plotW / 2, H - 6);
+}
+
+// --- Spectrum bar ---
+function drawSpectrumBar(m) {
+  var bar = document.getElementById("spectrumBar");
+  if (!bar) return;
+  // Full spectrum background
+  var grad = "linear-gradient(to right, ";
+  grad += "#7c3aed 0%,";       // 110nm deep UV
+  grad += "#8b5cf6 5%,";       // 180nm UV
+  grad += "#3b82f6 12%,";      // 350nm
+  grad += "#22c55e 20%,";      // 400nm violet
+  grad += "#84cc16 26%,";      // 480nm blue
+  grad += "#eab308 32%,";      // 540nm green
+  grad += "#f97316 38%,";      // 600nm yellow
+  grad += "#ef4444 42%,";      // 660nm red
+  grad += "#991b1b 50%,";      // 750nm deep red
+  grad += "#1e293b 60%,";      // 1um IR start
+  grad += "#0f172a 75%,";      // 5um
+  grad += "#020617 100%)";     // 20um
+
+  // Calculate positions (log scale for display)
+  var totalRange = Math.log(20) - Math.log(0.1);
+  var leftPct = (Math.log(Math.max(m.transMin, 0.1)) - Math.log(0.1)) / totalRange * 100;
+  var rightPct = (Math.log(Math.min(m.transMax, 20)) - Math.log(0.1)) / totalRange * 100;
+
+  bar.style.background = grad;
+  bar.style.position = "relative";
+  // Overlay mask for non-transmitting regions
+  var overlay = document.createElement("div");
+  overlay.style.cssText = "position:absolute;top:0;left:0;width:100%;height:100%;";
+  overlay.innerHTML = '<div style="position:absolute;top:0;left:0;width:' + leftPct + '%;height:100%;background:rgba(15,23,42,0.7);"></div>'
+    + '<div style="position:absolute;top:0;right:0;width:' + (100 - rightPct) + '%;height:100%;background:rgba(15,23,42,0.7);"></div>'
+    + '<div style="position:absolute;top:0;left:' + leftPct + '%;width:' + (rightPct - leftPct) + '%;height:100%;border:2px solid ' + m.iconColor + ';border-radius:4px;box-shadow:0 0 8px ' + m.iconColor + '60;"></div>';
+  bar.innerHTML = "";
+  bar.appendChild(overlay);
+}
+
+// --- Filter ---
+function filterApp(app, btn) {
+  currentAppFilter = app;
+  var btns = btn.parentNode.querySelectorAll(".filter-btn");
+  for (var i = 0; i < btns.length; i++) btns[i].className = "filter-btn";
+  btn.className = "filter-btn active";
+  renderCards();
+}
+function filterType(tp, btn) {
+  currentTypeFilter = tp;
+  var btns = btn.parentNode.querySelectorAll(".filter-btn");
+  for (var i = 0; i < btns.length; i++) btns[i].className = "filter-btn";
+  btn.className = "filter-btn active";
+  renderCards();
+}
+
+// --- Compare modal ---
+function openCompare() {
+  if (compareList.length < 2) return;
+  var mats = [];
+  for (var i = 0; i < compareList.length; i++) {
+    for (var j = 0; j < materials.length; j++) {
+      if (materials[j].id === compareList[i]) { mats.push(materials[j]); break; }
+    }
+  }
+
+  var body = "";
+  // Comparison table
+  body += '<div class="modal-section"><h3>Parameter Comparison</h3>';
+  body += '<div style="overflow-x:auto"><table class="compare-table"><thead><tr><th>Property</th>';
+  for (var i = 0; i < mats.length; i++) {
+    body += '<th><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + mats[i].iconColor + ';margin-right:6px;vertical-align:middle;"></span>' + mats[i].name + "</th>";
+  }
+  body += "</tr></thead><tbody>";
+
+  var rows = [
+    ["Refractive Index (nd)", function(m){return m.nd;}],
+    ["Abbe Number (\u03bdd)", function(m){return m.vd !== null ? m.vd : "\u2014";}],
+    ["Transmission Range", function(m){return m.transShort;}],
+    ["Density (g/cm\u00b3)", function(m){return m.density;}],
+    ["CTE (\u00d710\u207b\u2076/K)", function(m){return m.cte;}],
+    ["Material Type", function(m){return m.type.charAt(0).toUpperCase()+m.type.slice(1);}],
+    ["Applications", function(m){return m.appText;}]
+  ];
+  for (var r = 0; r < rows.length; r++) {
+    body += "<tr><td>" + rows[r][0] + "</td>";
+    for (var i = 0; i < mats.length; i++) { body += "<td>" + rows[r][1](mats[i]) + "</td>"; }
+    body += "</tr>";
+  }
+  body += "</tbody></table></div></div>";
+
+  // Overlaid curves for materials with Sellmeier
+  var hasSell = false;
+  for (var i = 0; i < mats.length; i++) { if (mats[i].sellmeier) { hasSell = true; break; } }
+  if (hasSell) {
+    body += '<div class="modal-section"><h3>Refractive Index Curves Comparison</h3>';
+    body += '<div class="canvas-wrap"><canvas id="compareCanvas" width="800" height="380"></canvas></div></div>';
+  }
+
+  // Recommendations
+  body += '<div class="recommend-box"><h4>\u2728 Which material is right for your application?</h4><p>';
+  body += getRecommendation(mats);
+  body += "</p></div>";
+
+  document.getElementById("compareBody").innerHTML = body;
+  document.getElementById("compareModal").className = "modal-overlay show";
+
+  if (hasSell) {
+    setTimeout(function() { drawCompareCurves(mats); }, 50);
+  }
+}
+
+function getRecommendation(mats) {
+  var recs = [];
+  for (var i = 0; i < mats.length; i++) {
+    var m = mats[i];
+    var dot = '<span class="rec-dot" style="background:' + m.iconColor + '"></span>';
+    var text = "<strong>" + m.name + "</strong>: ";
+    if (m.id === "bk7") text += "Best general-purpose optical glass. Ideal for visible light lenses, prisms, and windows with excellent cost-performance ratio.";
+    else if (m.id === "fuses") text += "Superior UV transmission and low thermal expansion. Perfect for laser systems, UV optics, and precision applications requiring thermal stability.";
+    else if (m.id === "sapphire") text += "Exceptional hardness (9 Mohs) and wide transmission. Ideal for rugged windows, scratch-resistant optics, and demanding environments.";
+    else if (m.id === "caf2") text += "Widest UV-to-IR transmission among common optical materials. Excellent for achromatic lens design and multi-spectral systems.";
+    else if (m.id === "znse") text += "Optimal for CO\u2082 laser (10.6\u03bcm) and mid-to-far IR applications. Standard material for thermal imaging and laser cutting optics.";
+    else if (m.id === "ge") text += "Highest refractive index for strong optical power in compact systems. Best for LWIR thermal imaging (8-14\u03bcm).";
+    else if (m.id === "si") text += "Excellent for SWIR and MWIR bands. Good thermal conductivity makes it ideal for high-power laser and aerospace IR systems.";
+    else if (m.id === "mgf2") text += "Lowest refractive index among optical materials. Primarily used for anti-reflection coatings, also serves as UV-to-IR window material.";
+    recs.push(dot + text);
+  }
+  var result = "";
+  for (var i = 0; i < recs.length; i++) {
+    result += '<div class="rec-item">' + recs[i] + "</div>";
+  }
+  return result;
+}
+
+function drawCompareCurves(mats) {
+  var canvas = document.getElementById("compareCanvas");
+  if (!canvas) return;
+  var ctx = canvas.getContext("2d");
+  var W = canvas.width, H = canvas.height;
+  var pad = {t:30,r:30,b:50,l:60};
+  var plotW = W - pad.l - pad.r, plotH = H - pad.t - pad.b;
+
+  ctx.clearRect(0, 0, W, H);
+
+  var minL = 0.2, maxL = 2.5;
+  var allPoints = [];
+  var nMin = 999, nMax = 0;
+
+  for (var mi = 0; mi < mats.length; mi++) {
+    if (!mats[mi].sellmeier) continue;
+    var pts = [];
+    for (var wl = minL; wl <= maxL; wl += 0.02) {
+      var n = sellmeierN(mats[mi].sellmeier, wl);
+      pts.push({wl:wl, n:n});
+      if (n < nMin) nMin = n;
+      if (n > nMax) nMax = n;
+    }
+    allPoints.push({mat:mats[mi], pts:pts});
+  }
+  nMin = Math.floor(nMin * 100) / 100 - 0.005;
+  nMax = Math.ceil(nMax * 100) / 100 + 0.005;
+
+  function xPos(wl) { return pad.l + (wl - minL) / (maxL - minL) * plotW; }
+  function yPos(n) { return pad.t + (1 - (n - nMin) / (nMax - nMin)) * plotH; }
+
+  // Grid
+  ctx.strokeStyle = "#e2e8f0"; ctx.lineWidth = 1;
+  for (var g = 0; g <= 5; g++) {
+    var gy = pad.t + g * plotH / 5;
+    ctx.beginPath(); ctx.moveTo(pad.l, gy); ctx.lineTo(pad.l + plotW, gy); ctx.stroke();
+    var gval = nMax - g * (nMax - nMin) / 5;
+    ctx.fillStyle = "#94a3b8"; ctx.font = "11px sans-serif"; ctx.textAlign = "right";
+    ctx.fillText(gval.toFixed(3), pad.l - 8, gy + 4);
+  }
+  var wlTicks = [0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.5, 2.0, 2.5];
+  for (var t = 0; t < wlTicks.length; t++) {
+    var tx = xPos(wlTicks[t]);
+    ctx.beginPath(); ctx.moveTo(tx, pad.t); ctx.lineTo(tx, pad.t + plotH); ctx.stroke();
+    ctx.fillStyle = "#94a3b8"; ctx.font = "11px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText(wlTicks[t] + "\u03bcm", tx, H - pad.b + 18);
+  }
+
+  // Curves
+  for (var mi = 0; mi < allPoints.length; mi++) {
+    var ap = allPoints[mi];
+    ctx.beginPath(); ctx.strokeStyle = ap.mat.iconColor; ctx.lineWidth = 2.5;
+    for (var p = 0; p < ap.pts.length; p++) {
+      var px = xPos(ap.pts[p].wl), py = yPos(ap.pts[p].n);
+      if (p === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+
+    // Legend
+    var ly = pad.t + 16 + mi * 22;
+    ctx.fillStyle = ap.mat.iconColor;
+    ctx.beginPath(); ctx.arc(pad.l + 16, ly, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = "#0f172a"; ctx.font = "bold 12px sans-serif"; ctx.textAlign = "left";
+    ctx.fillText(ap.mat.name + " (nd=" + ap.mat.nd + ")", pad.l + 28, ly + 4);
+  }
+
+  // Axis labels
+  ctx.fillStyle = "#64748b"; ctx.font = "12px sans-serif"; ctx.textAlign = "center";
+  ctx.fillText("Wavelength (\u03bcm)", pad.l + plotW / 2, H - 6);
+  ctx.save(); ctx.translate(14, pad.t + plotH / 2); ctx.rotate(-Math.PI / 2);
+  ctx.fillText("Refractive Index (n)", 0, 0); ctx.restore();
+}
+
+// --- Close modal on overlay click ---
+document.getElementById("detailModal").onclick = function(e) {
+  if (e.target === this) closeModal("detailModal");
+};
+document.getElementById("compareModal").onclick = function(e) {
+  if (e.target === this) closeModal("compareModal");
+};
+
+// --- Init ---
+renderCards();
+</script>
+</body>
+</html>
