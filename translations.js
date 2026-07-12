@@ -153,6 +153,8 @@ en: {
         feature3Desc: "Precision optical processing and testing equipment",
         feature4Title: "Custom Solutions",
         feature4Desc: "OEM customization available, fast delivery",
+        feature5Title: "Quality Assurance",
+        feature5Desc: "ISO 9001:2015 certified, strict quality control system",
         aboutTitle: "About Us",
         aboutCompany: "PhotonEdge — Precision Optics, Global Reach",
         aboutDesc: "Beijing Hengdingguang Technology Co., Ltd. is a professional company specializing in R&D, production, and sales of optical components.",
@@ -274,8 +276,8 @@ en: {
         statYearsLabel: 'Years of Experience',
         statCountries: '50+',
         statCountriesLabel: 'Countries Served',
-        statProducts: '75+',
-        statProductsLabel: 'Product SKUs',
+        statProducts: '67+',
+        statProductsLabel: 'Product Types',
         statClients: '500+',
         statClientsLabel: 'Global Clients',
         trustedByTitle: 'Trusted By Leading Organizations',
@@ -408,32 +410,6 @@ en: {
         calcFocal: "Focal Length Calculator",
         calcCoating: "Coating Transmission Calculator",
         calcMagnification: "Optical Magnification Calculator",
-        calcNATitle: "Numerical Aperture Calculator",
-        calcNADesc: "Calculate NA, acceptance angle, f-number, and resolution for optical systems",
-        calcNAH2: "\uD83D\uDD2C Numerical Aperture Calculator",
-        calcNANote: "Calculate numerical aperture, acceptance half-angle, f-number, and theoretical resolution limit.",
-        calcNAHalfAngleLabel: "Acceptance Half-Angle \u03B1 (degrees):",
-        calcNAFormula: "NA = n \u00D7 sin(\u03B1), f/# \u2248 1/(2\u00D7NA), Resolution \u2248 0.61\u00D7\u03BB/NA",
-        calcRayleighTitle: "Rayleigh Range Calculator",
-        calcRayleighDesc: "Calculate Rayleigh range, confocal parameter, and Gaussian beam propagation",
-        calcRayleighH2: "\uD83D\uDCA1 Rayleigh Range Calculator",
-        calcRayleighNote: "Calculate Rayleigh range, confocal parameter, and beam size at distance for Gaussian beams.",
-        calcBeamWaistLabel: "Beam Waist Radius w\u2080 (mm):",
-        calcRayleighFormula: "z_R = \u03C0\u00D7w\u2080\u00B2/\u03BB, Beam at z: w(z) = w\u2080\u00D7\u221A(1+(z/z_R)\u00B2)",
-        calcLIDTTitle: "LIDT Scaling Calculator",
-        calcLIDTDesc: "Scale laser damage threshold between different wavelengths, pulse durations, and beam sizes",
-        calcLIDTH2: "\u26A0 LIDT Scaling Calculator",
-        calcLIDTNote: "Scale laser-induced damage threshold between different wavelengths, pulse durations, and beam diameters.",
-        calcLIDTSection1: "Known LIDT Parameters",
-        calcLIDTSection2: "New Application Parameters",
-        calcLIDT1Label: "LIDT (J/cm\u00B2):",
-        calcLIDTWL1Label: "Wavelength \u03BB\u2081 (nm):",
-        calcLIDTTau1Label: "Pulse Duration \u03C4\u2081 (ns):",
-        calcLIDTDiam1Label: "Beam Diameter \u2205\u2081 (mm):",
-        calcLIDTWL2Label: "Wavelength \u03BB\u2082 (nm):",
-        calcLIDTTau2Label: "Pulse Duration \u03C4\u2082 (ns):",
-        calcLIDTDiam2Label: "Beam Diameter \u2205\u2082 (mm):",
-        calcLIDTFormula: "LIDT\u2082 \u2248 LIDT\u2081 \u00D7 (\u03BB\u2082/\u03BB\u2081) \u00D7 \u221A(\u03C4\u2082/\u03C4\u2081) \u00D7 (\u2205\u2081/\u2205\u2082)^0.5",
         industriesTitle: "Industries We Serve",
         catLensesDesc: "Spherical, Cylindrical, Aspheric, Ball, Rod",
         catMirrorsDesc: "Dielectric, Aluminum, Silver, Gold",
@@ -576,6 +552,7 @@ en: {
         noResultsDesc: "Check back later for updates",
 
         aboutAdvTeam: "Professional Team",
+        aboutAdvTeamDesc: "High-quality R&D personnel, senior management, and experienced production/sales team",
         qualityCustomerFirst: "Customer First",
         qualityCustomerFirstDesc: "Customer satisfaction is our top priority",
         qualityQualityFirst: "Quality First",
@@ -751,6 +728,19 @@ en: {
         downloadsTitle: "Download Center",
         downloadsWindowsMirrors: "Windows & Mirrors Catalog",
         downloadsWindowsMirrorsDesc: "BK7, UV fused silica, sapphire, CaF2, Ge, Si, ZnSe windows. Laser line, broadband dielectric, protected metal mirrors.",
+        techSpecsTitle: "Technical Specification Sheets",
+        techSpecsSubtitle: "Download detailed specification sheets for each product with complete technical parameters, standard models, material properties and coating specifications.",
+        techSpecsLenses: "Lenses",
+        techSpecsWindows: "Windows",
+        techSpecsFilters: "Filters",
+        techSpecsPrisms: "Prisms",
+        techSpecsWaveplates: "Waveplates",
+        techSpecsEN: "English",
+        techSpecsZH: "Chinese",
+        techSpecsDownload: "Download",
+        techSpecsAllLang: "All Languages",
+        techSpecsEnOnly: "English Only",
+        techSpecsZhOnly: "中文",
         technicalResources: "Technical Resources",
         technicalResourcesDesc: "Download product catalogs, specifications, and technical documentation",
         techCAD: "CAD Files (STEP)",
@@ -890,7 +880,7 @@ en: {
         optoIntroTitle: "Complete Optomechanical Solutions",
         optoIntroDesc: "PhotonEdge offers comprehensive optomechanical components designed for precision optical systems. Our products ensure stable mounting, accurate positioning, and reliable performance for laboratory and industrial applications.",
         optoTubesTitle: "Optical Tubes & Housing",
-        optoTubesDesc: "Precision-machined镜筒 and housing structures for optical element containment. Available in standard sizes from 1/2\" to 2\" diameter with AR/AN thread options.",
+        optoTubesDesc: "Precision-machined tubes and housing structures for optical element containment. Available in standard sizes from 1/2\" to 2\" diameter with AR/AN thread options.",
         optoTubesSpec1: "Material: Aluminum alloy, black anodized",
         optoTubesSpec2: "Standard thread options: SM1, SM05, C-Mount",
         optoTubesSpec3: "Custom lengths available",
@@ -959,13 +949,6 @@ en: {
         compareNoteHarshDesc: "Sapphire offers exceptional hardness and chemical resistance. DLC-coated ZnSe or Ge provides environmental protection for demanding conditions.",
         compareCtaText: "Need help selecting the right material for your application?",
         compareCtaBtn: "Contact Our Engineers",
-    calcCalcLabel: "Calculate:",
-    calcCoatTypeLabel: "Coating Type:",
-    calcFocalLenLabel: "Focal Length f (mm):",
-    calcImgDistLabel: "Image Distance dᵢ (mm):",
-    calcObjDistLabel: "Object Distance d₀ (mm):",
-    calcReflectLabel: "Single Surface Reflectivity (%):",
-    calcWavelenLabel: "Wavelength (nm):",
 
     },
     zh: {
@@ -996,6 +979,13 @@ en: {
     "calcFocalDesc": "使用透镜公式计算焦距、物距或像距",
     "calcFocalH2": "\uD83D\uDD0D 焦距计算器",
     "calcFocalTitle": "焦距计算器",
+    "calcCalcLabel": "计算目标:",
+    "calcCoatTypeLabel": "镀膜类型:",
+    "calcFocalLenLabel": "焦距 f (mm):",
+    "calcImgDistLabel": "像距 dᵢ (mm):",
+    "calcObjDistLabel": "物距 d₀ (mm):",
+    "calcReflectLabel": "单面反射率 (%):",
+    "calcWavelenLabel": "波长 (nm):",
     "calcMagDesc": "计算放大倍率、焦距和工作距离关系",
     "calcMagH2": "\uD83D\uDCD0 光学倍率计算器",
     "calcMagTitle": "光学倍率计算器",
@@ -1150,6 +1140,8 @@ en: {
     "feature3Title": "先进设备",
     "feature4Desc": "支持OEM定制，快速交付",
     "feature4Title": "定制方案",
+    "feature5Title": "品质保障",
+    "feature5Desc": "ISO 9001:2015认证，严格质量管控体系",
     "filterAll": "全部",
     "filterBy": "筛选",
     "filterCategory": "分类",
@@ -1431,32 +1423,6 @@ en: {
         "calcFocal": "焦距计算器",
         "calcCoating": "镀膜透过率计算器",
         "calcMagnification": "光学放大率计算器",
-    "calcNATitle": "数值孔径计算器",
-    "calcNADesc": "计算数值孔径、接收角、F数和光学分辨率",
-    "calcNAH2": "\uD83D\uDD2C 数值孔径计算器",
-    "calcNANote": "计算数值孔径、接收半角、F数和理论分辨率极限。",
-    "calcNAHalfAngleLabel": "接收半角 α (度):",
-    "calcNAFormula": "NA = n × sin(α), f/# ≈ 1/(2×NA), 分辨率 ≈ 0.61×λ/NA",
-    "calcRayleighTitle": "瑞利长度计算器",
-    "calcRayleighDesc": "计算瑞利长度、共焦参数和高斯光束传输特性",
-    "calcRayleighH2": "\uD83D\uDCA1 瑞利长度计算器",
-    "calcRayleighNote": "计算高斯光束的瑞利长度、共焦参数和指定距离处的光束尺寸。",
-    "calcBeamWaistLabel": "束腰半径 w₀ (mm):",
-    "calcRayleighFormula": "z_R = π×w₀²/λ，位置z处: w(z) = w₀×√(1+(z/z_R)²)",
-    "calcLIDTTitle": "LIDT缩放计算器",
-    "calcLIDTDesc": "在不同波长、脉冲宽度和光束尺寸之间缩放激光损伤阈值",
-    "calcLIDTH2": "\u26A0 LIDT缩放计算器",
-    "calcLIDTNote": "在不同波长、脉冲宽度和光束直径之间缩放激光诱导损伤阈值。",
-    "calcLIDTSection1": "已知LIDT参数",
-    "calcLIDTSection2": "新应用参数",
-    "calcLIDT1Label": "LIDT值 (J/cm²):",
-    "calcLIDTWL1Label": "波长 λ₁ (nm):",
-    "calcLIDTTau1Label": "脉冲宽度 τ₁ (ns):",
-    "calcLIDTDiam1Label": "光束直径 Ø₁ (mm):",
-    "calcLIDTWL2Label": "波长 λ₂ (nm):",
-    "calcLIDTTau2Label": "脉冲宽度 τ₂ (ns):",
-    "calcLIDTDiam2Label": "光束直径 Ø₂ (mm):",
-    "calcLIDTFormula": "LIDT₂ ≈ LIDT₁ × (λ₂/λ₁) × (τ₂/τ₁) × (Ø₁/Ø₂)^0.5",
         "industriesTitle": "服务行业",
         "catLensesDesc": "球面、柱面、非球面、球透镜、棒镜",
         "catMirrorsDesc": "介质膜、铝膜、银膜、金膜",
@@ -1499,6 +1465,7 @@ en: {
     "noResultsDesc": "请稍后再来看看",
 
     "aboutAdvTeam": "专业团队",
+    "aboutAdvTeamDesc": "高素质研发人员、资深管理团队及经验丰富的生产/销售团队",
     "qualityCustomerFirst": "客户至上",
     "qualityCustomerFirstDesc": "客户满意是我们最大的追求",
     "qualityQualityFirst": "品质第一",
@@ -1674,6 +1641,19 @@ en: {
     "downloadsTitle": "下载中心",
     "downloadsWindowsMirrors": "窗口与反射镜目录",
     "downloadsWindowsMirrorsDesc": "BK7、UV熔融石英、蓝宝石、CaF2、Ge、Si、ZnSe窗口。激光线、宽带介质、保护膜反射镜。",
+    "techSpecsTitle": "技术规格书",
+    "techSpecsSubtitle": "下载每种产品的详细规格书，包含完整技术参数、标准型号、材料属性和镀膜规格。",
+    "techSpecsLenses": "透镜",
+    "techSpecsWindows": "窗口片",
+    "techSpecsFilters": "滤光片",
+    "techSpecsPrisms": "棱镜",
+    "techSpecsWaveplates": "波片",
+    "techSpecsEN": "英文",
+    "techSpecsZH": "中文",
+    "techSpecsDownload": "下载",
+    "techSpecsAllLang": "全部语言",
+    "techSpecsEnOnly": "仅英文",
+    "techSpecsZhOnly": "仅中文",
     "technicalResources": "技术资源",
     "technicalResourcesDesc": "下载产品目录、规格和技术文档",
     "techCAD": "CAD文件（STEP格式）",
@@ -1882,14 +1862,8 @@ en: {
     "compareNoteHarshDesc": "蓝宝石具有出色的硬度和化学耐受性。DLC镀膜的ZnSe或Ge为苛刻条件提供环境保护。",
     "compareCtaText": "需要帮助选择适合您应用的材料？",
     "compareCtaBtn": "联系我们的工程师",
-    "calcCalcLabel": "计算目标:",
-    "calcCoatTypeLabel": "镀膜类型:",
-    "calcFocalLenLabel": "焦距 f (mm):",
-    "calcImgDistLabel": "像距 dᵢ (mm):",
-    "calcObjDistLabel": "物距 d₀ (mm):",
-    "calcReflectLabel": "单面反射率 (%):",
-    "calcWavelenLabel": "波长 (nm):",
-    }
+
+}
 }
 // Translation function
 function t(key) {
@@ -1902,7 +1876,6 @@ function t(key) {
 function applyTranslations() {
     var lang = localStorage.getItem('lang') || 'en';
     var translationsObj = translations[lang] || translations['en'];
-    // Translate text content
     var elements = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < elements.length; i++) {
         var key = elements[i].getAttribute('data-i18n');
@@ -1910,19 +1883,13 @@ function applyTranslations() {
             elements[i].textContent = translationsObj[key];
         }
     }
-    // Translate placeholder attributes
-    var placeholders = document.querySelectorAll('[data-i18n-placeholder]');
-    for (var j = 0; j < placeholders.length; j++) {
-        var pkey = placeholders[j].getAttribute('data-i18n-placeholder');
-        if (translationsObj[pkey]) {
-            placeholders[j].setAttribute('placeholder', translationsObj[pkey]);
-        }
-    }
 }
 
 // Set language
 function setLanguage(lang) {
     localStorage.setItem('lang', lang);
+    // Update <html lang> attribute for SEO and accessibility
+    document.documentElement.lang = lang;
     applyTranslations();
     // Re-render featured products on homepage if function exists
     if (typeof renderFeaturedProducts === 'function') {
@@ -1936,21 +1903,20 @@ function setLanguage(lang) {
     if (typeof renderProductDetail === 'function') {
         renderProductDetail();
     }
-    // Re-render blog posts if function exists
+    // Re-render AI Selector if visible (use render() to avoid resetting state and re-binding events)
+    if (typeof AISelector !== 'undefined' && AISelector.render) {
+        var aiContainer = document.getElementById('aiSelectorContent');
+        if (aiContainer && aiContainer.innerHTML) {
+            AISelector.render();
+        }
+    }
+    // Re-render blog posts if on blog page
     if (typeof renderBlogPosts === 'function') {
         renderBlogPosts();
     }
-    // Re-render news articles if function exists
-    if (typeof renderNews === 'function') {
-        renderNews();
-    }
-    // Re-render cart if function exists
-    if (typeof renderCart === 'function') {
-        renderCart();
-    }
-    // Re-render comparison table if function exists
-    if (typeof renderTable === 'function') {
-        renderTable();
+    // Re-render chatbot messages if visible
+    if (typeof renderChatMessages === 'function') {
+        renderChatMessages();
     }
     // Update active button
     var buttons = document.querySelectorAll('.lang-btn');
@@ -1973,8 +1939,14 @@ function getCurrentLang() {
 }
 
 // Apply translations on page load
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applyTranslations);
-} else {
+function initLanguage() {
+    var savedLang = getCurrentLang();
+    document.documentElement.lang = savedLang;
     applyTranslations();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguage);
+} else {
+    initLanguage();
 }
