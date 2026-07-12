@@ -169,8 +169,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
                     <span class="cart-badge" id="cartBadge">0</span>
                 </a>
                 <div class="lang-switcher">
-                    <button class="lang-btn notranslate" onclick="setLanguage('en')">EN</button>
-                    <button class="lang-btn notranslate active" onclick="setLanguage('zh')">中文</button>
+                    <button class="lang-btn notranslate" onclick="window.location.href='/ray-tracer.html'">EN</button>
+                    <button class="lang-btn notranslate active" onclick="window.location.href='/ray-tracer-zh.html'">中文</button>
                 </div>
             </nav>
 
@@ -240,7 +240,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
       <div class="dropdown">
         <button class="ctrl-btn" id="btnExamples" onclick="toggleDropdown('exMenu')">
           <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="8" y="1" width="5" height="5" rx="1"/><rect x="1" y="8" width="5" height="5" rx="1"/><rect x="8" y="8" width="5" height="5" rx="1"/></svg>
-          Examples
+          示例
         </button>
         <div class="dropdown-menu" id="exMenu">
           <div class="dropdown-item" onclick="loadExample('simpleFocus')"><strong>单透镜聚焦</strong><span>点光源 + 凸透镜</span></div>
@@ -251,22 +251,22 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
       </div>
       <button class="ctrl-btn" onclick="resetView()" title="重置视图">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><line x1="7" y1="4" x2="7" y2="10"/><line x1="4" y1="7" x2="10" y2="7"/></svg>
-        Reset View
+        重置视图
       </button>
       <button class="ctrl-btn" onclick="exportPNG()" title="导出PNG图片">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10v2h10v-2"/><polyline points="4,7 7,10 10,7"/><line x1="7" y1="2" x2="7" y2="10"/></svg>
-        Export PNG
+        导出PNG
       </button>
       <button class="ctrl-btn" onclick="shareScene()" title="复制分享链接">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="4" cy="7" r="2"/><circle cx="10" cy="4" r="2"/><circle cx="10" cy="10" r="2"/><line x1="6" y1="6" x2="8" y2="5"/><line x1="6" y1="8" x2="8" y2="9"/></svg>
-        Share
+        分享
       </button>
       <button class="ctrl-btn danger" onclick="clearAll()" title="清除所有元件">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="2,4 12,4"/><path d="M5,4V3a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1v1"/><path d="M3,4l1,8a1,1,0,0,0,1,1h4a1,1,0,0,0,1-1l1-8"/></svg>
-        Clear
+        清除
       </button>
     </div>
-    <div class="canvas-status" id="statusBar">就绪 - 从左侧工具栏拖拽元件到画布</div>
+    <div class="canvas-status" id="statusBar">就绪 - 点击工具栏选择元件，再点击画布放置</div>
   </div>
 
   <!-- PROPERTY PANEL -->
@@ -281,7 +281,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
         <br>点击画布上的元件查看并编辑其属性。
         <br><br>
         <strong>快速入门：</strong><br>
-        从左侧工具栏拖拽元件到画布上。
+        点击左侧工具栏选择元件，然后点击画布放置。
       </div>
     </div>
     <div class="props-footer" id="propsFooter">
@@ -1207,9 +1207,9 @@ function updateProps(){
   var c = state.selectedId ? findComp(state.selectedId) : null;
 
   if(!c){
-    title.textContent = 'Properties';
-    sub.textContent = 'Select a component';
-    body.innerHTML = '<div class="props-empty"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg><br>Click on a component in the canvas to view and edit its properties.<br><br><strong>Quick Start:</strong><br>Drag a component from the left toolbar onto the canvas.</div>';
+    title.textContent = '属性面板';
+    sub.textContent = '请选择一个元件';
+    body.innerHTML = '<div class="props-empty"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg><br>点击画布上的元件查看并编辑其属性。<br><br><strong>快速入门：</strong><br>点击左侧工具栏选择元件，然后点击画布放置。</div>';
     return;
   }
 

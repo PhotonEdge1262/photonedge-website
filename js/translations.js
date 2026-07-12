@@ -880,7 +880,7 @@ en: {
         optoIntroTitle: "Complete Optomechanical Solutions",
         optoIntroDesc: "PhotonEdge offers comprehensive optomechanical components designed for precision optical systems. Our products ensure stable mounting, accurate positioning, and reliable performance for laboratory and industrial applications.",
         optoTubesTitle: "Optical Tubes & Housing",
-        optoTubesDesc: "Precision-machined镜筒 and housing structures for optical element containment. Available in standard sizes from 1/2\" to 2\" diameter with AR/AN thread options.",
+        optoTubesDesc: "Precision-machined tubes and housing structures for optical element containment. Available in standard sizes from 1/2\" to 2\" diameter with AR/AN thread options.",
         optoTubesSpec1: "Material: Aluminum alloy, black anodized",
         optoTubesSpec2: "Standard thread options: SM1, SM05, C-Mount",
         optoTubesSpec3: "Custom lengths available",
@@ -1950,3 +1950,25 @@ if (document.readyState === 'loading') {
 } else {
     initLanguage();
 }
+
+// ========================================
+// Navigation Dropdown Fallback (ES5)
+// Ensures Tools dropdown works on all browsers
+// ========================================
+(function() {
+    var dropdowns = document.querySelectorAll('.nav-dropdown');
+    for (var i = 0; i < dropdowns.length; i++) {
+        (function(dd) {
+            var timer = null;
+            dd.addEventListener('mouseenter', function() {
+                if (timer) { clearTimeout(timer); timer = null; }
+                dd.classList.add('open');
+            });
+            dd.addEventListener('mouseleave', function() {
+                timer = setTimeout(function() {
+                    dd.classList.remove('open');
+                }, 150);
+            });
+        })(dropdowns[i]);
+    }
+})();

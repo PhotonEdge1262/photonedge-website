@@ -7,7 +7,7 @@
 <meta name="description" content="Free interactive ray tracing simulator for optical system design. Simulate lenses, mirrors, prisms with real-time ray tracing. Built by PhotonEdge precision optics.">
 <meta name="keywords" content="ray tracer, optical simulation, lens simulator, ray tracing online, optical design tool, photonics simulator">
 <meta property="og:title" content="PhotonEdge Ray Tracer - Online Optical Simulation">
-<meta property="og:description" content="Interactive ray tracing simulator for optical systems. Drag and drop lenses, mirrors, prisms to design and visualize light paths.">
+<meta property="og:description" content="Interactive ray tracing simulator for optical systems. Click to place lenses, mirrors, prisms and simulate light paths in real-time.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://photonedgeoptics.com/ray-tracer.html">
 <script type="application/ld+json">
@@ -169,8 +169,8 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
                     <span class="cart-badge" id="cartBadge">0</span>
                 </a>
                 <div class="lang-switcher">
-                    <button class="lang-btn notranslate active" onclick="setLanguage('en')">EN</button>
-                    <button class="lang-btn notranslate" onclick="setLanguage('zh')">中文</button>
+                    <button class="lang-btn notranslate active" onclick="window.location.href='/ray-tracer.html'">EN</button>
+                    <button class="lang-btn notranslate" onclick="window.location.href='/ray-tracer-zh.html'">中文</button>
                 </div>
             </nav>
 
@@ -266,7 +266,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
         Clear
       </button>
     </div>
-    <div class="canvas-status" id="statusBar">Ready - Drag components from toolbar</div>
+    <div class="canvas-status" id="statusBar">Ready - Click a tool, then click canvas to place</div>
   </div>
 
   <!-- PROPERTY PANEL -->
@@ -281,7 +281,7 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;heigh
         <br>Click on a component in the canvas to view and edit its properties.
         <br><br>
         <strong>Quick Start:</strong><br>
-        Drag a component from the left toolbar onto the canvas.
+        Click a component in the toolbar, then click on the canvas to place it.
       </div>
     </div>
     <div class="props-footer" id="propsFooter">
@@ -1209,7 +1209,7 @@ function updateProps(){
   if(!c){
     title.textContent = 'Properties';
     sub.textContent = 'Select a component';
-    body.innerHTML = '<div class="props-empty"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg><br>Click on a component in the canvas to view and edit its properties.<br><br><strong>Quick Start:</strong><br>Drag a component from the left toolbar onto the canvas.</div>';
+    body.innerHTML = '<div class="props-empty"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#cbd5e1" stroke-width="1.5" style="margin-bottom:8px"><rect x="4" y="4" width="32" height="32" rx="4"/><circle cx="15" cy="15" r="3"/><line x1="26" y1="14" x2="14" y2="26"/><circle cx="25" cy="25" r="3"/></svg><br>Click on a component in the canvas to view and edit its properties.<br><br><strong>Quick Start:</strong><br>Click a component in the toolbar, then click on the canvas to place it.</div>';
     return;
   }
 
