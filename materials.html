@@ -36,17 +36,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica N
 a{text-decoration:none;color:inherit;}
 
 /* NAV */
-.nav{background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0;z-index:100;box-shadow:0 1px 3px rgba(0,0,0,.06);}
-.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;}
-.nav-logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:#3b82f6;}
-.nav-logo svg{width:32px;height:32px;}
-.nav-links{display:flex;gap:28px;align-items:center;}
-.nav-links a{font-size:14px;font-weight:500;color:#475569;transition:color .2s;}
-.nav-links a:hover,.nav-links a.active{color:#3b82f6;}
-.nav-cta{background:#3b82f6;color:#fff!important;padding:8px 18px;border-radius:6px;font-size:13px;transition:background .2s;}
+
+
+
+
+
+
+
+
 .nav-cta:hover{background:#2563eb;}
-.nav-mobile-btn{display:none;background:none;border:none;cursor:pointer;padding:4px;}
-.nav-mobile-btn svg{width:24px;height:24px;color:#475569;}
+
+
 
 /* HERO */
 .hero{background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 50%,#3b82f6 100%);color:#fff;padding:72px 24px 56px;text-align:center;}
@@ -147,9 +147,9 @@ a{text-decoration:none;color:inherit;}
 
 /* RESPONSIVE */
 @media(max-width:768px){
-.nav-links{display:none;position:absolute;top:64px;left:0;width:100%;background:#fff;flex-direction:column;padding:16px 24px;gap:12px;border-bottom:1px solid #e2e8f0;box-shadow:0 4px 12px rgba(0,0,0,.08);}
-.nav-links.open{display:flex;}
-.nav-mobile-btn{display:block;}
+
+
+
 .hero{padding:48px 20px 40px;}
 .hero h1{font-size:28px;}
 .hero p{font-size:15px;}
@@ -164,31 +164,61 @@ a{text-decoration:none;color:inherit;}
 .filter-row{gap:8px;}
 }
 </style>
+<link rel="stylesheet" href="/css/style.css">
+<script src="/js/translations.js"></script>
+<script src="/js/cart.js"></script>
+<script src="/js/compare.js"></script>
 </head>
 <body>
 
 <!-- NAV -->
 <nav class="nav">
-<div class="nav-inner">
-<a href="/" class="nav-logo">
-<svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#3b82f6" stroke-width="2.5"/><path d="M10 16h12M16 10v12" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/><circle cx="16" cy="16" r="5" stroke="#3b82f6" stroke-width="1.5"/><circle cx="16" cy="16" r="1.5" fill="#3b82f6"/></svg>
-PhotonEdge
-</a>
-<div class="nav-links" id="navLinks">
-<a href="/">Home</a>
-<a href="/products.html">Products</a>
-<a href="/materials.html" class="active">Materials</a>
-<a href="/calculator.html">Calculators</a>
-<a href="/ray-tracer.html">Ray Tracer</a>
-<a href="/product-advisor.html">Product Advisor</a>
-<a href="/about.html">About</a>
-<a href="/contact.html" class="nav-cta">Get Quote</a>
-</div>
-<button class="nav-mobile-btn" onclick="document.getElementById('navLinks').className=document.getElementById('navLinks').className==='nav-links open'?'nav-links':'nav-links open'">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-</button>
-</div>
-</nav>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+                    <li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
+                        <a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a>
+                        <div class="dropdown-menu">
+                            <a href="/calculator.html" class="dropdown-item">
+                                <span class="dropdown-icon">🧮</span>
+                                <span>Optical Calculators</span>
+                            </a>
+                            <a href="/ray-tracer.html" class="dropdown-item">
+                                <span class="dropdown-icon">🔬</span>
+                                <span>Ray Tracer Simulator</span>
+                            </a>
+                            <a href="/materials.html" class="dropdown-item">
+                                <span class="dropdown-icon">📊</span>
+                                <span>Materials Database</span>
+                            </a>
+                            <a href="/product-advisor.html" class="dropdown-item">
+                                <span class="dropdown-icon">🎯</span>
+                                <span>Product Selector</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="/faq.html" class="nav-link" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/downloads.html" class="nav-link" data-i18n="navDownloads">Downloads</a></li>
+                    <li><a href="/case-studies.html" class="nav-link" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+                    <li><a href="/news.html" class="nav-link" data-i18n="navNews">News</a></li>
+                </ul>
+                <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <span class="cart-badge" id="compareBadge">0</span>
+                </a>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn notranslate active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn notranslate" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
 
 <!-- HERO -->
 <section class="hero">
@@ -887,6 +917,15 @@ document.getElementById("compareModal").onclick = function(e) {
 
 // --- Init ---
 renderCards();
+</script>
+
+<script>
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
 </script>
 </body>
 </html>
