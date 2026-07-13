@@ -203,19 +203,19 @@
                     <div class="input-group">
                         <label data-i18n="calcCalcLabel">Calculate:</label>
                         <select id="focal-calc-type" onchange="updateFocalInputs()">
-                            <option value="focal">Focal Length (f)</option>
-                            <option value="object">Object Distance (d&#8320;)</option>
-                            <option value="image">Image Distance (d&#7522;)</option>
+                            <option value="focal" data-i18n="optFocal">Focal Length (f)</option>
+                            <option value="object" data-i18n="optObjectDist">Object Distance (d&#8320;)</option>
+                            <option value="image" data-i18n="optImageDist">Image Distance (d&#7522;)</option>
                         </select>
                     </div>
                     <div id="focal-inputs">
                         <div class="input-group" id="object-input">
                             <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
-                            <input type="number" id="object-distance" placeholder="e.g., 100" step="any">
+                            <input type="number" id="object-distance" data-i18n-placeholder="phEg100" placeholder="e.g., 100" step="any">
                         </div>
                         <div class="input-group" id="image-input">
                             <label data-i18n="calcImgDistLabel">Image Distance d&#7522; (mm):</label>
-                            <input type="number" id="image-distance" placeholder="e.g., 50" step="any">
+                            <input type="number" id="image-distance" data-i18n-placeholder="phEg50" placeholder="e.g., 50" step="any">
                         </div>
                     </div>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateFocal()">Calculate</button>
@@ -230,26 +230,26 @@
                     <div class="input-group">
                         <label data-i18n="calcCoatTypeLabel">Coating Type:</label>
                         <select id="coating-type" onchange="updateCoatingInputs()">
-                            <option value="ar">Anti-Reflection (AR) Coating</option>
-                            <option value="hr">High-Reflection (HR) Coating</option>
-                            <option value="custom">Custom Reflectivity</option>
+                            <option value="ar" data-i18n="optARCoating">Anti-Reflection (AR) Coating</option>
+                            <option value="hr" data-i18n="optHRCoating">High-Reflection (HR) Coating</option>
+                            <option value="custom" data-i18n="optCustomReflect">Custom Reflectivity</option>
                         </select>
                     </div>
                     <div class="input-group" id="wavelength-input">
                         <label data-i18n="calcWavelenLabel">Wavelength (nm):</label>
-                        <input type="number" id="wavelength" placeholder="e.g., 1064" value="1064">
+                        <input type="number" id="wavelength" data-i18n-placeholder="phEg1064" placeholder="e.g., 1064" value="1064">
                     </div>
                     <div class="input-group" id="surface-count-input">
                         <label data-i18n="calcSurfacesLabel">Number of Surfaces:</label>
                         <select id="surface-count">
-                            <option value="1">1 Surface</option>
-                            <option value="2" selected>2 Surfaces (typical lens)</option>
-                            <option value="4">4 Surfaces</option>
+                            <option value="1" data-i18n="opt1Surface">1 Surface</option>
+                            <option value="2" selected data-i18n="opt2SurfacesLens">2 Surfaces (typical lens)</option>
+                            <option value="4" data-i18n="opt4Surfaces">4 Surfaces</option>
                         </select>
                     </div>
                     <div class="input-group" id="custom-reflect-input" style="display: none;">
                         <label data-i18n="calcReflectLabel">Single Surface Reflectivity (%):</label>
-                        <input type="number" id="custom-reflect" placeholder="e.g., 0.2" step="0.1" min="0" max="100">
+                        <input type="number" id="custom-reflect" data-i18n-placeholder="phEg02" placeholder="e.g., 0.2" step="0.1" min="0" max="100">
                     </div>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateCoating()">Calculate</button>
                     <div class="result-box" id="coating-result">
@@ -263,19 +263,19 @@
                     <div class="input-group">
                         <label data-i18n="calcCalcLabel">Calculate:</label>
                         <select id="mag-calc-type" onchange="updateMagInputs()">
-                            <option value="mag">Magnification (M)</option>
-                            <option value="focal">Focal Length (f)</option>
-                            <option value="distance">Object Distance (d&#8320;)</option>
+                            <option value="mag" data-i18n="optMagnification">Magnification (M)</option>
+                            <option value="focal" data-i18n="optFocal">Focal Length (f)</option>
+                            <option value="distance" data-i18n="optObjectDist2">Object Distance (d&#8320;)</option>
                         </select>
                     </div>
                     <div id="mag-inputs">
                         <div class="input-group" id="mag-focal-input">
                             <label data-i18n="calcFocalLenLabel">Focal Length f (mm):</label>
-                            <input type="number" id="mag-focal" placeholder="e.g., 50" step="any">
+                            <input type="number" id="mag-focal" data-i18n-placeholder="phEg50" placeholder="e.g., 50" step="any">
                         </div>
                         <div class="input-group" id="mag-distance-input">
                             <label data-i18n="calcObjDistLabel">Object Distance d&#8320; (mm):</label>
-                            <input type="number" id="mag-distance" placeholder="e.g., 100" step="any">
+                            <input type="number" id="mag-distance" data-i18n-placeholder="phEg100" placeholder="e.g., 100" step="any">
                         </div>
                     </div>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateMagnification()">Calculate</button>
@@ -291,15 +291,15 @@
                     <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcLaserSafetyNote">Calculate the minimum optical density (OD) required for laser safety eyewear.</p>
                     <div class="input-group">
                         <label data-i18n="calcLaserPowerLabel">Laser Power (mW):</label>
-                        <input type="number" id="laser-power" placeholder="e.g., 500" step="any">
+                        <input type="number" id="laser-power" data-i18n-placeholder="phEg500" placeholder="e.g., 500" step="any">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcBeamDiamLabel">Beam Diameter (mm):</label>
-                        <input type="number" id="beam-diameter" placeholder="e.g., 2" step="any" value="2">
+                        <input type="number" id="beam-diameter" data-i18n-placeholder="phEg2" data-i18n-placeholder="phEg2b" placeholder="e.g., 2" step="any" value="2">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcMPELabel">Max Permissible Exposure MPE (mW/cm&sup2;):</label>
-                        <input type="number" id="mpe-value" placeholder="e.g., 1" step="any" value="1">
+                        <input type="number" id="mpe-value" data-i18n-placeholder="phEg1" placeholder="e.g., 1" step="any" value="1">
                     </div>
                     <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcLaserSafetyFormula">Formula: OD = log<sub>10</sub>(Irradiance / MPE), where Irradiance = Power / Beam Area</p>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateLaserSafety()">Calculate</button>
@@ -314,15 +314,15 @@
                     <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcBeamDivNote">Calculate far-field divergence angle for Gaussian laser beams.</p>
                     <div class="input-group">
                         <label data-i18n="calcWavelengthLabel">Wavelength &lambda; (nm):</label>
-                        <input type="number" id="div-wavelength" placeholder="e.g., 1064" step="any" value="1064">
+                        <input type="number" id="div-wavelength" data-i18n-placeholder="phEg1064" placeholder="e.g., 1064" step="any" value="1064">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcInputBeamDiamLabel">Input Beam Diameter D (mm):</label>
-                        <input type="number" id="div-beam-diam" placeholder="e.g., 5" step="any" value="5">
+                        <input type="number" id="div-beam-diam" data-i18n-placeholder="phEg5" placeholder="e.g., 5" step="any" value="5">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcDistanceLabel">Distance for Spot Size (m):</label>
-                        <input type="number" id="div-distance" placeholder="e.g., 10" step="any" value="10">
+                        <input type="number" id="div-distance" data-i18n-placeholder="phEg10" placeholder="e.g., 10" step="any" value="10">
                     </div>
                     <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcBeamDivFormula">Formula: &theta; = 4&lambda; / (&pi;&times;D) for Gaussian beams</p>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateBeamDivergence()">Calculate</button>
@@ -337,32 +337,32 @@
                     <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcFresnelNote">Calculate reflection and transmission at an interface between two optical media.</p>
                     <div class="input-group">
                         <label data-i18n="calcN1Label">Refractive Index n<sub>1</sub> (incident medium):</label>
-                        <input type="number" id="fresnel-n1" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
+                        <input type="number" id="fresnel-n1" data-i18n-placeholder="phAir" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcN2Label">Refractive Index n<sub>2</sub> (transmitting medium):</label>
                         <select id="fresnel-n2-select" onchange="updateFresnelN2()">
-                            <option value="1.4585">Fused Silica (1.4585)</option>
-                            <option value="1.5168" selected>BK7 (1.5168)</option>
-                            <option value="1.4338">CaF2 (1.4338)</option>
-                            <option value="1.7682">Sapphire (1.7682)</option>
-                            <option value="2.4026">ZnSe (2.4026)</option>
-                            <option value="3.4180">Si (3.4180)</option>
-                            <option value="4.0242">Ge (4.0242)</option>
-                            <option value="custom">Custom...</option>
+                            <option value="1.4585" data-i18n="matFusedSilica">Fused Silica (1.4585)</option>
+                            <option value="1.5168" selected data-i18n="matBK7">BK7 (1.5168)</option>
+                            <option value="1.4338" data-i18n="matCaF2">CaF2 (1.4338)</option>
+                            <option value="1.7682" data-i18n="matSapphire">Sapphire (1.7682)</option>
+                            <option value="2.4026" data-i18n="matZnSe">ZnSe (2.4026)</option>
+                            <option value="3.4180" data-i18n="matSi">Si (3.4180)</option>
+                            <option value="4.0242" data-i18n="matGe">Ge (4.0242)</option>
+                            <option value="custom" data-i18n="optCustom">Custom...</option>
                         </select>
-                        <input type="number" id="fresnel-n2" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
+                        <input type="number" id="fresnel-n2" data-i18n-placeholder="phEg15168" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcIncAngleLabel">Angle of Incidence (degrees):</label>
-                        <input type="number" id="fresnel-angle" placeholder="e.g., 0" step="any" value="0" min="0" max="89">
+                        <input type="number" id="fresnel-angle" data-i18n-placeholder="phEg0" placeholder="e.g., 0" step="any" value="0" min="0" max="89">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcSurfacesLabel">Number of Surfaces:</label>
                         <select id="fresnel-surfaces">
-                            <option value="1">1 Surface</option>
-                            <option value="2" selected>2 Surfaces (window/lens)</option>
-                            <option value="4">4 Surfaces</option>
+                            <option value="1" data-i18n="opt1Surface">1 Surface</option>
+                            <option value="2" selected data-i18n="opt2SurfacesWindow">2 Surfaces (window/lens)</option>
+                            <option value="4" data-i18n="opt4Surfaces">4 Surfaces</option>
                         </select>
                     </div>
                     <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcFresnelFormula">Normal incidence: R = ((n<sub>1</sub>-n<sub>2</sub>)/(n<sub>1</sub>+n<sub>2</sub>))&sup2;</p>
@@ -378,25 +378,25 @@
                     <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcSnellNote">Calculate refraction angle using Snell's law: n<sub>1</sub>sin&theta;<sub>1</sub> = n<sub>2</sub>sin&theta;<sub>2</sub></p>
                     <div class="input-group">
                         <label data-i18n="calcSnellN1Label">Refractive Index n<sub>1</sub>:</label>
-                        <input type="number" id="snell-n1" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
+                        <input type="number" id="snell-n1" data-i18n-placeholder="phAir" placeholder="e.g., 1.0 (air)" step="any" value="1.0">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcSnellN2Label">Refractive Index n<sub>2</sub>:</label>
                         <select id="snell-n2-select" onchange="updateSnellN2()">
-                            <option value="1.4585">Fused Silica (1.4585)</option>
-                            <option value="1.5168" selected>BK7 (1.5168)</option>
-                            <option value="1.4338">CaF2 (1.4338)</option>
-                            <option value="1.7682">Sapphire (1.7682)</option>
-                            <option value="2.4026">ZnSe (2.4026)</option>
-                            <option value="3.4180">Si (3.4180)</option>
-                            <option value="4.0242">Ge (4.0242)</option>
-                            <option value="custom">Custom...</option>
+                            <option value="1.4585" data-i18n="matFusedSilica">Fused Silica (1.4585)</option>
+                            <option value="1.5168" selected data-i18n="matBK7">BK7 (1.5168)</option>
+                            <option value="1.4338" data-i18n="matCaF2">CaF2 (1.4338)</option>
+                            <option value="1.7682" data-i18n="matSapphire">Sapphire (1.7682)</option>
+                            <option value="2.4026" data-i18n="matZnSe">ZnSe (2.4026)</option>
+                            <option value="3.4180" data-i18n="matSi">Si (3.4180)</option>
+                            <option value="4.0242" data-i18n="matGe">Ge (4.0242)</option>
+                            <option value="custom" data-i18n="optCustom">Custom...</option>
                         </select>
-                        <input type="number" id="snell-n2" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
+                        <input type="number" id="snell-n2" data-i18n-placeholder="phEg15168" placeholder="e.g., 1.5168" step="any" value="1.5168" style="display:none; margin-top: 8px;">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcSnellAngleLabel">Angle of Incidence &theta;<sub>1</sub> (degrees):</label>
-                        <input type="number" id="snell-angle" placeholder="e.g., 30" step="any" value="30">
+                        <input type="number" id="snell-angle" data-i18n-placeholder="phEg30" placeholder="e.g., 30" step="any" value="30">
                     </div>
                     <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcSnellFormula">Formula: n<sub>1</sub>&times;sin(&theta;<sub>1</sub>) = n<sub>2</sub>&times;sin(&theta;<sub>2</sub>)</p>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateSnell()">Calculate</button>
@@ -411,15 +411,15 @@
                     <p style="color: var(--gray-text); margin-bottom: 20px; font-size: 14px;" data-i18n="calcDiffractionNote">Calculate the Airy disk diameter and spatial resolution limit of an optical system.</p>
                     <div class="input-group">
                         <label data-i18n="calcWavelengthLabel">Wavelength &lambda; (nm):</label>
-                        <input type="number" id="diff-wavelength" placeholder="e.g., 550" step="any" value="550">
+                        <input type="number" id="diff-wavelength" data-i18n-placeholder="phEg550" placeholder="e.g., 550" step="any" value="550">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcFNumberLabel">F-number (f/#):</label>
-                        <input type="number" id="diff-fnumber" placeholder="e.g., 2" step="any" value="2">
+                        <input type="number" id="diff-fnumber" data-i18n-placeholder="phEg2" data-i18n-placeholder="phEg2b" placeholder="e.g., 2" step="any" value="2">
                     </div>
                     <div class="input-group">
                         <label data-i18n="calcMagnificationLabel">Magnification M:</label>
-                        <input type="number" id="diff-mag" placeholder="e.g., 1" step="any" value="1">
+                        <input type="number" id="diff-mag" data-i18n-placeholder="phEg1" placeholder="e.g., 1" step="any" value="1">
                     </div>
                     <p style="color: var(--gray-text); margin-bottom: 15px; font-size: 13px;" data-i18n="calcDiffractionFormula">Airy disk diameter = 2.44 &times; &lambda; &times; f/# &times; (1+M)</p>
                     <button class="calc-btn" data-i18n="calcBtn" onclick="calculateDiffraction()">Calculate</button>
@@ -440,23 +440,23 @@
     <!-- More Free Tools -->
     <section style="padding: 50px 0; background: #f8fafc;">
         <div class="container" style="text-align: center;">
-            <h2 style="color: #1e293b; margin-bottom: 12px; font-size: 28px;">More Free Optical Tools</h2>
-            <p style="color: #64748b; margin-bottom: 32px; font-size: 16px;">Go beyond calculations — simulate, compare, and select optical components</p>
+            <h2 style="color: #1e293b; margin-bottom: 12px; font-size: 28px;" data-i18n="moreToolsTitle">More Free Optical Tools</h2>
+            <p style="color: #64748b; margin-bottom: 32px; font-size: 16px;" data-i18n="moreToolsDesc">Go beyond calculations — simulate, compare, and select optical components</p>
             <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 900px; margin: 0 auto;">
                 <a href="/ray-tracer.html" style="background: white; border-radius: 12px; padding: 24px; text-decoration: none; border: 1px solid #e2e8f0; display: block; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(59,130,246,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="font-size: 36px; margin-bottom: 12px;">🔬</div>
-                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;">Ray Tracer Simulator</h3>
-                    <p style="color: #64748b; font-size: 13px;">Simulate lenses, mirrors & prisms with real-time ray tracing</p>
+                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;" data-i18n="toolRayTracerTitle">Ray Tracer Simulator</h3>
+                    <p style="color: #64748b; font-size: 13px;" data-i18n="toolRayTracerDesc">Simulate lenses, mirrors & prisms with real-time ray tracing</p>
                 </a>
                 <a href="/product-advisor.html" style="background: white; border-radius: 12px; padding: 24px; text-decoration: none; border: 1px solid #e2e8f0; display: block; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(59,130,246,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="font-size: 36px; margin-bottom: 12px;">🎯</div>
-                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;">Product Selector</h3>
-                    <p style="color: #64748b; font-size: 13px;">Get component recommendations based on your application</p>
+                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;" data-i18n="toolSelectorTitle">Product Selector</h3>
+                    <p style="color: #64748b; font-size: 13px;" data-i18n="toolSelectorDesc">Get component recommendations based on your application</p>
                 </a>
                 <a href="/materials.html" style="background: white; border-radius: 12px; padding: 24px; text-decoration: none; border: 1px solid #e2e8f0; display: block; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 16px rgba(59,130,246,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
                     <div style="font-size: 36px; margin-bottom: 12px;">📊</div>
-                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;">Materials Database</h3>
-                    <p style="color: #64748b; font-size: 13px;">Compare BK7, Fused Silica, ZnSe, Ge & more optical materials</p>
+                    <h3 style="color: #1e293b; margin-bottom: 6px; font-size: 16px;" data-i18n="toolMaterialsTitle">Materials Database</h3>
+                    <p style="color: #64748b; font-size: 13px;" data-i18n="toolMaterialsDesc">Compare BK7, Fused Silica, ZnSe, Ge & more optical materials</p>
                 </a>
             </div>
         </div>
@@ -668,7 +668,7 @@
             var od = Math.log10(irradiance / mpe);
             
             var resultText = 'OD ' + od.toFixed(1) + '+';
-            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">Irradiance: ' + irradiance.toFixed(1) + ' mW/cm&sup2;</div>';
+            resultText += '<div style="font-size:14px;color:#1d4ed8;margin-top:8px;">' + calcLang('Irradiance', '辐照度') + ': ' + irradiance.toFixed(1) + ' mW/cm&sup2;</div>';
             
             document.getElementById('laser-safety-result-value').innerHTML = resultText;
             document.getElementById('laser-safety-result').style.display = 'block';
@@ -867,8 +867,8 @@
     </script>
     <script src="/js/chatbot.js"></script>
     <div style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-        <h2>Free Optical Calculators for Engineers</h2>
-        <p>PhotonEdge provides free online optical calculators for optical engineers and researchers. Our tools include focal length calculator, optical magnification calculator, laser safety OD calculator, beam divergence calculator, Fresnel reflection calculator, Snell's law calculator, and diffraction limit calculator. As a leading optical components manufacturer and custom optics provider, PhotonEdge helps engineers select precision lenses, mirrors, prisms, and optical coatings. Whether you need BK7 plano-convex lenses, fused silica windows, or custom optical solutions, our calculators help you make informed decisions. Precision lenses supplier PhotonEdge serves 500+ global clients with high-quality optical components.</p>
+        <h2 data-i18n="calcPageHero">Free Optical Calculators for Engineers</h2>
+        <p data-i18n="calcPageHeroDesc">PhotonEdge provides free online optical calculators for optical engineers and researchers. Our tools include focal length calculator, optical magnification calculator, laser safety OD calculator, beam divergence calculator, Fresnel reflection calculator, Snell's law calculator, and diffraction limit calculator. As a leading optical components manufacturer and custom optics provider, PhotonEdge helps engineers select precision lenses, mirrors, prisms, and optical coatings. Whether you need BK7 plano-convex lenses, fused silica windows, or custom optical solutions, our calculators help you make informed decisions. Precision lenses supplier PhotonEdge serves 500+ global clients with high-quality optical components.</p>
     </div>
 </body>
 </html>
