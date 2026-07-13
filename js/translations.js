@@ -18,6 +18,10 @@ en: {
         navDownloads: "Downloads",
         navBlog: "Blog",
         navCaseStudies: "Case Studies",
+        menuCalculators: "Optical Calculators",
+        menuRayTracer: "Ray Tracer Simulator",
+        menuMaterials: "Materials Database",
+        menuSelector: "Product Selector",
         caseStudiesTitle: "Case Studies",
         caseStudiesSubtitle: "See how our precision optical components solve real-world challenges across industries",
         caseIndustryMedical: "Medical Devices",
@@ -1604,6 +1608,10 @@ en: {
     "caseStudiesSubtitle": "了解我们的精密光学元件如何跨行业解决现实挑战",
     "caseStudiesTitle": "成功案例",
     "navCaseStudies": "成功案例",
+"menuCalculators": "光学计算器",
+"menuRayTracer": "光线追踪模拟器",
+"menuMaterials": "材料数据库",
+"menuSelector": "产品选型助手",
 
     // === 联系与表单 ===
     "contactMe": "联系我",
