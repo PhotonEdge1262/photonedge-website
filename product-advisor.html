@@ -195,30 +195,30 @@
     <section class="advisor-page">
         <div class="container">
             <div class="advisor-header">
-                <h1>Smart Product Advisor</h1>
-                <p>Find the perfect optical components for your project in 4 simple steps</p>
+                <h1 data-i18n="advisorTitle">Smart Product Advisor</h1>
+                <p data-i18n="advisorSubtitle">Find the perfect optical components for your project in 4 simple steps</p>
             </div>
 
             <!-- Progress Bar -->
             <div class="progress-bar" id="progressBar">
                 <div class="progress-step">
                     <div class="step-circle active" id="stepCircle1">1</div>
-                    <span class="step-label active" id="stepLabel1">Application</span>
+                    <span class="step-label active" id="stepLabel1" data-i18n="advisorStep1">Application</span>
                 </div>
                 <div class="step-connector" id="connector1"></div>
                 <div class="progress-step">
                     <div class="step-circle" id="stepCircle2">2</div>
-                    <span class="step-label" id="stepLabel2">Wavelength</span>
+                    <span class="step-label" id="stepLabel2" data-i18n="advisorStep2">Wavelength</span>
                 </div>
                 <div class="step-connector" id="connector2"></div>
                 <div class="progress-step">
                     <div class="step-circle" id="stepCircle3">3</div>
-                    <span class="step-label" id="stepLabel3">Components</span>
+                    <span class="step-label" id="stepLabel3" data-i18n="advisorStep3">Components</span>
                 </div>
                 <div class="step-connector" id="connector3"></div>
                 <div class="progress-step">
                     <div class="step-circle" id="stepCircle4">4</div>
-                    <span class="step-label" id="stepLabel4">Results</span>
+                    <span class="step-label" id="stepLabel4" data-i18n="advisorStep4">Results</span>
                 </div>
             </div>
 
@@ -227,34 +227,34 @@
 
                 <!-- Step 1: Application Area -->
                 <div class="step-panel active" id="step1">
-                    <h2 class="step-title">Select Your Application</h2>
-                    <p class="step-subtitle">Choose the primary application area for your optical system</p>
+                    <h2 class="step-title" data-i18n="advisorSelectApp">Select Your Application</h2>
+                    <p class="step-subtitle" data-i18n="advisorSelectAppDesc">Choose the primary application area for your optical system</p>
                     <div class="options-grid" id="appOptions"></div>
                     <div class="step-nav">
-                        <button class="btn-advisor btn-next" id="btn1Next" disabled onclick="goToStep(2)">Next: Wavelength &rarr;</button>
+                        <button class="btn-advisor btn-next" id="btn1Next" disabled onclick="goToStep(2)" data-i18n="advisorNextWave">Next: Wavelength &rarr;</button>
                     </div>
                 </div>
 
                 <!-- Step 2: Wavelength -->
                 <div class="step-panel" id="step2">
-                    <h2 class="step-title">Select Working Wavelength</h2>
-                    <p class="step-subtitle">Choose the wavelength range of your optical system</p>
+                    <h2 class="step-title" data-i18n="advisorSelectWave">Select Working Wavelength</h2>
+                    <p class="step-subtitle" data-i18n="advisorSelectWaveDesc">Choose the wavelength range of your optical system</p>
                     <div class="options-grid" id="waveOptions"></div>
                     <div class="step-nav">
-                        <button class="btn-advisor btn-back" onclick="goToStep(1)">&larr; Back</button>
-                        <button class="btn-advisor btn-next" id="btn2Next" disabled onclick="goToStep(3)">Next: Components &rarr;</button>
+                        <button class="btn-advisor btn-back" onclick="goToStep(1)" data-i18n="advisorBack">&larr; Back</button>
+                        <button class="btn-advisor btn-next" id="btn2Next" disabled onclick="goToStep(3)" data-i18n="advisorNextComp">Next: Components &rarr;</button>
                     </div>
                 </div>
 
                 <!-- Step 3: Component Type -->
                 <div class="step-panel" id="step3">
-                    <h2 class="step-title">Select Component Types</h2>
-                    <p class="step-subtitle">We recommend components based on your selections. You can also customize.</p>
-                    <p class="multiselect-hint">&#10003; Multi-select: Choose one or more component types</p>
+                    <h2 class="step-title" data-i18n="advisorSelectComp">Select Component Types</h2>
+                    <p class="step-subtitle" data-i18n="advisorSelectCompDesc">We recommend components based on your selections. You can also customize.</p>
+                    <p class="multiselect-hint" data-i18n="advisorMultiSelect">&#10003; Multi-select: Choose one or more component types</p>
                     <div class="options-grid" id="compOptions"></div>
                     <div class="step-nav">
-                        <button class="btn-advisor btn-back" onclick="goToStep(2)">&larr; Back</button>
-                        <button class="btn-advisor btn-next" id="btn3Next" disabled onclick="goToStep(4)">Get Recommendations &rarr;</button>
+                        <button class="btn-advisor btn-back" onclick="goToStep(2)" data-i18n="advisorBack">&larr; Back</button>
+                        <button class="btn-advisor btn-next" id="btn3Next" disabled onclick="goToStep(4)" data-i18n="advisorGetRec">Get Recommendations &rarr;</button>
                     </div>
                 </div>
 
@@ -262,8 +262,8 @@
                 <div class="step-panel" id="step4">
                     <div class="results-section" id="resultsSection"></div>
                     <div class="step-nav">
-                        <button class="btn-advisor btn-back" onclick="goToStep(3)">&larr; Modify Selections</button>
-                        <button class="btn-advisor btn-restart" onclick="restartAdvisor()">&#8634; Start Over</button>
+                        <button class="btn-advisor btn-back" onclick="goToStep(3)" data-i18n="advisorModify">&larr; Modify Selections</button>
+                        <button class="btn-advisor btn-restart" onclick="restartAdvisor()" data-i18n="advisorRestart">&#8634; Start Over</button>
                     </div>
                 </div>
 
@@ -356,6 +356,35 @@
         { id: 'waveplates', icon: '\uD83C\uDF00', title: 'Wave Plates', desc: 'Multi-order, zero-order, dual-wavelength', link: '/products.html?category=Optical%20Wave%20Plates' },
         { id: 'polarizers', icon: '\u2195\uFE0F', title: 'Polarizers', desc: 'Linear, circular, Glan prisms', link: '/products.html?category=Optical%20Polarizers' }
     ];
+
+    // ===== Localized Text Helper =====
+    function getAdvisorTexts() {
+        var lang = (typeof getCurrentLang === 'function') ? getCurrentLang() : 'en';
+        var tObj = (typeof translations !== 'undefined' && translations[lang]) ? translations[lang] : {};
+        
+        var apps = [
+            { id: 'laser', icon: '\uD83D\uDD2C', title: tObj.advAppLaser || 'Laser Systems', desc: tObj.advAppLaserDesc || 'Industrial, scientific & medical lasers' },
+            { id: 'medical', icon: '\u2764\uFE0F', title: tObj.advAppMedical || 'Medical Devices', desc: tObj.advAppMedicalDesc || 'Ophthalmic, endoscopic & diagnostic' },
+            { id: 'telecom', icon: '\uD83D\uDCE1', title: tObj.advAppTelecom || 'Telecommunications', desc: tObj.advAppTelecomDesc || 'Fiber optics & signal processing' },
+            { id: 'research', icon: '\uD83D\uDCDA', title: tObj.advAppResearch || 'Research & Lab', desc: tObj.advAppResearchDesc || 'Spectroscopy, microscopy & more' },
+            { id: 'defense', icon: '\u2694\uFE0F', title: tObj.advAppDefense || 'Defense & Aerospace', desc: tObj.advAppDefenseDesc || 'Military & space applications' },
+            { id: 'semiconductor', icon: '\uD83D\uDCBB', title: tObj.advAppSemiconductor || 'Semiconductor', desc: tObj.advAppSemiconductorDesc || 'Inspection & lithography optics' },
+            { id: 'industrial', icon: '\uD83C\uDFED', title: tObj.advAppIndustrial || 'Industrial Metrology', desc: tObj.advAppIndustrialDesc || 'Measurement & quality control' },
+            { id: 'imaging', icon: '\uD83D\uDCF7', title: tObj.advAppImaging || 'Imaging Systems', desc: tObj.advAppImagingDesc || 'Camera, display & vision systems' }
+        ];
+        
+        var waves = [
+            { id: 'uv', icon: '\uD83D\uDFE3', title: tObj.advWaveUV || 'UV', desc: tObj.advWaveUVDesc || '180-400nm' },
+            { id: 'visible', icon: '\uD83C\uDF08', title: tObj.advWaveVisible || 'Visible', desc: tObj.advWaveVisibleDesc || '400-700nm' },
+            { id: 'nir', icon: '\uD83D\uDD34', title: tObj.advWaveNIR || 'Near-IR', desc: tObj.advWaveNIRDesc || '700-1550nm' },
+            { id: 'swir', icon: '\uD83D\uDFE0', title: tObj.advWaveSWIR || 'SWIR', desc: tObj.advWaveSWIRDesc || '1.5-3\u03BCm' },
+            { id: 'mwir', icon: '\uD83D\uDFE1', title: tObj.advWaveMWIR || 'MWIR', desc: tObj.advWaveMWIRDesc || '3-5\u03BCm' },
+            { id: 'lwir', icon: '\uD83D\uDD25', title: tObj.advWaveLWIR || 'LWIR / CO\u2082 Laser', desc: tObj.advWaveLWIRDesc || '8-14\u03BCm' },
+            { id: 'broadband', icon: '\u26AA', title: tObj.advWaveBroad || 'Broadband', desc: tObj.advWaveBroadDesc || 'Multi-wavelength' }
+        ];
+        
+        return { apps: apps, waves: waves };
+    }
 
     // ===== Recommendation Logic =====
     // Key: wavelength + "_" + application => recommended component IDs
@@ -644,10 +673,11 @@
     }
 
     function renderApplications() {
+        var advisorData = getAdvisorTexts();
         var container = document.getElementById('appOptions');
         var html = '';
-        for (var i = 0; i < applications.length; i++) {
-            var app = applications[i];
+        for (var i = 0; i < advisorData.apps.length; i++) {
+            var app = advisorData.apps[i];
             html += '<div class="option-card" data-id="' + app.id + '" onclick="selectApplication(\'' + app.id + '\')">';
             html += '<span class="option-icon">' + app.icon + '</span>';
             html += '<div class="option-title">' + app.title + '</div>';
@@ -658,10 +688,11 @@
     }
 
     function renderWavelengths() {
+        var advisorData = getAdvisorTexts();
         var container = document.getElementById('waveOptions');
         var html = '';
-        for (var i = 0; i < wavelengths.length; i++) {
-            var wave = wavelengths[i];
+        for (var i = 0; i < advisorData.waves.length; i++) {
+            var wave = advisorData.waves[i];
             html += '<div class="option-card" data-id="' + wave.id + '" onclick="selectWavelength(\'' + wave.id + '\')">';
             html += '<span class="option-icon">' + wave.icon + '</span>';
             html += '<div class="option-title">' + wave.title + '</div>';
