@@ -313,14 +313,14 @@ a{text-decoration:none;color:inherit;}
 <h4>Contact</h4>
 <a href="/contact.html">Request Quote</a>
 <a href="/about.html">About Us</a>
-<a href="mailto:info@photonedge.com">info@photonedge.com</a>
+<a href="/cdn-cgi/l/email-protection#acc5c2cac3ecdcc4c3d8c3c2c9c8cbc982cfc3c1"><span class="__cf_email__" data-cfemail="2940474f46695941465d46474c4d4e4c074a4644">[email&#160;protected]</span></a>
 </div>
 </div>
 <div class="footer-bottom">&copy; 2024 PhotonEdge Precision Optics. All rights reserved.</div>
 </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var materials = [
   {
     id:"bk7",name:"BK7 (K9)",nameZh:"BK7 \u5149\u5b66\u73bb\u7483",nd:1.5168,vd:64.17,
@@ -926,6 +926,22 @@ function toggleMobileMenu() {
         navList.classList.toggle('active');
     }
 }
+</script>
+
+<script>
+// --- i18n initialization ---
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof applyTranslations === 'function') {
+        applyTranslations();
+    }
+    var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+            btn.classList.add('active');
+        }
+    });
+});
 </script>
 </body>
 </html>

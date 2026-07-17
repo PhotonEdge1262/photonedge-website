@@ -298,7 +298,7 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection#04776568617744746c6b706b6a616063616b74706d67772a676b69"><span class="__cf_email__" data-cfemail="4a392b262f390a3a22253e25242f2e2d2f253a3e23293964292527">[email&#160;protected]</span></a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -318,7 +318,7 @@
         </svg>
     </a>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     /* =============================================
        PhotonEdge Smart Product Advisor
        ES5 Compatible - No let/const/arrow/template literals
@@ -1056,6 +1056,16 @@
     // ===== Initialize on DOM ready =====
     document.addEventListener('DOMContentLoaded', function() {
         init();
+        if (typeof applyTranslations === 'function') {
+            applyTranslations();
+        }
+        var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+        document.querySelectorAll('.lang-btn').forEach(function(btn) {
+            btn.classList.remove('active');
+            if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+                btn.classList.add('active');
+            }
+        });
     });
     </script>
 </body>

@@ -226,7 +226,7 @@
                 <div class="footer-col">
                     <h4 data-i18n="contactInfo">Contact</h4>
                     <ul>
-                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                        <li>Email: <a href="/cdn-cgi/l/email-protection#582b39343d2b182830372c37363d3c3f3d37282c313b2b763b3735"><span class="__cf_email__" data-cfemail="88fbe9e4edfbc8f8e0e7fce7e6edecefede7f8fce1ebfba6ebe7e5">[email&#160;protected]</span></a></li>
                         <li>Phone: +86-13693009175</li>
                         <li>WhatsApp: +86-13693009175</li>
                         <li>Contact: Ms. Lin</li>
@@ -246,7 +246,7 @@
         </a>
     </div>
 
-    <script src="/js/translations.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/js/translations.js"></script>
     <script src="/js/blog-data.js"></script>
     <script src="/js/products-data.js"></script>
     <script src="/js/search.js"></script>
@@ -258,6 +258,16 @@
             initFilterButtons();
             initSearch();
             renderBlogPosts();
+            if (typeof applyTranslations === 'function') {
+                applyTranslations();
+            }
+            var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+            document.querySelectorAll('.lang-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+                if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+                    btn.classList.add('active');
+                }
+            });
         });
 
         function initFilterButtons() {
