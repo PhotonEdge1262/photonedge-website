@@ -265,7 +265,6 @@
                 
                 updateCategoryFilter(); filterProducts();
             } catch(e) {
-                console.error('Product page init error:', e);
                 var grid = document.getElementById('productsGrid');
                 if (grid) grid.innerHTML = '<div class="no-products"><h3 data-i18n="errorLoadingProducts">Error loading products. Please refresh the page.</h3></div>';
             }
