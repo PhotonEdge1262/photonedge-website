@@ -482,5 +482,21 @@
         });
     </script>
     <script src="/js/chatbot.js"></script>
+
+<script>
+// --- i18n initialization ---
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof applyTranslations === 'function') {
+        applyTranslations();
+    }
+    var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+    document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.remove('active');
+        if (btn.textContent.toLowerCase() === (lang === 'en' ? 'en' : 'zh')) {
+            btn.classList.add('active');
+        }
+    });
+});
+</script>
 </body>
 </html>
