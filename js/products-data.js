@@ -13184,5 +13184,157 @@ var PRODUCTS = [
       }
     ],
     "diagram": "images/diagrams/ltoptic-dichroic-mirrors.png"
+  },
+  {
+    "id": 83,
+    "name": "360° Rotating Waveplate/Polarizer Mount",
+    "nameZh": "360°旋转波片/偏振片支架",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "360-degree rotating mount with engraved scale for precision azimuth adjustment of waveplates and polarizers. Features knurled locking ring for secure positioning. Available for Ø25.4/30/40/50.8mm optics with M4 mounting thread.",
+    "descriptionZh": "360度旋转支架，带刻度环，用于波片和偏振片的精密方位角调整。带滚花锁定环，可牢固固定位置。适配Ø25.4/30/40/50.8mm光学元件，M4安装螺纹。",
+    "image": "images/products/optomechanics/rotating-waveplate-mount.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum",
+      "holdingDiameter": "Ø25.4 / 30 / 40 / 50.8mm",
+      "rotationRange": "360°",
+      "scaleGraduation": "Engraved 0-360°",
+      "mountingThread": "M4",
+      "surfaceFinish": "Black Anodized"
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $28 - $55",
+    "priceNoteZh": "参考价：¥196 - ¥385",
+    "slug": "rotating-waveplate-mount",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-RWM-25.4",
+        "holdingDiameter": "25.4mm",
+        "outerDiameter": "40mm",
+        "height": "24mm",
+        "weight": "~50g"
+      },
+      {
+        "partNumber": "HDG-RWM-30",
+        "holdingDiameter": "30mm",
+        "outerDiameter": "45mm",
+        "height": "28mm",
+        "weight": "~65g"
+      },
+      {
+        "partNumber": "HDG-RWM-40",
+        "holdingDiameter": "40mm",
+        "outerDiameter": "53mm",
+        "height": "38.1mm",
+        "weight": "~95g"
+      },
+      {
+        "partNumber": "HDG-RWM-50.8",
+        "holdingDiameter": "50.8mm",
+        "outerDiameter": "64mm",
+        "height": "48mm",
+        "weight": "~140g"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "3-Claw Concentric Mirror Frame",
+    "nameZh": "三爪同心镜框（同轴透镜调整架）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "3-claw concentric mirror frame for coaxial lens/mirror adjustment. Three-point claw design ensures centered alignment of optical elements. Adjustable claws accommodate various optic diameters. Anodized aluminum construction with M6 mounting thread.",
+    "descriptionZh": "三爪同心镜框，用于同轴透镜/反射镜调整。三点爪式设计确保光学元件居中对准。可调爪适应不同口径光学元件。阳极氧化铝材质，M6安装螺纹。",
+    "image": "images/products/optomechanics/concentric-mirror-frame.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum",
+      "clawDesign": "3-Point Adjustable",
+      "opticRange": "5-150mm diameter",
+      "mountingThread": "M6",
+      "surfaceFinish": "Black Anodized",
+      "alignmentType": "Coaxial/Concentric"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $120",
+    "priceNoteZh": "参考价：¥245 - ¥840",
+    "slug": "concentric-mirror-frame",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-CMF-50",
+        "opticRange": "5-50mm",
+        "outerDiameter": "70mm",
+        "height": "90mm",
+        "weight": "~150g"
+      },
+      {
+        "partNumber": "HDG-CMF-75",
+        "opticRange": "5-75mm",
+        "outerDiameter": "102mm",
+        "height": "126mm",
+        "weight": "~200g"
+      },
+      {
+        "partNumber": "HDG-CMF-120",
+        "opticRange": "5-120mm",
+        "outerDiameter": "140mm",
+        "height": "164mm",
+        "weight": "~550g"
+      },
+      {
+        "partNumber": "HDG-CMF-150",
+        "opticRange": "5-150mm",
+        "outerDiameter": "190mm",
+        "height": "204mm",
+        "weight": "~1.0kg"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Lens Retaining Cell Mount with PTFE Spacer",
+    "nameZh": "透镜固定座（PTFE保护垫圈）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "Precision lens retaining cell mount with PTFE protective spacer ring. The PTFE spacer provides gentle, stress-free contact with the optic surface, preventing damage and deformation. Available for 12.7mm to 100mm optics with standard SM-thread compatibility.",
+    "descriptionZh": "精密透镜固定座，带PTFE保护垫圈。PTFE垫圈与光学表面温和接触，无应力，防止损伤和变形。适配12.7mm至100mm光学元件，兼容标准SM螺纹。",
+    "image": "images/products/optomechanics/lens-retaining-cell.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum + PTFE",
+      "spacerMaterial": "PTFE (Teflon)",
+      "holdingDiameter": "12.7 / 25.4 / 50.8mm (custom available)",
+      "threadType": "M6 mounting",
+      "surfaceFinish": "Black Anodized",
+      "features": "Stress-free optic retention"
+    },
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $15 - $45",
+    "priceNoteZh": "参考价：¥105 - ¥315",
+    "slug": "lens-retaining-cell",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-LRC-12.7",
+        "holdingDiameter": "12.7mm",
+        "outerDiameter": "17mm",
+        "height": "8mm",
+        "weight": "~8g"
+      },
+      {
+        "partNumber": "HDG-LRC-25.4",
+        "holdingDiameter": "25.4mm",
+        "outerDiameter": "30mm",
+        "height": "14mm",
+        "weight": "~22g"
+      },
+      {
+        "partNumber": "HDG-LRC-50.8",
+        "holdingDiameter": "50.8mm",
+        "outerDiameter": "55mm",
+        "height": "21.5mm",
+        "weight": "~50g"
+      }
+    ]
   }
 ];
