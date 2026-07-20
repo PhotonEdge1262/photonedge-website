@@ -240,6 +240,7 @@
 <script>
 // Blog article language switching
 document.addEventListener('DOMContentLoaded', function() {
+    if (typeof applyTranslations === 'function') applyTranslations();
     var lang = getCurrentLanguage();
     updateArticleLang(lang);
 });

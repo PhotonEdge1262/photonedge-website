@@ -369,6 +369,7 @@
 <script>
 // Blog article language switching (enhanced for full content)
 document.addEventListener('DOMContentLoaded', function() {
+    if (typeof applyTranslations === 'function') applyTranslations();
     var lang = getCurrentLanguage();
     updateArticleMetaLang(lang);
 });
