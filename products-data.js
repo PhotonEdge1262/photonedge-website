@@ -1928,7 +1928,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "UV fused silica plano-convex lenses offer high transmittance in the 195nm-2100nm wavelength range. The ideal choice for UV band applications. Custom coating designs available.",
-    "descriptionZh": "紫外融石英透镜在195nm-2100nm波段范围有较高的透过率，如需用在紫外波段的透镜，紫外融石英透镜是较好的选择。支持定制镀膜。",
+    "descriptionZh": "采用JGS1/JGS2紫外级熔融石英材料，在195-2100nm波段具有优异透过率。适用于半导体光刻、紫外光谱分析、激光系统等对紫外透过率要求严格的应用场景。面型精度可达λ/10，支持按需定制直径、焦距及增透镀膜。",
     "image": "images/products/optical-lenses/uv-fused-silica-plano-convex.jpg",
     "parameters": {
       "material": "UV Fused Silica(JGS1)",
@@ -5204,7 +5204,7 @@ var PRODUCTS = [
     "category": "Optical Lenses",
     "categoryZh": "光学透镜",
     "description": "UV fused silica ball lenses offer superior transmittance from UV to near-IR (185-2500nm). Ideal for fiber optic coupling, endoscopy, and laser diode collimation. Low thermal expansion coefficient ensures stability in demanding environments.",
-    "descriptionZh": "UV熔融石英球透镜在紫外到近红外波段(185-2500nm)具有卓越的透过率。适用于光纤耦合、内窥镜和激光二极管准直。低热膨胀系数确保在苛刻环境中的稳定性。",
+    "descriptionZh": "采用紫外级熔融石英精制而成，185-2500nm全波段高透过率。广泛应用于光纤通信耦合、医疗内窥镜成像及紫外激光准直。材料热膨胀系数极低（5.5×10⁻⁷/℃），在高温、强辐射等严苛工况下仍保持稳定光学性能。",
     "image": "images/products/optical-lenses/uv-fused-silica-ball-lenses.jpg",
     "parameters": {
       "material": "UV Fused Silica(JGS1)",
@@ -7337,7 +7337,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "High energy laser mirrors feature superior surface quality and flatness for high-power laser applications. High damage threshold dielectric coatings available.",
-    "descriptionZh": "高功率激光反射镜具有优异的表面质量和面型精度，适用于高功率激光应用。提供高损伤阈值介质膜。",
+    "descriptionZh": "专为高功率激光系统设计的反射镜，采用H-K9L基底配合电子束蒸镀介质膜，激光损伤阈值可达15J/cm²@1064nm(10ns)。表面质量20-10划痕dig，面型精度λ/10@632.8nm。适用于工业激光切割、焊接及军用激光设备等高能量密度场景。",
     "image": "images/products/optical-mirrors/high-energy-laser-mirrors.jpg",
     "parameters": {
       "substrate": "BK7",
@@ -8226,7 +8226,7 @@ var PRODUCTS = [
     "category": "Optical Mirrors",
     "categoryZh": "光学反射镜",
     "description": "Protected silver mirrors offer high reflectivity (R>95%) across the visible to near-IR spectrum with a protective overcoat for durability. Excellent choice for broadband applications.",
-    "descriptionZh": "保护银膜反射镜在可见到近红外光谱范围提供高反射率(R>95%)，带有保护层增强耐久性。宽带应用的优秀选择。",
+    "descriptionZh": "在可见至近红外波段（400-2000nm）实现R>95%的高反射率，表面镀有保护膜提升耐磨性和抗氧化能力。相比铝膜反射镜，银膜在长波区域反射优势明显，广泛用于光谱仪、望远镜及宽波段光学系统。支持圆形和方形基底定制。",
     "image": "images/products/optical-mirrors/protected-silver-mirrors.jpg",
     "parameters": {
       "substrate": "BK7",
@@ -8828,7 +8828,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Dove prisms rotate an image by twice the prism rotation angle. When the prism is rotated, the image rotates at twice the rate. Custom coating designs available.",
-    "descriptionZh": "道威棱镜将图像旋转棱镜旋转角度的两倍。当棱镜旋转时，图像以两倍速率旋转。支持定制镀膜。",
+    "descriptionZh": "道威棱镜是一种常用的图像旋转棱镜，当棱镜绕光轴旋转θ角时，出射图像旋转2θ角，可实现精确的图像方位校正。采用K9/BK7或紫外熔融石英材料，面型精度λ/4，适用于激光扫描、目标识别和光学仪器中的图像校正。",
     "image": "images/products/optical-prisms/dove-prisms.png",
     "parameters": {
       "material": "H-K9L(BK7)",
@@ -8941,7 +8941,7 @@ var PRODUCTS = [
     "category": "Optical Prisms",
     "categoryZh": "光学棱镜",
     "description": "Roof prisms combine the function of a right angle prism with a roof surface, reversing the image left-to-right while deviating the beam by 90 degrees. Custom coating designs available.",
-    "descriptionZh": "屋脊棱镜结合了直角棱镜和屋脊面的功能，在将光束偏转90度的同时左右反转图像。支持定制镀膜。",
+    "descriptionZh": "屋脊棱镜在直角棱镜基础上增加了屋脊面结构，可将光束偏转90°并实现图像的左右反转，常用于双筒望远镜、测距仪和光电跟踪系统。采用K9光学玻璃精密加工，波前畸变<λ/4，支持按需定制尺寸及增透/高反镀膜。",
     "image": "images/products/optical-prisms/roof-prisms.jpg",
     "parameters": {
       "material": "H-K9L(BK7)",
@@ -9852,7 +9852,7 @@ var PRODUCTS = [
     "category": "Optical Filters",
     "categoryZh": "光学滤光片",
     "description": "UV transmission visible absorption filters allow ultraviolet light to pass through while absorbing visible light. They are made from special UV-transmitting glass types (ZWB1, ZWB2, ZWB3) and are commonly used in UV imaging, fluorescence analysis, and spectral separation applications.",
-    "descriptionZh": "这种滤光片可让紫外透过，可见吸收。采用ZWB1、ZWB2、ZWB3等紫外透射玻璃，常用于紫外成像、荧光分析和光谱分离等应用。",
+    "descriptionZh": "采用国产ZWB系列紫外透射玻璃（ZBW3/ZBW4等），可有效透过紫外光并吸收可见光波段，实现高对比度紫外成像。广泛应用于紫外荧光检测、刑侦取证、生物分析和光谱分光等领域。支持按波长范围定制截止特性。",
     "image": "images/products/optical-filters/uv-transmission-filters.jpg",
     "parameters": {
       "material": "UV Transmitting Glass (ZWB1/ZWB2/ZWB3)",
@@ -12314,7 +12314,7 @@ var PRODUCTS = [
     "category": "Optical Polarizers",
     "categoryZh": "光学偏振片",
     "description": "Glan Taylor prisms are air-spaced polarizing prisms made from calcite. They provide high extinction ratio polarization with excellent wavefront quality for laser and analytical applications.",
-    "descriptionZh": "格兰泰勒棱镜是空气隙偏振棱镜，由方解石制成。提供高消光比偏振和优异的波前质量，用于激光和分析应用。",
+    "descriptionZh": "格兰-泰勒棱镜采用天然方解石晶体精密加工，空气隙结构避免了胶合材料的吸收限制，可在更宽光谱范围内工作。消光比可达10⁻⁵以上，透过波前畸变极小，是高功率激光偏振控制、拉曼光谱和椭圆偏振测量的理想选择。",
     "image": "images/products/optical-polarizers/glan-taylor-prisms.jpg",
     "parameters": {
       "material": "Calcite",
@@ -13184,5 +13184,157 @@ var PRODUCTS = [
       }
     ],
     "diagram": "images/diagrams/ltoptic-dichroic-mirrors.png"
+  },
+  {
+    "id": 83,
+    "name": "360° Rotating Waveplate/Polarizer Mount",
+    "nameZh": "360°旋转波片/偏振片支架",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "360-degree rotating mount with engraved scale for precision azimuth adjustment of waveplates and polarizers. Features knurled locking ring for secure positioning. Available for Ø25.4/30/40/50.8mm optics with M4 mounting thread.",
+    "descriptionZh": "360度旋转支架，带刻度环，用于波片和偏振片的精密方位角调整。带滚花锁定环，可牢固固定位置。适配Ø25.4/30/40/50.8mm光学元件，M4安装螺纹。",
+    "image": "images/products/optomechanics/rotating-waveplate-mount.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum",
+      "holdingDiameter": "Ø25.4 / 30 / 40 / 50.8mm",
+      "rotationRange": "360°",
+      "scaleGraduation": "Engraved 0-360°",
+      "mountingThread": "M4",
+      "surfaceFinish": "Black Anodized"
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $28 - $55",
+    "priceNoteZh": "参考价：¥196 - ¥385",
+    "slug": "rotating-waveplate-mount",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-RWM-25.4",
+        "holdingDiameter": "25.4mm",
+        "outerDiameter": "40mm",
+        "height": "24mm",
+        "weight": "~50g"
+      },
+      {
+        "partNumber": "HDG-RWM-30",
+        "holdingDiameter": "30mm",
+        "outerDiameter": "45mm",
+        "height": "28mm",
+        "weight": "~65g"
+      },
+      {
+        "partNumber": "HDG-RWM-40",
+        "holdingDiameter": "40mm",
+        "outerDiameter": "53mm",
+        "height": "38.1mm",
+        "weight": "~95g"
+      },
+      {
+        "partNumber": "HDG-RWM-50.8",
+        "holdingDiameter": "50.8mm",
+        "outerDiameter": "64mm",
+        "height": "48mm",
+        "weight": "~140g"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "3-Claw Concentric Mirror Frame",
+    "nameZh": "三爪同心镜框（同轴透镜调整架）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "3-claw concentric mirror frame for coaxial lens/mirror adjustment. Three-point claw design ensures centered alignment of optical elements. Adjustable claws accommodate various optic diameters. Anodized aluminum construction with M6 mounting thread.",
+    "descriptionZh": "三爪同心镜框，用于同轴透镜/反射镜调整。三点爪式设计确保光学元件居中对准。可调爪适应不同口径光学元件。阳极氧化铝材质，M6安装螺纹。",
+    "image": "images/products/optomechanics/concentric-mirror-frame.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum",
+      "clawDesign": "3-Point Adjustable",
+      "opticRange": "5-150mm diameter",
+      "mountingThread": "M6",
+      "surfaceFinish": "Black Anodized",
+      "alignmentType": "Coaxial/Concentric"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $120",
+    "priceNoteZh": "参考价：¥245 - ¥840",
+    "slug": "concentric-mirror-frame",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-CMF-50",
+        "opticRange": "5-50mm",
+        "outerDiameter": "70mm",
+        "height": "90mm",
+        "weight": "~150g"
+      },
+      {
+        "partNumber": "HDG-CMF-75",
+        "opticRange": "5-75mm",
+        "outerDiameter": "102mm",
+        "height": "126mm",
+        "weight": "~200g"
+      },
+      {
+        "partNumber": "HDG-CMF-120",
+        "opticRange": "5-120mm",
+        "outerDiameter": "140mm",
+        "height": "164mm",
+        "weight": "~550g"
+      },
+      {
+        "partNumber": "HDG-CMF-150",
+        "opticRange": "5-150mm",
+        "outerDiameter": "190mm",
+        "height": "204mm",
+        "weight": "~1.0kg"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Lens Retaining Cell Mount with PTFE Spacer",
+    "nameZh": "透镜固定座（PTFE保护垫圈）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "Precision lens retaining cell mount with PTFE protective spacer ring. The PTFE spacer provides gentle, stress-free contact with the optic surface, preventing damage and deformation. Available for 12.7mm to 100mm optics with standard SM-thread compatibility.",
+    "descriptionZh": "精密透镜固定座，带PTFE保护垫圈。PTFE垫圈与光学表面温和接触，无应力，防止损伤和变形。适配12.7mm至100mm光学元件，兼容标准SM螺纹。",
+    "image": "images/products/optomechanics/lens-retaining-cell.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum + PTFE",
+      "spacerMaterial": "PTFE (Teflon)",
+      "holdingDiameter": "12.7 / 25.4 / 50.8mm (custom available)",
+      "threadType": "M6 mounting",
+      "surfaceFinish": "Black Anodized",
+      "features": "Stress-free optic retention"
+    },
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $15 - $45",
+    "priceNoteZh": "参考价：¥105 - ¥315",
+    "slug": "lens-retaining-cell",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-LRC-12.7",
+        "holdingDiameter": "12.7mm",
+        "outerDiameter": "17mm",
+        "height": "8mm",
+        "weight": "~8g"
+      },
+      {
+        "partNumber": "HDG-LRC-25.4",
+        "holdingDiameter": "25.4mm",
+        "outerDiameter": "30mm",
+        "height": "14mm",
+        "weight": "~22g"
+      },
+      {
+        "partNumber": "HDG-LRC-50.8",
+        "holdingDiameter": "50.8mm",
+        "outerDiameter": "55mm",
+        "height": "21.5mm",
+        "weight": "~50g"
+      }
+    ]
   }
 ];
