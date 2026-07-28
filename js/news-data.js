@@ -97,5 +97,16 @@ var NEWS_ARTICLES = [
     "category": "Industry News",
     "date": "2026-04-28",
     "image": "/images/factory/factory_1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "PhotonEdge Achieves ISO 14001 Environmental Management Certification",
+    "titleZh": "恒鼎光获得ISO 14001环境管理体系认证",
+    "slug": "photonedge-achieves-iso-14001-environmental-management-certification",
+    "excerpt": "PhotonEdge has successfully achieved ISO 14001:2015 certification for environmental management systems, reinforcing our commitment to sustainable manufacturing. This certification covers our precision optics production processes, waste management, and energy efficiency programs at our Beijing facility.",
+    "excerptZh": "恒鼎光成功获得ISO 14001:2015环境管理体系认证，进一步彰显我们对可持续制造的承诺。该认证涵盖我们的精密光学生产工艺、废物管理和能效项目，覆盖北京工厂全部生产流程。",
+    "category": "Company News",
+    "date": "2026-07-26",
+    "image": "/images/factory/factory_4.jpg"
   }
 ];
