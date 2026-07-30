@@ -108,5 +108,27 @@ var NEWS_ARTICLES = [
     "category": "Company News",
     "date": "2026-07-26",
     "image": "/images/factory/factory_4.jpg"
+  },
+  {
+    "id": 11,
+    "title": "PhotonEdge Expands Precision Aspheric Lens Production",
+    "titleZh": "恒鼎光扩产高精度非球面透镜生产线",
+    "slug": "photonedge-expands-aspheric-lens-production",
+    "excerpt": "PhotonEdge announces expansion of aspheric lens manufacturing with new CNC precision grinding, advanced polishing, and MRF (magnetorheological finishing) equipment. Production capacity increases 60%, achieving surface form accuracy of lambda/20 PV and surface roughness below 1 nm Ra for semiconductor inspection, medical imaging, and aerospace applications.",
+    "excerptZh": "恒鼎光宣布扩大非球面透镜制造产能，新增CNC精密磨削、先进抛光和磁流变抛光（MRF）设备。产能提升60%，面形精度达lambda/20 PV、表面粗糙度低于1nm Ra，服务于半导体检测、医疗成像和航空航天应用。",
+    "category": "Company News",
+    "date": "2026-07-29",
+    "image": "/images/factory/factory_4.jpg"
+  },
+  {
+    "id": 12,
+    "title": "PhotonEdge Launches Deep UV (DUV) Optical Components Series",
+    "titleZh": "恒鼎光推出深紫外(DUV)光学元件系列",
+    "slug": "photonedge-launches-deep-uv-optical-components",
+    "excerpt": "PhotonEdge introduces a new product line of deep UV optical components covering 190-300nm wavelength range. Materials include high-purity fused silica JGS1, CaF2, and MgF2 with DUV AR coatings achieving over 90% single-surface transmission at 193nm. Applications include semiconductor lithography inspection, UV spectroscopy, and water disinfection.",
+    "excerptZh": "恒鼎光推出深紫外光学元件新产品线，覆盖190-300nm波段。材料包括高纯熔融石英JGS1、CaF2和MgF2，DUV AR镀膜193nm单面透过率超过90%。应用于半导体光刻检测、紫外光谱学和水消毒。",
+    "category": "Company News",
+    "date": "2026-07-29",
+    "image": "/images/factory/factory_1.jpg"
   }
 ];
