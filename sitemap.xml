@@ -774,4 +774,29 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+
+  <url>
+    <loc>https://photonedgeoptics.com/blog/machine-vision-lens-selection-guide/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://photonedgeoptics.com/blog/laser-mirror-selection-guide/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://photonedgeoptics.com/news/photonedge-launches-ar-coating-optimization-service/</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
