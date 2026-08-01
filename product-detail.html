@@ -500,6 +500,36 @@ document.addEventListener('DOMContentLoaded', function() {
             schemaScript.textContent = JSON.stringify(schemaData);
             document.head.appendChild(schemaScript);
 
+            // Add BreadcrumbList Schema
+            var breadcrumbData = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://photonedgeoptics.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Products",
+                        "item": "https://photonedgeoptics.com/products/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": currentProduct.name,
+                        "item": "https://photonedgeoptics.com/products/" + currentProduct.slug + "/"
+                    }
+                ]
+            };
+            var breadcrumbScript = document.createElement('script');
+            breadcrumbScript.type = 'application/ld+json';
+            breadcrumbScript.textContent = JSON.stringify(breadcrumbData);
+            document.head.appendChild(breadcrumbScript);
+
             renderRelatedProducts();
         });
         

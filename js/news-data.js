@@ -130,5 +130,18 @@ var NEWS_ARTICLES = [
     "category": "Company News",
     "date": "2026-07-29",
     "image": "/images/factory/factory_1.jpg"
+  },
+  {
+      "id": 13,
+      "title": "PhotonEdge to Attend LASER World of PHOTONICS 2027",
+      "titleZh": "PhotonEdge将参加2027年慕尼黑光博会",
+      "slug": "photonedge-laser-world-photonics-2027",
+      "url": "/news/photonedge-laser-world-photonics-2027/",
+      "date": "2026-07-31",
+      "image": "/images/news/laser-world-photonics-2027.jpg",
+      "excerpt": "PhotonEdge announces its participation in LASER World of PHOTONICS 2027 in Munich, showcasing latest precision optics innovations and manufacturing capabilities.",
+      "excerptZh": "PhotonEdge宣布将参加2027年慕尼黑国际光博会，展示最新精密光学创新和制造能力。",
+      "content": "PhotonEdge is pleased to announce its participation in LASER World of PHOTONICS 2027, the world's leading trade fair for photonics components, systems, and applications. The event will take place at the Munich Trade Fair Centre in Germany.\n\nAt the exhibition, PhotonEdge will showcase its latest innovations in precision optical components, including advanced aspherical lenses, high-power laser mirrors, UV fused silica optics, and custom optical assemblies. Visitors will have the opportunity to meet with our optical engineering team and discuss their specific requirements for demanding applications in laser systems, medical devices, semiconductor manufacturing, and defense.\n\n\"LASER World of PHOTONICS is the premier platform for connecting with global photonics leaders and demonstrating our commitment to precision and quality,\" said the PhotonEdge management team. \"We look forward to presenting our expanded product portfolio and discussing how our custom optical solutions can address the evolving needs of the industry.\"\n\nThe company will feature live demonstrations of optical testing capabilities and provide detailed consultations on coating specifications for high-energy laser applications. New product launches planned for the show include an expanded range of deep UV optical components and next-generation laser line mirrors with enhanced damage thresholds.\n\nTo schedule a meeting with the PhotonEdge team at the show, please contact us at sales@photonedgeoptics.com or visit our booth details page closer to the event date.",
+      "contentZh": "PhotonEdge欣然宣布将参加2027年慕尼黑国际光博会（LASER World of PHOTONICS 2027），这是全球领先的光子学元器件、系统和应用贸易展会。展会将在德国慕尼黑展览中心举行。\n\n在展会上，PhotonEdge将展示精密光学元件的最新创新成果，包括先进非球面透镜、高功率激光反射镜、UV熔融石英光学元件和定制光学组件。参观者将有机会与我们的光学工程团队面对面交流，讨论激光系统、医疗器械、半导体制造和国防等高要求应用的具体需求。\n\nPhotonEdge管理层表示：\"慕尼黑光博会是与全球光子学行业领袖建立联系、展示我们对精密和质量承诺的顶级平台。我们期待展示扩大的产品组合，并探讨我们的定制光学解决方案如何满足行业不断演进的需求。\"\n\n公司将现场展示光学测试能力，并提供高能激光应用镀膜规格的详细咨询。计划在展会上推出的新产品包括扩展的深紫外光学元件系列和具有增强损伤阈值的新一代激光线反射镜。\n\n如需预约展会期间与PhotonEdge团队会面，请联系sales@photonedgeoptics.com，或在临近展会日期时访问我们的展位详情页面。"
   }
 ];
