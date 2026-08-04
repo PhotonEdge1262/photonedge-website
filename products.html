@@ -89,37 +89,35 @@
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
                 
                 <ul class="nav-list">
-                    <li><a href="/" class="nav-link " data-i18n="navHome">Home</a></li>
-                    <li><a href="/products.html" class="nav-link active" data-i18n="navProducts">Products</a></li>
-                    <li><a href="/about.html" class="nav-link " data-i18n="navAbout">About Us</a></li>
-                    <li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
-                        <a href="/calculator.html" class="nav-link " data-i18n="navTools">Tools</a>
+<li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
+<li><a href="/products.html" class="nav-link active" data-i18n="navProducts">Products</a></li>
+<li><a href="/solutions/" class="nav-link" data-i18n="navSolutions">Solutions</a></li>
+<li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+<li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
+                        <a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a>
                         <div class="dropdown-menu">
                             <a href="/calculator.html" class="dropdown-item">
-                                <span class="dropdown-icon">🧮</span>
+                                <span class="dropdown-icon">&#129518;</span>
                                 <span data-i18n="menuCalculators">Optical Calculators</span>
                             </a>
                             <a href="/ray-tracer.html" class="dropdown-item">
-                                <span class="dropdown-icon">🔬</span>
+                                <span class="dropdown-icon">&#128300;</span>
                                 <span data-i18n="menuRayTracer">Ray Tracer Simulator</span>
                             </a>
                             <a href="/materials.html" class="dropdown-item">
-                                <span class="dropdown-icon">📊</span>
+                                <span class="dropdown-icon">&#128202;</span>
                                 <span data-i18n="menuMaterials">Materials Database</span>
                             </a>
                             <a href="/product-advisor.html" class="dropdown-item">
-                                <span class="dropdown-icon">🎯</span>
+                                <span class="dropdown-icon">&#127919;</span>
                                 <span data-i18n="menuSelector">Product Selector</span>
                             </a>
                         </div>
                     </li>
-                    <li><a href="/faq.html" class="nav-link " data-i18n="navFAQ">FAQ</a></li>
-                    <li><a href="/blog.html" class="nav-link " data-i18n="navBlog">Blog</a></li>
-                    <li><a href="/downloads.html" class="nav-link" data-i18n="navDownloads">Downloads</a></li>
-                    <li><a href="/case-studies.html" class="nav-link" data-i18n="navCaseStudies">Case Studies</a></li>
-                    <li><a href="/contact.html" class="nav-link " data-i18n="navContact">Contact</a></li>
-                    <li><a href="/news.html" class="nav-link" data-i18n="navNews">News</a></li>
-                </ul>
+<li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
+<li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
+<li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
+</ul>
                 <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     <span class="cart-badge" id="compareBadge">0</span>
@@ -189,7 +187,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <h3>PhotonEdge</h3>
-                    <p data-i18n="footerDesc">Precision Optical Components Supplier</p>
+                    <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
