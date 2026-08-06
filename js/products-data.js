@@ -13338,3 +13338,3844 @@ var PRODUCTS = [
     ]
   }
 ];
+
+// === Product Enhanced Data (V79) ===
+var PRODUCT_ENHANCEMENTS = {
+  "bk7-plano-convex": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-bi-convex": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-plano-concave": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-bi-concave": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-positive-meniscus": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-negative-meniscus": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-plano-convex": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-bi-convex": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-plano-concave": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-bi-concave": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-plano-convex-cylindrical": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-plano-concave-cylindrical": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-plano-convex-cylindrical": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-plano-concave-cylindrical": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "achromatic-doublet": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-c-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-ball-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-ball-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-rod-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-rod-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "aspherical-lenses": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "laser-beam-expanders": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "microscope-objectives": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "coatings": [
+      "AR 350-650nm",
+      "AR 650-950nm",
+      "AR 950-1250nm",
+      "Custom wavelength AR"
+    ],
+    "selectionGuide": "Select based on your wavelength range: BK7 for visible/NIR (350-2000nm), UV Fused Silica for UV applications (190-2500nm). Choose diameter to match your beam size with 20% margin. Focal length determines working distance and spot size. For laser applications, specify AR coating at your operating wavelength. Surface quality 40-20 for general use, 20-10 for precision imaging.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I choose between BK7 and UV Fused Silica for my application?",
+        "answer": "Choose BK7 (K9) for visible to near-IR applications (350-2000nm) where cost is a factor. Choose UV Fused Silica for UV applications below 350nm, or when you need higher laser damage threshold and lower thermal expansion."
+      },
+      {
+        "question": "What surface quality should I specify?",
+        "answer": "40-20 (MIL-PRF-13830B) is suitable for most imaging and illumination applications. Specify 20-10 for high-resolution imaging, laser systems, or when scattered light must be minimized."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "choose-right-optical-lens",
+      "bk7-vs-uv-fused-silica",
+      "precision-lenses-supplier-bk7-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "bk7-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "uv-fused-silica-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "sapphire-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "caf2-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "ge-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "si-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "znse-windows": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Sapphire",
+      "CaF2",
+      "Ge",
+      "Si",
+      "ZnSe"
+    ],
+    "coatings": [
+      "AR both sides",
+      "ITO conductive",
+      "AR single side",
+      "Custom broadband AR"
+    ],
+    "selectionGuide": "Match material to wavelength: BK7 (350-2000nm), UV FS (190-2500nm), Sapphire (150-5500nm), CaF2 (130-8000nm), Ge for 2-14um IR. Specify AR coating for your wavelength to minimize reflection loss. For vacuum or high-pressure applications, calculate thickness based on aperture and pressure differential.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "How do I determine the correct window thickness?",
+        "answer": "For atmospheric pressure applications, use our thickness calculator based on aperture and pressure differential. As a rule of thumb: thickness should be at least 1/4 of the clear aperture diameter for flat windows."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-windows-buying-guide",
+      "infrared-optical-materials-comparison",
+      "anti-reflection-coating-selection-guide"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "research"
+    ]
+  },
+  "laser-line-high-reflected-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "high-energy-laser-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "broadband-dielectric-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "protected-aluminum-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "enhanced-aluminum-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "protected-silver-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "protected-gold-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "bk7-right-angle-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "uv-fused-silica-right-angle-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "penta-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "corner-cube-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "dove-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "equilateral-dispersing-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "roof-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "AR coating",
+      "Reflective coating",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select prism type by function: right-angle for beam deviation, penta for 90-degree deviation without image reversal, corner cube for retroreflection, Dove for image rotation. BK7 for visible, UV FS for UV applications. Specify AR coating on entrance/exit faces to minimize Fresnel loss.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-prism-selection-guide",
+      "optical-prism-types-applications",
+      "polarization-control-optical-systems-waveplates-polarizers-guide"
+    ],
+    "relatedSolutions": [
+      "research",
+      "medical"
+    ]
+  },
+  "narrow-band-interference-filters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "Narrow bandpass",
+      "Broadband",
+      "ND coating",
+      "UV bandpass",
+      "IR bandpass"
+    ],
+    "selectionGuide": "Define center wavelength and bandwidth first. Narrow band (FWHM 1-10nm) for fluorescence, broadband for general spectral shaping. OD rating determines blocking depth: OD3 for general, OD6 for laser safety. Specify clear aperture size and angle of incidence tolerance for your system.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What is the difference between OD3 and OD6 blocking?",
+        "answer": "OD3 means 99.9% of out-of-band light is blocked (1000:1 ratio). OD6 means 99.9999% is blocked (1,000,000:1 ratio). Choose OD6 for fluorescence, Raman, or any application where stray light must be extremely low."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-filter-selection-guide",
+      "anti-reflection-coatings-guide",
+      "optical-coating-types-explained"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "fixed-neutral-density-filters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "Narrow bandpass",
+      "Broadband",
+      "ND coating",
+      "UV bandpass",
+      "IR bandpass"
+    ],
+    "selectionGuide": "Define center wavelength and bandwidth first. Narrow band (FWHM 1-10nm) for fluorescence, broadband for general spectral shaping. OD rating determines blocking depth: OD3 for general, OD6 for laser safety. Specify clear aperture size and angle of incidence tolerance for your system.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What is the difference between OD3 and OD6 blocking?",
+        "answer": "OD3 means 99.9% of out-of-band light is blocked (1000:1 ratio). OD6 means 99.9999% is blocked (1,000,000:1 ratio). Choose OD6 for fluorescence, Raman, or any application where stray light must be extremely low."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-filter-selection-guide",
+      "anti-reflection-coatings-guide",
+      "optical-coating-types-explained"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "variable-neutral-density-filters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "Narrow bandpass",
+      "Broadband",
+      "ND coating",
+      "UV bandpass",
+      "IR bandpass"
+    ],
+    "selectionGuide": "Define center wavelength and bandwidth first. Narrow band (FWHM 1-10nm) for fluorescence, broadband for general spectral shaping. OD rating determines blocking depth: OD3 for general, OD6 for laser safety. Specify clear aperture size and angle of incidence tolerance for your system.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What is the difference between OD3 and OD6 blocking?",
+        "answer": "OD3 means 99.9% of out-of-band light is blocked (1000:1 ratio). OD6 means 99.9999% is blocked (1,000,000:1 ratio). Choose OD6 for fluorescence, Raman, or any application where stray light must be extremely low."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-filter-selection-guide",
+      "anti-reflection-coatings-guide",
+      "optical-coating-types-explained"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "uv-bandpass-filters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "Narrow bandpass",
+      "Broadband",
+      "ND coating",
+      "UV bandpass",
+      "IR bandpass"
+    ],
+    "selectionGuide": "Define center wavelength and bandwidth first. Narrow band (FWHM 1-10nm) for fluorescence, broadband for general spectral shaping. OD rating determines blocking depth: OD3 for general, OD6 for laser safety. Specify clear aperture size and angle of incidence tolerance for your system.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What is the difference between OD3 and OD6 blocking?",
+        "answer": "OD3 means 99.9% of out-of-band light is blocked (1000:1 ratio). OD6 means 99.9999% is blocked (1,000,000:1 ratio). Choose OD6 for fluorescence, Raman, or any application where stray light must be extremely low."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-filter-selection-guide",
+      "anti-reflection-coatings-guide",
+      "optical-coating-types-explained"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "ir-bandpass-filters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "Narrow bandpass",
+      "Broadband",
+      "ND coating",
+      "UV bandpass",
+      "IR bandpass"
+    ],
+    "selectionGuide": "Define center wavelength and bandwidth first. Narrow band (FWHM 1-10nm) for fluorescence, broadband for general spectral shaping. OD rating determines blocking depth: OD3 for general, OD6 for laser safety. Specify clear aperture size and angle of incidence tolerance for your system.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What is the difference between OD3 and OD6 blocking?",
+        "answer": "OD3 means 99.9% of out-of-band light is blocked (1000:1 ratio). OD6 means 99.9999% is blocked (1,000,000:1 ratio). Choose OD6 for fluorescence, Raman, or any application where stray light must be extremely low."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-filter-selection-guide",
+      "anti-reflection-coatings-guide",
+      "optical-coating-types-explained"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "beamsplitter-plates": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "50/50 non-polarizing",
+      "Custom split ratio",
+      "Polarizing"
+    ],
+    "selectionGuide": "Choose type by polarization needs: non-polarizing (50/50 across wavelength range) for intensity division, polarizing for separating s/p components, cube for compact systems, plate for large beams. Specify wavelength range and split ratio tolerance. For pulsed lasers, ensure coating LIDT exceeds your fluence.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-coating-design",
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "cube-beamsplitters": {
+    "applications": [
+      "Fluorescence microscopy",
+      "Spectroscopy setups",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "50/50 non-polarizing",
+      "Custom split ratio",
+      "Polarizing"
+    ],
+    "selectionGuide": "Choose type by polarization needs: non-polarizing (50/50 across wavelength range) for intensity division, polarizing for separating s/p components, cube for compact systems, plate for large beams. Specify wavelength range and split ratio tolerance. For pulsed lasers, ensure coating LIDT exceeds your fluence.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-coating-design",
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "non-polarizing-cube-beamsplitters": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Fluorescence microscopy",
+      "Spectroscopy setups"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "50/50 non-polarizing",
+      "Custom split ratio",
+      "Polarizing"
+    ],
+    "selectionGuide": "Choose type by polarization needs: non-polarizing (50/50 across wavelength range) for intensity division, polarizing for separating s/p components, cube for compact systems, plate for large beams. Specify wavelength range and split ratio tolerance. For pulsed lasers, ensure coating LIDT exceeds your fluence.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-coating-design",
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "polarizing-cube-beamsplitters": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Fluorescence microscopy",
+      "Spectroscopy setups"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Fluorescence microscopy": "Fluorescence systems need filters with precise cutoff wavelengths, high OD blocking, and excellent transmission in pass bands. Our filter coating process ensures <0.5% wavelength shift across production batches.",
+      "Spectroscopy setups": "Spectroscopy applications require wavelength-accurate optics with defined transmission/reflectance profiles. PhotonEdge provides custom coating verification with spectrophotometer reports for each batch."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "coatings": [
+      "50/50 non-polarizing",
+      "Custom split ratio",
+      "Polarizing"
+    ],
+    "selectionGuide": "Choose type by polarization needs: non-polarizing (50/50 across wavelength range) for intensity division, polarizing for separating s/p components, cube for compact systems, plate for large beams. Specify wavelength range and split ratio tolerance. For pulsed lasers, ensure coating LIDT exceeds your fluence.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "optical-coating-design",
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "multiple-order-waveplates": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Quartz"
+    ],
+    "coatings": [
+      "Multi-order retarder",
+      "Zero-order",
+      "Dual-wavelength",
+      "Broadband AR"
+    ],
+    "selectionGuide": "Match retardance accuracy to application: multi-order (cost-effective, wavelength-sensitive), zero-order (stable, broadband), achromatic (wide bandwidth). Calculate required retardance at operating wavelength. For polarization rotation, use half-wave plate; for circular polarization, use quarter-wave plate.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-coating-types-explained",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "dual-wavelength-waveplates": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Quartz"
+    ],
+    "coatings": [
+      "Multi-order retarder",
+      "Zero-order",
+      "Dual-wavelength",
+      "Broadband AR"
+    ],
+    "selectionGuide": "Match retardance accuracy to application: multi-order (cost-effective, wavelength-sensitive), zero-order (stable, broadband), achromatic (wide bandwidth). Calculate required retardance at operating wavelength. For polarization rotation, use half-wave plate; for circular polarization, use quarter-wave plate.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-coating-types-explained",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "cemented-zero-order-waveplates": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Quartz"
+    ],
+    "coatings": [
+      "Multi-order retarder",
+      "Zero-order",
+      "Dual-wavelength",
+      "Broadband AR"
+    ],
+    "selectionGuide": "Match retardance accuracy to application: multi-order (cost-effective, wavelength-sensitive), zero-order (stable, broadband), achromatic (wide bandwidth). Calculate required retardance at operating wavelength. For polarization rotation, use half-wave plate; for circular polarization, use quarter-wave plate.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-coating-types-explained",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "air-spaced-zero-order-waveplates": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Quartz"
+    ],
+    "coatings": [
+      "Multi-order retarder",
+      "Zero-order",
+      "Dual-wavelength",
+      "Broadband AR"
+    ],
+    "selectionGuide": "Match retardance accuracy to application: multi-order (cost-effective, wavelength-sensitive), zero-order (stable, broadband), achromatic (wide bandwidth). Calculate required retardance at operating wavelength. For polarization rotation, use half-wave plate; for circular polarization, use quarter-wave plate.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-coating-types-explained",
+      "laser-optics-selection-guide"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "visible-linear-polarizers": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "visible-circular-polarizers": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "ir-polarizers": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "glan-taylor-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "glan-laser-prisms": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Beam steering and deviation",
+      "Spectral dispersion applications"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "glan-thompson-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "wollaston-prisms": {
+    "applications": [
+      "Beam steering and deviation",
+      "Spectral dispersion applications",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Beam steering and deviation": "Precision beam steering requires prisms with tight angle tolerances and excellent surface flatness. Our prisms achieve +/- 2 arc-minute angle accuracy for reliable beam positioning.",
+      "Spectral dispersion applications": "Dispersive elements need defined refractive index uniformity and low wavefront distortion. We specify and verify dispersion characteristics for consistent spectral separation performance.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "UV Fused Silica",
+      "Calcite",
+      "Alpha-BBO"
+    ],
+    "coatings": [
+      "Thin film polarizing",
+      "Uncoated",
+      "AR coated"
+    ],
+    "selectionGuide": "Choose by extinction ratio and power handling: thin-film polarizers for compact systems (>100:1), Glan-Taylor for high extinction (>10000:1) with high power, Glan-Thompson for broader acceptance angle, wire-grid for broadband IR applications.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "polarization-control-optical-systems-waveplates-polarizers-guide",
+      "optical-prism-types-applications",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "laser-safety-goggles": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "Polycarbonate",
+      "Glass with dielectric coating"
+    ],
+    "coatings": [
+      "Laser-specific OD5+ blocking",
+      "Multi-wavelength protection"
+    ],
+    "selectionGuide": "Match OD rating to your laser's maximum irradiance at the eyepoint. Select wavelength-specific protection for single-line lasers, or broadband for tunable/multi-line systems. Ensure visible light transmission (VLT) meets your visibility requirements. Verify damage threshold exceeds your laser parameters.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-damage-threshold-guide",
+      "laser-induced-damage-threshold-lidt-guide",
+      "optical-materials-high-power-lasers"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "semiconductor"
+    ]
+  },
+  "ndyag-output-couplers": {
+    "applications": [
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "dichroic-mirrors": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "K9(BK7)",
+      "BK7",
+      "Silicon",
+      "Germanium"
+    ],
+    "coatings": [
+      "HR at specific wavelength",
+      "Broadband dielectric",
+      "Enhanced aluminum",
+      "Protected silver",
+      "Protected gold"
+    ],
+    "selectionGuide": "Choose substrate based on wavelength: BK7 for visible, Si/Ge for IR. For high-power lasers, select dielectric HR coatings with LIDT >10 J/cm2. For broadband applications, use protected silver (450-950nm) or enhanced aluminum (250-2000nm). Flatness requirement: lambda/4 for general alignment, lambda/10 for interferometry.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      },
+      {
+        "question": "What coating should I choose for my laser application?",
+        "answer": "For CW lasers under 1W, protected silver or enhanced aluminum works well. For pulsed or high-power CW (>1W), specify dielectric HR coatings with verified LIDT ratings above your operating fluence."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "laser-mirror-selection-guide",
+      "laser-damage-threshold-guide",
+      "optical-coating-design"
+    ],
+    "relatedSolutions": [
+      "laser",
+      "research"
+    ]
+  },
+  "rotating-waveplate-mount": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "Black Anodized Aluminum",
+      "Stainless Steel",
+      "PTFE"
+    ],
+    "coatings": [
+      "Black anodized",
+      "Black oxide",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select based on optic diameter and required precision. Ensure material compatibility with your environment (anodized aluminum for general, stainless for vacuum/cleanroom). Check thread compatibility with existing system. For precision alignment, choose kinematic mounts with fine adjustment.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "custom-optics-manufacturing-process",
+      "optical-component-cleaning-maintenance-guide",
+      "custom-vs-stock-optics"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "concentric-mirror-frame": {
+    "applications": [
+      "Laser system integration",
+      "High-power beam delivery",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Laser system integration": "Optical components in laser systems require precise wavefront quality, high damage threshold coatings, and excellent thermal stability. PhotonEdge optics meet these demands with lambda/10 surface flatness and custom laser-grade AR coatings.",
+      "High-power beam delivery": "Beam delivery systems demand optics with low absorption, high LIDT, and stable performance under thermal load. Our components feature precision polishing and optimized coatings for sustained high-power operation.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "Black Anodized Aluminum",
+      "Stainless Steel",
+      "PTFE"
+    ],
+    "coatings": [
+      "Black anodized",
+      "Black oxide",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select based on optic diameter and required precision. Ensure material compatibility with your environment (anodized aluminum for general, stainless for vacuum/cleanroom). Check thread compatibility with existing system. For precision alignment, choose kinematic mounts with fine adjustment.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "custom-optics-manufacturing-process",
+      "optical-component-cleaning-maintenance-guide",
+      "custom-vs-stock-optics"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  },
+  "lens-retaining-cell": {
+    "applications": [
+      "Semiconductor wafer inspection",
+      "Medical imaging systems",
+      "Machine vision quality control",
+      "Research laboratory instrumentation"
+    ],
+    "applicationDetails": {
+      "Semiconductor wafer inspection": "Wafer inspection requires optics with exceptional surface quality (10-5 scratch-dig), low particulate contamination, and consistent batch-to-batch performance. PhotonEdge provides Class 100 cleanroom packaging and statistical process control.",
+      "Medical imaging systems": "Medical optics demand biocompatible materials, high transmission uniformity, and full material traceability. Our medical-grade components pass stringent cleanliness and dimensional inspection protocols.",
+      "Machine vision quality control": "Machine vision optics need consistent performance across production volumes, with tight tolerance on focal length and distortion. PhotonEdge provides statistical process data for volume orders.",
+      "Research laboratory instrumentation": "Research applications often push optical specifications to their limits. PhotonEdge supports custom specifications, exotic materials, and rapid prototyping with typical 2-3 week turnaround."
+    },
+    "materials": [
+      "Black Anodized Aluminum",
+      "Stainless Steel",
+      "PTFE"
+    ],
+    "coatings": [
+      "Black anodized",
+      "Black oxide",
+      "Uncoated"
+    ],
+    "selectionGuide": "Select based on optic diameter and required precision. Ensure material compatibility with your environment (anodized aluminum for general, stainless for vacuum/cleanroom). Check thread compatibility with existing system. For precision alignment, choose kinematic mounts with fine adjustment.",
+    "faq": [
+      {
+        "question": "What is the typical lead time for standard catalog parts?",
+        "answer": "Standard catalog items ship within 3-5 business days for quantities under 50 pieces. Larger quantities or custom specifications typically require 2-4 weeks depending on complexity."
+      },
+      {
+        "question": "Can you provide custom coatings for specific wavelengths?",
+        "answer": "Yes, we offer custom coating designs for any wavelength from deep UV (193nm) to far IR (12um). Custom coatings require a minimum order quantity and have a typical lead time of 3-4 weeks."
+      },
+      {
+        "question": "Do you provide inspection reports with each shipment?",
+        "answer": "Yes, every shipment includes a certificate of conformance with measured parameters. For critical applications, we provide full interferometric surface maps and coating spectrophotometer data."
+      }
+    ],
+    "specifications": "Custom specifications available per your requirements. ISO certified manufacturing with full inspection documentation.. Full inspection reports included with every shipment.",
+    "relatedArticles": [
+      "custom-optics-manufacturing-process",
+      "optical-component-cleaning-maintenance-guide",
+      "custom-vs-stock-optics"
+    ],
+    "relatedSolutions": [
+      "semiconductor",
+      "medical"
+    ]
+  }
+};
+
+// Merge enhancements into PRODUCTS array
+PRODUCTS.forEach(function(p) {
+  if (PRODUCT_ENHANCEMENTS[p.slug]) {
+    var e = PRODUCT_ENHANCEMENTS[p.slug];
+    if (e.applications) p.applications = e.applications;
+    if (e.applicationDetails) p.applicationDetails = e.applicationDetails;
+    if (e.materials) p.materials = e.materials;
+    if (e.coatings) p.coatings = e.coatings;
+    if (e.selectionGuide) p.selectionGuide = e.selectionGuide;
+    if (e.faq) p.faq = e.faq;
+    if (e.specifications) p.specifications = e.specifications;
+    if (e.relatedArticles) p.relatedArticles = e.relatedArticles;
+    if (e.relatedSolutions) p.relatedSolutions = e.relatedSolutions;
+  }
+});
