@@ -4949,3 +4949,390 @@ img[loading="lazy"] {
         padding-left: 24px;
     }
 }
+
+/* ============================================================
+   V84 Product Enhanced Sections
+   Application Scenarios, Selection Guide, FAQs,
+   Materials & Coatings, Related Products, Related Articles
+   ============================================================ */
+
+.enh-section {
+    padding: 60px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.enh-section:nth-child(even) {
+    background: #f8fafc;
+}
+
+.enh-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.enh-section-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.enh-section-subtitle {
+    text-align: center;
+    color: #64748b;
+    font-size: 1rem;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Applications Tags */
+.enh-app-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.enh-app-tag {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.enh-app-tag:hover {
+    background: #dbeafe;
+    border-color: #93c5fd;
+    transform: translateY(-1px);
+}
+
+/* Application Details Grid */
+.enh-app-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.enh-app-detail-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.enh-app-detail-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.enh-app-detail-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.enh-app-detail-desc {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Selection Guide */
+.enh-guide-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 36px;
+    border: 1px solid #e2e8f0;
+}
+
+.enh-guide-paragraph {
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.enh-guide-paragraph:last-child {
+    margin-bottom: 0;
+}
+
+/* Materials Grid */
+.enh-materials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.enh-material-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.enh-material-icon {
+    color: #3b82f6;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.enh-material-name {
+    color: #334155;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Coatings List */
+.enh-coatings-list {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 24px 28px;
+    border: 1px solid #e2e8f0;
+}
+
+.enh-coating-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.enh-coating-item:last-child {
+    border-bottom: none;
+}
+
+.enh-coating-check {
+    color: #10b981;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.enh-coating-text {
+    color: #334155;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* FAQ Section */
+.enh-faq-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.enh-faq-item {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.enh-faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e293b;
+    transition: background 0.2s ease;
+}
+
+.enh-faq-question:hover {
+    background: #f8fafc;
+}
+
+.enh-faq-q-text {
+    flex: 1;
+    padding-right: 16px;
+}
+
+.enh-faq-icon {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #3b82f6;
+    flex-shrink: 0;
+    width: 24px;
+    text-align: center;
+}
+
+.enh-faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 24px;
+}
+
+.enh-faq-answer.open {
+    max-height: 500px;
+    padding: 0 24px 20px;
+}
+
+.enh-faq-answer p {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Related Products */
+.enh-related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.enh-related-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.enh-related-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.enh-related-img-wrap {
+    width: 100%;
+    height: 140px;
+    background: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.enh-related-img-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.enh-related-info {
+    padding: 16px;
+}
+
+.enh-related-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0 0 8px;
+    line-height: 1.4;
+}
+
+.enh-related-link {
+    font-size: 0.8rem;
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+/* Related Articles */
+.enh-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.enh-article-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+}
+
+.enh-article-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.enh-article-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.enh-article-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.enh-article-link {
+    font-size: 0.85rem;
+    color: #3b82f6;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .enh-section {
+        padding: 40px 0;
+    }
+
+    .enh-section-title {
+        font-size: 1.4rem;
+    }
+
+    .enh-guide-content {
+        padding: 24px;
+    }
+
+    .enh-app-detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .enh-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .enh-articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .enh-related-grid {
+        grid-template-columns: 1fr;
+    }
+}
