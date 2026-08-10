@@ -185,35 +185,14 @@ gtag('config', 'G-E6J791MXZY');
 <nav class="nav">
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
                 <ul class="nav-list">
-<li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
-<li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
-<li><a href="/solutions/" class="nav-link" data-i18n="navSolutions">Solutions</a></li>
-<li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-<li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
-                        <a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a>
-                        <div class="dropdown-menu">
-                            <a href="/calculator.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#129518;</span>
-                                <span data-i18n="menuCalculators">Optical Calculators</span>
-                            </a>
-                            <a href="/ray-tracer.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#128300;</span>
-                                <span data-i18n="menuRayTracer">Ray Tracer Simulator</span>
-                            </a>
-                            <a href="/materials.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#128202;</span>
-                                <span data-i18n="menuMaterials">Materials Database</span>
-                            </a>
-                            <a href="/product-advisor.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#127919;</span>
-                                <span data-i18n="menuSelector">Product Selector</span>
-                            </a>
-                        </div>
-                    </li>
-<li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
-<li><a href="/blog.html" class="nav-link" data-i18n="navBlog">Blog</a></li>
-<li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
-</ul>
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/product-advisor.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
                 <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
                     <span class="cart-badge" id="compareBadge">0</span>
@@ -331,7 +310,7 @@ gtag('config', 'G-E6J791MXZY');
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var materials = [
   {
-    id:"bk7",name:"BK7 (K9)",nameZh:"BK7 Optical Glass",nd:1.5168,vd:64.17,
+    id:"bk7",name:"BK7 (K9)",nameZh:"BK7 \u5149\u5b66\u73bb\u7483",nd:1.5168,vd:64.17,
     transShort:"350nm - 2\u03bcm",transMin:0.35,transMax:2.0,
     density:2.51,cte:"7.1\u00d710\u207b\u2076",
     type:"glass",apps:["vis","general","laser"],
@@ -345,7 +324,7 @@ var materials = [
     ]
   },
   {
-    id:"fuses",name:"UV Fused Silica",nameZh:"UV Fused Silica",nd:1.4585,vd:67.82,
+    id:"fuses",name:"UV Fused Silica",nameZh:"\u7d2b\u5916\u878d\u5408\u77f3\u82f1",nd:1.4585,vd:67.82,
     transShort:"180nm - 2.5\u03bcm",transMin:0.18,transMax:2.5,
     density:2.20,cte:"0.55\u00d710\u207b\u2076",
     type:"glass",apps:["uv","vis","laser","general"],
@@ -358,7 +337,7 @@ var materials = [
     ]
   },
   {
-    id:"sapphire",name:"Sapphire",nameZh:"Sapphire Crystal",nd:1.7682,vd:72.2,
+    id:"sapphire",name:"Sapphire",nameZh:"\u84dd\u5b9d\u77f3",nd:1.7682,vd:72.2,
     transShort:"150nm - 5.5\u03bcm",transMin:0.15,transMax:5.5,
     density:3.98,cte:"5.0\u00d710\u207b\u2076",
     type:"crystal",apps:["uv","vis","ir","general"],
@@ -371,7 +350,7 @@ var materials = [
     ]
   },
   {
-    id:"caf2",name:"CaF\u2082",nameZh:"Calcium Fluoride (CaF2)",nd:1.4338,vd:95.3,
+    id:"caf2",name:"CaF\u2082",nameZh:"\u6c1f\u5316\u9499",nd:1.4338,vd:95.3,
     transShort:"130nm - 10\u03bcm",transMin:0.13,transMax:10.0,
     density:3.18,cte:"18.9\u00d710\u207b\u2076",
     type:"crystal",apps:["uv","vis","ir","laser"],
@@ -384,7 +363,7 @@ var materials = [
     ]
   },
   {
-    id:"znse",name:"ZnSe",nameZh:"Zinc Selenide (ZnSe)",nd:2.4027,vd:null,
+    id:"znse",name:"ZnSe",nameZh:"\u7852\u5316\u950c",nd:2.4027,vd:null,
     transShort:"0.5\u03bcm - 20\u03bcm",transMin:0.5,transMax:20.0,
     density:5.42,cte:"7.1\u00d710\u207b\u2076",
     type:"crystal",apps:["ir","laser"],
@@ -397,7 +376,7 @@ var materials = [
     ]
   },
   {
-    id:"ge",name:"Ge",nameZh:"Germanium (Ge)",nd:4.0026,vd:null,
+    id:"ge",name:"Ge",nameZh:"\u9517",nd:4.0026,vd:null,
     transShort:"2\u03bcm - 14\u03bcm",transMin:2.0,transMax:14.0,
     density:5.32,cte:"6.1\u00d710\u207b\u2076",
     type:"semiconductor",apps:["ir"],
@@ -410,7 +389,7 @@ var materials = [
     ]
   },
   {
-    id:"si",name:"Si",nameZh:"Silicon (Si)",nd:3.4180,vd:null,
+    id:"si",name:"Si",nameZh:"\u7845",nd:3.4180,vd:null,
     transShort:"1.2\u03bcm - 8\u03bcm",transMin:1.2,transMax:8.0,
     density:2.33,cte:"2.6\u00d710\u207b\u2076",
     type:"semiconductor",apps:["ir"],
@@ -423,7 +402,7 @@ var materials = [
     ]
   },
   {
-    id:"mgf2",name:"MgF\u2082",nameZh:"Magnesium Fluoride (MgF2)",nd:1.3796,vd:92.3,
+    id:"mgf2",name:"MgF\u2082",nameZh:"\u6c1f\u5316\u9541",nd:1.3796,vd:92.3,
     transShort:"110nm - 8\u03bcm",transMin:0.11,transMax:8.0,
     density:3.15,cte:"13.7\u00d710\u207b\u2076",
     type:"crystal",apps:["uv","vis","ir","general"],
