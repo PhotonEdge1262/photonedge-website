@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Optical Engineer - Free Optical Component Recommendation | PhotonEdge</title>
+    <meta name="description" content="Describe your optical challenge and get instant AI-powered recommendations for materials, components, coatings, and specifications. Free tool for optical engineers.">
+    <meta name="keywords" content="optical component advisor, AI optical engineer, lens recommendation, optical material selector, coating advisor, free optical tool">
+    <meta property="og:title" content="AI Optical Engineer - Free Optical Component Recommendation | PhotonEdge">
+    <meta property="og:description" content="Describe your optical challenge and get instant AI-powered recommendations for materials, components, coatings, and specifications.">
+    <meta property="og:url" content="https://photonedgeoptics.com/ai-optical-engineer.html">
+    <link rel="canonical" href="https://photonedgeoptics.com/ai-optical-engineer.html">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        .ai-hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c4a6e 100%);
+            color: white;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+        .ai-hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+        .ai-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            line-height: 1.7;
+        }
+        .ai-container {
+            max-width: 900px;
+            margin: -30px auto 60px;
+            padding: 0 20px;
+        }
+        .ai-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+        .ai-card h2 {
+            font-size: 24px;
+            color: #1e3a5f;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        .ai-input-group {
+            margin-bottom: 20px;
+        }
+        .ai-input-group label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .ai-input-group select,
+        .ai-input-group input,
+        .ai-input-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: border-color 0.2s;
+            box-sizing: border-box;
+        }
+        .ai-input-group select:focus,
+        .ai-input-group input:focus,
+        .ai-input-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+        .ai-input-group textarea {
+            min-height: 120px;
+            resize: vertical;
+            font-family: inherit;
+        }
+        .ai-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .ai-submit-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .ai-submit-btn:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e40af);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+        }
+        .ai-result {
+            display: none;
+            background: #f0fdf4;
+            border: 2px solid #86efac;
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+        .ai-result h3 {
+            color: #166534;
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        .ai-result table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+        .ai-result th,
+        .ai-result td {
+            padding: 10px 14px;
+            text-align: left;
+            border-bottom: 1px solid #d1fae5;
+            font-size: 14px;
+        }
+        .ai-result th {
+            background: #dcfce7;
+            color: #166534;
+            font-weight: 600;
+        }
+        .ai-features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin: 40px 0;
+        }
+        .ai-feature {
+            text-align: center;
+            padding: 24px 16px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+        .ai-feature-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+        .ai-feature h3 {
+            font-size: 16px;
+            color: #1e3a5f;
+            margin-bottom: 8px;
+        }
+        .ai-feature p {
+            font-size: 14px;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        .ai-examples {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 24px;
+        }
+        .ai-examples h4 {
+            font-size: 15px;
+            color: #374151;
+            margin-bottom: 12px;
+        }
+        .ai-example-tag {
+            display: inline-block;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 6px 14px;
+            margin: 4px;
+            font-size: 13px;
+            color: #4b5563;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .ai-example-tag:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+            background: #eff6ff;
+        }
+        @media (max-width: 768px) {
+            .ai-row { grid-template-columns: 1fr; }
+            .ai-features { grid-template-columns: 1fr; }
+            .ai-hero h1 { font-size: 28px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AI Optical Engineer",
+        "description": "Free AI-powered optical component recommendation tool. Describe your application and get instant recommendations for materials, components, coatings, and specifications.",
+        "url": "https://photonedgeoptics.com/ai-optical-engineer.html",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge Optics",
+            "url": "https://photonedgeoptics.com"
+        }
+    }
+    </script>
+</head>
+<body>
+<header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
+                <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+                <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <span class="cart-badge" id="compareBadge">0</span>
+                </a>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn notranslate active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn notranslate" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero -->
+    <section class="ai-hero">
+        <h1>AI Optical Engineering Assistant</h1>
+        <p>Describe your optical challenge below. Our AI will recommend materials, components, coatings, and specifications based on your application requirements.</p>
+    </section>
+
+    <div class="ai-container">
+        <!-- Main Form -->
+        <div class="ai-card">
+            <h2>Tell Us About Your Application</h2>
+            <form id="aiOpticalForm" onsubmit="return handleAIRecommend(event)">
+                <div class="ai-row">
+                    <div class="ai-input-group">
+                        <label for="aiApplication">Application Area *</label>
+                        <select id="aiApplication" required>
+                            <option value="">Select your application...</option>
+                            <option value="laser">Laser Systems (Cutting/Welding/Marking)</option>
+                            <option value="semiconductor">Semiconductor Inspection & Metrology</option>
+                            <option value="medical">Medical Imaging & Diagnostics</option>
+                            <option value="spectroscopy">Spectroscopy & Analytical</option>
+                            <option value="imaging">Machine Vision & Imaging</option>
+                            <option value="telecom">Telecommunications & Fiber Optics</option>
+                            <option value="defense">Defense & Aerospace (IR/Thermal)</option>
+                            <option value="research">Research & Laboratory</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="ai-input-group">
+                        <label for="aiWavelength">Operating Wavelength *</label>
+                        <select id="aiWavelength" required>
+                            <option value="">Select wavelength range...</option>
+                            <option value="duv">Deep UV (193-280 nm)</option>
+                            <option value="uv">UV (280-400 nm)</option>
+                            <option value="vis">Visible (400-700 nm)</option>
+                            <option value="nir">Near IR (700-1400 nm)</option>
+                            <option value="swir">SWIR (1400-3000 nm)</option>
+                            <option value="mwir">MWIR (3-5 μm)</option>
+                            <option value="lwir">LWIR (8-14 μm)</option>
+                            <option value="broadband">Broadband / Multi-wavelength</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="ai-row">
+                    <div class="ai-input-group">
+                        <label for="aiComponent">Component Type Needed</label>
+                        <select id="aiComponent">
+                            <option value="">Select component type...</option>
+                            <option value="lens">Lenses (Plano-Convex, Aspheric, etc.)</option>
+                            <option value="window">Windows & Substrates</option>
+                            <option value="mirror">Mirrors (HR, Protected, etc.)</option>
+                            <option value="filter">Filters (Bandpass, ND, etc.)</option>
+                            <option value="prism">Prisms & Beamsplitters</option>
+                            <option value="waveplate">Waveplates & Polarizers</option>
+                            <option value="assembly">Custom Optical Assembly</option>
+                            <option value="unsure">Not Sure — Need Recommendation</option>
+                        </select>
+                    </div>
+                    <div class="ai-input-group">
+                        <label for="aiPower">Laser Power / Energy (if applicable)</label>
+                        <input type="text" id="aiPower" placeholder="e.g., 500W CW, 10mJ pulsed, N/A">
+                    </div>
+                </div>
+                <div class="ai-input-group">
+                    <label for="aiDescription">Describe Your Requirements *</label>
+                    <textarea id="aiDescription" required placeholder="Tell us about your optical system: what it does, key performance requirements, environment, any constraints (size, budget, timeline)..."></textarea>
+                </div>
+                <button type="submit" class="ai-submit-btn">Get Optical Recommendation →</button>
+            </form>
+            
+            <!-- AI Result -->
+            <div class="ai-result" id="aiResult">
+                <h3>📋 Recommended Optical Solution</h3>
+                <div id="aiResultContent"></div>
+                <div style="margin-top:24px;padding:20px;background:white;border-radius:8px;border:1px solid #d1fae5;">
+                    <p style="font-size:15px;color:#374151;margin-bottom:16px;font-weight:600;">Get Detailed Engineering Review</p>
+                    <p style="font-size:14px;color:#6b7280;margin-bottom:16px;">Our engineering team can provide a detailed specification review, material selection analysis, and custom quote for your application.</p>
+                    <div class="ai-row">
+                        <div class="ai-input-group">
+                            <input type="email" id="aiEmail" placeholder="Your work email">
+                        </div>
+                        <div>
+                            <a href="/contact.html" class="ai-submit-btn" style="display:block;text-align:center;text-decoration:none;" onclick="if(document.getElementById('aiEmail').value){return true;}">Request Engineering Review →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features -->
+        <div class="ai-features">
+            <div class="ai-feature">
+                <div class="ai-feature-icon">🔬</div>
+                <h3>Material Selection</h3>
+                <p>40+ optical materials matched to your wavelength, power, and environmental requirements</p>
+            </div>
+            <div class="ai-feature">
+                <div class="ai-feature-icon">⚡</div>
+                <h3>Coating Recommendation</h3>
+                <p>AR, HR, bandpass, and specialty coating designs optimized for your application</p>
+            </div>
+            <div class="ai-feature">
+                <div class="ai-feature-icon">📐</div>
+                <h3>Specification Review</h3>
+                <p>Tolerance analysis and DFM feedback to optimize performance vs. cost</p>
+            </div>
+        </div>
+
+        <!-- Example Queries -->
+        <div class="ai-examples">
+            <h4>Try these examples:</h4>
+            <span class="ai-example-tag" onclick="fillExample('laser','nir','window','500W CW fiber laser at 1070nm, need output window for beam delivery')">Fiber laser output window</span>
+            <span class="ai-example-tag" onclick="fillExample('semiconductor','duv','filter','365nm inspection system, need narrow bandpass filter for i-line illumination')">365nm inspection filter</span>
+            <span class="ai-example-tag" onclick="fillExample('medical','vis','lens','Endoscope imaging system, need miniature achromatic doublet, 3mm diameter')">Miniature endoscope lens</span>
+            <span class="ai-example-tag" onclick="fillExample('defense','lwir','window','Thermal imaging system at 8-12μm, need ruggedized window for outdoor use')">LWIR thermal window</span>
+            <span class="ai-example-tag" onclick="fillExample('spectroscopy','uv','prism','Raman spectroscopy, need CaF2 prism for dispersion at 250-800nm')">CaF2 Raman prism</span>
+            <span class="ai-example-tag" onclick="fillExample('research','broadband','mirror','Ultrafast laser system, need broadband mirrors for 700-1100nm range')">Broadband femtosecond mirrors</span>
+        </div>
+    </div>
+
+    <!-- Also link to Smart Product Advisor -->
+    <div style="max-width:900px;margin:0 auto 60px;padding:0 20px;">
+        <div class="ai-card" style="background:#f8fafc;text-align:center;">
+            <h2>Prefer Guided Selection?</h2>
+            <p style="color:#6b7280;margin-bottom:20px;">Use our step-by-step Smart Product Advisor for component-by-component selection from our catalog.</p>
+            <a href="/product-advisor.html" style="display:inline-block;background:#1e3a5f;color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:600;">Open Smart Product Advisor →</a>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 Certified | ISO 14001:2015 Certified</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catV82Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catV82Mirrors">Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows" data-i18n="catV82Windows">Windows &amp; Substrates</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catV82Prisms">Prisms &amp; Beamsplitters</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters" data-i18n="catV82Filters">Filters &amp; Polarizers</a></li>
+                    <li><a href="/products.html?category=Laser%20Protection" data-i18n="catV82Laser">Laser &amp; Industrial</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Aerospace & Defense</a></li>
+                    <li><a href="/applications/research-laboratory/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Research & Laboratory</a></li>
+                    <li><a href="/engineering.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/applications.html" data-i18n="navSolutions">Solutions</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/calculator.html" data-i18n="menuCalculators">Calculators</a></li>
+                    <li><a href="/materials.html" data-i18n="menuMaterials">Materials Database</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="contactInfo">Contact</h4>
+                <ul>
+                    <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                    <li>Phone: +86-13693009175</li>
+                    <li>WhatsApp: +86-13693009175</li>
+                    <li>Contact: Ms. Lin</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="footerNewsletter">Subscribe to weekly optical engineering insights &rarr; Contact us</a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+    function fillExample(app, wl, comp, desc) {
+        document.getElementById('aiApplication').value = app;
+        document.getElementById('aiWavelength').value = wl;
+        document.getElementById('aiComponent').value = comp;
+        document.getElementById('aiDescription').value = desc;
+        document.getElementById('aiDescription').scrollIntoView({behavior: 'smooth', block: 'center'});
+    }
+
+    var materialDB = {
+        'duv': {primary: 'CaF2, Synthetic Fused Silica', note: 'Low metallic impurity, low birefringence required'},
+        'uv': {primary: 'UV Fused Silica, CaF2', note: 'UV-grade with low OH content for solarization resistance'},
+        'vis': {primary: 'BK7, UV Fused Silica, Sapphire', note: 'BK7 for cost-effective, Sapphire for durability'},
+        'nir': {primary: 'BK7, UV Fused Silica, ZnSe', note: 'Depends on power level and thermal requirements'},
+        'swir': {primary: 'Fused Silica, ZnSe, Sapphire', note: 'ZnSe for broadband IR, Sapphire for durability'},
+        'mwir': {primary: 'Silicon, ZnSe', note: 'Si for lightweight, ZnSe for broadband'},
+        'lwir': {primary: 'Germanium, ZnSe', note: 'Ge for compact designs, ZnSe for lower cost'},
+        'broadband': {primary: 'CaF2, UV Fused Silica', note: 'CaF2 for widest range, Fused Silica for UV-NIR'}
+    };
+
+    var coatingDB = {
+        'laser': 'High-LIDT AR coating optimized for your wavelength and power regime',
+        'semiconductor': 'Precision bandpass/edge filters with tight center wavelength tolerance',
+        'medical': 'Biocompatible coatings validated for sterilization compatibility',
+        'spectroscopy': 'Broadband AR for maximum transmission across spectral range',
+        'imaging': 'Multi-layer AR for visible range, optimized for sensor spectral response',
+        'telecom': 'Fiber-matched coatings for minimum insertion loss',
+        'defense': 'Ruggedized protective coatings (DLC for IR, protected metal for VIS)',
+        'research': 'Custom coating designs for multi-wavelength or ultrafast applications',
+        'other': 'Application-specific coating design based on your requirements'
+    };
+
+    function handleAIRecommend(e) {
+        e.preventDefault();
+        var app = document.getElementById('aiApplication').value;
+        var wl = document.getElementById('aiWavelength').value;
+        var comp = document.getElementById('aiComponent').value;
+        var desc = document.getElementById('aiDescription').value;
+        var power = document.getElementById('aiPower').value;
+
+        var mat = materialDB[wl] || materialDB['vis'];
+        var coat = coatingDB[app] || coatingDB['other'];
+
+        var compRecs = {
+            'lens': 'Plano-Convex / Aspheric / Achromatic Doublet (depending on imaging vs. beam shaping requirements)',
+            'window': 'Circular/Square Window with AR coating on both sides',
+            'mirror': 'Protected Metal or Dielectric HR mirror (depending on wavelength and power)',
+            'filter': 'Bandpass / Edge / Longpass / Shortpass interference filter',
+            'prism': 'Right-Angle / Dispersing / Beam Displacement prism',
+            'waveplate': 'Zero-Order / Achromatic waveplate for polarization control',
+            'assembly': 'Custom multi-element assembly per your specifications',
+            'unsure': 'Based on your description, we recommend starting with a technical review to identify the optimal component type'
+        };
+
+        var html = '<table>';
+        html += '<tr><th>Parameter</th><th>Recommendation</th></tr>';
+        html += '<tr><td><strong>Recommended Material</strong></td><td>' + mat.primary + '<br><small style="color:#6b7280;">' + mat.note + '</small></td></tr>';
+        html += '<tr><td><strong>Coating Type</strong></td><td>' + coat + '</td></tr>';
+        if (comp && compRecs[comp]) {
+            html += '<tr><td><strong>Component Type</strong></td><td>' + compRecs[comp] + '</td></tr>';
+        }
+        if (power) {
+            html += '<tr><td><strong>Power Consideration</strong></td><td>' + power + ' — LIDT and thermal management will be factored into specification</td></tr>';
+        }
+        html += '<tr><td><strong>Surface Quality</strong></td><td>40-20 (standard) or 20-10 (precision) per MIL-PRF-13830B</td></tr>';
+        html += '<tr><td><strong>Typical Lead Time</strong></td><td>Stock items: 1-3 days | Custom: 5-10 business days</td></tr>';
+        html += '</table>';
+        html += '<p style="margin-top:16px;font-size:14px;color:#374151;"><strong>Next Step:</strong> For a detailed specification and quote, submit your requirements for engineering review. Our team will respond within 24 hours with material verification, coating design options, and DFM feedback.</p>';
+
+        document.getElementById('aiResultContent').innerHTML = html;
+        document.getElementById('aiResult').style.display = 'block';
+        document.getElementById('aiResult').scrollIntoView({behavior: 'smooth'});
+        return false;
+    }
+    </script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
+</a>
+<script src="/js/translations.js"></script>
+<script src="/js/products-data.js"></script>
+</body>
+</html>
