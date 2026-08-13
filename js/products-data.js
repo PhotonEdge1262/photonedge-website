@@ -2121,7 +2121,7 @@ var PRODUCTS = [
         "diameter": "25.40mm",
         "focalLength": "1000.00mm",
         "centerThickness": "2.30mm",
-        "edgeThickness": "2..02mm",
+        "edgeThickness": "2.02mm",
         "backFocalLength": "998.49mm"
       },
       {
