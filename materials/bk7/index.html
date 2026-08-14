@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BK7 Optical Glass Properties & Applications | PhotonEdge</title>
-<meta name="description" content="BK7 borosilicate crown glass: transmission range 350nm-2.0um, refractive index 1.5168. Precision optical components for visible and near-IR imaging systems. Custom coatings available.">
-<meta name="keywords" content="optical materials, BK7 refractive index, fused silica, sapphire, ZnSe, germanium optics, silicon IR, CaF2, MgF2, sellmeier equation, PhotonEdge">
-<meta property="og:title" content="Optical Materials Guide | PhotonEdge Precision Optics">
-<meta property="og:description" content="Explore BK7 optical glass properties including transmission, refractive index, and thermal characteristics. PhotonEdge manufactures custom BK7 lenses, windows, and prisms.">
+<title>BK7 Optical Glass - Properties, Transmission & Applications | PhotonEdge</title>
+<meta name="description" content="BK7 borosilicate crown glass optical properties: refractive index, Abbe number, transmission range 350-2000nm. Compare with other optical materials for your application.">
+<meta name="keywords" content="BK7 optical glass, K9 glass, borosilicate crown glass, BK7 refractive index, BK7 transmission, optical material properties, PhotonEdge">
+<meta property="og:title" content="BK7 Optical Glass - Properties, Transmission & Applications | PhotonEdge">
+<meta property="og:description" content="BK7 borosilicate crown glass optical properties: refractive index, Abbe number, transmission range 350-2000nm. Compare with other optical materials for your application.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://photonedgeoptics.com/materials.html">
 <meta property="og:site_name" content="PhotonEdge">
@@ -208,13 +208,13 @@ gtag('config', 'G-E6J791MXZY');
             </nav>
 
 <!-- HERO -->
-<section class="hero">
-<h1>Optical Materials Database</h1>
+<section class="hero" style="display:none;">
+<div>Optical Materials Database</div>
 <p>Comprehensive guide to 8 essential optical materials. Compare refractive indices, transmission ranges, and find the perfect material for your precision optics application.</p>
 </section>
 
 <!-- FILTER -->
-<div class="filter-bar">
+<div class="filter-bar" style="display:none;">
 <div class="filter-row">
 <span class="filter-label">Application</span>
 <button class="filter-btn active" onclick="filterApp('all',this)">All</button>
@@ -234,7 +234,7 @@ gtag('config', 'G-E6J791MXZY');
 </div>
 
 <!-- COMPARE STRIP -->
-<div class="compare-bar">
+<div class="compare-bar" style="display:none;">
 <div class="compare-strip" id="compareStrip">
 <div class="compare-strip-text"><span id="compareCount">0</span> materials selected for comparison</div>
 <div class="compare-strip-actions">
@@ -245,10 +245,10 @@ gtag('config', 'G-E6J791MXZY');
 </div>
 
 <!-- MATERIALS GRID -->
-<div class="materials-grid" id="materialsGrid"></div>
+<div class="materials-grid" id="materialsGrid" style="display:none;"></div>
 
 <!-- DETAIL MODAL -->
-<div class="modal-overlay" id="detailModal">
+<div class="modal-overlay" id="detailModal" style="display:none!important;">
 <div class="modal-box">
 <div class="modal-header">
 <div>
@@ -1193,6 +1193,129 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof updatePageTranslations === 'function') updatePageTranslations();
 });
 </script>
+
+    <!-- Products Using This Material -->
+    <div class="container" style="max-width:1000px; margin:48px auto; padding:0 24px;">
+        <h2 style="font-size:24px; font-weight:700; color:#1e3a5f; text-align:center; margin-bottom:8px;">Products Using BK7 Optical Glass</h2>
+        <p style="text-align:center; color:#64748b; font-size:0.9rem; margin-bottom:24px;">Browse our catalog of optical components available in BK7 Optical Glass</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:16px;">
+            
+                <a href="/products/bk7-ball-lenses/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Ball Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-bi-concave/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Bi-Concave Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-bi-convex/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Bi-Convex Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-c-lenses/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 C-Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-negative-meniscus/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Negative Meniscus Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-concave/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Plano-Concave Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-concave-cylindrical/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Plano-Concave Cylindrical Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-convex/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Plano-Convex Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-convex-cylindrical/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Plano-Convex Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-positive-meniscus/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Positive Meniscus Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-right-angle-prisms/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Right Angle Prisms</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Prisms</span>
+                </a>
+                <a href="/products/bk7-rod-lenses/" style="display:block; padding:16px 20px; background:#fff; border-radius:10px; border:1px solid #e2e8f0; text-decoration:none; color:inherit; transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem; font-weight:600; color:#1e293b; margin:0 0 4px 0;">BK7 Rod Lenses</h4>
+                    <span style="font-size:0.8rem; color:#64748b;">Optical Lenses</span>
+                </a>
+        </div>
+        <div style="text-align:center; margin-top:24px;">
+            <a href="/products.html" style="color:#3b82f6; text-decoration:none; font-weight:500; font-size:0.9rem;">View All Products &rarr;</a>
+        </div>
+    </div>
+
+
+    <!-- Products Using This Material -->
+    <div class="container" style="max-width:1000px;margin:48px auto;padding:0 24px;">
+        <h2 style="font-size:24px;font-weight:700;color:#1e3a5f;text-align:center;margin-bottom:8px;">Products Using BK7 Optical Glass</h2>
+        <p style="text-align:center;color:#64748b;font-size:0.9rem;margin-bottom:24px;">Browse our catalog of optical components available in BK7 Optical Glass</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;">
+            
+                <a href="/products/bk7-ball-lenses/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Ball Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-bi-concave/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Bi-Concave Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-bi-convex/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Bi-Convex Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-c-lenses/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 C-Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-negative-meniscus/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Negative Meniscus Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-concave/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Plano-Concave Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-concave-cylindrical/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Plano-Concave Cylindrical Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-convex/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Plano-Convex Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-plano-convex-cylindrical/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Plano-Convex Cylindrical Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-positive-meniscus/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Positive Meniscus Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+                <a href="/products/bk7-right-angle-prisms/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Right Angle Prisms</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Prisms</span>
+                </a>
+                <a href="/products/bk7-rod-lenses/" style="display:block;padding:16px 20px;background:#fff;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;color:inherit;transition:all 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)';this.style.transform='translateY(-2px)'" onmouseout="this.style.boxShadow='none';this.style.transform='none'">
+                    <h4 style="font-size:0.95rem;font-weight:600;color:#1e293b;margin:0 0 4px 0;">BK7 Rod Lenses</h4>
+                    <span style="font-size:0.8rem;color:#64748b;">Optical Lenses</span>
+                </a>
+        </div>
+        <p style="text-align:center;color:#94a3b8;font-size:0.85rem;margin-top:12px;">and 31 more products...</p>
+        <div style="text-align:center;margin-top:24px;">
+            <a href="/products.html" style="color:#3b82f6;text-decoration:none;font-weight:500;font-size:0.9rem;">View All Products &rarr;</a>
+        </div>
+    </div>
+
 <footer class="footer">
 <div class="footer-inner">
 <div class="footer-grid">
