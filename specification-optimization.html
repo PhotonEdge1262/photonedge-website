@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specification Optimization | Flatness, Surface Quality & Tolerance Guide | PhotonEdge</title>
+    <meta name="description" content="Optical specification optimization guide: flatness, surface quality, and dimensional tolerances. Learn when tight specs matter and when they add cost without benefit.">
+    <meta name="keywords" content="optical specification optimization, flatness vs cost, surface quality guide, optical tolerance selection, lambda 4 lambda 10 lambda 20, scratch dig 10-5 20-10 40-20">
+    <meta property="og:title" content="Optical Specification Optimization Guide | PhotonEdge">
+    <meta property="og:description" content="Tighter tolerances mean higher cost — but not always better performance. Learn which specs actually matter for your optical system.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/specification-optimization.html">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/specification-optimization.html">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/specification-optimization.html">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/specification-optimization.html?lang=zh">
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Engineering", "item": "https://photonedgeoptics.com/engineering.html"},
+        {"@type": "ListItem", "position": 3, "name": "Specification Optimization", "item": "https://photonedgeoptics.com/specification-optimization.html"}
+      ]
+    }
+    </script>
+
+    <!-- TechArticle Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Optical Specification Optimization: Getting What You Need Without Paying for What You Don't",
+        "description": "A practical guide to optical specifications — flatness, surface quality, and dimensional tolerances — and how each impacts performance and cost.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "PhotonEdge"
+        }
+    }
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Optical Specification Optimization Guide | PhotonEdge">
+    <meta name="twitter:description" content="Tighter tolerances mean higher cost — but not always better system performance. Learn which specs actually matter.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <style>
+    .spec-hero { background: linear-gradient(135deg, #0a1628 0%, #1a2d50 100%); padding: 70px 0 50px; color: white; }
+    .spec-hero .eyebrow { font-size: 13px; text-transform: uppercase; letter-spacing: 2px; color: #60a5fa; margin-bottom: 16px; }
+    .spec-hero h1 { font-size: 34px; font-weight: 700; margin-bottom: 14px; color: white; max-width: 750px; line-height: 1.25; }
+    .spec-hero .lead { font-size: 17px; color: #b0c4de; max-width: 700px; line-height: 1.7; }
+    .spec-hero .key-idea { font-size: 18px; color: #fbbf24; font-weight: 600; margin: 16px 0 0; font-style: italic; }
+    .spec-section { padding: 60px 0; }
+    .spec-section:nth-child(even) { background: #f8fafc; }
+    .spec-section h2 { font-size: 26px; color: #1e3a5f; margin-bottom: 12px; font-weight: 700; }
+    .spec-section .section-intro { font-size: 15px; color: #4b5563; max-width: 750px; margin-bottom: 28px; line-height: 1.7; }
+    .spec-compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+    .spec-card { background: white; border: 1px solid #e2e6ef; border-radius: 10px; padding: 24px; }
+    .spec-card.highlight { border: 2px solid #3b82f6; box-shadow: 0 4px 12px rgba(59,130,246,0.1); }
+    .spec-card .grade { font-size: 20px; font-weight: 700; color: #1e3a5f; margin-bottom: 4px; }
+    .spec-card .grade-value { font-size: 14px; color: #6b7280; margin-bottom: 16px; }
+    .spec-card h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: #6b7280; margin: 14px 0 6px; }
+    .spec-card p { font-size: 14px; color: #374151; line-height: 1.65; margin: 0 0 10px; }
+    .impact-box { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 16px 0; }
+    .impact-box strong { color: #92400e; }
+    .cost-bar { height: 8px; background: #e5e7eb; border-radius: 4px; margin-top: 6px; overflow: hidden; }
+    .cost-bar-fill { height: 100%; background: linear-gradient(90deg, #10b981, #f59e0b, #ef4444); border-radius: 4px; }
+    .recommendation { background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 16px 20px; margin-top: 20px; }
+    .recommendation strong { color: #166534; }
+    .faq-item { background: white; border: 1px solid #e2e6ef; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+    .faq-q { padding: 16px 20px; cursor: pointer; font-weight: 600; color: #1e3a5f; font-size: 15px; }
+    .faq-a { padding: 0 20px 16px; color: #4b5563; font-size: 14px; line-height: 1.7; display: none; }
+    .cta-box { background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%); padding: 48px; border-radius: 12px; text-align: center; color: white; margin: 40px 0; }
+    .cta-box h2 { color: white; font-size: 24px; margin-bottom: 12px; }
+    .cta-box p { color: rgba(176,196,222,0.9); margin-bottom: 24px; }
+    .cta-box .btn { display: inline-block; padding: 12px 28px; border-radius: 6px; font-weight: 600; text-decoration: none; margin: 0 8px; }
+    .cta-box .btn-primary { background: #e8792f; color: white; }
+    .cta-box .btn-secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.4); }
+    @media (max-width: 900px) {
+        .spec-compare { grid-template-columns: 1fr; }
+        .spec-hero h1 { font-size: 24px; }
+        .cta-box { padding: 32px 20px; }
+        .cta-box .btn { display: block; margin: 8px 0; }
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="/images/logo.webp" type="image/webp">
+        <img src="/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="/product-catalog.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link active" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span id="cart-count">0</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="spec-hero">
+        <div class="container">
+            <div class="eyebrow">Engineering Guide</div>
+            <h1>Optical Specification Optimization</h1>
+            <p class="lead">Every engineer wants the best possible component. But "best" and "most expensive" are not the same thing. Tighter tolerances mean higher cost — but they don't always deliver better system performance.</p>
+            <p class="key-idea">The goal is not the tightest spec. It's the right spec for the job.</p>
+        </div>
+    </section>
+
+    <!-- Flatness Section -->
+    <section class="spec-section">
+        <div class="container">
+            <h2>Surface Flatness: &lambda;/4 vs &lambda;/10 vs &lambda;/20</h2>
+            <p class="section-intro">Surface flatness describes how much an optical surface deviates from a perfect plane or sphere, measured in fractions of a wavelength (typically at 632.8nm HeNe). The flatter the surface, the more polishing and metrology time required, and the higher the cost.</p>
+            
+            <div class="spec-compare">
+                <div class="spec-card">
+                    <div class="grade">&lambda;/4 Flatness</div>
+                    <div class="grade-value">Commercial / standard grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>A &lambda;/4 surface has a peak-to-valley wavefront error of up to one-quarter wavelength. In transmission, this means about &lambda;/8 wavefront distortion (because light passes through the surface twice — once in, once out, but the surface figure error is divided by ~n-1).</p>
+                    <h4>Real Impact</h4>
+                    <p>Sufficient for general imaging, illumination, and low-power laser systems. The wavefront error is well within the depth of focus of most f/4 and slower lenses. Barely detectable in typical visual systems.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Baseline cost. Standard polished surface with minimal extra metrology. Most economical choice for non-critical applications.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 25%;"></div></div>
+                </div>
+                <div class="spec-card highlight">
+                    <div class="grade">&lambda;/10 Flatness</div>
+                    <div class="grade-value">Precision grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>&lambda;/10 flatness means the surface deviates by no more than 0.1 waves peak-to-valley. This requires careful polishing with frequent interferometric feedback and careful process control.</p>
+                    <h4>Real Impact</h4>
+                    <p>Necessary for metrology systems, interferometry, high-resolution imaging, and moderate-power laser resonators. Delivers diffraction-limited performance for most optical systems. &lambda;/10 is the sweet spot for many precision applications.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Roughly 1.5–2× the cost of &lambda;/4. Extra polishing time and more frequent metrology add cost, but the performance gain is significant for precision systems.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 55%;"></div></div>
+                </div>
+                <div class="spec-card">
+                    <div class="grade">&lambda;/20 Flatness</div>
+                    <div class="grade-value">High-precision / laser grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>&lambda;/20 flatness represents 0.05 waves peak-to-valley error. Achieving this requires expert polishing, extended process time, and multiple interferometer measurements — often with sub-aperture polishing for final figure correction.</p>
+                    <h4>Real Impact</h4>
+                    <p>Required for high-precision interferometer reference flats, high-power laser resonators, ring laser gyroscopes, and systems where wavefront error must be at the absolute minimum. Often over-specified for general imaging or illumination.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Typically 3–5× the cost of &lambda;/4. Yield drops significantly at this level, and metrology time increases substantially. Only specify when the application genuinely demands it.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 85%;"></div></div>
+                </div>
+            </div>
+            
+            <div class="recommendation">
+                <strong>PhotonEdge Recommendation:</strong> Start with &lambda;/4 for general purpose and &lambda;/10 for precision systems. Only go to &lambda;/20 if you can trace the flatness requirement to a specific system-level performance specification. Many systems get &lambda;/20 performance from a &lambda;/10 part because the spec has built-in margin that doesn't reflect real system needs.
+            </div>
+        </div>
+    </section>
+
+    <!-- Surface Quality Section -->
+    <section class="spec-section">
+        <div class="container">
+            <h2>Surface Quality: 10-5 vs 20-10 vs 40-20 (Scratch-Dig)</h2>
+            <p class="section-intro">Surface quality describes the presence of cosmetic defects — scratches and digs — on the polished surface. It is specified per MIL-PRF-13830B or ISO 10110 standards using the scratch-dig code (e.g., 60-40, 40-20, 20-10, 10-5). The first number is the scratch grade, the second is the dig grade. Lower numbers = fewer/smaller defects = higher cost.</p>
+            
+            <div class="spec-compare">
+                <div class="spec-card">
+                    <div class="grade">40-20</div>
+                    <div class="grade-value">Commercial / standard grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>40-20 surface quality allows scratches up to 0.04mm wide and digs up to 0.2mm in diameter (per MIL spec interpretation). Surfaces are polished and inspected under standard lighting conditions.</p>
+                    <h4>Real Impact</h4>
+                    <p>Perfectly acceptable for most imaging, illumination, and low-power laser applications. Scattered light from cosmetic defects is negligible in non-critical systems. The human eye cannot distinguish 40-20 from 10-5 in most finished optical systems.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Baseline cost. Standard polishing with visual inspection. The most economical choice for the vast majority of general optical applications.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 20%;"></div></div>
+                </div>
+                <div class="spec-card highlight">
+                    <div class="grade">20-10</div>
+                    <div class="grade-value">Precision grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>20-10 surface quality allows scratches up to 0.02mm wide and digs up to 0.1mm diameter. Requires more careful polishing, clean handling, and inspection under dark-field illumination.</p>
+                    <h4>Real Impact</h4>
+                    <p>Recommended for high-power lasers (where defects can initiate damage), imaging systems with high dynamic range, and any application where scattered light could reduce signal-to-noise ratio. Good balance between quality and cost for precision systems.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Approximately 1.3–1.8× the cost of 40-20. Extra polishing time, clean-room handling, and more thorough inspection add moderate cost. Often a worthwhile upgrade for laser and imaging systems.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 45%;"></div></div>
+                </div>
+                <div class="spec-card">
+                    <div class="grade">10-5</div>
+                    <div class="grade-value">High-precision / laser grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>10-5 surface quality allows only very fine scratches (0.01mm max) and tiny digs (0.05mm max). Requires final polishing in a clean environment with meticulous inspection under high-intensity dark-field illumination.</p>
+                    <h4>Real Impact</h4>
+                    <p>Essential for high-energy pulsed lasers (where surface defects concentrate energy and cause laser damage), ultra-high-vacuum systems, and the most demanding low-scatter applications. Often over-specified for visible imaging systems.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Typically 2–4× the cost of 40-20. Yield drops significantly — many parts must be re-polished or rejected. Clean-room handling and extended inspection drive cost up substantially.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 80%;"></div></div>
+                </div>
+            </div>
+            
+            <div class="impact-box">
+                <strong>Common Misconception:</strong> Many engineers specify 10-5 because they think it means "better quality" without considering whether cosmetic defects actually affect their system performance. For an imaging lens with 10 elements, the combined effect of 40-20 surfaces on image contrast is typically far less than other error sources (like lens design, alignment, or coating quality).
+            </div>
+            
+            <div class="recommendation">
+                <strong>PhotonEdge Recommendation:</strong> Use 40-20 for general imaging and illumination, 20-10 for lasers above 100mW and precision systems, and 10-5 only for high-energy pulsed lasers or applications where scatter is genuinely critical. If you're not sure, ask: will a 0.02mm scratch on this surface actually impact my system's performance? If the answer is "probably not," don't pay for 10-5.
+            </div>
+        </div>
+    </section>
+
+    <!-- Dimensional Tolerance Section -->
+    <section class="spec-section">
+        <div class="container">
+            <h2>Dimensional Tolerance: &plusmn;0.01mm vs &plusmn;0.05mm vs &plusmn;0.1mm</h2>
+            <p class="section-intro">Dimensional tolerances specify how precisely the physical size (diameter, thickness, edge thickness) of an optical component must match the nominal value. Tighter dimensional tolerance requires more careful grinding, more precise metrology, and more rejects.</p>
+            
+            <div class="spec-compare">
+                <div class="spec-card">
+                    <div class="grade">&plusmn;0.1mm</div>
+                    <div class="grade-value">Commercial grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>&plusmn;0.1mm (or 100 micron) diameter/thickness tolerance is achievable with standard optical grinding and polishing processes. Final dimensions are verified with standard digital micrometers.</p>
+                    <h4>Real Impact</h4>
+                    <p>Sufficient for most lens cells and mounts with retaining rings, where the optic is centered by a bevel or spring. Thickness variation of 0.1mm has negligible optical effect in most systems (focal length shift is typically far less than 1%).</p>
+                    <h4>Cost Impact</h4>
+                    <p>Baseline cost. Standard optical manufacturing tolerances. Most catalog components fall into this range because it provides excellent value for general applications.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 20%;"></div></div>
+                </div>
+                <div class="spec-card highlight">
+                    <div class="grade">&plusmn;0.05mm</div>
+                    <div class="grade-value">Precision grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>&plusmn;0.05mm (50 micron) tolerance requires more controlled grinding processes and careful measurement. May require centerless grinding for OD and precision lapping for thickness control.</p>
+                    <h4>Real Impact</h4>
+                    <p>Useful for precision lens barrels, drop-in assemblies, and applications where the optic must fit closely into a bore without adhesive or shimming. Ensures consistent fit in medium-volume assemblies.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Approximately 1.2–1.5× the cost of &plusmn;0.1mm. Moderate additional processing and more frequent measurement. Generally worth specifying if your mechanical design requires close fit.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 40%;"></div></div>
+                </div>
+                <div class="spec-card">
+                    <div class="grade">&plusmn;0.01mm</div>
+                    <div class="grade-value">High-precision grade</div>
+                    <h4>Engineering Explanation</h4>
+                    <p>&plusmn;0.01mm (10 micron) tolerance is very tight for optical components. It requires precision grinding, possibly post-polishing centering, and metrology with gauge blocks or coordinate measuring machines.</p>
+                    <h4>Real Impact</h4>
+                    <p>Needed only for the most demanding optomechanical assemblies — interferometer reference mounts, precision rotary stages, and applications where the part must locate with micron-level repeatability. Rarely necessary for general optical systems.</p>
+                    <h4>Cost Impact</h4>
+                    <p>Typically 2–3× the cost of &plusmn;0.1mm. Additional centering operations, precision metrology, and lower yields all contribute to significantly higher cost.</p>
+                    <div class="cost-bar"><div class="cost-bar-fill" style="width: 75%;"></div></div>
+                </div>
+            </div>
+            
+            <div class="impact-box">
+                <strong>Important:</strong> Dimensional tolerance and optical performance are not directly linked. A lens with &plusmn;0.1mm diameter tolerance focuses light just as well as one with &plusmn;0.01mm. The tolerance matters only for mechanical fit — how the part sits in its mount. If your mount uses a retaining ring or spring, the diameter tolerance rarely matters at all.
+            </div>
+            
+            <div class="recommendation">
+                <strong>PhotonEdge Recommendation:</strong> Use &plusmn;0.1mm for most applications with standard mounts. Specify &plusmn;0.05mm if the optic must drop into a precision bore without shimming. Only go to &plusmn;0.01mm if you have a specific mechanical reason (e.g., interchangeable optics in a precision mount). Don't confuse mechanical precision with optical performance.
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary / Principle -->
+    <section class="spec-section">
+        <div class="container">
+            <h2>The Core Principle</h2>
+            <div style="background: white; border: 1px solid #e2e6ef; border-radius: 12px; padding: 32px; text-align: center; max-width: 700px; margin: 0 auto;">
+                <p style="font-size: 20px; color: #1e3a5f; font-weight: 600; line-height: 1.6; margin-bottom: 20px;">Tighter tolerances mean higher cost — but not always better system performance.</p>
+                <p style="font-size: 15px; color: #4b5563; line-height: 1.7;">The goal of specification optimization is to identify which parameters genuinely affect your system's performance and allocate your budget there, while relaxing the parameters that don't matter.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 32px;">
+                <div style="background: #f0fdf4; border: 1px solid #86efac; border-radius: 8px; padding: 20px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">&#128077;</div>
+                    <h3 style="font-size: 16px; color: #166534; margin-bottom: 8px;">Tighten When</h3>
+                    <p style="font-size: 13px; color: #166534; line-height: 1.6; margin: 0;">You can trace the spec to a measurable system performance requirement</p>
+                </div>
+                <div style="background: #fef3c7; border: 1px solid #fcd34d; border-radius: 8px; padding: 20px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">&#129300;</div>
+                    <h3 style="font-size: 16px; color: #92400e; margin-bottom: 8px;">Question When</h3>
+                    <p style="font-size: 13px; color: #92400e; line-height: 1.6; margin: 0;">The spec was copied from another design or a template without analysis</p>
+                </div>
+                <div style="background: #fef2f2; border: 1px solid #fca5a5; border-radius: 8px; padding: 20px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 8px;">&#9940;&#65039;</div>
+                    <h3 style="font-size: 16px; color: #991b1b; margin-bottom: 8px;">Avoid When</h3>
+                    <p style="font-size: 13px; color: #991b1b; line-height: 1.6; margin: 0;">You're specifying "just to be safe" or "because we always do it that way"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="container" style="padding-bottom: 60px;">
+        <div class="cta-box">
+            <h2>Talk to an Optical Engineer About Your Specification</h2>
+            <p>Send us your drawing or spec sheet. We'll review it for free and tell you where tighter tolerances matter and where you can save cost without sacrificing performance.</p>
+            <a href="/contact.html" class="btn btn-primary">Request Specification Review</a>
+            <a href="/engineering.html" class="btn btn-secondary">Explore Engineering Services</a>
+        </div>
+    </div>
+
+    <!-- Related Resources -->
+    <section class="spec-section">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <a href="/blog/laser-damage-threshold-guide/" style="display:block;padding:14px 20px;background:#f8fafc;border-radius:8px;margin-bottom:10px;text-decoration:none;color:#1e3a5f;font-size:15px;">&rarr; Laser Damage Threshold: What Engineers Need to Know</a>
+            <a href="/blog/anti-reflection-coating-selection-guide/" style="display:block;padding:14px 20px;background:#f8fafc;border-radius:8px;margin-bottom:10px;text-decoration:none;color:#1e3a5f;font-size:15px;">&rarr; Anti-Reflection Coating Selection Guide</a>
+            <a href="/blog/custom-optics-specification-guide/" style="display:block;padding:14px 20px;background:#f8fafc;border-radius:8px;margin-bottom:10px;text-decoration:none;color:#1e3a5f;font-size:15px;">&rarr; Custom Optics Specification Guide</a>
+            <a href="/ai-optical-engineer.html" style="display:block;padding:14px 20px;background:#f0f4ff;border-radius:8px;margin-bottom:10px;text-decoration:none;color:#1e3a5f;font-size:15px;font-weight:600;">&rarr; Try AI Optical Engineer for instant spec recommendations</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
+                <div class="footer-brand">
+                    <h3>PhotonEdge</h3>
+                    <p>Precision Optical Solutions Provider</p>
+                    <p style="margin-top:8px;font-size:13px;color:rgba(255,255,255,0.6);">ISO 9001:2015 Certified</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/product-catalog.html?component=Lens">Optical Lenses</a></li>
+                        <li><a href="/product-catalog.html?component=Window">Optical Windows</a></li>
+                        <li><a href="/product-catalog.html?component=Mirror">Optical Mirrors</a></li>
+                        <li><a href="/product-catalog.html?component=Filter">Optical Filters</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Applications</h4>
+                    <ul>
+                        <li><a href="/applications/laser-optics/">Laser Systems</a></li>
+                        <li><a href="/applications/semiconductor-inspection/">Semiconductor</a></li>
+                        <li><a href="/applications/medical-imaging/">Medical Imaging</a></li>
+                        <li><a href="/applications/aerospace-defense/">Aerospace &amp; Defense</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                        <li>Phone: +86-13693009175</li>
+                        <li>WhatsApp: +86-13693009175</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.467-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script src="/js/translations.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+    function toggleMobileMenu(){var n=document.querySelector('.nav-list');if(n)n.classList.toggle('active');}
+    function toggleFaq(el){var a=el.nextElementSibling;a.style.display=a.style.display==='none'?'block':'none';}
+    </script>
+    <script src="/js/chat-bot.js"></script>
+    <script src="/js/chatbot.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
