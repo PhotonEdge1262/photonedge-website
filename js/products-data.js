@@ -587,7 +587,37 @@ var PRODUCTS = [
         "backFocalLength": "498.20mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "AR 650-1050nm"
+    ],
+    "seoTitle": "BK7 Plano-Convex Lenses | UV-Vis Optical Lenses | PhotonEdge",
+    "seoDesc": "BK7 plano-convex lenses for focusing and collimating. Diameter 2.5-75mm, focal length 3.9-1000mm. AR coated. Custom specs available.",
+    "keywords": [
+      "bk7 plano convex lens",
+      "bk7 focusing lens",
+      "optical plano convex lens",
+      "collimating lens bk7"
+    ]
   },
   {
     "id": 2,
@@ -1025,7 +1055,37 @@ var PRODUCTS = [
         "backFocalLength": "199.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "AR 650-1050nm"
+    ],
+    "seoTitle": "BK7 Bi-Convex Lenses | Symmetrical Focusing Lenses | PhotonEdge",
+    "seoDesc": "BK7 bi-convex lenses with symmetrical geometry for 1:1 imaging and beam focusing. 51 models from 2.5mm to 75mm diameter.",
+    "keywords": [
+      "bk7 bi convex lens",
+      "biconvex lens",
+      "symmetrical lens",
+      "imaging lens bk7"
+    ]
   },
   {
     "id": 3,
@@ -1430,7 +1490,36 @@ var PRODUCTS = [
         "backFocalLength": "-101.65mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Plano-Concave Lenses | Beam Diverging Lenses | PhotonEdge",
+    "seoDesc": "BK7 plano-concave lenses for beam expansion and light divergence. Negative focal length, 47 models available.",
+    "keywords": [
+      "bk7 plano concave lens",
+      "diverging lens",
+      "negative lens bk7",
+      "beam expansion lens"
+    ]
   },
   {
     "id": 4,
@@ -1643,7 +1732,36 @@ var PRODUCTS = [
         "backFocalLength": "-500.85mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Bi-Concave Lenses | Negative Focal Length | PhotonEdge",
+    "seoDesc": "BK7 bi-concave lenses for beam divergence and optical systems. 23 models with negative focal length.",
+    "keywords": [
+      "bk7 bi concave lens",
+      "biconcave lens",
+      "negative lens",
+      "diverging lens bk7"
+    ]
   },
   {
     "id": 5,
@@ -1817,7 +1935,35 @@ var PRODUCTS = [
         "backFocalLength": "995.42mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Positive Meniscus Lenses | Low Aberration | PhotonEdge",
+    "seoDesc": "BK7 positive meniscus lenses for reducing spherical aberration in imaging systems. 18 models available.",
+    "keywords": [
+      "bk7 meniscus lens",
+      "positive meniscus",
+      "low aberration lens",
+      "imaging lens"
+    ]
   },
   {
     "id": 6,
@@ -1919,7 +2065,34 @@ var PRODUCTS = [
         "backFocalLength": "-995.30mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Negative Meniscus Lenses | Beam Shaping | PhotonEdge",
+    "seoDesc": "BK7 negative meniscus lenses for beam shaping and aberration correction. 9 models available.",
+    "keywords": [
+      "bk7 negative meniscus",
+      "meniscus lens",
+      "beam shaping lens"
+    ]
   },
   {
     "id": 7,
@@ -2173,7 +2346,40 @@ var PRODUCTS = [
         "backFocalLength": "246.02mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "AR 350-700nm",
+      "BBAR UV-VIS-NIR"
+    ],
+    "seoTitle": "UV Fused Silica Plano-Convex Lenses | 185-2100nm | PhotonEdge",
+    "seoDesc": "UV fused silica plano-convex lenses with high transmittance 185-2100nm. Ideal for 355nm, 266nm laser systems. 28 models.",
+    "keywords": [
+      "fused silica lens",
+      "uv lens",
+      "355nm lens",
+      "266nm lens",
+      "plano convex fused silica"
+    ]
   },
   {
     "id": 8,
@@ -2451,7 +2657,37 @@ var PRODUCTS = [
         "backFocalLength": "499.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "AR 350-700nm"
+    ],
+    "seoTitle": "UV Fused Silica Bi-Convex Lenses | UV-Vis-NIR | PhotonEdge",
+    "seoDesc": "UV fused silica bi-convex lenses for UV to NIR applications. High laser damage threshold. 31 models available.",
+    "keywords": [
+      "fused silica bi convex",
+      "uv biconvex lens",
+      "laser lens uv"
+    ]
   },
   {
     "id": 9,
@@ -2689,7 +2925,35 @@ var PRODUCTS = [
         "backFocalLength": "-1001.71mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Plano-Concave Lenses | UV Diverging | PhotonEdge",
+    "seoDesc": "UV fused silica plano-concave lenses for beam divergence in UV systems. 26 models, 185-2100nm transmission.",
+    "keywords": [
+      "fused silica plano concave",
+      "uv diverging lens",
+      "negative fused silica lens"
+    ]
   },
   {
     "id": 10,
@@ -2991,7 +3255,35 @@ var PRODUCTS = [
         "backFocalLength": "-176.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Bi-Concave Lenses | 185-2100nm | PhotonEdge",
+    "seoDesc": "UV fused silica bi-concave lenses for UV beam expansion. High purity synthetic silica. 34 models.",
+    "keywords": [
+      "fused silica bi concave",
+      "uv biconcave lens",
+      "beam expansion uv"
+    ]
   },
   {
     "id": 11,
@@ -3561,7 +3853,35 @@ var PRODUCTS = [
         "backFocalLength": "126.91mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Plano-Convex Cylindrical Lenses | Line Generation | PhotonEdge",
+    "seoDesc": "BK7 cylindrical lenses for line generation and anamorphic optics. 54 models, single-axis focusing.",
+    "keywords": [
+      "cylindrical lens bk7",
+      "line generation lens",
+      "plano convex cylindrical"
+    ]
   },
   {
     "id": 12,
@@ -4061,7 +4381,34 @@ var PRODUCTS = [
         "backFocalLength": "-401.98mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Plano-Concave Cylindrical Lenses | Line Beam Expansion | PhotonEdge",
+    "seoDesc": "BK7 plano-concave cylindrical lenses for single-axis beam expansion. 47 models available.",
+    "keywords": [
+      "concave cylindrical lens",
+      "line expansion lens",
+      "bk7 cylindrical"
+    ]
   },
   {
     "id": 13,
@@ -4201,7 +4548,36 @@ var PRODUCTS = [
         "backFocalLength": "72.60mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "AR 350-700nm"
+    ],
+    "seoTitle": "UV Fused Silica Cylindrical Lenses | UV Line Generation | PhotonEdge",
+    "seoDesc": "UV fused silica cylindrical lenses for UV laser line generation. 11 models, 185-2100nm.",
+    "keywords": [
+      "uv cylindrical lens",
+      "fused silica cylindrical",
+      "uv line lens"
+    ]
   },
   {
     "id": 14,
@@ -4341,7 +4717,34 @@ var PRODUCTS = [
         "backFocalLength": "-202.60mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Concave Cylindrical Lenses | PhotonEdge",
+    "seoDesc": "UV fused silica concave cylindrical lenses for UV beam shaping. 11 models available.",
+    "keywords": [
+      "uv concave cylindrical",
+      "fused silica concave cylindrical"
+    ]
   },
   {
     "id": 15,
@@ -4907,7 +5310,38 @@ var PRODUCTS = [
         "backFocalLength": "994.60mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7",
+      "SF11"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Imaging",
+      "Medical",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "AR 400-700nm"
+    ],
+    "seoTitle": "Achromatic Doublet Lenses | Chromatic Aberration Correction | PhotonEdge",
+    "seoDesc": "Cemented achromatic doublets for color correction in imaging systems. BK7/SF11 combination. 67 models, 350-2000nm.",
+    "keywords": [
+      "achromatic doublet",
+      "achromatic lens",
+      "color correction lens",
+      "imaging lens"
+    ]
   },
   {
     "id": 16,
@@ -5113,7 +5547,36 @@ var PRODUCTS = [
         "workingDistance": "100mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      400,
+      1000
+    ],
+    "application": [
+      "Imaging",
+      "Industrial",
+      "Medical"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "BK7 C-Mount Lenses | Machine Vision & Fiber Optics | PhotonEdge",
+    "seoDesc": "BK7 C-lenses for fiber optic collimation and machine vision. C-mount compatible. 22 models.",
+    "keywords": [
+      "c-mount lens",
+      "c lens",
+      "machine vision lens",
+      "fiber collimation lens"
+    ]
   },
   {
     "id": 17,
@@ -5195,7 +5658,36 @@ var PRODUCTS = [
         "diameter": "15.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Telecom",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Ball Lenses | Fiber Coupling & Laser Collimation | PhotonEdge",
+    "seoDesc": "BK7 ball lenses for laser-to-fiber coupling and beam collimation. 14 models, 1mm-25mm diameter.",
+    "keywords": [
+      "ball lens bk7",
+      "fiber coupling lens",
+      "sphere lens",
+      "laser collimation"
+    ]
   },
   {
     "id": 18,
@@ -5276,7 +5768,36 @@ var PRODUCTS = [
         "diameter": "15.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2500
+    ],
+    "application": [
+      "Laser",
+      "Telecom",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Ball Lenses | UV Fiber Coupling | PhotonEdge",
+    "seoDesc": "UV fused silica ball lenses for UV-to-NIR fiber coupling. 14 models, 185-2500nm transmission.",
+    "keywords": [
+      "fused silica ball lens",
+      "uv ball lens",
+      "fiber coupling uv"
+    ]
   },
   {
     "id": 19,
@@ -5417,7 +5938,35 @@ var PRODUCTS = [
         "length": "20.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Rod Lenses | Line Focus & Laser Illumination | PhotonEdge",
+    "seoDesc": "BK7 rod lenses for converting point to line focus. Ideal for laser scanning and illumination. 23 models.",
+    "keywords": [
+      "rod lens bk7",
+      "line focus lens",
+      "laser illumination lens"
+    ]
   },
   {
     "id": 20,
@@ -5557,7 +6106,35 @@ var PRODUCTS = [
         "length": "20.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Rod Lenses | UV Line Focus | PhotonEdge",
+    "seoDesc": "UV fused silica rod lenses for UV laser line generation. 23 models, high UV transmittance.",
+    "keywords": [
+      "uv rod lens",
+      "fused silica rod lens",
+      "uv line focus"
+    ]
   },
   {
     "id": 21,
@@ -5720,7 +6297,39 @@ var PRODUCTS = [
         "backFocalLength": "24.90mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Medical",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "BBAR"
+    ],
+    "seoTitle": "Aspherical Lenses | Reduced Spherical Aberration | PhotonEdge",
+    "seoDesc": "Precision aspherical lenses for aberration correction and laser collimation. 15 models, custom available.",
+    "keywords": [
+      "aspherical lens",
+      "aspheric lens",
+      "collimation lens",
+      "aberration correction"
+    ]
   },
   {
     "id": 22,
@@ -5968,7 +6577,38 @@ var PRODUCTS = [
         "maxOutputSpot": "30mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "AR 193-355nm"
+    ],
+    "seoTitle": "Laser Beam Expanders | Keplerian & Galilean | PhotonEdge",
+    "seoDesc": "Laser beam expanders for beam diameter adjustment. Keplerian and Galilean designs. 32 models, 2x-20x magnification.",
+    "keywords": [
+      "beam expander",
+      "laser beam expander",
+      "keplerian expander",
+      "galilean expander"
+    ]
   },
   {
     "id": 23,
@@ -6040,7 +6680,35 @@ var PRODUCTS = [
         "parfocalDistance": "45mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Medical",
+      "Research",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "Microscope Objectives | High-Resolution Imaging | PhotonEdge",
+    "seoDesc": "Infinity-corrected microscope objectives for high-resolution microscopy. 6 models, 4x-100x magnification.",
+    "keywords": [
+      "microscope objective",
+      "infinity corrected",
+      "high magnification lens",
+      "microscopy"
+    ]
   },
   {
     "id": 24,
@@ -6284,7 +6952,38 @@ var PRODUCTS = [
         "thickness": "8mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-bk7-windows.svg"
+    "diagram": "images/diagrams/ltoptic-bk7-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      330,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "Uncoated"
+    ],
+    "seoTitle": "N-BK7 Optical Windows | 330-2100nm | PhotonEdge",
+    "seoDesc": "N-BK7 optical windows for visible to NIR applications. Circular and square, 36 models. AR coating available.",
+    "keywords": [
+      "bk7 window",
+      "optical window bk7",
+      "n-bk7 window",
+      "laser window"
+    ]
   },
   {
     "id": 25,
@@ -6486,7 +7185,41 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.svg"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2500
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Medical",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "AR 350-700nm",
+      "BBAR"
+    ],
+    "seoTitle": "UV Fused Silica Optical Windows | 185-2500nm | PhotonEdge",
+    "seoDesc": "UV fused silica windows for deep UV to NIR. High laser damage threshold. Custom and standard sizes.",
+    "keywords": [
+      "fused silica window",
+      "uv window",
+      "laser window",
+      "355nm window",
+      "266nm window"
+    ]
   },
   {
     "id": 26,
@@ -6622,7 +7355,39 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-sapphire-windows.svg"
+    "diagram": "images/diagrams/ltoptic-sapphire-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "Sapphire"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      150,
+      5500
+    ],
+    "application": [
+      "Medical",
+      "Aerospace",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "Uncoated"
+    ],
+    "seoTitle": "Sapphire Optical Windows | High Hardness & Temperature | PhotonEdge",
+    "seoDesc": "Sapphire windows with Mohs 9 hardness for harsh environments. 150-5500nm transmission. Scratch and pressure resistant.",
+    "keywords": [
+      "sapphire window",
+      "sapphire optical window",
+      "high temperature window",
+      "scratch resistant window"
+    ]
   },
   {
     "id": 27,
@@ -6764,7 +7529,38 @@ var PRODUCTS = [
         "thickness": "3mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-caf2-windows.svg"
+    "diagram": "images/diagrams/ltoptic-caf2-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      130,
+      10000
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "Uncoated"
+    ],
+    "seoTitle": "CaF2 Optical Windows | UV to IR | 130-10000nm | PhotonEdge",
+    "seoDesc": "Calcium fluoride windows with broad UV-IR transmission. Low refractive index. Ideal for UV laser and spectroscopy.",
+    "keywords": [
+      "caf2 window",
+      "calcium fluoride window",
+      "uv ir window",
+      "spectroscopy window"
+    ]
   },
   {
     "id": 28,
@@ -6888,7 +7684,38 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-ge-windows.svg"
+    "diagram": "images/diagrams/ltoptic-ge-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "Germanium"
+    ],
+    "wavelength": [
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      2000,
+      14000
+    ],
+    "application": [
+      "Aerospace",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 2-14um",
+      "Uncoated"
+    ],
+    "seoTitle": "Germanium Optical Windows | IR & Thermal Imaging | PhotonEdge",
+    "seoDesc": "Germanium windows for 2-14um IR and thermal imaging. High refractive index. AR coated for 8-12um.",
+    "keywords": [
+      "germanium window",
+      "ge ir window",
+      "thermal imaging window",
+      "8-12um window"
+    ]
   },
   {
     "id": 29,
@@ -7036,7 +7863,38 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-si-windows.svg"
+    "diagram": "images/diagrams/ltoptic-si-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "Silicon"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR"
+    ],
+    "wavelengthRange": [
+      1200,
+      7000
+    ],
+    "application": [
+      "Aerospace",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 3-5um",
+      "Uncoated"
+    ],
+    "seoTitle": "Silicon Optical Windows | NIR to MWIR | PhotonEdge",
+    "seoDesc": "Silicon windows for 1.2-7um NIR to MWIR applications. Ideal for 3-5um thermal imaging systems.",
+    "keywords": [
+      "silicon window",
+      "si ir window",
+      "mwir window",
+      "3-5um window"
+    ]
   },
   {
     "id": 30,
@@ -7154,7 +8012,38 @@ var PRODUCTS = [
         "thickness": "5mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "ZnSe"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      600,
+      20000
+    ],
+    "application": [
+      "Laser",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 10.6um",
+      "Uncoated"
+    ],
+    "seoTitle": "ZnSe Optical Windows | CO2 Laser & IR | 0.6-20um | PhotonEdge",
+    "seoDesc": "ZnSe windows for CO2 laser and infrared systems. 600nm-20um transmission. 10.6um AR coating available.",
+    "keywords": [
+      "znse window",
+      "co2 laser window",
+      "infrared window",
+      "10.6um window"
+    ]
   },
   {
     "id": 31,
@@ -7328,7 +8217,41 @@ var PRODUCTS = [
         "reflectivity": ">98"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-laser-line-high-reflected-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      193,
+      1064
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "HR 266nm",
+      "HR 355nm",
+      "HR 532nm",
+      "HR 1064nm"
+    ],
+    "seoTitle": "Laser Line High Reflectance Mirrors | UV to NIR | PhotonEdge",
+    "seoDesc": "Laser line HR mirrors for 266nm, 355nm, 532nm, 1064nm. R>99.5% at design wavelength. High LIDT.",
+    "keywords": [
+      "laser mirror",
+      "hr mirror",
+      "laser line mirror",
+      "355nm mirror",
+      "1064nm mirror"
+    ]
   },
   {
     "id": 32,
@@ -7501,7 +8424,38 @@ var PRODUCTS = [
         "reflectivity": ""
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      193,
+      1064
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "HR UV",
+      "HR VIS",
+      "HR NIR",
+      "High-LIDT"
+    ],
+    "seoTitle": "High-Energy Laser Mirrors | High LIDT | PhotonEdge",
+    "seoDesc": "High-energy laser mirrors with LIDT >10 J/cm2. For high-power CW and pulsed laser systems.",
+    "keywords": [
+      "high power laser mirror",
+      "high lidt mirror",
+      "energy laser mirror"
+    ]
   },
   {
     "id": 33,
@@ -7827,7 +8781,39 @@ var PRODUCTS = [
         "wavelength": ""
       }
     ],
-    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-broadband-dielectric-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "BB HR 250-2000nm",
+      "BB HR 400-700nm"
+    ],
+    "seoTitle": "Broadband Dielectric Mirrors | Multi-Band HR | PhotonEdge",
+    "seoDesc": "Broadband dielectric mirrors with high reflectance across wide wavelength ranges. 250-2000nm options.",
+    "keywords": [
+      "broadband mirror",
+      "dielectric mirror",
+      "broadband hr mirror",
+      "multi-band mirror"
+    ]
   },
   {
     "id": 34,
@@ -7966,7 +8952,37 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-protected-aluminum-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Protected Al"
+    ],
+    "seoTitle": "Protected Aluminum Mirrors | UV-Vis-NIR Broadband | PhotonEdge",
+    "seoDesc": "Protected aluminum mirrors for UV-Vis-NIR broadband reflection. SiO2 overcoat for durability.",
+    "keywords": [
+      "aluminum mirror",
+      "protected aluminum",
+      "broadband mirror",
+      "uv vis mirror"
+    ]
   },
   {
     "id": 35,
@@ -8217,7 +9233,36 @@ var PRODUCTS = [
         "wavelength": "200-400nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Enhanced Al"
+    ],
+    "seoTitle": "Enhanced Aluminum Mirrors | >92% UV Reflectance | PhotonEdge",
+    "seoDesc": "Enhanced aluminum mirrors with >92% reflectance down to 250nm. Improved UV performance vs standard Al.",
+    "keywords": [
+      "enhanced aluminum mirror",
+      "uv aluminum mirror",
+      "high reflectance uv"
+    ]
   },
   {
     "id": 36,
@@ -8356,7 +9401,39 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR",
+      "SWIR",
+      "MWIR"
+    ],
+    "wavelengthRange": [
+      400,
+      20000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Aerospace",
+      "Research"
+    ],
+    "coating": [
+      "Protected Ag"
+    ],
+    "seoTitle": "Protected Silver Mirrors | Vis-IR Broadband | >98% R | PhotonEdge",
+    "seoDesc": "Protected silver mirrors with >98% reflectance from visible to IR. Ideal for broadband applications.",
+    "keywords": [
+      "silver mirror",
+      "protected silver",
+      "ir mirror",
+      "broadband silver mirror"
+    ]
   },
   {
     "id": 37,
@@ -8484,7 +9561,38 @@ var PRODUCTS = [
         "wavelength": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.svg"
+    "diagram": "images/diagrams/ltoptic-protected-gold-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      700,
+      20000
+    ],
+    "application": [
+      "Aerospace",
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Protected Au"
+    ],
+    "seoTitle": "Protected Gold Mirrors | IR & CO2 Laser | PhotonEdge",
+    "seoDesc": "Protected gold mirrors with >98% reflectance for NIR to LWIR. Ideal for CO2 laser and IR systems.",
+    "keywords": [
+      "gold mirror",
+      "protected gold",
+      "ir mirror",
+      "co2 laser mirror"
+    ]
   },
   {
     "id": 38,
@@ -8595,7 +9703,38 @@ var PRODUCTS = [
         "edgeC": "50.80mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-bk7-right-angle-prisms.png"
+    "diagram": "images/diagrams/ltoptic-bk7-right-angle-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "Uncoated",
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Right Angle Prisms | 90° Beam Deviation | PhotonEdge",
+    "seoDesc": "BK7 right angle prisms for 90° beam deviation and periscope systems. Multiple sizes available.",
+    "keywords": [
+      "right angle prism",
+      "bk7 prism",
+      "90 degree prism",
+      "beam deviation"
+    ]
   },
   {
     "id": 39,
@@ -8706,7 +9845,36 @@ var PRODUCTS = [
         "edgeC": "50.80mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-uv-fused-silica-right-angle-prisms.png"
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-right-angle-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Right Angle Prisms | UV Laser | PhotonEdge",
+    "seoDesc": "UV fused silica right angle prisms for UV laser beam steering. 185-2100nm transmission.",
+    "keywords": [
+      "uv right angle prism",
+      "fused silica prism",
+      "uv laser prism"
+    ]
   },
   {
     "id": 40,
@@ -8762,7 +9930,34 @@ var PRODUCTS = [
         "dimensionH": "25.40mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-penta-prisms.png"
+    "diagram": "images/diagrams/ltoptic-penta-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "BK7 Penta Prisms | 90° Deviation Independent of Tilt | PhotonEdge",
+    "seoDesc": "Penta prisms for precise 90° beam deviation regardless of prism orientation. Surveying and alignment.",
+    "keywords": [
+      "penta prism",
+      "90 degree deviation prism",
+      "surveying prism",
+      "alignment prism"
+    ]
   },
   {
     "id": 41,
@@ -8819,7 +10014,37 @@ var PRODUCTS = [
         "height": "52.50mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-corner-cube-prisms.png"
+    "diagram": "images/diagrams/ltoptic-corner-cube-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research",
+      "Aerospace"
+    ],
+    "coating": [
+      "Protected Al",
+      "AR 350-700nm"
+    ],
+    "seoTitle": "Corner Cube Retroreflectors | Precision Beam Return | PhotonEdge",
+    "seoDesc": "Corner cube retroreflectors for precise beam return regardless of incident angle. LIDAR and ranging.",
+    "keywords": [
+      "corner cube",
+      "retroreflector",
+      "beam return prism",
+      "lidar prism"
+    ]
   },
   {
     "id": 42,
@@ -8881,7 +10106,35 @@ var PRODUCTS = [
         "base": "15.00mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-dove-prisms.png"
+    "diagram": "images/diagrams/ltoptic-dove-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm"
+    ],
+    "seoTitle": "BK7 Dove Prisms | Image Rotation | PhotonEdge",
+    "seoDesc": "BK7 dove prisms for image rotation and beam inversion. Rotating dove prisms for beam scanning.",
+    "keywords": [
+      "dove prism",
+      "image rotation prism",
+      "beam scanning prism"
+    ]
   },
   {
     "id": 43,
@@ -8932,7 +10185,37 @@ var PRODUCTS = [
         "dimensionH": "38.10mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-equilateral-dispersing-prisms.png"
+    "diagram": "images/diagrams/ltoptic-equilateral-dispersing-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Research",
+      "Laser"
+    ],
+    "coating": [
+      "Uncoated"
+    ],
+    "seoTitle": "Equilateral Dispersing Prisms | Spectroscopy | PhotonEdge",
+    "seoDesc": "Equilateral prisms for spectroscopy and wavelength dispersion. BK7 and UV fused silica options.",
+    "keywords": [
+      "dispersing prism",
+      "spectroscopy prism",
+      "equilateral prism",
+      "wavelength dispersion"
+    ]
   },
   {
     "id": 44,
@@ -8973,7 +10256,34 @@ var PRODUCTS = [
         "dimensionH": "56.60mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Protected Al"
+    ],
+    "seoTitle": "Roof Prisms | Image Inversion & Periscope | PhotonEdge",
+    "seoDesc": "Roof prisms for image inversion and periscope systems. Common in binoculars and optical instruments.",
+    "keywords": [
+      "roof prism",
+      "image inversion prism",
+      "periscope prism",
+      "binocular prism"
+    ]
   },
   {
     "id": 45,
@@ -9559,7 +10869,39 @@ var PRODUCTS = [
         "peakTransmission": ">70"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Medical",
+      "Research",
+      "Industrial"
+    ],
+    "coating": [
+      "Narrow Band"
+    ],
+    "seoTitle": "Narrow Band Interference Filters | Precise Wavelength Selection | PhotonEdge",
+    "seoDesc": "Narrow band interference filters for precise wavelength selection. Custom center wavelength and bandwidth.",
+    "keywords": [
+      "narrow band filter",
+      "interference filter",
+      "bandpass filter",
+      "laser filter"
+    ]
   },
   {
     "id": 46,
@@ -9735,7 +11077,39 @@ var PRODUCTS = [
         "transmission": "0.1%"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "ND Metal",
+      "ND Absorptive"
+    ],
+    "seoTitle": "Fixed Neutral Density Filters | OD 0.1-4.0 | PhotonEdge",
+    "seoDesc": "Fixed ND filters with OD 0.1-4.0 for precise attenuation. Metal and absorptive types available.",
+    "keywords": [
+      "neutral density filter",
+      "nd filter",
+      "laser attenuation",
+      "optical density filter"
+    ]
   },
   {
     "id": 47,
@@ -9843,7 +11217,35 @@ var PRODUCTS = [
         "diameter": "100.00mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Variable ND"
+    ],
+    "seoTitle": "Variable Neutral Density Filters | Continuously Adjustable | PhotonEdge",
+    "seoDesc": "Variable ND filters for continuously adjustable attenuation. Ideal for laser power tuning.",
+    "keywords": [
+      "variable nd filter",
+      "adjustable density filter",
+      "laser power control"
+    ]
   },
   {
     "id": 48,
@@ -9889,7 +11291,35 @@ var PRODUCTS = [
         "transmissionAt334nm": ">=86.0%"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV"
+    ],
+    "wavelengthRange": [
+      200,
+      400
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "UV Bandpass"
+    ],
+    "seoTitle": "UV Bandpass Filters | 200-400nm | UV Transmission | PhotonEdge",
+    "seoDesc": "UV bandpass filters for 200-400nm wavelength selection. Sharp cut-on/cut-off for UV applications.",
+    "keywords": [
+      "uv bandpass filter",
+      "uv filter",
+      "266nm filter",
+      "355nm filter"
+    ]
   },
   {
     "id": 49,
@@ -9965,7 +11395,39 @@ var PRODUCTS = [
         "diameter": "25.4mm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "ZnSe",
+      "Ge"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      800,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Industrial"
+    ],
+    "coating": [
+      "IR Bandpass"
+    ],
+    "seoTitle": "IR Bandpass Filters | 0.8-14um | Infrared Filters | PhotonEdge",
+    "seoDesc": "IR bandpass filters for 800nm-14um. CO2 laser, thermal imaging and IR sensor applications.",
+    "keywords": [
+      "ir bandpass filter",
+      "infrared filter",
+      "co2 laser filter",
+      "thermal filter"
+    ]
   },
   {
     "id": 51,
@@ -10136,7 +11598,39 @@ var PRODUCTS = [
         "shape": "Square"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-beamsplitter-plates.gif"
+    "diagram": "images/diagrams/ltoptic-beamsplitter-plates.gif",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "50/50 BS",
+      "Custom Split Ratio"
+    ],
+    "seoTitle": "Plate Beamsplitters | Custom Split Ratio | PhotonEdge",
+    "seoDesc": "Plate beamsplitters with custom split ratios. UV fused silica for UV, BK7 for visible-NIR.",
+    "keywords": [
+      "beamsplitter plate",
+      "plate beamsplitter",
+      "50/50 beamsplitter",
+      "optical splitter"
+    ]
   },
   {
     "id": 52,
@@ -10432,7 +11926,35 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-cube-beamsplitters.gif"
+    "diagram": "images/diagrams/ltoptic-cube-beamsplitters.gif",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "50/50 BS"
+    ],
+    "seoTitle": "Cube Beamsplitters | Precision 50/50 Split | PhotonEdge",
+    "seoDesc": "Cube beamsplitters with cemented dichroic coating. Precise 50/50 split ratio. Multiple sizes.",
+    "keywords": [
+      "cube beamsplitter",
+      "50/50 cube",
+      "optical cube splitter"
+    ]
   },
   {
     "id": 53,
@@ -10728,7 +12250,35 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Non-Polarizing BS"
+    ],
+    "seoTitle": "Non-Polarizing Cube Beamsplitters | VIS-NIR | PhotonEdge",
+    "seoDesc": "Non-polarizing cube beamsplitters maintaining polarization state. Critical for laser and imaging systems.",
+    "keywords": [
+      "non polarizing beamsplitter",
+      "npbs cube",
+      "polarization maintaining splitter"
+    ]
   },
   {
     "id": 54,
@@ -11056,7 +12606,35 @@ var PRODUCTS = [
         "wavelength": "1200-1600nm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Polarizing BS"
+    ],
+    "seoTitle": "Polarizing Cube Beamsplitters | High Extinction | PhotonEdge",
+    "seoDesc": "Polarizing cube beamsplitters for s/p polarization separation. High extinction ratio.",
+    "keywords": [
+      "polarizing beamsplitter",
+      "pbs cube",
+      "polarization splitter",
+      "polarizing cube"
+    ]
   },
   {
     "id": 55,
@@ -11391,7 +12969,39 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-multiple-order-waveplates.png"
+    "diagram": "images/diagrams/ltoptic-multiple-order-waveplates.png",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Waveplate",
+    "material": [
+      "Quartz",
+      "MgF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Uncoated",
+      "AR"
+    ],
+    "seoTitle": "Multiple-Order Waveplates | UV-Vis-NIR | PhotonEdge",
+    "seoDesc": "Multiple-order waveplates for UV to NIR. Quartz and MgF2 substrates. Half-wave and quarter-wave.",
+    "keywords": [
+      "waveplate",
+      "retarder",
+      "half wave plate",
+      "quarter wave plate",
+      "multiple order"
+    ]
   },
   {
     "id": 56,
@@ -11543,7 +13153,35 @@ var PRODUCTS = [
         "retardation": "λ/4@ 1064nm λ@ 532nm"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Waveplate",
+    "material": [
+      "Quartz",
+      "MgF2"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      400,
+      1550
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR"
+    ],
+    "seoTitle": "Dual-Wavelength Waveplates | Multi-Wavelength | PhotonEdge",
+    "seoDesc": "Dual-wavelength waveplates for multi-laser systems. Simultaneous operation at two wavelengths.",
+    "keywords": [
+      "dual wavelength waveplate",
+      "multi wavelength retarder",
+      "achromatic waveplate"
+    ]
   },
   {
     "id": 57,
@@ -11878,7 +13516,35 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-cemented-zero-order-waveplates.png"
+    "diagram": "images/diagrams/ltoptic-cemented-zero-order-waveplates.png",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Waveplate",
+    "material": [
+      "Quartz"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR"
+    ],
+    "seoTitle": "Cemented Zero-Order Waveplates | Low Temp Sensitivity | PhotonEdge",
+    "seoDesc": "Cemented zero-order waveplates with minimal wavelength and temperature sensitivity. High precision.",
+    "keywords": [
+      "zero order waveplate",
+      "cemented waveplate",
+      "precision retarder"
+    ]
   },
   {
     "id": 58,
@@ -12169,7 +13835,36 @@ var PRODUCTS = [
         "wavelength": "1064nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-air-spaced-zero-order-waveplates.gif"
+    "diagram": "images/diagrams/ltoptic-air-spaced-zero-order-waveplates.gif",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Waveplate",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      193,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Air-Spaced Zero-Order Waveplates | High LIDT | PhotonEdge",
+    "seoDesc": "Air-spaced zero-order waveplates for high-power laser applications. No cement, high LIDT.",
+    "keywords": [
+      "air spaced waveplate",
+      "high lidt waveplate",
+      "zero order retarder"
+    ]
   },
   {
     "id": 59,
@@ -12204,7 +13899,35 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.svg"
+    "diagram": "images/diagrams/ltoptic-visible-linear-polarizers.svg",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "Visible Linear Polarizers | High Extinction Ratio | PhotonEdge",
+    "seoDesc": "Visible linear polarizers with high extinction ratio. Thin-film polarizers for 400-700nm.",
+    "keywords": [
+      "linear polarizer",
+      "visible polarizer",
+      "thin film polarizer",
+      "polarization"
+    ]
   },
   {
     "id": 60,
@@ -12239,7 +13962,34 @@ var PRODUCTS = [
         "wavelengthRange": "400-700nm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.svg"
+    "diagram": "images/diagrams/ltoptic-visible-circular-polarizers.svg",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Imaging",
+      "Medical",
+      "Research"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "Visible Circular Polarizers | Imaging Systems | PhotonEdge",
+    "seoDesc": "Circular polarizers combining linear polarizer and quarter-wave plate. For imaging and display.",
+    "keywords": [
+      "circular polarizer",
+      "visible circular polarizer",
+      "imaging polarizer"
+    ]
   },
   {
     "id": 61,
@@ -12305,7 +14055,40 @@ var PRODUCTS = [
         "extinctionRatio": ">1000:1"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "ZnSe",
+      "Ge",
+      "CaF2"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      1000,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Research"
+    ],
+    "coating": [
+      "AR IR"
+    ],
+    "seoTitle": "IR Polarizers | 1-14um Infrared | PhotonEdge",
+    "seoDesc": "Infrared polarizers for NIR to LWIR. ZnSe, Ge and CaF2 substrates for 1-14um.",
+    "keywords": [
+      "ir polarizer",
+      "infrared polarizer",
+      "znse polarizer",
+      "mwir polarizer"
+    ]
   },
   {
     "id": 62,
@@ -12492,7 +14275,37 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁶"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-glan-taylor-prisms.jpg"
+    "diagram": "images/diagrams/ltoptic-glan-taylor-prisms.jpg",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Glan-Taylor Prisms | High Extinction UV-Vis-NIR | PhotonEdge",
+    "seoDesc": "Glan-Taylor polarizing prisms for high extinction ratio. CaF2 for UV to NIR. 1000:1 extinction.",
+    "keywords": [
+      "glan taylor prism",
+      "polarizing prism",
+      "high extinction polarizer",
+      "caf2 polarizer"
+    ]
   },
   {
     "id": 63,
@@ -12637,7 +14450,37 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁶"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-glan-laser-prisms.jpg"
+    "diagram": "images/diagrams/ltoptic-glan-laser-prisms.jpg",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Glan-Laser Polarizing Prisms | High Power | PhotonEdge",
+    "seoDesc": "Glan-laser prisms for high-power laser polarization. High LIDT CaF2. Superior beam quality.",
+    "keywords": [
+      "glan laser prism",
+      "laser polarizer",
+      "high power polarizer",
+      "high lidt prism"
+    ]
   },
   {
     "id": 64,
@@ -12706,7 +14549,36 @@ var PRODUCTS = [
         "extinctionRatio": "1×10⁻⁵"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Glan-Thompson Prisms | Wide Acceptance Angle | PhotonEdge",
+    "seoDesc": "Glan-Thompson polarizing prisms with wide acceptance angle. CaF2 for UV-NIR applications.",
+    "keywords": [
+      "glan thompson prism",
+      "polarizing prism",
+      "wide angle polarizer"
+    ]
   },
   {
     "id": 65,
@@ -12780,7 +14652,36 @@ var PRODUCTS = [
         "clearAperture": "20.0mm"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-wollaston-prisms.png"
+    "diagram": "images/diagrams/ltoptic-wollaston-prisms.png",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Wollaston Prisms | Beam Splitting Polarization | PhotonEdge",
+    "seoDesc": "Wollaston prisms for separating orthogonal polarization states. Precise beam deviation angles.",
+    "keywords": [
+      "wollaston prism",
+      "polarization beam splitter",
+      "wollaston polarizer"
+    ]
   },
   {
     "id": 66,
@@ -12895,7 +14796,35 @@ var PRODUCTS = [
         "VLT": "60%"
       }
     ],
-    "diagram": ""
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Accessory",
+    "material": [
+      "Polycarbonate"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      190,
+      10600
+    ],
+    "application": [
+      "Laser"
+    ],
+    "coating": [
+      "OD 4+ Specific Wavelength"
+    ],
+    "seoTitle": "Laser Safety Goggles | OD 4+ Protection | PhotonEdge",
+    "seoDesc": "Laser safety goggles with OD 4+ protection at specific wavelengths. Multiple wavelength options.",
+    "keywords": [
+      "laser safety goggles",
+      "laser protection",
+      "safety eyewear",
+      "laser goggles"
+    ]
   },
   {
     "id": 81,
@@ -13060,7 +14989,34 @@ var PRODUCTS = [
         "angleOfIncidence": "0°"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-ndyag-output-couplers.jpg"
+    "diagram": "images/diagrams/ltoptic-ndyag-output-couplers.jpg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "NIR"
+    ],
+    "wavelengthRange": [
+      1064,
+      1064
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Partial HR 1064nm"
+    ],
+    "seoTitle": "Nd:YAG Laser Output Couplers | 1064nm | PhotonEdge",
+    "seoDesc": "Nd:YAG output couplers with precise partial reflectance at 1064nm. For laser cavity design.",
+    "keywords": [
+      "ndyag output coupler",
+      "1064nm coupler",
+      "laser output coupler",
+      "laser cavity"
+    ]
   },
   {
     "id": 82,
@@ -13183,7 +15139,39 @@ var PRODUCTS = [
         "angleOfIncidence": "45°"
       }
     ],
-    "diagram": "images/diagrams/ltoptic-dichroic-mirrors.png"
+    "diagram": "images/diagrams/ltoptic-dichroic-mirrors.png",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Medical",
+      "Research"
+    ],
+    "coating": [
+      "Dichroic Custom"
+    ],
+    "seoTitle": "Dichroic Mirrors | Custom Wavelength Separation | PhotonEdge",
+    "seoDesc": "Custom dichroic mirrors for wavelength separation and fluorescence. Precise cut-on/cut-off wavelengths.",
+    "keywords": [
+      "dichroic mirror",
+      "dichroic filter",
+      "wavelength separation",
+      "fluorescence mirror"
+    ]
   },
   {
     "id": 83,
@@ -13236,6 +15224,35 @@ var PRODUCTS = [
         "height": "48mm",
         "weight": "~140g"
       }
+    ],
+    "category31": "Custom Optics",
+    "componentType": "Mount",
+    "material": [
+      "Aluminum"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Black Anodized"
+    ],
+    "seoTitle": "Rotating Waveplate Mount | Precision Rotation | PhotonEdge",
+    "seoDesc": "Precision rotating waveplate mount with 360° graduated scale. Accepts optics up to 50mm.",
+    "keywords": [
+      "waveplate mount",
+      "rotating mount",
+      "optic mount",
+      "rotation stage"
     ]
   },
   {
@@ -13289,6 +15306,35 @@ var PRODUCTS = [
         "height": "204mm",
         "weight": "~1.0kg"
       }
+    ],
+    "category31": "Custom Optics",
+    "componentType": "Mount",
+    "material": [
+      "Aluminum"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Black Anodized"
+    ],
+    "seoTitle": "Concentric Mirror Frame | Kinematic Mount | PhotonEdge",
+    "seoDesc": "Concentric mirror frames for precision mirror alignment. Kinematic adjustment with low drift.",
+    "keywords": [
+      "mirror mount",
+      "kinematic mount",
+      "mirror frame",
+      "optical mount"
     ]
   },
   {
@@ -13335,11635 +15381,36 @@ var PRODUCTS = [
         "height": "21.5mm",
         "weight": "~50g"
       }
+    ],
+    "category31": "Custom Optics",
+    "componentType": "Mount",
+    "material": [
+      "Aluminum"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "Black Anodized"
+    ],
+    "seoTitle": "Lens Retaining Cells | Precision Optic Holding | PhotonEdge",
+    "seoDesc": "Lens retaining cells for secure optic mounting. Various diameters available. Low-stress design.",
+    "keywords": [
+      "lens cell",
+      "retaining cell",
+      "lens mount",
+      "optic holder"
     ]
   }
 ];
-
-// V84 Product Enhancements Data
-// Applications, selection guides, FAQs, materials, coatings, related products
-var PRODUCT_ENHANCEMENTS = {
-  "bk7-plano-convex": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Plano-convex lenses are ideal for focusing collimated light or collimating point sources. When selecting a BK7 plano-convex lens, first determine your focal length requirement based on the system magnification and working distance. For infinite conjugate systems, orient the curved surface toward the longer conjugate to minimize spherical aberration, which can reduce wavefront error by up to 60% compared to plano-side-on-incident configuration.\n\nStandard focal length tolerance of ±1% is sufficient for most imaging and collimation applications, but for laser focusing systems requiring tight spot sizes, tighter focal length tolerances of ±0.5% or better are recommended. Diameter selection should ensure the clear aperture covers the full beam diameter plus at least a 10% margin to avoid vignetting.\n\nFor visible and near-IR applications (400-2000nm), BK7 offers excellent homogeneity and low absorption. If your application extends below 350nm into the UV range, consider UV fused silica plano-convex lenses instead, as BK7 begins to absorb strongly below 350nm. Anti-reflection coating selection should match your operating wavelength band: coating A for visible (350-650nm), coating B for red/NIR (650-950nm), and coating C for NIR (950-1250nm).",
-    "selectionGuideZh": "平凸透镜非常适合用于聚焦准直光或准直点光源。选择BK7平凸透镜时，首先根据系统放大倍率和工作距离确定焦距要求。对于无限共轭系统，应将曲面对着较长共轭侧，以最小化球差，这与平面入射相比可将波前误差降低多达60%。\n\n标准焦距公差±1%足以满足大多数成像和准直应用，但对于需要紧密光斑尺寸的激光聚焦系统，建议使用±0.5%或更高的焦距公差。直径选择应确保通光孔径覆盖全部光束直径，并留出至少10%的余量以避免渐晕。\n\n对于可见光和近红外应用（400-2000nm），BK7具有出色的均匀性和低吸收性。如果您的应用延伸至350nm以下的紫外范围，请考虑使用紫外熔融石英平凸透镜，因为BK7在350nm以下开始强烈吸收。增透膜选择应匹配您的工作波段：A膜用于可见光（350-650nm），B膜用于红光/近红外（650-950nm），C膜用于近红外（950-1250nm）。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      },
-      {
-        "question": "What focal length tolerance can be achieved for custom plano-convex lenses?",
-        "answer": "Standard catalog plano-convex lenses have ±1% focal length tolerance. For custom specifications, we can achieve ±0.5% with standard tooling, and ±0.2% or better with controlled grinding and interferometric testing. The achievable tolerance depends on diameter-to-focal-length ratio — longer focal lengths are easier to hold to tight tolerances. For the tightest tolerances (±0.1%), we use computer-controlled polishing and full-aperture interferometric testing with calibration traceable to national standards."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      },
-      {
-        "question": "定制平凸透镜可以达到什么样的焦距公差？",
-        "answer": "标准目录平凸透镜的焦距公差为±1%。对于定制规格，我们可以通过标准工装实现±0.5%，通过可控研磨和干涉测试实现±0.2%或更好。可达到的公差取决于直径与焦距的比率——更长的焦距更容易保持严格的公差。对于最严格的公差（±0.1%），我们使用计算机控制的抛光和全孔径干涉测试，校准可追溯到国家标准。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-concave",
-        "name": "BK7 Bi-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-bi-convex": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-concave",
-        "name": "BK7 Bi-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-plano-concave": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-concave",
-        "name": "BK7 Bi-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-bi-concave": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-positive-meniscus": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-negative-meniscus": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-plano-convex": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-bi-convex": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-plano-concave": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-bi-concave": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-plano-convex-cylindrical": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Plano-convex cylindrical lenses focus or expand light in only one dimension, making them ideal for applications requiring line focusing or anamorphic beam shaping. When selecting a BK7 plano-convex cylindrical lens, the following parameters are most critical:\n\nFocal length and power: cylindrical lens power is specified in diopters (1/focal length in meters), but focal length in mm is more common. The focal length determines the line width at focus: w_line ≈ λ×f/D, where D is the input beam width in the focusing direction. For tight line focusing, use shorter focal lengths.\n\nOrientation: plano-convex cylinders focus light onto a line. For focusing a collimated beam, orient the convex side toward the collimated input to minimize spherical aberration in the focusing plane. For collimating a line source (such as a laser diode), orient the convex side toward the diverging source.\n\nSurface quality: the cylindrical surface quality directly affects the line uniformity and edge sharpness. Standard 40-20 surface quality is adequate for most illumination and imaging applications. For high-power laser or precision metrology, specify 20-10 or better.\n\nCentration and wedge: in cylindrical lenses, centration refers to the alignment of the cylinder axis with respect to the mechanical edges. Tight centration tolerances are important when stacking cylindrical lenses or when the line position must be precisely controlled. Wedge error in the non-focusing direction can cause beam deflection and should be specified for alignment-sensitive applications.\n\nAR coatings should be selected based on your wavelength band. Cylindrical lenses typically have AR coatings on both surfaces to maximize transmission.",
-    "selectionGuideZh": "平凸柱面透镜仅在一维上聚焦或扩展光，因此非常适合需要线聚焦或变形光束整形的应用。选择BK7平凸柱面透镜时，以下参数最为关键：\n\n焦距和光焦度：柱面透镜的光焦度以屈光度（1/焦距，单位为米）表示，但焦距以毫米为单位更常见。焦距决定了焦线处的线宽：w_line ≈ λ×f/D，其中D是聚焦方向上的输入光束宽度。对于紧密线聚焦，请使用更短的焦距。\n\n方向：平凸柱面透镜将光聚焦成一条线。对于聚焦准直光束，请将凸面朝准直输入方向，以最小化聚焦平面内的球差。对于准直线光源（如激光二极管），请将凸面朝发散光源方向。\n\n表面质量：柱面的表面质量直接影响线均匀性和边缘锐度。标准40-20表面质量足以满足大多数照明和成像应用。对于高功率激光或精密计量，请指定20-10或更好。\n\n偏心和楔角：在柱面透镜中，偏心是指柱面轴线相对于机械边缘的对准。当堆叠柱面透镜或必须精确控制线位置时，严格的偏心公差很重要。非聚焦方向的楔角误差会导致光束偏转，对于对准敏感的应用应加以规定。\n\n增透膜应根据您的波段选择。柱面透镜通常在两个表面都有增透膜，以最大化透射率。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-plano-concave-cylindrical": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-plano-convex-cylindrical": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-plano-concave-cylindrical": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "achromatic-doublet": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Achromatic doublet lenses correct both chromatic and spherical aberration, making them superior to singlet lenses for broadband applications. When selecting an achromatic doublet, consider these key factors:\n\nFirst, wavelength range: standard achromats are corrected for the visible spectrum (486.1nm, 587.6nm, and 656.3nm — the F, d, and C lines). For near-IR applications, specify achromats corrected for 700-1000nm or 1000-1600nm bands. UV achromats corrected for 240-400nm use different glass combinations (typically calcium fluoride and fused silica).\n\nSecond, numerical aperture (NA) and f-number: achromats perform best at moderate f-numbers (f/4 to f/16). At faster f-numbers (below f/2.5), residual aberrations become significant and you may need aspheric or multi-element designs. The effective focal length (EFL) tolerance is typically ±1% for standard achromats, with ±0.5% available for precision applications.\n\nThird, centration quality: the cementing alignment between the two elements directly affects image quality. Standard centration error is 1-3 arc minutes; for high-resolution imaging, specify centration error below 1 arc minute. Anti-reflection coatings should be selected based on the operating wavelength band. For cemented doublets, the cemented internal surfaces are typically not coated — ensure the cement material is compatible with your wavelength range and power levels.",
-    "selectionGuideZh": "消色差双胶合透镜同时校正色差和球差，因此在宽带应用中优于单透镜。选择消色差双胶合透镜时，请考虑以下关键因素：\n\n首先，波长范围：标准消色差透镜针对可见光光谱（486.1nm、587.6nm和656.3nm——F、d和C谱线）进行校正。对于近红外应用，请指定针对700-1000nm或1000-1600nm波段校正的消色差透镜。针对240-400nm校正的紫外消色差透镜使用不同的玻璃组合（通常是氟化钙和熔融石英）。\n\n其次，数值孔径（NA）和f数：消色差透镜在中等f数（f/4至f/16）下表现最佳。在更快的f数（f/2.5以下）下，残余像差变得显著，您可能需要非球面或多元件设计。标准消色差透镜的有效焦距（EFL）公差通常为±1%，精密应用可提供±0.5%。\n\n第三，偏心质量：两个元件之间的胶合对准直接影响图像质量。标准偏心误差为1-3弧分；对于高分辨率成像，请指定低于1弧分的偏心误差。增透膜应根据工作波段选择。对于胶合双胶合透镜，胶合的内表面通常不镀膜——请确保胶合材料与您的波长范围和功率水平兼容。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      },
-      {
-        "question": "What is the maximum power handling of cemented achromatic doublets?",
-        "answer": "The power handling of cemented achromatic doublets is typically limited by the cement layer rather than the glass substrates. Standard optical cement (typically NORBOND or similar) can handle up to approximately 10-50 W/cm² for CW visible light, depending on wavelength (shorter wavelengths cause more absorption). For pulsed lasers, typical limits are 0.1-1 J/cm² for nanosecond pulses. These are conservative estimates — actual limits depend on the specific cement type, wavelength, pulse duration, and beam quality. For higher power applications, consider air-spaced achromats or contact-cemented doublets which eliminate organic cement absorption. Always test at actual operating conditions for critical applications."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      },
-      {
-        "question": "胶合消色差双胶合透镜的最大功率处理能力是多少？",
-        "answer": "胶合消色差双胶合透镜的功率处理能力通常受胶合层限制，而不是玻璃基板。标准光学胶（通常是NORBOND或类似产品）对于连续波光可以处理大约10-50 W/cm²，具体取决于波长（较短的波长会导致更多吸收）。对于脉冲激光器，纳秒脉冲的典型限制为0.1-1 J/cm²。这些是保守估计——实际限制取决于特定的胶类型、波长、脉冲持续时间和光束质量。对于更高功率的应用，请考虑空气间隔消色差透镜或光接触胶合双胶合透镜，它们消除了有机胶的吸收。对于关键应用，请始终在实际工作条件下进行测试。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-c-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-ball-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Ball lenses are spherical lenses used for coupling light into and out of optical fibers, for collimating diode lasers, and for focusing in compact optical systems. When selecting a BK7 ball lens, several parameters are critical:\n\nDiameter and focal length: the focal length of a ball lens is approximately f = n×D/(4×(n-1)), where n is the refractive index and D is the diameter. For BK7 (n≈1.52 at 587nm), the focal length is approximately 0.73×D. This relationship lets you select the ball diameter based on your required focal length.\n\nNumerical aperture: the NA of a ball lens depends on its diameter and the beam diameter. For fiber coupling, match the ball lens NA to the fiber NA for maximum efficiency. Single-mode fiber coupling typically requires precise alignment and well-collimated input beams.\n\nSurface quality: since ball lenses have a simple spherical shape, they can achieve excellent surface quality (typically 20-10 or better). However, they suffer from spherical aberration, which limits their focusing ability to approximately 80% of diffraction-limited performance. For applications requiring tighter focusing, consider aspheric lenses or GRIN lenses.\n\nMaterial: BK7 is ideal for visible and NIR applications. For UV applications, use UV fused silica ball lenses; for IR, consider sapphire, silicon, or germanium ball lenses depending on the wavelength range. Anti-reflection coatings significantly improve transmission efficiency — uncoated ball lenses lose about 8% per surface at normal incidence.",
-    "selectionGuideZh": "球透镜是球形透镜，用于将光耦合进出光纤、准直二极管激光器以及在紧凑型光学系统中聚焦。选择BK7球透镜时，以下几个参数至关重要：\n\n直径和焦距：球透镜的焦距约为 f = n×D/(4×(n-1))，其中n是折射率，D是直径。对于BK7（587nm处n≈1.52），焦距约为0.73×D。这种关系使您可以根据所需焦距选择球径。\n\n数值孔径：球透镜的NA取决于其直径和光束直径。对于光纤耦合，将球透镜NA与光纤NA匹配以获得最高效率。单模光纤耦合通常需要精确对准和良好准直的输入光束。\n\n表面质量：由于球透镜具有简单的球面形状，它们可以实现出色的表面质量（通常为20-10或更好）。然而，它们存在球差，这将其聚焦能力限制在衍射极限性能的约80%。对于需要更紧密聚焦的应用，请考虑非球面透镜或GRIN透镜。\n\n材料：BK7是可见光和近红外应用的理想选择。对于紫外应用，使用紫外熔融石英球透镜；对于红外，请根据波长范围考虑蓝宝石、硅或锗球透镜。增透膜可显著提高透射效率——未镀膜的球透镜在正入射时每个表面损失约8%。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-ball-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-rod-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Rod lenses are cylindrical lenses with a complete circular cross-section, used for focusing light along one axis or for coupling light into and out of optical fibers and laser diodes. Unlike ball lenses which focus in both axes, rod lenses focus only in the plane perpendicular to the rod axis.\n\nWhen selecting a BK7 rod lens, first determine the diameter based on your beam dimensions. The focal length of a rod lens in the focusing direction follows the same formula as ball lenses: f ≈ n×D/(4×(n-1)). For BK7 with n≈1.52, f ≈ 0.73×D. The rod length should be slightly longer than the beam width in the non-focusing direction to ensure complete coverage.\n\nRod lenses are particularly useful for line generation applications — focusing a laser beam into a thin line for machine vision, sheet-of-light triangulation, or barcode scanning. The line thickness is determined by the rod diameter and input beam divergence.\n\nFor fiber coupling applications, rod lenses provide easier alignment than ball lenses since alignment is only critical along one axis. They are commonly used with laser diodes to circularize the elliptical output beam. Surface quality of 40-20 is standard, with 20-10 available for precision applications. AR coatings on both cylindrical surfaces significantly improve throughput, especially for high-NA systems where the angle of incidence is large.",
-    "selectionGuideZh": "棒透镜是具有完整圆形截面的柱面透镜，用于沿一个轴聚焦光或将光耦合进出光纤和激光二极管。与在两个轴上聚焦的球透镜不同，棒透镜仅在垂直于棒轴的平面内聚焦。\n\n选择BK7棒透镜时，首先根据光束尺寸确定直径。棒透镜在聚焦方向上的焦距遵循与球透镜相同的公式：f ≈ n×D/(4×(n-1))。对于n≈1.52的BK7，f ≈ 0.73×D。棒长应略大于非聚焦方向上的光束宽度，以确保完全覆盖。\n\n棒透镜特别适用于线生成应用——将激光束聚焦成细线，用于机器视觉、光片三角测量或条码扫描。线宽由棒直径和输入光束发散度决定。\n\n对于光纤耦合应用，棒透镜比球透镜更容易对准，因为对准仅沿一个轴关键。它们通常与激光二极管一起使用，以将椭圆输出光束圆化。40-20的表面质量为标准，精密应用可提供20-10。两个圆柱面上的增透膜可显著提高通量，特别是对于入射角较大的高NA系统。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "uv-fused-silica-rod-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "aspherical-lenses": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Aspherical lenses eliminate spherical aberration and can provide diffraction-limited focusing in a single element, replacing multi-element spherical lens assemblies. When selecting an aspheric lens, the following parameters are critical:\n\nSurface profile accuracy: measured as PV (peak-to-valley) deviation from the ideal asphere formula. Typical precision molded aspheres have PV values of 1-3 microns, while polished precision aspheres can achieve <0.5 micron PV. For diffraction-limited performance at visible wavelengths, the surface error must be below λ/4.\n\nNumerical aperture (NA): aspheres are particularly valuable for high-NA applications (NA > 0.5) where spherical singlets suffer severe aberration. The NA determines the smallest achievable focus spot: d = 0.61×λ/NA. For fiber coupling, match the lens NA to the fiber NA for maximum coupling efficiency.\n\nMaterial choice depends on wavelength: BK7 glass is economical for visible/NIR; UV fused silica for UV applications; chalcogenide glasses or silicon for long-wave IR. Coating selection is critical — single-layer MgF2 AR coating is common, but broadband multi-layer AR coatings provide better performance across wider wavelength ranges.\n\nMolded vs. polished: precision glass molded (PGM) aspheres are cost-effective for volume production with moderate precision, while diamond-turned or polished aspheres offer higher surface quality for demanding applications.",
-    "selectionGuideZh": "非球面透镜消除了球差，可在单个元件中提供衍射极限聚焦，取代多元件球面透镜组件。选择非球面透镜时，以下参数至关重要：\n\n面型精度：以与理想非球面公式的PV（峰谷）偏差来衡量。典型的精密模压非球面透镜的PV值为1-3微米，而精密抛光非球面透镜可达到<0.5微米的PV值。对于可见光波长下的衍射极限性能，表面误差必须低于λ/4。\n\n数值孔径（NA）：非球面透镜在高NA应用（NA > 0.5）中特别有价值，因为在这些应用中球面单透镜会有严重像差。NA决定了可达到的最小聚焦光斑：d = 0.61×λ/NA。对于光纤耦合，请将透镜NA与光纤NA匹配以获得最大耦合效率。\n\n材料选择取决于波长：BK7玻璃对于可见光/近红外是经济的选择；紫外应用使用紫外熔融石英；长波红外使用硫系玻璃或硅。镀膜选择至关重要——单层MgF2增透膜很常见，但宽带多层增透膜在更宽的波长范围内提供更好的性能。\n\n模压与抛光：精密玻璃模压（PGM）非球面透镜适合批量生产，精度适中；而金刚石车削或抛光非球面透镜为高要求应用提供更高的表面质量。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      },
-      {
-        "question": "How does asphere surface form error affect focusing performance?",
-        "answer": "Surface form error in aspheric lenses directly degrades the focused spot quality. Low-order errors (spherical aberration residual) enlarge the spot and reduce peak intensity. High-order errors cause scattering rings around the focal spot. The Strehl ratio provides a useful metric: a Strehl ratio >0.8 (the Marechal criterion) means the lens is essentially diffraction-limited, corresponding to about λ/14 RMS wavefront error. For precision molded aspheres, typical form errors are 1-3 μm PV. For diamond-turned or polished aspheres, sub-micron PV is achievable. When specifying an asphere, define both the PV form error and the acceptable surface roughness, as roughness affects scattering and stray light levels."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      },
-      {
-        "question": "非球面面形误差如何影响聚焦性能？",
-        "answer": "非球面透镜的面形误差直接降低聚焦光斑质量。低阶误差（球差残余）会放大光斑并降低峰值强度。高阶误差会在焦点周围产生散射环。斯特列尔比提供了一个有用的衡量标准：斯特列尔比>0.8（马雷夏尔判据）意味着透镜基本上是衍射极限的，对应于约λ/14 RMS波前误差。对于精密模压非球面透镜，典型的面形误差为1-3 μm PV。对于金刚石车削或抛光非球面透镜，可以达到亚微米PV。指定非球面透镜时，请同时定义PV面形误差和可接受的表面粗糙度，因为粗糙度会影响散射和杂散光水平。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "laser-beam-expanders": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "microscope-objectives": {
-    "applications": [
-      "Laser Beam Focusing & Collimation",
-      "Machine Vision & Imaging Systems",
-      "Medical & Life Sciences Instruments",
-      "Spectroscopy & Analytical Equipment",
-      "Semiconductor Inspection & Metrology",
-      "LiDAR & Autonomous Driving",
-      "Fiber Optic Communication",
-      "Biomedical Imaging & Microscopy",
-      "Astronomical & Defense Optics",
-      "Research & Laboratory Equipment"
-    ],
-    "applicationsZh": [
-      "激光光束聚焦与准直",
-      "机器视觉与成像系统",
-      "医疗与生命科学仪器",
-      "光谱与分析设备",
-      "半导体检测与计量",
-      "激光雷达与自动驾驶",
-      "光纤通信",
-      "生物医学成像与显微镜",
-      "天文与国防光学",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision Imaging",
-        "description": "Used in industrial cameras and inspection systems for focusing light onto image sensors. Lenses must provide low distortion and uniform resolution across the field of view. Common configurations include fixed focal length lenses for general inspection and telecentric lenses for precision metrology."
-      },
-      {
-        "title": "Laser Beam Focusing",
-        "description": "Focuses collimated laser beams to small spots for laser cutting, welding, marking, and medical procedures. The focal spot size depends on laser wavelength, lens focal length, and input beam diameter. For the smallest spots, use short focal length lenses with high-quality surfaces."
-      },
-      {
-        "title": "Fiber Optic Coupling",
-        "description": "Couples light from laser diodes or free-space beams into optical fibers. Maximum coupling efficiency requires matching the numerical aperture (NA) of the lens to the fiber NA and precise alignment. Aspheric lenses provide the highest coupling efficiency due to their aberration-free focusing."
-      },
-      {
-        "title": "Spectroscopy & Analytical Instruments",
-        "description": "Focuses or collimates light in spectrometers, monochromators, and analytical detection systems. Achromatic lenses are preferred for broadband spectroscopy as they minimize chromatic focal shift across the operating wavelength range."
-      },
-      {
-        "title": "Medical & Life Sciences",
-        "description": "Used in microscopes, endoscopes, and diagnostic instruments. High-quality lenses with excellent transmission and low autofluorescence are essential for imaging biological samples. Specialized coatings maximize transmission at specific fluorescence wavelengths."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉成像",
-        "description": "用于工业相机和检测系统，将光聚焦到图像传感器上。透镜必须在整个视场内提供低畸变和均匀的分辨率。常见配置包括用于一般检测的定焦镜头和用于精密计量的远心镜头。"
-      },
-      {
-        "title": "激光光束聚焦",
-        "description": "将准直激光束聚焦成小光斑，用于激光切割、焊接、打标和医疗手术。焦点尺寸取决于激光波长、透镜焦距和输入光束直径。为了获得最小光斑，请使用具有高质量表面的短焦距透镜。"
-      },
-      {
-        "title": "光纤耦合",
-        "description": "将激光二极管或自由空间光束的光耦合到光纤中。最大耦合效率需要将透镜的数值孔径（NA）与光纤NA匹配并精确对准。非球面透镜因其无像差聚焦而提供最高的耦合效率。"
-      },
-      {
-        "title": "光谱与分析仪器",
-        "description": "在光谱仪、单色仪和分析检测系统中聚焦或准直光。消色差透镜是宽带光谱的首选，因为它们在工作波长范围内最小化色焦移。"
-      },
-      {
-        "title": "医疗与生命科学",
-        "description": "用于显微镜、内窥镜和诊断仪器。具有出色透射率和低自发荧光的高质量透镜对生物样本成像至关重要。专用镀膜在特定荧光波长下最大化透射率。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating A: 350-650nm (R < 0.5% per surface)",
-      "Broadband AR Coating B: 650-950nm (R < 0.5% per surface)",
-      "Broadband AR Coating C: 950-1250nm (R < 0.5% per surface)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜A：350-650nm（每面反射率<0.5%）",
-      "宽带增透膜B：650-950nm（每面反射率<0.5%）",
-      "宽带增透膜C：950-1250nm（每面反射率<0.5%）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "When selecting optical lenses for your application, start by defining your key requirements: focal length, numerical aperture (NA), wavelength range, and beam diameter. These parameters determine the basic lens type and size needed.\n\nMaterial selection is critical: BK7 glass is the workhorse for visible and near-IR applications (350-2000nm) with excellent homogeneity and low cost. UV fused silica extends transmission to 185nm UV and offers better thermal stability for high-power applications. For infrared wavelengths, consider materials like CaF₂, ZnSe, silicon, or germanium depending on your specific spectral range.\n\nCoating selection significantly impacts system throughput. Single-layer MgF₂ AR coatings provide ~1.5% reflection per surface and are economical. Broadband multi-layer AR coatings achieve <0.5% reflection across wider wavelength ranges and are recommended for systems with multiple optical elements.\n\nSurface quality and centration tolerances should match your application needs. Standard 40-20 surface quality with ±3 arc minute centration is adequate for most industrial applications. For laser systems or high-resolution imaging, specify 20-10 surface quality and tighter centration tolerances.",
-    "selectionGuideZh": "为您的应用选择光学透镜时，首先定义您的关键需求：焦距、数值孔径（NA）、波长范围和光束直径。这些参数决定了所需的基本透镜类型和尺寸。\n\n材料选择至关重要：BK7玻璃是可见光和近红外应用（350-2000nm）的主力材料，具有出色的均匀性和低成本。紫外熔融石英将透射范围延伸到185nm紫外，并为高功率应用提供更好的热稳定性。对于红外波长，请根据您的具体光谱范围考虑CaF₂、ZnSe、硅或锗等材料。\n\n镀膜选择显著影响系统通量。单层MgF₂增透膜每个表面提供约1.5%的反射率，经济实惠。宽带多层增透膜在更宽的波长范围内实现<0.5%的反射率，推荐用于具有多个光学元件的系统。\n\n表面质量和偏心公差应与您的应用需求相匹配。标准的40-20表面质量和±3弧分的偏心度足以满足大多数工业应用。对于激光系统或高分辨率成像，请指定20-10表面质量和更严格的偏心公差。",
-    "faq": [
-      {
-        "question": "How do I choose between BK7 and UV fused silica lenses?",
-        "answer": "Choose BK7 lenses for visible and near-IR applications (350-2000nm) where cost is a primary concern and thermal stability requirements are moderate. Choose UV fused silica when you need transmission below 350nm, when thermal lensing effects must be minimized (high-power lasers), or when lower coefficient of thermal expansion is required for temperature-varying environments. UV fused silica also offers higher LIDT values for UV and high-power laser applications."
-      },
-      {
-        "question": "What is the difference between positive and negative meniscus lenses?",
-        "answer": "Positive meniscus lenses have a convex surface with greater curvature than the concave surface, resulting in positive focal length (converging). They are used to shorten the focal length of an existing optical system or to increase the numerical aperture. Negative meniscus lenses have a concave surface with greater curvature, producing negative focal length (diverging). They are used to increase focal length or reduce NA. Both types are often used in multi-element lens systems to correct aberrations."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择BK7和紫外熔融石英透镜？",
-        "answer": "对于可见光和近红外应用（350-2000nm），如果成本是主要考虑因素且热稳定性要求适中，请选择BK7透镜。当您需要350nm以下的透射率、必须最小化热透镜效应（高功率激光器）或在温度变化环境中需要更低的热膨胀系数时，请选择紫外熔融石英。紫外熔融石英还为紫外和高功率激光应用提供更高的LIDT值。"
-      },
-      {
-        "question": "正弯月透镜和负弯月透镜有什么区别？",
-        "answer": "正弯月透镜的凸面曲率大于凹面，产生正焦距（会聚）。它们用于缩短现有光学系统的焦距或增加数值孔径。负弯月透镜的凹面曲率更大，产生负焦距（发散）。它们用于增加焦距或降低NA。这两种类型都常用于多元件透镜系统中以校正像差。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-bi-convex",
-        "name": "BK7 Bi-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-concave",
-        "name": "BK7 Plano-Concave Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "How to Choose the Right Optical Lens for Your Application",
-        "titleZh": "如何为您的应用选择合适的光学透镜",
-        "slug": "blog/optical-lens-selection-guide"
-      },
-      {
-        "title": "BK7 vs UV Fused Silica: Which Glass Material to Choose",
-        "titleZh": "BK7与紫外熔融石英：选择哪种玻璃材料",
-        "slug": "blog/bk7-vs-fused-silica-comparison"
-      },
-      {
-        "title": "Understanding Anti-Reflection Coatings for Optical Lenses",
-        "titleZh": "了解光学透镜的增透膜",
-        "slug": "blog/ar-coating-selection-guide"
-      }
-    ]
-  },
-  "bk7-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Selecting the right optical window involves balancing material properties, optical specifications, and environmental requirements. Start by determining the wavelength range of your application, as this narrows down suitable materials.\n\nMaterial choice depends on spectral range and environmental conditions. BK7 and UV fused silica are standard for UV through near-IR. For mid- to far-IR applications, consider sapphire, CaF₂, ZnSe, silicon, or germanium. For harsh environments with abrasion or high pressure, sapphire offers the best mechanical strength.\n\nOptical specifications to consider include surface flatness, surface quality, and parallelism (wavefront distortion). Standard λ/4 flatness is suitable for most imaging and protection applications. For interferometric or high-power laser systems, specify λ/10 or λ/20 flatness. Surface quality of 40-20 is standard for industrial use; 20-10 or 10-5 for laser and imaging applications where scatter must be minimized.\n\nThickness selection depends on pressure differential and diameter. As a general guideline, glass windows under 50mm diameter typically use 2-3mm thickness for atmospheric protection, while vacuum viewports require thicker substrates calculated using pressure vessel formulas. Always verify the AR coating matches your operating wavelength band.",
-    "selectionGuideZh": "选择合适的光学窗口片需要平衡材料特性、光学规格和环境要求。首先确定您应用的波长范围，因为这会缩小合适材料的选择范围。\n\n材料选择取决于光谱范围和环境条件。BK7和紫外熔融石英是紫外到近红外的标准材料。对于中红外到远红外应用，请考虑蓝宝石、CaF₂、ZnSe、硅或锗。对于有磨损或高压的恶劣环境，蓝宝石提供最佳的机械强度。\n\n需要考虑的光学规格包括表面平面度、表面质量和平行度（波前畸变）。标准λ/4平面度适用于大多数成像和保护应用。对于干涉测量或高功率激光系统，请指定λ/10或λ/20平面度。40-20的表面质量是工业使用标准；激光和成像应用（散射必须最小化）使用20-10或10-5。\n\n厚度选择取决于压差和直径。作为一般指南，直径50mm以下的玻璃窗口通常使用2-3mm厚度用于大气保护，而真空观察窗需要使用压力容器公式计算的更厚基板。请始终验证增透膜是否与您的工作波段匹配。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "caf2-windows",
-        "name": "CaF2 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "uv-fused-silica-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "UV fused silica windows are the preferred choice for deep-UV to near-IR applications from 185nm to 2100nm. When selecting a UV fused silica window, first specify the thickness based on your pressure differential and diameter requirements. For vacuum viewports, use the formula t = D * sqrt(P/(2*σ*K)) where D is diameter, P is pressure, σ is material strength, and K is a safety factor. A 10mm thickness is generally sufficient for 1 atmosphere differential on diameters up to 100mm.\n\nSurface flatness is critical: λ/4 flatness is adequate for general use, but for interferometric applications or high-power laser systems, λ/10 or λ/20 flatness is recommended to minimize wavefront distortion. Surface quality of 40-20 scratch-dig is standard for industrial use, while 20-10 or 10-5 should be specified for high-power laser or imaging applications where scatter must be minimized.\n\nUV fused silica has a lower thermal expansion coefficient (0.55×10⁻⁶/°C) than BK7, making it superior for thermal cycling environments and high-power laser applications where thermal lensing effects must be minimized. For VUV applications below 180nm, ensure the material is high-purity synthetic fused silica with low OH content.",
-    "selectionGuideZh": "紫外熔融石英窗口片是185nm至2100nm深紫外到近红外应用的首选。选择紫外熔融石英窗口片时，首先根据压差和直径要求确定厚度。对于真空观察窗，使用公式 t = D × sqrt(P/(2×σ×K))，其中D为直径，P为压力，σ为材料强度，K为安全系数。对于直径达100mm的窗口，10mm厚度通常足以承受1个大气压的压差。\n\n面形精度至关重要：λ/4的面形精度适合一般使用，但对于干涉测量应用或高功率激光系统，建议使用λ/10或λ/20的面形精度以最小化波前畸变。40-20的表面质量是工业标准，对于高功率激光或成像应用（需要最小化散射），应指定20-10或10-5的表面质量。\n\n紫外熔融石英的热膨胀系数（0.55×10⁻⁶/°C）低于BK7，因此在温度循环环境和需要最小化热透镜效应的高功率激光应用中表现更优。对于180nm以下的真空紫外应用，请确保材料为高纯度合成熔融石英，且OH含量低。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      },
-      {
-        "question": "λ/10 vs λ/20 flatness — which do I need for interferometry?",
-        "answer": "The choice depends on your total wavefront error budget and how many optical elements are in the system. For most general interferometry setups, λ/10 flatness is adequate, especially if the window is used at a non-critical position. For high-precision Fizeau interferometers where the reference flat quality directly limits measurement accuracy, λ/20 or better is recommended. As a rule, each optical component should contribute no more than 1/5 to 1/10 of your total wavefront error budget. Also consider that flatness degrades when windows are mounted due to mounting stress — use stress-free mounting for highest accuracy."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      },
-      {
-        "question": "λ/10与λ/20平面度——干涉测量需要哪一种？",
-        "answer": "选择取决于您的总波前误差预算以及系统中有多少个光学元件。对于大多数一般干涉测量装置，λ/10平面度就足够了，特别是如果窗口用于非关键位置。对于参考平面质量直接限制测量精度的高精度斐索干涉仪，建议使用λ/20或更好的平面度。根据经验，每个光学组件对总波前误差预算的贡献不应超过1/5到1/10。还要考虑到，当窗口被安装时，由于安装应力，平面度会下降——为了最高精度，请使用无应力安装。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "caf2-windows",
-        "name": "CaF2 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "sapphire-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "Single Crystal Sapphire (Al₂O₃)"
-    ],
-    "materialsZh": [
-      "Single Crystal Sapphire (Al₂O₃)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Sapphire windows offer exceptional hardness, thermal conductivity, and transmission from UV through mid-IR. When selecting a sapphire window, consider these unique material properties:\n\nSpectral transmission: sapphire transmits from approximately 150nm (deep UV) through 5.5μm (mid-IR), making it one of the few materials transparent across such a wide range. This broad transmission makes sapphire ideal for multi-spectral systems that need to operate in both UV and IR bands.\n\nMechanical strength: sapphire (Mohs hardness 9) is second only to diamond in hardness among optical materials. This makes sapphire windows ideal for harsh environments with abrasive particles, high pressure, or mechanical impact. A 2mm thick sapphire window can withstand higher pressure differentials than a 10mm thick glass window of the same diameter.\n\nThermal properties: sapphire has excellent thermal conductivity (~40 W/m·K), much higher than glass or fused silica. This makes it suitable for high-power laser applications where heat must be dissipated efficiently. The thermal expansion coefficient of 5.8×10⁻⁶/°C is higher than fused silica, but the excellent thermal conductivity compensates by minimizing thermal gradients.\n\nSurface quality and flatness: due to its hardness, sapphire is more difficult to polish than glass. Standard surface quality is 40-20, with 20-10 available at premium cost. Flatness of λ/4 is standard; λ/10 is achievable with specialized polishing. Consider the orientation (c-axis, a-axis, or r-axis) as it affects optical properties such as birefringence.",
-    "selectionGuideZh": "蓝宝石窗口片具有出色的硬度、导热性和从紫外到中红外的透射率。选择蓝宝石窗口片时，请考虑以下独特的材料特性：\n\n光谱透射：蓝宝石从约150nm（深紫外）到5.5μm（中红外）都有透射，使其成为少数几种在如此宽范围内透明的材料之一。这种宽透射使蓝宝石成为需要在紫外和红外波段工作的多光谱系统的理想选择。\n\n机械强度：蓝宝石（莫氏硬度9）在光学材料中的硬度仅次于金刚石。这使得蓝宝石窗口片非常适合有磨粒、高压或机械冲击的恶劣环境。2mm厚的蓝宝石窗口片可以承受比同直径10mm厚玻璃窗口片更高的压差。\n\n热性能：蓝宝石具有出色的导热性（约40 W/m·K），远高于玻璃或熔融石英。这使其适用于需要高效散热的高功率激光应用。5.8×10⁻⁶/°C的热膨胀系数高于熔融石英，但出色的导热性通过最小化热梯度来补偿。\n\n表面质量和面形精度：由于其硬度，蓝宝石比玻璃更难抛光。标准表面质量为40-20，20-10需要额外成本。λ/4的面形精度为标准；λ/10可通过专门的抛光实现。请考虑晶向（c轴、a轴或r轴），因为它会影响双折射等光学特性。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "caf2-windows",
-        "name": "CaF2 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "caf2-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "Calcium Fluoride (CaF₂)"
-    ],
-    "materialsZh": [
-      "Calcium Fluoride (CaF₂)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Calcium fluoride (CaF₂) windows are widely used for UV, visible, and IR applications from deep UV (130nm) through mid-IR (9μm). CaF₂ is particularly valued for its low refractive index (n≈1.43 at 500nm) and low dispersion, making it ideal for broadband and UV applications.\n\nWhen selecting a CaF₂ window, first determine the grade: UV-grade CaF₂ has high transmission down to 130nm, while IR-grade CaF₂ is optimized for infrared transmission but has UV absorption. UV-grade material typically has lower impurity levels (particularly Fe and rare earth elements) that cause UV absorption.\n\nThickness and pressure rating: CaF₂ is relatively soft (Mohs hardness 4) and more fragile than glass or sapphire. For pressure differential applications, thicker windows may be needed than for equivalent glass windows. The flexural strength is approximately 40-50 MPa, roughly half that of fused silica.\n\nThermal properties: CaF₂ has a high thermal expansion coefficient (18.9×10⁻⁶/°C), about 10× that of fused silica, which means it is more susceptible to thermal shock and thermal lensing. For high-power laser applications, be aware of thermal stress buildup and consider cooling or alternative materials if thermal gradients are significant.\n\nCaF₂ is hygroscopic — under normal humidity conditions it is stable, but prolonged exposure to high humidity can cause surface degradation. For applications in humid environments, consider coatings that provide moisture protection. Anti-reflection coatings are commonly applied; broadband AR coatings for UV, visible, or IR bands are available depending on your application requirements.",
-    "selectionGuideZh": "氟化钙（CaF₂）窗口片广泛用于从深紫外（130nm）到中红外（9μm）的紫外、可见和红外应用。CaF₂因其低折射率（500nm处n≈1.43）和低色散而备受重视，使其成为宽带和紫外应用的理想选择。\n\n选择CaF₂窗口片时，首先确定等级：紫外级CaF₂在低至130nm处仍有高透射率，而红外级CaF₂针对红外透射进行了优化但有紫外吸收。紫外级材料通常具有较低的杂质水平（特别是铁和稀土元素），这些杂质会导致紫外吸收。\n\n厚度和压力等级：CaF₂相对较软（莫氏硬度4），比玻璃或蓝宝石更脆。对于压差应用，可能需要比等效玻璃窗口片更厚的窗口片。弯曲强度约为40-50 MPa，约为熔融石英的一半。\n\n热性能：CaF₂具有较高的热膨胀系数（18.9×10⁻⁶/°C），约为熔融石英的10倍，这意味着它更容易受到热冲击和热透镜效应的影响。对于高功率激光应用，请注意热应力的累积，如果热梯度显著，请考虑冷却或替代材料。\n\nCaF₂是吸湿性的——在正常湿度条件下是稳定的，但长时间暴露在高湿度下会导致表面退化。对于潮湿环境中的应用，请考虑提供防潮的镀膜。增透膜是常用的；根据您的应用需求，可提供紫外、可见或红外波段的宽带增透膜。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "ge-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "Germanium (Ge)"
-    ],
-    "materialsZh": [
-      "Germanium (Ge)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Selecting the right optical window involves balancing material properties, optical specifications, and environmental requirements. Start by determining the wavelength range of your application, as this narrows down suitable materials.\n\nMaterial choice depends on spectral range and environmental conditions. BK7 and UV fused silica are standard for UV through near-IR. For mid- to far-IR applications, consider sapphire, CaF₂, ZnSe, silicon, or germanium. For harsh environments with abrasion or high pressure, sapphire offers the best mechanical strength.\n\nOptical specifications to consider include surface flatness, surface quality, and parallelism (wavefront distortion). Standard λ/4 flatness is suitable for most imaging and protection applications. For interferometric or high-power laser systems, specify λ/10 or λ/20 flatness. Surface quality of 40-20 is standard for industrial use; 20-10 or 10-5 for laser and imaging applications where scatter must be minimized.\n\nThickness selection depends on pressure differential and diameter. As a general guideline, glass windows under 50mm diameter typically use 2-3mm thickness for atmospheric protection, while vacuum viewports require thicker substrates calculated using pressure vessel formulas. Always verify the AR coating matches your operating wavelength band.",
-    "selectionGuideZh": "选择合适的光学窗口片需要平衡材料特性、光学规格和环境要求。首先确定您应用的波长范围，因为这会缩小合适材料的选择范围。\n\n材料选择取决于光谱范围和环境条件。BK7和紫外熔融石英是紫外到近红外的标准材料。对于中红外到远红外应用，请考虑蓝宝石、CaF₂、ZnSe、硅或锗。对于有磨损或高压的恶劣环境，蓝宝石提供最佳的机械强度。\n\n需要考虑的光学规格包括表面平面度、表面质量和平行度（波前畸变）。标准λ/4平面度适用于大多数成像和保护应用。对于干涉测量或高功率激光系统，请指定λ/10或λ/20平面度。40-20的表面质量是工业使用标准；激光和成像应用（散射必须最小化）使用20-10或10-5。\n\n厚度选择取决于压差和直径。作为一般指南，直径50mm以下的玻璃窗口通常使用2-3mm厚度用于大气保护，而真空观察窗需要使用压力容器公式计算的更厚基板。请始终验证增透膜是否与您的工作波段匹配。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "si-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Selecting the right optical window involves balancing material properties, optical specifications, and environmental requirements. Start by determining the wavelength range of your application, as this narrows down suitable materials.\n\nMaterial choice depends on spectral range and environmental conditions. BK7 and UV fused silica are standard for UV through near-IR. For mid- to far-IR applications, consider sapphire, CaF₂, ZnSe, silicon, or germanium. For harsh environments with abrasion or high pressure, sapphire offers the best mechanical strength.\n\nOptical specifications to consider include surface flatness, surface quality, and parallelism (wavefront distortion). Standard λ/4 flatness is suitable for most imaging and protection applications. For interferometric or high-power laser systems, specify λ/10 or λ/20 flatness. Surface quality of 40-20 is standard for industrial use; 20-10 or 10-5 for laser and imaging applications where scatter must be minimized.\n\nThickness selection depends on pressure differential and diameter. As a general guideline, glass windows under 50mm diameter typically use 2-3mm thickness for atmospheric protection, while vacuum viewports require thicker substrates calculated using pressure vessel formulas. Always verify the AR coating matches your operating wavelength band.",
-    "selectionGuideZh": "选择合适的光学窗口片需要平衡材料特性、光学规格和环境要求。首先确定您应用的波长范围，因为这会缩小合适材料的选择范围。\n\n材料选择取决于光谱范围和环境条件。BK7和紫外熔融石英是紫外到近红外的标准材料。对于中红外到远红外应用，请考虑蓝宝石、CaF₂、ZnSe、硅或锗。对于有磨损或高压的恶劣环境，蓝宝石提供最佳的机械强度。\n\n需要考虑的光学规格包括表面平面度、表面质量和平行度（波前畸变）。标准λ/4平面度适用于大多数成像和保护应用。对于干涉测量或高功率激光系统，请指定λ/10或λ/20平面度。40-20的表面质量是工业使用标准；激光和成像应用（散射必须最小化）使用20-10或10-5。\n\n厚度选择取决于压差和直径。作为一般指南，直径50mm以下的玻璃窗口通常使用2-3mm厚度用于大气保护，而真空观察窗需要使用压力容器公式计算的更厚基板。请始终验证增透膜是否与您的工作波段匹配。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "znse-windows": {
-    "applications": [
-      "Environmental Protection & Sealing",
-      "Laser Systems & Beam Delivery",
-      "Industrial Camera Viewports",
-      "Medical & Surgical Instruments",
-      "Semiconductor Process Equipment",
-      "Aerospace & Defense Sensors",
-      "Infrared & Thermal Imaging",
-      "UV Curing & Sterilization",
-      "Vacuum Chamber Viewports",
-      "High-Power Laser Output Windows"
-    ],
-    "applicationsZh": [
-      "环境保护与密封",
-      "激光系统与光束传输",
-      "工业相机视窗",
-      "医疗与外科手术器械",
-      "半导体工艺设备",
-      "航空航天与国防传感器",
-      "红外与热成像",
-      "紫外固化与消毒",
-      "真空腔观察窗",
-      "高功率激光输出窗"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Camera Protection",
-        "description": "Protects camera sensors and lenses from dust, moisture, and environmental contaminants in manufacturing and outdoor settings. Anti-reflection coatings maximize light transmission while scratch-resistant coatings extend service life in harsh environments."
-      },
-      {
-        "title": "Laser System Enclosures",
-        "description": "Serves as output windows and port windows in laser systems, beam delivery systems, and laser processing machines. Must withstand high laser power without damage or thermal lensing. High-power laser windows often use materials with low absorption like UV fused silica or ZnSe."
-      },
-      {
-        "title": "Vacuum Chamber Viewports",
-        "description": "Provides optical access to vacuum chambers while maintaining pressure seals. Must withstand atmospheric pressure differential without excessive deflection or breakage. Fused silica and sapphire are common materials due to their strength and low outgassing properties."
-      },
-      {
-        "title": "Spectroscopy & Analytical Cells",
-        "description": "Forms the optical windows of sample cells, gas cells, and liquid cells for spectroscopy and analytical chemistry. Must provide high transmission across the measurement wavelength range and be chemically compatible with samples. UV-grade fused silica and CaF₂ are commonly used."
-      },
-      {
-        "title": "Infrared & Thermal Imaging",
-        "description": "Used as protective windows for IR cameras and thermal imaging systems. Materials like germanium, silicon, sapphire, and ZnSe transmit infrared wavelengths while being opaque to visible light. Anti-reflection coatings for specific IR bands maximize signal strength."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业相机防护",
-        "description": "在制造和户外环境中保护相机传感器和镜头免受灰尘、湿气和环境污染物的影响。增透膜最大化光透射，而耐刮镀膜延长在恶劣环境中的使用寿命。"
-      },
-      {
-        "title": "激光系统外壳",
-        "description": "用作激光系统、光束传输系统和激光加工机中的输出窗口和端口窗口。必须能够承受高激光功率而不损坏或产生热透镜效应。高功率激光窗口通常使用低吸收材料，如紫外熔融石英或ZnSe。"
-      },
-      {
-        "title": "真空腔观察窗",
-        "description": "提供到真空腔的光学通路，同时保持压力密封。必须承受大气压差值而不发生过度偏转或破裂。熔融石英和蓝宝石是常见材料，因为它们的强度和低释气特性。"
-      },
-      {
-        "title": "光谱与分析池",
-        "description": "构成用于光谱和分析化学的样品池、气体池和液体池的光学窗口。必须在整个测量波长范围内提供高透射率，并与样品化学兼容。常用紫外级熔融石英和CaF₂。"
-      },
-      {
-        "title": "红外与热成像",
-        "description": "用作红外相机和热成像系统的防护窗口。锗、硅、蓝宝石和ZnSe等材料透射红外波长，同时对可见光不透明。特定红外波段的增透膜最大化信号强度。"
-      }
-    ],
-    "materials": [
-      "Zinc Selenide (ZnSe)"
-    ],
-    "materialsZh": [
-      "Zinc Selenide (ZnSe)"
-    ],
-    "coatings": [
-      "Uncoated",
-      "Single-layer MgF₂ AR Coating (R < 1.5% per surface)",
-      "Broadband AR Coating: 350-700nm (Visible)",
-      "Broadband AR Coating: 700-1100nm (NIR)",
-      "Broadband AR Coating: 1100-1700nm (SWIR)",
-      "Broadband AR Coating: 3-5μm or 8-12μm (for IR materials)",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "未镀膜",
-      "单层MgF₂增透膜（每面反射率<1.5%）",
-      "宽带增透膜：350-700nm（可见光）",
-      "宽带增透膜：700-1100nm（近红外）",
-      "宽带增透膜：1100-1700nm（短波红外）",
-      "宽带增透膜：3-5μm或8-12μm（红外材料）",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Zinc selenide (ZnSe) windows are the standard choice for CO₂ laser systems and mid-IR applications from 0.5μm to 22μm. ZnSe has the lowest absorption among common IR materials at 10.6μm, making it essential for high-power CO₂ laser optics.\n\nWhen selecting a ZnSe window, consider these key factors:\n\nLaser power handling: ZnSe has very low absorption coefficient (<0.0005/cm at 10.6μm for high-purity material), enabling it to handle high continuous-wave power levels. However, thermal lensing can occur at very high powers due to the temperature dependence of the refractive index (dn/dT ≈ 70×10⁻⁶/°C). For multi-kilowatt systems, consider active cooling or diamond optics as alternatives.\n\nSurface quality and flatness: ZnSe is a relatively soft material (Mohs hardness 2.5), so it scratches more easily than glass. Handle with care and use appropriate cleaning techniques. Standard surface quality is 40-20 scratch-dig, with 20-10 available for higher performance. Flatness of λ/4 at 10.6μm is standard; λ/10 is available for precision applications.\n\nAnti-reflection coatings: uncoated ZnSe has about 17% reflection loss per surface at normal incidence due to its high refractive index (n≈2.4). AR coatings are therefore essential. For CO₂ laser applications, single-wavelength AR coatings at 10.6μm achieve <0.2% reflection per surface. Broadband AR coatings covering 8-12μm or other bands are also available.\n\nToxicity note: ZnSe dust is toxic — always wear appropriate personal protective equipment when handling or machining ZnSe, and never use dry polishing methods that generate dust.",
-    "selectionGuideZh": "硒化锌（ZnSe）窗口片是CO₂激光系统和0.5μm至22μm中红外应用的标准选择。ZnSe在10.6μm处的吸收率是常见红外材料中最低的，因此对于高功率CO₂激光光学元件至关重要。\n\n选择ZnSe窗口片时，请考虑以下关键因素：\n\n激光功率处理：ZnSe具有非常低的吸收系数（高纯度材料在10.6μm处<0.0005/cm），使其能够处理高连续波功率水平。然而，由于折射率的温度依赖性（dn/dT ≈ 70×10⁻⁶/°C），在非常高的功率下可能发生热透镜效应。对于多千瓦系统，请考虑主动冷却或金刚石光学元件作为替代方案。\n\n表面质量和面形精度：ZnSe是一种相对较软的材料（莫氏硬度2.5），因此比玻璃更容易划伤。请小心处理并使用适当的清洁技术。标准表面质量为40-20划痕-麻点，更高性能可提供20-10。10.6μm处λ/4的面形精度为标准；精密应用可提供λ/10。\n\n增透膜：由于其高折射率（n≈2.4），未镀膜的ZnSe在正入射时每个表面有约17%的反射损失。因此增透膜是必不可少的。对于CO₂激光应用，10.6μm的单波长增透膜可实现每个表面<0.2%的反射率。也可提供覆盖8-12μm或其他波段的宽带增透膜。\n\n毒性注意：ZnSe粉尘有毒——处理或加工ZnSe时，请始终穿戴适当的个人防护装备，切勿使用会产生粉尘的干式抛光方法。",
-    "faq": [
-      {
-        "question": "What surface flatness specification do I need?",
-        "answer": "Surface flatness requirements depend on your application. λ/4 flatness is standard for general protection windows, camera port windows, and moderate-power laser systems. For interferometry, high-precision imaging, or high-power laser cavities where wavefront distortion must be minimized, specify λ/10 or λ/20. The flatness specification should be compared to the wavefront error budget of your system — as a guideline, the window contribution should be less than 1/3 of your total wavefront error budget."
-      },
-      {
-        "question": "How do I calculate the required window thickness for pressure applications?",
-        "answer": "For circular windows under uniform pressure, the minimum thickness can be estimated using t = D × sqrt(P / (2 × σ × K)), where D is window diameter, P is pressure differential, σ is the material flexural strength, and K is a safety factor (typically 4 for optical windows). Safety factors account for edge conditions, surface flaws, and material variability. Always consult with our engineers for critical pressure applications — we can provide FEA analysis and pressure testing validation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "我需要什么面形精度规格？",
-        "answer": "面形精度要求取决于您的应用。λ/4平面度是一般保护窗、相机端口窗和中功率激光系统的标准配置。对于干涉测量、高精度成像或必须最小化波前畸变的高功率激光腔，请指定λ/10或λ/20。面形精度规格应与您系统的波前误差预算进行比较——根据经验，窗口的贡献应小于总波前误差预算的1/3。"
-      },
-      {
-        "question": "如何计算压力应用所需的窗口厚度？",
-        "answer": "对于均匀压力下的圆形窗口，最小厚度可以用公式 t = D × sqrt(P / (2 × σ × K)) 估算，其中D是窗口直径，P是压差，σ是材料弯曲强度，K是安全系数（光学窗口通常为4）。安全系数考虑了边缘条件、表面缺陷和材料变异性。对于关键压力应用，请务必咨询我们的工程师——我们可以提供FEA分析和压力测试验证。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-windows",
-        "name": "UV Fused Silica Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "sapphire-windows",
-        "name": "Sapphire Circular/Square Windows",
-        "nameZh": ""
-      },
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "5 Key Specifications of Optical Windows You Need to Know",
-        "titleZh": "您需要了解的光学窗口的5个关键规格",
-        "slug": "blog/optical-windows-specifications-guide"
-      },
-      {
-        "title": "Infrared Window Materials Comparison for Thermal Imaging",
-        "titleZh": "热成像用红外窗口材料对比",
-        "slug": "blog/ir-window-materials-comparison"
-      },
-      {
-        "title": "Sapphire Windows: Properties and Applications",
-        "titleZh": "蓝宝石窗口片：特性与应用",
-        "slug": "blog/sapphire-windows-properties"
-      }
-    ]
-  },
-  "laser-line-high-reflected-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Laser line high-reflectivity mirrors are designed for maximum reflection at specific laser wavelengths. When selecting a laser mirror, the three most critical parameters are: reflectivity at your operating wavelength, laser-induced damage threshold (LIDT), and surface flatness.\n\nFor reflectivity, standard laser line mirrors achieve >99.5% reflectivity at the design wavelength (typically 266nm, 355nm, 532nm, 633nm, 780nm, 808nm, 980nm, 1064nm, etc.). For cavity end mirrors where maximum reflectance is critical, specify >99.8% or better. Substrate choice depends on the application: BK7 substrates are sufficient for low to medium power lasers, while UV fused silica is recommended for high-power, UV, or ultrafast pulse applications due to lower absorption and better thermal properties.\n\nLIDT specification is critical for pulsed lasers: specify in J/cm² for pulsed (typically ns pulse width) or W/cm² for CW operation. As a rule of thumb, dielectric coatings can handle 5-20 J/cm² for nanosecond pulses at 1064nm. For femtosecond pulses, de-rate the LIDT significantly and use specially designed ultrafast coatings. Surface flatness of λ/10 is standard; for high-precision systems use λ/20 or better to maintain beam quality. The angle of incidence must be specified — mirrors are typically designed for 0° or 45° incidence.",
-    "selectionGuideZh": "激光线高反射镜设计用于在特定激光波长下实现最大反射率。选择激光反射镜时，三个最关键的参数是：工作波长下的反射率、激光损伤阈值（LIDT）和面形精度。\n\n对于反射率，标准激光线反射镜在设计波长（通常为266nm、355nm、532nm、633nm、780nm、808nm、980nm、1064nm等）下实现>99.5%的反射率。对于对最大反射率要求严格的腔端镜，请指定>99.8%或更高。基板选择取决于应用：BK7基板足以满足中低功率激光器，而高功率、紫外或超快脉冲应用建议使用紫外熔融石英，因为其吸收更低、热性能更好。\n\nLIDT规格对于脉冲激光器至关重要：脉冲使用J/cm²（通常是纳秒脉冲宽度），连续波使用W/cm²。根据经验，电介质膜在1064nm纳秒脉冲下可承受5-20 J/cm²。对于飞秒脉冲，请大幅降低LIDT额定值并使用专门设计的超快镀膜。λ/10的面形精度为标准；对于高精度系统，使用λ/20或更高以保持光束质量。必须指定入射角——反射镜通常设计为0°或45°入射。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      },
-      {
-        "question": "How does angle of incidence affect mirror reflectivity?",
-        "answer": "Dielectric mirror coatings are designed for specific angles of incidence. At 0° (normal incidence), s- and p-polarization see the same reflectance. At non-normal incidence, s-polarization reflectance typically increases while p-polarization reflectance decreases. A mirror designed for 0° incidence will have reduced reflectance at 45°, especially for p-polarized light. For 45° applications, always specify mirrors designed for 45° incidence. The shift in spectral response can be estimated: the coating band shifts to shorter wavelengths as the angle increases. For accurate performance, use mirrors specified for your exact angle of incidence and polarization state."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      },
-      {
-        "question": "入射角如何影响反射镜的反射率？",
-        "answer": "电介质反射镜膜是为特定入射角设计的。在0°（正入射）时，s偏振和p偏振具有相同的反射率。在非正入射时，s偏振反射率通常增加，而p偏振反射率降低。设计用于0°入射的反射镜在45°时反射率会降低，特别是对于p偏振光。对于45°应用，请始终指定设计用于45°入射的反射镜。光谱响应的偏移可以估算：随着角度增加，镀膜带向更短的波长偏移。为了获得准确的性能，请使用为您的确切入射角和偏振状态指定的反射镜。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "protected-aluminum-mirrors",
-        "name": "Protected Aluminum Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "high-energy-laser-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "protected-aluminum-mirrors",
-        "name": "Protected Aluminum Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "broadband-dielectric-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "protected-aluminum-mirrors",
-        "name": "Protected Aluminum Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "protected-aluminum-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "enhanced-aluminum-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "protected-silver-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "protected-gold-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "bk7-right-angle-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Right angle prisms are widely used for 90° beam bending and image reflection. When selecting a BK7 right angle prism, first determine the leg size based on your beam diameter — the clear aperture should be at least 1.4× the beam diameter to account for the diagonal incidence and avoid vignetting. For a 25.4mm (1 inch) beam, a 25.4mm prism provides a diagonal aperture of 35.9mm, giving adequate margin.\n\nThe hypotenuse surface quality determines reflection performance. For external reflection applications (prism used as a mirror with incident light on the hypotenuse from outside), the hypotenuse requires a reflective coating such as protected aluminum or enhanced aluminum. For total internal reflection (TIR) mode — where light enters one leg and reflects off the hypotenuse — no coating is needed, but ensure the prism material has sufficient refractive index (BK7 n≈1.52 provides TIR for angles above 41°).\n\nImage orientation is important: a right angle prism in Porro prism configuration flips the image both horizontally and vertically. For erect imaging, use two prisms in Porro configuration. Specify pyramid error (angular tolerance between the two legs) based on your beam pointing stability needs — standard is 3-5 arc minutes, precision grade is 1-2 arc minutes. Anti-reflection coatings on the entrance/exit faces reduce back reflections; AR coatings with R<0.5% per face are standard.",
-    "selectionGuideZh": "直角棱镜广泛用于90°光束转向和图像反射。选择BK7直角棱镜时，首先根据光束直径确定边长——通光孔径应至少为光束直径的1.4倍，以适应斜入射并避免渐晕。对于25.4mm（1英寸）光束，25.4mm棱镜提供35.9mm的对角线孔径，留有足够余量。\n\n斜面的表面质量决定了反射性能。对于外反射应用（棱镜作为反射镜使用，光束从外部入射到斜面），斜面需要反射膜，如保护铝膜或增强铝膜。对于全内反射（TIR）模式——光束从一个直角面入射并在斜面上反射——不需要镀膜，但请确保棱镜材料具有足够的折射率（BK7 n≈1.52，对41°以上的角度提供全内反射）。\n\n图像方向很重要：Porro棱镜配置中的直角棱镜会同时水平和垂直翻转图像。对于正立成像，使用两个Porro配置的棱镜。根据光束指向稳定性要求指定棱差（两直角面之间的角度公差）——标准为3-5弧分，精密级为1-2弧分。入射/出射面的增透膜可减少背反射；每个面反射率<0.5%的增透膜为标准配置。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      },
-      {
-        "question": "How does pyramid error affect beam pointing accuracy?",
-        "answer": "Pyramid error (the angular deviation of the prism vertex from a perfect 90° between the two legs) causes the reflected beam to deviate from the ideal 90° bend by approximately twice the pyramid error. For a right angle prism used in TIR mode, a 5 arc minute pyramid error results in approximately 10 arc minutes of beam deviation. This is because the error effectively tilts the reflecting surface. For applications requiring precise beam pointing, specify precision prisms with pyramid error of 1 arc minute or less. For the highest accuracy, use prisms with interferometrically verified angles. Also note that the beam should be centered on the hypotenuse for minimum deviation."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      },
-      {
-        "question": "棱差如何影响光束指向精度？",
-        "answer": "棱差（棱镜顶点与两直角边之间完美90°的角度偏差）导致反射光束偏离理想的90°弯曲，偏差量约为棱差的两倍。对于在TIR模式下使用的直角棱镜，5弧分的棱差会导致约10弧分的光束偏差。这是因为该误差有效地倾斜了反射面。对于需要精确光束指向的应用，请指定棱差为1弧分或更小的精密棱镜。为了获得最高精度，请使用经过干涉验证角度的棱镜。另请注意，光束应在斜面上居中，以使偏差最小。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "corner-cube-prisms",
-        "name": "Corner Cube Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "uv-fused-silica-right-angle-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "materialsZh": [
-      "UV Fused Silica (JGS1/Synthetic)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Prisms manipulate light through refraction and reflection, performing functions such as beam deviation, dispersion, image rotation, and polarization manipulation. Selecting the right prism requires understanding your application and the optical function needed.\n\nPrism type determines its function. Right angle prisms bend beams by 90° or retroreflect them. Dove prisms rotate images. Penta prisms deflect beams by exactly 90° regardless of minor alignment variations. Corner cubes provide retroreflection over a wide angular range. Dispersing prisms (equilateral) separate white light into its spectral components.\n\nMaterial selection depends on wavelength and environmental requirements. BK7 is standard for visible and NIR applications. UV fused silica extends into the deep UV. For IR applications, consider CaF₂, silicon, or ZnSe. Materials with higher index provide more bending power but also more reflection loss at surfaces.\n\nAngular tolerances are critical. The prism angles directly affect beam direction and image quality. Standard precision is ±3-5 arc minutes for industrial prisms. High-precision prisms achieve ±0.5-2 arc minutes. Pyramidal error (deviation from right angle between faces) is particularly important for right angle and corner cube prisms. Surface quality should match your application: 40-20 for general use, 20-10 for imaging and laser systems.",
-    "selectionGuideZh": "棱镜通过折射和反射操控光线，执行光束偏转、色散、图像旋转和偏振操控等功能。选择合适的棱镜需要了解您的应用和所需的光学功能。\n\n棱镜类型决定了它的功能。直角棱镜将光束弯曲90°或向后反射。道威棱镜旋转图像。五角棱镜将光束精确偏转90°，不受微小对准变化的影响。角锥棱镜在宽角度范围内提供后向反射。色散棱镜（等边）将白光分离成其光谱成分。\n\n材料选择取决于波长和环境要求。BK7是可见光和近红外应用的标准材料。紫外熔融石英延伸到深紫外。对于红外应用，请考虑CaF₂、硅或ZnSe。折射率较高的材料提供更强的弯曲能力，但在表面也有更多的反射损失。\n\n角度公差至关重要。棱镜角度直接影响光束方向和图像质量。工业棱镜的标准精度为±3-5弧分。高精度棱镜达到±0.5-2弧分。棱差（各面之间直角的偏差）对于直角棱镜和角锥棱镜尤为重要。表面质量应与您的应用匹配：一般使用40-20，成像和激光系统使用20-10。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "corner-cube-prisms",
-        "name": "Corner Cube Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "penta-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Prisms manipulate light through refraction and reflection, performing functions such as beam deviation, dispersion, image rotation, and polarization manipulation. Selecting the right prism requires understanding your application and the optical function needed.\n\nPrism type determines its function. Right angle prisms bend beams by 90° or retroreflect them. Dove prisms rotate images. Penta prisms deflect beams by exactly 90° regardless of minor alignment variations. Corner cubes provide retroreflection over a wide angular range. Dispersing prisms (equilateral) separate white light into its spectral components.\n\nMaterial selection depends on wavelength and environmental requirements. BK7 is standard for visible and NIR applications. UV fused silica extends into the deep UV. For IR applications, consider CaF₂, silicon, or ZnSe. Materials with higher index provide more bending power but also more reflection loss at surfaces.\n\nAngular tolerances are critical. The prism angles directly affect beam direction and image quality. Standard precision is ±3-5 arc minutes for industrial prisms. High-precision prisms achieve ±0.5-2 arc minutes. Pyramidal error (deviation from right angle between faces) is particularly important for right angle and corner cube prisms. Surface quality should match your application: 40-20 for general use, 20-10 for imaging and laser systems.",
-    "selectionGuideZh": "棱镜通过折射和反射操控光线，执行光束偏转、色散、图像旋转和偏振操控等功能。选择合适的棱镜需要了解您的应用和所需的光学功能。\n\n棱镜类型决定了它的功能。直角棱镜将光束弯曲90°或向后反射。道威棱镜旋转图像。五角棱镜将光束精确偏转90°，不受微小对准变化的影响。角锥棱镜在宽角度范围内提供后向反射。色散棱镜（等边）将白光分离成其光谱成分。\n\n材料选择取决于波长和环境要求。BK7是可见光和近红外应用的标准材料。紫外熔融石英延伸到深紫外。对于红外应用，请考虑CaF₂、硅或ZnSe。折射率较高的材料提供更强的弯曲能力，但在表面也有更多的反射损失。\n\n角度公差至关重要。棱镜角度直接影响光束方向和图像质量。工业棱镜的标准精度为±3-5弧分。高精度棱镜达到±0.5-2弧分。棱差（各面之间直角的偏差）对于直角棱镜和角锥棱镜尤为重要。表面质量应与您的应用匹配：一般使用40-20，成像和激光系统使用20-10。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "corner-cube-prisms",
-        "name": "Corner Cube Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "corner-cube-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Corner cube prisms (retroreflectors) reflect incident light back parallel to its original direction, regardless of the angle of incidence — a property called retroreflection. This makes them invaluable for alignment, metrology, and ranging applications.\n\nWhen selecting a corner cube prism, the key performance parameters are:\n\nBeam deviation accuracy: the output beam should be parallel to the input beam within a specified tolerance. Standard precision corner cubes have a deviation of 5-10 arc seconds; high-precision units achieve 1-2 arc seconds. This accuracy depends on the dihedral angle errors between the three reflecting faces — tighter dihedral angle tolerances yield better retroreflection accuracy.\n\nClear aperture and size: the effective aperture of a corner cube is about 85% of the inscribed circle diameter. The beam should enter normal to the front face and be well-centered to ensure all three reflecting surfaces are illuminated. For maximum aperture efficiency, use a cube size where the beam diameter is no more than 70% of the front face diameter.\n\nCoating: the three reflecting faces can use total internal reflection (TIR) if the angle of incidence on each face exceeds the critical angle. For BK7 (n≈1.52), TIR occurs for incidence angles above 41°, which is satisfied for most input angles within the acceptance cone. However, for very large angles or for materials with lower index, reflective coatings such as protected aluminum or silver may be needed on the reflecting faces.\n\nWavefront distortion: corner cubes preserve polarization state poorly due to three TIR reflections, which introduce phase shifts between s and p polarizations. For polarization-sensitive applications, specify coated corner cubes designed to minimize polarization effects.",
-    "selectionGuideZh": "角锥棱镜（后向反射器）将入射光反射回与原始方向平行的方向，与入射角无关——这种特性称为后向反射。这使它们在对准、计量和测距应用中非常重要。\n\n选择角锥棱镜时，关键性能参数是：\n\n光束偏差精度：输出光束应在指定公差内与输入光束平行。标准精度角锥棱镜的偏差为5-10弧秒；高精度单元可达到1-2弧秒。这种精度取决于三个反射面之间的二面角误差——更严格的二面角公差会产生更好的后向反射精度。\n\n通光孔径和尺寸：角锥棱镜的有效孔径约为内切圆直径的85%。光束应垂直入射到前表面并居中，以确保所有三个反射面都被照亮。为了获得最大的孔径效率，请使用光束直径不超过前表面直径70%的立方体尺寸。\n\n镀膜：如果每个面上的入射角超过临界角，三个反射面可以使用全内反射（TIR）。对于BK7（n≈1.52），TIR发生在41°以上的入射角，这在接收锥内的大多数输入角度都能满足。然而，对于非常大的角度或折射率较低的材料，反射面上可能需要保护铝或银等反射膜。\n\n波前畸变：由于三次TIR反射会在s和p偏振之间引入相移，角锥棱镜不能很好地保持偏振状态。对于偏振敏感应用，请指定旨在最小化偏振效应的镀膜角锥棱镜。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "dove-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Dove prisms are used for image rotation and beam inversion in optical systems. The unique geometry of the Dove prism — a truncated right-angle prism — causes the image to rotate at twice the rate of the prism rotation, a property widely used in interferometers, pattern recognition systems, and astronomy.\n\nWhen selecting a Dove prism, these parameters are most important:\n\nRotation accuracy: the primary specification for a Dove prism is how accurately it rotates the image as the prism rotates. The theoretical relationship is 2× rotation of the prism. Deviations from this relationship are caused by pyramidal error, surface flatness errors, and material inhomogeneity. For precision applications, specify rotation accuracy of ±1 arc minute or better.\n\nSurface quality and flatness: the reflecting surface and the two transmitting surfaces must be of high quality to maintain image sharpness. Standard surface quality is 40-20; precision grade is 20-10. Surface flatness of λ/4 is standard, with λ/10 available for high-resolution imaging applications.\n\nMaterial: BK7 is the most common material for visible and NIR applications. For UV applications, use UV fused silica. For IR, consider CaF₂, ZnSe, or silicon depending on the wavelength range. The material must have good homogeneity to prevent image distortion.\n\nThe Dove prism works based on total internal reflection (TIR) at the hypotenuse surface. For the TIR condition to hold, the light must be collimated and the prism must be used at the design angle. For convergent or divergent beams, the TIR condition may not be uniformly met across the beam, causing intensity variations. Anti-reflection coatings on the input and output faces reduce reflection losses and back reflections.",
-    "selectionGuideZh": "道威棱镜用于光学系统中的图像旋转和光束倒像。道威棱镜的独特几何形状——截断的直角棱镜——使图像以棱镜旋转速率的两倍旋转，这一特性广泛用于干涉仪、模式识别系统和天文学中。\n\n选择道威棱镜时，以下参数最为重要：\n\n旋转精度：道威棱镜的主要规格是当棱镜旋转时它旋转图像的精度。理论关系是图像旋转角度为棱镜旋转角度的2倍。偏离这种关系是由棱差、表面平面度误差和材料不均匀性引起的。对于精密应用，请指定±1弧分或更好的旋转精度。\n\n表面质量和面形精度：反射面和两个透射面必须具有高质量，以保持图像清晰度。标准表面质量为40-20；精密级为20-10。λ/4的面形精度为标准，高分辨率成像应用可提供λ/10。\n\n材料：BK7是可见光和近红外应用中最常见的材料。对于紫外应用，请使用紫外熔融石英。对于红外，请根据波长范围考虑CaF₂、ZnSe或硅。材料必须具有良好的均匀性以防止图像失真。\n\n道威棱镜基于斜面的全内反射（TIR）工作。为了满足TIR条件，光必须是准直的，并且棱镜必须在设计角度下使用。对于会聚或发散光束，TIR条件可能无法在整个光束上均匀满足，从而导致强度变化。入射和出射面上的增透膜可减少反射损失和背反射。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "equilateral-dispersing-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Prisms manipulate light through refraction and reflection, performing functions such as beam deviation, dispersion, image rotation, and polarization manipulation. Selecting the right prism requires understanding your application and the optical function needed.\n\nPrism type determines its function. Right angle prisms bend beams by 90° or retroreflect them. Dove prisms rotate images. Penta prisms deflect beams by exactly 90° regardless of minor alignment variations. Corner cubes provide retroreflection over a wide angular range. Dispersing prisms (equilateral) separate white light into its spectral components.\n\nMaterial selection depends on wavelength and environmental requirements. BK7 is standard for visible and NIR applications. UV fused silica extends into the deep UV. For IR applications, consider CaF₂, silicon, or ZnSe. Materials with higher index provide more bending power but also more reflection loss at surfaces.\n\nAngular tolerances are critical. The prism angles directly affect beam direction and image quality. Standard precision is ±3-5 arc minutes for industrial prisms. High-precision prisms achieve ±0.5-2 arc minutes. Pyramidal error (deviation from right angle between faces) is particularly important for right angle and corner cube prisms. Surface quality should match your application: 40-20 for general use, 20-10 for imaging and laser systems.",
-    "selectionGuideZh": "棱镜通过折射和反射操控光线，执行光束偏转、色散、图像旋转和偏振操控等功能。选择合适的棱镜需要了解您的应用和所需的光学功能。\n\n棱镜类型决定了它的功能。直角棱镜将光束弯曲90°或向后反射。道威棱镜旋转图像。五角棱镜将光束精确偏转90°，不受微小对准变化的影响。角锥棱镜在宽角度范围内提供后向反射。色散棱镜（等边）将白光分离成其光谱成分。\n\n材料选择取决于波长和环境要求。BK7是可见光和近红外应用的标准材料。紫外熔融石英延伸到深紫外。对于红外应用，请考虑CaF₂、硅或ZnSe。折射率较高的材料提供更强的弯曲能力，但在表面也有更多的反射损失。\n\n角度公差至关重要。棱镜角度直接影响光束方向和图像质量。工业棱镜的标准精度为±3-5弧分。高精度棱镜达到±0.5-2弧分。棱差（各面之间直角的偏差）对于直角棱镜和角锥棱镜尤为重要。表面质量应与您的应用匹配：一般使用40-20，成像和激光系统使用20-10。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "roof-prisms": {
-    "applications": [
-      "Beam Folding & Image Rotation",
-      "Dispersion & Spectral Analysis",
-      "Polarization Manipulation",
-      "Imaging & Camera Systems",
-      "Laser Beam Steering",
-      "Fiber Optic Coupling",
-      "Interferometry Instruments",
-      "Medical Endoscopes",
-      "Surveying & Survey Equipment",
-      "Biomedical Microscopy"
-    ],
-    "applicationsZh": [
-      "光束折叠与图像旋转",
-      "色散与光谱分析",
-      "偏振操控",
-      "成像与相机系统",
-      "激光光束转向",
-      "光纤耦合",
-      "干涉测量仪器",
-      "医用内窥镜",
-      "测量与勘测设备",
-      "生物医学显微镜"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Beam Folding & Image Orientation",
-        "description": "Right angle and roof prisms fold optical paths and control image orientation in binoculars, telescopes, periscopes, and camera viewfinders. Porro prism systems invert and reverse images to produce an erect view. Prism quality directly affects image sharpness and orientation accuracy."
-      },
-      {
-        "title": "Spectral Dispersion",
-        "description": "Equilateral dispersing prisms separate white light into its component wavelengths in spectrometers, monochromators, and wavelength selection systems. Prism dispersion is wavelength-dependent — higher resolution at shorter wavelengths. Prism material determines the usable spectral range and dispersion characteristics."
-      },
-      {
-        "title": "Polarization Manipulation",
-        "description": "Glan-type and Wollaston prisms manipulate and analyze polarization states. Glan prisms serve as high-extinction-ratio polarizers. Wollaston prisms separate a beam into two orthogonally polarized components for polarimetry and polarization analysis applications."
-      },
-      {
-        "title": "Beam Displacement & Retroreflection",
-        "description": "Corner cube prisms retroreflect beams over a wide angular range for alignment, ranging, and surveying. Dove prisms rotate images in optical systems. Penta prisms deflect beams by exactly 90 degrees regardless of input angle variations, useful for alignment systems."
-      },
-      {
-        "title": "Biomedical & Endoscopy",
-        "description": "Prisms in medical endoscopes and surgical instruments redirect viewing paths and provide image inversion. Miniature prisms with biocompatible materials and coatings are essential for minimally invasive surgical tools and diagnostic equipment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光束折叠与图像定向",
-        "description": "直角棱镜和屋脊棱镜在双筒望远镜、望远镜、潜望镜和相机取景器中折叠光路并控制图像方向。普罗棱镜系统翻转和反转图像以产生正立视图。棱镜质量直接影响图像清晰度和定向精度。"
-      },
-      {
-        "title": "光谱色散",
-        "description": "等边色散棱镜在光谱仪、单色仪和波长选择系统中将白光分离成其组成波长。棱镜色散与波长有关——在较短波长处分辨率更高。棱镜材料决定了可用的光谱范围和色散特性。"
-      },
-      {
-        "title": "偏振操控",
-        "description": "格兰型和沃拉斯顿棱镜操控和分析偏振状态。格兰棱镜用作高消光比偏振器。沃拉斯顿棱镜将光束分成两个正交偏振分量，用于偏振测量和偏振分析应用。"
-      },
-      {
-        "title": "光束位移与后向反射",
-        "description": "角锥棱镜在宽角度范围内向后反射光束，用于对准、测距和测量。道威棱镜在光学系统中旋转图像。五角棱镜将光束精确偏转90度，不受输入角度变化的影响，可用于对准系统。"
-      },
-      {
-        "title": "生物医学与内窥镜",
-        "description": "医用内窥镜和手术器械中的棱镜重定向观察路径并提供图像倒转。具有生物相容性材料和镀膜的微型棱镜对于微创手术工具和诊断设备至关重要。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "Uncoated (TIR operation)",
-      "AR Coating on Entrance/Exit Faces",
-      "Reflective Coating on Reflecting Surface",
-      "Broadband AR Coatings: VIS, NIR, SWIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "未镀膜（全内反射工作）",
-      "入射/出射面增透膜",
-      "反射面反射膜",
-      "宽带增透膜：可见光、近红外、短波红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Prisms manipulate light through refraction and reflection, performing functions such as beam deviation, dispersion, image rotation, and polarization manipulation. Selecting the right prism requires understanding your application and the optical function needed.\n\nPrism type determines its function. Right angle prisms bend beams by 90° or retroreflect them. Dove prisms rotate images. Penta prisms deflect beams by exactly 90° regardless of minor alignment variations. Corner cubes provide retroreflection over a wide angular range. Dispersing prisms (equilateral) separate white light into its spectral components.\n\nMaterial selection depends on wavelength and environmental requirements. BK7 is standard for visible and NIR applications. UV fused silica extends into the deep UV. For IR applications, consider CaF₂, silicon, or ZnSe. Materials with higher index provide more bending power but also more reflection loss at surfaces.\n\nAngular tolerances are critical. The prism angles directly affect beam direction and image quality. Standard precision is ±3-5 arc minutes for industrial prisms. High-precision prisms achieve ±0.5-2 arc minutes. Pyramidal error (deviation from right angle between faces) is particularly important for right angle and corner cube prisms. Surface quality should match your application: 40-20 for general use, 20-10 for imaging and laser systems.",
-    "selectionGuideZh": "棱镜通过折射和反射操控光线，执行光束偏转、色散、图像旋转和偏振操控等功能。选择合适的棱镜需要了解您的应用和所需的光学功能。\n\n棱镜类型决定了它的功能。直角棱镜将光束弯曲90°或向后反射。道威棱镜旋转图像。五角棱镜将光束精确偏转90°，不受微小对准变化的影响。角锥棱镜在宽角度范围内提供后向反射。色散棱镜（等边）将白光分离成其光谱成分。\n\n材料选择取决于波长和环境要求。BK7是可见光和近红外应用的标准材料。紫外熔融石英延伸到深紫外。对于红外应用，请考虑CaF₂、硅或ZnSe。折射率较高的材料提供更强的弯曲能力，但在表面也有更多的反射损失。\n\n角度公差至关重要。棱镜角度直接影响光束方向和图像质量。工业棱镜的标准精度为±3-5弧分。高精度棱镜达到±0.5-2弧分。棱差（各面之间直角的偏差）对于直角棱镜和角锥棱镜尤为重要。表面质量应与您的应用匹配：一般使用40-20，成像和激光系统使用20-10。",
-    "faq": [
-      {
-        "question": "What is the difference between roof prisms and Porro prisms?",
-        "answer": "Both prism types invert images, but they use different mechanisms. Porro prisms use two right-angle prisms to reflect the image through 180 degrees, producing an erect image with the image displaced laterally. Roof prisms (also called Amici prisms) use a 90° roof section to reflect the light twice, producing an erect image without lateral displacement — making the optical path more compact and in-line. Roof prisms require higher manufacturing precision because the roof angle must be accurate to within a few arc seconds to avoid image doubling."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "屋脊棱镜和普罗棱镜有什么区别？",
-        "answer": "这两种棱镜类型都可以倒像，但它们使用不同的机制。普罗棱镜使用两个直角棱镜将图像反射180度，产生正立图像，但图像会横向偏移。屋脊棱镜（也称为阿米奇棱镜）使用90°屋脊部分将光反射两次，产生正立图像而没有横向偏移——使光路更紧凑且成一直线。屋脊棱镜需要更高的制造精度，因为屋脊角必须精确到几弧秒以内以避免图像重影。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "bk7-right-angle-prisms",
-        "name": "BK7 Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-fused-silica-right-angle-prisms",
-        "name": "UV Fused Silica Right Angle Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "penta-prisms",
-        "name": "Penta Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Prism Types and Their Applications",
-        "titleZh": "光学棱镜类型及其应用",
-        "slug": "blog/optical-prism-types-guide"
-      },
-      {
-        "title": "Right Angle Prisms: Design and Application Guide",
-        "titleZh": "直角棱镜：设计与应用指南",
-        "slug": "blog/right-angle-prisms-guide"
-      },
-      {
-        "title": "Prism Coating Selection for Different Applications",
-        "titleZh": "不同应用的棱镜镀膜选择",
-        "slug": "blog/prism-coating-selection"
-      }
-    ]
-  },
-  "narrow-band-interference-filters": {
-    "applications": [
-      "Machine Vision & Industrial Inspection",
-      "Medical Imaging & Diagnostics",
-      "Spectroscopy & Fluorescence Analysis",
-      "LiDAR & 3D Sensing",
-      "Color Separation & Display",
-      "Astronomical Observation",
-      "Biotechnology & Life Sciences",
-      "Environmental Monitoring",
-      "Semiconductor Metrology",
-      "Laser Safety & Protection"
-    ],
-    "applicationsZh": [
-      "机器视觉与工业检测",
-      "医学成像与诊断",
-      "光谱与荧光分析",
-      "激光雷达与3D传感",
-      "色彩分离与显示",
-      "天文观测",
-      "生物技术与生命科学",
-      "环境监测",
-      "半导体计量",
-      "激光安全与防护"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision & Inspection",
-        "description": "Bandpass filters enhance contrast in industrial vision systems by isolating specific wavelengths or colors. They improve defect detection by filtering out ambient light interference and optimizing the illumination spectrum for specific materials or defects."
-      },
-      {
-        "title": "Fluorescence Microscopy",
-        "description": "Excitation filters select the specific wavelength that excites fluorophores, while emission filters isolate the emitted fluorescence signal. High optical density blocking and precise wavelength accuracy ensure high signal-to-noise ratio and image contrast in fluorescence imaging."
-      },
-      {
-        "title": "LiDAR & 3D Sensing",
-        "description": "Narrow bandpass filters centered at the laser wavelength (905nm or 1550nm for LiDAR) transmit the return signal while blocking ambient sunlight. High out-of-band rejection and high transmission at the laser wavelength maximize detection range and signal-to-noise ratio."
-      },
-      {
-        "title": "Spectroscopy & Analytical Chemistry",
-        "description": "Filters select specific spectral bands for absorption measurement, colorimetry, and elemental analysis. Narrow bandpass filters enable precise wavelength selection, while neutral density filters provide calibrated attenuation for light intensity control in measurement systems."
-      },
-      {
-        "title": "Medical & Diagnostic Imaging",
-        "description": "Color filters and bandpass filters are used in medical imaging equipment including endoscopes, dermatoscopes, and ophthalmic instruments. They enhance specific tissue features, enable multi-spectral imaging, and support diagnostic measurement techniques."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉与检测",
-        "description": "带通滤光片通过隔离特定波长或颜色来增强工业视觉系统中的对比度。它们通过滤除环境光干扰并针对特定材料或缺陷优化照明光谱来改善缺陷检测。"
-      },
-      {
-        "title": "荧光显微镜",
-        "description": "激发滤光片选择激发荧光团的特定波长，而发射滤光片隔离发出的荧光信号。高光密度阻挡和精确的波长精度确保荧光成像中的高信噪比和图像对比度。"
-      },
-      {
-        "title": "激光雷达与3D传感",
-        "description": "以激光波长（激光雷达为905nm或1550nm）为中心的窄带通滤光片透射返回信号，同时阻挡环境阳光。高带外抑制和激光波长处的高透射率最大化检测范围和信噪比。"
-      },
-      {
-        "title": "光谱与分析化学",
-        "description": "滤光片选择特定光谱带用于吸收测量、比色法和元素分析。窄带通滤光片实现精确的波长选择，而中性密度滤光片为测量系统中的光强控制提供校准衰减。"
-      },
-      {
-        "title": "医疗与诊断成像",
-        "description": "彩色滤光片和带通滤光片用于医疗成像设备，包括内窥镜、皮肤镜和眼科仪器。它们增强特定的组织特征，实现多光谱成像，并支持诊断测量技术。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "coatings": [
-      "Narrow Band Interference Coatings",
-      "Long-Pass / Short-Pass Edge Coatings",
-      "Neutral Density Coatings (Absorptive + Reflective)",
-      "Dichroic / Color Separation Coatings",
-      "Broadband AR Coatings on Substrates",
-      "Custom Spectral Designs Available"
-    ],
-    "coatingsZh": [
-      "窄带干涉镀膜",
-      "长通/短通截止镀膜",
-      "中性密度镀膜（吸收+反射）",
-      "二向色/分色镀膜",
-      "基板宽带增透膜",
-      "可定制光谱设计"
-    ],
-    "selectionGuide": "Narrow bandpass interference filters select a specific spectral band while blocking all other wavelengths. When specifying a narrow band filter, the key parameters are: center wavelength (CWL), full-width at half-maximum (FWHM), peak transmission, out-of-band blocking range and optical density (OD).\n\nCenter wavelength tolerance is typically ±0.5nm to ±2nm depending on the CWL — tighter tolerances cost more. FWHM selection depends on your spectral resolution needs: 10nm FWHM is common for fluorescence applications, while 1nm or narrower is used for Raman spectroscopy or laser line cleanup. Peak transmission of 70-90% is typical; higher transmission usually means broader bandwidth.\n\nOut-of-band blocking is specified by optical density (OD). OD 4 (0.01% transmission) is standard for most applications, but OD 5-6 may be required for high-sensitivity detection where stray light must be extremely low. Note that OD specifications are only valid over the stated blocking range — always verify that the blocking range covers all potential interfering wavelengths in your system.\n\nAngle of incidence affects CWL: increasing the angle blue-shifts the center wavelength approximately as CWL(θ) = CWL(0) × cos(θ). For collimated beams at non-normal incidence, specify the design angle. Always mount filters with the coated side facing the incident light for best performance.",
-    "selectionGuideZh": "窄带干涉滤光片选择特定光谱带并阻挡所有其他波长。指定窄带滤光片时，关键参数是：中心波长（CWL）、半高全宽（FWHM）、峰值透射率、带外阻挡范围和光密度（OD）。\n\n中心波长公差通常为±0.5nm至±2nm，具体取决于CWL——公差越小成本越高。FWHM的选择取决于您的光谱分辨率需求：10nm FWHM常用于荧光应用，而1nm或更窄的用于拉曼光谱或激光线净化。峰值透射率通常为70-90%；更高的透射率通常意味着更宽的带宽。\n\n带外阻挡由光密度（OD）指定。OD 4（0.01%透射率）是大多数应用的标准，但对于杂散光必须极低的高灵敏度检测，可能需要OD 5-6。请注意，OD规格仅在规定的阻挡范围内有效——请始终验证阻挡范围覆盖系统中所有潜在的干扰波长。\n\n入射角会影响CWL：增加角度会使中心波长蓝移，近似为 CWL(θ) = CWL(0) × cos(θ)。对于非正入射的准直光束，请指定设计角度。安装滤光片时，请始终将镀膜面朝向入射光以获得最佳性能。",
-    "faq": [
-      {
-        "question": "What is optical density (OD) and how is it calculated?",
-        "answer": "Optical density (OD) measures how strongly a filter blocks light at a given wavelength. It is calculated as OD = -log₁₀(T), where T is transmission (0 < T ≤ 1). For example, OD 4 means transmission is 10⁻⁴ = 0.01%. Higher OD means deeper blocking — OD 6 blocks 99.9999% of light. OD specifications should always be paired with a wavelength range over which the OD is guaranteed. For detection systems, calculate required OD based on background light intensity and detector sensitivity to ensure adequate signal-to-noise ratio."
-      },
-      {
-        "question": "How do I prevent temperature-induced wavelength shifts in bandpass filters?",
-        "answer": "Interference filters exhibit a small temperature coefficient of center wavelength, typically +0.005 to +0.02 nm/°C for glass substrates with dielectric coatings. For most laboratory applications this is negligible. For precision applications requiring high stability over wide temperature ranges, you can: 1) Use filters with low-temperature-coefficient substrate materials like fused silica, 2) Maintain constant temperature with a thermally stabilized filter holder, 3) Specify tighter CWL tolerance at your operating temperature. For extreme environments, we can design filters with athermal coating designs that minimize temperature shift. Note that the shift is positive (CWL increases with temperature) for most oxide-based coatings."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是光密度（OD）？如何计算？",
-        "answer": "光密度（OD）衡量滤光片在给定波长下阻挡光的强度。计算公式为 OD = -log₁₀(T)，其中T是透射率（0 < T ≤ 1）。例如，OD 4意味着透射率为10⁻⁴ = 0.01%。更高的OD意味着更深的阻挡——OD 6阻挡99.9999%的光。OD规格应始终与保证OD的波长范围配对。对于检测系统，请根据背景光强度和检测器灵敏度计算所需的OD，以确保足够的信噪比。"
-      },
-      {
-        "question": "如何防止带通滤光片中温度引起的波长漂移？",
-        "answer": "干涉滤光片表现出较小的中心波长温度系数，对于有电介质膜的玻璃基板，通常为+0.005到+0.02 nm/°C。对于大多数实验室应用，这可以忽略不计。对于在宽温度范围内要求高稳定性的精密应用，您可以：1）使用具有低温系数基板材料（如熔融石英）的滤光片，2）使用热稳定的滤光片支架保持恒温，3）在您的工作温度下指定更严格的CWL公差。对于极端环境，我们可以设计采用无热镀膜设计的滤光片，最大限度地减少温度漂移。请注意，对于大多数氧化物基镀膜，漂移是正向的（CWL随温度升高而增加）。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "fixed-neutral-density-filters",
-        "name": "Fixed Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "variable-neutral-density-filters",
-        "name": "Variable Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-bandpass-filters",
-        "name": "UV Transmission Visible Absorption Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ]
-  },
-  "fixed-neutral-density-filters": {
-    "applications": [
-      "Machine Vision & Industrial Inspection",
-      "Medical Imaging & Diagnostics",
-      "Spectroscopy & Fluorescence Analysis",
-      "LiDAR & 3D Sensing",
-      "Color Separation & Display",
-      "Astronomical Observation",
-      "Biotechnology & Life Sciences",
-      "Environmental Monitoring",
-      "Semiconductor Metrology",
-      "Laser Safety & Protection"
-    ],
-    "applicationsZh": [
-      "机器视觉与工业检测",
-      "医学成像与诊断",
-      "光谱与荧光分析",
-      "激光雷达与3D传感",
-      "色彩分离与显示",
-      "天文观测",
-      "生物技术与生命科学",
-      "环境监测",
-      "半导体计量",
-      "激光安全与防护"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision & Inspection",
-        "description": "Bandpass filters enhance contrast in industrial vision systems by isolating specific wavelengths or colors. They improve defect detection by filtering out ambient light interference and optimizing the illumination spectrum for specific materials or defects."
-      },
-      {
-        "title": "Fluorescence Microscopy",
-        "description": "Excitation filters select the specific wavelength that excites fluorophores, while emission filters isolate the emitted fluorescence signal. High optical density blocking and precise wavelength accuracy ensure high signal-to-noise ratio and image contrast in fluorescence imaging."
-      },
-      {
-        "title": "LiDAR & 3D Sensing",
-        "description": "Narrow bandpass filters centered at the laser wavelength (905nm or 1550nm for LiDAR) transmit the return signal while blocking ambient sunlight. High out-of-band rejection and high transmission at the laser wavelength maximize detection range and signal-to-noise ratio."
-      },
-      {
-        "title": "Spectroscopy & Analytical Chemistry",
-        "description": "Filters select specific spectral bands for absorption measurement, colorimetry, and elemental analysis. Narrow bandpass filters enable precise wavelength selection, while neutral density filters provide calibrated attenuation for light intensity control in measurement systems."
-      },
-      {
-        "title": "Medical & Diagnostic Imaging",
-        "description": "Color filters and bandpass filters are used in medical imaging equipment including endoscopes, dermatoscopes, and ophthalmic instruments. They enhance specific tissue features, enable multi-spectral imaging, and support diagnostic measurement techniques."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉与检测",
-        "description": "带通滤光片通过隔离特定波长或颜色来增强工业视觉系统中的对比度。它们通过滤除环境光干扰并针对特定材料或缺陷优化照明光谱来改善缺陷检测。"
-      },
-      {
-        "title": "荧光显微镜",
-        "description": "激发滤光片选择激发荧光团的特定波长，而发射滤光片隔离发出的荧光信号。高光密度阻挡和精确的波长精度确保荧光成像中的高信噪比和图像对比度。"
-      },
-      {
-        "title": "激光雷达与3D传感",
-        "description": "以激光波长（激光雷达为905nm或1550nm）为中心的窄带通滤光片透射返回信号，同时阻挡环境阳光。高带外抑制和激光波长处的高透射率最大化检测范围和信噪比。"
-      },
-      {
-        "title": "光谱与分析化学",
-        "description": "滤光片选择特定光谱带用于吸收测量、比色法和元素分析。窄带通滤光片实现精确的波长选择，而中性密度滤光片为测量系统中的光强控制提供校准衰减。"
-      },
-      {
-        "title": "医疗与诊断成像",
-        "description": "彩色滤光片和带通滤光片用于医疗成像设备，包括内窥镜、皮肤镜和眼科仪器。它们增强特定的组织特征，实现多光谱成像，并支持诊断测量技术。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "Narrow Band Interference Coatings",
-      "Long-Pass / Short-Pass Edge Coatings",
-      "Neutral Density Coatings (Absorptive + Reflective)",
-      "Dichroic / Color Separation Coatings",
-      "Broadband AR Coatings on Substrates",
-      "Custom Spectral Designs Available"
-    ],
-    "coatingsZh": [
-      "窄带干涉镀膜",
-      "长通/短通截止镀膜",
-      "中性密度镀膜（吸收+反射）",
-      "二向色/分色镀膜",
-      "基板宽带增透膜",
-      "可定制光谱设计"
-    ],
-    "selectionGuide": "Optical filters selectively transmit, reflect, or absorb specific wavelengths of light. Choosing the right filter requires clear definition of your spectral requirements: what wavelengths must pass, what wavelengths must be blocked, and how sharply the transition must be.\n\nFilter type depends on function. Bandpass filters transmit a specific wavelength band while blocking all others. Longpass and shortpass filters transmit above or below a cutoff wavelength. Neutral density filters attenuate uniformly across a wavelength range. Dichroic filters reflect one band while transmitting another.\n\nKey specifications: center wavelength (CWL) for bandpass filters, cutoff wavelength for edge filters, full-width at half-maximum (FWHM) for bandpass, peak transmission, and optical density (OD) of blocking. Higher OD means deeper blocking — OD 4 blocks 99.99% of unwanted light, OD 6 blocks 99.9999%.\n\nSubstrate and coating technology: interference filters use thin-film coatings to achieve spectral selectivity through constructive/destructive interference. Absorptive filters use colored glass or dyed substrates. Interference filters offer sharper cutoffs and higher transmission but are angle-sensitive. Absorptive filters have wider acceptance angles but lower transmission. Always verify that the filter is specified for your angle of incidence and polarization conditions.",
-    "selectionGuideZh": "光学滤光片选择性地透射、反射或吸收特定波长的光。选择合适的滤光片需要明确定义您的光谱要求：哪些波长必须通过，哪些波长必须阻挡，以及过渡必须有多陡峭。\n\n滤光片类型取决于功能。带通滤光片透射特定波长带并阻挡所有其他波长。长通和短通滤光片透射截止波长以上或以下的光。中性密度滤光片在波长范围内均匀衰减。二向色滤光片反射一个波段同时透射另一个波段。\n\n关键规格：带通滤光片的中心波长（CWL）、边缘滤光片的截止波长、带通的半高全宽（FWHM）、峰值透射率和阻挡光密度（OD）。更高的OD意味着更深的阻挡——OD 4阻挡99.99%的不需要的光，OD 6阻挡99.9999%。\n\n基板和镀膜技术：干涉滤光片使用薄膜镀膜通过相长/相消干涉实现光谱选择性。吸收滤光片使用有色玻璃或染色基板。干涉滤光片提供更陡峭的截止和更高的透射率，但对角度敏感。吸收滤光片具有更宽的接收角但透射率较低。请始终验证滤光片是否针对您的入射角和偏振条件进行了规定。",
-    "faq": [
-      {
-        "question": "What is optical density (OD) and how is it calculated?",
-        "answer": "Optical density (OD) measures how strongly a filter blocks light at a given wavelength. It is calculated as OD = -log₁₀(T), where T is transmission (0 < T ≤ 1). For example, OD 4 means transmission is 10⁻⁴ = 0.01%. Higher OD means deeper blocking — OD 6 blocks 99.9999% of light. OD specifications should always be paired with a wavelength range over which the OD is guaranteed. For detection systems, calculate required OD based on background light intensity and detector sensitivity to ensure adequate signal-to-noise ratio."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是光密度（OD）？如何计算？",
-        "answer": "光密度（OD）衡量滤光片在给定波长下阻挡光的强度。计算公式为 OD = -log₁₀(T)，其中T是透射率（0 < T ≤ 1）。例如，OD 4意味着透射率为10⁻⁴ = 0.01%。更高的OD意味着更深的阻挡——OD 6阻挡99.9999%的光。OD规格应始终与保证OD的波长范围配对。对于检测系统，请根据背景光强度和检测器灵敏度计算所需的OD，以确保足够的信噪比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "variable-neutral-density-filters",
-        "name": "Variable Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-bandpass-filters",
-        "name": "UV Transmission Visible Absorption Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ]
-  },
-  "variable-neutral-density-filters": {
-    "applications": [
-      "Machine Vision & Industrial Inspection",
-      "Medical Imaging & Diagnostics",
-      "Spectroscopy & Fluorescence Analysis",
-      "LiDAR & 3D Sensing",
-      "Color Separation & Display",
-      "Astronomical Observation",
-      "Biotechnology & Life Sciences",
-      "Environmental Monitoring",
-      "Semiconductor Metrology",
-      "Laser Safety & Protection"
-    ],
-    "applicationsZh": [
-      "机器视觉与工业检测",
-      "医学成像与诊断",
-      "光谱与荧光分析",
-      "激光雷达与3D传感",
-      "色彩分离与显示",
-      "天文观测",
-      "生物技术与生命科学",
-      "环境监测",
-      "半导体计量",
-      "激光安全与防护"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision & Inspection",
-        "description": "Bandpass filters enhance contrast in industrial vision systems by isolating specific wavelengths or colors. They improve defect detection by filtering out ambient light interference and optimizing the illumination spectrum for specific materials or defects."
-      },
-      {
-        "title": "Fluorescence Microscopy",
-        "description": "Excitation filters select the specific wavelength that excites fluorophores, while emission filters isolate the emitted fluorescence signal. High optical density blocking and precise wavelength accuracy ensure high signal-to-noise ratio and image contrast in fluorescence imaging."
-      },
-      {
-        "title": "LiDAR & 3D Sensing",
-        "description": "Narrow bandpass filters centered at the laser wavelength (905nm or 1550nm for LiDAR) transmit the return signal while blocking ambient sunlight. High out-of-band rejection and high transmission at the laser wavelength maximize detection range and signal-to-noise ratio."
-      },
-      {
-        "title": "Spectroscopy & Analytical Chemistry",
-        "description": "Filters select specific spectral bands for absorption measurement, colorimetry, and elemental analysis. Narrow bandpass filters enable precise wavelength selection, while neutral density filters provide calibrated attenuation for light intensity control in measurement systems."
-      },
-      {
-        "title": "Medical & Diagnostic Imaging",
-        "description": "Color filters and bandpass filters are used in medical imaging equipment including endoscopes, dermatoscopes, and ophthalmic instruments. They enhance specific tissue features, enable multi-spectral imaging, and support diagnostic measurement techniques."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉与检测",
-        "description": "带通滤光片通过隔离特定波长或颜色来增强工业视觉系统中的对比度。它们通过滤除环境光干扰并针对特定材料或缺陷优化照明光谱来改善缺陷检测。"
-      },
-      {
-        "title": "荧光显微镜",
-        "description": "激发滤光片选择激发荧光团的特定波长，而发射滤光片隔离发出的荧光信号。高光密度阻挡和精确的波长精度确保荧光成像中的高信噪比和图像对比度。"
-      },
-      {
-        "title": "激光雷达与3D传感",
-        "description": "以激光波长（激光雷达为905nm或1550nm）为中心的窄带通滤光片透射返回信号，同时阻挡环境阳光。高带外抑制和激光波长处的高透射率最大化检测范围和信噪比。"
-      },
-      {
-        "title": "光谱与分析化学",
-        "description": "滤光片选择特定光谱带用于吸收测量、比色法和元素分析。窄带通滤光片实现精确的波长选择，而中性密度滤光片为测量系统中的光强控制提供校准衰减。"
-      },
-      {
-        "title": "医疗与诊断成像",
-        "description": "彩色滤光片和带通滤光片用于医疗成像设备，包括内窥镜、皮肤镜和眼科仪器。它们增强特定的组织特征，实现多光谱成像，并支持诊断测量技术。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "Narrow Band Interference Coatings",
-      "Long-Pass / Short-Pass Edge Coatings",
-      "Neutral Density Coatings (Absorptive + Reflective)",
-      "Dichroic / Color Separation Coatings",
-      "Broadband AR Coatings on Substrates",
-      "Custom Spectral Designs Available"
-    ],
-    "coatingsZh": [
-      "窄带干涉镀膜",
-      "长通/短通截止镀膜",
-      "中性密度镀膜（吸收+反射）",
-      "二向色/分色镀膜",
-      "基板宽带增透膜",
-      "可定制光谱设计"
-    ],
-    "selectionGuide": "Optical filters selectively transmit, reflect, or absorb specific wavelengths of light. Choosing the right filter requires clear definition of your spectral requirements: what wavelengths must pass, what wavelengths must be blocked, and how sharply the transition must be.\n\nFilter type depends on function. Bandpass filters transmit a specific wavelength band while blocking all others. Longpass and shortpass filters transmit above or below a cutoff wavelength. Neutral density filters attenuate uniformly across a wavelength range. Dichroic filters reflect one band while transmitting another.\n\nKey specifications: center wavelength (CWL) for bandpass filters, cutoff wavelength for edge filters, full-width at half-maximum (FWHM) for bandpass, peak transmission, and optical density (OD) of blocking. Higher OD means deeper blocking — OD 4 blocks 99.99% of unwanted light, OD 6 blocks 99.9999%.\n\nSubstrate and coating technology: interference filters use thin-film coatings to achieve spectral selectivity through constructive/destructive interference. Absorptive filters use colored glass or dyed substrates. Interference filters offer sharper cutoffs and higher transmission but are angle-sensitive. Absorptive filters have wider acceptance angles but lower transmission. Always verify that the filter is specified for your angle of incidence and polarization conditions.",
-    "selectionGuideZh": "光学滤光片选择性地透射、反射或吸收特定波长的光。选择合适的滤光片需要明确定义您的光谱要求：哪些波长必须通过，哪些波长必须阻挡，以及过渡必须有多陡峭。\n\n滤光片类型取决于功能。带通滤光片透射特定波长带并阻挡所有其他波长。长通和短通滤光片透射截止波长以上或以下的光。中性密度滤光片在波长范围内均匀衰减。二向色滤光片反射一个波段同时透射另一个波段。\n\n关键规格：带通滤光片的中心波长（CWL）、边缘滤光片的截止波长、带通的半高全宽（FWHM）、峰值透射率和阻挡光密度（OD）。更高的OD意味着更深的阻挡——OD 4阻挡99.99%的不需要的光，OD 6阻挡99.9999%。\n\n基板和镀膜技术：干涉滤光片使用薄膜镀膜通过相长/相消干涉实现光谱选择性。吸收滤光片使用有色玻璃或染色基板。干涉滤光片提供更陡峭的截止和更高的透射率，但对角度敏感。吸收滤光片具有更宽的接收角但透射率较低。请始终验证滤光片是否针对您的入射角和偏振条件进行了规定。",
-    "faq": [
-      {
-        "question": "What is optical density (OD) and how is it calculated?",
-        "answer": "Optical density (OD) measures how strongly a filter blocks light at a given wavelength. It is calculated as OD = -log₁₀(T), where T is transmission (0 < T ≤ 1). For example, OD 4 means transmission is 10⁻⁴ = 0.01%. Higher OD means deeper blocking — OD 6 blocks 99.9999% of light. OD specifications should always be paired with a wavelength range over which the OD is guaranteed. For detection systems, calculate required OD based on background light intensity and detector sensitivity to ensure adequate signal-to-noise ratio."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是光密度（OD）？如何计算？",
-        "answer": "光密度（OD）衡量滤光片在给定波长下阻挡光的强度。计算公式为 OD = -log₁₀(T)，其中T是透射率（0 < T ≤ 1）。例如，OD 4意味着透射率为10⁻⁴ = 0.01%。更高的OD意味着更深的阻挡——OD 6阻挡99.9999%的光。OD规格应始终与保证OD的波长范围配对。对于检测系统，请根据背景光强度和检测器灵敏度计算所需的OD，以确保足够的信噪比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "fixed-neutral-density-filters",
-        "name": "Fixed Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "uv-bandpass-filters",
-        "name": "UV Transmission Visible Absorption Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ]
-  },
-  "uv-bandpass-filters": {
-    "applications": [
-      "Machine Vision & Industrial Inspection",
-      "Medical Imaging & Diagnostics",
-      "Spectroscopy & Fluorescence Analysis",
-      "LiDAR & 3D Sensing",
-      "Color Separation & Display",
-      "Astronomical Observation",
-      "Biotechnology & Life Sciences",
-      "Environmental Monitoring",
-      "Semiconductor Metrology",
-      "Laser Safety & Protection"
-    ],
-    "applicationsZh": [
-      "机器视觉与工业检测",
-      "医学成像与诊断",
-      "光谱与荧光分析",
-      "激光雷达与3D传感",
-      "色彩分离与显示",
-      "天文观测",
-      "生物技术与生命科学",
-      "环境监测",
-      "半导体计量",
-      "激光安全与防护"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision & Inspection",
-        "description": "Bandpass filters enhance contrast in industrial vision systems by isolating specific wavelengths or colors. They improve defect detection by filtering out ambient light interference and optimizing the illumination spectrum for specific materials or defects."
-      },
-      {
-        "title": "Fluorescence Microscopy",
-        "description": "Excitation filters select the specific wavelength that excites fluorophores, while emission filters isolate the emitted fluorescence signal. High optical density blocking and precise wavelength accuracy ensure high signal-to-noise ratio and image contrast in fluorescence imaging."
-      },
-      {
-        "title": "LiDAR & 3D Sensing",
-        "description": "Narrow bandpass filters centered at the laser wavelength (905nm or 1550nm for LiDAR) transmit the return signal while blocking ambient sunlight. High out-of-band rejection and high transmission at the laser wavelength maximize detection range and signal-to-noise ratio."
-      },
-      {
-        "title": "Spectroscopy & Analytical Chemistry",
-        "description": "Filters select specific spectral bands for absorption measurement, colorimetry, and elemental analysis. Narrow bandpass filters enable precise wavelength selection, while neutral density filters provide calibrated attenuation for light intensity control in measurement systems."
-      },
-      {
-        "title": "Medical & Diagnostic Imaging",
-        "description": "Color filters and bandpass filters are used in medical imaging equipment including endoscopes, dermatoscopes, and ophthalmic instruments. They enhance specific tissue features, enable multi-spectral imaging, and support diagnostic measurement techniques."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉与检测",
-        "description": "带通滤光片通过隔离特定波长或颜色来增强工业视觉系统中的对比度。它们通过滤除环境光干扰并针对特定材料或缺陷优化照明光谱来改善缺陷检测。"
-      },
-      {
-        "title": "荧光显微镜",
-        "description": "激发滤光片选择激发荧光团的特定波长，而发射滤光片隔离发出的荧光信号。高光密度阻挡和精确的波长精度确保荧光成像中的高信噪比和图像对比度。"
-      },
-      {
-        "title": "激光雷达与3D传感",
-        "description": "以激光波长（激光雷达为905nm或1550nm）为中心的窄带通滤光片透射返回信号，同时阻挡环境阳光。高带外抑制和激光波长处的高透射率最大化检测范围和信噪比。"
-      },
-      {
-        "title": "光谱与分析化学",
-        "description": "滤光片选择特定光谱带用于吸收测量、比色法和元素分析。窄带通滤光片实现精确的波长选择，而中性密度滤光片为测量系统中的光强控制提供校准衰减。"
-      },
-      {
-        "title": "医疗与诊断成像",
-        "description": "彩色滤光片和带通滤光片用于医疗成像设备，包括内窥镜、皮肤镜和眼科仪器。它们增强特定的组织特征，实现多光谱成像，并支持诊断测量技术。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "coatings": [
-      "Narrow Band Interference Coatings",
-      "Long-Pass / Short-Pass Edge Coatings",
-      "Neutral Density Coatings (Absorptive + Reflective)",
-      "Dichroic / Color Separation Coatings",
-      "Broadband AR Coatings on Substrates",
-      "Custom Spectral Designs Available"
-    ],
-    "coatingsZh": [
-      "窄带干涉镀膜",
-      "长通/短通截止镀膜",
-      "中性密度镀膜（吸收+反射）",
-      "二向色/分色镀膜",
-      "基板宽带增透膜",
-      "可定制光谱设计"
-    ],
-    "selectionGuide": "Optical filters selectively transmit, reflect, or absorb specific wavelengths of light. Choosing the right filter requires clear definition of your spectral requirements: what wavelengths must pass, what wavelengths must be blocked, and how sharply the transition must be.\n\nFilter type depends on function. Bandpass filters transmit a specific wavelength band while blocking all others. Longpass and shortpass filters transmit above or below a cutoff wavelength. Neutral density filters attenuate uniformly across a wavelength range. Dichroic filters reflect one band while transmitting another.\n\nKey specifications: center wavelength (CWL) for bandpass filters, cutoff wavelength for edge filters, full-width at half-maximum (FWHM) for bandpass, peak transmission, and optical density (OD) of blocking. Higher OD means deeper blocking — OD 4 blocks 99.99% of unwanted light, OD 6 blocks 99.9999%.\n\nSubstrate and coating technology: interference filters use thin-film coatings to achieve spectral selectivity through constructive/destructive interference. Absorptive filters use colored glass or dyed substrates. Interference filters offer sharper cutoffs and higher transmission but are angle-sensitive. Absorptive filters have wider acceptance angles but lower transmission. Always verify that the filter is specified for your angle of incidence and polarization conditions.",
-    "selectionGuideZh": "光学滤光片选择性地透射、反射或吸收特定波长的光。选择合适的滤光片需要明确定义您的光谱要求：哪些波长必须通过，哪些波长必须阻挡，以及过渡必须有多陡峭。\n\n滤光片类型取决于功能。带通滤光片透射特定波长带并阻挡所有其他波长。长通和短通滤光片透射截止波长以上或以下的光。中性密度滤光片在波长范围内均匀衰减。二向色滤光片反射一个波段同时透射另一个波段。\n\n关键规格：带通滤光片的中心波长（CWL）、边缘滤光片的截止波长、带通的半高全宽（FWHM）、峰值透射率和阻挡光密度（OD）。更高的OD意味着更深的阻挡——OD 4阻挡99.99%的不需要的光，OD 6阻挡99.9999%。\n\n基板和镀膜技术：干涉滤光片使用薄膜镀膜通过相长/相消干涉实现光谱选择性。吸收滤光片使用有色玻璃或染色基板。干涉滤光片提供更陡峭的截止和更高的透射率，但对角度敏感。吸收滤光片具有更宽的接收角但透射率较低。请始终验证滤光片是否针对您的入射角和偏振条件进行了规定。",
-    "faq": [
-      {
-        "question": "What is optical density (OD) and how is it calculated?",
-        "answer": "Optical density (OD) measures how strongly a filter blocks light at a given wavelength. It is calculated as OD = -log₁₀(T), where T is transmission (0 < T ≤ 1). For example, OD 4 means transmission is 10⁻⁴ = 0.01%. Higher OD means deeper blocking — OD 6 blocks 99.9999% of light. OD specifications should always be paired with a wavelength range over which the OD is guaranteed. For detection systems, calculate required OD based on background light intensity and detector sensitivity to ensure adequate signal-to-noise ratio."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是光密度（OD）？如何计算？",
-        "answer": "光密度（OD）衡量滤光片在给定波长下阻挡光的强度。计算公式为 OD = -log₁₀(T)，其中T是透射率（0 < T ≤ 1）。例如，OD 4意味着透射率为10⁻⁴ = 0.01%。更高的OD意味着更深的阻挡——OD 6阻挡99.9999%的光。OD规格应始终与保证OD的波长范围配对。对于检测系统，请根据背景光强度和检测器灵敏度计算所需的OD，以确保足够的信噪比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "fixed-neutral-density-filters",
-        "name": "Fixed Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "variable-neutral-density-filters",
-        "name": "Variable Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ]
-  },
-  "ir-bandpass-filters": {
-    "applications": [
-      "Machine Vision & Industrial Inspection",
-      "Medical Imaging & Diagnostics",
-      "Spectroscopy & Fluorescence Analysis",
-      "LiDAR & 3D Sensing",
-      "Color Separation & Display",
-      "Astronomical Observation",
-      "Biotechnology & Life Sciences",
-      "Environmental Monitoring",
-      "Semiconductor Metrology",
-      "Laser Safety & Protection"
-    ],
-    "applicationsZh": [
-      "机器视觉与工业检测",
-      "医学成像与诊断",
-      "光谱与荧光分析",
-      "激光雷达与3D传感",
-      "色彩分离与显示",
-      "天文观测",
-      "生物技术与生命科学",
-      "环境监测",
-      "半导体计量",
-      "激光安全与防护"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Machine Vision & Inspection",
-        "description": "Bandpass filters enhance contrast in industrial vision systems by isolating specific wavelengths or colors. They improve defect detection by filtering out ambient light interference and optimizing the illumination spectrum for specific materials or defects."
-      },
-      {
-        "title": "Fluorescence Microscopy",
-        "description": "Excitation filters select the specific wavelength that excites fluorophores, while emission filters isolate the emitted fluorescence signal. High optical density blocking and precise wavelength accuracy ensure high signal-to-noise ratio and image contrast in fluorescence imaging."
-      },
-      {
-        "title": "LiDAR & 3D Sensing",
-        "description": "Narrow bandpass filters centered at the laser wavelength (905nm or 1550nm for LiDAR) transmit the return signal while blocking ambient sunlight. High out-of-band rejection and high transmission at the laser wavelength maximize detection range and signal-to-noise ratio."
-      },
-      {
-        "title": "Spectroscopy & Analytical Chemistry",
-        "description": "Filters select specific spectral bands for absorption measurement, colorimetry, and elemental analysis. Narrow bandpass filters enable precise wavelength selection, while neutral density filters provide calibrated attenuation for light intensity control in measurement systems."
-      },
-      {
-        "title": "Medical & Diagnostic Imaging",
-        "description": "Color filters and bandpass filters are used in medical imaging equipment including endoscopes, dermatoscopes, and ophthalmic instruments. They enhance specific tissue features, enable multi-spectral imaging, and support diagnostic measurement techniques."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "机器视觉与检测",
-        "description": "带通滤光片通过隔离特定波长或颜色来增强工业视觉系统中的对比度。它们通过滤除环境光干扰并针对特定材料或缺陷优化照明光谱来改善缺陷检测。"
-      },
-      {
-        "title": "荧光显微镜",
-        "description": "激发滤光片选择激发荧光团的特定波长，而发射滤光片隔离发出的荧光信号。高光密度阻挡和精确的波长精度确保荧光成像中的高信噪比和图像对比度。"
-      },
-      {
-        "title": "激光雷达与3D传感",
-        "description": "以激光波长（激光雷达为905nm或1550nm）为中心的窄带通滤光片透射返回信号，同时阻挡环境阳光。高带外抑制和激光波长处的高透射率最大化检测范围和信噪比。"
-      },
-      {
-        "title": "光谱与分析化学",
-        "description": "滤光片选择特定光谱带用于吸收测量、比色法和元素分析。窄带通滤光片实现精确的波长选择，而中性密度滤光片为测量系统中的光强控制提供校准衰减。"
-      },
-      {
-        "title": "医疗与诊断成像",
-        "description": "彩色滤光片和带通滤光片用于医疗成像设备，包括内窥镜、皮肤镜和眼科仪器。它们增强特定的组织特征，实现多光谱成像，并支持诊断测量技术。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV bands)"
-    ],
-    "coatings": [
-      "Narrow Band Interference Coatings",
-      "Long-Pass / Short-Pass Edge Coatings",
-      "Neutral Density Coatings (Absorptive + Reflective)",
-      "Dichroic / Color Separation Coatings",
-      "Broadband AR Coatings on Substrates",
-      "Custom Spectral Designs Available"
-    ],
-    "coatingsZh": [
-      "窄带干涉镀膜",
-      "长通/短通截止镀膜",
-      "中性密度镀膜（吸收+反射）",
-      "二向色/分色镀膜",
-      "基板宽带增透膜",
-      "可定制光谱设计"
-    ],
-    "selectionGuide": "Optical filters selectively transmit, reflect, or absorb specific wavelengths of light. Choosing the right filter requires clear definition of your spectral requirements: what wavelengths must pass, what wavelengths must be blocked, and how sharply the transition must be.\n\nFilter type depends on function. Bandpass filters transmit a specific wavelength band while blocking all others. Longpass and shortpass filters transmit above or below a cutoff wavelength. Neutral density filters attenuate uniformly across a wavelength range. Dichroic filters reflect one band while transmitting another.\n\nKey specifications: center wavelength (CWL) for bandpass filters, cutoff wavelength for edge filters, full-width at half-maximum (FWHM) for bandpass, peak transmission, and optical density (OD) of blocking. Higher OD means deeper blocking — OD 4 blocks 99.99% of unwanted light, OD 6 blocks 99.9999%.\n\nSubstrate and coating technology: interference filters use thin-film coatings to achieve spectral selectivity through constructive/destructive interference. Absorptive filters use colored glass or dyed substrates. Interference filters offer sharper cutoffs and higher transmission but are angle-sensitive. Absorptive filters have wider acceptance angles but lower transmission. Always verify that the filter is specified for your angle of incidence and polarization conditions.",
-    "selectionGuideZh": "光学滤光片选择性地透射、反射或吸收特定波长的光。选择合适的滤光片需要明确定义您的光谱要求：哪些波长必须通过，哪些波长必须阻挡，以及过渡必须有多陡峭。\n\n滤光片类型取决于功能。带通滤光片透射特定波长带并阻挡所有其他波长。长通和短通滤光片透射截止波长以上或以下的光。中性密度滤光片在波长范围内均匀衰减。二向色滤光片反射一个波段同时透射另一个波段。\n\n关键规格：带通滤光片的中心波长（CWL）、边缘滤光片的截止波长、带通的半高全宽（FWHM）、峰值透射率和阻挡光密度（OD）。更高的OD意味着更深的阻挡——OD 4阻挡99.99%的不需要的光，OD 6阻挡99.9999%。\n\n基板和镀膜技术：干涉滤光片使用薄膜镀膜通过相长/相消干涉实现光谱选择性。吸收滤光片使用有色玻璃或染色基板。干涉滤光片提供更陡峭的截止和更高的透射率，但对角度敏感。吸收滤光片具有更宽的接收角但透射率较低。请始终验证滤光片是否针对您的入射角和偏振条件进行了规定。",
-    "faq": [
-      {
-        "question": "What is optical density (OD) and how is it calculated?",
-        "answer": "Optical density (OD) measures how strongly a filter blocks light at a given wavelength. It is calculated as OD = -log₁₀(T), where T is transmission (0 < T ≤ 1). For example, OD 4 means transmission is 10⁻⁴ = 0.01%. Higher OD means deeper blocking — OD 6 blocks 99.9999% of light. OD specifications should always be paired with a wavelength range over which the OD is guaranteed. For detection systems, calculate required OD based on background light intensity and detector sensitivity to ensure adequate signal-to-noise ratio."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是光密度（OD）？如何计算？",
-        "answer": "光密度（OD）衡量滤光片在给定波长下阻挡光的强度。计算公式为 OD = -log₁₀(T)，其中T是透射率（0 < T ≤ 1）。例如，OD 4意味着透射率为10⁻⁴ = 0.01%。更高的OD意味着更深的阻挡——OD 6阻挡99.9999%的光。OD规格应始终与保证OD的波长范围配对。对于检测系统，请根据背景光强度和检测器灵敏度计算所需的OD，以确保足够的信噪比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "narrow-band-interference-filters",
-        "name": "Narrow Band Interference Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "fixed-neutral-density-filters",
-        "name": "Fixed Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "variable-neutral-density-filters",
-        "name": "Variable Neutral Density Filters",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-windows",
-        "name": "BK7 Circular/Square Windows",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optical Filter Selection Guide for Machine Vision",
-        "titleZh": "机器视觉光学滤光片选型指南",
-        "slug": "blog/optical-filter-selection-guide"
-      },
-      {
-        "title": "Understanding Bandpass Filters: Specifications and Selection",
-        "titleZh": "了解带通滤光片：规格与选择",
-        "slug": "blog/bandpass-filter-guide"
-      },
-      {
-        "title": "Neutral Density Filters: Types and Applications",
-        "titleZh": "中性密度滤光片：类型与应用",
-        "slug": "blog/nd-filters-guide"
-      }
-    ]
-  },
-  "beamsplitter-plates": {
-    "applications": [
-      "Interferometry & Optical Testing",
-      "Imaging Systems & Cameras",
-      "Laser Power Monitoring",
-      "Spectroscopy Instruments",
-      "Fiber Optic Communication",
-      "Biomedical & Microscopy",
-      "Stereoscopic Display",
-      "Holography",
-      "Optical Metrology",
-      "Research & Lab Equipment"
-    ],
-    "applicationsZh": [
-      "干涉测量与光学测试",
-      "成像系统与相机",
-      "激光功率监测",
-      "光谱仪器",
-      "光纤通信",
-      "生物医学与显微镜",
-      "立体显示",
-      "全息术",
-      "光学计量",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Interferometry & Optical Testing",
-        "description": "Beamsplitters are the core component in interferometers, splitting light into reference and test beams that recombine to create interference patterns. Non-polarizing beamsplitters with high wavefront quality are essential for accurate surface profile and wavefront measurements."
-      },
-      {
-        "title": "Laser Power Monitoring",
-        "description": "A beamsplitter picks off a small fraction of the laser beam for power monitoring while the main beam continues to the application. This enables real-time power measurement without interrupting the process. Partial reflection coatings (1-5% reflection) are commonly used."
-      },
-      {
-        "title": "Imaging & Photography",
-        "description": "Beamsplitters enable simultaneous imaging from a single optical path in cameras, microscopes, and inspection systems. Cube beamsplitters provide compact mounting and eliminate ghost images found with plate beamsplitters. Polarizing beamsplitters are used in 3D imaging and polarization microscopy."
-      },
-      {
-        "title": "Fiber Optic Systems",
-        "description": "Fused fiber and bulk optic beamsplitters split/combine optical signals in fiber optic communication networks and fiber sensing systems. Polarization maintaining beamsplitters preserve polarization state for fiber optic gyroscopes and polarization-sensitive systems."
-      },
-      {
-        "title": "Spectroscopy & Photometry",
-        "description": "Beamsplitters divide light into multiple channels for simultaneous measurement at different wavelengths or with different detectors. They are also used in dual-beam spectrophotometers where sample and reference beams are measured simultaneously for improved accuracy."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "干涉测量与光学测试",
-        "description": "分束器是干涉仪的核心组件，将光分成参考光束和测试光束，重新组合产生干涉图案。具有高波前质量的非偏振分束器对于精确的表面轮廓和波前测量至关重要。"
-      },
-      {
-        "title": "激光功率监测",
-        "description": "分束器取出一小部分激光束用于功率监测，而主光束继续到达应用端。这使得能够进行实时功率测量而不中断过程。常用部分反射膜（1-5%反射）。"
-      },
-      {
-        "title": "成像与摄影",
-        "description": "分束器使得能够从相机、显微镜和检测系统中的单个光路同时成像。立方分束器提供紧凑的安装并消除平板分束器中的鬼像。偏振分束器用于3D成像和偏振显微镜。"
-      },
-      {
-        "title": "光纤系统",
-        "description": "熔接光纤和体光学分束器在光纤通信网络和光纤传感系统中分离/组合光信号。保偏分束器为光纤陀螺仪和偏振敏感系统保持偏振状态。"
-      },
-      {
-        "title": "光谱与光度学",
-        "description": "分束器将光分成多个通道，以便在不同波长或使用不同检测器时进行同时测量。它们还用于双光束分光光度计，其中同时测量样品光束和参考光束以提高精度。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "50/50 Non-Polarizing Coating",
-      "70/30 Non-Polarizing Coating",
-      "80/20 Non-Polarizing Coating",
-      "Polarizing Beamsplitter Coating (PBS)",
-      "Plate-type Partial Reflective Coatings",
-      "Custom Split Ratios Available"
-    ],
-    "coatingsZh": [
-      "50/50非偏振镀膜",
-      "70/30非偏振镀膜",
-      "80/20非偏振镀膜",
-      "偏振分束镀膜（PBS）",
-      "平板型部分反射镀膜",
-      "可定制分束比"
-    ],
-    "selectionGuide": "Plate beamsplitters are flat optical windows with a partially reflective coating on one surface, splitting an incident beam into transmitted and reflected components. When selecting a plate beamsplitter, consider these critical factors:\n\nSplit ratio uniformity: the reflectance/transmittance ratio should be consistent across the clear aperture. Coating uniformity and substrate thickness uniformity both affect this. Standard uniformity is ±5% across the aperture, with ±2% available for precision applications.\n\nPolarization effects: at non-normal incidence (typically 45°), plate beamsplitters polarize the transmitted and reflected beams differently due to the difference in s and p reflectivity. Non-polarizing coatings are designed to minimize this difference, achieving T_s/T_p ratios close to 1:1. For applications where polarization state must be preserved, specify non-polarizing beamsplitters with <5% polarization sensitivity.\n\nGhost reflections: because light enters through the uncoated back surface first, there is a secondary reflection from the back surface that creates a ghost beam displaced from the main beam. The displacement depends on the plate thickness and refractive index. Thicker substrates increase ghost displacement (making it easier to block) but add more material absorption and wavefront distortion.\n\nWavefront distortion: transmitted beam passes through the substrate, so substrate thickness variation and homogeneity affect wavefront quality. Standard wavefront distortion is λ/2 to λ; for interferometry or imaging applications, specify λ/4 or better. Use AR coating on the back surface to reduce ghosting and maximize transmission.",
-    "selectionGuideZh": "平板分束器是在一个表面上有部分反射膜的平面光学窗口，将入射光束分成透射和反射两部分。选择平板分束器时，请考虑以下关键因素：\n\n分束比均匀性：反射/透射比在整个通光孔径内应保持一致。镀膜均匀性和基板厚度均匀性都会影响这一点。标准均匀性在孔径内为±5%，精密应用可提供±2%。\n\n偏振效应：在非正入射（通常为45°）下，由于s偏振和p偏振反射率的差异，平板分束器会使透射光束和反射光束产生不同的偏振。非偏振镀膜旨在最小化这种差异，实现接近1:1的T_s/T_p比。对于必须保持偏振状态的应用，请指定偏振灵敏度<5%的非偏振分束器。\n\n鬼像反射：因为光首先从未镀膜的背面进入，所以会有来自背面的二次反射，产生与主光束错开的鬼像光束。错位量取决于平板厚度和折射率。较厚的基板会增加鬼像位移（使其更容易阻挡），但也会增加材料吸收和波前畸变。\n\n波前畸变：透射光束穿过基板，因此基板厚度变化和均匀性会影响波前质量。标准波前畸变为λ/2到λ；对于干涉测量或成像应用，请指定λ/4或更好。在背面上使用增透膜以减少鬼像并最大化透射率。",
-    "faq": [
-      {
-        "question": "Polarizing vs non-polarizing beamsplitters — when to use which?",
-        "answer": "Use polarizing beamsplitters when you need to separate or combine s- and p-polarizations with high extinction ratio, such as in optical isolation, ellipsometry, or polarization-based imaging systems. They provide very high extinction ratios (1000:1 or better) but only work correctly for specific polarization states. Use non-polarizing beamsplitters when you need to split a beam by intensity regardless of its polarization state — common in imaging, interferometry, and beam monitoring applications where the input polarization may vary or is unknown. Non-polarizing beamsplitters maintain a consistent split ratio across all input polarization states."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "偏振与非偏振分束器——何时使用哪一种？",
-        "answer": "当您需要以高消光比分离或组合s偏振和p偏振时，请使用偏振分束器，例如在光学隔离、椭偏测量或基于偏振的成像系统中。它们提供非常高的消光比（1000:1或更好），但仅对特定偏振状态正确工作。当您需要按强度分束而不管偏振状态如何时，请使用非偏振分束器——常见于输入偏振可能变化或未知的成像、干涉测量和光束监测应用。非偏振分束器在所有输入偏振状态下保持一致的分束比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "non-polarizing-cube-beamsplitters",
-        "name": "Non-Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "polarizing-cube-beamsplitters",
-        "name": "Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ]
-  },
-  "cube-beamsplitters": {
-    "applications": [
-      "Interferometry & Optical Testing",
-      "Imaging Systems & Cameras",
-      "Laser Power Monitoring",
-      "Spectroscopy Instruments",
-      "Fiber Optic Communication",
-      "Biomedical & Microscopy",
-      "Stereoscopic Display",
-      "Holography",
-      "Optical Metrology",
-      "Research & Lab Equipment"
-    ],
-    "applicationsZh": [
-      "干涉测量与光学测试",
-      "成像系统与相机",
-      "激光功率监测",
-      "光谱仪器",
-      "光纤通信",
-      "生物医学与显微镜",
-      "立体显示",
-      "全息术",
-      "光学计量",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Interferometry & Optical Testing",
-        "description": "Beamsplitters are the core component in interferometers, splitting light into reference and test beams that recombine to create interference patterns. Non-polarizing beamsplitters with high wavefront quality are essential for accurate surface profile and wavefront measurements."
-      },
-      {
-        "title": "Laser Power Monitoring",
-        "description": "A beamsplitter picks off a small fraction of the laser beam for power monitoring while the main beam continues to the application. This enables real-time power measurement without interrupting the process. Partial reflection coatings (1-5% reflection) are commonly used."
-      },
-      {
-        "title": "Imaging & Photography",
-        "description": "Beamsplitters enable simultaneous imaging from a single optical path in cameras, microscopes, and inspection systems. Cube beamsplitters provide compact mounting and eliminate ghost images found with plate beamsplitters. Polarizing beamsplitters are used in 3D imaging and polarization microscopy."
-      },
-      {
-        "title": "Fiber Optic Systems",
-        "description": "Fused fiber and bulk optic beamsplitters split/combine optical signals in fiber optic communication networks and fiber sensing systems. Polarization maintaining beamsplitters preserve polarization state for fiber optic gyroscopes and polarization-sensitive systems."
-      },
-      {
-        "title": "Spectroscopy & Photometry",
-        "description": "Beamsplitters divide light into multiple channels for simultaneous measurement at different wavelengths or with different detectors. They are also used in dual-beam spectrophotometers where sample and reference beams are measured simultaneously for improved accuracy."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "干涉测量与光学测试",
-        "description": "分束器是干涉仪的核心组件，将光分成参考光束和测试光束，重新组合产生干涉图案。具有高波前质量的非偏振分束器对于精确的表面轮廓和波前测量至关重要。"
-      },
-      {
-        "title": "激光功率监测",
-        "description": "分束器取出一小部分激光束用于功率监测，而主光束继续到达应用端。这使得能够进行实时功率测量而不中断过程。常用部分反射膜（1-5%反射）。"
-      },
-      {
-        "title": "成像与摄影",
-        "description": "分束器使得能够从相机、显微镜和检测系统中的单个光路同时成像。立方分束器提供紧凑的安装并消除平板分束器中的鬼像。偏振分束器用于3D成像和偏振显微镜。"
-      },
-      {
-        "title": "光纤系统",
-        "description": "熔接光纤和体光学分束器在光纤通信网络和光纤传感系统中分离/组合光信号。保偏分束器为光纤陀螺仪和偏振敏感系统保持偏振状态。"
-      },
-      {
-        "title": "光谱与光度学",
-        "description": "分束器将光分成多个通道，以便在不同波长或使用不同检测器时进行同时测量。它们还用于双光束分光光度计，其中同时测量样品光束和参考光束以提高精度。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "50/50 Non-Polarizing Coating",
-      "70/30 Non-Polarizing Coating",
-      "80/20 Non-Polarizing Coating",
-      "Polarizing Beamsplitter Coating (PBS)",
-      "Plate-type Partial Reflective Coatings",
-      "Custom Split Ratios Available"
-    ],
-    "coatingsZh": [
-      "50/50非偏振镀膜",
-      "70/30非偏振镀膜",
-      "80/20非偏振镀膜",
-      "偏振分束镀膜（PBS）",
-      "平板型部分反射镀膜",
-      "可定制分束比"
-    ],
-    "selectionGuide": "Cube beamsplitters split an incident beam into transmitted and reflected components at a 90° angle. When selecting a cube beamsplitter, consider these key specifications:\n\nFirst, split ratio: common ratios include 50/50 (most common), 70/30, 80/20, and 90/10. Polarizing cubes (PBS) split based on polarization (s- and p-polarizations), while non-polarizing cubes split regardless of polarization state. For imaging or interferometry applications where polarization state must be preserved, non-polarizing beamsplitters with polarization flat response are required.\n\nSecond, extinction ratio for polarizing cubes: typical extinction ratios are 1000:1 (for the reflected s-polarization) and >100:1 for the transmitted p-polarization. For high-contrast polarization applications, specify extinction ratio of >10,000:1.\n\nThird, wavefront distortion: the transmitted beam passes through two cemented prisms and the beam splitter coating, so wavefront distortion is generally worse than plate beamsplitters. Standard cubes provide λ/2 wavefront distortion; for high-precision interferometry, specify λ/4 or better.\n\nThe coating design determines the wavelength range. Visible-band cubes typically cover 400-700nm, NIR cubes cover 700-1100nm or 1100-1600nm. Damage threshold is important for laser applications — dielectric coatings typically handle 1-10 J/cm² for nanosecond pulses. Always specify the design angle of incidence (normally 45°).",
-    "selectionGuideZh": "立方分束器将入射光束分成透射和反射两部分，成90°角。选择立方分束器时，请考虑以下关键规格：\n\n首先，分束比：常见比例包括50/50（最常见）、70/30、80/20和90/10。偏振立方体（PBS）根据偏振（s偏振和p偏振）进行分束，而非偏振立方体则与偏振状态无关地分束。对于必须保持偏振状态的成像或干涉测量应用，需要具有偏振平坦响应的非偏振分束器。\n\n其次，偏振立方体的消光比：典型消光比为1000:1（对于反射的s偏振）和>100:1（对于透射的p偏振）。对于高对比度偏振应用，请指定>10,000:1的消光比。\n\n第三，波前畸变：透射光束穿过两个胶合棱镜和分束膜，因此波前畸变通常比平板分束器差。标准立方体提供λ/2的波前畸变；对于高精度干涉测量，请指定λ/4或更好。\n\n镀膜设计决定了波长范围。可见波段立方体通常覆盖400-700nm，近红外立方体覆盖700-1100nm或1100-1600nm。对于激光应用，损伤阈值很重要——电介质膜在纳秒脉冲下通常可承受1-10 J/cm²。请始终指定设计入射角（通常为45°）。",
-    "faq": [
-      {
-        "question": "Polarizing vs non-polarizing beamsplitters — when to use which?",
-        "answer": "Use polarizing beamsplitters when you need to separate or combine s- and p-polarizations with high extinction ratio, such as in optical isolation, ellipsometry, or polarization-based imaging systems. They provide very high extinction ratios (1000:1 or better) but only work correctly for specific polarization states. Use non-polarizing beamsplitters when you need to split a beam by intensity regardless of its polarization state — common in imaging, interferometry, and beam monitoring applications where the input polarization may vary or is unknown. Non-polarizing beamsplitters maintain a consistent split ratio across all input polarization states."
-      },
-      {
-        "question": "Why does wavefront distortion differ between plate and cube beamsplitters?",
-        "answer": "Plate beamsplitters transmit light through a single substrate, so wavefront distortion depends only on the flatness and homogeneity of one plate. Cube beamsplitters transmit light through two prisms cemented together, passing through two glass paths and the beamsplitter coating interface. This typically results in worse wavefront distortion — usually λ/2 to λ for standard cubes vs λ/4 to λ/2 for plates. Additionally, stress from the cementing process can introduce birefringence and additional wavefront error. For applications requiring the best wavefront quality (such as interferometry), plate beamsplitters are preferred despite the ghost reflection issue. High-precision cubes with λ/4 wavefront specification are available for applications where cube geometry is essential."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "偏振与非偏振分束器——何时使用哪一种？",
-        "answer": "当您需要以高消光比分离或组合s偏振和p偏振时，请使用偏振分束器，例如在光学隔离、椭偏测量或基于偏振的成像系统中。它们提供非常高的消光比（1000:1或更好），但仅对特定偏振状态正确工作。当您需要按强度分束而不管偏振状态如何时，请使用非偏振分束器——常见于输入偏振可能变化或未知的成像、干涉测量和光束监测应用。非偏振分束器在所有输入偏振状态下保持一致的分束比。"
-      },
-      {
-        "question": "",
-        "answer": "平板分束器通过单个基板透射光，因此波前畸变仅取决于一个平板的平面度和均匀性。立方分束器通过两个胶合在一起的棱镜透射光，穿过两条玻璃路径和分束膜界面。这通常会导致更差的波前畸变——标准立方体通常为λ/2到λ，而平板为λ/4到λ/2。此外，胶合过程的应力会引入双折射和额外的波前误差。对于要求最佳波前质量的应用（如干涉测量），尽管有鬼像反射问题，平板分束器仍然是首选。对于必须使用立方体几何结构的应用，可以提供具有λ/4波前规格的高精度立方体。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "beamsplitter-plates",
-        "name": "Circular/Square Beamsplitter Plates",
-        "nameZh": ""
-      },
-      {
-        "slug": "non-polarizing-cube-beamsplitters",
-        "name": "Non-Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "polarizing-cube-beamsplitters",
-        "name": "Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ]
-  },
-  "non-polarizing-cube-beamsplitters": {
-    "applications": [
-      "Interferometry & Optical Testing",
-      "Imaging Systems & Cameras",
-      "Laser Power Monitoring",
-      "Spectroscopy Instruments",
-      "Fiber Optic Communication",
-      "Biomedical & Microscopy",
-      "Stereoscopic Display",
-      "Holography",
-      "Optical Metrology",
-      "Research & Lab Equipment"
-    ],
-    "applicationsZh": [
-      "干涉测量与光学测试",
-      "成像系统与相机",
-      "激光功率监测",
-      "光谱仪器",
-      "光纤通信",
-      "生物医学与显微镜",
-      "立体显示",
-      "全息术",
-      "光学计量",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Interferometry & Optical Testing",
-        "description": "Beamsplitters are the core component in interferometers, splitting light into reference and test beams that recombine to create interference patterns. Non-polarizing beamsplitters with high wavefront quality are essential for accurate surface profile and wavefront measurements."
-      },
-      {
-        "title": "Laser Power Monitoring",
-        "description": "A beamsplitter picks off a small fraction of the laser beam for power monitoring while the main beam continues to the application. This enables real-time power measurement without interrupting the process. Partial reflection coatings (1-5% reflection) are commonly used."
-      },
-      {
-        "title": "Imaging & Photography",
-        "description": "Beamsplitters enable simultaneous imaging from a single optical path in cameras, microscopes, and inspection systems. Cube beamsplitters provide compact mounting and eliminate ghost images found with plate beamsplitters. Polarizing beamsplitters are used in 3D imaging and polarization microscopy."
-      },
-      {
-        "title": "Fiber Optic Systems",
-        "description": "Fused fiber and bulk optic beamsplitters split/combine optical signals in fiber optic communication networks and fiber sensing systems. Polarization maintaining beamsplitters preserve polarization state for fiber optic gyroscopes and polarization-sensitive systems."
-      },
-      {
-        "title": "Spectroscopy & Photometry",
-        "description": "Beamsplitters divide light into multiple channels for simultaneous measurement at different wavelengths or with different detectors. They are also used in dual-beam spectrophotometers where sample and reference beams are measured simultaneously for improved accuracy."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "干涉测量与光学测试",
-        "description": "分束器是干涉仪的核心组件，将光分成参考光束和测试光束，重新组合产生干涉图案。具有高波前质量的非偏振分束器对于精确的表面轮廓和波前测量至关重要。"
-      },
-      {
-        "title": "激光功率监测",
-        "description": "分束器取出一小部分激光束用于功率监测，而主光束继续到达应用端。这使得能够进行实时功率测量而不中断过程。常用部分反射膜（1-5%反射）。"
-      },
-      {
-        "title": "成像与摄影",
-        "description": "分束器使得能够从相机、显微镜和检测系统中的单个光路同时成像。立方分束器提供紧凑的安装并消除平板分束器中的鬼像。偏振分束器用于3D成像和偏振显微镜。"
-      },
-      {
-        "title": "光纤系统",
-        "description": "熔接光纤和体光学分束器在光纤通信网络和光纤传感系统中分离/组合光信号。保偏分束器为光纤陀螺仪和偏振敏感系统保持偏振状态。"
-      },
-      {
-        "title": "光谱与光度学",
-        "description": "分束器将光分成多个通道，以便在不同波长或使用不同检测器时进行同时测量。它们还用于双光束分光光度计，其中同时测量样品光束和参考光束以提高精度。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "50/50 Non-Polarizing Coating",
-      "70/30 Non-Polarizing Coating",
-      "80/20 Non-Polarizing Coating",
-      "Polarizing Beamsplitter Coating (PBS)",
-      "Plate-type Partial Reflective Coatings",
-      "Custom Split Ratios Available"
-    ],
-    "coatingsZh": [
-      "50/50非偏振镀膜",
-      "70/30非偏振镀膜",
-      "80/20非偏振镀膜",
-      "偏振分束镀膜（PBS）",
-      "平板型部分反射镀膜",
-      "可定制分束比"
-    ],
-    "selectionGuide": "Beamsplitters divide an optical beam into two or more separate beams. They are fundamental components in interferometry, imaging systems, and optical testing setups. Choosing the right beamsplitter depends on the required split ratio, wavelength range, polarization sensitivity, and form factor.\n\nForm factor: plate beamsplitters are simple and economical but produce ghost reflections from the second surface. Cube beamsplitters eliminate ghosting and are easier to mount but have higher wavefront distortion due to the two glass paths. Pellicle beamsplitters offer minimal wavefront distortion but are fragile.\n\nSplit ratio: common ratios include 50/50, 70/30, 80/20, and 90/10. Polarizing beamsplitters separate s- and p-polarizations with high extinction ratio. Non-polarizing beamsplitters maintain a constant split ratio regardless of input polarization — look for low polarization sensitivity specifications (<5%).\n\nWavelength range: broadband beamsplitters work across wide spectral ranges (e.g., 400-700nm visible, 700-1100nm NIR). Laser line beamsplitters are optimized for specific laser wavelengths with higher damage thresholds.\n\nDamage threshold: important for laser applications. Dielectric coatings generally offer higher LIDT than metal coatings. Cube beamsplitters may have lower damage thresholds than plates because the beam passes through glass and a cement layer. Always verify LIDT specifications for your pulse width and wavelength.",
-    "selectionGuideZh": "分束器将光束分成两束或多束独立的光束。它们是干涉测量、成像系统和光学测试装置中的基本组件。选择合适的分束器取决于所需的分束比、波长范围、偏振灵敏度和外形尺寸。\n\n外形：平板分束器简单经济，但会从第二表面产生鬼像反射。立方分束器消除了鬼像且更容易安装，但由于两条玻璃路径，波前畸变更大。薄膜分束器提供最小的波前畸变，但很脆弱。\n\n分束比：常见比例包括50/50、70/30、80/20和90/10。偏振分束器以高消光比分离s偏振和p偏振。非偏振分束器保持恒定的分束比，与输入偏振无关——寻找低偏振灵敏度规格（<5%）。\n\n波长范围：宽带分束器在宽光谱范围内工作（例如，400-700nm可见光，700-1100nm近红外）。激光线分束器针对特定激光波长进行了优化，具有更高的损伤阈值。\n\n损伤阈值：对于激光应用很重要。电介质膜通常提供比金属膜更高的LIDT。立方分束器的损伤阈值可能低于平板，因为光束穿过玻璃和胶合层。请始终验证针对您的脉冲宽度和波长的LIDT规格。",
-    "faq": [
-      {
-        "question": "Polarizing vs non-polarizing beamsplitters — when to use which?",
-        "answer": "Use polarizing beamsplitters when you need to separate or combine s- and p-polarizations with high extinction ratio, such as in optical isolation, ellipsometry, or polarization-based imaging systems. They provide very high extinction ratios (1000:1 or better) but only work correctly for specific polarization states. Use non-polarizing beamsplitters when you need to split a beam by intensity regardless of its polarization state — common in imaging, interferometry, and beam monitoring applications where the input polarization may vary or is unknown. Non-polarizing beamsplitters maintain a consistent split ratio across all input polarization states."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "偏振与非偏振分束器——何时使用哪一种？",
-        "answer": "当您需要以高消光比分离或组合s偏振和p偏振时，请使用偏振分束器，例如在光学隔离、椭偏测量或基于偏振的成像系统中。它们提供非常高的消光比（1000:1或更好），但仅对特定偏振状态正确工作。当您需要按强度分束而不管偏振状态如何时，请使用非偏振分束器——常见于输入偏振可能变化或未知的成像、干涉测量和光束监测应用。非偏振分束器在所有输入偏振状态下保持一致的分束比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "beamsplitter-plates",
-        "name": "Circular/Square Beamsplitter Plates",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "polarizing-cube-beamsplitters",
-        "name": "Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ]
-  },
-  "polarizing-cube-beamsplitters": {
-    "applications": [
-      "Interferometry & Optical Testing",
-      "Imaging Systems & Cameras",
-      "Laser Power Monitoring",
-      "Spectroscopy Instruments",
-      "Fiber Optic Communication",
-      "Biomedical & Microscopy",
-      "Stereoscopic Display",
-      "Holography",
-      "Optical Metrology",
-      "Research & Lab Equipment"
-    ],
-    "applicationsZh": [
-      "干涉测量与光学测试",
-      "成像系统与相机",
-      "激光功率监测",
-      "光谱仪器",
-      "光纤通信",
-      "生物医学与显微镜",
-      "立体显示",
-      "全息术",
-      "光学计量",
-      "研究与实验室设备"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Interferometry & Optical Testing",
-        "description": "Beamsplitters are the core component in interferometers, splitting light into reference and test beams that recombine to create interference patterns. Non-polarizing beamsplitters with high wavefront quality are essential for accurate surface profile and wavefront measurements."
-      },
-      {
-        "title": "Laser Power Monitoring",
-        "description": "A beamsplitter picks off a small fraction of the laser beam for power monitoring while the main beam continues to the application. This enables real-time power measurement without interrupting the process. Partial reflection coatings (1-5% reflection) are commonly used."
-      },
-      {
-        "title": "Imaging & Photography",
-        "description": "Beamsplitters enable simultaneous imaging from a single optical path in cameras, microscopes, and inspection systems. Cube beamsplitters provide compact mounting and eliminate ghost images found with plate beamsplitters. Polarizing beamsplitters are used in 3D imaging and polarization microscopy."
-      },
-      {
-        "title": "Fiber Optic Systems",
-        "description": "Fused fiber and bulk optic beamsplitters split/combine optical signals in fiber optic communication networks and fiber sensing systems. Polarization maintaining beamsplitters preserve polarization state for fiber optic gyroscopes and polarization-sensitive systems."
-      },
-      {
-        "title": "Spectroscopy & Photometry",
-        "description": "Beamsplitters divide light into multiple channels for simultaneous measurement at different wavelengths or with different detectors. They are also used in dual-beam spectrophotometers where sample and reference beams are measured simultaneously for improved accuracy."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "干涉测量与光学测试",
-        "description": "分束器是干涉仪的核心组件，将光分成参考光束和测试光束，重新组合产生干涉图案。具有高波前质量的非偏振分束器对于精确的表面轮廓和波前测量至关重要。"
-      },
-      {
-        "title": "激光功率监测",
-        "description": "分束器取出一小部分激光束用于功率监测，而主光束继续到达应用端。这使得能够进行实时功率测量而不中断过程。常用部分反射膜（1-5%反射）。"
-      },
-      {
-        "title": "成像与摄影",
-        "description": "分束器使得能够从相机、显微镜和检测系统中的单个光路同时成像。立方分束器提供紧凑的安装并消除平板分束器中的鬼像。偏振分束器用于3D成像和偏振显微镜。"
-      },
-      {
-        "title": "光纤系统",
-        "description": "熔接光纤和体光学分束器在光纤通信网络和光纤传感系统中分离/组合光信号。保偏分束器为光纤陀螺仪和偏振敏感系统保持偏振状态。"
-      },
-      {
-        "title": "光谱与光度学",
-        "description": "分束器将光分成多个通道，以便在不同波长或使用不同检测器时进行同时测量。它们还用于双光束分光光度计，其中同时测量样品光束和参考光束以提高精度。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)"
-    ],
-    "coatings": [
-      "50/50 Non-Polarizing Coating",
-      "70/30 Non-Polarizing Coating",
-      "80/20 Non-Polarizing Coating",
-      "Polarizing Beamsplitter Coating (PBS)",
-      "Plate-type Partial Reflective Coatings",
-      "Custom Split Ratios Available"
-    ],
-    "coatingsZh": [
-      "50/50非偏振镀膜",
-      "70/30非偏振镀膜",
-      "80/20非偏振镀膜",
-      "偏振分束镀膜（PBS）",
-      "平板型部分反射镀膜",
-      "可定制分束比"
-    ],
-    "selectionGuide": "Beamsplitters divide an optical beam into two or more separate beams. They are fundamental components in interferometry, imaging systems, and optical testing setups. Choosing the right beamsplitter depends on the required split ratio, wavelength range, polarization sensitivity, and form factor.\n\nForm factor: plate beamsplitters are simple and economical but produce ghost reflections from the second surface. Cube beamsplitters eliminate ghosting and are easier to mount but have higher wavefront distortion due to the two glass paths. Pellicle beamsplitters offer minimal wavefront distortion but are fragile.\n\nSplit ratio: common ratios include 50/50, 70/30, 80/20, and 90/10. Polarizing beamsplitters separate s- and p-polarizations with high extinction ratio. Non-polarizing beamsplitters maintain a constant split ratio regardless of input polarization — look for low polarization sensitivity specifications (<5%).\n\nWavelength range: broadband beamsplitters work across wide spectral ranges (e.g., 400-700nm visible, 700-1100nm NIR). Laser line beamsplitters are optimized for specific laser wavelengths with higher damage thresholds.\n\nDamage threshold: important for laser applications. Dielectric coatings generally offer higher LIDT than metal coatings. Cube beamsplitters may have lower damage thresholds than plates because the beam passes through glass and a cement layer. Always verify LIDT specifications for your pulse width and wavelength.",
-    "selectionGuideZh": "分束器将光束分成两束或多束独立的光束。它们是干涉测量、成像系统和光学测试装置中的基本组件。选择合适的分束器取决于所需的分束比、波长范围、偏振灵敏度和外形尺寸。\n\n外形：平板分束器简单经济，但会从第二表面产生鬼像反射。立方分束器消除了鬼像且更容易安装，但由于两条玻璃路径，波前畸变更大。薄膜分束器提供最小的波前畸变，但很脆弱。\n\n分束比：常见比例包括50/50、70/30、80/20和90/10。偏振分束器以高消光比分离s偏振和p偏振。非偏振分束器保持恒定的分束比，与输入偏振无关——寻找低偏振灵敏度规格（<5%）。\n\n波长范围：宽带分束器在宽光谱范围内工作（例如，400-700nm可见光，700-1100nm近红外）。激光线分束器针对特定激光波长进行了优化，具有更高的损伤阈值。\n\n损伤阈值：对于激光应用很重要。电介质膜通常提供比金属膜更高的LIDT。立方分束器的损伤阈值可能低于平板，因为光束穿过玻璃和胶合层。请始终验证针对您的脉冲宽度和波长的LIDT规格。",
-    "faq": [
-      {
-        "question": "Polarizing vs non-polarizing beamsplitters — when to use which?",
-        "answer": "Use polarizing beamsplitters when you need to separate or combine s- and p-polarizations with high extinction ratio, such as in optical isolation, ellipsometry, or polarization-based imaging systems. They provide very high extinction ratios (1000:1 or better) but only work correctly for specific polarization states. Use non-polarizing beamsplitters when you need to split a beam by intensity regardless of its polarization state — common in imaging, interferometry, and beam monitoring applications where the input polarization may vary or is unknown. Non-polarizing beamsplitters maintain a consistent split ratio across all input polarization states."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "偏振与非偏振分束器——何时使用哪一种？",
-        "answer": "当您需要以高消光比分离或组合s偏振和p偏振时，请使用偏振分束器，例如在光学隔离、椭偏测量或基于偏振的成像系统中。它们提供非常高的消光比（1000:1或更好），但仅对特定偏振状态正确工作。当您需要按强度分束而不管偏振状态如何时，请使用非偏振分束器——常见于输入偏振可能变化或未知的成像、干涉测量和光束监测应用。非偏振分束器在所有输入偏振状态下保持一致的分束比。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "beamsplitter-plates",
-        "name": "Circular/Square Beamsplitter Plates",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "non-polarizing-cube-beamsplitters",
-        "name": "Non-Polarizing Cube Beamsplitters",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Beamsplitter Selection Guide: Types and Applications",
-        "titleZh": "分束器选型指南：类型与应用",
-        "slug": "blog/beamsplitter-selection-guide"
-      },
-      {
-        "title": "Polarizing vs Non-Polarizing Beamsplitters",
-        "titleZh": "偏振与非偏振分束器",
-        "slug": "blog/polarizing-vs-non-polarizing-beamsplitters"
-      },
-      {
-        "title": "Cube vs Plate Beamsplitters: How to Choose",
-        "titleZh": "立方与平板分束器：如何选择",
-        "slug": "blog/cube-vs-plate-beamsplitters"
-      }
-    ]
-  },
-  "multiple-order-waveplates": {
-    "applications": [
-      "Polarization Control & Analysis",
-      "Laser Systems & Isolators",
-      "Electro-Optic Modulation",
-      "Interferometry & Metrology",
-      "Fiber Optic Communication",
-      "Biomedical Polarized Imaging",
-      "Liquid Crystal Display",
-      "Spectroscopy Equipment",
-      "Quantum Optics Experiments",
-      "Semiconductor Inspection"
-    ],
-    "applicationsZh": [
-      "偏振控制与分析",
-      "激光系统与隔离器",
-      "电光调制",
-      "干涉测量与计量",
-      "光纤通信",
-      "生物医学偏振成像",
-      "液晶显示",
-      "光谱设备",
-      "量子光学实验",
-      "半导体检测"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization Control in Laser Systems",
-        "description": "Waveplates rotate polarization direction (half-wave plates) or convert between linear and circular polarization (quarter-wave plates) in laser systems. They are essential components in optical isolators, laser amplifiers, and polarization-dependent frequency conversion setups."
-      },
-      {
-        "title": "Optical Isolation",
-        "description": "A quarter-wave plate combined with a polarizing beamsplitter or polarizer forms an optical isolator that prevents back-reflected light from returning to the laser source. This protects the laser from damage and prevents frequency instability caused by feedback."
-      },
-      {
-        "title": "Imaging & Microscopy",
-        "description": "Polarized light microscopy uses waveplates for contrast enhancement of birefringent samples such as biological tissues, crystals, and polymers. A quarter-wave plate between crossed polarizers converts phase differences into intensity variations, revealing sample structure."
-      },
-      {
-        "title": "Fiber Optic Communication",
-        "description": "Waveplates manage polarization states in fiber optic transmitters, receivers, and test equipment. Polarization mode dispersion (PMD) compensation and polarization diversity receivers use waveplates to mitigate polarization-related signal degradation in high-speed fiber links."
-      },
-      {
-        "title": "Quantum Optics & Precision Measurement",
-        "description": "High-precision zero-order waveplates with accurate retardation are used in quantum optics experiments, atom trapping, and precision metrology. Ultra-stable waveplate designs minimize temperature and wavelength dependence for demanding scientific applications."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光系统中的偏振控制",
-        "description": "波片在激光系统中旋转偏振方向（半波片）或在线偏振和圆偏振之间转换（四分之一波片）。它们是光隔离器、激光放大器和偏振相关变频装置中的基本组件。"
-      },
-      {
-        "title": "光学隔离",
-        "description": "四分之一波片与偏振分束器或偏振器结合形成光隔离器，防止背向反射光返回到激光源。这保护激光器免受损坏，并防止由反馈引起的频率不稳定。"
-      },
-      {
-        "title": "成像与显微镜",
-        "description": "偏光显微镜使用波片增强双折射样品（如生物组织、晶体和聚合物）的对比度。交叉偏振器之间的四分之一波片将相位差转换成强度变化，揭示样品结构。"
-      },
-      {
-        "title": "光纤通信",
-        "description": "波片管理光纤发射机、接收机和测试设备中的偏振状态。偏振模色散（PMD）补偿和偏振分集接收机使用波片来减轻高速光纤链路中与偏振相关的信号降级。"
-      },
-      {
-        "title": "量子光学与精密测量",
-        "description": "具有精确延迟的高精度零级波片用于量子光学实验、原子俘获和精密计量。超稳定波片设计最大限度地减少了温度和波长依赖性，适用于高要求的科学应用。"
-      }
-    ],
-    "materials": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "materialsZh": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "coatings": [
-      "Single-layer MgF₂ AR Coating",
-      "Broadband AR Coating (VIS / NIR)",
-      "High-Power AR Coating",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "单层MgF₂增透膜",
-      "宽带增透膜（可见光/近红外）",
-      "高功率增透膜",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Waveplates (retarders) introduce a controlled phase shift between two orthogonal polarization components of light. They are essential components in polarization control systems, laser optics, and optical instrumentation.\n\nWaveplate type: multi-order waveplates are simple, single-plate devices that are economical but have high temperature and wavelength sensitivity. Zero-order waveplates (two plates with crossed axes) provide much better stability against temperature and wavelength changes. True zero-order (very thin single plates) offer the best performance but are fragile and expensive. Air-spaced zero-order designs avoid cement absorption for high-power applications.\n\nRetardation: quarter-wave (λ/4) plates convert between linear and circular polarization. Half-wave (λ/2) plates rotate the direction of linear polarization. Other retardation values (λ/8, 3λ/4, etc.) are available for specialized applications.\n\nMaterial: quartz is the most common waveplate material, offering good transmission from UV to NIR. MgF₂ extends into the deep UV. For IR applications, consider CdTe or other birefringent materials. The material must have good birefringence uniformity across the aperture.\n\nKey specifications: retardation accuracy (typically λ/50 to λ/300), wavefront distortion, damage threshold, and temperature coefficient. Zero-order waveplates have about 10-50× lower temperature sensitivity than multi-order plates. For high-power lasers, specify the LIDT and consider air-spaced designs if cement absorption is a concern.",
-    "selectionGuideZh": "波片（延迟片）在光的两个正交偏振分量之间引入受控的相移。它们是偏振控制系统、激光光学和光学仪器中的基本组件。\n\n波片类型：多级波片是简单的单板器件，经济实惠但温度和波长敏感性高。零级波片（两个光轴交叉的波片）提供更好的温度和波长变化稳定性。真零级（非常薄的单板）提供最佳性能，但易碎且昂贵。空气间隔零级设计避免了高功率应用中的胶合吸收。\n\n延迟量：四分之一波（λ/4）片在线偏振和圆偏振之间转换。二分之一波（λ/2）片旋转线偏振的方向。其他延迟值（λ/8、3λ/4等）可用于特殊应用。\n\n材料：石英是最常见的波片材料，提供从紫外到近红外的良好透射率。MgF₂延伸到深紫外。对于红外应用，请考虑CdTe或其他双折射材料。材料在整个孔径内必须具有良好的双折射均匀性。\n\n关键规格：延迟精度（通常为λ/50至λ/300）、波前畸变、损伤阈值和温度系数。零级波片的温度敏感性比多级波片低约10-50倍。对于高功率激光器，请指定LIDT，如果胶合吸收是一个问题，请考虑空气间隔设计。",
-    "faq": [
-      {
-        "question": "Zero-order vs multi-order waveplates — what is the difference?",
-        "answer": "Multi-order waveplates are single quartz plates where the retardation is N×λ + λ/4 (for quarter-wave) where N is a large integer. They are economical but very sensitive to temperature and wavelength changes — a 10°C shift can change the retardation significantly. Zero-order waveplates use two multi-order plates with their axes crossed, so the net retardation is exactly the difference between the two plates (typically λ/4 or λ/2). This results in 10-50× better temperature and wavelength stability. True zero-order waveplates are very thin single plates but are fragile. Air-spaced zero-order designs offer the best stability for high-power applications."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "零级与多级波片——有什么区别？",
-        "answer": "多级波片是单石英波片，其延迟量为N×λ + λ/4（对于四分之一波），其中N是一个大整数。它们经济实惠，但对温度和波长变化非常敏感——10°C的变化就会显著改变延迟量。零级波片使用两个光轴交叉的多级波片，因此净延迟量恰好是两个波片之间的差值（通常为λ/4或λ/2）。这导致温度和波长稳定性提高10-50倍。真零级波片是非常薄的单板，但很脆弱。空气间隔零级设计为高功率应用提供最佳稳定性。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "dual-wavelength-waveplates",
-        "name": "Dual Wavelength Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "air-spaced-zero-order-waveplates",
-        "name": "Air Spaced Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ]
-  },
-  "dual-wavelength-waveplates": {
-    "applications": [
-      "Polarization Control & Analysis",
-      "Laser Systems & Isolators",
-      "Electro-Optic Modulation",
-      "Interferometry & Metrology",
-      "Fiber Optic Communication",
-      "Biomedical Polarized Imaging",
-      "Liquid Crystal Display",
-      "Spectroscopy Equipment",
-      "Quantum Optics Experiments",
-      "Semiconductor Inspection"
-    ],
-    "applicationsZh": [
-      "偏振控制与分析",
-      "激光系统与隔离器",
-      "电光调制",
-      "干涉测量与计量",
-      "光纤通信",
-      "生物医学偏振成像",
-      "液晶显示",
-      "光谱设备",
-      "量子光学实验",
-      "半导体检测"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization Control in Laser Systems",
-        "description": "Waveplates rotate polarization direction (half-wave plates) or convert between linear and circular polarization (quarter-wave plates) in laser systems. They are essential components in optical isolators, laser amplifiers, and polarization-dependent frequency conversion setups."
-      },
-      {
-        "title": "Optical Isolation",
-        "description": "A quarter-wave plate combined with a polarizing beamsplitter or polarizer forms an optical isolator that prevents back-reflected light from returning to the laser source. This protects the laser from damage and prevents frequency instability caused by feedback."
-      },
-      {
-        "title": "Imaging & Microscopy",
-        "description": "Polarized light microscopy uses waveplates for contrast enhancement of birefringent samples such as biological tissues, crystals, and polymers. A quarter-wave plate between crossed polarizers converts phase differences into intensity variations, revealing sample structure."
-      },
-      {
-        "title": "Fiber Optic Communication",
-        "description": "Waveplates manage polarization states in fiber optic transmitters, receivers, and test equipment. Polarization mode dispersion (PMD) compensation and polarization diversity receivers use waveplates to mitigate polarization-related signal degradation in high-speed fiber links."
-      },
-      {
-        "title": "Quantum Optics & Precision Measurement",
-        "description": "High-precision zero-order waveplates with accurate retardation are used in quantum optics experiments, atom trapping, and precision metrology. Ultra-stable waveplate designs minimize temperature and wavelength dependence for demanding scientific applications."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光系统中的偏振控制",
-        "description": "波片在激光系统中旋转偏振方向（半波片）或在线偏振和圆偏振之间转换（四分之一波片）。它们是光隔离器、激光放大器和偏振相关变频装置中的基本组件。"
-      },
-      {
-        "title": "光学隔离",
-        "description": "四分之一波片与偏振分束器或偏振器结合形成光隔离器，防止背向反射光返回到激光源。这保护激光器免受损坏，并防止由反馈引起的频率不稳定。"
-      },
-      {
-        "title": "成像与显微镜",
-        "description": "偏光显微镜使用波片增强双折射样品（如生物组织、晶体和聚合物）的对比度。交叉偏振器之间的四分之一波片将相位差转换成强度变化，揭示样品结构。"
-      },
-      {
-        "title": "光纤通信",
-        "description": "波片管理光纤发射机、接收机和测试设备中的偏振状态。偏振模色散（PMD）补偿和偏振分集接收机使用波片来减轻高速光纤链路中与偏振相关的信号降级。"
-      },
-      {
-        "title": "量子光学与精密测量",
-        "description": "具有精确延迟的高精度零级波片用于量子光学实验、原子俘获和精密计量。超稳定波片设计最大限度地减少了温度和波长依赖性，适用于高要求的科学应用。"
-      }
-    ],
-    "materials": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "materialsZh": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "coatings": [
-      "Single-layer MgF₂ AR Coating",
-      "Broadband AR Coating (VIS / NIR)",
-      "High-Power AR Coating",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "单层MgF₂增透膜",
-      "宽带增透膜（可见光/近红外）",
-      "高功率增透膜",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Waveplates (retarders) introduce a controlled phase shift between two orthogonal polarization components of light. They are essential components in polarization control systems, laser optics, and optical instrumentation.\n\nWaveplate type: multi-order waveplates are simple, single-plate devices that are economical but have high temperature and wavelength sensitivity. Zero-order waveplates (two plates with crossed axes) provide much better stability against temperature and wavelength changes. True zero-order (very thin single plates) offer the best performance but are fragile and expensive. Air-spaced zero-order designs avoid cement absorption for high-power applications.\n\nRetardation: quarter-wave (λ/4) plates convert between linear and circular polarization. Half-wave (λ/2) plates rotate the direction of linear polarization. Other retardation values (λ/8, 3λ/4, etc.) are available for specialized applications.\n\nMaterial: quartz is the most common waveplate material, offering good transmission from UV to NIR. MgF₂ extends into the deep UV. For IR applications, consider CdTe or other birefringent materials. The material must have good birefringence uniformity across the aperture.\n\nKey specifications: retardation accuracy (typically λ/50 to λ/300), wavefront distortion, damage threshold, and temperature coefficient. Zero-order waveplates have about 10-50× lower temperature sensitivity than multi-order plates. For high-power lasers, specify the LIDT and consider air-spaced designs if cement absorption is a concern.",
-    "selectionGuideZh": "波片（延迟片）在光的两个正交偏振分量之间引入受控的相移。它们是偏振控制系统、激光光学和光学仪器中的基本组件。\n\n波片类型：多级波片是简单的单板器件，经济实惠但温度和波长敏感性高。零级波片（两个光轴交叉的波片）提供更好的温度和波长变化稳定性。真零级（非常薄的单板）提供最佳性能，但易碎且昂贵。空气间隔零级设计避免了高功率应用中的胶合吸收。\n\n延迟量：四分之一波（λ/4）片在线偏振和圆偏振之间转换。二分之一波（λ/2）片旋转线偏振的方向。其他延迟值（λ/8、3λ/4等）可用于特殊应用。\n\n材料：石英是最常见的波片材料，提供从紫外到近红外的良好透射率。MgF₂延伸到深紫外。对于红外应用，请考虑CdTe或其他双折射材料。材料在整个孔径内必须具有良好的双折射均匀性。\n\n关键规格：延迟精度（通常为λ/50至λ/300）、波前畸变、损伤阈值和温度系数。零级波片的温度敏感性比多级波片低约10-50倍。对于高功率激光器，请指定LIDT，如果胶合吸收是一个问题，请考虑空气间隔设计。",
-    "faq": [
-      {
-        "question": "Zero-order vs multi-order waveplates — what is the difference?",
-        "answer": "Multi-order waveplates are single quartz plates where the retardation is N×λ + λ/4 (for quarter-wave) where N is a large integer. They are economical but very sensitive to temperature and wavelength changes — a 10°C shift can change the retardation significantly. Zero-order waveplates use two multi-order plates with their axes crossed, so the net retardation is exactly the difference between the two plates (typically λ/4 or λ/2). This results in 10-50× better temperature and wavelength stability. True zero-order waveplates are very thin single plates but are fragile. Air-spaced zero-order designs offer the best stability for high-power applications."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "零级与多级波片——有什么区别？",
-        "answer": "多级波片是单石英波片，其延迟量为N×λ + λ/4（对于四分之一波），其中N是一个大整数。它们经济实惠，但对温度和波长变化非常敏感——10°C的变化就会显著改变延迟量。零级波片使用两个光轴交叉的多级波片，因此净延迟量恰好是两个波片之间的差值（通常为λ/4或λ/2）。这导致温度和波长稳定性提高10-50倍。真零级波片是非常薄的单板，但很脆弱。空气间隔零级设计为高功率应用提供最佳稳定性。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "multiple-order-waveplates",
-        "name": "Multiple Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "air-spaced-zero-order-waveplates",
-        "name": "Air Spaced Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ]
-  },
-  "cemented-zero-order-waveplates": {
-    "applications": [
-      "Polarization Control & Analysis",
-      "Laser Systems & Isolators",
-      "Electro-Optic Modulation",
-      "Interferometry & Metrology",
-      "Fiber Optic Communication",
-      "Biomedical Polarized Imaging",
-      "Liquid Crystal Display",
-      "Spectroscopy Equipment",
-      "Quantum Optics Experiments",
-      "Semiconductor Inspection"
-    ],
-    "applicationsZh": [
-      "偏振控制与分析",
-      "激光系统与隔离器",
-      "电光调制",
-      "干涉测量与计量",
-      "光纤通信",
-      "生物医学偏振成像",
-      "液晶显示",
-      "光谱设备",
-      "量子光学实验",
-      "半导体检测"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization Control in Laser Systems",
-        "description": "Waveplates rotate polarization direction (half-wave plates) or convert between linear and circular polarization (quarter-wave plates) in laser systems. They are essential components in optical isolators, laser amplifiers, and polarization-dependent frequency conversion setups."
-      },
-      {
-        "title": "Optical Isolation",
-        "description": "A quarter-wave plate combined with a polarizing beamsplitter or polarizer forms an optical isolator that prevents back-reflected light from returning to the laser source. This protects the laser from damage and prevents frequency instability caused by feedback."
-      },
-      {
-        "title": "Imaging & Microscopy",
-        "description": "Polarized light microscopy uses waveplates for contrast enhancement of birefringent samples such as biological tissues, crystals, and polymers. A quarter-wave plate between crossed polarizers converts phase differences into intensity variations, revealing sample structure."
-      },
-      {
-        "title": "Fiber Optic Communication",
-        "description": "Waveplates manage polarization states in fiber optic transmitters, receivers, and test equipment. Polarization mode dispersion (PMD) compensation and polarization diversity receivers use waveplates to mitigate polarization-related signal degradation in high-speed fiber links."
-      },
-      {
-        "title": "Quantum Optics & Precision Measurement",
-        "description": "High-precision zero-order waveplates with accurate retardation are used in quantum optics experiments, atom trapping, and precision metrology. Ultra-stable waveplate designs minimize temperature and wavelength dependence for demanding scientific applications."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光系统中的偏振控制",
-        "description": "波片在激光系统中旋转偏振方向（半波片）或在线偏振和圆偏振之间转换（四分之一波片）。它们是光隔离器、激光放大器和偏振相关变频装置中的基本组件。"
-      },
-      {
-        "title": "光学隔离",
-        "description": "四分之一波片与偏振分束器或偏振器结合形成光隔离器，防止背向反射光返回到激光源。这保护激光器免受损坏，并防止由反馈引起的频率不稳定。"
-      },
-      {
-        "title": "成像与显微镜",
-        "description": "偏光显微镜使用波片增强双折射样品（如生物组织、晶体和聚合物）的对比度。交叉偏振器之间的四分之一波片将相位差转换成强度变化，揭示样品结构。"
-      },
-      {
-        "title": "光纤通信",
-        "description": "波片管理光纤发射机、接收机和测试设备中的偏振状态。偏振模色散（PMD）补偿和偏振分集接收机使用波片来减轻高速光纤链路中与偏振相关的信号降级。"
-      },
-      {
-        "title": "量子光学与精密测量",
-        "description": "具有精确延迟的高精度零级波片用于量子光学实验、原子俘获和精密计量。超稳定波片设计最大限度地减少了温度和波长依赖性，适用于高要求的科学应用。"
-      }
-    ],
-    "materials": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "materialsZh": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "coatings": [
-      "Single-layer MgF₂ AR Coating",
-      "Broadband AR Coating (VIS / NIR)",
-      "High-Power AR Coating",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "单层MgF₂增透膜",
-      "宽带增透膜（可见光/近红外）",
-      "高功率增透膜",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Zero-order waveplates provide precise phase retardation that is nearly independent of wavelength and temperature variations. Cemented zero-order waveplates consist of two multi-order waveplates cemented together with their axes crossed, producing a net retardation equal to the difference between the two plates.\n\nWhen selecting a zero-order waveplate, first specify the retardation value: quarter-wave (λ/4) for converting between linear and circular polarization, or half-wave (λ/2) for rotating polarization direction. Some applications require other retardation values such as λ/8 for specific phase modulation tasks.\n\nWavelength range: zero-order waveplates have a much broader useful bandwidth than multi-order waveplates. A typical zero-order waveplate maintains retardation accuracy within λ/100 over ±2% of the design wavelength, compared to ±0.2% for multi-order. Cemented zero-order plates are available for UV through IR wavelengths, though cement compatibility may limit UV applications below 350nm.\n\nTemperature sensitivity: zero-order waveplates have about 10-50× lower temperature dependence than multi-order waveplates, typically 0.001λ/°C compared to 0.05λ/°C for multi-order. This makes them far more stable for environments with temperature fluctuations.\n\nWavefront distortion: cemented zero-order plates generally produce better wavefront quality than air-spaced alternatives, though the cement layer can introduce absorption at certain wavelengths. For high-power lasers, verify the cement material and consider optical contact or air-spaced designs if needed.",
-    "selectionGuideZh": "零级波片提供精确的相位延迟，几乎不受波长和温度变化的影响。胶合零级波片由两个多波片组成，其光轴交叉胶合在一起，产生的净延迟等于两个波片之间的差值。\n\n选择零级波片时，首先指定延迟值：四分之一波（λ/4）用于在线偏振和圆偏振之间转换，或二分之一波（λ/2）用于旋转偏振方向。某些应用需要其他延迟值，如λ/8用于特定的相位调制任务。\n\n波长范围：零级波片的有效带宽比多级波片宽得多。典型的零级波片在设计波长的±2%范围内将延迟精度保持在λ/100以内，而多级波片为±0.2%。胶合零级波片可用于紫外到红外波长，尽管胶合兼容性可能限制350nm以下的紫外应用。\n\n温度敏感性：零级波片的温度依赖性比多级波片低约10-50倍，通常为0.001λ/°C，而多级波片为0.05λ/°C。这使它们在温度波动的环境中更加稳定。\n\n波前畸变：胶合零级波片通常比空气间隔替代方案产生更好的波前质量，尽管胶合层可能在某些波长处引入吸收。对于高功率激光器，请验证胶合材料，如果需要，考虑光接触或空气间隔设计。",
-    "faq": [
-      {
-        "question": "Zero-order vs multi-order waveplates — what is the difference?",
-        "answer": "Multi-order waveplates are single quartz plates where the retardation is N×λ + λ/4 (for quarter-wave) where N is a large integer. They are economical but very sensitive to temperature and wavelength changes — a 10°C shift can change the retardation significantly. Zero-order waveplates use two multi-order plates with their axes crossed, so the net retardation is exactly the difference between the two plates (typically λ/4 or λ/2). This results in 10-50× better temperature and wavelength stability. True zero-order waveplates are very thin single plates but are fragile. Air-spaced zero-order designs offer the best stability for high-power applications."
-      },
-      {
-        "question": "What temperature range can cemented zero-order waveplates operate in?",
-        "answer": "Cemented zero-order waveplates can typically operate from -40°C to +85°C, with some variation depending on the specific cement and substrate materials. The retardation temperature coefficient for zero-order quartz waveplates is approximately 0.001λ/°C at 633nm, which is about 20-50× better than multi-order waveplates. This means a 50°C temperature change produces only 0.05λ retardation shift for zero-order vs 1-2.5λ for multi-order. For extreme temperatures (below -60°C or above 100°C), the cement layer may fail — in these cases, use optically contacted or air-spaced zero-order waveplates instead. Always verify temperature compatibility for your specific application requirements."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "零级与多级波片——有什么区别？",
-        "answer": "多级波片是单石英波片，其延迟量为N×λ + λ/4（对于四分之一波），其中N是一个大整数。它们经济实惠，但对温度和波长变化非常敏感——10°C的变化就会显著改变延迟量。零级波片使用两个光轴交叉的多级波片，因此净延迟量恰好是两个波片之间的差值（通常为λ/4或λ/2）。这导致温度和波长稳定性提高10-50倍。真零级波片是非常薄的单板，但很脆弱。空气间隔零级设计为高功率应用提供最佳稳定性。"
-      },
-      {
-        "question": "胶合零级波片可以在什么温度范围内工作？",
-        "answer": "胶合零级波片通常可以在-40°C至+85°C的温度范围内工作，具体取决于特定的胶和基板材料。零级石英波片的延迟温度系数在633nm时约为0.001λ/°C，比多级波片好约20-50倍。这意味着50°C的温度变化对零级波片仅产生0.05λ的延迟偏移，而对多级波片则为1-2.5λ。对于极端温度（-60°C以下或100°C以上），胶合层可能失效——在这些情况下，请使用光接触或空气间隔零级波片。请始终根据您的具体应用要求验证温度兼容性。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "multiple-order-waveplates",
-        "name": "Multiple Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "dual-wavelength-waveplates",
-        "name": "Dual Wavelength Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "air-spaced-zero-order-waveplates",
-        "name": "Air Spaced Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ]
-  },
-  "air-spaced-zero-order-waveplates": {
-    "applications": [
-      "Polarization Control & Analysis",
-      "Laser Systems & Isolators",
-      "Electro-Optic Modulation",
-      "Interferometry & Metrology",
-      "Fiber Optic Communication",
-      "Biomedical Polarized Imaging",
-      "Liquid Crystal Display",
-      "Spectroscopy Equipment",
-      "Quantum Optics Experiments",
-      "Semiconductor Inspection"
-    ],
-    "applicationsZh": [
-      "偏振控制与分析",
-      "激光系统与隔离器",
-      "电光调制",
-      "干涉测量与计量",
-      "光纤通信",
-      "生物医学偏振成像",
-      "液晶显示",
-      "光谱设备",
-      "量子光学实验",
-      "半导体检测"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization Control in Laser Systems",
-        "description": "Waveplates rotate polarization direction (half-wave plates) or convert between linear and circular polarization (quarter-wave plates) in laser systems. They are essential components in optical isolators, laser amplifiers, and polarization-dependent frequency conversion setups."
-      },
-      {
-        "title": "Optical Isolation",
-        "description": "A quarter-wave plate combined with a polarizing beamsplitter or polarizer forms an optical isolator that prevents back-reflected light from returning to the laser source. This protects the laser from damage and prevents frequency instability caused by feedback."
-      },
-      {
-        "title": "Imaging & Microscopy",
-        "description": "Polarized light microscopy uses waveplates for contrast enhancement of birefringent samples such as biological tissues, crystals, and polymers. A quarter-wave plate between crossed polarizers converts phase differences into intensity variations, revealing sample structure."
-      },
-      {
-        "title": "Fiber Optic Communication",
-        "description": "Waveplates manage polarization states in fiber optic transmitters, receivers, and test equipment. Polarization mode dispersion (PMD) compensation and polarization diversity receivers use waveplates to mitigate polarization-related signal degradation in high-speed fiber links."
-      },
-      {
-        "title": "Quantum Optics & Precision Measurement",
-        "description": "High-precision zero-order waveplates with accurate retardation are used in quantum optics experiments, atom trapping, and precision metrology. Ultra-stable waveplate designs minimize temperature and wavelength dependence for demanding scientific applications."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光系统中的偏振控制",
-        "description": "波片在激光系统中旋转偏振方向（半波片）或在线偏振和圆偏振之间转换（四分之一波片）。它们是光隔离器、激光放大器和偏振相关变频装置中的基本组件。"
-      },
-      {
-        "title": "光学隔离",
-        "description": "四分之一波片与偏振分束器或偏振器结合形成光隔离器，防止背向反射光返回到激光源。这保护激光器免受损坏，并防止由反馈引起的频率不稳定。"
-      },
-      {
-        "title": "成像与显微镜",
-        "description": "偏光显微镜使用波片增强双折射样品（如生物组织、晶体和聚合物）的对比度。交叉偏振器之间的四分之一波片将相位差转换成强度变化，揭示样品结构。"
-      },
-      {
-        "title": "光纤通信",
-        "description": "波片管理光纤发射机、接收机和测试设备中的偏振状态。偏振模色散（PMD）补偿和偏振分集接收机使用波片来减轻高速光纤链路中与偏振相关的信号降级。"
-      },
-      {
-        "title": "量子光学与精密测量",
-        "description": "具有精确延迟的高精度零级波片用于量子光学实验、原子俘获和精密计量。超稳定波片设计最大限度地减少了温度和波长依赖性，适用于高要求的科学应用。"
-      }
-    ],
-    "materials": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "materialsZh": [
-      "Single Crystal Quartz",
-      "MgF₂ (for UV applications)"
-    ],
-    "coatings": [
-      "Single-layer MgF₂ AR Coating",
-      "Broadband AR Coating (VIS / NIR)",
-      "High-Power AR Coating",
-      "Custom AR Coatings for Specific Wavelengths"
-    ],
-    "coatingsZh": [
-      "单层MgF₂增透膜",
-      "宽带增透膜（可见光/近红外）",
-      "高功率增透膜",
-      "定制特定波长增透膜"
-    ],
-    "selectionGuide": "Waveplates (retarders) introduce a controlled phase shift between two orthogonal polarization components of light. They are essential components in polarization control systems, laser optics, and optical instrumentation.\n\nWaveplate type: multi-order waveplates are simple, single-plate devices that are economical but have high temperature and wavelength sensitivity. Zero-order waveplates (two plates with crossed axes) provide much better stability against temperature and wavelength changes. True zero-order (very thin single plates) offer the best performance but are fragile and expensive. Air-spaced zero-order designs avoid cement absorption for high-power applications.\n\nRetardation: quarter-wave (λ/4) plates convert between linear and circular polarization. Half-wave (λ/2) plates rotate the direction of linear polarization. Other retardation values (λ/8, 3λ/4, etc.) are available for specialized applications.\n\nMaterial: quartz is the most common waveplate material, offering good transmission from UV to NIR. MgF₂ extends into the deep UV. For IR applications, consider CdTe or other birefringent materials. The material must have good birefringence uniformity across the aperture.\n\nKey specifications: retardation accuracy (typically λ/50 to λ/300), wavefront distortion, damage threshold, and temperature coefficient. Zero-order waveplates have about 10-50× lower temperature sensitivity than multi-order plates. For high-power lasers, specify the LIDT and consider air-spaced designs if cement absorption is a concern.",
-    "selectionGuideZh": "波片（延迟片）在光的两个正交偏振分量之间引入受控的相移。它们是偏振控制系统、激光光学和光学仪器中的基本组件。\n\n波片类型：多级波片是简单的单板器件，经济实惠但温度和波长敏感性高。零级波片（两个光轴交叉的波片）提供更好的温度和波长变化稳定性。真零级（非常薄的单板）提供最佳性能，但易碎且昂贵。空气间隔零级设计避免了高功率应用中的胶合吸收。\n\n延迟量：四分之一波（λ/4）片在线偏振和圆偏振之间转换。二分之一波（λ/2）片旋转线偏振的方向。其他延迟值（λ/8、3λ/4等）可用于特殊应用。\n\n材料：石英是最常见的波片材料，提供从紫外到近红外的良好透射率。MgF₂延伸到深紫外。对于红外应用，请考虑CdTe或其他双折射材料。材料在整个孔径内必须具有良好的双折射均匀性。\n\n关键规格：延迟精度（通常为λ/50至λ/300）、波前畸变、损伤阈值和温度系数。零级波片的温度敏感性比多级波片低约10-50倍。对于高功率激光器，请指定LIDT，如果胶合吸收是一个问题，请考虑空气间隔设计。",
-    "faq": [
-      {
-        "question": "Zero-order vs multi-order waveplates — what is the difference?",
-        "answer": "Multi-order waveplates are single quartz plates where the retardation is N×λ + λ/4 (for quarter-wave) where N is a large integer. They are economical but very sensitive to temperature and wavelength changes — a 10°C shift can change the retardation significantly. Zero-order waveplates use two multi-order plates with their axes crossed, so the net retardation is exactly the difference between the two plates (typically λ/4 or λ/2). This results in 10-50× better temperature and wavelength stability. True zero-order waveplates are very thin single plates but are fragile. Air-spaced zero-order designs offer the best stability for high-power applications."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "零级与多级波片——有什么区别？",
-        "answer": "多级波片是单石英波片，其延迟量为N×λ + λ/4（对于四分之一波），其中N是一个大整数。它们经济实惠，但对温度和波长变化非常敏感——10°C的变化就会显著改变延迟量。零级波片使用两个光轴交叉的多级波片，因此净延迟量恰好是两个波片之间的差值（通常为λ/4或λ/2）。这导致温度和波长稳定性提高10-50倍。真零级波片是非常薄的单板，但很脆弱。空气间隔零级设计为高功率应用提供最佳稳定性。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "multiple-order-waveplates",
-        "name": "Multiple Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "dual-wavelength-waveplates",
-        "name": "Dual Wavelength Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Waveplate Selection Guide: Types and Applications",
-        "titleZh": "波片选型指南：类型与应用",
-        "slug": "blog/waveplate-selection-guide"
-      },
-      {
-        "title": "Zero-Order vs Multi-Order Waveplates Explained",
-        "titleZh": "零级与多级波片详解",
-        "slug": "blog/zero-order-vs-multi-order-waveplates"
-      },
-      {
-        "title": "Polarization Control in Optical Systems",
-        "titleZh": "光学系统中的偏振控制",
-        "slug": "blog/polarization-control-guide"
-      }
-    ]
-  },
-  "visible-linear-polarizers": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Linear polarizers transmit light of one polarization direction while blocking the orthogonal direction. When selecting a visible linear polarizer, the key performance metrics are: extinction ratio, transmission efficiency, spectral range, and damage threshold.\n\nExtinction ratio measures how well the polarizer rejects unwanted polarization. Standard sheet polarizers achieve 100:1 to 1000:1 extinction ratio, while high-quality crystal polarizers (Glan-Taylor, Glan-Laser) can achieve 100,000:1 or better. For most imaging and display applications, 1000:1 is adequate. For high-contrast polarization measurement or laser isolation, specify 10,000:1 or higher.\n\nTransmission: polarizers are characterized by their single-pass transmission for parallel polarization. Good polarizers transmit 80-95% of the desired polarization. Note that even an ideal polarizer transmits only 50% of unpolarized light.\n\nSpectral range: polarizing film polarizers cover the visible range (400-700nm) and extend into the NIR. For broadband applications extending well into the IR, consider wire-grid polarizers or crystal polarizers.\n\nDamage threshold is critical for laser applications. Film polarizers typically have low damage thresholds (<<1 W/cm² CW), making them unsuitable for high-power lasers. For laser applications, use Glan-type crystal polarizers or thin-film polarizing beamsplitters with much higher LIDT values. Also consider the acceptance angle — film polarizers have large acceptance angles while crystal polarizers may have more limited angular ranges.",
-    "selectionGuideZh": "线性偏振器透射一个偏振方向的光，同时阻挡正交方向的光。选择可见光线性偏振器时，关键性能指标是：消光比、透射效率、光谱范围和损伤阈值。\n\n消光比衡量偏振器抑制不需要偏振的程度。标准薄膜偏振器的消光比为100:1到1000:1，而高质量晶体偏振器（格兰-泰勒、格兰-激光）可达到100,000:1或更高。对于大多数成像和显示应用，1000:1已足够。对于高对比度偏振测量或激光隔离，请指定10,000:1或更高。\n\n透射率：偏振器以平行偏振的单次透射率为特征。好的偏振器透射80-95%的期望偏振光。请注意，即使是理想的偏振器也只能透射50%的非偏振光。\n\n光谱范围：偏振膜偏振器覆盖可见光范围（400-700nm）并延伸到近红外。对于延伸到红外的宽带应用，请考虑线栅偏振器或晶体偏振器。\n\n对于激光应用，损伤阈值至关重要。薄膜偏振器通常损伤阈值很低（<<1 W/cm²连续波），因此不适用于高功率激光器。对于激光应用，请使用Glan型晶体偏振器或具有更高LIDT值的薄膜偏振分束器。还要考虑接收角——薄膜偏振器有较大的接收角，而晶体偏振器的角度范围可能更有限。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      },
-      {
-        "question": "Can film polarizers be used with high-power lasers?",
-        "answer": "No, film polarizers (polarizing sheet) are generally not suitable for high-power lasers. Their damage thresholds are very low — typically less than 1 W/cm² for CW and even lower for pulsed lasers. At higher power levels, the dye molecules in the polarizing film degrade or the material can melt or catch fire. For laser applications, use crystal polarizers (Glan-Taylor, Glan-Laser) or thin-film polarizing beamsplitters instead. Glan-Laser prisms can handle power densities up to several hundred W/cm² CW and several J/cm² for nanosecond pulses. Always confirm the LIDT specification for your specific wavelength and pulse duration."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      },
-      {
-        "question": "薄膜偏振器可以与高功率激光器一起使用吗？",
-        "answer": "不可以，薄膜偏振器（偏振片）通常不适用于高功率激光器。它们的损伤阈值非常低——连续波通常低于1 W/cm²，脉冲激光器甚至更低。在更高的功率水平下，偏振膜中的染料分子会降解，或者材料会熔化或着火。对于激光应用，请使用晶体偏振器（格兰-泰勒、格兰-激光）或薄膜偏振分束器代替。格兰-激光棱镜可以处理高达数百W/cm²连续波的功率密度和纳秒脉冲下的几J/cm²。请始终确认针对您特定波长和脉冲持续时间的LIDT规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "glan-taylor-prisms",
-        "name": "Glan Taylor Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "visible-circular-polarizers": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Silicon (Si)"
-    ],
-    "materialsZh": [
-      "Silicon (Si)"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "glan-taylor-prisms",
-        "name": "Glan Taylor Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "ir-polarizers": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Polarizing Film (PVA / TAC)",
-      "Glass Substrate"
-    ],
-    "materialsZh": [
-      "Polarizing Film (PVA / TAC)",
-      "Glass Substrate"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "glan-taylor-prisms",
-        "name": "Glan Taylor Prisms",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "glan-taylor-prisms": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Calcite (Iceland Spar)"
-    ],
-    "materialsZh": [
-      "Calcite (Iceland Spar)"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "glan-laser-prisms": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Calcite (Iceland Spar)"
-    ],
-    "materialsZh": [
-      "Calcite (Iceland Spar)"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "glan-thompson-prisms": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Calcite (Iceland Spar)"
-    ],
-    "materialsZh": [
-      "Calcite (Iceland Spar)"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "wollaston-prisms": {
-    "applications": [
-      "Polarization State Control",
-      "Laser Systems & Amplifiers",
-      "Imaging & Display Technologies",
-      "Spectroscopy & Ellipsometry",
-      "Fiber Optic Telecom",
-      "Biomedical Polarized Microscopy",
-      "Optical Communication Systems",
-      "High-Power Laser Isolation",
-      "Quantum Optics Research",
-      "Industrial Inspection Systems"
-    ],
-    "applicationsZh": [
-      "偏振态控制",
-      "激光系统与放大器",
-      "成像与显示技术",
-      "光谱与椭偏测量",
-      "光纤通信",
-      "生物医学偏振显微镜",
-      "光通信系统",
-      "高功率激光隔离",
-      "量子光学研究",
-      "工业检测系统"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Polarization State Control",
-        "description": "Polarizers create and analyze polarized light in optical systems. From simple glare reduction to complex polarization state generation, they enable a wide range of applications including display technology, optical metrology, and quantum information processing."
-      },
-      {
-        "title": "Laser Isolation & Amplifiers",
-        "description": "Polarizers combined with waveplates and Faraday rotators form optical isolators that prevent back reflections from destabilizing lasers. In laser amplifiers, polarizers clean up the polarization state and provide isolation between amplifier stages."
-      },
-      {
-        "title": "Imaging & Display Technology",
-        "description": "Polarizers are essential components in LCD displays, 3D movie projection, polarized sunglasses, and camera polarizing filters. In displays, they control light transmission through liquid crystal cells. In photography, they reduce glare and enhance color saturation."
-      },
-      {
-        "title": "Ellipsometry & Thin Film Measurement",
-        "description": "Ellipsometers use polarizers and analyzers to measure changes in polarization state upon reflection from a sample surface. This enables highly accurate measurement of thin film thickness, refractive index, and other material properties at the nanometer scale."
-      },
-      {
-        "title": "Biomedical Polarized Imaging",
-        "description": "Polarization-sensitive imaging techniques use polarizers to reveal tissue structures and properties invisible to conventional imaging. Polarized light can detect birefringence in collagen fibers, muscle tissue, and abnormal cell structures for early disease diagnosis."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "偏振态控制",
-        "description": "偏振器在光学系统中产生和分析偏振光。从简单的防眩光到复杂的偏振态生成，它们支持广泛的应用，包括显示技术、光学计量和量子信息处理。"
-      },
-      {
-        "title": "激光隔离与放大器",
-        "description": "偏振器与波片和法拉第旋转器结合形成光隔离器，防止背向反射使激光器不稳定。在激光放大器中，偏振器净化偏振状态并在放大器级之间提供隔离。"
-      },
-      {
-        "title": "成像与显示技术",
-        "description": "偏振器是LCD显示器、3D电影投影、偏光太阳镜和相机偏振滤光片中的基本组件。在显示器中，它们控制通过液晶单元的光透射。在摄影中，它们减少眩光并增强色彩饱和度。"
-      },
-      {
-        "title": "椭偏测量与薄膜测量",
-        "description": "椭偏仪使用偏振器和检偏器来测量从样品表面反射时偏振态的变化。这使得能够在纳米尺度上高精度测量薄膜厚度、折射率和其他材料特性。"
-      },
-      {
-        "title": "生物医学偏振成像",
-        "description": "偏振敏感成像技术使用偏振器来揭示传统成像不可见的组织结构和特性。偏振光可以检测胶原纤维、肌肉组织和异常细胞结构中的双折射，用于早期疾病诊断。"
-      }
-    ],
-    "materials": [
-      "Polarizing Film (PVA / TAC)",
-      "Glass Substrate"
-    ],
-    "materialsZh": [
-      "Polarizing Film (PVA / TAC)",
-      "Glass Substrate"
-    ],
-    "coatings": [
-      "No Coating (crystal polarizers, TIR)",
-      "AR Coating on Entrance/Exit Faces",
-      "Broadband AR Coatings: VIS, NIR bands",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "无镀膜（晶体偏振器，全内反射）",
-      "入射/出射面增透膜",
-      "宽带增透膜：可见光、近红外波段",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Polarizers control the polarization state of light by transmitting one polarization direction while blocking or absorbing the orthogonal direction. They are fundamental in optical isolation, imaging, display, and measurement systems.\n\nPolarizer type determines performance and application suitability. Film polarizers (sheet polarizers) are economical with large acceptance angles but have low damage thresholds and moderate extinction ratios (100:1 to 1000:1). Crystal polarizers (Glan-Taylor, Glan-Laser, Glan-Thompson) achieve very high extinction ratios (10⁵:1 to 10⁶:1) and can handle higher power levels but are more expensive.\n\nWire-grid polarizers use a micro-patterned metallic grid and work over broad wavelength ranges from visible to IR. They can handle moderate power and offer good extinction ratios. Polarizing beamsplitter cubes separate polarizations into two output beams at 90°, convenient for simultaneous measurement.\n\nKey specifications: extinction ratio (ratio of maximum to minimum transmission — higher is better), transmission efficiency for the desired polarization, spectral range, acceptance angle, and damage threshold. The choice depends on the trade-off between these parameters and cost.\n\nFor laser applications, especially high-power systems, crystal polarizers or thin-film polarizers are recommended over film polarizers. For imaging systems, large aperture and high transmission are typically prioritized. Always verify the polarizer is specified for your operating wavelength range.",
-    "selectionGuideZh": "偏振器通过透射一个偏振方向同时阻挡或吸收正交方向来控制光的偏振状态。它们是光学隔离、成像、显示和测量系统的基础。\n\n偏振器类型决定了性能和应用适用性。薄膜偏振器（片偏振器）经济实惠，接收角大，但损伤阈值低，消光比适中（100:1到1000:1）。晶体偏振器（格兰-泰勒、格兰-激光、格兰-汤普森）实现非常高的消光比（10⁵:1到10⁶:1），可以处理更高的功率水平，但更昂贵。\n\n线栅偏振器使用微图案金属栅格，在从可见光到红外的宽波长范围内工作。它们可以处理中等功率并提供良好的消光比。偏振分束立方体将偏振分离成两束90°的输出光束，便于同时测量。\n\n关键规格：消光比（最大透射与最小透射的比率——越高越好）、所需偏振的透射效率、光谱范围、接收角和损伤阈值。选择取决于这些参数和成本之间的权衡。\n\n对于激光应用，特别是高功率系统，推荐使用晶体偏振器或薄膜偏振器而非薄膜偏振器。对于成像系统，通常优先考虑大孔径和高透射率。请始终验证偏振器是否针对您的工作波长范围进行了规定。",
-    "faq": [
-      {
-        "question": "What is extinction ratio and why is it important?",
-        "answer": "Extinction ratio measures a polarizer's ability to reject unwanted polarization. It is the ratio of maximum transmission (polarizer axes aligned) to minimum transmission (polarizer axes crossed). A 1000:1 extinction ratio means the rejected polarization is attenuated by a factor of 1000. Higher extinction ratio is critical for applications requiring high contrast, such as ellipsometry, optical isolation, and polarization microscopy. For low-contrast applications like glare reduction, a lower ratio (100:1) may be sufficient. Note that real systems typically achieve lower extinction ratios than component specifications due to beam divergence and alignment errors."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是消光比？为什么它很重要？",
-        "answer": "消光比衡量偏振器抑制不需要偏振的能力。它是最大透射率（偏振器轴对齐）与最小透射率（偏振器轴交叉）的比率。1000:1的消光比意味着被拒绝的偏振被衰减了1000倍。更高的消光比对于需要高对比度的应用至关重要，例如椭偏测量、光学隔离和偏振显微镜。对于低对比度应用（如防眩光），较低的比率（100:1）可能就足够了。请注意，由于光束发散和对准误差，实际系统通常实现的消光比低于组件规格。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "visible-linear-polarizers",
-        "name": "Visible Linear Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "visible-circular-polarizers",
-        "name": "Visible Circular Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "ir-polarizers",
-        "name": "IR Polarizers",
-        "nameZh": ""
-      },
-      {
-        "slug": "cemented-zero-order-waveplates",
-        "name": "Cemented Zero Order Waveplates",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Polarizer Types and Selection Guide",
-        "titleZh": "偏振器类型与选型指南",
-        "slug": "blog/polarizer-selection-guide"
-      },
-      {
-        "title": "Glan Prism Polarizers: Types and Comparison",
-        "titleZh": "格兰棱镜偏振器：类型与比较",
-        "slug": "blog/glan-prism-comparison"
-      },
-      {
-        "title": "Understanding Extinction Ratio in Polarizers",
-        "titleZh": "了解偏振器中的消光比",
-        "slug": "blog/extinction-ratio-explained"
-      }
-    ]
-  },
-  "laser-safety-goggles": {
-    "applications": [
-      "Laser Safety in Industrial Settings",
-      "Medical Laser Procedure Protection",
-      "Research Laboratory Safety",
-      "Laser Manufacturing Operations",
-      "Military & Defense Laser Systems",
-      "Cosmetic Laser Treatment Safety",
-      "Optical Metrology Labs",
-      "Laser Engraving & Cutting",
-      "Dental Laser Applications",
-      "Educational Laser Labs"
-    ],
-    "applicationsZh": [
-      "工业环境激光安全",
-      "医疗激光手术防护",
-      "研究实验室安全",
-      "激光制造作业",
-      "军事与国防激光系统",
-      "美容激光治疗安全",
-      "光学计量实验室",
-      "激光雕刻与切割",
-      "牙科激光应用",
-      "教学激光实验室"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Industrial Laser Safety",
-        "description": "Workers operating laser cutting, welding, marking, and engraving systems require proper eye protection. Different laser types (CO₂, fiber, Nd:YAG, diode) emit at different wavelengths, each requiring specific filter technology for effective protection."
-      },
-      {
-        "title": "Medical Laser Procedures",
-        "description": "Surgeons, dentists, and aestheticians working with surgical lasers, dental lasers, and cosmetic lasers need protective eyewear matched to the specific laser wavelength and power level used in their procedures."
-      },
-      {
-        "title": "Research & Laboratory Safety",
-        "description": "Research laboratories with multiple laser systems require a range of safety goggles matched to each laser. Proper eyewear prevents accidental exposure during alignment, maintenance, and experimental procedures involving Class 3B and Class 4 lasers."
-      },
-      {
-        "title": "Military & Defense Applications",
-        "description": "Military personnel need protection against laser rangefinders, target designators, and directed energy weapons. Ballistic-resistant frames with multi-wavelength laser protection provide both impact and laser hazard protection in the field."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "工业激光安全",
-        "description": "操作激光切割、焊接、打标和雕刻系统的工人需要适当的眼睛保护。不同类型的激光器（CO₂、光纤、Nd:YAG、二极管）发射不同的波长，每种都需要特定的滤光技术才能有效保护。"
-      },
-      {
-        "title": "医疗激光手术",
-        "description": "使用手术激光、牙科激光和美容激光的外科医生、牙医和美容师需要与其手术中使用的特定激光波长和功率水平相匹配的防护眼镜。"
-      },
-      {
-        "title": "研究与实验室安全",
-        "description": "拥有多个激光系统的研究实验室需要一系列与每台激光器匹配的安全护目镜。适当的护目镜可防止在对准、维护和涉及3B类和4类激光器的实验过程中意外暴露。"
-      },
-      {
-        "title": "军事与国防应用",
-        "description": "军事人员需要防护激光测距仪、目标指示器和定向能武器。具有多波长激光防护的抗冲击镜框在野外提供冲击和激光危险双重防护。"
-      }
-    ],
-    "materials": [
-      "Polycarbonate Lens",
-      "Multi-layer Absorptive Filter"
-    ],
-    "materialsZh": [
-      "Polycarbonate Lens",
-      "Multi-layer Absorptive Filter"
-    ],
-    "coatings": [
-      "Multi-layer Absorptive + Interference Filters",
-      "OD 4+ / OD 6+ / OD 7+ Protection Levels",
-      "Wavelength-specific Laser Line Protection",
-      "Broadband Multi-line Protection"
-    ],
-    "coatingsZh": [
-      "多层吸收+干涉滤光片",
-      "OD 4+ / OD 6+ / OD 7+ 防护等级",
-      "波长特定激光线防护",
-      "宽带多线防护"
-    ],
-    "selectionGuide": "Laser safety goggles protect eyes from hazardous laser radiation. Selecting the proper laser safety eyewear requires knowing your laser parameters: wavelength(s), maximum output power or energy, pulse duration, and beam delivery method.\n\nOptical density (OD) is the primary protection specification. OD is a logarithmic measure of attenuation: OD 7 means 0.0000001% (10⁻⁷) transmission. The required OD depends on the laser power and the exposure scenario. Always ensure the OD rating is sufficient for your laser's maximum output at all wavelengths present.\n\nWavelength coverage: goggles are designed for specific laser wavelengths or wavelength bands. Common bands include 190-380nm (UV), 400-700nm (visible), 800-1100nm (NIR/diode lasers), 10600nm (CO₂). Ensure the goggles cover all laser wavelengths in your workspace.\n\nVisible light transmission (VLT): higher OD usually means darker lenses and lower VLT. Balance protection needs with visibility for safe operation. Goggles with VLT >20% are preferred for tasks requiring good color vision; <10% VLT may make detailed work difficult.\n\nFrame style: wrap-around frames provide better side protection. Prescription-compatible frames are available for users who wear corrective lenses. Fit is critical — goggles must seal well around the eyes to prevent scattered laser light from entering from the sides. Always verify that goggles meet relevant safety standards (EN 207, ANSI Z136).",
-    "selectionGuideZh": "激光安全护目镜保护眼睛免受有害激光辐射。选择合适的激光安全护目镜需要了解您的激光参数：波长、最大输出功率或能量、脉冲宽度和光束传输方式。\n\n光密度（OD）是主要的保护规格。OD是衰减的对数度量：OD 7表示0.0000001%（10⁻⁷）的透射率。所需的OD取决于激光功率和曝光场景。请始终确保OD额定值足以应对您的激光器在所有存在波长下的最大输出。\n\n波长覆盖：护目镜是为特定激光波长或波长带设计的。常见波段包括190-380nm（紫外）、400-700nm（可见光）、800-1100nm（近红外/二极管激光器）、10600nm（CO₂）。确保护目镜覆盖您工作空间中的所有激光波长。\n\n可见光透射率（VLT）：更高的OD通常意味着更深的镜片和更低的VLT。平衡保护需求与可见性以确保安全操作。VLT >20%的护目镜优先用于需要良好色觉的任务；VLT <10%可能使精细工作变得困难。\n\n镜框样式：环绕式镜框提供更好的侧面保护。佩戴矫正镜片的用户可以使用兼容处方的镜框。贴合度至关重要——护目镜必须在眼睛周围密封良好，以防止散射的激光从侧面进入。请始终验证护目镜是否符合相关安全标准（EN 207、ANSI Z136）。",
-    "faq": [
-      {
-        "question": "How do I determine the required optical density for laser goggles?",
-        "answer": "The required OD depends on the laser power, beam size, pulse duration, and exposure scenario. Start with the maximum accessible exposure (MAE) — the highest power or energy that could reasonably reach the eye. Then calculate the OD needed to reduce this to below the maximum permissible exposure (MPE) level defined by safety standards (ANSI Z136, IEC 60825). As a simplified formula: OD = log₁₀(Incident Power / MPE). Always add a safety factor of at least 2-3× above the calculated minimum. When multiple wavelengths are present, ensure the OD is sufficient at each wavelength. Consult with a laser safety officer or our technical team for proper eyewear selection."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何确定激光护目镜所需的光密度？",
-        "answer": "所需的OD取决于激光功率、光束尺寸、脉冲持续时间和曝光场景。从最大可接触曝光量（MAE）开始——即合理可能到达眼睛的最高功率或能量。然后计算将其降低到安全标准（ANSI Z136、IEC 60825）定义的最大允许曝光量（MPE）以下所需的OD。简化公式为：OD = log₁₀（入射功率/MPE）。请始终在计算出的最小值基础上增加至少2-3倍的安全系数。当存在多个波长时，请确保每个波长的OD都足够。请咨询激光安全官员或我们的技术团队以正确选择护目镜。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "ndyag-output-couplers",
-        "name": "Nd:YAG Output Couplers",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Safety Goggles Selection Guide",
-        "titleZh": "激光安全护目镜选型指南",
-        "slug": "blog/laser-safety-goggles-guide"
-      },
-      {
-        "title": "Understanding Laser Safety Standards",
-        "titleZh": "了解激光安全标准",
-        "slug": "blog/laser-safety-standards"
-      },
-      {
-        "title": "Optical Density and Laser Protection",
-        "titleZh": "光密度与激光防护",
-        "slug": "blog/optical-density-laser-protection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Safety Goggles Selection Guide",
-        "titleZh": "激光安全护目镜选型指南",
-        "slug": "blog/laser-safety-goggles-guide"
-      },
-      {
-        "title": "Understanding Laser Safety Standards",
-        "titleZh": "了解激光安全标准",
-        "slug": "blog/laser-safety-standards"
-      },
-      {
-        "title": "Optical Density and Laser Protection",
-        "titleZh": "光密度与激光防护",
-        "slug": "blog/optical-density-laser-protection"
-      }
-    ]
-  },
-  "ndyag-output-couplers": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "dichroic-mirrors": {
-    "applications": [
-      "Laser Cavity & Resonator Optics",
-      "Beam Steering & Folding Systems",
-      "Interferometry & Metrology",
-      "Imaging & Projection Systems",
-      "Spectroscopy & Analytical Instruments",
-      "High-Power Laser Beam Delivery",
-      "Medical Laser Systems",
-      "Semiconductor Lithography",
-      "Astronomical Telescopes",
-      "LiDAR & Autonomous Navigation"
-    ],
-    "applicationsZh": [
-      "激光腔与谐振腔光学",
-      "光束转向与折叠系统",
-      "干涉测量与计量",
-      "成像与投影系统",
-      "光谱与分析仪器",
-      "高功率激光光束传输",
-      "医疗激光系统",
-      "半导体光刻",
-      "天文望远镜",
-      "激光雷达与自主导航"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Laser Cavity Optics",
-        "description": "Forms the end mirrors of laser resonators, including high reflectors (HR) and output couplers (OC). The reflectivity of the output coupler determines laser efficiency and output power. High damage threshold coatings are essential for withstanding intracavity power densities."
-      },
-      {
-        "title": "Beam Steering & Folding",
-        "description": "Redirects laser beams in optical systems, saving space and enabling compact system design. First-surface mirrors with high reflectivity minimize power loss. For precision systems, mirror flatness directly affects beam quality and wavefront integrity."
-      },
-      {
-        "title": "Interferometry & Metrology",
-        "description": "Used as reference flats, folding mirrors, and beam steering mirrors in interferometric systems. Ultra-high flatness (λ/10 to λ/20) and exceptional surface quality are required for accurate wavefront measurement. Dielectric coatings provide maximum reflectivity with minimal scattering."
-      },
-      {
-        "title": "Imaging & Display Systems",
-        "description": "Used in projectors, cameras, telescopes, and periscopes for image formation and redirection. Broadband reflective coatings provide uniform reflectance across the visible spectrum for true color reproduction. Front-surface mirrors prevent double images from substrate back reflection."
-      },
-      {
-        "title": "High-Power Laser Systems",
-        "description": "Handles high-power CW and pulsed laser beams in materials processing, scientific research, and defense applications. Substrates with high thermal conductivity (like copper or silicon for CO₂ lasers) and low-thermal-expansion materials (fused silica) minimize thermal distortion. Damage threshold is the critical specification."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "激光腔光学",
-        "description": "构成激光谐振腔的端镜，包括高反镜（HR）和输出耦合器（OC）。输出耦合器的反射率决定了激光效率和输出功率。高损伤阈值镀膜对于承受腔内功率密度至关重要。"
-      },
-      {
-        "title": "光束转向与折叠",
-        "description": "在光学系统中重新定向激光束，节省空间并实现紧凑的系统设计。具有高反射率的前表面反射镜最小化功率损耗。对于精密系统，反射镜平面度直接影响光束质量和波前完整性。"
-      },
-      {
-        "title": "干涉测量与计量",
-        "description": "在干涉测量系统中用作参考平面、折叠镜和转向镜。高精度波前测量需要超高平面度（λ/10到λ/20）和出色的表面质量。电介质膜提供最大反射率和最小散射。"
-      },
-      {
-        "title": "成像与显示系统",
-        "description": "用于投影仪、相机、望远镜和潜望镜中，用于图像形成和重定向。宽带反射膜在可见光谱范围内提供均匀的反射率，实现真实的色彩再现。前表面反射镜防止基板背面反射产生重影。"
-      },
-      {
-        "title": "高功率激光系统",
-        "description": "在材料加工、科学研究和国防应用中处理高功率连续波和脉冲激光束。具有高导热性的基板（如CO₂激光器用铜或硅）和低热膨胀材料（熔融石英）最小化热畸变。损伤阈值是关键规格。"
-      }
-    ],
-    "materials": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "materialsZh": [
-      "BK7 Optical Glass (K9)",
-      "UV Fused Silica (for UV/HP)"
-    ],
-    "coatings": [
-      "Protected Aluminum (VIS-NIR, ~90% reflectivity)",
-      "Enhanced Aluminum (Visible, ~95% reflectivity)",
-      "Protected Silver (VIS-IR, >98% reflectivity)",
-      "Protected Gold (IR, >98.5% reflectivity from 2μm)",
-      "Dielectric HR Coating (laser line, >99.5%)",
-      "Broadband Dielectric HR Coating (>99%)",
-      "Custom Coatings Available"
-    ],
-    "coatingsZh": [
-      "保护铝膜（可见-近红外，~90%反射率）",
-      "增强铝膜（可见光，~95%反射率）",
-      "保护银膜（可见-红外，>98%反射率）",
-      "保护金膜（红外，2μm以上>98.5%反射率）",
-      "电介质高反膜（激光线，>99.5%）",
-      "宽带电介质高反膜（>99%）",
-      "可定制镀膜"
-    ],
-    "selectionGuide": "Choosing the right optical mirror depends on wavelength, power level, angle of incidence, and required reflectivity. Start by defining these key parameters for your application.\n\nCoating type is the primary determinant of mirror performance. Protected aluminum coatings are economical and provide ~90% reflectivity from UV through near-IR. Enhanced aluminum improves visible reflectivity to ~95%. Protected silver offers >98% reflectivity from visible through IR but tarnishes slowly over time. Protected gold provides >98.5% reflectivity from 2μm through far IR and is very durable. Dielectric coatings achieve >99.5% reflectivity at specific laser wavelengths or narrow bands but are angle-sensitive.\n\nLaser-induced damage threshold (LIDT) is critical for laser applications. Metal coatings generally have lower LIDT than dielectric coatings. For high-power pulsed lasers, always specify the LIDT in J/cm² at your pulse duration and wavelength. For CW lasers, use W/cm² ratings.\n\nSubstrate material affects thermal stability and surface figure. BK7 is standard for general use. UV fused silica provides better thermal properties for high-power and UV applications. For very high power CO₂ lasers, copper or molybdenum substrates offer superior thermal conductivity. Always check the design angle of incidence, as dielectric coating performance is angle-dependent.",
-    "selectionGuideZh": "选择合适的光学反射镜取决于波长、功率水平、入射角和所需的反射率。首先为您的应用定义这些关键参数。\n\n镀膜类型是反射镜性能的主要决定因素。保护铝膜经济实惠，从紫外到近红外提供约90%的反射率。增强铝膜将可见光反射率提高到约95%。保护银膜从可见光到红外提供>98%的反射率，但会随时间缓慢失去光泽。保护金膜从2μm到远红外提供>98.5%的反射率，非常耐用。电介质膜在特定激光波长或窄带上实现>99.5%的反射率，但对角度敏感。\n\n激光损伤阈值（LIDT）对于激光应用至关重要。金属膜通常具有比电介质膜更低的LIDT。对于高功率脉冲激光器，请始终指定在您的脉冲宽度和波长下的LIDT（单位J/cm²）。对于连续波激光器，使用W/cm²额定值。\n\n基板材料影响热稳定性和面形。BK7是一般使用的标准材料。紫外熔融石英为高功率和紫外应用提供更好的热性能。对于非常高功率的CO₂激光器，铜或钼基板提供卓越的导热性。请始终检查设计入射角，因为电介质镀膜性能与角度有关。",
-    "faq": [
-      {
-        "question": "What is LIDT and why does it matter?",
-        "answer": "LIDT stands for Laser-Induced Damage Threshold, the maximum laser power or energy density an optic can withstand before damage occurs. For CW lasers it is measured in W/cm²; for pulsed lasers in J/cm². LIDT depends on wavelength, pulse duration, beam size, number of pulses, and coating type. Exceeding LIDT causes coating damage, substrate melting, or catastrophic failure. Always derate LIDT by a safety factor of 2-3× for reliable long-term operation. LIDT values are typically specified for 1-on-1 testing; S-on-1 (multiple pulse) damage thresholds are often lower."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "什么是LIDT？为什么它很重要？",
-        "answer": "LIDT代表激光损伤阈值，是光学元件在损坏发生前能承受的最大激光功率或能量密度。对于连续波激光器，单位为W/cm²；对于脉冲激光器，单位为J/cm²。LIDT取决于波长、脉冲宽度、光束尺寸、脉冲数量和镀膜类型。超过LIDT会导致镀膜损伤、基板熔化或灾难性故障。为了可靠的长期运行，请始终使用2-3倍的安全系数来降低LIDT额定值。LIDT值通常针对1-on-1测试规定；S-on-1（多脉冲）损伤阈值通常较低。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "high-energy-laser-mirrors",
-        "name": "High Energy Laser Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "broadband-dielectric-mirrors",
-        "name": "Broadband Dielectric Circular/Square Mirrors",
-        "nameZh": ""
-      },
-      {
-        "slug": "cube-beamsplitters",
-        "name": "Cube Beamsplitters",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Laser Mirror Selection Guide for Optical Systems",
-        "titleZh": "光学系统激光反射镜选型指南",
-        "slug": "blog/laser-mirror-selection-guide"
-      },
-      {
-        "title": "Understanding Laser Damage Threshold (LIDT) in Optics",
-        "titleZh": "了解光学中的激光损伤阈值（LIDT）",
-        "slug": "blog/lidt-understanding-guide"
-      },
-      {
-        "title": "Dielectric vs Metal Mirror Coatings: A Comparison",
-        "titleZh": "电介质与金属反射镜镀膜：比较",
-        "slug": "blog/dielectric-vs-metal-mirrors"
-      }
-    ]
-  },
-  "rotating-waveplate-mount": {
-    "applications": [
-      "Optical System Alignment",
-      "Laser System Integration",
-      "Imaging System Assembly",
-      "Research Laboratory Setup",
-      "Industrial Optical Inspection",
-      "Spectroscopy Equipment Mounting",
-      "Fiber Optic Testing",
-      "Photonic Device Packaging",
-      "Defense Optical Systems",
-      "Biomedical Instrumentation"
-    ],
-    "applicationsZh": [
-      "光学系统对准",
-      "激光系统集成",
-      "成像系统组装",
-      "研究实验室搭建",
-      "工业光学检测",
-      "光谱设备安装",
-      "光纤测试",
-      "光子器件封装",
-      "国防光学系统",
-      "生物医学仪器"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Optical System Assembly",
-        "description": "Lens cells, mirror mounts, and optical posts provide the mechanical structure for building complete optical systems. Proper optomechanical design ensures optical elements remain aligned and stable throughout operation despite thermal changes and vibration."
-      },
-      {
-        "title": "Laser System Integration",
-        "description": "Mirror mounts, beam expander holders, and polarizer rotation mounts enable precise alignment of laser beam paths. Kinematic mounts with micrometer adjusters provide sub-arcsecond angular adjustment for demanding laser system alignment."
-      },
-      {
-        "title": "Research & Laboratory Setups",
-        "description": "Optical tables, posts, mounts, and positioners support flexible experimental setups in research laboratories. Modular optomechanical components allow quick reconfiguration of optical systems for different experiments."
-      },
-      {
-        "title": "Industrial Equipment Integration",
-        "description": "Rugged optomechanical components are designed for integration into manufacturing equipment, inspection machines, and process tools. These components must withstand vibration, temperature changes, and industrial environments while maintaining precise alignment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光学系统组装",
-        "description": "透镜镜筒、反射镜支架和光学支柱为构建完整的光学系统提供机械结构。适当的光学机械设计确保光学元件在整个操作过程中保持对准和稳定，不受热变化和振动的影响。"
-      },
-      {
-        "title": "激光系统集成",
-        "description": "反射镜支架、扩束器支架和偏振器旋转支架使得激光束路径能够精确对准。带有千分尺调节器的运动学支架为高要求的激光系统对准提供亚弧秒级的角度调节。"
-      },
-      {
-        "title": "研究与实验室搭建",
-        "description": "光学平台、支柱、支架和定位器支持研究实验室中灵活的实验搭建。模块化光学机械组件允许为不同实验快速重新配置光学系统。"
-      },
-      {
-        "title": "工业设备集成",
-        "description": "坚固的光学机械组件设计用于集成到制造设备、检测机器和加工工具中。这些组件必须能够承受振动、温度变化和工业环境，同时保持精确的对准。"
-      }
-    ],
-    "materials": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "materialsZh": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "coatings": [
-      "Black Anodized Aluminum",
-      "Stainless Steel (Passivated)",
-      "Brass (Natural or Nickel Plated)",
-      "Vacuum-Compatible Finishes"
-    ],
-    "coatingsZh": [
-      "黑色阳极氧化铝",
-      "不锈钢（钝化处理）",
-      "黄铜（本色或镀镍）",
-      "真空兼容表面处理"
-    ],
-    "selectionGuide": "Optomechanical components hold, position, and align optical elements in a system. Choosing the right mounts and mechanics is essential for maintaining optical alignment stability and system performance over time and changing environmental conditions.\n\nKey considerations: material (aluminum, stainless steel, brass), adjustment precision, load capacity, and stability. Aluminum mounts are lightweight and economical. Stainless steel offers superior thermal stability and rigidity for precision applications. Brass provides good thread engagement and resistance to galling.\n\nAdjustment mechanisms: screw-driven fine adjustment provides sub-micron precision for precise alignment. Spring-loaded mechanisms maintain preload and prevent backlash. Lever or cam mechanisms offer faster adjustment but with lower precision. The choice depends on whether you need quick coarse positioning or fine alignment capability.\n\nStability factors: thermal expansion can cause alignment drift in temperature-changing environments. Choose materials with thermal expansion coefficients matched to your optical elements. Vibration resistance requires rigid mounting structures and proper damping. For vacuum environments, specify vacuum-compatible materials and avoid outgassing materials.\n\nMount types: lens cells center and hold lenses in barrels. Mirror mounts provide tip/tilt adjustment. Kinematic mounts offer precise 3-point adjustment and repeatability. Rotation mounts allow angular positioning of polarizers and waveplates. Always ensure the mount's clear aperture is sufficient for your beam size and field of view.",
-    "selectionGuideZh": "光学机械元件用于固定、定位和对准系统中的光学元件。选择合适的支架和机械装置对于保持光学对准稳定性和系统性能随时间和环境条件的变化至关重要。\n\n关键考虑因素：材料（铝、不锈钢、黄铜）、调节精度、负载能力和稳定性。铝制支架重量轻且经济。不锈钢为精密应用提供卓越的热稳定性和刚性。黄铜提供良好的螺纹啮合和抗咬合性。\n\n调节机构：螺杆驱动的微调提供亚微米精度，用于精确对准。弹簧加载机构保持预紧力并防止间隙。杠杆或凸轮机构提供更快的调节，但精度较低。选择取决于您需要快速粗定位还是精细对准能力。\n\n稳定性因素：热膨胀会导致温度变化环境中的对准漂移。选择热膨胀系数与您的光学元件匹配的材料。抗振性需要刚性的安装结构和适当的阻尼。对于真空环境，请指定真空兼容材料并避免释气材料。\n\n支架类型：透镜镜筒将透镜居中并固定在镜筒中。反射镜支架提供倾斜/俯仰调节。运动学支架提供精确的三点调节和可重复性。旋转支架允许偏振器和波片的角度定位。请始终确保支架的通光孔径足以满足您的光束尺寸和视场需求。",
-    "faq": [
-      {
-        "question": "How do I choose between different mount materials?",
-        "answer": "Aluminum mounts (typically 6061-T6) are the most common — lightweight, machinable, and economical with black anodized finish for low scatter. Use aluminum for general lab setups and applications where weight is a concern. Stainless steel mounts (303 or 316) offer superior rigidity, thermal stability, and corrosion resistance. Choose stainless for high-precision systems, vacuum applications, or environments with temperature variations. Brass mounts provide excellent thread quality and resistance to galling, making them ideal for frequently adjusted components. For UHV systems, specify 316L stainless and avoid aluminum (outgassing). Always consider thermal expansion matching between the mount and optical element."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择不同的支架材料？",
-        "answer": "铝制支架（通常为6061-T6）是最常见的——重量轻、可加工、经济实惠，黑色阳极氧化饰面可减少散射。将铝制支架用于一般实验室搭建和重量是考虑因素的应用。不锈钢支架（303或316）提供卓越的刚性、热稳定性和耐腐蚀性。选择不锈钢用于高精度系统、真空应用或温度变化的环境。黄铜支架提供出色的螺纹质量和抗咬合性，使其成为频繁调节组件的理想选择。对于超高真空系统，请指定316L不锈钢并避免使用铝（释气）。请始终考虑支架和光学元件之间的热膨胀匹配。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "concentric-mirror-frame",
-        "name": "3-Claw Concentric Mirror Frame",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ]
-  },
-  "concentric-mirror-frame": {
-    "applications": [
-      "Optical System Alignment",
-      "Laser System Integration",
-      "Imaging System Assembly",
-      "Research Laboratory Setup",
-      "Industrial Optical Inspection",
-      "Spectroscopy Equipment Mounting",
-      "Fiber Optic Testing",
-      "Photonic Device Packaging",
-      "Defense Optical Systems",
-      "Biomedical Instrumentation"
-    ],
-    "applicationsZh": [
-      "光学系统对准",
-      "激光系统集成",
-      "成像系统组装",
-      "研究实验室搭建",
-      "工业光学检测",
-      "光谱设备安装",
-      "光纤测试",
-      "光子器件封装",
-      "国防光学系统",
-      "生物医学仪器"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Optical System Assembly",
-        "description": "Lens cells, mirror mounts, and optical posts provide the mechanical structure for building complete optical systems. Proper optomechanical design ensures optical elements remain aligned and stable throughout operation despite thermal changes and vibration."
-      },
-      {
-        "title": "Laser System Integration",
-        "description": "Mirror mounts, beam expander holders, and polarizer rotation mounts enable precise alignment of laser beam paths. Kinematic mounts with micrometer adjusters provide sub-arcsecond angular adjustment for demanding laser system alignment."
-      },
-      {
-        "title": "Research & Laboratory Setups",
-        "description": "Optical tables, posts, mounts, and positioners support flexible experimental setups in research laboratories. Modular optomechanical components allow quick reconfiguration of optical systems for different experiments."
-      },
-      {
-        "title": "Industrial Equipment Integration",
-        "description": "Rugged optomechanical components are designed for integration into manufacturing equipment, inspection machines, and process tools. These components must withstand vibration, temperature changes, and industrial environments while maintaining precise alignment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光学系统组装",
-        "description": "透镜镜筒、反射镜支架和光学支柱为构建完整的光学系统提供机械结构。适当的光学机械设计确保光学元件在整个操作过程中保持对准和稳定，不受热变化和振动的影响。"
-      },
-      {
-        "title": "激光系统集成",
-        "description": "反射镜支架、扩束器支架和偏振器旋转支架使得激光束路径能够精确对准。带有千分尺调节器的运动学支架为高要求的激光系统对准提供亚弧秒级的角度调节。"
-      },
-      {
-        "title": "研究与实验室搭建",
-        "description": "光学平台、支柱、支架和定位器支持研究实验室中灵活的实验搭建。模块化光学机械组件允许为不同实验快速重新配置光学系统。"
-      },
-      {
-        "title": "工业设备集成",
-        "description": "坚固的光学机械组件设计用于集成到制造设备、检测机器和加工工具中。这些组件必须能够承受振动、温度变化和工业环境，同时保持精确的对准。"
-      }
-    ],
-    "materials": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "materialsZh": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "coatings": [
-      "Black Anodized Aluminum",
-      "Stainless Steel (Passivated)",
-      "Brass (Natural or Nickel Plated)",
-      "Vacuum-Compatible Finishes"
-    ],
-    "coatingsZh": [
-      "黑色阳极氧化铝",
-      "不锈钢（钝化处理）",
-      "黄铜（本色或镀镍）",
-      "真空兼容表面处理"
-    ],
-    "selectionGuide": "Optomechanical components hold, position, and align optical elements in a system. Choosing the right mounts and mechanics is essential for maintaining optical alignment stability and system performance over time and changing environmental conditions.\n\nKey considerations: material (aluminum, stainless steel, brass), adjustment precision, load capacity, and stability. Aluminum mounts are lightweight and economical. Stainless steel offers superior thermal stability and rigidity for precision applications. Brass provides good thread engagement and resistance to galling.\n\nAdjustment mechanisms: screw-driven fine adjustment provides sub-micron precision for precise alignment. Spring-loaded mechanisms maintain preload and prevent backlash. Lever or cam mechanisms offer faster adjustment but with lower precision. The choice depends on whether you need quick coarse positioning or fine alignment capability.\n\nStability factors: thermal expansion can cause alignment drift in temperature-changing environments. Choose materials with thermal expansion coefficients matched to your optical elements. Vibration resistance requires rigid mounting structures and proper damping. For vacuum environments, specify vacuum-compatible materials and avoid outgassing materials.\n\nMount types: lens cells center and hold lenses in barrels. Mirror mounts provide tip/tilt adjustment. Kinematic mounts offer precise 3-point adjustment and repeatability. Rotation mounts allow angular positioning of polarizers and waveplates. Always ensure the mount's clear aperture is sufficient for your beam size and field of view.",
-    "selectionGuideZh": "光学机械元件用于固定、定位和对准系统中的光学元件。选择合适的支架和机械装置对于保持光学对准稳定性和系统性能随时间和环境条件的变化至关重要。\n\n关键考虑因素：材料（铝、不锈钢、黄铜）、调节精度、负载能力和稳定性。铝制支架重量轻且经济。不锈钢为精密应用提供卓越的热稳定性和刚性。黄铜提供良好的螺纹啮合和抗咬合性。\n\n调节机构：螺杆驱动的微调提供亚微米精度，用于精确对准。弹簧加载机构保持预紧力并防止间隙。杠杆或凸轮机构提供更快的调节，但精度较低。选择取决于您需要快速粗定位还是精细对准能力。\n\n稳定性因素：热膨胀会导致温度变化环境中的对准漂移。选择热膨胀系数与您的光学元件匹配的材料。抗振性需要刚性的安装结构和适当的阻尼。对于真空环境，请指定真空兼容材料并避免释气材料。\n\n支架类型：透镜镜筒将透镜居中并固定在镜筒中。反射镜支架提供倾斜/俯仰调节。运动学支架提供精确的三点调节和可重复性。旋转支架允许偏振器和波片的角度定位。请始终确保支架的通光孔径足以满足您的光束尺寸和视场需求。",
-    "faq": [
-      {
-        "question": "How do I choose between different mount materials?",
-        "answer": "Aluminum mounts (typically 6061-T6) are the most common — lightweight, machinable, and economical with black anodized finish for low scatter. Use aluminum for general lab setups and applications where weight is a concern. Stainless steel mounts (303 or 316) offer superior rigidity, thermal stability, and corrosion resistance. Choose stainless for high-precision systems, vacuum applications, or environments with temperature variations. Brass mounts provide excellent thread quality and resistance to galling, making them ideal for frequently adjusted components. For UHV systems, specify 316L stainless and avoid aluminum (outgassing). Always consider thermal expansion matching between the mount and optical element."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择不同的支架材料？",
-        "answer": "铝制支架（通常为6061-T6）是最常见的——重量轻、可加工、经济实惠，黑色阳极氧化饰面可减少散射。将铝制支架用于一般实验室搭建和重量是考虑因素的应用。不锈钢支架（303或316）提供卓越的刚性、热稳定性和耐腐蚀性。选择不锈钢用于高精度系统、真空应用或温度变化的环境。黄铜支架提供出色的螺纹质量和抗咬合性，使其成为频繁调节组件的理想选择。对于超高真空系统，请指定316L不锈钢并避免使用铝（释气）。请始终考虑支架和光学元件之间的热膨胀匹配。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "rotating-waveplate-mount",
-        "name": "360° Rotating Waveplate/Polarizer Mount",
-        "nameZh": ""
-      },
-      {
-        "slug": "lens-retaining-cell",
-        "name": "Lens Retaining Cell Mount with PTFE Spacer",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ]
-  },
-  "lens-retaining-cell": {
-    "applications": [
-      "Optical System Alignment",
-      "Laser System Integration",
-      "Imaging System Assembly",
-      "Research Laboratory Setup",
-      "Industrial Optical Inspection",
-      "Spectroscopy Equipment Mounting",
-      "Fiber Optic Testing",
-      "Photonic Device Packaging",
-      "Defense Optical Systems",
-      "Biomedical Instrumentation"
-    ],
-    "applicationsZh": [
-      "光学系统对准",
-      "激光系统集成",
-      "成像系统组装",
-      "研究实验室搭建",
-      "工业光学检测",
-      "光谱设备安装",
-      "光纤测试",
-      "光子器件封装",
-      "国防光学系统",
-      "生物医学仪器"
-    ],
-    "applicationDetails": [
-      {
-        "title": "Optical System Assembly",
-        "description": "Lens cells, mirror mounts, and optical posts provide the mechanical structure for building complete optical systems. Proper optomechanical design ensures optical elements remain aligned and stable throughout operation despite thermal changes and vibration."
-      },
-      {
-        "title": "Laser System Integration",
-        "description": "Mirror mounts, beam expander holders, and polarizer rotation mounts enable precise alignment of laser beam paths. Kinematic mounts with micrometer adjusters provide sub-arcsecond angular adjustment for demanding laser system alignment."
-      },
-      {
-        "title": "Research & Laboratory Setups",
-        "description": "Optical tables, posts, mounts, and positioners support flexible experimental setups in research laboratories. Modular optomechanical components allow quick reconfiguration of optical systems for different experiments."
-      },
-      {
-        "title": "Industrial Equipment Integration",
-        "description": "Rugged optomechanical components are designed for integration into manufacturing equipment, inspection machines, and process tools. These components must withstand vibration, temperature changes, and industrial environments while maintaining precise alignment."
-      }
-    ],
-    "applicationDetailsZh": [
-      {
-        "title": "光学系统组装",
-        "description": "透镜镜筒、反射镜支架和光学支柱为构建完整的光学系统提供机械结构。适当的光学机械设计确保光学元件在整个操作过程中保持对准和稳定，不受热变化和振动的影响。"
-      },
-      {
-        "title": "激光系统集成",
-        "description": "反射镜支架、扩束器支架和偏振器旋转支架使得激光束路径能够精确对准。带有千分尺调节器的运动学支架为高要求的激光系统对准提供亚弧秒级的角度调节。"
-      },
-      {
-        "title": "研究与实验室搭建",
-        "description": "光学平台、支柱、支架和定位器支持研究实验室中灵活的实验搭建。模块化光学机械组件允许为不同实验快速重新配置光学系统。"
-      },
-      {
-        "title": "工业设备集成",
-        "description": "坚固的光学机械组件设计用于集成到制造设备、检测机器和加工工具中。这些组件必须能够承受振动、温度变化和工业环境，同时保持精确的对准。"
-      }
-    ],
-    "materials": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "materialsZh": [
-      "Aluminum 6061-T6",
-      "Stainless Steel 303/316",
-      "Brass"
-    ],
-    "coatings": [
-      "Black Anodized Aluminum",
-      "Stainless Steel (Passivated)",
-      "Brass (Natural or Nickel Plated)",
-      "Vacuum-Compatible Finishes"
-    ],
-    "coatingsZh": [
-      "黑色阳极氧化铝",
-      "不锈钢（钝化处理）",
-      "黄铜（本色或镀镍）",
-      "真空兼容表面处理"
-    ],
-    "selectionGuide": "Optomechanical components hold, position, and align optical elements in a system. Choosing the right mounts and mechanics is essential for maintaining optical alignment stability and system performance over time and changing environmental conditions.\n\nKey considerations: material (aluminum, stainless steel, brass), adjustment precision, load capacity, and stability. Aluminum mounts are lightweight and economical. Stainless steel offers superior thermal stability and rigidity for precision applications. Brass provides good thread engagement and resistance to galling.\n\nAdjustment mechanisms: screw-driven fine adjustment provides sub-micron precision for precise alignment. Spring-loaded mechanisms maintain preload and prevent backlash. Lever or cam mechanisms offer faster adjustment but with lower precision. The choice depends on whether you need quick coarse positioning or fine alignment capability.\n\nStability factors: thermal expansion can cause alignment drift in temperature-changing environments. Choose materials with thermal expansion coefficients matched to your optical elements. Vibration resistance requires rigid mounting structures and proper damping. For vacuum environments, specify vacuum-compatible materials and avoid outgassing materials.\n\nMount types: lens cells center and hold lenses in barrels. Mirror mounts provide tip/tilt adjustment. Kinematic mounts offer precise 3-point adjustment and repeatability. Rotation mounts allow angular positioning of polarizers and waveplates. Always ensure the mount's clear aperture is sufficient for your beam size and field of view.",
-    "selectionGuideZh": "光学机械元件用于固定、定位和对准系统中的光学元件。选择合适的支架和机械装置对于保持光学对准稳定性和系统性能随时间和环境条件的变化至关重要。\n\n关键考虑因素：材料（铝、不锈钢、黄铜）、调节精度、负载能力和稳定性。铝制支架重量轻且经济。不锈钢为精密应用提供卓越的热稳定性和刚性。黄铜提供良好的螺纹啮合和抗咬合性。\n\n调节机构：螺杆驱动的微调提供亚微米精度，用于精确对准。弹簧加载机构保持预紧力并防止间隙。杠杆或凸轮机构提供更快的调节，但精度较低。选择取决于您需要快速粗定位还是精细对准能力。\n\n稳定性因素：热膨胀会导致温度变化环境中的对准漂移。选择热膨胀系数与您的光学元件匹配的材料。抗振性需要刚性的安装结构和适当的阻尼。对于真空环境，请指定真空兼容材料并避免释气材料。\n\n支架类型：透镜镜筒将透镜居中并固定在镜筒中。反射镜支架提供倾斜/俯仰调节。运动学支架提供精确的三点调节和可重复性。旋转支架允许偏振器和波片的角度定位。请始终确保支架的通光孔径足以满足您的光束尺寸和视场需求。",
-    "faq": [
-      {
-        "question": "How do I choose between different mount materials?",
-        "answer": "Aluminum mounts (typically 6061-T6) are the most common — lightweight, machinable, and economical with black anodized finish for low scatter. Use aluminum for general lab setups and applications where weight is a concern. Stainless steel mounts (303 or 316) offer superior rigidity, thermal stability, and corrosion resistance. Choose stainless for high-precision systems, vacuum applications, or environments with temperature variations. Brass mounts provide excellent thread quality and resistance to galling, making them ideal for frequently adjusted components. For UHV systems, specify 316L stainless and avoid aluminum (outgassing). Always consider thermal expansion matching between the mount and optical element."
-      }
-    ],
-    "faqZh": [
-      {
-        "question": "如何选择不同的支架材料？",
-        "answer": "铝制支架（通常为6061-T6）是最常见的——重量轻、可加工、经济实惠，黑色阳极氧化饰面可减少散射。将铝制支架用于一般实验室搭建和重量是考虑因素的应用。不锈钢支架（303或316）提供卓越的刚性、热稳定性和耐腐蚀性。选择不锈钢用于高精度系统、真空应用或温度变化的环境。黄铜支架提供出色的螺纹质量和抗咬合性，使其成为频繁调节组件的理想选择。对于超高真空系统，请指定316L不锈钢并避免使用铝（释气）。请始终考虑支架和光学元件之间的热膨胀匹配。"
-      }
-    ],
-    "relatedProducts": [
-      {
-        "slug": "rotating-waveplate-mount",
-        "name": "360° Rotating Waveplate/Polarizer Mount",
-        "nameZh": ""
-      },
-      {
-        "slug": "concentric-mirror-frame",
-        "name": "3-Claw Concentric Mirror Frame",
-        "nameZh": ""
-      },
-      {
-        "slug": "bk7-plano-convex",
-        "name": "BK7 Plano-Convex Lenses",
-        "nameZh": ""
-      },
-      {
-        "slug": "laser-line-high-reflected-mirrors",
-        "name": "Laser Line High Reflected Mirrors",
-        "nameZh": ""
-      }
-    ],
-    "relatedArticles": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ],
-    "relatedArticlesZh": [
-      {
-        "title": "Optomechanical Mount Selection Guide",
-        "titleZh": "光学机械支架选型指南",
-        "slug": "blog/optomechanical-mount-guide"
-      },
-      {
-        "title": "Optical Alignment Best Practices",
-        "titleZh": "光学对准最佳实践",
-        "slug": "blog/optical-alignment-best-practices"
-      },
-      {
-        "title": "Material Selection for Optomechanical Components",
-        "titleZh": "光学机械组件的材料选择",
-        "slug": "blog/optomechanical-material-selection"
-      }
-    ]
-  }
-};

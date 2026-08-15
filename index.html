@@ -166,9 +166,11 @@
                 </div>
                 <!-- CTA Buttons -->
                 <div class="hero-btns v90-hero-btns">
-                    <a href="/contact.html" class="btn btn-primary" data-i18n="v90HeroCTA1">Talk With Optical Engineer</a>
-                    <a href="/applications.html" class="btn btn-secondary" data-i18n="v90HeroCTA2">Explore Solutions</a>
+                    <a href="/ai-optical-engineer.html" class="btn btn-primary" data-i18n="v90HeroCTA1">Ask AI Optical Engineer</a>
+                    <a href="/contact.html" class="btn btn-secondary" data-i18n="v90HeroCTA2">Request Engineering Review</a>
+                    <a href="/products.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.4);color:rgba(255,255,255,0.85);">Browse Components &rarr;</a>
                 </div>
+                <p style="font-size:14px;color:rgba(176,196,222,0.7);font-style:italic;margin-top:16px;">Specify what your system needs &mdash; not what the catalog says.</p>
             </div>
             <div class="v90-hero-ai-card">
                 <div class="v90-ai-badge">
@@ -338,6 +340,56 @@
     </div>
 </section>
 
+<!-- ============ SCREEN 3.5: COMPONENT FINDER ============ -->
+<section style="padding: 60px 0; background: #ffffff; border-bottom: 1px solid #e2e6ef;">
+    <div class="container">
+        <div style="text-align: center; margin-bottom: 40px;">
+            <span class="v90-section-tag">Find It Fast</span>
+            <h2 class="v90-section-title">Find the Right Optical Component</h2>
+            <p style="color: #5a6577; max-width: 600px; margin: 0 auto; font-size: 16px;">Filter by component type, material, wavelength range, application or specification requirements.</p>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; background: #f8fafc; border-radius: 12px; padding: 32px; border: 1px solid #e2e6ef;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 20px;">
+                <div>
+                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Component</label>
+                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?component='+this.value">
+                        <option>All Components</option>
+                        <option>Lens</option><option>Window</option><option>Mirror</option>
+                        <option>Filter</option><option>Prism</option><option>Waveplate</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Wavelength</label>
+                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?wavelength='+this.value">
+                        <option>All Wavelengths</option>
+                        <option>UV</option><option>Visible</option><option>NIR</option>
+                        <option>SWIR</option><option>MWIR</option><option>LWIR</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material</label>
+                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?material='+this.value">
+                        <option>All Materials</option>
+                        <option>BK7</option><option>Fused Silica</option><option>CaF₂</option>
+                        <option>ZnSe</option><option>Ge</option><option>Sapphire</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Application</label>
+                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?application='+this.value">
+                        <option>All Applications</option>
+                        <option>Laser</option><option>Semiconductor</option><option>Medical</option>
+                        <option>Aerospace</option><option>Research</option><option>Industrial</option>
+                    </select>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="/products.html" class="btn btn-primary" style="padding: 10px 28px; font-size: 14px;">Browse All Components &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ============ SCREEN 4: WHY PHOTONEDGE ============ -->
 <section class="v90-why" style="padding: 80px 0; background: #f8fafc;">
     <div class="container">
@@ -431,6 +483,34 @@
         </div>
         <div style="text-align: center; margin-top: 40px;">
             <a href="/engineering.html" class="btn btn-primary" data-i18n="v90MfgExploreBtn">Explore Manufacturing Capability &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SCREEN 5.5: SPECIFICATION OPTIMIZATION ============ -->
+<section style="padding: 70px 0; background: #f0f4f8; border-bottom: 1px solid #e2e6ef;">
+    <div class="container">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <span class="v90-section-tag">Engineering Philosophy</span>
+            <h2 class="v90-section-title">The Right Specification &mdash; Not the Most Expensive Specification</h2>
+            <p style="color: #5a6577; font-size: 16px; line-height: 1.8; margin-bottom: 32px;">Tighter tolerances can increase cost without improving system performance. We help engineers identify which specifications actually matter to the optical system &mdash; and which are just costing you more.</p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center;">
+                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
+                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">&lambda;/4 vs &lambda;/10</div>
+                    <p style="font-size: 13px; color: #5a6577; margin: 0;">When does flatness actually matter for your system performance?</p>
+                </div>
+                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
+                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">10-5 vs 20-10</div>
+                    <p style="font-size: 13px; color: #5a6577; margin: 0;">When does surface quality directly affect your application?</p>
+                </div>
+                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
+                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">&plusmn;0.01 vs &plusmn;0.05mm</div>
+                    <p style="font-size: 13px; color: #5a6577; margin: 0;">Where does dimensional tolerance drive real system value?</p>
+                </div>
+            </div>
+            <div style="margin-top: 32px;">
+                <a href="/contact.html" class="btn btn-primary" style="padding: 10px 28px;">Talk to an Optical Engineer &rarr;</a>
+            </div>
         </div>
     </div>
 </section>
@@ -564,16 +644,20 @@
 <!-- ============ SCREEN 10: RFQ CTA ============ -->
 <section style="padding: 80px 0; background: linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%); text-align: center; color: white;">
     <div class="container">
-        <h2 style="color: white; margin-bottom: 16px; font-size: 36px;" data-i18n="v90RFQTitle">Discuss Your Optical Requirement</h2>
-        <p style="color: rgba(255,255,255,0.9); margin-bottom: 40px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="v90RFQSubtitle">Tell us about your project. An optical engineer will review and respond with recommendations within 24 hours.</p>
+        <h2 style="color: white; margin-bottom: 16px; font-size: 36px;">Have an Optical Requirement?</h2>
+        <p style="color: rgba(176,196,222,0.9); margin-bottom: 40px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto;">Tell us what you know. We'll help identify what you still need.</p>
         <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
             <div class="final-cta-item">
-                <a href="/contact.html" class="final-cta-btn primary" data-i18n="v90RFQBtn1">Submit Optical Requirement</a>
-                <p class="final-cta-desc" data-i18n="v90RFQDesc1">For engineers with clear specifications</p>
+                <a href="/contact.html" class="final-cta-btn primary" style="background:#e8792f;">I Know What I Need &rarr;</a>
+                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Upload Drawing / RFQ</p>
             </div>
             <div class="final-cta-item">
-                <a href="/contact.html" class="final-cta-btn secondary" data-i18n="v90RFQBtn2">Request Engineering Review</a>
-                <p class="final-cta-desc" data-i18n="v90RFQDesc2">Need help with material or coating selection?</p>
+                <a href="/contact.html" class="final-cta-btn secondary" style="border:1px solid rgba(255,255,255,0.4);color:white;">I Have an Optical Problem &rarr;</a>
+                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Request Engineering Review</p>
+            </div>
+            <div class="final-cta-item">
+                <a href="/ai-optical-engineer.html" class="final-cta-btn secondary" style="border:1px solid rgba(255,255,255,0.4);color:white;">I Need Help Choosing &rarr;</a>
+                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Ask AI Optical Engineer</p>
             </div>
         </div>
     </div>
@@ -587,14 +671,14 @@
                 <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 Certified | ISO 14001:2015 Certified</p>
             </div>
             <div class="footer-col">
-                <h4 data-i18n="navProducts">Products</h4>
+                <h4>Products</h4>
                 <ul>
-                    <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catV82Lenses">Optical Lenses</a></li>
-                    <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catV82Mirrors">Mirrors</a></li>
-                    <li><a href="/products.html?category=Optical%20Windows" data-i18n="catV82Windows">Windows &amp; Substrates</a></li>
-                    <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catV82Prisms">Prisms &amp; Beamsplitters</a></li>
-                    <li><a href="/products.html?category=Optical%20Filters" data-i18n="catV82Filters">Filters &amp; Polarizers</a></li>
-                    <li><a href="/products.html?category=Laser%20Protection" data-i18n="catV82Laser">Laser &amp; Industrial</a></li>
+                    <li><a href="/products.html?component=Lens">Optical Lenses</a></li>
+                    <li><a href="/products.html?component=Window">Optical Windows</a></li>
+                    <li><a href="/products.html?component=Mirror">Optical Mirrors</a></li>
+                    <li><a href="/products.html?component=Filter">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Prism">Optical Prisms</a></li>
+                    <li><a href="/products.html?component=Waveplate">Waveplates &amp; Polarizers</a></li>
                 </ul>
             </div>
             <div class="footer-col">
