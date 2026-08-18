@@ -230,36 +230,67 @@
     <section class="certifications" style="background: var(--light);">
         <div class="container">
             <h2 class="section-title" data-i18n="certificationsTitle">Quality Certifications</h2>
-            <div class="features-grid">
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
                 <div class="feature-card">
                     <div class="feature-icon">&#10004;</div>
                     <h3>ISO 9001:2015</h3>
-                    <p data-i18n="isoDesc">Quality Management System Certified. Our quality management system meets international standards, ensuring consistent product quality and customer satisfaction.</p>
+                    <p>Quality Management System certified. Consistent product quality and process control across all manufacturing partners.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#127919;</div>
-                    <h3 data-i18n="precisionTitle">Precision Manufacturing</h3>
-                    <p data-i18n="precisionDesc">High-precision optical components with strict quality control at every stage of production.</p>
+                    <div class="feature-icon">&#127973;</div>
+                    <h3>ISO 13485</h3>
+                    <p>Medical Device Quality Management System certified. Ensures regulatory compliance for medical and biomedical optics.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128202;</div>
-                    <h3 data-i18n="testingTitle">Full Testing</h3>
-                    <p data-i18n="testingDesc">Every product undergoes rigorous inspection and testing before shipment to ensure quality.</p>
+                    <div class="feature-icon">&#127807;</div>
+                    <h3>ISO 14001:2015</h3>
+                    <p>Environmental Management System certified. Responsible manufacturing practices across our supply chain.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">&#128666;</div>
-                    <h3 data-i18n="deliveryTitle">Fast Delivery</h3>
-                    <p data-i18n="deliveryDesc">Efficient production and logistics system ensures fast delivery for standard and custom orders.</p>
+                    <div class="feature-icon">&#9889;</div>
+                    <h3>RoHS &amp; REACH</h3>
+                    <p>Full compliance with EU RoHS and REACH directives. Material declarations and SDS documentation available for all products.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features">
+    <!-- Why Engineers Work With PhotonEdge -->
+    <section class="features" style="background: var(--light);">
         <div class="container">
-            <h2 class="section-title" data-i18n="qualityTitle">Enterprise Vision</h2>
-            <div class="vision-content">
-                <p class="vision-text" data-i18n="visionDesc">Guided by customer needs, through continuous R&D and process iteration, we constantly expand the boundaries of optical technology. We are committed to deepening the "Technology Empowerment, Illuminating the Future" strategy, working hand in hand with global partners to build an optoelectronic innovation ecosystem and contribute to the advancement of optical technology.</p>
+            <h2 class="section-title">Why Engineers Work With PhotonEdge</h2>
+            <p class="section-subtitle">What sets us apart from typical optical suppliers</p>
+            <div class="features-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">🔍</div>
+                    <h3>Engineering Before Quotation</h3>
+                    <p>We review your specifications before pricing — ensuring you get the right optic, not the most expensive one. Every quote includes free DFM feedback and material recommendations.</p>
+                </div>
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">⚖️</div>
+                    <h3>Right Specification, Not Tightest</h3>
+                    <p>Tighter tolerances don't always mean better system performance. We help identify which specs actually matter for your application — and which are just costing you more.</p>
+                </div>
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">🏭</div>
+                    <h3>Manufacturing Flexibility</h3>
+                    <p>We match each project to the optimal manufacturing capability — whether that's our partner network's precision polishing, specialized coating, or IR material expertise.</p>
+                </div>
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">📋</div>
+                    <h3>Inspection Transparency</h3>
+                    <p>Full inspection documentation with every shipment. Interferometry data, spectrophotometry curves, dimensional reports — standard on every order, no extra charge.</p>
+                </div>
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">🔄</div>
+                    <h3>Prototype to Production</h3>
+                    <p>From 1 piece to 10,000 pieces — same engineering rigor, same quality system. Fast prototype turnaround with seamless scale-up to volume production.</p>
+                </div>
+                <div class="feature-card" style="text-align:left;">
+                    <div class="feature-icon" style="font-size:28px;">🌍</div>
+                    <h3>Global Support, Local Feel</h3>
+                    <p>English-speaking engineering support, DDP/DAP shipping with full customs documentation, 48-hour response guarantee. Working with us should feel like working locally.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -289,31 +320,34 @@
         </div>
     </section>
 
+    <!-- Operating Model -->
     <section class="features" style="background: var(--light-bg);">
         <div class="container">
-            <h2 class="section-title" data-i18n="coreValuesTitle">Core Values</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">&#128100;</div>
-                    <h3 data-i18n="qualityCustomerFirst">Customer First</h3>
-                    <p data-i18n="qualityCustomerFirstDesc">Customer satisfaction is our top priority</p>
+            <h2 class="section-title">Our Operating Model</h2>
+            <p class="section-subtitle">Engineering-led. Manufacturing-flexible. One point of contact from start to finish.</p>
+            <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:960px;margin:32px auto 0;">
+                <div style="text-align:center;padding:28px 16px;background:white;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+                    <div style="font-size:32px;margin-bottom:10px;">🔬</div>
+                    <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:8px;">PhotonEdge Engineering</h4>
+                    <p style="font-size:13px;color:#64748b;margin:0;line-height:1.6;">Design review, material selection, coating optimization, DFM feedback</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#11088;</div>
-                    <h3 data-i18n="qualityQualityFirst">Quality First</h3>
-                    <p data-i18n="qualityQualityFirstDesc">Uncompromising commitment to quality</p>
+                <div style="text-align:center;padding:28px 16px;background:white;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+                    <div style="font-size:32px;margin-bottom:10px;">🏭</div>
+                    <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:8px;">Manufacturing Network</h4>
+                    <p style="font-size:13px;color:#64748b;margin:0;line-height:1.6;">PhotonEdge facilities + qualified partners matched to your specs</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#128161;</div>
-                    <h3 data-i18n="qualityTechInnovation">Technology Innovation</h3>
-                    <p data-i18n="qualityTechInnovationDesc">Continuous improvement and innovation</p>
+                <div style="text-align:center;padding:28px 16px;background:white;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+                    <div style="font-size:32px;margin-bottom:10px;">✅</div>
+                    <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:8px;">PhotonEdge Quality</h4>
+                    <p style="font-size:13px;color:#64748b;margin:0;line-height:1.6;">100% inspection, full documentation, certified quality system</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">&#128587;</div>
-                    <h3 data-i18n="qualityPerfectService">Perfect Service</h3>
-                    <p data-i18n="qualityPerfectServiceDesc">Comprehensive pre-sales and after-sales support</p>
+                <div style="text-align:center;padding:28px 16px;background:white;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+                    <div style="font-size:32px;margin-bottom:10px;">🚀</div>
+                    <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:8px;">Your Team</h4>
+                    <p style="font-size:13px;color:#64748b;margin:0;line-height:1.6;">One technical contact. Full traceability. On-time worldwide delivery.</p>
                 </div>
             </div>
+            <p style="text-align:center;color:#64748b;font-size:14px;margin-top:24px;font-style:italic;">One technical point of contact from initial inquiry through delivery and after-sales support.</p>
         </div>
     </section>
 
@@ -425,7 +459,7 @@
             <div class="factory-hero-image">
                 <img src="https://photonedgeoptics.com/images/factory/factory_0.jpg" alt="PhotonEdge - Hengding Optoelectronics Headquarters, Beijing" loading="lazy">
                 <div class="factory-hero-overlay">
-                    <p data-i18n="factoryHeroCaption">Our Manufacturing Facility in Beijing</p>
+                    <p data-i18n="factoryHeroCaption">PhotonEdge Operations Center &mdash; Beijing</p>
                 </div>
             </div>
         <div class="container">
@@ -681,10 +715,10 @@
     <section class="iso-banner">
         <div class="container">
             <div class="iso-banner-inner">
-                <div class="iso-badge" data-i18n="isoBadgeText">ISO<br>9001<br>2015</div>
+                <div class="iso-badge" data-i18n="isoBadgeText">ISO<br>Triple<br>Certified</div>
                 <div class="iso-text">
-                    <h3 data-i18n="isoCertified">ISO 9001:2015 Certified</h3>
-                    <p data-i18n="isoCertifiedDesc">Quality Management System certified for precision optical component manufacturing since 2013</p>
+                    <h3 data-i18n="isoCertified">ISO 9001 | ISO 13485 | ISO 14001</h3>
+                    <p data-i18n="isoCertifiedDesc">Triple-certified quality, medical device, and environmental management systems. RoHS &amp; REACH compliant since 2013.</p>
                 </div>
             </div>
         </div>
@@ -875,10 +909,13 @@
                 <div class="footer-col">
                     <h4 data-i18n="navProducts">Products</h4>
                     <ul>
-                        <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
-                        <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
-                        <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
-                        <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
+                                            <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
