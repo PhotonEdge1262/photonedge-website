@@ -386,7 +386,7 @@
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
                 <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | ISO 14001 | RoHS & REACH</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS & REACH</p>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="navProducts">Products</h4>
@@ -488,8 +488,8 @@
         var desc = document.getElementById('aiDescription').value;
         var power = document.getElementById('aiPower').value;
 
-        var mat = materialDB[wl] || materialDB['vis'];
-        var coat = coatingDB[app] || coatingDB['other'];
+        var mat = materialDB[wl] | materialDB['vis'];
+        var coat = coatingDB[app] | coatingDB['other'];
 
         var compRecs = {
             'lens': 'Plano-Convex / Aspheric / Achromatic Doublet (depending on imaging vs. beam shaping requirements)',

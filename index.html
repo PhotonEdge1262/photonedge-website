@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotonEdge | Precision Optical Components for Advanced Photonics Systems</title>
-    <meta name="description" content="Custom optics from prototype to volume production. Material selection, coating design, full inspection. ISO 9001, ISO 13485 & ISO 14001 certified. 48h prototype turnaround. Delivered worldwide.">
+    <meta name="description" content="Custom optics from prototype to volume production. Material selection, coating design, full inspection. ISO 9001, ISO 13485 &  certified. 48h prototype turnaround. Delivered worldwide.">
     <meta name="keywords" content="custom optics, optical engineering, prototype optics, precision optical components, laser optics, semiconductor optics, PhotonEdge, 定制光学,光学工程,精密光学元件">
     <meta property="og:title" content="PhotonEdge | Precision Optical Components for Advanced Photonics Systems">
     <meta property="og:description" content="Custom lenses, windows, mirrors and optical assemblies for laser, semiconductor, medical and research applications.">
@@ -26,7 +26,7 @@
         <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer | [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-E6J791MXZY');
@@ -674,7 +674,7 @@
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
                 <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | ISO 14001 | RoHS & REACH</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS & REACH</p>
             </div>
             <div class="footer-col">
                 <h4>Products</h4>
@@ -796,7 +796,7 @@ function toggleFaqItem(btn) {
 // Convert product image path to optimized thumbnail
 function getThumbImage(imagePath) {
     if (!imagePath) return imagePath;
-    if (imagePath.charAt(0) === '/' || imagePath.indexOf('http') === 0) return imagePath;
+    if (imagePath.charAt(0) === '/' | imagePath.indexOf('http') === 0) return imagePath;
     return '/' + imagePath;
 }
 
@@ -814,7 +814,7 @@ var V82_FEATURED = [
 
 function renderFeaturedProducts() {
     var grid = document.getElementById('featuredProductsGrid');
-    if (!grid || typeof PRODUCTS === 'undefined') return;
+    if (!grid | typeof PRODUCTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     var html = '';
     for (var i = 0; i < V82_FEATURED.length; i++) {
@@ -872,7 +872,7 @@ renderSelectionGuides();
 
 function renderFeaturedKnowledge() {
     var grid = document.getElementById('featuredKnowledgeGrid');
-    if (!grid || typeof BLOG_POSTS === 'undefined') return;
+    if (!grid | typeof BLOG_POSTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     var featuredSlugs = ['laser-damage-threshold-guide', 'bk7-vs-uv-fused-silica', 'optical-component-cleaning-maintenance-guide'];
     var html = '';
@@ -918,7 +918,7 @@ renderFeaturedKnowledge();
 <script>
 function renderV90Knowledge() {
     var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid || typeof BLOG_POSTS === 'undefined') return;
+    if (!grid | typeof BLOG_POSTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     // Featured slugs for homepage
     var featuredSlugs = [
@@ -979,7 +979,7 @@ if (document.readyState === 'loading') {
 <script>
 function renderV90Knowledge() {
     var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid || typeof BLOG_POSTS === 'undefined') return;
+    if (!grid | typeof BLOG_POSTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     // Featured slugs for homepage
     var featuredSlugs = [
@@ -1040,7 +1040,7 @@ if (document.readyState === 'loading') {
 <script>
 function renderV90Knowledge() {
     var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid || typeof BLOG_POSTS === 'undefined') return;
+    if (!grid | typeof BLOG_POSTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     // Featured slugs for homepage
     var featuredSlugs = [
@@ -1101,7 +1101,7 @@ if (document.readyState === 'loading') {
 <script>
 function renderV90Knowledge() {
     var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid || typeof BLOG_POSTS === 'undefined') return;
+    if (!grid | typeof BLOG_POSTS === 'undefined') return;
     var useZh = localStorage.getItem('lang') === 'zh';
     // Featured slugs for homepage
     var featuredSlugs = [

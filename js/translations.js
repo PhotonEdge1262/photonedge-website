@@ -116,8 +116,8 @@ en: {
         filterCompany: "Company",
         blogSemiconductorInspection: "Precision Optical Components in Semiconductor Inspection",
         blogSemiconductorInspectionExcerpt: "An in-depth guide to the precision optical components essential for semiconductor inspection systems.",
-        newsIso14001: "PhotonEdge Achieves ISO 14001 Environmental Management Certification",
-        newsIso14001Excerpt: "PhotonEdge has successfully achieved ISO 14001:2015 certification for environmental management systems.",
+        newsIso14001: "PhotonEdge Achieves  Environmental Management Certification",
+        newsIso14001Excerpt: "PhotonEdge has successfully achieved :2015 certification for environmental management systems.",
         categorySemiconductor: "Semiconductor Inspection",
         blogLidarGuide: "LiDAR Optical Components Selection Guide",
         blogLidarGuideExcerpt: "Comprehensive guide to selecting optical components for LiDAR systems including MEMS mirrors, collimating lenses, and narrowband filters.",
@@ -1275,7 +1275,7 @@ en: {
         finalCTACustomDescV82: "From prototype to volume production",
         // V82 - Footer
         footerResources: "Resources",
-        footerIsoCert: "ISO 9001:2015 | ISO 13485 | ISO 14001 | RoHS & REACH",
+        footerIsoCert: "ISO 9001:2015 | ISO 13485 | RoHS & REACH",
         footerNewsletter: "Subscribe to weekly optical engineering insights \u2192 Contact us",
 
     
@@ -2983,7 +2983,7 @@ en: {
         "finalCTACustomDescV82": "\u4ece\u539f\u578b\u5230\u91cf\u4ea7",
         // V82 - Footer
         "footerResources": "\u8d44\u6e90",
-        "footerIsoCert": "ISO 9001:2015\u8ba4\u8bc1 | ISO 14001:2015\u8ba4\u8bc1",
+        "footerIsoCert": "ISO 9001:2015\u8ba4\u8bc1:2015\u8ba4\u8bc1",
         "footerNewsletter": "\u8ba2\u9605\u6bcf\u5468\u5149\u5b66\u5de5\u7a0b\u89c1\u89e3 \u2192 \u8054\u7cfb\u6211\u4eec",
 
 
@@ -3475,15 +3475,15 @@ en: {
 }
 // Translation function
 function t(key) {
-    var lang = localStorage.getItem('lang') || 'en';
-    var translationsObj = translations[lang] || translations['en'];
-    return translationsObj[key] || key;
+    var lang = localStorage.getItem('lang') | 'en';
+    var translationsObj = translations[lang] | translations['en'];
+    return translationsObj[key] | key;
 }
 
 // Apply translations to DOM elements with data-i18n attribute
 function applyTranslations() {
-    var lang = localStorage.getItem('lang') || 'en';
-    var translationsObj = translations[lang] || translations['en'];
+    var lang = localStorage.getItem('lang') | 'en';
+    var translationsObj = translations[lang] | translations['en'];
     var elements = document.querySelectorAll('[data-i18n]');
     for (var i = 0; i < elements.length; i++) {
         var key = elements[i].getAttribute('data-i18n');
@@ -3546,12 +3546,12 @@ function setLanguage(lang) {
 
 // Get current language
 function getCurrentLanguage() {
-    return localStorage.getItem('lang') || 'en';
+    return localStorage.getItem('lang') | 'en';
 }
 
 // Alias used by many pages
 function getCurrentLang() {
-    return localStorage.getItem('lang') || 'en';
+    return localStorage.getItem('lang') | 'en';
 }
 
 // Apply translations on page load
