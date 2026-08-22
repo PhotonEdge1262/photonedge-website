@@ -139,9 +139,11 @@
   "offers": {
     "@type": "Offer",
     "priceCurrency": "USD",
-    "price": 10,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "description": "Pricing available upon request. Contact our engineering team for a custom quote."
+      },
+    "availability": "https://schema.org/LimitedAvailability",
     "seller": {
       "@type": "Organization",
       "name": "PhotonEdge"
@@ -599,8 +601,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 "offers": {
                     "@type": "Offer",
                     "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "description": "Pricing available upon request. Contact our engineering team for a custom quote."
+      },
                     "price": currentProduct.price,
-                    "availability": "https://schema.org/InStock",
+                    "availability": "https://schema.org/LimitedAvailability",
                     "seller": {
                         "@type": "Organization",
                         "name": "PhotonEdge"
