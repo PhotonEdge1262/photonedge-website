@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Specify AR Coatings for Multi-Wavelength Laser Systems</title>
+    <meta name="description" content="A practical guide to specifying anti-reflection coatings for multi-wavelength laser systems. Covers coating design, material selection, damage thresholds, and verification.">
+    <meta property="og:title" content="How to Specify AR Coatings for Multi-Wavelength Laser Systems">
+    <meta property="og:description" content="A practical guide to specifying anti-reflection coatings for multi-wavelength laser systems. Covers coating design, material selection, damage thresholds, and verification.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/applications/laser-optics/?lang=zh">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Specify AR Coatings for Multi-Wavelength Laser Systems">
+    <meta name="twitter:description" content="A practical guide to specifying anti-reflection coatings for multi-wavelength laser systems. Covers coating design, material selection, damage thresholds, and verification.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Laser Optics Solutions", "item": "https://photonedgeoptics.com/applications/laser-optics/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Laser Optics Solutions | PhotonEdge Optics",
+        "description": "Precision optical components engineered for laser optics solutions applications.",
+        "url": "https://photonedgeoptics.com/applications/laser-optics/"
+    }
+    </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What optical material should I use for a CO2 laser at 10.6 μm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ZnSe is the standard choice. It offers excellent transmission at 10.6 μm with good thermal conductivity. For lower-power CO2 systems (< 100 W), high-resistivity silicon can also work as a more economical alternative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose a laser window for my system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with wavelength compatibility. Then evaluate: power/energy density for thermal management, whether AR coating is required, surface quality requirements (40-20 for beam delivery, 20-10 for intra-cavity), and mounting method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is LIDT and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LIDT is Laser-Induced Damage Threshold — the maximum power density (W/cm2 for CW) or energy density (J/cm2 for pulsed) an optic can withstand. Always specify LIDT with test conditions: pulse duration, beam diameter, wavelength, and measurement standard (ISO 21254)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use AR coating vs. HR coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AR coatings go on transmissive optics (windows, lenses) to minimize reflection loss. HR coatings go on mirrors. For intra-cavity optics, you may need both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the same optic handle both CW and pulsed laser operation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily without re-evaluation. CW is limited by steady-state thermal effects. Pulsed is limited by peak fluence at the coating interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my UV laser optic degrade over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UV wavelengths carry high photon energy that breaks chemical bonds in optical materials, creating color centers (solarization) that increase absorption. Mitigation: UV-grade fused silica, hydrogen loading, and UV-durable coatings."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Laser Optics Solutions - Material Selection & Coating Guide",
+  "description": "Engineering guide for selecting optical components in laser systems: material properties, coating design, thermal management, and LIDT considerations.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge Optics",
+    "url": "https://photonedgeoptics.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/applications/laser-optics/index.html"
+  }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://photonedgeoptics.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Application Notes",
+            "item": "https://photonedgeoptics.com/application-notes/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "How to Specify AR Coatings for Multi-Wavelength Laser Systems",
+            "item": "https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Specify AR Coatings for Multi-Wavelength Laser Systems",
+    "description": "A practical guide to specifying anti-reflection coatings for multi-wavelength laser systems. Covers coating design, material selection, damage thresholds, and verification.",
+    "url": "https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/",
+    "author": {
+        "@type": "Organization",
+        "name": "PhotonEdge Optics"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "PhotonEdge Optics",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://photonedgeoptics.com/images/logo.webp"
+        }
+    },
+    "datePublished": "2026-08-23",
+    "dateModified": "2026-08-23"
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is the difference between single-wavelength and broadband AR coatings?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Single-wavelength AR coatings are optimized for minimum reflection at one specific wavelength (typically <0.1% R). Broadband coatings maintain low reflectance across a range (e.g., 400-700nm), but achieve higher residual R (typically 0.25-0.5% per surface). For multi-wavelength systems, multi-band coatings combine transmission bands at specific lines."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What laser damage threshold should I expect from AR coatings?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard IAD coatings on fused silica typically achieve 10-20 J/cm\u00b2 at 1064nm (10ns pulse). For CW applications, the thermal threshold is typically >10 kW/cm\u00b2. Always specify wavelength, pulse duration or CW power density, and beam diameter."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can AR coatings work at angles other than 0\u00b0?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, but the design must account for the angle. Coatings optimized for 0\u00b0 shift to shorter wavelengths at oblique angles (~5-15nm at 15\u00b0). For fixed-angle optics, specify the AOI in coating requirements."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How do I verify AR coating performance?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Use a UV-VIS-NIR spectrophotometer to measure transmission/reflectance. For production, compare incident vs transmitted power at each wavelength with a calibrated power meter."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What durability can I expect from optical coatings?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern IAD and IBS coatings withstand MIL-PRF-13830B adhesion tests, humidity (95% RH, 48hr), and temperature cycling (-40\u00b0C to +85\u00b0C). For harsh environments, specify protective overcoats."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Should I coat both surfaces?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For windows and intra-cavity optics, coat both surfaces to prevent etalon effects. For beam splitters, typically only the functional surface receives the coating."
+            }
+        }
+    ]
+}
+    </script>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
+                <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link active" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="/applications.html">Applications</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Laser Optics Solutions</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="request-quote-float">
+        <a href="/contact.html" class="quote-btn">
+            <span class="quote-icon">&#9993;</span>
+            <span>Request Engineering Review</span>
+        </a>
+    </div>
+
+    
+    <div class="breadcrumb-wrapper"><div class="container"><nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/application-notes/">Application Notes</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>How to Specify AR Coatings for Multi-Wavelength Laser Systems</span>
+    </nav></div></div>
+
+    <div class="request-quote-float"><a href="/contact.html" class="quote-btn"><span class="quote-icon">&#9993;</span><span>Request Engineering Review</span></a></div>
+
+    <section style="padding:50px 0 30px;background:linear-gradient(to bottom,#f8fafc,white)"><div class="container" style="max-width:800px">
+        <div style="margin-bottom:16px"><span style="background:#1e3a5f;color:white;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px">APPLICATION NOTE</span></div>
+        <h1 style="font-size:32px;color:#1e3a5f;margin-bottom:16px;line-height:1.3">How to Specify AR Coatings for Multi-Wavelength Laser Systems</h1>
+        <p style="color:#475569;font-size:17px;line-height:1.7;margin-bottom:20px">A practical guide to specifying anti-reflection coatings for multi-wavelength laser systems. Covers coating design, material selection, damage thresholds, and verification.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px"><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Laser Optics</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Coatings</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">AR Coating</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Multi-Wavelength</span></div>
+        <div style="display:flex;gap:24px;color:#94a3b8;font-size:13px;padding-bottom:24px;border-bottom:1px solid #e2e8f0">
+            <span>Published: August 23, 2026</span><span>By PhotonEdge Engineering Team</span><span>~8 min read</span>
+        </div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Introduction</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><p>Multi-wavelength laser systems require optical components that perform at two or more discrete wavelengths simultaneously. Standard single-wavelength AR coatings cannot meet this requirement.</p><h3 style="font-size:18px;color:#1e3a5f;margin:28px 0 16px">Understanding the Challenge</h3><p>AR coatings work by destructive interference — thin film layers with precise thicknesses create reflected waves that cancel. A coating for 532nm won't perform at 1064nm. For multi-wavelength systems, you need coatings with 20-40+ layers instead of 4-8 for single-wavelength.</p><div style="background:#eff6ff;border-left:4px solid #3b82f6;padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0"><strong style="color:#1e40af">Key Principle:</strong> The more wavelengths and broader bandwidth needed, the more layers required. More layers = higher cost, longer production, and potentially lower LDT. Specify only the wavelengths your system actually needs.</div></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Coating Types</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px"><thead><tr style="background:#f1f5f9"><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">Type</th><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">Best For</th><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">Typical R</th><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">Layers</th></tr></thead><tbody><tr><td style="padding:12px;border:1px solid #e2e8f0"><strong>Dual-band AR</strong></td><td style="padding:12px;border:1px solid #e2e8f0">2 wavelengths (532+1064nm)</td><td style="padding:12px;border:1px solid #e2e8f0"><0.25% each λ</td><td style="padding:12px;border:1px solid #e2e8f0">15-25</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0"><strong>Tri-band AR</strong></td><td style="padding:12px;border:1px solid #e2e8f0">3 wavelengths (355+532+1064nm)</td><td style="padding:12px;border:1px solid #e2e8f0"><0.5% each λ</td><td style="padding:12px;border:1px solid #e2e8f0">25-40</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0"><strong>Broadband AR</strong></td><td style="padding:12px;border:1px solid #e2e8f0">Continuous band (400-700nm)</td><td style="padding:12px;border:1px solid #e2e8f0"><0.25% avg</td><td style="padding:12px;border:1px solid #e2e8f0">10-20</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0"><strong>Dichroic</strong></td><td style="padding:12px;border:1px solid #e2e8f0">Transmit some λ, reflect others</td><td style="padding:12px;border:1px solid #e2e8f0">T>95% pass, R>99% stop</td><td style="padding:12px;border:1px solid #e2e8f0">40-80+</td></tr></tbody></table></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Writing a Coating Specification</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><p>Include these elements to prevent costly back-and-forth:</p><ol style="padding-left:20px;margin:12px 0"><li style="margin-bottom:10px"><strong>Wavelengths and bandwidth:</strong> Each wavelength with acceptable bandwidth (e.g., 532nm ±5nm)</li><li style="margin-bottom:10px"><strong>Maximum reflectance:</strong> R% per surface at each wavelength (e.g., <0.25% at 532nm)</li><li style="margin-bottom:10px"><strong>Angle of incidence:</strong> Operating angle (0° or specify exact angle)</li><li style="margin-bottom:10px"><strong>Laser damage threshold:</strong> J/cm² (pulsed) or kW/cm² (CW) at your wavelength and pulse duration</li><li style="margin-bottom:10px"><strong>Environmental requirements:</strong> Lab, industrial, or extreme (outdoor/space)</li><li style="margin-bottom:10px"><strong>Substrate material:</strong> BK7, UV fused silica, CaF2 — affects coating material choices</li></ol><div style="background:#fef3c7;border-left:4px solid #d97706;padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0"><strong style="color:#92400e">Common Mistake:</strong> Specifying "broadband AR 400-1100nm" when your system uses 3 discrete wavelengths. Instead specify "dual-band AR at 532nm ±10nm and 1064nm ±10nm" for simpler, cheaper, higher-performance results.</div></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Deposition: IAD vs IBS</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px"><thead><tr style="background:#f1f5f9"><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">Parameter</th><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">IAD</th><th style="padding:12px;border:1px solid #e2e8f0;color:#1e3a5f">IBS</th></tr></thead><tbody><tr><td style="padding:12px;border:1px solid #e2e8f0">Surface roughness</td><td style="padding:12px;border:1px solid #e2e8f0">0.3-0.5nm Ra</td><td style="padding:12px;border:1px solid #e2e8f0"><0.2nm Ra</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0">LDT (1064nm)</td><td style="padding:12px;border:1px solid #e2e8f0">10-20 J/cm²</td><td style="padding:12px;border:1px solid #e2e8f0">30-50 J/cm²</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0">Cost</td><td style="padding:12px;border:1px solid #e2e8f0">Standard</td><td style="padding:12px;border:1px solid #e2e8f0">2-3x IAD</td></tr><tr><td style="padding:12px;border:1px solid #e2e8f0">Best for</td><td style="padding:12px;border:1px solid #e2e8f0">Most applications</td><td style="padding:12px;border:1px solid #e2e8f0">High-power lasers, metrology</td></tr></tbody></table></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Verification</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><p>When receiving coated optics, verify before installation:</p><ol style="padding-left:20px;margin:12px 0"><li style="margin-bottom:10px"><strong>Spectral measurement:</strong> UV-VIS-NIR spectrophotometer to measure transmission at design wavelengths</li><li style="margin-bottom:10px"><strong>Visual inspection:</strong> Under white light at 45°, AR surfaces show characteristic residual color — should be uniform across clear aperture</li><li style="margin-bottom:10px"><strong>Power throughput test:</strong> Measure input vs transmitted power at each wavelength, calculate actual loss per surface</li><li style="margin-bottom:10px"><strong>Laser damage test:</strong> Request witness samples, perform 1-on-1 or R-on-1 testing per ISO 21254</li></ol><div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0"><strong style="color:#166534">Summary:</strong> Multi-wavelength AR coatings are proven technology. Write a clear specification stating exact wavelengths, max reflectance, and power requirements. Don't over-specify — a coating designed for your exact needs will be cheaper, more durable, and higher-performing.</div></div>
+    </div></section>
+
+    <section style="padding:60px 0;background:#f8fafc"><div class="container">
+        <h2 style="text-align:center;font-size:28px;color:#1e3a5f;margin-bottom:12px">Frequently Asked Questions</h2>
+        <p style="text-align:center;color:#64748b;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto">Common questions from optical engineers and procurement teams.</p>
+        <div style="max-width:800px;margin:0 auto">
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>What is the difference between single-wavelength and broadband AR coatings?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Single-wavelength AR coatings are optimized for minimum reflection at one specific wavelength (typically <0.1% R). Broadband coatings maintain low reflectance across a range (e.g., 400-700nm), but achieve higher residual R (typically 0.25-0.5% per surface). For multi-wavelength systems, multi-band coatings combine transmission bands at specific lines.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>What laser damage threshold should I expect from AR coatings?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Standard IAD coatings on fused silica typically achieve 10-20 J/cm² at 1064nm (10ns pulse). For CW applications, the thermal threshold is typically >10 kW/cm². Always specify wavelength, pulse duration or CW power density, and beam diameter.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>Can AR coatings work at angles other than 0°?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Yes, but the design must account for the angle. Coatings optimized for 0° shift to shorter wavelengths at oblique angles (~5-15nm at 15°). For fixed-angle optics, specify the AOI in coating requirements.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>How do I verify AR coating performance?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Use a UV-VIS-NIR spectrophotometer to measure transmission/reflectance. For production, compare incident vs transmitted power at each wavelength with a calibrated power meter.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>What durability can I expect from optical coatings?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Modern IAD and IBS coatings withstand MIL-PRF-13830B adhesion tests, humidity (95% RH, 48hr), and temperature cycling (-40°C to +85°C). For harsh environments, specify protective overcoats.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>Should I coat both surfaces?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">For windows and intra-cavity optics, coat both surfaces to prevent etalon effects. For beam splitters, typically only the functional surface receives the coating.</div>
+                </details></div>
+        </div></div></section>
+
+    <section style="padding:50px 0;border-top:1px solid #e2e8f0"><div class="container">
+        <h3 style="font-size:22px;color:#1e3a5f;margin-bottom:24px;text-align:center">Related PhotonEdge Products</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:900px;margin:0 auto">
+            <a href="/products/uv-fused-silica-window/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">UV Fused Silica Windows</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+            <a href="/products/1064nm-laser-line-mirrors/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">Laser Line Mirrors</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+            <a href="/products/bk7-plano-convex/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">BK7 Plano-Convex Lenses</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+        </div></div></section>
+
+    <section style="padding:70px 0;background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);text-align:center;color:white">
+        <div class="container">
+            <h2 style="color:white;margin-bottom:14px;font-size:28px">Need Help Selecting Optical Components?</h2>
+            <p style="color:rgba(255,255,255,0.9);margin-bottom:30px;font-size:16px;max-width:550px;margin-left:auto;margin-right:auto">Send us your requirements. Our engineers respond within 24 hours.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                <a href="/contact.html" class="btn btn-primary" style="padding:14px 32px;border-radius:8px;font-size:15px;background:white;color:#1e3a5f;text-decoration:none;font-weight:600">Request Engineering Review</a>
+                <a href="/ai-optical-engineer.html" class="btn" style="padding:14px 32px;border-radius:8px;font-size:15px;border:1px solid rgba(255,255,255,0.4);color:white;text-decoration:none">Ask AI Optical Engineer</a>
+            </div>
+        </div>
+    </section>
+<script src="/js/blog-data.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof updatePageTranslations === 'function') updatePageTranslations();
+        });
+    </script>
+    <script>
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) {
+            navList.classList.toggle('active');
+        }
+    }
+    </script>
+    
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>

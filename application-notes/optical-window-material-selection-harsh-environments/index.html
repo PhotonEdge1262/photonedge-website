@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Window Material Selection for Harsh Environments</title>
+    <meta name="description" content="Engineering guide for selecting window materials for extreme temperatures, chemical exposure, high pressure, vacuum, and abrasion. Covers sapphire, ZnSe, CaF2, fused silica.">
+    <meta property="og:title" content="Optical Window Material Selection for Harsh Environments">
+    <meta property="og:description" content="Engineering guide for selecting window materials for extreme temperatures, chemical exposure, high pressure, vacuum, and abrasion. Covers sapphire, ZnSe, CaF2, fused silica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://photonedgeoptics.com/application-notes/optical-window-material-selection-harsh-environments/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/application-notes/optical-window-material-selection-harsh-environments/">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/application-notes/optical-window-material-selection-harsh-environments/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/applications/laser-optics/?lang=zh">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Optical Window Material Selection for Harsh Environments">
+    <meta name="twitter:description" content="Engineering guide for selecting window materials for extreme temperatures, chemical exposure, high pressure, vacuum, and abrasion. Covers sapphire, ZnSe, CaF2, fused silica.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Laser Optics Solutions", "item": "https://photonedgeoptics.com/applications/laser-optics/"}
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Laser Optics Solutions | PhotonEdge Optics",
+        "description": "Precision optical components engineered for laser optics solutions applications.",
+        "url": "https://photonedgeoptics.com/applications/laser-optics/"
+    }
+    </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What optical material should I use for a CO2 laser at 10.6 μm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ZnSe is the standard choice. It offers excellent transmission at 10.6 μm with good thermal conductivity. For lower-power CO2 systems (< 100 W), high-resistivity silicon can also work as a more economical alternative."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I choose a laser window for my system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with wavelength compatibility. Then evaluate: power/energy density for thermal management, whether AR coating is required, surface quality requirements (40-20 for beam delivery, 20-10 for intra-cavity), and mounting method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is LIDT and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LIDT is Laser-Induced Damage Threshold — the maximum power density (W/cm2 for CW) or energy density (J/cm2 for pulsed) an optic can withstand. Always specify LIDT with test conditions: pulse duration, beam diameter, wavelength, and measurement standard (ISO 21254)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use AR coating vs. HR coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AR coatings go on transmissive optics (windows, lenses) to minimize reflection loss. HR coatings go on mirrors. For intra-cavity optics, you may need both."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the same optic handle both CW and pulsed laser operation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily without re-evaluation. CW is limited by steady-state thermal effects. Pulsed is limited by peak fluence at the coating interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does my UV laser optic degrade over time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UV wavelengths carry high photon energy that breaks chemical bonds in optical materials, creating color centers (solarization) that increase absorption. Mitigation: UV-grade fused silica, hydrogen loading, and UV-durable coatings."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Laser Optics Solutions - Material Selection & Coating Guide",
+  "description": "Engineering guide for selecting optical components in laser systems: material properties, coating design, thermal management, and LIDT considerations.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge Optics",
+    "url": "https://photonedgeoptics.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/applications/laser-optics/index.html"
+  }
+}
+</script>
+
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://photonedgeoptics.com/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Application Notes",
+            "item": "https://photonedgeoptics.com/application-notes/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Optical Window Material Selection for Harsh Environments",
+            "item": "https://photonedgeoptics.com/application-notes/optical-window-material-selection-harsh-environments/"
+        }
+    ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Optical Window Material Selection for Harsh Environments",
+    "description": "Engineering guide for selecting window materials for extreme temperatures, chemical exposure, high pressure, vacuum, and abrasion. Covers sapphire, ZnSe, CaF2, fused silica.",
+    "url": "https://photonedgeoptics.com/application-notes/optical-window-material-selection-harsh-environments/",
+    "author": {
+        "@type": "Organization",
+        "name": "PhotonEdge Optics"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "PhotonEdge Optics",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://photonedgeoptics.com/images/logo.webp"
+        }
+    },
+    "datePublished": "2026-08-23",
+    "dateModified": "2026-08-23"
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "When should I choose sapphire over fused silica?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Choose sapphire for superior hardness (9 Mohs \u2014 5x harder than silica), better thermal conductivity (35 vs 1.4 W/m\u00b7K), or operation above 1000\u00b0C. Fused silica is better for UV <200nm, lower cost, or larger sizes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What window material works for CO2 lasers at 10.6 \u03bcm?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ZnSe is standard \u2014 >68% transmission at 10.6\u03bcm uncoated. For lower-power systems, silicon is a cheaper alternative."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can windows survive autoclave sterilization?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sapphire handles autoclave conditions (121\u00b0C, 2 atm) indefinitely. Fused silica also survives. CaF2 is not recommended for repeated autoclave cycling."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Best window material for vacuum chambers?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Fused silica and BK7 are standard for vacuum windows. Calculate thickness based on diameter, pressure differential, and safety factor of 4:1 minimum."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How to specify windows for abrasive environments?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sapphire is first choice (9H hardness). For large sizes, use chemically strengthened glass with protective coating."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "What temperature limits for optical windows?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BK7: ~350\u00b0C continuous. Fused silica: >1000\u00b0C. Sapphire: to 1800\u00b0C. ZnSe: ~150\u00b0C. CaF2: ~400\u00b0C. Always check coating limits too."
+            }
+        }
+    ]
+}
+    </script>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
+                <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link active" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-wrapper">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="/">Home</a>
+                <span class="breadcrumb-separator">/</span>
+                <a href="/applications.html">Applications</a>
+                <span class="breadcrumb-separator">/</span>
+                <span>Laser Optics Solutions</span>
+            </nav>
+        </div>
+    </div>
+
+    <div class="request-quote-float">
+        <a href="/contact.html" class="quote-btn">
+            <span class="quote-icon">&#9993;</span>
+            <span>Request Engineering Review</span>
+        </a>
+    </div>
+
+    
+    <div class="breadcrumb-wrapper"><div class="container"><nav class="breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/application-notes/">Application Notes</a>
+        <span class="breadcrumb-separator">/</span>
+        <span>Optical Window Material Selection for Harsh Environments</span>
+    </nav></div></div>
+
+    <div class="request-quote-float"><a href="/contact.html" class="quote-btn"><span class="quote-icon">&#9993;</span><span>Request Engineering Review</span></a></div>
+
+    <section style="padding:50px 0 30px;background:linear-gradient(to bottom,#f8fafc,white)"><div class="container" style="max-width:800px">
+        <div style="margin-bottom:16px"><span style="background:#1e3a5f;color:white;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px">APPLICATION NOTE</span></div>
+        <h1 style="font-size:32px;color:#1e3a5f;margin-bottom:16px;line-height:1.3">Optical Window Material Selection for Harsh Environments</h1>
+        <p style="color:#475569;font-size:17px;line-height:1.7;margin-bottom:20px">Engineering guide for selecting window materials for extreme temperatures, chemical exposure, high pressure, vacuum, and abrasion. Covers sapphire, ZnSe, CaF2, fused silica.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px"><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Materials</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Windows</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Harsh Environment</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">Sapphire</span><span style="background:#eff6ff;color:#1d4ed8;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:500">ZnSe</span></div>
+        <div style="display:flex;gap:24px;color:#94a3b8;font-size:13px;padding-bottom:24px;border-bottom:1px solid #e2e8f0">
+            <span>Published: August 23, 2026</span><span>By PhotonEdge Engineering Team</span><span>~8 min read</span>
+        </div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">The Selection Framework</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><p>Window material selection balances five requirements: optical transmission, mechanical strength, thermal performance, chemical resistance, and cost.</p><p>No single material excels in all five. The decision is about finding the best compromise for your specific application.</p></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Material Comparison</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:13px;min-width:700px"><thead><tr style="background:#f1f5f9"><th style="padding:10px 12px;border:1px solid #e2e8f0;color:#1e3a5f">Property</th><th style="padding:10px;border:1px solid #e2e8f0;color:#1e3a5f;text-align:center">BK7</th><th style="padding:10px;border:1px solid #e2e8f0;color:#1e3a5f;text-align:center">Fused Silica</th><th style="padding:10px;border:1px solid #e2e8f0;color:#1e3a5f;text-align:center">Sapphire</th><th style="padding:10px;border:1px solid #e2e8f0;color:#1e3a5f;text-align:center">CaF2</th><th style="padding:10px;border:1px solid #e2e8f0;color:#1e3a5f;text-align:center">ZnSe</th></tr></thead><tbody><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Transmission</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">350-2000nm</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">180-2100nm</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">150-5500nm</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">130-9000nm</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">500-20000nm</td></tr><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Hardness (Mohs)</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~6</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~6</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">9</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">3</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~4</td></tr><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Max temp</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~350°C</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">>1000°C</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~1800°C</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~400°C</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">~150°C</td></tr><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Thermal shock</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Moderate</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Excellent</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Excellent</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Poor</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Good</td></tr><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Chemical resistance</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Good</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Excellent</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Excellent</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Poor</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">Good</td></tr><tr><td style="padding:10px 12px;border:1px solid #e2e8f0"><strong>Relative cost</strong></td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">$</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">$$</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">$$$</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">$$$$</td><td style="padding:10px;border:1px solid #e2e8f0;text-align:center">$$$$</td></tr></tbody></table></div></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Decision Matrix</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0"><div style="background:#fef3c7;border-radius:10px;padding:20px"><h4 style="color:#92400e;margin-bottom:12px">High Temperature (>500°C)</h4><p style="font-size:13px;margin:0"><strong>Best:</strong> Sapphire. <strong>Good:</strong> Fused silica. <strong>Avoid:</strong> BK7, ZnSe</p></div><div style="background:#dbeafe;border-radius:10px;padding:20px"><h4 style="color:#1e40af;margin-bottom:12px">Hardness / Abrasion</h4><p style="font-size:13px;margin:0"><strong>Best:</strong> Sapphire (Mohs 9). <strong>Good:</strong> Fused silica. <strong>Avoid:</strong> CaF2, ZnSe</p></div><div style="background:#fce7f3;border-radius:10px;padding:20px"><h4 style="color:#9d174d;margin-bottom:12px">Chemical Exposure</h4><p style="font-size:13px;margin:0"><strong>Best:</strong> Sapphire. <strong>Good:</strong> Fused silica (avoid HF). <strong>Special:</strong> CaF2 for HF</p></div><div style="background:#d1fae5;border-radius:10px;padding:20px"><h4 style="color:#065f46;margin-bottom:12px">Thermal Shock</h4><p style="font-size:13px;margin:0"><strong>Best:</strong> Fused silica. <strong>Good:</strong> Sapphire. <strong>Avoid:</strong> CaF2</p></div></div></div>
+    </div></section>
+
+    <section style="padding:30px 0"><div class="container" style="max-width:800px">
+        <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid #e2e8f0">Thickness Calculation</h2>
+        <div style="color:#334155;font-size:15px;line-height:1.8"><p>For flat windows under pressure differential, use: <code style='background:#f1f5f9;padding:2px 8px;border-radius:4px'>t = K × D × √(ΔP / σ)</code></p><p>Always apply safety factor ≥ 4:1. For vacuum, atmospheric pressure (101.3 kPa) acts on the window — a 50mm aperture sees ~200N force.</p><div style="background:#fef2f2;border-left:4px solid #dc2626;padding:20px 24px;border-radius:0 8px 8px 0;margin:24px 0"><strong style="color:#991b1b">Critical:</strong> This simplified formula assumes uniform pressure on a flat disc. For critical applications, have thickness verified by a qualified engineer and perform proof pressure testing.</div></div>
+    </div></section>
+
+    <section style="padding:60px 0;background:#f8fafc"><div class="container">
+        <h2 style="text-align:center;font-size:28px;color:#1e3a5f;margin-bottom:12px">Frequently Asked Questions</h2>
+        <p style="text-align:center;color:#64748b;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto">Common questions from optical engineers and procurement teams.</p>
+        <div style="max-width:800px;margin:0 auto">
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>When should I choose sapphire over fused silica?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Choose sapphire for superior hardness (9 Mohs — 5x harder than silica), better thermal conductivity (35 vs 1.4 W/m·K), or operation above 1000°C. Fused silica is better for UV <200nm, lower cost, or larger sizes.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>What window material works for CO2 lasers at 10.6 μm?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">ZnSe is standard — >68% transmission at 10.6μm uncoated. For lower-power systems, silicon is a cheaper alternative.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>Can windows survive autoclave sterilization?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Sapphire handles autoclave conditions (121°C, 2 atm) indefinitely. Fused silica also survives. CaF2 is not recommended for repeated autoclave cycling.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>Best window material for vacuum chambers?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Fused silica and BK7 are standard for vacuum windows. Calculate thickness based on diameter, pressure differential, and safety factor of 4:1 minimum.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>How to specify windows for abrasive environments?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">Sapphire is first choice (9H hardness). For large sizes, use chemically strengthened glass with protective coating.</div>
+                </details></div>
+            <div style="background:white;border-radius:12px;margin-bottom:16px;border:1px solid #e2e8f0;overflow:hidden">
+                <details><summary style="padding:20px 24px;font-weight:600;color:#1e293b;cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between;align-items:center"><span>What temperature limits for optical windows?</span><span style="color:#3b82f6;font-size:20px;flex-shrink:0;margin-left:16px">+</span></summary>
+                    <div style="padding:0 24px 20px;color:#475569;font-size:14px;line-height:1.7;border-top:1px solid #f1f5f9">BK7: ~350°C continuous. Fused silica: >1000°C. Sapphire: to 1800°C. ZnSe: ~150°C. CaF2: ~400°C. Always check coating limits too.</div>
+                </details></div>
+        </div></div></section>
+
+    <section style="padding:50px 0;border-top:1px solid #e2e8f0"><div class="container">
+        <h3 style="font-size:22px;color:#1e3a5f;margin-bottom:24px;text-align:center">Related PhotonEdge Products</h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;max-width:900px;margin:0 auto">
+            <a href="/products/sapphire-window/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">Sapphire Windows</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+            <a href="/products/znse-window/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">ZnSe Windows</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+            <a href="/products/uv-fused-silica-window/" style="display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-decoration:none;color:#1e293b"><div style="font-weight:600;font-size:14px;margin-bottom:6px">UV Fused Silica Windows</div><div style="font-size:12px;color:#3b82f6">View Product Details →</div></a>
+        </div></div></section>
+
+    <section style="padding:70px 0;background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);text-align:center;color:white">
+        <div class="container">
+            <h2 style="color:white;margin-bottom:14px;font-size:28px">Need Help Selecting Optical Components?</h2>
+            <p style="color:rgba(255,255,255,0.9);margin-bottom:30px;font-size:16px;max-width:550px;margin-left:auto;margin-right:auto">Send us your requirements. Our engineers respond within 24 hours.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                <a href="/contact.html" class="btn btn-primary" style="padding:14px 32px;border-radius:8px;font-size:15px;background:white;color:#1e3a5f;text-decoration:none;font-weight:600">Request Engineering Review</a>
+                <a href="/ai-optical-engineer.html" class="btn" style="padding:14px 32px;border-radius:8px;font-size:15px;border:1px solid rgba(255,255,255,0.4);color:white;text-decoration:none">Ask AI Optical Engineer</a>
+            </div>
+        </div>
+    </section>
+<script src="/js/blog-data.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof updatePageTranslations === 'function') updatePageTranslations();
+        });
+    </script>
+    <script>
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) {
+            navList.classList.toggle('active');
+        }
+    }
+    </script>
+    
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+
+<script>
+function renderAppRelatedArticles() {
+    var container = document.getElementById('v90AppRelatedArticles');
+    if (!container || typeof BLOG_POSTS === 'undefined') return;
+    var slugs = container.getAttribute('data-slugs').split(',');
+    var useZh = localStorage.getItem('lang') === 'zh';
+    var html = '';
+    for (var i = 0; i < slugs.length; i++) {
+        var slug = slugs[i].trim();
+        var post = null;
+        for (var j = 0; j < BLOG_POSTS.length; j++) {
+            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
+        }
+        if (!post) continue;
+        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
+        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
+        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
+        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
+        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
+        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
+        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '</a>';
+    }
+    container.innerHTML = html;
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
+} else {
+    renderAppRelatedArticles();
+}
+</script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>
