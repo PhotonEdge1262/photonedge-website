@@ -16,7 +16,7 @@ en: {
         whyPE2Title: "Custom Solutions",
         whyPE2Desc: "From prototype to volume production, any specification \u2014 we design and manufacture to your exact requirements",
         whyPE3Title: "Quality Assured",
-        whyPE3Desc: "ISO 9001 & 14001 certified with full inspection reports \u2014 every component meets your specifications",
+        whyPE3Desc: "ISO 9001:2015 & ISO 13485 certified with full inspection reports \u2014 every component meets your specifications",
         whyPE4Title: "Global Delivery",
         whyPE4Desc: "Reliable shipping to North America, Europe, and Asia \u2014 on-time delivery you can count on",
         // V81 - Home Industries
@@ -116,8 +116,6 @@ en: {
         filterCompany: "Company",
         blogSemiconductorInspection: "Precision Optical Components in Semiconductor Inspection",
         blogSemiconductorInspectionExcerpt: "An in-depth guide to the precision optical components essential for semiconductor inspection systems.",
-        newsIso14001: "PhotonEdge Achieves  Environmental Management Certification",
-        newsIso14001Excerpt: "PhotonEdge has successfully achieved :2015 certification for environmental management systems.",
         categorySemiconductor: "Semiconductor Inspection",
         blogLidarGuide: "LiDAR Optical Components Selection Guide",
         blogLidarGuideExcerpt: "Comprehensive guide to selecting optical components for LiDAR systems including MEMS mirrors, collimating lenses, and narrowband filters.",
@@ -990,8 +988,8 @@ en: {
         footerContact: "Contact",
         footerProducts: "Products",
         isoBadgeText: "ISO",
-        isoCertified: "ISO 9001:2015 Certified",
-        isoCertifiedDesc: "Quality Management System certified for precision optical component manufacturing.",
+        isoCertified: "ISO 9001:2015 & ISO 13485 Certified",
+        isoCertifiedDesc: "Quality and medical device management systems certified for precision optical component manufacturing.",
 
         // === Optomechanics ===
         optomechBasePlates: "Base Plates",
@@ -1148,7 +1146,7 @@ en: {
         // V82 - Trust Bar
         trustBar1Num: "2,500+",
         trustBar1Label: "Components Delivered",
-        trustBar2Num: "ISO 9001 & 14001",
+        trustBar2Num: "ISO 9001 & ISO 13485",
         trustBar2Label: "Certified",
         trustBar3Num: "48h",
         trustBar3Label: "Prototype Turnaround",
@@ -1778,7 +1776,7 @@ en: {
         "whyPE2Title": "定制方案",
         "whyPE2Desc": "从原型到量产，任何规格 —— 我们按您的精确要求设计和制造",
         "whyPE3Title": "质量保证",
-        "whyPE3Desc": "ISO 9001和14001认证，提供完整检验报告 —— 每个元件都符合您的规格",
+        "whyPE3Desc": "ISO 9001:2015和ISO 13485认证，提供完整检验报告 —— 每个元件都符合您的规格",
         "whyPE4Title": "全球交付",
         "whyPE4Desc": "可靠运送至北美、欧洲和亚洲 —— 准时交付值得信赖",
         // V81 - Home Industries
@@ -2698,8 +2696,8 @@ en: {
     "footerContact": "联系方式",
     "footerProducts": "产品",
     "isoBadgeText": "ISO",
-    "isoCertified": "ISO 9001:2015认证",
-    "isoCertifiedDesc": "精密光学元件制造质量管理体系认证。",
+    "isoCertified": "ISO 9001:2015 & ISO 13485认证",
+    "isoCertifiedDesc": "精密光学元件制造质量与医疗器械管理体系认证。",
 
     // === 光机元件 ===
     "optomechBasePlates": "基板",
@@ -2856,7 +2854,7 @@ en: {
         // V82 - Trust Bar
         "trustBar1Num": "2,500+",
         "trustBar1Label": "\u5df2\u4ea4\u4ed8\u5143\u4ef6",
-        "trustBar2Num": "ISO 9001 & 14001",
+        "trustBar2Num": "ISO 9001 & ISO 13485",
         "trustBar2Label": "\u8ba4\u8bc1",
         "trustBar3Num": "48\u5c0f\u65f6",
         "trustBar3Label": "\u539f\u578b\u5468\u8f6c",

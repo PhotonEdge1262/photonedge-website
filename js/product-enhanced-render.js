@@ -104,30 +104,107 @@ var ProductEnhancedRender = (function() {
     }
 
     // ============================================================
-    // Materials Section
     // ============================================================
-    function renderMaterials(enh, lang) {
+    // Materials Section - Knowledge Graph Edition
+    // Shows available materials with descriptions and links to material pages
+    // ============================================================
+    function renderMaterials(enh, lang, componentType) {
         if (!enh) return '';
+        
+        // Material database with descriptions and links
+        var MATERIAL_DB = {
+            "BK7": {
+                slug: "bk7",
+                desc: { en: "General-purpose visible/NIR glass, excellent homogeneity, cost-effective.", zh: "通用可见/近红外玻璃，均匀性好，性价比高。" }
+            },
+            "UV Fused Silica": {
+                slug: "uv-fused-silica",
+                desc: { en: "Superb UV transmission, high laser damage threshold, low thermal expansion.", zh: "优异的紫外透过率，高激光损伤阈值，低热膨胀。" }
+            },
+            "CaF2": {
+                slug: "caf2",
+                desc: { en: "Deep UV to mid-IR transmission, low dispersion, ideal for broadband.", zh: "深紫外到中红外透过，低色散，适合宽带应用。" }
+            },
+            "Sapphire": {
+                slug: "sapphire",
+                desc: { en: "Extremely hard and durable, UV to mid-IR, scratch resistant.", zh: "极高硬度和耐用性，紫外到中红外，耐刮擦。" }
+            },
+            "ZnSe": {
+                slug: "znse",
+                desc: { en: "Excellent IR transmission, ideal for CO2 laser and thermal imaging.", zh: "优异的红外透过，理想用于CO2激光和热成像。" }
+            },
+            "Germanium": {
+                slug: "germanium",
+                desc: { en: "High refractive index IR material, ideal for MWIR/LWIR imaging.", zh: "高折射率红外材料，理想用于中波/长波红外成像。" }
+            },
+            "Silicon": {
+                slug: "silicon",
+                desc: { en: "Lightweight NIR/SWIR material, good thermal conductivity.", zh: "轻质近红外/短波红外材料，良好的导热性。" }
+            },
+            "Quartz": {
+                slug: "uv-fused-silica",
+                desc: { en: "Birefringent crystal for waveplates and polarization optics.", zh: "双折射晶体，用于波片和偏振光学。" }
+            }
+        };
+        
+        // Default materials by component type
+        var DEFAULT_MATERIALS = {
+            "Lens": ["BK7", "UV Fused Silica", "CaF2", "Sapphire"],
+            "Window": ["BK7", "UV Fused Silica", "Sapphire", "ZnSe"],
+            "Mirror": ["UV Fused Silica", "BK7", "Silicon"],
+            "Filter": ["BK7", "UV Fused Silica", "Sapphire"],
+            "Prism": ["BK7", "UV Fused Silica", "CaF2"],
+            "Beamsplitter": ["BK7", "UV Fused Silica"],
+            "Waveplate": ["UV Fused Silica", "Quartz"],
+            "Polarizer": ["UV Fused Silica", "Quartz"],
+            "Accessory": ["BK7", "UV Fused Silica"],
+            "Mount": ["BK7"]
+        };
+        
+        // Determine materials list
         var materials = getField(enh, 'materials', lang);
-        if (!materials || !materials.length) return '';
-
-        var title = lang === 'zh' ? '材料选项' : 'Available Materials';
-        var html = '<section class="enh-section enh-materials">' +
+        if (!materials || !materials.length) {
+            materials = DEFAULT_MATERIALS[componentType] || ["BK7", "UV Fused Silica"];
+        }
+        
+        var title = lang === 'zh' ? '可选光学材料' : 'Available Optical Materials';
+        var html = '<section class="enh-section enh-materials" style="background: #f8fafc;">' +
             '<div class="container">' +
             '<h2 class="enh-section-title">' + title + '</h2>' +
-            '<div class="enh-materials-grid">';
-
+            '<p style="color:#64748b;text-align:center;max-width:600px;margin:0 auto 24px;font-size:14px;">' +
+            (lang === 'zh' ? '根据您的波长、环境和预算要求选择最佳基底材料。' : 'Select the optimal substrate material based on your wavelength, environment, and budget requirements.') +
+            '</p>' +
+            '<div class="enh-materials-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">';
+        
         for (var i = 0; i < materials.length; i++) {
-            html += '<div class="enh-material-item">' +
-                '<span class="enh-material-icon">◈</span>' +
-                '<span class="enh-material-name">' + materials[i] + '</span>' +
-                '</div>';
+            var matName = materials[i];
+            var matInfo = MATERIAL_DB[matName];
+            var matSlug = matInfo ? matInfo.slug : 'bk7';
+            var matDesc = matInfo && matInfo.desc ? matInfo.desc[lang] || matInfo.desc.en : '';
+            
+            html += '<a href="/materials/' + matSlug + '/" class="enh-material-item" style="display:block;text-decoration:none;color:inherit;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:18px;transition:all 0.3s;">' +
+                '<div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">' +
+                '<span class="enh-material-icon" style="font-size:20px;">◈</span>' +
+                '<span class="enh-material-name" style="font-weight:600;color:#1e3a5f;font-size:15px;">' + matName + '</span>' +
+                '</div>' +
+                '<p style="color:#64748b;font-size:12px;line-height:1.5;margin:0;">' + matDesc + '</p>' +
+                '</a>';
         }
-        html += '</div></div></section>';
+        html += '</div>';
+        
+        // AI Engineer CTA
+        html += '<div style="margin-top:28px;text-align:center;">' +
+            '<p style="color:#64748b;margin-bottom:12px;font-size:14px;">' +
+            (lang === 'zh' ? '不确定选择哪种材料？' : 'Not sure which material to choose?') +
+            '</p>' +
+            '<a href="/ai-optical-engineer.html" style="display:inline-block;padding:10px 24px;background:#3b82f6;color:white;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;">' +
+            (lang === 'zh' ? '咨询AI光学工程师' : 'Ask AI Optical Engineer') +
+            ' →</a>' +
+            '</div>';
+        
+        html += '</div></section>';
         return html;
     }
-
-    // ============================================================
     // Coatings Section
     // ============================================================
     function renderCoatings(enh, lang) {
@@ -321,7 +398,7 @@ var ProductEnhancedRender = (function() {
         sectionsHtml += renderApplications(enh, lang);
         sectionsHtml += renderApplicationDetails(enh, lang);
         sectionsHtml += renderSelectionGuide(enh, lang);
-        sectionsHtml += renderMaterials(enh, lang);
+        sectionsHtml += renderMaterials(enh, lang, currentProduct.componentType);
         sectionsHtml += renderCoatings(enh, lang);
         sectionsHtml += renderFAQ(enh, lang);
         sectionsHtml += renderRelatedProducts(enh, lang);
