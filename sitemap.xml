@@ -994,4 +994,10 @@
     <loc>https://photonedgeoptics.com/product-catalog.html</loc>
     <lastmod>2026-08-24</lastmod>
   </url>
+  <url>
+    <loc>https://photonedgeoptics.com/quality-assurance.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

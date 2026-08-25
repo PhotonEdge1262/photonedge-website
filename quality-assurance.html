@@ -1,156 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
-    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quality Assurance | Optical Inspection & Quality Management | PhotonEdge Optics</title>
-    <meta name="description" content="PhotonEdge quality assurance system: incoming inspection, process control, final inspection, and packaging. Every optic is verified before shipment.">
-    <meta property="og:title" content="Quality Assurance | Optical Inspection & Quality Management | PhotonEdge Optics">
-    <meta property="og:description" content="PhotonEdge quality assurance system: incoming inspection, process control, final inspection, and packaging. Every optic is verified before shipment.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://photonedgeoptics.com/quality-assurance.html">
-    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
-    <meta property="og:site_name" content="PhotonEdge">
+    <title>Quality Assurance | PhotonEdge Optics - ISO Certified Inspection & Testing</title>
+    <meta name="description" content="PhotonEdge quality assurance: ISO 9001:2015 and ISO 13485 certified. 100% inspection with interferometry, spectrophotometry, and full traceability on every optical component.">
+    <meta name="keywords" content="optical quality assurance, ISO 9001 optics, optical inspection, interferometry testing, spectrophotometry, coating verification, laser damage threshold">
     <link rel="canonical" href="https://photonedgeoptics.com/quality-assurance.html">
-    <link rel="stylesheet" href="/css/style.css">
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-E6J791MXZY');
-    </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/quality-assurance.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/applications/laser-optics/?lang=zh">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Quality Assurance | Optical Inspection & Quality Management | PhotonEdge Optics">
-    <meta name="twitter:description" content="PhotonEdge quality assurance system: incoming inspection, process control, final inspection, and packaging. Every optic is verified before shipment.">
-    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
-    <link rel="stylesheet" href="/css/chatbot.css">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Laser Optics Solutions", "item": "https://photonedgeoptics.com/applications/laser-optics/"}
-        ]
-    }
-    </script>
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/quality-assurance.html">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    <style>
+        .qa-hero{background:linear-gradient(135deg,#0f2b46 0%,#1a4971 50%,#1e5a8a 100%);color:white;padding:100px 0 80px;text-align:center}
+        .qa-hero h1{font-size:42px;margin-bottom:16px;font-weight:700}
+        .qa-hero p{font-size:18px;opacity:.85;max-width:680px;margin:0 auto}
+        .qa-section{padding:60px 0}
+        .qa-section h2{font-size:28px;color:#1e3a5f;margin-bottom:12px}
+        .qa-section .subtitle{color:#64748b;font-size:16px;margin-bottom:32px}
+        .qa-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+        .qa-card{background:white;border:1px solid #e2e8f0;border-radius:12px;padding:28px;transition:box-shadow .2s}
+        .qa-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08)}
+        .qa-card h3{font-size:18px;color:#1e3a5f;margin-bottom:8px}
+        .qa-card p{font-size:14px;color:#64748b;line-height:1.6}
+        .qa-card .icon{font-size:32px;margin-bottom:12px}
+        .qa-process{background:#f8fafc}
+        .qa-process-steps{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+        .qa-step{background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;width:160px;text-align:center}
+        .qa-step .step-num{width:36px;height:36px;background:#1e5a8a;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;margin:0 auto 12px}
+        .qa-step h4{font-size:13px;color:#1e3a5f;margin-bottom:4px}
+        .qa-step p{font-size:11px;color:#94a3b8}
+        .qa-cert-banner{background:linear-gradient(135deg,#1e3a5f,#1e5a8a);color:white;padding:48px 0;text-align:center}
+        .qa-cert-banner h2{font-size:28px;margin-bottom:16px}
+        .qa-cert-logos{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:24px}
+        .qa-cert-item{text-align:center}
+        .qa-cert-item .cert-icon{font-size:36px;margin-bottom:8px}
+        .qa-cert-item p{font-size:14px;opacity:.9}
+        .qa-table{width:100%;border-collapse:collapse;margin:24px 0}
+        .qa-table th{background:#1e3a5f;color:white;padding:12px 16px;text-align:left;font-size:14px}
+        .qa-table td{padding:12px 16px;border-bottom:1px solid #e2e8f0;font-size:14px;color:#475569}
+        .qa-table tr:nth-child(even){background:#f8fafc}
+        .qa-cta{background:#f0f9ff;padding:48px 0;text-align:center}
+        .qa-cta h2{font-size:24px;color:#1e3a5f;margin-bottom:12px}
+        .qa-cta p{color:#64748b;margin-bottom:24px}
+    </style>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "Laser Optics Solutions | PhotonEdge Optics",
-        "description": "Precision optical components engineered for laser optics solutions applications.",
-        "url": "https://photonedgeoptics.com/applications/laser-optics/"
+        "name": "Quality Assurance - PhotonEdge Optics",
+        "description": "PhotonEdge quality assurance system: ISO 9001:2015 and ISO 13485 certified with full inspection and traceability.",
+        "url": "https://photonedgeoptics.com/quality-assurance.html",
+        "publisher": {"@type": "Organization", "name": "PhotonEdge Optics", "url": "https://photonedgeoptics.com"}
     }
     </script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What optical material should I use for a CO2 laser at 10.6 μm?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ZnSe is the standard choice. It offers excellent transmission at 10.6 μm with good thermal conductivity. For lower-power CO2 systems (< 100 W), high-resistivity silicon can also work as a more economical alternative."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I choose a laser window for my system?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Start with wavelength compatibility. Then evaluate: power/energy density for thermal management, whether AR coating is required, surface quality requirements (40-20 for beam delivery, 20-10 for intra-cavity), and mounting method."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is LIDT and why does it matter?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "LIDT is Laser-Induced Damage Threshold — the maximum power density (W/cm2 for CW) or energy density (J/cm2 for pulsed) an optic can withstand. Always specify LIDT with test conditions: pulse duration, beam diameter, wavelength, and measurement standard (ISO 21254)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "When should I use AR coating vs. HR coating?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AR coatings go on transmissive optics (windows, lenses) to minimize reflection loss. HR coatings go on mirrors. For intra-cavity optics, you may need both."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can the same optic handle both CW and pulsed laser operation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Not necessarily without re-evaluation. CW is limited by steady-state thermal effects. Pulsed is limited by peak fluence at the coating interface."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why does my UV laser optic degrade over time?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "UV wavelengths carry high photon energy that breaks chemical bonds in optical materials, creating color centers (solarization) that increase absorption. Mitigation: UV-grade fused silica, hydrogen loading, and UV-durable coatings."
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Laser Optics Solutions - Material Selection & Coating Guide",
-  "description": "Engineering guide for selecting optical components in laser systems: material properties, coating design, thermal management, and LIDT considerations.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "PhotonEdge Optics",
-    "url": "https://photonedgeoptics.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://photonedgeoptics.com/applications/laser-optics/index.html"
-  }
-}
-</script>
-
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://photonedgeoptics.com/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Quality Assurance",
-            "item": "https://photonedgeoptics.com/quality-assurance.html"
-        }
-    ]
-}
-    </script>
+</head>
 <body>
     <header class="header">
         <div class="container">
@@ -165,379 +69,247 @@
                 
                 <ul class="nav-list">
                     <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
-                    <li><a href="/applications.html" class="nav-link active" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
                     <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
                     <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
                     <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
                     <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
                     <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
                 </ul>
+                <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    <span class="cart-badge" id="compareBadge">0</span>
+                </a>
                 <a href="/cart.html" class="cart-icon" title="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                     <span class="cart-badge" id="cartBadge">0</span>
                 </a>
                 <div class="lang-switcher">
-                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
-                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+                    <button class="lang-btn notranslate active" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn notranslate" onclick="setLanguage('zh')">中文</button>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-wrapper">
+    <section class="qa-hero">
         <div class="container">
-            <nav class="breadcrumb">
-                <a href="/">Home</a>
-                <span class="breadcrumb-separator">/</span>
-                <a href="/applications.html">Applications</a>
-                <span class="breadcrumb-separator">/</span>
-                <span>Laser Optics Solutions</span>
-            </nav>
-        </div>
-    </div>
-
-    <div class="request-quote-float">
-        <a href="/contact.html" class="quote-btn">
-            <span class="quote-icon">&#9993;</span>
-            <span>Request Engineering Review</span>
-        </a>
-    </div>
-
-    
-    <div class="breadcrumb-wrapper"><div class="container"><nav class="breadcrumb">
-        <a href="/">Home</a><span class="breadcrumb-separator">/</span>
-        <span>Quality Assurance</span>
-    </nav></div></div>
-<div class="request-quote-float"><a href="/contact.html" class="quote-btn"><span class="quote-icon">&#9993;</span><span>Request Engineering Review</span></a></div>
-
-    <!-- Hero -->
-    <section style="padding:50px 0 40px;background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);color:white;text-align:center">
-        <div class="container">
-            <span style="background:rgba(255,255,255,0.15);padding:5px 16px;border-radius:20px;font-size:12px;font-weight:600;letter-spacing:0.5px">QUALITY ASSURANCE</span>
-            <h1 style="font-size:36px;margin:20px 0 16px;line-height:1.3">Quality Is Not a Claim.<br>It Is a Measurable Process.</h1>
-            <p style="color:rgba(255,255,255,0.85);font-size:17px;max-width:650px;margin:0 auto;line-height:1.7">Every optical component we deliver goes through a documented inspection process. Here is how we ensure consistency, accuracy, and reliability — from incoming material to final packaging.</p>
+            <h1>Quality Assurance</h1>
+            <p>Every PhotonEdge component undergoes rigorous inspection at every stage of production. Our ISO-certified quality system ensures consistency, traceability, and reliability from raw material to final delivery.</p>
         </div>
     </section>
 
-    <!-- QA System Overview -->
-    <section style="padding:60px 0;background:white">
-        <div class="container" style="max-width:900px">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:12px;text-align:center">Our Quality System</h2>
-            <p style="color:#64748b;text-align:center;margin-bottom:40px;max-width:700px;margin-left:auto;margin-right:auto">We follow a five-stage inspection framework that covers the entire production lifecycle. Each stage has defined acceptance criteria, responsible personnel, and documentation requirements.</p>
-            
-            <!-- Process Flow -->
-            <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px;margin-bottom:50px">
-                <div style="background:#1e3a5f;color:white;padding:14px 24px;border-radius:10px;text-align:center;min-width:140px"><div style="font-size:24px;font-weight:700">01</div><div style="font-size:13px;margin-top:4px">Incoming<br>Inspection</div></div>
-                <div style="color:#94a3b8;font-size:20px">→</div>
-                <div style="background:#2563eb;color:white;padding:14px 24px;border-radius:10px;text-align:center;min-width:140px"><div style="font-size:24px;font-weight:700">02</div><div style="font-size:13px;margin-top:4px">Process<br>Inspection</div></div>
-                <div style="color:#94a3b8;font-size:20px">→</div>
-                <div style="background:#3b82f6;color:white;padding:14px 24px;border-radius:10px;text-align:center;min-width:140px"><div style="font-size:24px;font-weight:700">03</div><div style="font-size:13px;margin-top:4px">Final<br>Inspection</div></div>
-                <div style="color:#94a3b8;font-size:20px">→</div>
-                <div style="background:#60a5fa;color:white;padding:14px 24px;border-radius:10px;text-align:center;min-width:140px"><div style="font-size:24px;font-weight:700">04</div><div style="font-size:13px;margin-top:4px">Packaging<br>Inspection</div></div>
-                <div style="color:#94a3b8;font-size:20px">→</div>
-                <div style="background:#93c5fd;color:#1e3a5f;padding:14px 24px;border-radius:10px;text-align:center;min-width:140px"><div style="font-size:24px;font-weight:700">05</div><div style="font-size:13px;margin-top:4px">Shipping &<br>Documentation</div></div>
+    <section class="qa-cert-banner">
+        <div class="container">
+            <h2>Certifications &amp; Standards</h2>
+            <p>Our quality management system is certified to international standards, ensuring consistent quality across all products and services.</p>
+            <div class="qa-cert-logos">
+                <div class="qa-cert-item">
+                    <div class="cert-icon">&#x2705;</div>
+                    <p><strong>ISO 9001:2015</strong></p>
+                    <p>Quality Management</p>
+                </div>
+                <div class="qa-cert-item">
+                    <div class="cert-icon">&#x2705;</div>
+                    <p><strong>ISO 13485</strong></p>
+                    <p>Medical Devices QMS</p>
+                </div>
+                <div class="qa-cert-item">
+                    <div class="cert-icon">&#x2705;</div>
+                    <p><strong>RoHS &amp; REACH</strong></p>
+                    <p>Environmental Compliance</p>
+                </div>
+                <div class="qa-cert-item">
+                    <div class="cert-icon">&#x2705;</div>
+                    <p><strong>MIL-PRF-13830B</strong></p>
+                    <p>Surface Quality Standard</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Stage Details -->
-    <section style="padding:0 0 60px;background:white">
-        <div class="container" style="max-width:900px">
-            
-            <!-- Stage 1 -->
-            <div style="background:#f8fafc;border-radius:14px;padding:32px;margin-bottom:24px;border:1px solid #e2e8f0">
-                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-                    <div style="background:#1e3a5f;color:white;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0">01</div>
-                    <h3 style="font-size:22px;color:#1e3a5f;margin:0">Incoming Material Inspection</h3>
+    <section class="qa-section">
+        <div class="container">
+            <h2>8-Step Quality Process</h2>
+            <p class="subtitle">Every component follows our rigorous quality workflow from incoming material to final shipment</p>
+            <div class="qa-process-steps">
+                <div class="qa-step"><div class="step-num">1</div><h4>Incoming QC</h4><p>Raw material verification</p></div>
+                <div class="qa-step"><div class="step-num">2</div><h4>Technical Review</h4><p>Spec feasibility analysis</p></div>
+                <div class="qa-step"><div class="step-num">3</div><h4>Material Cert</h4><p>Batch traceability</p></div>
+                <div class="qa-step"><div class="step-num">4</div><h4>In-Process QC</h4><p>Dimensional checks</p></div>
+                <div class="qa-step"><div class="step-num">5</div><h4>Coating QC</h4><p>Spectral verification</p></div>
+                <div class="qa-step"><div class="step-num">6</div><h4>Final Inspection</h4><p>100% testing</p></div>
+                <div class="qa-step"><div class="step-num">7</div><h4>Documentation</h4><p>Inspection reports</p></div>
+                <div class="qa-step"><div class="step-num">8</div><h4>Packaging &amp; Ship</h4><p>Safe delivery</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qa-section" style="background:#f8fafc;">
+        <div class="container">
+            <h2>Inspection Capabilities</h2>
+            <p class="subtitle">Our metrology lab is equipped with industry-leading instruments for comprehensive optical testing</p>
+            <div class="qa-grid">
+                <div class="qa-card">
+                    <div class="icon">&#x1F50D;</div>
+                    <h3>Laser Interferometry</h3>
+                    <p>Surface figure measurement to lambda/10 (PV) and lambda/20 (RMS) using Zygo and NewView interferometers. Accurate radius, irregularity, and wavefront error characterization.</p>
                 </div>
-                <p style="color:#475569;font-size:15px;line-height:1.7;margin-bottom:16px">All raw materials and blanks are inspected before entering production. This stage prevents defective materials from affecting downstream processes.</p>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">What We Check</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>Material certificate verification (refractive index, homogeneity class)</li>
-                            <li>Visual inspection for scratches, digs, bubbles, inclusions</li>
-                            <li>Dimensional check (diameter, thickness, wedge)</li>
-                            <li>Surface flatness verification on reference flat</li>
-                        </ul>
-                    </div>
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">Equipment</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>Calibrated micrometers and calipers (±0.01mm)</li>
-                            <li>Optical flat + monochromatic light for flatness</li>
-                            <li>Magnification lamp (10x) for surface defects</li>
-                            <li>Refractometer for material verification</li>
-                        </ul>
-                    </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F4CA;</div>
+                    <h3>Spectrophotometry</h3>
+                    <p>Full spectral characterization from 190nm to 3300nm. Transmittance, reflectance, and absorption measurements with 0.1% accuracy for coating verification.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F4D0;</div>
+                    <h3>Dimensional Inspection</h3>
+                    <p>Precision measurement of diameter, thickness, wedge angle, and centering with accuracy down to +/-0.01mm using calibrated micrometers, calipers, and CMM equipment.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x2728;</div>
+                    <h3>Surface Quality (Scratch-Dig)</h3>
+                    <p>Visual inspection per MIL-PRF-13830B and ISO 10110-7 standards. Inspection under controlled lighting with calibrated reference standards from 10-5 to 80-50.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F4A1;</div>
+                    <h3>Laser Damage Threshold (LIDT) Testing</h3>
+                    <p>1-on-1 and S-on-1 laser damage testing per ISO 21254. Characterization of coating durability for high-power laser applications from UV to IR wavelengths.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F321;</div>
+                    <h3>Environmental Testing</h3>
+                    <p>Temperature cycling, humidity resistance, and adhesion testing per MIL-HDBK-348. Ensures coating reliability in harsh operating environments from -40C to +250C.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Stage 2 -->
-            <div style="background:#f8fafc;border-radius:14px;padding:32px;margin-bottom:24px;border:1px solid #e2e8f0">
-                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-                    <div style="background:#2563eb;color:white;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0">02</div>
-                    <h3 style="font-size:22px;color:#1e3a5f;margin:0">In-Process Inspection</h3>
+    <section class="qa-section">
+        <div class="container">
+            <h2>Inspection Equipment</h2>
+            <p class="subtitle">Our metrology lab instruments and their measurement capabilities</p>
+            <table class="qa-table">
+                <thead><tr><th>Equipment</th><th>Measurement</th><th>Accuracy / Range</th></tr></thead>
+                <tbody>
+                    <tr><td>Zygo GPI Interferometer</td><td>Surface figure, wavefront error</td><td>lambda/20 RMS @ 632.8nm</td></tr>
+                    <tr><td>UV-Vis-NIR Spectrophotometer</td><td>Transmittance / Reflectance</td><td>190-3300nm, +/-0.1%</td></tr>
+                    <tr><td>Digital Microscope System</td><td>Surface quality (scratch-dig)</td><td>Up to 500x magnification</td></tr>
+                    <tr><td>Precision Lensmeter</td><td>Focal length, centering</td><td>+/-0.1% focal length</td></tr>
+                    <tr><td>Coordinate Measuring Machine</td><td>Dimensional accuracy</td><td>+/-0.002mm</td></tr>
+                    <tr><td>Laser Damage Test System</td><td>LIDT</td><td>Per ISO 21254</td></tr>
+                    <tr><td>Environmental Chamber</td><td>Temperature &amp; humidity cycling</td><td>-40C to +250C, 95% RH</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="qa-section" style="background:#f8fafc;">
+        <div class="container">
+            <h2>Documentation &amp; Traceability</h2>
+            <p class="subtitle">Every shipment includes comprehensive quality documentation for full traceability</p>
+            <div class="qa-grid">
+                <div class="qa-card">
+                    <div class="icon">&#x1F4C4;</div>
+                    <h3>Inspection Reports</h3>
+                    <p>Detailed measurement data for every component: surface figure, surface quality, dimensional specs, coating performance. Available as PDF with every shipment.</p>
                 </div>
-                <p style="color:#475569;font-size:15px;line-height:1.7;margin-bottom:16px">Critical parameters are verified at each manufacturing stage — grinding, fine grinding, polishing, edging, and coating. This catches issues early when they are cheapest to fix.</p>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">Process Checkpoints</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>After grinding: radius/dimension within process tolerance</li>
-                            <li>After fine grinding: surface preparation for polishing</li>
-                            <li>After polishing: surface quality, irregularity, centering</li>
-                            <li>After coating: optical performance (transmission/reflectance)</li>
-                        </ul>
-                    </div>
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">Key Metrics</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>Surface irregularity (power/irregularity per drawing)</li>
-                            <li>Centering error (arcminutes)</li>
-                            <li>Surface quality (scratch-dig per MIL-PRF-13830B)</li>
-                            <li>Coating spectral performance (spectrophotometer)</li>
-                        </ul>
-                    </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F4CB;</div>
+                    <h3>Material Certificates</h3>
+                    <p>Material batch certificates with full traceability to raw material supplier. Includes refractive index, homogeneity grade, stress birefringence, and environmental classification.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F517;</div>
+                    <h3>Coating Documentation</h3>
+                    <p>Coating design reports with measured spectral curves, environmental test results, and LIDT data. Laser coating documentation per ISO 11254 for high-power applications.</p>
+                </div>
+                <div class="qa-card">
+                    <div class="icon">&#x1F4E6;</div>
+                    <h3>Certificate of Conformity</h3>
+                    <p>CoC with every order confirming all specifications have been met. Traceable to calibration standards. Available in English and Chinese.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Stage 3 -->
-            <div style="background:#f8fafc;border-radius:14px;padding:32px;margin-bottom:24px;border:1px solid #e2e8f0">
-                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-                    <div style="background:#3b82f6;color:white;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0">03</div>
-                    <h3 style="font-size:22px;color:#1e3a5f;margin:0">Final Inspection</h3>
-                </div>
-                <p style="color:#475569;font-size:15px;line-height:1.7;margin-bottom:16px">100% inspection on all critical parameters. Every optic is checked against the customer drawing before it is approved for packaging. No sampling — every piece is inspected.</p>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:12px">Final Acceptance Criteria</div>
-                    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
-                        <div style="text-align:center;padding:12px;background:#f8fafc;border-radius:8px">
-                            <div style="font-size:28px;font-weight:700;color:#1e3a5f">100%</div>
-                            <div style="font-size:12px;color:#64748b;margin-top:4px">Visual inspection<br>on all pieces</div>
-                        </div>
-                        <div style="text-align:center;padding:12px;background:#f8fafc;border-radius:8px">
-                            <div style="font-size:28px;font-weight:700;color:#1e3a5f">±0.01mm</div>
-                            <div style="font-size:12px;color:#64748b;margin-top:4px">Dimensional<br>tolerance</div>
-                        </div>
-                        <div style="text-align:center;padding:12px;background:#f8fafc;border-radius:8px">
-                            <div style="font-size:28px;font-weight:700;color:#1e3a5f">Full cert</div>
-                            <div style="font-size:12px;color:#64748b;margin-top:4px">Inspection report<br>with every order</div>
-                        </div>
-                    </div>
-                </div>
+    <section class="qa-cta">
+        <div class="container">
+            <h2>Request Quality Documentation</h2>
+            <p>Need sample inspection reports, material certificates, or have specific quality requirements? Contact our quality team.</p>
+            <a href="/contact.html" class="btn btn-primary">Contact Quality Team</a>
+            <a href="/evidence.html" class="btn btn-secondary" style="margin-left:12px;">View Evidence Center</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS &amp; REACH</p>
             </div>
-
-            <!-- Stage 4 -->
-            <div style="background:#f8fafc;border-radius:14px;padding:32px;margin-bottom:24px;border:1px solid #e2e8f0">
-                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-                    <div style="background:#60a5fa;color:white;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0">04</div>
-                    <h3 style="font-size:22px;color:#1e3a5f;margin:0">Packaging & Cleanliness</h3>
-                </div>
-                <p style="color:#475569;font-size:15px;line-height:1.7;margin-bottom:16px">Optical components are cleaned and packaged in a controlled environment to prevent contamination during transit. Packaging is designed to protect against mechanical shock, moisture, and electrostatic discharge.</p>
-                <ul style="padding-left:20px;margin:0;color:#475569;font-size:14px;line-height:2">
-                    <li>Cleaned with electronic-grade IPA in lint-free environment</li>
-                    <li>Individually wrapped in cleanroom-grade tissue</li>
-                    <li>Placed in foam-cut trays or protective tubes</li>
-                    <li>Outer box with shock-absorbing materials</li>
-                    <li>Desiccant packs for moisture-sensitive materials (CaF2, ZnSe)</li>
-                    <li>Anti-static packaging for coated optics</li>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?component=Lens">Optical Lenses</a></li>
+                    <li><a href="/products.html?component=Window">Optical Windows</a></li>
+                    <li><a href="/products.html?component=Mirror">Optical Mirrors</a></li>
+                    <li><a href="/products.html?component=Filter">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Prism">Optical Prisms</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?component=Waveplate">Waveplates &amp; Polarizers</a></li>
                 </ul>
             </div>
-
-            <!-- Stage 5 -->
-            <div style="background:#f8fafc;border-radius:14px;padding:32px;margin-bottom:24px;border:1px solid #e2e8f0">
-                <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
-                    <div style="background:#93c5fd;color:#1e3a5f;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;flex-shrink:0">05</div>
-                    <h3 style="font-size:22px;color:#1e3a5f;margin:0">Documentation & Traceability</h3>
-                </div>
-                <p style="color:#475569;font-size:15px;line-height:1.7;margin-bottom:16px">Every shipment includes complete documentation. We maintain full traceability from raw material lot through final inspection, enabling us to trace any optic back to its source material and processing history.</p>
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">Standard Documentation</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>Inspection report (dimensional + surface quality)</li>
-                            <li>Material certificate</li>
-                            <li>Coating specification compliance sheet</li>
-                            <li>Packing list with part numbers and quantities</li>
-                        </ul>
-                    </div>
-                    <div style="background:white;border-radius:10px;padding:16px;border:1px solid #e2e8f0">
-                        <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">Available Upon Request</div>
-                        <ul style="padding-left:16px;margin:0;font-size:13px;color:#475569;line-height:1.8">
-                            <li>Interferometry data (if applicable)</li>
-                            <li>Spectrophotometry curves</li>
-                            <li>Laser damage threshold test data</li>
-                            <li>Environmental test reports (humidity, temperature cycling)</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerApplications">Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/">Aerospace &amp; Defense</a></li>
+                    <li><a href="/applications/research-laboratory/">Research &amp; Laboratory</a></li>
+                    <li><a href="/engineering.html">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/applications.html" data-i18n="navSolutions">Solutions</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/calculator.html" data-i18n="menuCalculators">Calculators</a></li>
+                    <li><a href="/materials.html" data-i18n="menuMaterials">Materials Database</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- Standards -->
-    <section style="padding:50px 0;background:#f8fafc">
-        <div class="container" style="max-width:900px">
-            <h2 style="font-size:24px;color:#1e3a5f;margin-bottom:24px;text-align:center">Standards & References We Follow</h2>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px">
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">ISO 10110</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Optics and photonics — preparation of drawings for optical elements and systems</p>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">MIL-PRF-13830B</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Military performance specification for optical components for fire control, rangefinder, and similar instruments</p>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">ISO 21254</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Lasers and laser-related equipment — test method for laser-induced damage threshold of optical components</p>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">ASTM E595</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Standard test method for total mass loss and collected volatile condensable materials</p>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">ISO 9001:2015</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Quality management systems — requirements</p>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0">
-                    <div style="font-weight:600;color:#1e3a5f;font-size:14px;margin-bottom:8px">ISO 14001:2015</div>
-                    <p style="font-size:13px;color:#64748b;margin:0">Environmental management systems — requirements with guidance for use</p>
-                </div>
-            </div>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
         </div>
-    </section>
-
-    <!-- CTA -->
-    <section style="padding:70px 0;background:linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%);text-align:center;color:white">
-        <div class="container">
-            <h2 style="color:white;margin-bottom:14px;font-size:28px">Have Specific Quality Requirements?</h2>
-            <p style="color:rgba(255,255,255,0.9);margin-bottom:30px;font-size:16px;max-width:550px;margin-left:auto;margin-right:auto">Send us your drawing or specification. We will review the inspection requirements and confirm compliance before production.</p>
-            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-                <a href="/contact.html" style="padding:14px 32px;border-radius:8px;font-size:15px;background:white;color:#1e3a5f;text-decoration:none;font-weight:600">Submit Drawing for Review</a>
-                <a href="/downloads.html" style="padding:14px 32px;border-radius:8px;font-size:15px;border:1px solid rgba(255,255,255,0.4);color:white;text-decoration:none">Download Inspection Report Sample</a>
-            </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="footerNewsletter">Subscribe to weekly optical engineering insights &rarr; Contact us</a>
         </div>
-    </section>
+    </div>
+</footer>
 
-<script src="/js/blog-data.js"></script>
     <script src="/js/translations.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/compare.js"></script>
     <script src="/js/cart.js"></script>
-    <script src="/js/search.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof updatePageTranslations === 'function') updatePageTranslations();
-        });
-    </script>
-    <script>
-    function toggleMobileMenu() {
-        var navList = document.querySelector('.nav-list');
-        if (navList) {
-            navList.classList.toggle('active');
-        }
-    }
-    </script>
-    
-<script>
-function renderAppRelatedArticles() {
-    var container = document.getElementById('v90AppRelatedArticles');
-    if (!container || typeof BLOG_POSTS === 'undefined') return;
-    var slugs = container.getAttribute('data-slugs').split(',');
-    var useZh = localStorage.getItem('lang') === 'zh';
-    var html = '';
-    for (var i = 0; i < slugs.length; i++) {
-        var slug = slugs[i].trim();
-        var post = null;
-        for (var j = 0; j < BLOG_POSTS.length; j++) {
-            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
-        }
-        if (!post) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
-        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
-        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
-        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
-        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
-        html += '</a>';
-    }
-    container.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
-} else {
-    renderAppRelatedArticles();
-}
-</script>
-
-<script>
-function renderAppRelatedArticles() {
-    var container = document.getElementById('v90AppRelatedArticles');
-    if (!container || typeof BLOG_POSTS === 'undefined') return;
-    var slugs = container.getAttribute('data-slugs').split(',');
-    var useZh = localStorage.getItem('lang') === 'zh';
-    var html = '';
-    for (var i = 0; i < slugs.length; i++) {
-        var slug = slugs[i].trim();
-        var post = null;
-        for (var j = 0; j < BLOG_POSTS.length; j++) {
-            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
-        }
-        if (!post) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
-        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
-        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
-        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
-        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
-        html += '</a>';
-    }
-    container.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
-} else {
-    renderAppRelatedArticles();
-}
-</script>
-
-<script>
-function renderAppRelatedArticles() {
-    var container = document.getElementById('v90AppRelatedArticles');
-    if (!container || typeof BLOG_POSTS === 'undefined') return;
-    var slugs = container.getAttribute('data-slugs').split(',');
-    var useZh = localStorage.getItem('lang') === 'zh';
-    var html = '';
-    for (var i = 0; i < slugs.length; i++) {
-        var slug = slugs[i].trim();
-        var post = null;
-        for (var j = 0; j < BLOG_POSTS.length; j++) {
-            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
-        }
-        if (!post) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
-        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
-        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
-        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
-        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
-        html += '</a>';
-    }
-    container.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
-} else {
-    renderAppRelatedArticles();
-}
-</script>
-<script src="/js/chatbot.js"></script>
 </body>
 </html>
