@@ -438,64 +438,7 @@ if (document.readyState === 'loading') {
 </script>
 
 <script>
-function renderAppRelatedArticles() {
-    var container = document.getElementById('v90AppRelatedArticles');
-    if (!container || typeof BLOG_POSTS === 'undefined') return;
-    var slugs = container.getAttribute('data-slugs').split(',');
-    var useZh = localStorage.getItem('lang') === 'zh';
-    var html = '';
-    for (var i = 0; i < slugs.length; i++) {
-        var slug = slugs[i].trim();
-        var post = null;
-        for (var j = 0; j < BLOG_POSTS.length; j++) {
-            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
-        }
-        if (!post) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
-        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
-        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
-        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
-        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
-        html += '</a>';
-    }
-    container.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
-} else {
-    renderAppRelatedArticles();
-}
-</script>
 
-<script>
-function renderAppRelatedArticles() {
-    var container = document.getElementById('v90AppRelatedArticles');
-    if (!container || typeof BLOG_POSTS === 'undefined') return;
-    var slugs = container.getAttribute('data-slugs').split(',');
-    var useZh = localStorage.getItem('lang') === 'zh';
-    var html = '';
-    for (var i = 0; i < slugs.length; i++) {
-        var slug = slugs[i].trim();
-        var post = null;
-        for (var j = 0; j < BLOG_POSTS.length; j++) {
-            if (BLOG_POSTS[j].slug === slug) { post = BLOG_POSTS[j]; break; }
-        }
-        if (!post) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        if (postExcerpt.length > 140) postExcerpt = postExcerpt.substring(0, 140) + '...';
-        html += '<a href="/blog/' + post.slug + '/" style="background: #f8fafc; border-radius: 12px; padding: 24px; text-decoration: none; display: block; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 6px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">';
-        html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
-        html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
-        html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
-        html += '</a>';
-    }
-    container.innerHTML = html;
-}
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderAppRelatedArticles);
 } else {

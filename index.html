@@ -1015,59 +1015,6 @@ if (document.readyState === 'loading') {
 </script>
 
 <script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderV90Knowledge);
 } else {
@@ -1076,59 +1023,6 @@ if (document.readyState === 'loading') {
 </script>
 
 <script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderV90Knowledge);
 } else {
@@ -1137,59 +1031,6 @@ if (document.readyState === 'loading') {
 </script>
 
 <script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', renderV90Knowledge);
 } else {
