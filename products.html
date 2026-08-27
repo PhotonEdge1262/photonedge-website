@@ -206,7 +206,7 @@
     }
     .p31-filter-row {
         display: grid;
-        grid-template-columns: repeat(5, 1fr) auto;
+        grid-template-columns: repeat(6, 1fr) auto;
         gap: 12px;
         align-items: end;
     }
@@ -581,6 +581,17 @@
                     <option value="Aerospace">Aerospace & Defense</option>
                     <option value="Spectroscopy">Spectroscopy</option>
                     <option value="LiDAR">LiDAR</option>
+                </select>
+            </div>
+            <div class="p31-filter-group">
+                <label>Coating Type</label>
+                <select id="filter-coating" onchange="window.applyFilters()">
+                    <option value="">All Coatings</option>
+                    <option value="A1">A1 (Broadband AR, Vis-NIR)</option>
+                    <option value="A2">A2 (Multispectral AR)</option>
+                    <option value="A3">A3 (NIR-SWIR AR)</option>
+                    <option value="Dichroic">Dichroic Coatings</option>
+                    <option value="Partial">Partial Reflectance</option>
                 </select>
             </div>
             <div class="p31-filter-group">
