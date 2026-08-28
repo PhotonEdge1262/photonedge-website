@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polarization Control in Optical Systems - How to Choose Waveplates and Polarizers | PhotonEdge Optics Blog</title>
+    <meta name="description" content="A comprehensive guide to polarization control in optical systems. Covers polarizer selection, waveplate types (zero-order vs multiple-order vs achromatic), Glan-type prisms, and application examples for laser power control and optical isolation.">
+    <meta property="og:title" content="Polarization Control in Optical Systems - How to Choose Waveplates and Polarizers | PhotonEdge Optics Blog">
+    <meta property="og:description" content="A comprehensive guide to polarization control in optical systems. Covers polarizer selection, waveplate types (zero-order vs multiple-order vs achromatic), Glan-type prisms, and application examples for laser power control and optical isolation.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/polarization-control-optical-systems-waveplates-polarizers-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/?lang=zh">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Polarization Control in Optical Systems - How to Choose Waveplates and Polarizers",
+  "description": "A comprehensive guide to polarization control in optical systems. Covers polarizer selection, waveplate types (zero-order vs multiple-order vs achromatic), Glan-type prisms, and application examples for laser power control and optical isolation.",
+  "image": "https://photonedgeoptics.com/images/blog/polarization-control-optical-systems-waveplates-polarizers-guide.jpg",
+  "datePublished": "2026-08-01",
+  "dateModified": "2026-08-01",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/polarization-control-optical-systems-waveplates-polarizers-guide/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://photonedgeoptics.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Polarization Control in Optical Systems - How to Choose Waveplates and Polarizers"
+    }
+  ]
+}
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <style>
+        .blog-article { max-width: 800px; margin: 0 auto; padding: 2rem 1rem; }
+        .article-header { margin-bottom: 2rem; }
+        .article-meta { display: flex; gap: 1rem; color: #64748b; margin-bottom: 1rem; font-size: 0.9rem; }
+        .article-category { background: #eff6ff; color: #2563eb; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; }
+        .article-header h1 { color: #1e293b; margin-bottom: 1rem; }
+        .article-body h2 { color: #1e293b; margin-top: 2rem; margin-bottom: 1rem; }
+        .article-body h3 { color: #334155; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .article-body p { line-height: 1.8; margin-bottom: 1.2em; color: #334155; }
+        .article-body ul { margin-bottom: 1.2em; padding-left: 1.5em; }
+        .article-body li { line-height: 1.8; margin-bottom: 0.5em; color: #334155; }
+        .article-body a { color: #2563eb; text-decoration: none; }
+        .article-body a:hover { text-decoration: underline; }
+        .article-body table { margin: 1.5rem 0; }
+        .article-body td, .article-body th { line-height: 1.5; }
+        .article-cta { margin: 2rem 0; padding: 1.5rem; background: #eff6ff; border-radius: 8px; text-align: center; }
+        .article-cta h3 { color: #1e293b; margin-bottom: 0.75rem; }
+        .article-cta p { color: #475569; margin-bottom: 1rem; }
+        .article-cta .btn { display: inline-block; padding: 0.75rem 2rem; background: #2563eb; color: white; border-radius: 6px; text-decoration: none; font-weight: 600; }
+        .article-cta .btn:hover { background: #1d4ed8; }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="/images/logo.png" alt="PhotonEdge" width="160" height="40">
+        </a>
+        <nav class="nav">
+            <a href="/" data-i18n="navHome">Home</a>
+            <a href="/products.html" data-i18n="navProducts">Products</a>
+            <a href="/about.html" data-i18n="navAbout">About</a>
+            <a href="/application-notes/" style="color:#94a3b8;text-decoration:none;">Application Notes</a></li>
+                        <li><a href="/blog.html" data-i18n="navBlog">Blog</a>
+            <a href="/news.html" data-i18n="navNews">News</a>
+            <a href="/contact.html" data-i18n="navContact">Contact</a>
+            <a href="/faq.html" data-i18n="navFaq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+            <button onclick="toggleLanguage()" class="lang-btn" id="langBtn">中文</button>
+            <a href="/cart.html" class="cart-btn" data-i18n="navCart">Cart</a>
+            <button onclick="toggleMobileMenu()" class="mobile-menu-btn">☰</button>
+        </div>
+    </div>
+</header>
+
+<main class="blog-article">
+    <div class="article-header">
+        <div class="article-meta">
+            <span class="article-category">Application Guide</span>
+            <span>2026-08-01</span>
+            <span>13 min read</span>
+        </div>
+        <h1>Polarization Control in Optical Systems - How to Choose Waveplates and Polarizers</h1>
+    </div>
+
+    <div class="article-body" id="articleBody">
+        <h2>Introduction</h2>
+<p>Polarization control is a core requirement in a surprisingly wide range of optical systems. In laser material processing, polarization affects cut quality and kerf width. In telecommunications, polarization-dependent loss degrades signal integrity. In biomedical imaging, polarization contrast reveals tissue birefringence invisible to intensity-only imaging. In quantum optics, polarization encodes qubit states.</p>
+<p>Yet polarization components — waveplates and polarizers — are often selected without full understanding of their specifications and trade-offs. Choosing a multiple-order waveplate for a temperature-varying environment, or a film polarizer for a high-power laser, leads to degraded system performance that is difficult to diagnose. This guide provides a systematic approach to <strong>selecting the right polarization components for your optical system</strong>.</p>
+
+<h2>Understanding Polarization Fundamentals</h2>
+<p>Light is a transverse electromagnetic wave, and polarization describes the orientation of the electric field vector as the wave propagates. The three fundamental polarization states are:</p>
+<ul>
+<li><strong>Linear polarization:</strong> The electric field oscillates in a single plane. This is the most common state produced by lasers and is the basis for most polarizer applications.</li>
+<li><strong>Circular polarization:</strong> The electric field vector rotates at the optical frequency, tracing a circle. Right and left circular states are the basis eigenstates for circular dichroism and optical activity measurements.</li>
+<li><strong>Elliptical polarization:</strong> The general case — the electric field traces an ellipse. All polarization states can be represented as a combination of two orthogonal linear or two opposite circular components with different amplitudes and phases.</li>
+</ul>
+<p>Polarization matters in optical systems because reflection, transmission, and scattering are polarization-dependent. A glass surface at Brewster's angle transmits 100% of p-polarized light but reflects ~15% of s-polarized light — a fundamental asymmetry that must be managed in multi-element systems.</p>
+
+<h2>How to Choose the Right Polarizer</h2>
+<p>Polarizers convert unpolarized or partially polarized light into linearly polarized light. The choice depends on extinction ratio, wavelength, power handling, and aperture requirements.</p>
+
+<h3>Absorptive (Dichroic Film) Polarizers</h3>
+<p>Film polarizers use stretched polymer sheets that absorb one polarization and transmit the orthogonal polarization. They are the most economical and widely available polarizer type:</p>
+<ul>
+<li><strong>Extinction ratio:</strong> Typically 100:1 to 10,000:1</li>
+<li><strong>Transmission:</strong> 25-42% for unpolarized input (theoretically 50% maximum)</li>
+<li><strong>Power handling:</strong> Low — typically <1 W/cm² for continuous wave</li>
+<li><strong>Best for:</strong> Display applications, low-power illumination, LCD projection, cost-sensitive systems</li>
+</ul>
+<p><a href="/products/glan-type-polarizers/">Visible Linear Polarizers</a> provide an economical solution for visible light applications from 400-700 nm. <a href="/products/ir-polarizers/">Visible Circular Polarizers</a> combine a linear polarizer with a quarter-waveplate to produce circularly polarized output, eliminating polarization-dependent effects in display and imaging systems.</p>
+
+<h3>Dichroic (Polymer-in-Glass) Polarizers</h3>
+<p>A significant improvement over free-standing film polarizers. The dichroic polymer sheet is laminated between glass substrates, providing better flatness, durability, and environmental resistance:</p>
+<ul>
+<li><strong>Extinction ratio:</strong> 500:1 to 10,000:1</li>
+<li><strong>Transmission:</strong> 40-45% for unpolarized input</li>
+<li><strong>Power handling:</strong> Moderate — up to ~5 W/cm² CW</li>
+</ul>
+
+<h3>IR Polarizers</h3>
+<p>Polarization control at infrared wavelengths requires different technology. Wire-grid polarizers (aluminum wires on a substrate) work from mid-IR to THz frequencies. For near-IR applications, polymer-based polarizers optimized for 700-2000 nm are available. <a href="/products/ir-polarizers/">IR Polarizers</a> cover the 3-5 um and 8-12 um atmospheric windows for thermal imaging and IR spectroscopy.</p>
+
+<h3>Glan-Type Calcite Polarizers</h3>
+<p>For the highest extinction ratios and power handling, calcite polarizing prisms are unmatched. They use birefringent calcite to separate the ordinary and extraordinary rays by total internal reflection:</p>
+<ul>
+<li><a href="/products/glan-taylor-prisms/">Glan-Taylor Prisms</a> — Extinction ratio >100,000:1, wide field of view, moderate aperture. Best for precision polarimetry and metrology.</li>
+<li><a href="/products/glan-laser-prisms/">Glan-Laser Prisms</a> — Optimized for high-power laser applications with escape windows for the rejected beam. Extinction ratio >100,000:1 with excellent wavefront quality.</li>
+<li><a href="/products/glan-thompson-prisms/">Glan-Thompson Prisms</a> — Cemented construction provides the widest field of view and largest aperture. Extinction ratio >10,000:1. Best for broadband illumination and imaging applications.</li>
+</ul>
+
+<h2>How to Choose the Right Waveplate</h2>
+<p>Waveplates (retarders) introduce a controlled phase delay between two orthogonal polarization components, changing the polarization state without changing intensity. The key choices are order, type, and retardance.</p>
+
+<h3>Quarter-Wave (λ/4) vs Half-Wave (λ/2) vs Full-Wave</h3>
+<ul>
+<li><strong>Quarter-wave plate (λ/4 retardance):</strong> Converts between linear and circular polarization. Linear input at 45° to the fast axis produces circular output; circular input produces linear output. Used in optical isolators, circular polarizers, and polarization-sensitive detection.</li>
+<li><strong>Half-wave plate (λ/2 retardance):</strong> Rotates the plane of linearly polarized light by twice the angle between the input polarization and the fast axis. Used for polarization rotation, power control (combined with a polarizer), and switching between polarization states.</li>
+<li><strong>Full-wave plate (λ retardance):</strong> Returns the polarization to its input state (identity operation at design wavelength). Used as a reference or for verifying retardance calibration.</li>
+</ul>
+
+<h3>Zero-Order vs Multiple-Order Waveplates</h3>
+<p>This is the most important distinction in waveplate selection:</p>
+<ul>
+<li><strong>Multiple-order waveplates:</strong> Have total retardance of (m + 1/n) × λ, where m is a large integer. The extra mλ retardance makes them extremely sensitive to wavelength and temperature changes. A 10th-order quarter-wave plate has ~10x the temperature sensitivity of a zero-order plate. <a href="/products/achromatic-waveplates/">Multiple-order waveplates</a> are acceptable for single-wavelength, temperature-controlled environments where cost is the primary concern.</li>
+<li><strong>Zero-order waveplates:</strong> Have total retardance of exactly (1/n) × λ with no excess full-wave retardance. They are much less sensitive to wavelength and temperature variations — typically 10-50x more stable than multiple-order equivalents. <a href="/products/cemented-zero-order-waveplates/">Cemented zero-order waveplates</a> use optical cement to bond two multiple-order plates with orthogonal axes, canceling the excess retardance. <a href="/products/air-spaced-zero-order-waveplates/">Air-spaced zero-order waveplates</a> separate the two plates with an air gap, avoiding cement absorption for high-power laser applications.</li>
+</ul>
+
+<h3>Achromatic Waveplates</h3>
+<p>Achromatic (compound) waveplates use two or more plates of different birefringent materials to achieve near-constant retardance across a broad wavelength range. An achromatic quarter-wave plate might maintain λ/4 ± λ/50 retardance from 400-700 nm, compared to λ/4 ± λ/5 for a zero-order quartz plate over the same range. They are essential for broadband polarization manipulation.</p>
+
+<h3>Dual Wavelength Waveplates</h3>
+<p>Some applications require specific retardance at two wavelengths simultaneously (e.g., λ/2 at 1064 nm and λ/4 at 532 nm for frequency-doubled Nd:YAG systems). <a href="/products/dual-wavelength-waveplates/">Dual wavelength waveplates</a> are designed to provide the specified retardance at each wavelength, enabling a single component to serve both the fundamental and harmonic beams.</p>
+
+<h2>Advanced Polarization Components</h2>
+
+<h3>Wollaston Prisms</h3>
+<p>Wollaston prisms separate the ordinary and extraordinary rays with a large angular deviation (typically 1-20°), producing two spatially separated orthogonally polarized output beams. <a href="/products/glan-laser-prisms/">Wollaston prisms</a> are used in polarimetry, shear interferometry, and optical current sensing where simultaneous access to both polarization components is required.</p>
+
+<h2>Application Examples</h2>
+
+<h3>Laser Power Control: Polarizer + Half-Wave Plate</h3>
+<p>By rotating a half-wave plate placed before a fixed polarizer, the transmitted power varies as cos²(2θ), where θ is the waveplate rotation angle. This provides continuous, smooth power adjustment from 0 to 100% without moving the polarizer or changing the laser operating point. For high-power lasers, use an <a href="/products/air-spaced-zero-order-waveplates/">air-spaced zero-order half-wave plate</a> with a <a href="/products/glan-laser-prisms/">Glan-Laser prism</a>.</p>
+
+<h3>Optical Isolation: Quarter-Wave Plate + Polarizer</h3>
+<p>An optical isolator prevents back-reflections from reaching the laser source. A quarter-wave plate converts the forward-propagating linearly polarized laser output to circular polarization. Any back-reflected light passes through the quarter-wave plate again, emerging linearly polarized but rotated 90° — and is blocked by the input polarizer. Use a <a href="/products/cemented-zero-order-waveplates/">zero-order quarter-wave plate</a> for wavelength stability and a high-extinction-ratio polarizer for maximum isolation.</p>
+
+<h3>Polarization Imaging: Rotating Polarizer</h3>
+<p>Polarization-resolved imaging captures a series of images at different polarizer orientations (typically 0°, 45°, 90°, 135°) to compute the Stokes parameters at each pixel. This reveals material birefringence, surface roughness anisotropy, and subsurface stress patterns invisible in conventional intensity imaging. A high-quality <a href="/products/glan-type-polarizers/">visible linear polarizer</a> in a precision rotation mount is sufficient for most polarization imaging applications.</p>
+
+<h2>Conclusion</h2>
+<p>Polarization control is essential across a wide range of optical applications, from laser power adjustment to quantum information processing. The key to successful polarization system design is selecting components whose specifications — extinction ratio, retardance accuracy, temperature stability, and power handling — match the demands of the application.</p>
+<p>For temperature-sensitive environments, always choose zero-order over multiple-order waveplates. For high-power lasers, select air-spaced or Glan-type components over cemented or film types. And for broadband applications, achromatic waveplates eliminate the wavelength sensitivity that limits quartz waveplate performance.</p>
+<p>PhotonEdge offers a complete range of polarization optics including polarizers, waveplates, and calcite prisms. <a href="/contact.html">Contact our technical team</a> for polarization component selection guidance and custom retardance specifications.</p>
+    </div>
+
+    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/glan-type-polarizers/" style="color:#2563eb;text-decoration:none">Visible Linear Polarizers</a></li><li style="margin-bottom:0.5rem"><a href="/products/ir-polarizers/" style="color:#2563eb;text-decoration:none">Visible Circular Polarizers</a></li><li style="margin-bottom:0.5rem"><a href="/products/cemented-zero-order-waveplates/" style="color:#2563eb;text-decoration:none">Cemented Zero Order Waveplates</a></li><li style="margin-bottom:0.5rem"><a href="/products/air-spaced-zero-order-waveplates/" style="color:#2563eb;text-decoration:none">Air Spaced Zero Order Waveplates</a></li><li style="margin-bottom:0.5rem"><a href="/products/glan-taylor-prisms/" style="color:#2563eb;text-decoration:none">Glan Taylor Prisms</a></li><li style="margin-bottom:0.5rem"><a href="/products/glan-laser-prisms/" style="color:#2563eb;text-decoration:none">Wollaston Prisms</a></li></ul></div>
+
+    <div class="article-cta">
+        <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
+        <p data-i18n="blogCtaDesc">PhotonEdge offers precision optical components with competitive pricing and fast delivery. Contact us for a free quote.</p>
+        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request Quote</a>
+    </div>
+</main>
+
+
+
+<script src="/js/main.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/chatbot.js"></script>
+<script>
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+</script>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS &amp; REACH</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?component=Lens">Optical Lenses</a></li>
+                    <li><a href="/products.html?component=Window">Optical Windows</a></li>
+                    <li><a href="/products.html?component=Mirror">Optical Mirrors</a></li>
+                    <li><a href="/products.html?component=Filter">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Prism">Optical Prisms</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?component=Waveplate">Waveplates &amp; Polarizers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerApplications">Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/">Aerospace &amp; Defense</a></li>
+                    <li><a href="/applications/research-laboratory/">Research &amp; Laboratory</a></li>
+                    <li><a href="/engineering.html">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
+                    <li><a href="/applications.html" data-i18n="navSolutions">Solutions</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                    <li><a href="/calculator.html" data-i18n="menuCalculators">Calculators</a></li>
+                    <li><a href="/materials.html" data-i18n="menuMaterials">Materials Database</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQuality">Quality Assurance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="footerNewsletter">Subscribe to weekly optical engineering insights &rarr; Contact us</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

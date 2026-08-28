@@ -2,10 +2,10 @@ var NEWS_ARTICLES = [
   {
     "id": 1,
     "title": "New UV Fused Silica Window Production Line Launched",
-    "titleZh": "\u65b0\u4e00\u4ee3UV\u7194\u878d\u77f3\u82f1\u7a97\u53e3\u7247\u4ea7\u7ebf\u542f\u52a8",
+    "titleZh": "新一代UV熔融石英窗口片产线启动",
     "slug": "new-uv-fused-silica-window-production-line-launched",
     "excerpt": "PhotonEdge has officially launched a new dedicated production line for UV fused silica window plates, capable of producing windows with transmission rates exceeding 92% in the 185-2500nm range. The new line features automated precision polishing and advanced coating capabilities, doubling our production capacity for UV-grade optics while maintaining surface quality of 10/5 scratch-dig or better.",
-    "excerptZh": "PhotonEdge\u6b63\u5f0f\u542f\u52a8\u65b0\u4e00\u4ee3UV\u7194\u878d\u77f3\u82f1\u7a97\u53e3\u7247\u4e13\u7528\u751f\u4ea7\u7ebf\uff0c\u53ef\u751f\u4ea7\u5728185-2500nm\u8303\u56f4\u5185\u900f\u8fc7\u7387\u8d85\u8fc792%\u7684\u7a97\u53e3\u7247\u3002\u65b0\u4ea7\u7ebf\u914d\u5907\u81ea\u52a8\u5316\u7cbe\u5bc6\u629b\u5149\u548c\u5148\u8fdb\u9540\u819c\u80fd\u529b\uff0c\u4f7f\u6211\u4eecUV\u7ea7\u5149\u5b66\u5143\u4ef6\u7684\u4ea7\u80fd\u7ffb\u500d\uff0c\u540c\u65f6\u4fdd\u630110/5\u5212\u75d5dig\u6216\u66f4\u597d\u7684\u8868\u9762\u8d28\u91cf\u3002",
+    "excerptZh": "PhotonEdge正式启动新一代UV熔融石英窗口片专用生产线，可生产在185-2500nm范围内透过率超过92%的窗口片。新产线配备自动化精密抛光和先进镀膜能力，使我们UV级光学元件的产能翻倍，同时保持10/5划痕dig或更好的表面质量。",
     "category": "Company News",
     "date": "2026-06-20",
     "image": "/images/factory/factory_1.jpg"
@@ -13,10 +13,10 @@ var NEWS_ARTICLES = [
   {
     "id": 2,
     "title": "Exhibiting at LASER World of PHOTONICS 2026",
-    "titleZh": "\u53c2\u5c55LASER World of PHOTONICS 2026",
+    "titleZh": "参展LASER World of PHOTONICS 2026",
     "slug": "exhibiting-at-laser-world-of-photonics-2026",
     "excerpt": "PhotonEdge will showcase our latest optical components at LASER World of PHOTONICS 2026 in Munich, Germany. Visit us at Booth A3.420 to see our new high-damage-threshold laser mirrors, custom dielectric coatings, and precision prisms. Our technical team will be available for on-site consultations about your laser system requirements.",
-    "excerptZh": "PhotonEdge\u5c06\u5728\u5fb7\u56fd\u6155\u5c3c\u9ed1\u4e3e\u529e\u7684LASER World of PHOTONICS 2026\u5c55\u4f1a\u4e0a\u5c55\u793a\u6700\u65b0\u5149\u5b66\u5143\u4ef6\u3002\u6b22\u8fce\u8385\u4e34A3.420\u5c55\u4f4d\uff0c\u89c2\u770b\u6211\u4eec\u65b0\u7684\u9ad8\u635f\u4f24\u9608\u503c\u6fc0\u5149\u53cd\u5c04\u955c\u3001\u5b9a\u5236\u4ecb\u7535\u8d28\u9540\u819c\u548c\u7cbe\u5bc6\u68f1\u955c\u3002\u6211\u4eec\u7684\u6280\u672f\u56e2\u961f\u5c06\u73b0\u573a\u4e3a\u60a8\u63d0\u4f9b\u6fc0\u5149\u7cfb\u7edf\u9700\u6c42\u54a8\u8be2\u3002",
+    "excerptZh": "PhotonEdge将在德国慕尼黑举办的LASER World of PHOTONICS 2026展会上展示最新光学元件。欢迎莅临A3.420展位，观看我们新的高损伤阈值激光反射镜、定制介电质镀膜和精密棱镜。我们的技术团队将现场为您提供激光系统需求咨询。",
     "category": "Company News",
     "date": "2026-06-15",
     "image": "/images/factory/factory_0.jpg"
@@ -24,10 +24,10 @@ var NEWS_ARTICLES = [
   {
     "id": 3,
     "title": "Precision Optics Market to Reach $15.2 Billion by 2028",
-    "titleZh": "\u7cbe\u5bc6\u5149\u5b66\u5e02\u573a2028\u5e74\u8fbe152\u4ebf\u7f8e\u5143",
+    "titleZh": "精密光学市场2028年达152亿美元",
     "slug": "precision-optics-market-to-reach-152-billion-by-2028",
     "excerpt": "According to the latest market research report, the global precision optics market is projected to reach $15.2 billion by 2028, growing at a CAGR of 6.8% from 2023 to 2028. Key drivers include increasing demand from semiconductor lithography, medical devices, autonomous vehicles, and defense applications. The Asia-Pacific region is expected to lead growth.",
-    "excerptZh": "\u6839\u636e\u6700\u65b0\u5e02\u573a\u7814\u7a76\u62a5\u544a\uff0c\u5168\u7403\u7cbe\u5bc6\u5149\u5b66\u5e02\u573a\u9884\u8ba1\u52302028\u5e74\u5c06\u8fbe\u5230152\u4ebf\u7f8e\u5143\uff0c2023\u5e74\u81f32028\u5e74\u590d\u5408\u5e74\u589e\u957f\u7387\u4e3a6.8%\u3002\u4e3b\u8981\u9a71\u52a8\u56e0\u7d20\u5305\u62ec\u534a\u5bfc\u4f53\u5149\u523b\u3001\u533b\u7597\u8bbe\u5907\u3001\u81ea\u52a8\u9a7e\u9a76\u548c\u56fd\u9632\u5e94\u7528\u9700\u6c42\u7684\u589e\u52a0\u3002\u4e9a\u592a\u5730\u533a\u9884\u8ba1\u5c06\u5f15\u9886\u589e\u957f\u3002",
+    "excerptZh": "根据最新市场研究报告，全球精密光学市场预计到2028年将达到152亿美元，2023年至2028年复合年增长率为6.8%。主要驱动因素包括半导体光刻、医疗设备、自动驾驶和国防应用需求的增加。亚太地区预计将引领增长。",
     "category": "Industry News",
     "date": "2026-06-10",
     "image": "/images/factory/factory_2.jpg"
@@ -35,10 +35,10 @@ var NEWS_ARTICLES = [
   {
     "id": 4,
     "title": "How to Choose the Right Anti-Reflection Coating for Your Application",
-    "titleZh": "\u5982\u4f55\u4e3a\u5e94\u7528\u9009\u62e9\u6b63\u786e\u7684\u589e\u900f\u819c",
+    "titleZh": "如何为应用选择正确的增透膜",
     "slug": "how-to-choose-the-right-anti-reflection-coating-for-your-application",
     "excerpt": "Anti-reflection (AR) coatings are essential for maximizing optical system performance. This guide covers single-layer vs multi-layer AR coatings, wavelength-specific designs, and how to select the optimal coating based on your operating wavelength range, angle of incidence, and environmental requirements. Learn about V-coat, broadband AR, and dual-band coatings.",
-    "excerptZh": "\u589e\u900f\u819c(AR)\u5bf9\u4e8e\u6700\u5927\u5316\u5149\u5b66\u7cfb\u7edf\u6027\u80fd\u81f3\u5173\u91cd\u8981\u3002\u672c\u6307\u5357\u6db5\u76d6\u5355\u5c42\u4e0e\u591a\u5c42\u589e\u900f\u819c\u3001\u7279\u5b9a\u6ce2\u957f\u8bbe\u8ba1\uff0c\u4ee5\u53ca\u5982\u4f55\u6839\u636e\u5de5\u4f5c\u6ce2\u957f\u8303\u56f4\u3001\u5165\u5c04\u89d2\u548c\u73af\u5883\u8981\u6c42\u9009\u62e9\u6700\u4f73\u9540\u819c\u3002\u4e86\u89e3V\u6d82\u5c42\u3001\u5bbd\u5e26\u589e\u900f\u819c\u548c\u53cc\u6ce2\u6bb5\u9540\u819c\u3002",
+    "excerptZh": "增透膜(AR)对于最大化光学系统性能至关重要。本指南涵盖单层与多层增透膜、特定波长设计，以及如何根据工作波长范围、入射角和环境要求选择最佳镀膜。了解V涂层、宽带增透膜和双波段镀膜。",
     "category": "Technical Articles",
     "date": "2026-06-05",
     "image": "/images/factory/clean-room.jpg"
@@ -46,10 +46,10 @@ var NEWS_ARTICLES = [
   {
     "id": 5,
     "title": "BK7 vs Fused Silica vs CaF2: A Comprehensive Material Comparison",
-    "titleZh": "BK7 vs \u7194\u878d\u77f3\u82f1 vs CaF2\u6750\u6599\u5bf9\u6bd4",
+    "titleZh": "BK7 vs 熔融石英 vs CaF2材料对比",
     "slug": "bk7-vs-fused-silica-vs-caf2-a-comprehensive-material-comparison",
     "excerpt": "Choosing the right optical material is critical for system performance. This comprehensive comparison covers BK7, UV fused silica, and calcium fluoride (CaF2) across key parameters: transmission range, refractive index homogeneity, thermal properties, laser damage threshold, and cost. Includes application-specific recommendations for laser, imaging, and UV systems.",
-    "excerptZh": "\u9009\u62e9\u6b63\u786e\u7684\u5149\u5b66\u6750\u6599\u5bf9\u7cfb\u7edf\u6027\u80fd\u81f3\u5173\u91cd\u8981\u3002\u672c\u7efc\u5408\u5bf9\u6bd4\u6db5\u76d6BK7\u3001\u7d2b\u5916\u7194\u878d\u77f3\u82f1\u548c\u6c1f\u5316\u9499(CaF2)\u7684\u5173\u952e\u53c2\u6570\uff1a\u900f\u8fc7\u7387\u8303\u56f4\u3001\u6298\u5c04\u7387\u5747\u5300\u6027\u3001\u70ed\u6027\u80fd\u3001\u6fc0\u5149\u635f\u4f24\u9608\u503c\u548c\u6210\u672c\u3002\u5305\u62ec\u9488\u5bf9\u6fc0\u5149\u3001\u6210\u50cf\u548c\u7d2b\u5916\u7cfb\u7edf\u7684\u5e94\u7528\u63a8\u8350\u3002",
+    "excerptZh": "选择正确的光学材料对系统性能至关重要。本综合对比涵盖BK7、紫外熔融石英和氟化钙(CaF2)的关键参数：透过率范围、折射率均匀性、热性能、激光损伤阈值和成本。包括针对激光、成像和紫外系统的应用推荐。",
     "category": "Technical Articles",
     "date": "2026-05-28",
     "image": "/images/products/optical-lenses/bk7-plano-convex.jpg"
@@ -57,10 +57,10 @@ var NEWS_ARTICLES = [
   {
     "id": 6,
     "title": "Medical Device OEMs Increasing Optical Component Sourcing from China",
-    "titleZh": "\u533b\u7597\u5668\u68b0OEM\u589e\u52a0\u4e2d\u56fd\u5149\u5b66\u91c7\u8d2d",
+    "titleZh": "医疗器械OEM增加中国光学采购",
     "slug": "medical-device-oems-increasing-optical-component-sourcing-from-china",
     "excerpt": "A growing number of medical device OEMs are sourcing precision optical components from Chinese manufacturers. Industry analysis shows that China's optical manufacturing capabilities have reached international standards in surface quality, dimensional accuracy, and coating performance. Cost advantages of 30-40% compared to Western suppliers are driving this trend.",
-    "excerptZh": "\u8d8a\u6765\u8d8a\u591a\u7684\u533b\u7597\u5668\u68b0OEM\u5f00\u59cb\u4ece\u4e2d\u56fd\u5236\u9020\u5546\u91c7\u8d2d\u7cbe\u5bc6\u5149\u5b66\u5143\u4ef6\u3002\u884c\u4e1a\u5206\u6790\u663e\u793a\uff0c\u4e2d\u56fd\u5728\u8868\u9762\u8d28\u91cf\u3001\u5c3a\u5bf8\u7cbe\u5ea6\u548c\u9540\u819c\u6027\u80fd\u65b9\u9762\u7684\u5149\u5b66\u5236\u9020\u80fd\u529b\u5df2\u8fbe\u5230\u56fd\u9645\u6807\u51c6\u3002\u4e0e\u897f\u65b9\u4f9b\u5e94\u5546\u76f8\u6bd430-40%\u7684\u6210\u672c\u4f18\u52bf\u6b63\u5728\u63a8\u52a8\u8fd9\u4e00\u8d8b\u52bf\u3002",
+    "excerptZh": "越来越多的医疗器械OEM开始从中国制造商采购精密光学元件。行业分析显示，中国在表面质量、尺寸精度和镀膜性能方面的光学制造能力已达到国际标准。与西方供应商相比30-40%的成本优势正在推动这一趋势。",
     "category": "Industry News",
     "date": "2026-05-20",
     "image": "/images/products/optical-filters/narrow-band-interference-filters.jpg"
@@ -68,10 +68,10 @@ var NEWS_ARTICLES = [
   {
     "id": 7,
     "title": "PhotonEdge Achieves ISO 13485 Medical Device Quality Certification",
-    "titleZh": "\u901a\u8fc7ISO 13485\u533b\u7597\u5668\u68b0\u8d28\u91cf\u8ba4\u8bc1",
+    "titleZh": "通过ISO 13485医疗器械质量认证",
     "slug": "photonedge-achieves-iso-13485-medical-device-quality-certification",
     "excerpt": "PhotonEdge has successfully obtained ISO 13485 certification for medical device quality management systems. This certification demonstrates our commitment to meeting the stringent requirements of the medical device industry. It enables us to supply optical components directly to medical device manufacturers with full regulatory compliance.",
-    "excerptZh": "PhotonEdge\u6210\u529f\u83b7\u5f97\u533b\u7597\u5668\u68b0\u8d28\u91cf\u7ba1\u7406\u4f53\u7cfbISO 13485\u8ba4\u8bc1\u3002\u8be5\u8ba4\u8bc1\u8868\u660e\u6211\u4eec\u81f4\u529b\u4e8e\u6ee1\u8db3\u533b\u7597\u5668\u68b0\u884c\u4e1a\u7684\u4e25\u683c\u8981\u6c42\uff0c\u4f7f\u6211\u4eec\u80fd\u591f\u5b8c\u5168\u7b26\u5408\u6cd5\u89c4\u8981\u6c42\u5730\u5411\u533b\u7597\u5668\u68b0\u5236\u9020\u5546\u4f9b\u5e94\u5149\u5b66\u5143\u4ef6\u3002",
+    "excerptZh": "PhotonEdge成功获得医疗器械质量管理体系ISO 13485认证。该认证表明我们致力于满足医疗器械行业的严格要求，使我们能够完全符合法规要求地向医疗器械制造商供应光学元件。",
     "category": "Company News",
     "date": "2026-05-15",
     "image": "/images/factory/factory_3.jpg"
@@ -79,10 +79,10 @@ var NEWS_ARTICLES = [
   {
     "id": 8,
     "title": "Understanding Laser Damage Threshold (LDT) for Optical Components",
-    "titleZh": "\u6fc0\u5149\u635f\u4f24\u9608\u503c(LDT)\u8be6\u89e3",
+    "titleZh": "激光损伤阈值(LDT)详解",
     "slug": "understanding-laser-damage-threshold-ldt-for-optical-components",
     "excerpt": "Laser damage threshold is a critical specification for optics used in laser systems. This technical article explains LDT testing methods (ISO 21254), factors affecting LDT including coating design, surface quality, and material purity, and how to specify LDT requirements for your laser application. Includes typical LDT values for common coating types.",
-    "excerptZh": "\u6fc0\u5149\u635f\u4f24\u9608\u503c\u662f\u6fc0\u5149\u7cfb\u7edf\u4e2d\u5149\u5b66\u5143\u4ef6\u7684\u5173\u952e\u89c4\u683c\u3002\u672c\u6280\u672f\u6587\u7ae0\u89e3\u91ca\u4e86LDT\u6d4b\u8bd5\u65b9\u6cd5(ISO 21254)\u3001\u5f71\u54cdLDT\u7684\u56e0\u7d20\u5305\u62ec\u9540\u819c\u8bbe\u8ba1\u3001\u8868\u9762\u8d28\u91cf\u548c\u6750\u6599\u7eaf\u5ea6\uff0c\u4ee5\u53ca\u5982\u4f55\u4e3a\u6fc0\u5149\u5e94\u7528\u6307\u5b9aLDT\u8981\u6c42\u3002\u5305\u62ec\u5e38\u89c1\u9540\u819c\u7c7b\u578b\u7684\u5178\u578bLDT\u503c\u3002",
+    "excerptZh": "激光损伤阈值是激光系统中光学元件的关键规格。本技术文章解释了LDT测试方法(ISO 21254)、影响LDT的因素包括镀膜设计、表面质量和材料纯度，以及如何为激光应用指定LDT要求。包括常见镀膜类型的典型LDT值。",
     "category": "Technical Articles",
     "date": "2026-05-08",
     "image": "/images/factory/factory_0.jpg"
@@ -90,12 +90,61 @@ var NEWS_ARTICLES = [
   {
     "id": 9,
     "title": "LiDAR Technology Driving Demand for Precision Reflective Mirrors",
-    "titleZh": "\u6fc0\u5149\u96f7\u8fbe\u63a8\u52a8\u7cbe\u5bc6\u53cd\u5c04\u955c\u9700\u6c42",
+    "titleZh": "激光雷达推动精密反射镜需求",
     "slug": "lidar-technology-driving-demand-for-precision-reflective-mirrors",
     "excerpt": "The rapid expansion of LiDAR technology in autonomous vehicles, robotics, and surveying is driving unprecedented demand for precision reflective mirrors. This article explores the specific requirements for LiDAR mirrors including surface flatness, reflectivity specifications, and environmental durability. PhotonEdge's new production capabilities address these growing market needs.",
-    "excerptZh": "\u6fc0\u5149\u96f7\u8fbe\u6280\u672f\u5728\u81ea\u52a8\u9a7e\u9a76\u3001\u673a\u5668\u4eba\u548c\u6d4b\u91cf\u9886\u57df\u7684\u5feb\u901f\u6269\u5c55\u6b63\u5728\u63a8\u52a8\u7cbe\u5bc6\u53cd\u5c04\u955c\u524d\u6240\u672a\u6709\u7684\u9700\u6c42\u589e\u957f\u3002\u672c\u6587\u63a2\u8ba8\u4e86\u6fc0\u5149\u96f7\u8fbe\u53cd\u5c04\u955c\u7684\u5177\u4f53\u8981\u6c42\uff0c\u5305\u62ec\u8868\u9762\u5e73\u6574\u5ea6\u3001\u53cd\u5c04\u7387\u89c4\u683c\u548c\u73af\u5883\u8010\u4e45\u6027\u3002PhotonEdge\u7684\u65b0\u4ea7\u80fd\u6b63\u5728\u6ee1\u8db3\u8fd9\u4e9b\u4e0d\u65ad\u589e\u957f\u7684\u5e02\u573a\u9700\u6c42\u3002",
+    "excerptZh": "激光雷达技术在自动驾驶、机器人和测量领域的快速扩展正在推动精密反射镜前所未有的需求增长。本文探讨了激光雷达反射镜的具体要求，包括表面平整度、反射率规格和环境耐久性。PhotonEdge的新产能正在满足这些不断增长的市场需求。",
     "category": "Industry News",
     "date": "2026-04-28",
     "image": "/images/factory/factory_1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "PhotonEdge Expands Precision Aspheric Lens Production",
+    "titleZh": "恒鼎光扩产高精度非球面透镜生产线",
+    "slug": "photonedge-expands-aspheric-lens-production",
+    "excerpt": "PhotonEdge announces expansion of aspheric lens manufacturing with new CNC precision grinding, advanced polishing, and MRF (magnetorheological finishing) equipment. Production capacity increases 60%, achieving surface form accuracy of lambda/20 PV and surface roughness below 1 nm Ra for semiconductor inspection, medical imaging, and aerospace applications.",
+    "excerptZh": "恒鼎光宣布扩大非球面透镜制造产能，新增CNC精密磨削、先进抛光和磁流变抛光（MRF）设备。产能提升60%，面形精度达lambda/20 PV、表面粗糙度低于1nm Ra，服务于半导体检测、医疗成像和航空航天应用。",
+    "category": "Company News",
+    "date": "2026-07-29",
+    "image": "/images/factory/factory_4.jpg"
+  },
+  {
+    "id": 11,
+    "title": "PhotonEdge Launches Deep UV (DUV) Optical Components Series",
+    "titleZh": "恒鼎光推出深紫外(DUV)光学元件系列",
+    "slug": "photonedge-launches-deep-uv-optical-components",
+    "excerpt": "PhotonEdge introduces a new product line of deep UV optical components covering 190-300nm wavelength range. Materials include high-purity fused silica JGS1, CaF2, and MgF2 with DUV AR coatings achieving over 90% single-surface transmission at 193nm. Applications include semiconductor lithography inspection, UV spectroscopy, and water disinfection.",
+    "excerptZh": "恒鼎光推出深紫外光学元件新产品线，覆盖190-300nm波段。材料包括高纯熔融石英JGS1、CaF2和MgF2，DUV AR镀膜193nm单面透过率超过90%。应用于半导体光刻检测、紫外光谱学和水消毒。",
+    "category": "Company News",
+    "date": "2026-07-29",
+    "image": "/images/factory/factory_1.jpg"
+  },
+  {
+    "id": 12,
+    "title": "PhotonEdge to Attend LASER World of PHOTONICS 2027",
+    "titleZh": "PhotonEdge将参加2027年慕尼黑光博会",
+    "slug": "photonedge-laser-world-photonics-2027",
+    "url": "/news/photonedge-laser-world-photonics-2027/",
+    "date": "2026-07-31",
+    "image": "/images/news/laser-world-photonics-2027.jpg",
+    "excerpt": "PhotonEdge announces its participation in LASER World of PHOTONICS 2027 in Munich, showcasing latest precision optics innovations and manufacturing capabilities.",
+    "excerptZh": "PhotonEdge宣布将参加2027年慕尼黑国际光博会，展示最新精密光学创新和制造能力。",
+    "content": "PhotonEdge is pleased to announce its participation in LASER World of PHOTONICS 2027, the world's leading trade fair for photonics components, systems, and applications. The event will take place at the Munich Trade Fair Centre in Germany.\n\nAt the exhibition, PhotonEdge will showcase its latest innovations in precision optical components, including advanced aspherical lenses, high-power laser mirrors, UV fused silica optics, and custom optical assemblies. Visitors will have the opportunity to meet with our optical engineering team and discuss their specific requirements for demanding applications in laser systems, medical devices, semiconductor manufacturing, and defense.\n\n\"LASER World of PHOTONICS is the premier platform for connecting with global photonics leaders and demonstrating our commitment to precision and quality,\" said the PhotonEdge management team. \"We look forward to presenting our expanded product portfolio and discussing how our custom optical solutions can address the evolving needs of the industry.\"\n\nThe company will feature live demonstrations of optical testing capabilities and provide detailed consultations on coating specifications for high-energy laser applications. New product launches planned for the show include an expanded range of deep UV optical components and next-generation laser line mirrors with enhanced damage thresholds.\n\nTo schedule a meeting with the PhotonEdge team at the show, please contact us at sales@photonedgeoptics.com or visit our booth details page closer to the event date.",
+    "contentZh": "PhotonEdge欣然宣布将参加2027年慕尼黑国际光博会（LASER World of PHOTONICS 2027），这是全球领先的光子学元器件、系统和应用贸易展会。展会将在德国慕尼黑展览中心举行。\n\n在展会上，PhotonEdge将展示精密光学元件的最新创新成果，包括先进非球面透镜、高功率激光反射镜、UV熔融石英光学元件和定制光学组件。参观者将有机会与我们的光学工程团队面对面交流，讨论激光系统、医疗器械、半导体制造和国防等高要求应用的具体需求。\n\nPhotonEdge管理层表示：\"慕尼黑光博会是与全球光子学行业领袖建立联系、展示我们对精密和质量承诺的顶级平台。我们期待展示扩大的产品组合，并探讨我们的定制光学解决方案如何满足行业不断演进的需求。\"\n\n公司将现场展示光学测试能力，并提供高能激光应用镀膜规格的详细咨询。计划在展会上推出的新产品包括扩展的深紫外光学元件系列和具有增强损伤阈值的新一代激光线反射镜。\n\n如需预约展会期间与PhotonEdge团队会面，请联系sales@photonedgeoptics.com，或在临近展会日期时访问我们的展位详情页面。"
+  },
+  {
+    "id": 13,
+    "title": "PhotonEdge Launches New Anti-Reflection Coating Optimization Service",
+    "titleZh": "恒鼎光推出全新减反射镀膜优化服务",
+    "slug": "photonedge-launches-ar-coating-optimization-service",
+    "url": "/news/photonedge-launches-ar-coating-optimization-service/",
+    "date": "2026-08-01",
+    "image": "/images/news/photonedge-launches-ar-coating-optimization-service.jpg",
+    "category": "Company News",
+    "excerpt": "PhotonEdge launches AR coating optimization service to help customers customize optimal coating solutions based on specific application wavelength and power requirements, reducing reflection loss and improving system transmission.",
+    "excerptZh": "恒鼎光推出AR镀膜优化服务，帮助客户根据具体应用波长和功率需求定制最优镀膜方案，减少反射损失提升系统透过率。",
+    "content": "PhotonEdge is pleased to announce the launch of its new Anti-Reflection (AR) Coating Optimization Service, designed to help customers maximize optical system performance through customized AR coating solutions.\n\nEvery optical system loses light at each air-glass interface due to Fresnel reflection — approximately 4% per surface for uncoated BK7 at normal incidence. In multi-element systems with 8 or more surfaces, cumulative reflection losses can exceed 30%, significantly degrading transmission and creating ghost images that reduce measurement accuracy in precision applications.\n\nPhotonEdge's new AR Coating Optimization Service addresses this challenge by providing application-specific coating designs that go beyond standard catalog offerings. The service includes:\n\n**Wavelength-Specific Optimization**: Rather than selecting from pre-defined broadband ranges, customers receive coatings optimized for their exact operating wavelengths. Whether your system uses a single laser line at 1064 nm, a dual-wavelength configuration at 1064/532 nm, or a custom LED spectrum, our coating engineers design the layer stack to minimize reflection at your specific wavelengths.\n\n**Angle-of-Incidence Customization**: Standard AR coatings are designed for normal incidence (0°). For systems with significant cone angles (high-NA optics) or off-axis elements, the coating performance degrades at oblique angles. Our optimization service designs coatings that maintain low reflectivity across your actual angular range, ensuring consistent performance across the full field.\n\n**Power Density Considerations**: For high-power laser applications, coating absorption is a critical concern. Our service includes LIDT-aware design, selecting deposition processes (IAD or IBS) and material combinations that maximize damage threshold while maintaining the required spectral performance.\n\n**Comprehensive System Analysis**: For customers with complex multi-element systems, PhotonEdge offers system-level coating optimization. We analyze every surface in your optical path, determining the optimal coating type (MgF2 single-layer, BBAR, V-coat, or custom multi-layer) for each surface based on its wavelength, angle, and power conditions, minimizing total system reflection loss.\n\n\"Standard catalog coatings serve 80% of applications well, but the remaining 20% — high-power lasers, wide-angle systems, multi-wavelength configurations, and UV applications — benefit enormously from custom optimization,\" said the PhotonEdge coating engineering team. \"Our new service makes this expertise accessible to all customers, not just those ordering large volumes.\"\n\nThe AR Coating Optimization Service is available now for all optical components in the PhotonEdge catalog, as well as for customer-supplied substrates. Coating designs are provided with spectral performance simulations, and finished components include spectrophotometric measurement data verifying coating performance against specification.\n\nTo request an AR coating optimization consultation, contact PhotonEdge at sales@photonedgeoptics.com or visit our contact page for a technical discussion with our coating engineers.",
+    "contentZh": "恒鼎光欣然宣布推出全新的减反射（AR）镀膜优化服务，旨在通过定制AR镀膜方案帮助客户最大化光学系统性能。\n\n每个光学系统在空气-玻璃界面因菲涅尔反射而损失光——未镀膜BK7在垂直入射时每面约反射4%。在具有8个或更多表面的多元件系统中，累积反射损失可超过30%，显著降低透过率并产生降低精密应用测量准确度的鬼像。\n\n恒鼎光的新AR镀膜优化服务通过提供超越标准目录产品的应用定制镀膜设计来解决这一挑战。服务内容包括：\n\n**波长专属优化**：客户不再从预定义宽带范围中选择，而是获得针对精确工作波长优化的镀膜。无论系统使用1064 nm单一激光线、1064/532 nm双波长配置还是定制LED光谱，我们的镀膜工程师都设计膜系在您的特定波长最小化反射。\n\n**入射角定制**：标准AR镀膜按正入射（0°）设计。对于具有显著锥角（高NA光学）或离轴元件的系统，镀膜性能在斜入射时退化。我们的优化服务设计在您的实际角度范围内维持低反射率的镀膜，确保全视场一致性能。\n\n**功率密度考量**：对于高功率激光应用，镀膜吸收是关键关注点。我们的服务包括LIDT感知设计，选择沉积工艺（IAD或IBS）和材料组合以最大化损伤阈值，同时维持所需光谱性能。\n\n**全面系统分析**：对于具有复杂多元件系统的客户，恒鼎光提供系统级镀膜优化。我们分析光路中的每个表面，根据其波长、角度和功率条件确定每个表面的最优镀膜类型（MgF2单层、BBAR、V涂层或定制多层），最小化系统总反射损失。\n\n恒鼎光镀膜工程团队表示：\"标准目录镀膜很好地服务于80%的应用，但剩余20%——高功率激光、宽角系统、多波长配置和紫外应用——从定制优化中获益巨大。我们的新服务使这种专业知识对所有客户开放，不再仅限于大批量订购客户。\"\n\nAR镀膜优化服务现已在恒鼎光目录所有光学元件上提供，也支持客户提供的基板。镀膜设计附带光谱性能仿真，成品元件包含分光光度测量数据，验证镀膜性能符合规格。\n\n如需AR镀膜优化咨询，请联系恒鼎光sales@photonedgeoptics.com或访问我们的联系页面与镀膜工程师进行技术讨论。"
   }
 ];

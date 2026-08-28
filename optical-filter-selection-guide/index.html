@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Select Optical Filters for Precision Applications | PhotonEdge Optics Blog</title>
+    <meta name="description" content="A comprehensive guide to selecting optical filters including bandpass, neutral density, and absorption filters. Learn key specifications like CWL, FWHM, OD, and blocking range for machine vision, fluorescence, laser, and spectroscopy applications.">
+    <meta name="keywords" content="How to Select Optical Filters for Precision Applications, Technical Guide, PhotonEdge, optical components, 光学元件, 如何为精密应用选择光学滤光片">
+    <meta property="og:title" content="How to Select Optical Filters for Precision Applications | PhotonEdge Optics Blog">
+    <meta property="og:description" content="A comprehensive guide to selecting optical filters including bandpass, neutral density, and absorption filters. Learn key specifications like CWL, FWHM, OD, and blocking range for machine vision, fluorescence, laser, and spectroscopy applications.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/optical-filter-selection-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/optical-filter-selection.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/optical-filter-selection-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/optical-filter-selection-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/optical-filter-selection-guide/?lang=zh">
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Select Optical Filters for Precision Applications",
+  "description": "A comprehensive guide to selecting optical filters including bandpass, neutral density, and absorption filters. Learn key specifications like CWL, FWHM, OD, and blocking range for machine vision, fluorescence, laser, and spectroscopy applications.",
+  "image": "https://photonedgeoptics.com/images/blog/optical-filter-selection.jpg",
+  "datePublished": "2026-08-03",
+  "dateModified": "2026-08-03",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/optical-filter-selection-guide/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://photonedgeoptics.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Select Optical Filters for Precision Applications",
+      "item": "https://photonedgeoptics.com/blog/optical-filter-selection-guide/"
+    }
+  ]
+}
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Select Optical Filters for Precision Applications | PhotonEdge Blog">
+    <meta name="twitter:description" content="A comprehensive guide to selecting optical filters including bandpass, neutral density, and absorption filters. Learn key specifications like CWL, FWHM, OD, and blocking range for machine vision, fluorescence, laser, and spectroscopy applications.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/blog/optical-filter-selection.jpg">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <style>
+        .article-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .article-header { margin-bottom: 30px; }
+        .article-category { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; background: #e0f2fe; color: #0369a1; }
+        .article-title { font-size: 2rem; color: #1e293b; line-height: 1.3; margin-bottom: 16px; }
+        .article-meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: 0.9rem; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; }
+        .article-body { line-height: 1.8; color: #334155; font-size: 1.05rem; }
+        .article-body p { margin-bottom: 1.2em; }
+        .article-back { display: inline-flex; align-items: center; gap: 6px; color: #3b82f6; text-decoration: none; font-weight: 500; margin-bottom: 24px; }
+        .article-back:hover { text-decoration: underline; }
+        .article-cta { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 24px; margin: 30px 0; text-align: center; }
+        .article-cta h3 { color: #0369a1; margin-bottom: 8px; }
+        .article-cta p { color: #475569; margin-bottom: 16px; }
+        .article-cta .btn { display: inline-block; padding: 10px 24px; background: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <picture>
+                <source srcset="/images/logo.webp" type="image/webp">
+                <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+            </picture>
+        </a>
+        <nav class="nav">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+            <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/product-advisor.html" class="nav-link" data-i18n="navProductAdvisor">Product Advisor</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/evidence.html" class="nav-link" data-i18n="navEvidence">Evidence Center</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+            <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span class="cart-badge" id="compareBadge">0</span>
+            </a>
+            <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="article-container">
+    <a href="/application-notes/" style="color:#94a3b8;text-decoration:none;">Application Notes</a></li>
+                        <li><a href="/blog.html" class="article-back" data-i18n="backToBlog">← Back to Blog</a>
+    
+    <div class="article-header">
+        <span class="article-category" id="articleCategory" data-en-category="Technical Guide" data-zh-category="技术指南">Technical Guide</span>
+        <h1 class="article-title" id="articleTitle" data-en-title="How to Select Optical Filters for Precision Applications" data-zh-title="如何为精密应用选择光学滤光片">How to Select Optical Filters for Precision Applications</h1>
+        <div class="article-meta">
+            <span id="articleDate">2026-08-03</span>
+            <span id="articleReadTime" data-en-time="9 min" data-zh-time="9 分钟">9 min</span>
+            <span id="articleAuthor">PhotonEdge Technical Team</span>
+        </div>
+    </div>
+    
+    <div class="article-body" id="articleBody">
+    <div id="articleContentEn">
+
+<h2>Introduction</h2>
+<p>Optical filters are among the most misunderstood components in a system design. Unlike lenses or mirrors, where specifications are relatively intuitive, filter selection involves a web of interacting parameters — center wavelength, bandwidth, blocking depth, angle dependence, and damage threshold — that must all be balanced against the application. Choose incorrectly, and the filter becomes the weakest link: leaking unwanted light, shifting with temperature, or failing under laser power.</p>
+<p>This guide covers the three main categories of optical filters used in industrial and scientific applications — <strong>bandpass filters, neutral density filters, and absorption filters</strong> — and provides a systematic method for selecting the right filter for your application.</p>
+
+<h2>What Is an Optical Filter?</h2>
+<p>An optical filter selectively transmits light in certain wavelength ranges while attenuating light at other wavelengths. Unlike a mirror (which reflects unwanted light) or an absorber (which converts light to heat), a filter can be designed to transmit, reflect, or absorb specific spectral bands depending on the coating and substrate.</p>
+<p>Filters are used across virtually every optical application:</p>
+<ul>
+<li><strong>Fluorescence microscopy:</strong> Excitation and emission filters isolate specific fluorescent signals from background.</li>
+                        <li><a href="/quality-assurance.html" style="color:#94a3b8;text-decoration:none;">Quality Assurance</a></li>
+<li><strong>Machine vision:</strong> Bandpass filters remove ambient light to improve signal-to-noise ratio.</li>
+<li><strong>Laser systems:</strong> ND filters attenuate beam power for safe alignment and measurement.</li>
+<li><strong>Spectroscopy:</strong> Narrow bandpass filters select individual spectral lines.</li>
+<li><strong>Sensor systems:</strong> IR or UV filters block out-of-band radiation that would degrade measurement accuracy.</li>
+</ul>
+
+<h2>Types of Optical Filters</h2>
+
+<h3>1. Narrow Band Interference Filters (Bandpass Filters)</h3>
+<p>Narrow band interference filters use multi-layer dielectric thin-film coatings to transmit a specific wavelength band while blocking everything else. They are the most precise type of optical filter, with center wavelengths (CWL) specified to &plusmn;1-2 nm and full-width half-maximum (FWHM) bandwidths as narrow as 1-10 nm.</p>
+<ul>
+<li><strong>Working principle:</strong> Constructive interference of transmitted light at the design wavelength; destructive interference elsewhere.</li>
+<li><strong>Typical CWL range:</strong> 250 nm to 2500 nm</li>
+<li><strong>Bandwidth (FWHM):</strong> 1 nm (ultra-narrow) to 40 nm (broad bandpass)</li>
+<li><strong>Peak transmission:</strong> Typically 40-90% depending on bandwidth</li>
+<li><strong>Blocking:</strong> OD 3-6 outside the passband</li>
+</ul>
+<p>PhotonEdge <a href="/products/laser-line-filters/">Narrow Band Interference Filters</a> cover CWL from 250-2500 nm with FWHM options from 1-40 nm, making them suitable for fluorescence, Raman spectroscopy, and LiDAR applications.</p>
+
+<h3>2. Neutral Density (ND) Filters</h3>
+<p>Neutral density filters attenuate light equally across a broad wavelength range (or a specified range). They are characterized by optical density (OD), where OD 1 = 10% transmission, OD 2 = 1%, OD 3 = 0.1%, and so on. ND filters come in two types:</p>
+<ul>
+<li><strong>Fixed ND filters:</strong> Provide a specific, constant attenuation. Available in OD 0.1 to OD 4+ (90% to 0.01% transmission).</li>
+<li><strong>Variable ND filters:</strong> Continuously adjustable attenuation, typically by rotating two polarizing elements or sliding an absorptive wedge.</li>
+</ul>
+<p>PhotonEdge offers <a href="/products/fixed-neutral-density-filters/">Fixed Neutral Density Filters</a> in calibrated OD steps and <a href="/products/fixed-neutral-density-filters/">Variable Neutral Density Filters</a> for applications requiring continuous attenuation adjustment.</p>
+
+<h3>3. Absorption Filters (UV and IR Bandpass)</h3>
+<p>Absorption filters use colored glass substrates that inherently absorb unwanted wavelengths while transmitting the desired band. Unlike interference filters, absorption filters are angle-insensitive and have no sharp spectral edges, making them suitable for applications where broadband blocking is acceptable.</p>
+<ul>
+<li><strong>UV transmission filters:</strong> Transmit ultraviolet light (200-400 nm) while absorbing visible and IR. Used for UV curing, fluorescence excitation, and UV sensing.</li>
+<li><strong>IR transmission filters:</strong> Transmit infrared light (700-12000 nm) while absorbing visible light. Used for thermal imaging, IR sensing, and IR laser applications.</li>
+<li><strong>Advantage:</strong> No angle dependence, no laser damage concerns from thin-film delamination.</li>
+<li><strong>Limitation:</strong> Broader spectral edges compared to interference filters; limited to available glass types.</li>
+</ul>
+<p>PhotonEdge <a href="/products/ir-bandpass-filters/">UV Transmission Visible Absorption Filters</a> and <a href="/products/ir-bandpass-filters/">IR Transmission Visible Absorption Filters</a> provide robust, angle-insensitive spectral filtering for demanding environments.</p>
+
+<h2>Key Technical Specifications</h2>
+<p>Understanding these specifications is essential for selecting the correct filter:</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Parameter</th><th style="border:1px solid #e2e8f0;padding:8px;">What It Means</th><th style="border:1px solid #e2e8f0;padding:8px;">Why It Matters</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CWL (Center Wavelength)</td><td style="border:1px solid #e2e8f0;padding:8px;">Peak transmission wavelength</td><td style="border:1px solid #e2e8f0;padding:8px;">Must match your source or signal wavelength</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">FWHM (Bandwidth)</td><td style="border:1px solid #e2e8f0;padding:8px;">Spectral width at 50% transmission</td><td style="border:1px solid #e2e8f0;padding:8px;">Narrower = more selective but lower throughput</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Peak Transmission</td><td style="border:1px solid #e2e8f0;padding:8px;">Max %T at CWL</td><td style="border:1px solid #e2e8f0;padding:8px;">Higher = more signal; trade-off with blocking</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Blocking Range</td><td style="border:1px solid #e2e8f0;padding:8px;">Spectral range where T is suppressed</td><td style="border:1px solid #e2e8f0;padding:8px;">Must cover all unwanted wavelengths</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OD (Optical Density)</td><td style="border:1px solid #e2e8f0;padding:8px;">-log<sub>10</sub>(T) in blocking range</td><td style="border:1px solid #e2e8f0;padding:8px;">OD 4 = 0.01% leakage; critical for fluorescence</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Angle of Incidence</td><td style="border:1px solid #e2e8f0;padding:8px;">Beam angle relative to filter normal</td><td style="border:1px solid #e2e8f0;padding:8px;">Interference filters shift blue with angle</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT</td><td style="border:1px solid #e2e8f0;padding:8px;">Laser damage threshold</td><td style="border:1px solid #e2e8f0;padding:8px;">Must exceed peak fluence for laser use</td></tr>
+</table>
+
+<h2>Application-Specific Filter Selection</h2>
+
+<h3>Fluorescence and Bio-Imaging</h3>
+<p>Fluorescence systems require matched excitation and emission filter sets with high OD blocking (&gt;OD 4) to suppress background. The excitation filter passes the lamp or laser wavelength to the sample; the emission filter isolates the Stokes-shifted fluorescence signal. <a href="/products/laser-line-filters/">Narrow band interference filters</a> with FWHM of 10-20 nm and OD 6 blocking are standard. For multi-color imaging, a dichroic beamsplitter (see our <a href="/products/dichroic-mirrors/">Dichroic Mirrors</a>) is added between excitation and emission paths.</p>
+
+<h3>Machine Vision and Industrial Inspection</h3>
+<p>In machine vision, the goal is to eliminate ambient light (room lighting, sunlight) so the camera sees only the illumination source. A bandpass filter matched to the LED or laser illumination wavelength (commonly 660 nm red, 850 nm NIR, or 940 nm IR) dramatically improves contrast. The filter must be large enough to cover the lens aperture. <a href="/products/laser-line-filters/">Narrow bandpass filters</a> with 10-20 nm FWHM paired with matched illumination sources are the standard solution. For harsh environments, absorption filters provide better durability.</p>
+
+<h3>Laser Power Attenuation</h3>
+<p>During laser alignment and calibration, the beam must be attenuated to safe levels without changing beam profile or wavelength balance. <a href="/products/fixed-neutral-density-filters/">Fixed ND filters</a> in calibrated OD steps (0.3, 0.6, 1.0, 2.0, 3.0, 4.0) provide precise, wavelength-independent attenuation. For applications requiring real-time adjustment, <a href="/products/fixed-neutral-density-filters/">Variable ND Filters</a> allow smooth attenuation control. Critical specification: ensure the ND filter substrate material and coating can handle the beam power — check LIDT ratings.</p>
+
+<h3>Spectroscopy and Analytical Instruments</h3>
+<p>Spectrometers use order-sorting filters to block overlapping spectral orders from diffraction gratings. A narrow bandpass filter selects the spectral region of interest while blocking higher-order diffraction artifacts. Ultra-narrow FWHM filters (1-5 nm) are essential for Raman spectroscopy to isolate weak Raman shifts close to the laser line. Combine with precision optics like <a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a> for focusing and <a href="/products/bk7-windows/">BK7 Windows</a> for sample chambers.</p>
+
+<h2>Common Mistakes to Avoid</h2>
+
+<h3>1. Ignoring Angle-of-Incidence Effects</h3>
+<p>Interference filters shift their center wavelength toward shorter wavelengths (blue shift) when used at non-zero angles of incidence. The shift follows: &lambda;(&theta;) = &lambda;(0) &times; &radic;(1 - (sin&theta;/n<sub>eff</sub>)&sup2;). For a typical filter with n<sub>eff</sub> &asymp; 2, a 10&deg; tilt shifts CWL by about 1.2%. In converging beams (f/2 or faster), different rays hit the filter at different angles, effectively broadening and shifting the passband. Solution: use the filter in a collimated beam whenever possible, or specify a filter designed for the intended angle.</p>
+
+<h3>2. Insufficient Blocking Depth</h3>
+<p>Specifying OD 3 blocking when OD 5 is needed. In fluorescence applications, insufficient blocking allows excitation light to leak into the emission channel, drowning the signal. Always specify blocking depth based on the dynamic range of your detector. A CCD with 16-bit digitization needs at least OD 5 blocking to utilize the full dynamic range.</p>
+
+<h3>3. Overlooking Environmental Durability</h3>
+<p>Thin-film interference filters can be sensitive to humidity, temperature cycling, and cleaning chemicals. In outdoor or harsh industrial environments, specify hermetically sealed filters or switch to absorption-type filters (<a href="/products/ir-bandpass-filters/">UV absorption filters</a> or <a href="/products/ir-bandpass-filters/">IR absorption filters</a>) which are inherently more robust. Always ask for environmental test data (MIL-STD-810 or equivalent).</p>
+
+<h3>4. Neglecting Laser Damage Threshold</h3>
+<p>In pulsed laser applications, peak fluence (J/cm&sup2;) is more important than average power. A nanosecond pulse with modest average power can have extremely high peak fluence that damages thin-film coatings. Always calculate peak fluence and compare to the filter rated LIDT. For high-power laser work, absorption filters may be safer as they lack thin-film coatings that can delaminate.</p>
+
+<h3>5. Mismatched Filter and Source Wavelengths</h3>
+<p>Specifying a 650 nm bandpass filter for a 635 nm laser diode. LED and laser diode wavelengths shift with temperature (typically 0.1-0.3 nm/&deg;C). Always verify the actual emission wavelength at operating temperature, and specify filter CWL with enough margin to accommodate source drift while still maintaining adequate signal throughput.</p>
+
+<h2>Filter Selection Checklist</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Decision Point</th><th style="border:1px solid #e2e8f0;padding:8px;">Question to Answer</th><th style="border:1px solid #e2e8f0;padding:8px;">Recommended Approach</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Filter type</td><td style="border:1px solid #e2e8f0;padding:8px;">Do you need precise wavelength selection or broad attenuation?</td><td style="border:1px solid #e2e8f0;padding:8px;">Bandpass for selection; ND for attenuation; absorption for robustness</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Bandwidth</td><td style="border:1px solid #e2e8f0;padding:8px;">How selective must the spectral response be?</td><td style="border:1px solid #e2e8f0;padding:8px;">FWHM &lt;10 nm for high selectivity; 20-40 nm for general purpose</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Blocking</td><td style="border:1px solid #e2e8f0;padding:8px;">What OD is needed and over what range?</td><td style="border:1px solid #e2e8f0;padding:8px;">Match to detector dynamic range; specify spectral blocking range</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Beam geometry</td><td style="border:1px solid #e2e8f0;padding:8px;">Collimated or converging beam?</td><td style="border:1px solid #e2e8f0;padding:8px;">Collimated preferred for interference filters</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Power handling</td><td style="border:1px solid #e2e8f0;padding:8px;">CW or pulsed laser? What peak fluence?</td><td style="border:1px solid #e2e8f0;padding:8px;">Verify LIDT; consider absorption for high peak power</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Environment</td><td style="border:1px solid #e2e8f0;padding:8px;">Indoor lab or outdoor/industrial?</td><td style="border:1px solid #e2e8f0;padding:8px;">Sealed or absorption filters for harsh environments</td></tr>
+</table>
+
+<h2>PhotonEdge Optical Filter Products</h2>
+<p>PhotonEdge provides a complete range of optical filters for industrial and scientific applications:</p>
+<ul>
+<li><a href="/products/laser-line-filters/">Narrow Band Interference Filters</a> — CWL 250-2500 nm, FWHM 1-40 nm, OD 3-6 blocking. Ideal for fluorescence, LiDAR, and spectroscopy.</li>
+<li><a href="/products/fixed-neutral-density-filters/">Fixed Neutral Density Filters</a> — Calibrated OD 0.1 to 4.0+ in discrete steps. For laser attenuation and detector calibration.</li>
+<li><a href="/products/fixed-neutral-density-filters/">Variable Neutral Density Filters</a> — Continuously adjustable attenuation. For alignment and real-time power control.</li>
+<li><a href="/products/ir-bandpass-filters/">UV Transmission Visible Absorption Filters</a> — Absorptive glass for UV applications, angle-insensitive, high durability.</li>
+<li><a href="/products/ir-bandpass-filters/">IR Transmission Visible Absorption Filters</a> — IR-pass filters for thermal imaging and IR sensing applications.</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Optical filter selection is not simply "pick a wavelength and bandwidth." It requires understanding the interaction between spectral requirements, beam geometry, power levels, and environmental conditions. Narrow band interference filters offer the highest spectral precision but are sensitive to angle and environment. Absorption filters sacrifice edge sharpness for robustness. Neutral density filters provide broadband attenuation for laser safety and calibration.</p>
+<p>The key to successful filter selection is defining all requirements upfront: center wavelength tolerance, bandwidth, blocking depth and range, beam geometry, power level, and operating environment. With these parameters clearly specified, choosing the right filter becomes straightforward. PhotonEdge technical team is ready to help you specify the optimal filter for your application — <a href="/contact.html">contact us</a> for personalized recommendations.</p>
+    </div>
+    <div id="articleContentZh" style="display:none;">
+        <h2>引言</h2>
+<p>光学滤光片是系统设计中最容易被误解的元件之一。与透镜或反射镜（规格相对直观）不同，滤光片选择涉及一系列相互作用的参数——中心波长、带宽、截止深度、角度依赖性和损伤阈值——所有这些都必须与应用需求进行平衡。选择错误，滤光片就会成为最薄弱环节：泄漏不需要的杂光、随温度漂移、或在激光功率下失效。</p>
+<p>本指南涵盖工业和科学应用中使用的三大类光学滤光片——<strong>带通滤光片、中性密度滤光片和吸收滤光片</strong>——并提供系统化的方法来为您的应用选择合适的滤光片。</p>
+
+<h2>什么是光学滤光片？</h2>
+<p>光学滤光片选择性地透过特定波长范围的光，同时衰减其他波长的光。与反射不需要的光的反射镜或将光转化为热的吸收体不同，滤光片可以根据镀膜和基片设计为透过、反射或吸收特定光谱带。</p>
+<p>滤光片几乎用于所有光学应用：</p>
+<ul>
+<li><strong>荧光显微镜：</strong>激发和发射滤光片从背景中分离特定荧光信号。</li>
+<li><strong>机器视觉：</strong>带通滤光片去除环境光以提高信噪比。</li>
+<li><strong>激光系统：</strong>ND滤光片衰减光束功率以安全对准和测量。</li>
+<li><strong>光谱学：</strong>窄带通滤光片选择单条光谱线。</li>
+<li><strong>传感器系统：</strong>红外或紫外滤光片阻挡带外辐射以提高测量精度。</li>
+</ul>
+
+<h2>光学滤光片的类型</h2>
+
+<h3>1. 窄带干涉滤光片（带通滤光片）</h3>
+<p>窄带干涉滤光片使用多层介质薄膜镀膜来透过特定波长带并阻挡其他所有波长。这是最精密的光学滤光片类型，中心波长（CWL）精度为&plusmn;1-2 nm，半高全宽（FWHM）带宽可窄至1-10 nm。</p>
+<ul>
+<li><strong>工作原理：</strong>在设计波长处透射光的建设性干涉；在其他波长处的破坏性干涉。</li>
+<li><strong>典型CWL范围：</strong>250 nm至2500 nm</li>
+<li><strong>带宽（FWHM）：</strong>1 nm（超窄带）至40 nm（宽带通）</li>
+<li><strong>峰值透过率：</strong>通常40-90%，取决于带宽</li>
+<li><strong>截止：</strong>通带外OD 3-6</li>
+</ul>
+<p>恒鼎光<a href="/products/laser-line-filters/">窄带干涉滤光片</a>覆盖CWL 250-2500 nm，FWHM可选1-40 nm，适用于荧光、拉曼光谱和LiDAR应用。</p>
+
+<h3>2. 中性密度（ND）滤光片</h3>
+<p>中性密度滤光片在宽波长范围内均匀衰减光。它们以光密度（OD）为特征，其中OD 1 = 10%透过率，OD 2 = 1%，OD 3 = 0.1%，依此类推。ND滤光片分为两种类型：</p>
+<ul>
+<li><strong>固定ND滤光片：</strong>提供特定的恒定衰减。OD 0.1到OD 4+（90%到0.01%透过率）可选。</li>
+<li><strong>可变ND滤光片：</strong>连续可调衰减，通常通过旋转两个偏振元件或滑动吸收楔实现。</li>
+</ul>
+<p>恒鼎光提供校准OD步长的<a href="/products/fixed-neutral-density-filters/">固定中性密度滤光片</a>和需要连续衰减调节应用的<a href="/products/fixed-neutral-density-filters/">可变中性密度滤光片</a>。</p>
+
+<h3>3. 吸收滤光片（紫外和红外带通）</h3>
+<p>吸收滤光片使用有色玻璃基片，固有地吸收不需要的波长同时透过所需波段。与干涉滤光片不同，吸收滤光片无角度依赖性且没有尖锐的光谱边缘，使其适用于宽带截止可接受的应用。</p>
+<ul>
+<li><strong>紫外透过滤光片：</strong>透过紫外光（200-400 nm）同时吸收可见光和红外光。用于紫外固化、荧光激发和紫外传感。</li>
+<li><strong>红外透过滤光片：</strong>透过红外光（700-12000 nm）同时吸收可见光。用于热成像、红外传感和红外激光应用。</li>
+<li><strong>优势：</strong>无角度依赖性，无薄膜脱落引起的激光损伤问题。</li>
+<li><strong>局限性：</strong>与干涉滤光片相比光谱边缘更宽；受限于可用玻璃类型。</li>
+</ul>
+<p>恒鼎光<a href="/products/ir-bandpass-filters/">紫外透过可见吸收滤光片</a>和<a href="/products/ir-bandpass-filters/">红外透过可见吸收滤光片</a>为苛刻环境提供坚固的、无角度依赖的光谱过滤。</p>
+
+<h2>关键技术规格</h2>
+<p>理解这些规格对于选择正确的滤光片至关重要：</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">参数</th><th style="border:1px solid #e2e8f0;padding:8px;">含义</th><th style="border:1px solid #e2e8f0;padding:8px;">重要性</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CWL（中心波长）</td><td style="border:1px solid #e2e8f0;padding:8px;">峰值透过波长</td><td style="border:1px solid #e2e8f0;padding:8px;">必须匹配光源或信号波长</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">FWHM（带宽）</td><td style="border:1px solid #e2e8f0;padding:8px;">50%透过率处的光谱宽度</td><td style="border:1px solid #e2e8f0;padding:8px;">越窄=选择性越强但通量越低</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">峰值透过率</td><td style="border:1px solid #e2e8f0;padding:8px;">CWL处最大透过率</td><td style="border:1px solid #e2e8f0;padding:8px;">越高=信号越强；与截止有取舍</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">截止范围</td><td style="border:1px solid #e2e8f0;padding:8px;">透过被抑制的光谱范围</td><td style="border:1px solid #e2e8f0;padding:8px;">必须覆盖所有不需要的波长</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OD（光密度）</td><td style="border:1px solid #e2e8f0;padding:8px;">截止范围内的-log<sub>10</sub>(T)</td><td style="border:1px solid #e2e8f0;padding:8px;">OD 4 = 0.01%泄漏；荧光应用关键</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">入射角</td><td style="border:1px solid #e2e8f0;padding:8px;">光束与滤光片法线的夹角</td><td style="border:1px solid #e2e8f0;padding:8px;">干涉滤光片随角度蓝移</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT</td><td style="border:1px solid #e2e8f0;padding:8px;">激光损伤阈值</td><td style="border:1px solid #e2e8f0;padding:8px;">必须超过激光应用的峰值通量</td></tr>
+</table>
+
+<h2>应用场景的滤光片选择</h2>
+
+<h3>荧光与生物成像</h3>
+<p>荧光系统需要匹配的激发和发射滤光片组，具有高OD截止（&gt;OD 4）以抑制背景。激发滤光片将灯或激光波长透过到样品；发射滤光片分离斯托克斯位移的荧光信号。<a href="/products/laser-line-filters/">窄带干涉滤光片</a>配FWHM 10-20 nm和OD 6截止是标准配置。对于多色成像，在激发和发射光路之间加入二向色分束镜（参见我们的<a href="/products/dichroic-mirrors/">二向色镜</a>）。</p>
+
+<h3>机器视觉与工业检测</h3>
+<p>在机器视觉中，目标是消除环境光（室内照明、阳光），使相机只看到照明光源。与LED或激光照明波长匹配的带通滤光片（常见660 nm红光、850 nm近红外或940 nm红外）显著提高对比度。滤光片必须足够大以覆盖镜头孔径。<a href="/products/laser-line-filters/">窄带通滤光片</a>配10-20 nm FWHM与匹配光源是标准方案。对于恶劣环境，吸收滤光片提供更好的耐久性。</p>
+
+<h3>激光功率衰减</h3>
+<p>在激光对准和校准过程中，光束需要衰减到安全水平，同时不改变光束轮廓或波长平衡。<a href="/products/fixed-neutral-density-filters/">固定ND滤光片</a>以校准OD步长（0.3、0.6、1.0、2.0、3.0、4.0）提供精确的、波长无关的衰减。对于需要实时调节的应用，<a href="/products/fixed-neutral-density-filters/">可变ND滤光片</a>允许平滑衰减控制。关键规格：确保ND滤光片的基片材料和镀膜能承受光束功率——检查LIDT额定值。</p>
+
+<h3>光谱学与分析仪器</h3>
+<p>光谱仪使用排序滤光片来阻挡衍射光栅的重叠光谱级。窄带通滤光片选择感兴趣的光谱区域同时阻挡高级衍射伪影。超窄FWHM滤光片（1-5 nm）对于拉曼光谱至关重要，以隔离靠近激光线的弱拉曼位移。配合<a href="/products/bk7-plano-convex/">BK7平凸透镜</a>进行聚焦和<a href="/products/bk7-windows/">BK7窗口</a>用于样品室。</p>
+
+<h2>常见错误与避坑指南</h2>
+
+<h3>1. 忽略入射角效应</h3>
+<p>干涉滤光片在非零入射角下中心波长向短波方向偏移（蓝移）。偏移遵循：&lambda;(&theta;) = &lambda;(0) &times; &radic;(1 - (sin&theta;/n<sub>eff</sub>)&sup2;)。对于典型n<sub>eff</sub> &asymp; 2的滤光片，10&deg;倾斜使CWL偏移约1.2%。在会聚光束（f/2或更快）中，不同光线以不同角度照射滤光片，有效加宽和偏移通带。解决方案：尽可能在准直光束中使用滤光片，或指定为预期角度设计的滤光片。</p>
+
+<h3>2. 截止深度不足</h3>
+<p>需要OD 5截止时却指定了OD 3。在荧光应用中，截止不足会导致激发光泄漏到发射通道中，淹没信号。始终根据探测器的动态范围指定截止深度。具有16位数字化的CCD至少需要OD 5截止以利用全动态范围。</p>
+
+<h3>3. 忽视环境耐久性</h3>
+<p>薄膜干涉滤光片可能对湿度、温度循环和清洁化学品敏感。在户外或恶劣工业环境中，指定密封滤光片或改用吸收型滤光片（<a href="/products/ir-bandpass-filters/">紫外吸收滤光片</a>或<a href="/products/ir-bandpass-filters/">红外吸收滤光片</a>），它们固有地更坚固。始终要求提供环境测试数据（MIL-STD-810或等效标准）。</p>
+
+<h3>4. 忽略激光损伤阈值</h3>
+<p>在脉冲激光应用中，峰值通量（J/cm&sup2;）比平均功率更重要。具有适度平均功率的纳秒脉冲可以有极高的峰值通量，损坏薄膜镀膜。始终计算峰值通量并与滤光片的LIDT额定值比较。对于高功率激光工作，吸收滤光片可能更安全，因为它们没有可能脱落的薄膜镀膜。</p>
+
+<h3>5. 滤光片与光源波长不匹配</h3>
+<p>为635 nm激光二极管指定650 nm带通滤光片。LED和激光二极管波长随温度漂移（通常0.1-0.3 nm/&deg;C）。始终验证工作温度下的实际发射波长，并指定足够余量的滤光片CWL以容纳光源漂移，同时保持足够的信号透过率。</p>
+
+<h2>滤光片选择检查清单</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">决策点</th><th style="border:1px solid #e2e8f0;padding:8px;">需要回答的问题</th><th style="border:1px solid #e2e8f0;padding:8px;">推荐方法</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">滤光片类型</td><td style="border:1px solid #e2e8f0;padding:8px;">需要精确波长选择还是宽带衰减？</td><td style="border:1px solid #e2e8f0;padding:8px;">选择用带通；衰减用ND；坚固用吸收</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">带宽</td><td style="border:1px solid #e2e8f0;padding:8px;">光谱响应需要多高的选择性？</td><td style="border:1px solid #e2e8f0;padding:8px;">高选择性FWHM &lt;10 nm；通用20-40 nm</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">截止</td><td style="border:1px solid #e2e8f0;padding:8px;">需要什么OD，覆盖什么范围？</td><td style="border:1px solid #e2e8f0;padding:8px;">匹配探测器动态范围；指定光谱截止范围</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">光束几何</td><td style="border:1px solid #e2e8f0;padding:8px;">准直还是会聚光束？</td><td style="border:1px solid #e2e8f0;padding:8px;">干涉滤光片优先用准直光束</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">功率承载</td><td style="border:1px solid #e2e8f0;padding:8px;">连续波还是脉冲激光？峰值通量多少？</td><td style="border:1px solid #e2e8f0;padding:8px;">验证LIDT；高峰值功率考虑吸收滤光片</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">环境</td><td style="border:1px solid #e2e8f0;padding:8px;">室内实验室还是户外/工业？</td><td style="border:1px solid #e2e8f0;padding:8px;">恶劣环境用密封或吸收滤光片</td></tr>
+</table>
+
+<h2>恒鼎光光学滤光片产品</h2>
+<p>恒鼎光为工业和科学应用提供完整的光学滤光片系列：</p>
+<ul>
+<li><a href="/products/laser-line-filters/">窄带干涉滤光片</a> — CWL 250-2500 nm，FWHM 1-40 nm，OD 3-6截止。适用于荧光、LiDAR和光谱学。</li>
+<li><a href="/products/fixed-neutral-density-filters/">固定中性密度滤光片</a> — 校准OD 0.1到4.0+离散步长。用于激光衰减和探测器校准。</li>
+<li><a href="/products/fixed-neutral-density-filters/">可变中性密度滤光片</a> — 连续可调衰减。用于对准和实时功率控制。</li>
+<li><a href="/products/ir-bandpass-filters/">紫外透过可见吸收滤光片</a> — 紫外应用的吸收玻璃，无角度依赖，高耐久性。</li>
+<li><a href="/products/ir-bandpass-filters/">红外透过可见吸收滤光片</a> — 热成像和红外传感应用的红外透过滤光片。</li>
+</ul>
+
+<h2>结论</h2>
+<p>光学滤光片选择不仅仅是"选一个波长和带宽"。它需要理解光谱需求、光束几何、功率水平和环境条件之间的相互作用。窄带干涉滤光片提供最高的光谱精度但对角度和环境敏感。吸收滤光片以边缘锐度换取坚固性。中性密度滤光片为激光安全和校准提供宽带衰减。</p>
+<p>成功选择滤光片的关键是预先定义所有需求：中心波长容差、带宽、截止深度和范围、光束几何、功率水平和运行环境。明确这些参数后，选择合适的滤光片变得直接明了。恒鼎光的技术团队随时帮助您为应用指定最佳滤光片——<a href="/contact.html">联系我们</a>获取个性化推荐。</p>
+    </div>
+</div>
+    
+    <div class="article-cta">
+        <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
+        <p data-i18n="blogCtaDesc">PhotonEdge offers precision optical components with competitive pricing and fast delivery. Contact us for a free quote.</p>
+        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request Quote</a>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Aerospace & Defense</a></li>
+                    <li><a href="/applications/research-laboratory/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Research & Laboratory</a></li>
+                    <li><a href="/engineering.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="contactInfo">Contact</h4>
+                <ul>
+                    <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
+                    <li>Phone: +86-13693009175</li>
+                    <li>WhatsApp: +86-13693009175</li>
+                    <li>Contact: Ms. Lin</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<div class="request-quote-float">
+    <a href="/contact.html" class="quote-btn">
+        <span class="quote-icon">&#9993;</span>
+        <span data-i18n="requestQuoteBtn">Request Quote</span>
+    </a>
+</div>
+
+<script src="/js/translations.js"></script>
+<script src="/js/products-data.js"></script>
+<script src="/js/search.js"></script>
+<script>
+// Blog article language switching (enhanced for full content)
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof applyTranslations === 'function') applyTranslations();
+    var lang = getCurrentLanguage();
+    updateArticleMetaLang(lang);
+});
+
+function updateArticleMetaLang(lang) {
+    var title = document.getElementById('articleTitle');
+    var category = document.getElementById('articleCategory');
+    var readTime = document.getElementById('articleReadTime');
+    
+    if (lang === 'zh') {
+        if (title && title.getAttribute('data-zh-title')) title.textContent = title.getAttribute('data-zh-title');
+        if (category && category.getAttribute('data-zh-category')) category.textContent = category.getAttribute('data-zh-category');
+        if (readTime && readTime.getAttribute('data-zh-time')) readTime.textContent = readTime.getAttribute('data-zh-time');
+    } else {
+        if (title && title.getAttribute('data-en-title')) title.textContent = title.getAttribute('data-en-title');
+        if (category && category.getAttribute('data-en-category')) category.textContent = category.getAttribute('data-en-category');
+        if (readTime && readTime.getAttribute('data-en-time')) readTime.textContent = readTime.getAttribute('data-en-time');
+    }
+}
+</script>
+<script>
+function toggleMobileMenu() {
+    var navList = document.querySelector('.nav-list');
+    if (navList) {
+        navList.classList.toggle('active');
+    }
+}
+</script>
+<script src="/js/chatbot.js"></script>
+<script>
+(function() {
+    var enDiv = document.getElementById('articleContentEn');
+    var zhDiv = document.getElementById('articleContentZh');
+    if (!enDiv || !zhDiv) return;
+    // Check current language
+    if (typeof getCurrentLanguage === 'function' && getCurrentLanguage() === 'zh') {
+        enDiv.style.display = 'none';
+        zhDiv.style.display = 'block';
+    }
+    // Listen for language switch
+    var origSetLang = (typeof setLanguage === 'function') ? setLanguage : null;
+    if (origSetLang) {
+        window.setLanguage = function(lang) {
+            origSetLang(lang);
+            if (lang === 'zh') {
+                enDiv.style.display = 'none';
+                zhDiv.style.display = 'block';
+            } else {
+                enDiv.style.display = 'block';
+                zhDiv.style.display = 'none';
+            }
+        };
+    }
+})();
+</script>
+</body>
+</html>

@@ -340,6 +340,11 @@ var PhotonEdgeChatbot = (function() {
                     '<input type="text" class="pe-chatbot-input" id="peChatbotInput" placeholder="Type your message..." />' +
                     '<button class="pe-chatbot-send" id="peChatbotSend">➤</button>' +
                 '</div>' +
+                
+                '<!-- AI Disclaimer Footer -->' +
+                '<div class="pe-chatbot-disclaimer">' +
+                    '<span>AI-generated content is for reference only. Critical specifications and quotations must be confirmed through our formal engineering review process.</span>' +
+                '</div>' +
             '</div>';
 
         document.body.appendChild(container);
