@@ -3627,6 +3627,23 @@ var translations = {
     "v90AppsemiconductorinspectionSub2Desc": "Photolithography alignment systems rely on precision reference optics and alignment markers. Sub-nanometer stability and minimal thermal drift are ess",
     "v90AppsemiconductorinspectionSub4Desc": "Reticle and photomask inspection requires deep-UV transmission and ultra-high surface quality. Any defect on the optic is reproduced in the inspection",
     "v90AppmedicalimagingSpec2": "< 0.1%（成像镜头）",
-    "v90MatUvfusedsilicaIntro": "紫外熔融石英（UVFS）是一种高纯度无定形石英玻璃，具有从深紫外到近红外的优异透过率。"
-  }
+    "v90MatUvfusedsilicaIntro": "紫外熔融石英（UVFS）是一种高纯度无定形石英玻璃，具有从深紫外到近红外的优异透过率。",
+    "blogIRMaterials": "红外光学材料对比：ZnSe vs Ge vs Si",
+    "blogIRMaterialsExcerpt": "全面对比ZnSe、Ge和Si红外光学材料在热成像和激光应用中的性能表现",
+    "blogLIDTGuide": "激光损伤阈值（LIDT）完整指南",
+    "blogLIDTGuideExcerpt": "光学镀膜激光损伤阈值完整指南，涵盖ISO 21254测试标准和实际选型方法",
+    "blogLidarGuide": "LiDAR光学元件选型指南",
+    "blogLidarGuideExcerpt": "LiDAR系统光学元件选型完整指南，涵盖透镜、反射镜、滤光片和窗口片",
+    "blogMedicalGuide": "医疗器械光学元件选型与合规指南",
+    "blogMedicalGuideExcerpt": "医疗器械光学元件完整指南，涵盖生物相容性、灭菌耐受性及法规合规要求",
+    "blogSemiconductorInspection": "半导体检测中的精密光学元件",
+    "blogSemiconductorInspectionExcerpt": "深入解析半导体晶圆检测和计量系统中使用的精密光学元件",
+    "categoryInfrared": "红外材料",
+    "categoryLidar": "LiDAR光学",
+    "categoryMedical": "医疗光学",
+    "categorySemiconductor": "半导体检测",
+    "newsAsphericExpansion": "PhotonEdge扩产精密非球面透镜产线",
+    "newsAsphericExpansionExcerpt": "PhotonEdge宣布新增CNC设备，扩展非球面透镜生产能力",
+    "newsDUVLaunch": "PhotonEdge推出深紫外（DUV）光学元件系列",
+    "newsDUVLaunchExcerpt": "PhotonEdge推出覆盖193-355nm的深紫外光学元件，适用于半导体和光谱应用"  }
 };

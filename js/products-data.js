@@ -2691,6 +2691,602 @@ var PRODUCTS = [
   },
   {
     "id": 9,
+    "name": "UV Fused Silica Plano-Concave Lenses",
+    "nameZh": "紫外融石英平凹透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "UV fused silica plano-concave lenses offer high transmittance in the 195-2100nm range with a negative focal length for beam divergence. Custom coating designs available. UV fused silica plano-concave lenses provide reliable beam expansion and divergence in the deep ultraviolet through near-infrared spectrum. Their exceptional UV transmission down to 185nm makes them critical for excimer laser beam conditioning, UV spectroscopy beam shaping, and lithography illumination systems. The low thermal expansion coefficient of fused silica ensures dimensional stability during prolonged UV exposure, preventing focus drift in precision instruments. These lenses feature 20-10 surface quality and lambda/10 flatness, meeting the stringent requirements of UV optical systems. Available diameters range from 6mm to 50mm with negative focal lengths from -12.7mm to -300mm, and UV-enhanced AR coatings can be specified for wavelengths from 185nm to 700nm. For volume OEM orders, we offer custom wavefront specifications, edge blackening, and precise centering services to meet the exacting demands of semiconductor and biomedical equipment manufacturers.",
+    "descriptionZh": "紫外融石英平凹透镜在195-2100nm波段范围透过率高，具有负焦距，用于光束发散。支持定制镀膜。 UV熔融石英平凹透镜在深紫外到近红外光谱范围内提供可靠的光束扩束和发散功能。其低至185nm的卓越UV透过率使其成为准分子激光光束整形、UV光谱光束塑造和光刻照明系统的关键元件。熔融石英的低热膨胀系数确保长时间UV照射下的尺寸稳定性，防止精密仪器的焦点漂移。面型20-10，平面度λ/10，满足UV光学系统的严格要求。直径6mm至50mm，负焦距-12.7mm至-300mm，可提供185nm至700nm的UV增强增透膜。 对于批量OEM订单，我们提供定制波前规格、边缘涂黑和精密定心服务，满足半导体和生物医疗设备制造商的严格要求。",
+    "image": "images/products/optical-lenses/uv-fused-silica-plano-concave.jpg",
+    "parameters": {
+      "material": "UV Fused Silica(JGS1)",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "focalLengthTolerance": "±1%",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "centration": "<3 arc min",
+      "clearAperture": ">90%",
+      "beveling": "0.25mm×45°",
+      "coatings": "Custom Design"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $120",
+    "priceNoteZh": "参考价：¥245 - ¥840",
+    "slug": "fused-silica-plano-convex-lenses",
+    "partNumbers": [
+      {
+        "partNumber": "LOPCCF6-6",
+        "diameter": "6.00mm",
+        "focalLength": "-6.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.50mm",
+        "backFocalLength": "-7.37mm"
+      },
+      {
+        "partNumber": "LOPCCF6-12",
+        "diameter": "6.00mm",
+        "focalLength": "-12.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.20mm",
+        "backFocalLength": "-13.30mm"
+      },
+      {
+        "partNumber": "LOPCCF10-15",
+        "diameter": "10.00mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.10mm",
+        "backFocalLength": "-16.40mm"
+      },
+      {
+        "partNumber": "LOPCCF10-20",
+        "diameter": "10.00mm",
+        "focalLength": "-20.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.50mm",
+        "backFocalLength": "-21.40mm"
+      },
+      {
+        "partNumber": "LOPCCF10-30",
+        "diameter": "10.00mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.90mm",
+        "backFocalLength": "-31.40mm"
+      },
+      {
+        "partNumber": "LOPCCF12.7-15",
+        "diameter": "12.70mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.90mm",
+        "backFocalLength": "-16.40mm"
+      },
+      {
+        "partNumber": "LOPCCF12.7-25.4",
+        "diameter": "12.70mm",
+        "focalLength": "-25.40mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.90mm",
+        "backFocalLength": "-27.20mm"
+      },
+      {
+        "partNumber": "LOPCCF12.7-38.1",
+        "diameter": "12.70mm",
+        "focalLength": "-38.10mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.20mm",
+        "backFocalLength": "-40.10mm"
+      },
+      {
+        "partNumber": "LOPCCF20-30",
+        "diameter": "20.00mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "6.30mm",
+        "backFocalLength": "-31.40mm"
+      },
+      {
+        "partNumber": "LOPCCF20-50",
+        "diameter": "20.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.30mm",
+        "backFocalLength": "-51.40mm"
+      },
+      {
+        "partNumber": "LOPCCF25-30",
+        "diameter": "25.00mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "10.00mm",
+        "backFocalLength": "-31.40mm"
+      },
+      {
+        "partNumber": "LOPCCF25-50",
+        "diameter": "25.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.70mm",
+        "backFocalLength": "-51.40mm"
+      },
+      {
+        "partNumber": "LOPCCF25-80",
+        "diameter": "25.00mm",
+        "focalLength": "-80.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.20mm",
+        "backFocalLength": "-81.40mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-50",
+        "diameter": "25.40mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "5.55mm",
+        "backFocalLength": "-51.71mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-75",
+        "diameter": "25.40mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "4.45mm",
+        "backFocalLength": "-76.71mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-102",
+        "diameter": "25.40mm",
+        "focalLength": "-102.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "4.29mm",
+        "backFocalLength": "-103.72mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-150",
+        "diameter": "25.40mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "3.46mm",
+        "backFocalLength": "-151.70mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-204",
+        "diameter": "25.40mm",
+        "focalLength": "-204.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "3.38mm",
+        "backFocalLength": "-205.72mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-250",
+        "diameter": "25.40mm",
+        "focalLength": "-250.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "3.07mm",
+        "backFocalLength": "-251.71mm"
+      },
+      {
+        "partNumber": "LOPCCF25.4-1000",
+        "diameter": "25.40mm",
+        "focalLength": "-1000.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "2.64mm",
+        "backFocalLength": "-1001.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8--100",
+        "diameter": "50.80mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "8.60mm",
+        "backFocalLength": "-101.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8-150",
+        "diameter": "50.80mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "6.41mm",
+        "backFocalLength": "-151.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8-200",
+        "diameter": "50.80mm",
+        "focalLength": "-200.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "5.39mm",
+        "backFocalLength": "-201.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8-250",
+        "diameter": "50.80mm",
+        "focalLength": "-250.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "4.80mm",
+        "backFocalLength": "-251.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8-500",
+        "diameter": "50.80mm",
+        "focalLength": "-500.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "3.64mm",
+        "backFocalLength": "-501.71mm"
+      },
+      {
+        "partNumber": "LOPCCF50.8-1000",
+        "diameter": "50.80mm",
+        "focalLength": "-1000.00mm",
+        "centerThickness": "2.50mm",
+        "edgeThickness": "3.07mm",
+        "backFocalLength": "-1001.71mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Plano-Concave Lenses | UV Diverging | PhotonEdge",
+    "seoDesc": "UV fused silica plano-concave lenses for beam divergence in UV systems. 26 models, 185-2100nm transmission.",
+    "keywords": [
+      "fused silica plano concave",
+      "uv diverging lens",
+      "negative fused silica lens"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "UV Fused Silica Bi-Concave Lenses",
+    "nameZh": "紫外融石英双凹透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "UV fused silica bi-concave lenses provide high transmittance in the 195-2100nm range with a negative focal length for beam divergence. Custom coating designs available.",
+    "descriptionZh": "紫外融石英双凹透镜在195-2100nm波段范围透过率高，具有负焦距，用于光束发散。支持定制镀膜。",
+    "image": "images/products/optical-lenses/uv-fused-silica-bi-concave.jpg",
+    "parameters": {
+      "material": "UV Fused Silica(JGS1)",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "focalLengthTolerance": "±1%",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "centration": "<3 arc min",
+      "clearAperture": ">90%",
+      "beveling": "0.25mm×45°",
+      "coatings": "Custom Design"
+    },
+    "price": 38,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $38 - $120",
+    "priceNoteZh": "参考价：¥266 - ¥840",
+    "slug": "fused-silica-laser-lenses",
+    "partNumbers": [
+      {
+        "partNumber": "LOBCCF6-15",
+        "diameter": "6.00mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "1.50mm",
+        "edgeThickness": "2.15mm",
+        "backFocalLength": "-15.50mm"
+      },
+      {
+        "partNumber": "LOBCCF6-30",
+        "diameter": "6.00mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "1.50mm",
+        "edgeThickness": "1.82mm",
+        "backFocalLength": "-30.51mm"
+      },
+      {
+        "partNumber": "LOBCCF10-15",
+        "diameter": "10.00mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.90mm",
+        "backFocalLength": "-10.30mm"
+      },
+      {
+        "partNumber": "LOBCCF10-20",
+        "diameter": "10.00mm",
+        "focalLength": "-20.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.40mm",
+        "backFocalLength": "-20.30mm"
+      },
+      {
+        "partNumber": "LOBCCF12.7-15",
+        "diameter": "12.70mm",
+        "focalLength": "-15.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.02mm",
+        "backFocalLength": "-15.67mm"
+      },
+      {
+        "partNumber": "LOBCCF12.7-20",
+        "diameter": "12.70mm",
+        "focalLength": "-20.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.22mm",
+        "backFocalLength": "-20.67mm"
+      },
+      {
+        "partNumber": "LOBCCF12.7-25",
+        "diameter": "12.70mm",
+        "focalLength": "-25.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.76mm",
+        "backFocalLength": "-25.68mm"
+      },
+      {
+        "partNumber": "LOBCCF12.7-30",
+        "diameter": "12.70mm",
+        "focalLength": "-30.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.46mm",
+        "backFocalLength": "-30.68mm"
+      },
+      {
+        "partNumber": "LOBCCF12.7-40",
+        "diameter": "12.70mm",
+        "focalLength": "-40.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.09mm",
+        "backFocalLength": "-40.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-35",
+        "diameter": "25.40mm",
+        "focalLength": "-35.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "7.17mm",
+        "backFocalLength": "-35.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-50",
+        "diameter": "25.40mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.55mm",
+        "backFocalLength": "-50.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-75",
+        "diameter": "25.40mm",
+        "focalLength": "-75.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.35mm",
+        "backFocalLength": "-75.69mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-100",
+        "diameter": "25.40mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.76mm",
+        "backFocalLength": "-100.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-150",
+        "diameter": "25.40mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "3.17mm",
+        "backFocalLength": "-150.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-200",
+        "diameter": "25.40mm",
+        "focalLength": "-200.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.88mm",
+        "backFocalLength": "-200.69mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-250",
+        "diameter": "25.40mm",
+        "focalLength": "-250.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.70mm",
+        "backFocalLength": "-250.69mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-300",
+        "diameter": "25.40mm",
+        "focalLength": "-300.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.58mm",
+        "backFocalLength": "-300.68mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-500",
+        "diameter": "25.40mm",
+        "focalLength": "-500.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.35mm",
+        "backFocalLength": "-500.69mm"
+      },
+      {
+        "partNumber": "LOBCCF25.4-1000",
+        "diameter": "25.40mm",
+        "focalLength": "-1000.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "2.18mm",
+        "backFocalLength": "-1000.69mm"
+      },
+      {
+        "partNumber": "LOBCCF30-50",
+        "diameter": "30.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "5.50mm",
+        "backFocalLength": "-50.70mm"
+      },
+      {
+        "partNumber": "LOBCCF30-60",
+        "diameter": "30.00mm",
+        "focalLength": "-60.00mm",
+        "centerThickness": "2.00mm",
+        "edgeThickness": "4.50mm",
+        "backFocalLength": "-60.70mm"
+      },
+      {
+        "partNumber": "LOBCCF38-50",
+        "diameter": "38.00mm",
+        "focalLength": "-50.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "11.12mm",
+        "backFocalLength": "-51.02mm"
+      },
+      {
+        "partNumber": "LOBCCF38-100",
+        "diameter": "38.00mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "6.95mm",
+        "backFocalLength": "-101.03mm"
+      },
+      {
+        "partNumber": "LOBCCF38-150",
+        "diameter": "38.00mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "5.62mm",
+        "backFocalLength": "-151.03mm"
+      },
+      {
+        "partNumber": "LOBCCF38-200",
+        "diameter": "38.00mm",
+        "focalLength": "-200.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.96mm",
+        "backFocalLength": "-201.02mm"
+      },
+      {
+        "partNumber": "LOBCCF38-350",
+        "diameter": "38.00mm",
+        "focalLength": "-350.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.13mm",
+        "backFocalLength": "-351.03mm"
+      },
+      {
+        "partNumber": "LOBCCF38-500",
+        "diameter": "38.00mm",
+        "focalLength": "-500.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "3.78mm",
+        "backFocalLength": "-501.02mm"
+      },
+      {
+        "partNumber": "LOBCCF38-750",
+        "diameter": "38.00mm",
+        "focalLength": "-750.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "3.52mm",
+        "backFocalLength": "-751.02mm"
+      },
+      {
+        "partNumber": "LOBCCF38-1000",
+        "diameter": "38.00mm",
+        "focalLength": "-1000.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "3.39mm",
+        "backFocalLength": "-1001.04mm"
+      },
+      {
+        "partNumber": "LOBCCF50-90",
+        "diameter": "50.00mm",
+        "focalLength": "-90.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "5.50mm",
+        "backFocalLength": "-91.00mm"
+      },
+      {
+        "partNumber": "LOBCCF50-100",
+        "diameter": "50.00mm",
+        "focalLength": "-100.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "5.50mm",
+        "backFocalLength": "-101.00mm"
+      },
+      {
+        "partNumber": "LOBCCF50-125",
+        "diameter": "50.00mm",
+        "focalLength": "-125.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.50mm",
+        "backFocalLength": "-126.00mm"
+      },
+      {
+        "partNumber": "LOBCCF50-150",
+        "diameter": "50.00mm",
+        "focalLength": "-150.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "5.00mm",
+        "backFocalLength": "-151.00mm"
+      },
+      {
+        "partNumber": "LOBCCF50-175",
+        "diameter": "50.00mm",
+        "focalLength": "-175.00mm",
+        "centerThickness": "3.00mm",
+        "edgeThickness": "4.50mm",
+        "backFocalLength": "-176.00mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Bi-Concave Lenses | 185-2100nm | PhotonEdge",
+    "seoDesc": "UV fused silica bi-concave lenses for UV beam expansion. High purity synthetic silica. 34 models.",
+    "keywords": [
+      "fused silica bi concave",
+      "uv biconcave lens",
+      "beam expansion uv"
+    ]
+  },
+  {
+    "id": 11,
     "name": "BK7 Plano-Convex Cylindrical Lenses",
     "nameZh": "K9平凸柱透镜",
     "category": "Optical Lenses",
@@ -3288,7 +3884,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 10,
+    "id": 12,
     "name": "BK7 Plano-Concave Cylindrical Lenses",
     "nameZh": "K9平凹柱透镜",
     "category": "Optical Lenses",
@@ -3815,7 +4411,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 11,
+    "id": 13,
     "name": "UV Fused Silica Plano-Convex Cylindrical Lenses",
     "nameZh": "紫外融石英平凸柱透镜",
     "category": "Optical Lenses",
@@ -3984,7 +4580,174 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 12,
+    "id": 14,
+    "name": "UV Fused Silica Plano-Concave Cylindrical Lenses",
+    "nameZh": "紫外融石英平凹柱透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "UV fused silica plano-concave cylindrical lenses offer high transmittance in the 195nm-2100nm wavelength range with a negative focal length. Multiple sizes available, custom orders accepted.",
+    "descriptionZh": "紫外融石英平凹柱透镜在195nm-2100nm波长范围内透过率高，具有负焦距。可提供多种尺寸规格，接受订制。",
+    "image": "images/products/optical-lenses/uv-fused-silica-plano-concave-cylindrical.jpg",
+    "parameters": {
+      "material": "UV Fused Silica(JGS1)",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "focalLengthTolerance": "±1%",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "centration": "<3 arc min",
+      "clearAperture": ">90%",
+      "beveling": "0.25mm×45°",
+      "coatings": "Custom Design"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $90",
+    "priceNoteZh": "参考价：¥245 - ¥630",
+    "slug": "cylindrical-lenses",
+    "partNumbers": [
+      {
+        "partNumber": "LOCPCCS11-8",
+        "width": "-8.00mm",
+        "length": "7.20mm",
+        "focalLength": "11.00mm",
+        "radiusOfCurvature": "-3.67mm",
+        "centerThickness": "4.90mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-9.37mm"
+      },
+      {
+        "partNumber": "LOCPCCS14-10",
+        "width": "-10.00mm",
+        "length": "9.00mm",
+        "focalLength": "14.00mm",
+        "radiusOfCurvature": "-4.58mm",
+        "centerThickness": "5.60mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-11.37mm"
+      },
+      {
+        "partNumber": "LOCPCCS15-12.7",
+        "width": "-12.70mm",
+        "length": "10.00mm",
+        "focalLength": "15.00mm",
+        "radiusOfCurvature": "-5.82mm",
+        "centerThickness": "4.80mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-14.07mm"
+      },
+      {
+        "partNumber": "LOCPCCS15-25",
+        "width": "-25.00mm",
+        "length": "10.00mm",
+        "focalLength": "15.00mm",
+        "radiusOfCurvature": "-11.46mm",
+        "centerThickness": "3.10mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-26.37mm"
+      },
+      {
+        "partNumber": "LOCPCCS15-20",
+        "width": "-20.00mm",
+        "length": "15.00mm",
+        "focalLength": "15.00mm",
+        "radiusOfCurvature": "-10.38mm",
+        "centerThickness": "5.00mm",
+        "edgeThickness": "1.80mm",
+        "backFocalLength": "-10.38mm"
+      },
+      {
+        "partNumber": "LOCPCCS15-40",
+        "width": "-40.00mm",
+        "length": "15.00mm",
+        "focalLength": "15.00mm",
+        "radiusOfCurvature": "-20.76mm",
+        "centerThickness": "4.00mm",
+        "edgeThickness": "2.60mm",
+        "backFocalLength": "-41.70mm"
+      },
+      {
+        "partNumber": "LOCPCCS23-25",
+        "width": "-25.00mm",
+        "length": "15.00mm",
+        "focalLength": "23.00mm",
+        "radiusOfCurvature": "-11.46mm",
+        "centerThickness": "4.80mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-26.37mm"
+      },
+      {
+        "partNumber": "LOCPCCS30-25",
+        "width": "-25.00mm",
+        "length": "20.00mm",
+        "focalLength": "30.00mm",
+        "radiusOfCurvature": "-11.46mm",
+        "centerThickness": "7.80mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-26.37mm"
+      },
+      {
+        "partNumber": "LOCPCCS33-25.4",
+        "width": "-25.40mm",
+        "length": "22.00mm",
+        "focalLength": "33.00mm",
+        "radiusOfCurvature": "-11.65mm",
+        "centerThickness": "9.70mm",
+        "edgeThickness": "2.00mm",
+        "backFocalLength": "-26.77mm"
+      },
+      {
+        "partNumber": "LOCPCCS30-100",
+        "width": "-100.00mm",
+        "length": "15.00mm",
+        "focalLength": "30.00mm",
+        "radiusOfCurvature": "-20.76mm",
+        "centerThickness": "4.00mm",
+        "edgeThickness": "2.60mm",
+        "backFocalLength": "-41.70mm"
+      },
+      {
+        "partNumber": "LOCPCCS30-200",
+        "width": "-200.00mm",
+        "length": "30.00mm",
+        "focalLength": "30.00mm",
+        "radiusOfCurvature": "-103.80mm",
+        "centerThickness": "5.00mm",
+        "edgeThickness": "3.90mm",
+        "backFocalLength": "-202.60mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Concave Cylindrical Lenses | PhotonEdge",
+    "seoDesc": "UV fused silica concave cylindrical lenses for UV beam shaping. 11 models available.",
+    "keywords": [
+      "uv concave cylindrical",
+      "fused silica concave cylindrical"
+    ]
+  },
+  {
+    "id": 15,
     "name": "Achromatic Doublet Lenses",
     "nameZh": "消色差双胶合透镜",
     "category": "Optical Lenses",
@@ -4581,7 +5344,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 13,
+    "id": 16,
     "name": "BK7 C-Lenses",
     "nameZh": "K9 C-透镜",
     "category": "Optical Lenses",
@@ -4816,7 +5579,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "BK7 Ball Lenses",
     "nameZh": "K9球透镜",
     "category": "Optical Lenses",
@@ -4927,7 +5690,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 15,
+    "id": 18,
     "name": "UV Fused Silica Ball Lenses",
     "nameZh": "UV熔融石英球透镜",
     "category": "Optical Lenses",
@@ -5037,7 +5800,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 16,
+    "id": 19,
     "name": "BK7 Rod Lenses",
     "nameZh": "K9棒镜",
     "category": "Optical Lenses",
@@ -5206,7 +5969,175 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 17,
+    "id": 20,
+    "name": "UV Fused Silica Rod Lenses",
+    "nameZh": "UV熔融石英棒镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "UV fused silica rod lenses offer excellent UV transmittance (185-2500nm) for laser collimation and fiber coupling in UV applications. Multiple sizes available, custom orders accepted.",
+    "descriptionZh": "UV熔融石英棒镜在紫外到近红外波段(185-2500nm)具有卓越的透过率，适用于紫外应用的激光准直和光纤耦合。可提供多种尺寸，接受订制。",
+    "image": "images/products/optical-lenses/uv-fused-silica-rod-lenses.jpg",
+    "parameters": {
+      "material": "UV Fused Silica(JGS1)",
+      "diameterTolerance": "±0.15mm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "clearAperture": ">90%"
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $28 - $75",
+    "priceNoteZh": "参考价：¥196 - ¥525",
+    "slug": "bk7-rod-lenses",
+    "partNumbers": [
+      {
+        "partNumber": "LORLU1-2",
+        "diameter": "1.00mm",
+        "length": "2.00mm"
+      },
+      {
+        "partNumber": "LORLU2-4",
+        "diameter": "2.00mm",
+        "length": "4.00mm"
+      },
+      {
+        "partNumber": "LORLU6-6",
+        "diameter": "3.00mm",
+        "length": "6.00mm"
+      },
+      {
+        "partNumber": "LORLU3-10",
+        "diameter": "3.00mm",
+        "length": "10.00mm"
+      },
+      {
+        "partNumber": "LORLU4-8",
+        "diameter": "4.00mm",
+        "length": "10.00mm"
+      },
+      {
+        "partNumber": "LORLU5-10",
+        "diameter": "5.00mm",
+        "length": "10.00mm"
+      },
+      {
+        "partNumber": "LORLU5-15",
+        "diameter": "5.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU5-20",
+        "diameter": "5.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU6-10",
+        "diameter": "6.00mm",
+        "length": "10.00mm"
+      },
+      {
+        "partNumber": "LORLU6-15",
+        "diameter": "6.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU6-20",
+        "diameter": "6.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU7-10",
+        "diameter": "7.00mm",
+        "length": "10.00mm"
+      },
+      {
+        "partNumber": "LORLU7-15",
+        "diameter": "7.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU7-20",
+        "diameter": "7.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU8-15",
+        "diameter": "8.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU8-20",
+        "diameter": "8.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU9-15",
+        "diameter": "9.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU9-20",
+        "diameter": "9.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU10-15",
+        "diameter": "10.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU10-20",
+        "diameter": "10.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU15-15",
+        "diameter": "15.00mm",
+        "length": "15.00mm"
+      },
+      {
+        "partNumber": "LORLU15-20",
+        "diameter": "15.00mm",
+        "length": "20.00mm"
+      },
+      {
+        "partNumber": "LORLU20-20",
+        "diameter": "20.00mm",
+        "length": "20.00mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Rod Lenses | UV Line Focus | PhotonEdge",
+    "seoDesc": "UV fused silica rod lenses for UV laser line generation. 23 models, high UV transmittance.",
+    "keywords": [
+      "uv rod lens",
+      "fused silica rod lens",
+      "uv line focus"
+    ]
+  },
+  {
+    "id": 21,
     "name": "Aspherical Lenses",
     "nameZh": "非球面透镜",
     "category": "Optical Lenses",
@@ -5401,7 +6332,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 18,
+    "id": 22,
     "name": "Laser Beam Expanders",
     "nameZh": "激光扩束镜",
     "category": "Optical Lenses",
@@ -5680,7 +6611,107 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 19,
+    "id": 23,
+    "name": "Microscope Objectives",
+    "nameZh": "显微物镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "Microscope objectives are precision optical components designed for high-resolution microscopy. Available in various magnifications and numerical apertures.",
+    "descriptionZh": "显微物镜是为高分辨率显微镜设计的精密光学元件。提供多种放大倍率和数值孔径。",
+    "image": "images/products/optical-lenses/microscope-objectives.jpg",
+    "parameters": {
+      "magnification": "4X-100X",
+      "numericalAperture": "0.1-1.25",
+      "conjugateFocalDistance": "195mm",
+      "parfocalDistance": "45mm"
+    },
+    "price": 80,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $80 - $1500",
+    "priceNoteZh": "参考价：¥560 - ¥10500",
+    "slug": "microscope-objectives",
+    "partNumbers": [
+      {
+        "partNumber": "LOOL-X4",
+        "magnification": "X4",
+        "NA": "0.1",
+        "workingDistance": "15.5mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      },
+      {
+        "partNumber": "LOOL-X10",
+        "magnification": "X10",
+        "NA": "0.25",
+        "workingDistance": "6.3mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      },
+      {
+        "partNumber": "LOOL-X20",
+        "magnification": "X20",
+        "NA": "0.4",
+        "workingDistance": "1.2mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      },
+      {
+        "partNumber": "LOOL-X40",
+        "magnification": "X40",
+        "NA": "0.65",
+        "workingDistance": "0.44mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      },
+      {
+        "partNumber": "LOOL-X60",
+        "magnification": "X60",
+        "NA": "0.85",
+        "workingDistance": "0.185mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      },
+      {
+        "partNumber": "LOOL-X100",
+        "magnification": "X100",
+        "NA": "1.25",
+        "workingDistance": "0.198mm",
+        "conjugateFocalDistance": "195mm",
+        "parfocalDistance": "45mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Medical",
+      "Research",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 400-700nm"
+    ],
+    "seoTitle": "Microscope Objectives | High-Resolution Imaging | PhotonEdge",
+    "seoDesc": "Infinity-corrected microscope objectives for high-resolution microscopy. 6 models, 4x-100x magnification.",
+    "keywords": [
+      "microscope objective",
+      "infinity corrected",
+      "high magnification lens",
+      "microscopy"
+    ]
+  },
+  {
+    "id": 24,
     "name": "BK7 Circular/Square Windows",
     "nameZh": "K9圆形/方形窗口片",
     "category": "Optical Windows",
@@ -5955,7 +6986,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 20,
+    "id": 25,
     "name": "UV Fused Silica Circular/Square Windows",
     "nameZh": "紫外融石英圆形/方形窗口片",
     "category": "Optical Windows",
@@ -6191,7 +7222,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 21,
+    "id": 26,
     "name": "Sapphire Circular/Square Windows",
     "nameZh": "蓝宝石圆形/方形窗口片",
     "category": "Optical Windows",
@@ -6359,7 +7390,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 22,
+    "id": 27,
     "name": "CaF2 Circular/Square Windows",
     "nameZh": "氟化钙圆形/方形窗口片",
     "category": "Optical Windows",
@@ -6532,7 +7563,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 23,
+    "id": 28,
     "name": "Germanium Circular/Square Windows",
     "nameZh": "锗圆形/方形窗口片",
     "category": "Optical Windows",
@@ -6687,7 +7718,335 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 24,
+    "id": 29,
+    "name": "Silicon Circular/Square Windows",
+    "nameZh": "硅圆形/方形窗口片",
+    "category": "Optical Windows",
+    "categoryZh": "光学窗口",
+    "description": "Silicon windows have good transmittance in the 1-7μm wavelength range and also in the far-IR 50-300μm range. High hardness, insoluble in water. Custom coating designs available.",
+    "descriptionZh": "硅窗口在1-7μm波段具有很好的透光性能，同时在远红外波段50-300μm也具有很好的透光性能。硬度高，不溶于水。支持定制镀膜。",
+    "image": "images/products/optical-windows/si-windows.jpg",
+    "parameters": {
+      "material": "Si",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "surfaceQuality": "60-40",
+      "surfaceFlatness": "λ/2@632.8nm",
+      "clearAperture": ">80%",
+      "parallelism": "<1 arc min",
+      "coatings": "Custom Design"
+    },
+    "price": 60,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $60 - $350",
+    "priceNoteZh": "参考价：¥420 - ¥2450",
+    "slug": "custom-optical-windows",
+    "partNumbers": [
+      {
+        "partNumber": "LOWI10-3",
+        "shape": "Circular",
+        "dimension": "Ø10.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWI100-15",
+        "shape": "Circular",
+        "dimension": "Ø100.00mm",
+        "thickness": "15.00mm"
+      },
+      {
+        "partNumber": "LOWI12.7-3",
+        "shape": "Circular",
+        "dimension": "Ø12.70mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWI15-3",
+        "shape": "Circular",
+        "dimension": "Ø15.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWI150-20",
+        "shape": "Circular",
+        "dimension": "Ø150.00mm",
+        "thickness": "20.00mm"
+      },
+      {
+        "partNumber": "LOWI20-3",
+        "shape": "Circular",
+        "dimension": "Ø20.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWI25.4-3",
+        "shape": "Circular",
+        "dimension": "Ø25.40mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWI30-5",
+        "shape": "Circular",
+        "dimension": "Ø30.00mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWI38.1-5",
+        "shape": "Circular",
+        "dimension": "Ø38.10mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWI50.8-5",
+        "shape": "Circular",
+        "dimension": "Ø50.80mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWI6-2",
+        "shape": "Circular",
+        "dimension": "Ø6.00mm",
+        "thickness": "2.00mm"
+      },
+      {
+        "partNumber": "LOWI75-10",
+        "shape": "Circular",
+        "dimension": "Ø75.00mm",
+        "thickness": "10.00mm"
+      },
+      {
+        "partNumber": "LOWIS10-3",
+        "shape": "Square",
+        "dimension": "10*10mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWIS12.7-3",
+        "shape": "Square",
+        "dimension": "12.7*12.7mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWIS15-3",
+        "shape": "Square",
+        "dimension": "15*15mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWIS20-3",
+        "shape": "Square",
+        "dimension": "20*20mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWIS24.5-3",
+        "shape": "Square",
+        "dimension": "24.5*24.5mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWIS30-5",
+        "shape": "Square",
+        "dimension": "30*30mm",
+        "thickness": "5mm"
+      },
+      {
+        "partNumber": "LOWIS38.1-5",
+        "shape": "Square",
+        "dimension": "38.1*38.1mm",
+        "thickness": "5mm"
+      },
+      {
+        "partNumber": "LOWIS50.8-5",
+        "shape": "Square",
+        "dimension": "50.8*50.8mm",
+        "thickness": "5mm"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-si-windows.svg",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "Silicon"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR"
+    ],
+    "wavelengthRange": [
+      1200,
+      7000
+    ],
+    "application": [
+      "Aerospace",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 3-5um",
+      "Uncoated"
+    ],
+    "seoTitle": "Silicon Optical Windows | NIR to MWIR | PhotonEdge",
+    "seoDesc": "Silicon windows for 1.2-7um NIR to MWIR applications. Ideal for 3-5um thermal imaging systems.",
+    "keywords": [
+      "silicon window",
+      "si ir window",
+      "mwir window",
+      "3-5um window"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "ZnSe Circular/Square Windows",
+    "nameZh": "硒化锌圆形/方形窗口片",
+    "category": "Optical Windows",
+    "categoryZh": "光学窗口",
+    "description": "Zinc selenide windows are the preferred material for high-power CO2 laser optical components. Uniform refractive index makes them ideal for FLIR thermal imaging systems. Custom coating designs available.",
+    "descriptionZh": "硒化锌窗口是高功率CO2激光光学元件的首选材料。折射率均匀和一致性好，是前视红外热成像系统中保护窗口和光学元件的理想材料。支持定制镀膜。",
+    "image": "images/products/optical-windows/znse-windows.jpg",
+    "parameters": {
+      "material": "ZnSe",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "surfaceQuality": "60-40",
+      "surfaceFlatness": "λ/2@632.8nm",
+      "clearAperture": ">80%",
+      "parallelism": "<1 arc min",
+      "coatings": "Custom Design"
+    },
+    "price": 70,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $70 - $400",
+    "priceNoteZh": "参考价：¥490 - ¥2800",
+    "slug": "custom-optical-windows",
+    "partNumbers": [
+      {
+        "partNumber": "LOWZ10-3",
+        "shape": "Circular",
+        "dimension": "Ø10.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWZ12.7-3",
+        "shape": "Circular",
+        "dimension": "Ø12.70mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWZ15-3",
+        "shape": "Circular",
+        "dimension": "Ø15.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWZ20-3",
+        "shape": "Circular",
+        "dimension": "Ø20.00mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWZ25.4-3",
+        "shape": "Circular",
+        "dimension": "Ø25.40mm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOWZ30-5",
+        "shape": "Circular",
+        "dimension": "Ø30.00mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWZ38.1-5",
+        "shape": "Circular",
+        "dimension": "Ø38.10mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWZ50.8-5",
+        "shape": "Circular",
+        "dimension": "Ø50.80mm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOWZ6-2",
+        "shape": "Circular",
+        "dimension": "Ø6.00mm",
+        "thickness": "2.00mm"
+      },
+      {
+        "partNumber": "LOWZS10-3",
+        "shape": "Square",
+        "dimension": "10*10mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWZS12.7-3",
+        "shape": "Square",
+        "dimension": "12.7*12.7mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWZS15-3",
+        "shape": "Square",
+        "dimension": "15*15mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWZS20-3",
+        "shape": "Square",
+        "dimension": "20*20mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWZS25.4-3",
+        "shape": "Square",
+        "dimension": "25.4*25.4mm",
+        "thickness": "3mm"
+      },
+      {
+        "partNumber": "LOWZS30-5",
+        "shape": "Square",
+        "dimension": "30*30mm",
+        "thickness": "5mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "ZnSe"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      600,
+      20000
+    ],
+    "application": [
+      "Laser",
+      "Industrial",
+      "Research"
+    ],
+    "coating": [
+      "AR 10.6um",
+      "Uncoated"
+    ],
+    "seoTitle": "ZnSe Optical Windows | CO2 Laser & IR | 0.6-20um | PhotonEdge",
+    "seoDesc": "ZnSe windows for CO2 laser and infrared systems. 600nm-20um transmission. 10.6um AR coating available.",
+    "keywords": [
+      "znse window",
+      "co2 laser window",
+      "infrared window",
+      "10.6um window"
+    ]
+  },
+  {
+    "id": 31,
     "name": "Laser Line High Reflected Mirrors",
     "nameZh": "激光线高反镜",
     "category": "Optical Mirrors",
@@ -6895,7 +8254,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 25,
+    "id": 32,
     "name": "High Energy Laser Circular/Square Mirrors",
     "nameZh": "高功率激光圆形/方形反射镜",
     "category": "Optical Mirrors",
@@ -7099,7 +8458,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 26,
+    "id": 33,
     "name": "Broadband Dielectric Circular/Square Mirrors",
     "nameZh": "宽带介质膜圆形/方形反射镜",
     "category": "Optical Mirrors",
@@ -7457,7 +8816,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 27,
+    "id": 34,
     "name": "Protected Aluminum Circular/Square Mirrors",
     "nameZh": "保护铝膜圆形/方形反射镜",
     "category": "Optical Mirrors",
@@ -7626,7 +8985,458 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 28,
+    "id": 35,
+    "name": "Enhanced Aluminum Circular/Square Mirrors",
+    "nameZh": "加强铝膜圆形/方形反射镜",
+    "category": "Optical Mirrors",
+    "categoryZh": "光学反射镜",
+    "description": "Enhanced aluminum mirrors feature a multi-layer enhanced aluminum coating for improved reflectivity. R>90% reflectivity with better performance than standard protected aluminum. Enhanced aluminum mirrors combine the broad spectral reflectivity of aluminum with protective dielectric overcoats that boost reflectivity above 92% across the visible spectrum and prevent oxidation of the aluminum layer. This enhanced protection ensures long-term stability of optical performance in environments where unprotected aluminum would degrade over time. They offer an excellent balance of broadband performance and cost-effectiveness, making them the most popular choice for general-purpose laboratory mirrors, illumination systems, and optical breadboard setups. PhotonEdge enhanced aluminum mirrors are available in diameters from 12.5mm to 75mm with 40-20 surface quality and lambda/4 flatness. Standard substrates include BK7 and UV fused silica for UV-extended applications. Protected silver and protected gold variants are also available for applications requiring higher reflectivity in the near-infrared and mid-infrared spectral regions. All mirrors undergo laser damage threshold testing per ISO 21254 standards before shipment.",
+    "descriptionZh": "增强铝膜反射镜采用多层增强铝膜，提高反射率。R>90%反射率，性能优于标准保护铝膜。 增强铝反射镜结合了铝的宽光谱反射率和保护性介质覆盖层，在可见光谱范围内将反射率提升至92%以上，并防止铝层氧化。这种增强保护确保了在裸铝随时间退化的环境中光学性能的长期稳定性。在宽带性能和成本效益之间提供出色平衡，是通用实验室反射镜、照明系统和光学平台布置中最受欢迎的选择。提供直径12.5mm至75mm，面型40-20，平面度λ/4。标准基底包括BK7和UV熔融石英，满足UV扩展应用需求。 还提供保护银和保护金变体，适用于近红外和中红外光谱区域需要更高反射率的应用。 所有反射镜发货前按ISO 21254标准进行激光损伤阈值测试。",
+    "image": "images/products/optical-mirrors/enhanced-aluminum-mirrors.jpg",
+    "parameters": {
+      "substrate": "BK7",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "clearAperture": ">80%",
+      "coatings": "Enhanced Al R>90%"
+    },
+    "price": 18,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $18 - $85",
+    "priceNoteZh": "参考价：¥126 - ¥595",
+    "slug": "enhanced-aluminum-mirrors",
+    "partNumbers": [
+      {
+        "partNumber": "LOEAM12.7-3",
+        "shape": "Circular",
+        "dimension": "Ø12.70mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM12.7-3-U",
+        "shape": "Circular",
+        "dimension": "Ø12.70mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM18-3",
+        "shape": "Circular",
+        "dimension": "Ø18.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM18-3-U",
+        "shape": "Circular",
+        "dimension": "Ø18.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM20-3",
+        "shape": "Circular",
+        "dimension": "Ø20.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM20-3-U",
+        "shape": "Circular",
+        "dimension": "Ø20.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM25.4-3",
+        "shape": "Circular",
+        "dimension": "Ø25.40mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM25.4-3-U",
+        "shape": "Circular",
+        "dimension": "Ø25.40mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM30-5",
+        "shape": "Circular",
+        "dimension": "Ø30.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM30-5-U",
+        "shape": "Circular",
+        "dimension": "Ø30.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM40-5",
+        "shape": "Circular",
+        "dimension": "Ø40.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM40-5-U",
+        "shape": "Circular",
+        "dimension": "Ø40.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM50-5",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM50-5-U",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM50-8",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "8.00mm"
+      },
+      {
+        "partNumber": "LOEAM50-8-U",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "8.00mm"
+      },
+      {
+        "partNumber": "LOEAM6-3",
+        "shape": "Circular",
+        "dimension": "Ø6.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM6-3-U",
+        "shape": "Circular",
+        "dimension": "Ø6.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM80-5",
+        "shape": "Circular",
+        "dimension": "Ø80.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM80-5-U",
+        "shape": "Circular",
+        "dimension": "Ø80.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOEAM9-3",
+        "shape": "Circular",
+        "dimension": "Ø9.00mm",
+        "wavelength": "400-700nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAM9-3-U",
+        "shape": "Circular",
+        "dimension": "Ø9.00mm",
+        "wavelength": "200-400nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOEAMS12.7-3",
+        "shape": "Square",
+        "dimension": "12.7*12.7mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOEAMS12.7-3-U",
+        "shape": "Square",
+        "dimension": "12.7*12.7mm",
+        "thickness": "3mm",
+        "wavelength": "200-400nm"
+      },
+      {
+        "partNumber": "LOEAMS25.4-5",
+        "shape": "Square",
+        "dimension": "25.4*25.4mm",
+        "thickness": "5mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOEAMS25.4-5-U",
+        "shape": "Square",
+        "dimension": "25.4*25.4mm",
+        "thickness": "5mm",
+        "wavelength": "200-400nm"
+      },
+      {
+        "partNumber": "LOEAMS30-5",
+        "shape": "Square",
+        "dimension": "30*30mm",
+        "thickness": "5mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOEAMS30-5-U",
+        "shape": "Square",
+        "dimension": "30*30mm",
+        "thickness": "5mm",
+        "wavelength": "200-400nm"
+      },
+      {
+        "partNumber": "LOEAMS6-3",
+        "shape": "Square",
+        "dimension": "6*6mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOEAMS6-3-U",
+        "shape": "Square",
+        "dimension": "6*6mm",
+        "thickness": "3mm",
+        "wavelength": "200-400nm"
+      },
+      {
+        "partNumber": "LOEAMS9-3",
+        "shape": "Square",
+        "dimension": "9*9mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOEAMS9-3-U",
+        "shape": "Square",
+        "dimension": "9*9mm",
+        "thickness": "3mm",
+        "wavelength": "200-400nm"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-enhanced-aluminum-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Enhanced Al"
+    ],
+    "seoTitle": "Enhanced Aluminum Mirrors | >92% UV Reflectance | PhotonEdge",
+    "seoDesc": "Enhanced aluminum mirrors with >92% reflectance down to 250nm. Improved UV performance vs standard Al.",
+    "keywords": [
+      "enhanced aluminum mirror",
+      "uv aluminum mirror",
+      "high reflectance uv"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Protected Silver Circular/Square Mirrors",
+    "nameZh": "保护银膜圆形/方形反射镜",
+    "category": "Optical Mirrors",
+    "categoryZh": "光学反射镜",
+    "description": "Protected silver mirrors offer high reflectivity (R>95%) across the visible to near-IR spectrum with a protective overcoat for durability. Excellent choice for broadband applications.",
+    "descriptionZh": "在可见至近红外波段（400-2000nm）实现R>95%的高反射率，表面镀有保护膜提升耐磨性和抗氧化能力。相比铝膜反射镜，银膜在长波区域反射优势明显，广泛用于光谱仪、望远镜及宽波段光学系统。支持圆形和方形基底定制。",
+    "image": "images/products/optical-mirrors/protected-silver-mirrors.jpg",
+    "parameters": {
+      "substrate": "BK7",
+      "diameterTolerance": "±0.15mm",
+      "thicknessTolerance": "±0.10mm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "clearAperture": ">80%",
+      "coatings": "Protected Ag R>95%"
+    },
+    "price": 20,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $20 - $95",
+    "priceNoteZh": "参考价：¥140 - ¥665",
+    "slug": "broadband-dielectric-mirrors",
+    "partNumbers": [
+      {
+        "partNumber": "LOAGM12.7-3",
+        "shape": "Circular",
+        "dimension": "Ø12.70mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAGM18-3",
+        "shape": "Circular",
+        "dimension": "Ø18.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAGM20-3",
+        "shape": "Circular",
+        "dimension": "Ø20.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAGM25.4-3",
+        "shape": "Circular",
+        "dimension": "Ø25.40mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAGM30-5",
+        "shape": "Circular",
+        "dimension": "Ø30.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOAGM40-5",
+        "shape": "Circular",
+        "dimension": "Ø40.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOAGM50-5",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOAGM50-8",
+        "shape": "Circular",
+        "dimension": "Ø50.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "8.00mm"
+      },
+      {
+        "partNumber": "LOAGM6-3",
+        "shape": "Circular",
+        "dimension": "Ø6.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAGM80-5",
+        "shape": "Circular",
+        "dimension": "Ø80.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "5.00mm"
+      },
+      {
+        "partNumber": "LOAGM9-3",
+        "shape": "Circular",
+        "dimension": "Ø9.00mm",
+        "wavelength": "400-2000nm",
+        "thickness": "3.00mm"
+      },
+      {
+        "partNumber": "LOAUMS12.7-3",
+        "shape": "Square",
+        "dimension": "12.7*12.7mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOAUMS25.4-5",
+        "shape": "Square",
+        "dimension": "25.4*25.4mm",
+        "thickness": "5mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOAUMS30-5",
+        "shape": "Square",
+        "dimension": "30*30mm",
+        "thickness": "5mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOAUMS6-3",
+        "shape": "Square",
+        "dimension": "6*6mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      },
+      {
+        "partNumber": "LOAUMS9-3",
+        "shape": "Square",
+        "dimension": "9*9mm",
+        "thickness": "3mm",
+        "wavelength": "400-700nm"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-protected-silver-mirrors.svg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR",
+      "SWIR",
+      "MWIR"
+    ],
+    "wavelengthRange": [
+      400,
+      20000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Aerospace",
+      "Research"
+    ],
+    "coating": [
+      "Protected Ag"
+    ],
+    "seoTitle": "Protected Silver Mirrors | Vis-IR Broadband | >98% R | PhotonEdge",
+    "seoDesc": "Protected silver mirrors with >98% reflectance from visible to IR. Ideal for broadband applications.",
+    "keywords": [
+      "silver mirror",
+      "protected silver",
+      "ir mirror",
+      "broadband silver mirror"
+    ]
+  },
+  {
+    "id": 37,
     "name": "Protected Gold Circular/Square Mirrors",
     "nameZh": "保护金膜圆形/方形反射镜",
     "category": "Optical Mirrors",
@@ -7785,7 +9595,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 29,
+    "id": 38,
     "name": "BK7 Right Angle Prisms",
     "nameZh": "BK7直角棱镜",
     "category": "Optical Prisms",
@@ -7927,7 +9737,147 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 30,
+    "id": 39,
+    "name": "UV Fused Silica Right Angle Prisms",
+    "nameZh": "UV石英直角棱镜",
+    "category": "Optical Prisms",
+    "categoryZh": "光学棱镜",
+    "description": "UV fused silica right angle prisms offer high UV transmittance for applications requiring UV performance. Precise angle control with custom coating designs available.",
+    "descriptionZh": "UV石英直角棱镜提供高紫外透过率，适用于需要紫外性能的应用。角度控制精确，支持定制镀膜。",
+    "image": "images/products/optical-prisms/uv-fused-silica-right-angle-prisms.jpg",
+    "parameters": {
+      "material": "UV Fused Silica(JGS1)",
+      "angleTolerance": "±10 arcsec",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "clearAperture": ">80%",
+      "pyramidError": "<1 arcmin",
+      "coatings": "Custom Design"
+    },
+    "price": 28,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $28 - $120",
+    "priceNoteZh": "参考价：¥196 - ¥840",
+    "slug": "bk7-right-angle-prisms",
+    "partNumbers": [
+      {
+        "partNumber": "LORPF3-3",
+        "edgeA": "3.00mm",
+        "edgeB": "3.00mm",
+        "edgeC": "3.00mm"
+      },
+      {
+        "partNumber": "LORPF3-5",
+        "edgeA": "3.00mm",
+        "edgeB": "3.00mm",
+        "edgeC": "5.00mm"
+      },
+      {
+        "partNumber": "LORPF3-8",
+        "edgeA": "3.00mm",
+        "edgeB": "3.00mm",
+        "edgeC": "8.00mm"
+      },
+      {
+        "partNumber": "LORPF3-10",
+        "edgeA": "3.00mm",
+        "edgeB": "3.00mm",
+        "edgeC": "10.00mm"
+      },
+      {
+        "partNumber": "LORPF5-5",
+        "edgeA": "5.00mm",
+        "edgeB": "5.00mm",
+        "edgeC": "5.00mm"
+      },
+      {
+        "partNumber": "LORPF10-10",
+        "edgeA": "10.00mm",
+        "edgeB": "10.00mm",
+        "edgeC": "10.00mm"
+      },
+      {
+        "partNumber": "LORPF15-15",
+        "edgeA": "15.00mm",
+        "edgeB": "15.00mm",
+        "edgeC": "15.00mm"
+      },
+      {
+        "partNumber": "LORPF20-20",
+        "edgeA": "20.00mm",
+        "edgeB": "20.00mm",
+        "edgeC": "20.00mm"
+      },
+      {
+        "partNumber": "LORPF20-60",
+        "edgeA": "20.00mm",
+        "edgeB": "20.00mm",
+        "edgeC": "60.00mm"
+      },
+      {
+        "partNumber": "LORPF25-25",
+        "edgeA": "25.00mm",
+        "edgeB": "25.00mm",
+        "edgeC": "25.00mm"
+      },
+      {
+        "partNumber": "LORPF25.4-25.4",
+        "edgeA": "25.40mm",
+        "edgeB": "25.40mm",
+        "edgeC": "25.40mm"
+      },
+      {
+        "partNumber": "LORPF30-20",
+        "edgeA": "30.00mm",
+        "edgeB": "30.00mm",
+        "edgeC": "20.00mm"
+      },
+      {
+        "partNumber": "LORPF30-30",
+        "edgeA": "30.00mm",
+        "edgeB": "30.00mm",
+        "edgeC": "30.00mm"
+      },
+      {
+        "partNumber": "LORPF50.8-50.8",
+        "edgeA": "50.80mm",
+        "edgeB": "50.80mm",
+        "edgeC": "50.80mm"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-uv-fused-silica-right-angle-prisms.png",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      185,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "AR 193-355nm"
+    ],
+    "seoTitle": "UV Fused Silica Right Angle Prisms | UV Laser | PhotonEdge",
+    "seoDesc": "UV fused silica right angle prisms for UV laser beam steering. 185-2100nm transmission.",
+    "keywords": [
+      "uv right angle prism",
+      "fused silica prism",
+      "uv laser prism"
+    ]
+  },
+  {
+    "id": 40,
     "name": "Penta Prisms",
     "nameZh": "五角棱镜",
     "category": "Optical Prisms",
@@ -8010,7 +9960,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 31,
+    "id": 41,
     "name": "Corner Cube Prisms",
     "nameZh": "角锥棱镜",
     "category": "Optical Prisms",
@@ -8097,7 +10047,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 32,
+    "id": 42,
     "name": "Dove Prisms",
     "nameZh": "道威棱镜",
     "category": "Optical Prisms",
@@ -8187,7 +10137,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 33,
+    "id": 43,
     "name": "Equilateral Dispersing Prisms",
     "nameZh": "等边色散棱镜",
     "category": "Optical Prisms",
@@ -8268,7 +10218,75 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 34,
+    "id": 44,
+    "name": "Roof Prisms",
+    "nameZh": "屋脊棱镜",
+    "category": "Optical Prisms",
+    "categoryZh": "光学棱镜",
+    "description": "Roof prisms combine the function of a right angle prism with a roof surface, reversing the image left-to-right while deviating the beam by 90 degrees. Custom coating designs available.",
+    "descriptionZh": "屋脊棱镜在直角棱镜基础上增加了屋脊面结构，可将光束偏转90°并实现图像的左右反转，常用于双筒望远镜、测距仪和光电跟踪系统。采用K9光学玻璃精密加工，波前畸变<λ/4，支持按需定制尺寸及增透/高反镀膜。",
+    "image": "images/products/optical-prisms/roof-prisms.jpg",
+    "parameters": {
+      "material": "H-K9L(BK7)",
+      "angleTolerance": "±1 arcmin",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "clearAperture": ">80%",
+      "coatings": "Custom Design"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $150",
+    "priceNoteZh": "参考价：¥245 - ¥1050",
+    "slug": "corner-cube-prisms",
+    "partNumbers": [
+      {
+        "partNumber": "LORP01",
+        "dimensionA": "12.00mm",
+        "dimensionH": "15.00mm"
+      },
+      {
+        "partNumber": "LORP02",
+        "dimensionA": "18.00mm",
+        "dimensionH": "23.00mm"
+      },
+      {
+        "partNumber": "LORP03",
+        "dimensionA": "40.00mm",
+        "dimensionH": "56.60mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Protected Al"
+    ],
+    "seoTitle": "Roof Prisms | Image Inversion & Periscope | PhotonEdge",
+    "seoDesc": "Roof prisms for image inversion and periscope systems. Common in binoculars and optical instruments.",
+    "keywords": [
+      "roof prism",
+      "image inversion prism",
+      "periscope prism",
+      "binocular prism"
+    ]
+  },
+  {
+    "id": 45,
     "name": "Narrow Band Interference Filters",
     "nameZh": "窄带干涉滤光片",
     "category": "Optical Filters",
@@ -8886,7 +10904,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 35,
+    "id": 46,
     "name": "Fixed Neutral Density Filters",
     "nameZh": "固定中性密度滤光片/衰减片",
     "category": "Optical Filters",
@@ -9094,7 +11112,143 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 36,
+    "id": 47,
+    "name": "Variable Neutral Density Filters",
+    "nameZh": "可变中性密度滤光片",
+    "category": "Optical Filters",
+    "categoryZh": "光学滤光片",
+    "description": "Variable neutral density filters allow continuous adjustment of light attenuation. Available in circular and linear gradient types, they provide smooth, adjustable optical density across the visible to near-infrared spectrum.",
+    "descriptionZh": "可变中性密度滤光片可实现光密度的连续可调衰减。圆形渐变滤光片通过旋转调节光密度，线性渐变滤光片通过平移调节光密度，适用于可见光到近红外区域。",
+    "image": "images/products/optical-filters/variable-neutral-density-filters.jpg",
+    "parameters": {
+      "material": "Optical Glass",
+      "diameterTolerance": "+0/-0.2mm",
+      "surfaceQuality": "80-50",
+      "clearAperture": ">90%",
+      "parallelism": "<3 arc min",
+      "type": "Circular / Linear Gradient"
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $55 - $280",
+    "priceNoteZh": "参考价：¥385 - ¥1960",
+    "slug": "fixed-neutral-density-filters",
+    "partNumbers": [
+      {
+        "partNumber": "LOLVF01",
+        "opticalDensityRange": "0.8-2.0",
+        "wavelength": "400-1100nm",
+        "dimension": "76.2*25.4*2.0mm"
+      },
+      {
+        "partNumber": "LOLVF02",
+        "opticalDensityRange": "0.8-2.0",
+        "wavelength": "400-1100nm",
+        "dimension": "50.8*25.4*2.0mm"
+      },
+      {
+        "partNumber": "LORVF01",
+        "opticalDensityRange": "0.0-1.0",
+        "diameter": "25.00mm"
+      },
+      {
+        "partNumber": "LORVF03",
+        "opticalDensityRange": "0.0-1.0",
+        "diameter": "50.00mm"
+      },
+      {
+        "partNumber": "LORVF04",
+        "opticalDensityRange": "0.0-1.5",
+        "diameter": "25.00mm"
+      },
+      {
+        "partNumber": "LORVF05",
+        "opticalDensityRange": "0.0-1.5",
+        "diameter": "50.00mm"
+      },
+      {
+        "partNumber": "LORVF06",
+        "opticalDensityRange": "0.0-2.0",
+        "diameter": "25.00mm"
+      },
+      {
+        "partNumber": "LORVF07",
+        "opticalDensityRange": "0.0-2.0",
+        "diameter": "50.00mm"
+      },
+      {
+        "partNumber": "LORVF08",
+        "opticalDensityRange": "0.0-3.0",
+        "diameter": "25.00mm"
+      },
+      {
+        "partNumber": "LORVF09",
+        "opticalDensityRange": "0.0-3.0",
+        "diameter": "50.00mm"
+      },
+      {
+        "partNumber": "LORVF10",
+        "opticalDensityRange": "0.0-4.0",
+        "diameter": "25.00mm"
+      },
+      {
+        "partNumber": "LORVF11",
+        "opticalDensityRange": "0.0-4.0",
+        "diameter": "50.00mm"
+      },
+      {
+        "partNumber": "LORVF12",
+        "opticalDensityRange": "0.0-1.0",
+        "diameter": "100.00mm"
+      },
+      {
+        "partNumber": "LORVF13",
+        "opticalDensityRange": "0.0-2.0",
+        "diameter": "100.00mm"
+      },
+      {
+        "partNumber": "LORVF14",
+        "opticalDensityRange": "0.0-3.0",
+        "diameter": "100.00mm"
+      },
+      {
+        "partNumber": "LORVF15",
+        "opticalDensityRange": "0.0-4.0",
+        "diameter": "100.00mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Variable ND"
+    ],
+    "seoTitle": "Variable Neutral Density Filters | Continuously Adjustable | PhotonEdge",
+    "seoDesc": "Variable ND filters for continuously adjustable attenuation. Ideal for laser power tuning.",
+    "keywords": [
+      "variable nd filter",
+      "adjustable density filter",
+      "laser power control"
+    ]
+  },
+  {
+    "id": 48,
     "name": "UV Transmission Visible Absorption Filters",
     "nameZh": "紫外透过可见吸收滤光片",
     "category": "Optical Filters",
@@ -9168,7 +11322,115 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 37,
+    "id": 49,
+    "name": "IR Transmission Visible Absorption Filters",
+    "nameZh": "红外透射可见光吸收滤光片",
+    "category": "Optical Filters",
+    "categoryZh": "光学滤光片",
+    "description": "IR transmission visible absorption filters transmit infrared light while absorbing visible wavelengths. Made from red glass types (HB600-HB720), they are widely used in IR imaging, night vision systems, and spectral separation applications.",
+    "descriptionZh": "这个滤光片让可见光吸收，红外透过。采用HB600-HB720等红色玻璃，广泛用于红外成像、夜视系统和光谱分离等应用。",
+    "image": "images/products/optical-filters/ir-transmission-filters.jpg",
+    "parameters": {
+      "material": "Red Glass (HB Series)",
+      "clearAperture": ">90%"
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $45 - $290",
+    "priceNoteZh": "参考价：¥315 - ¥2030",
+    "slug": "ir-bandpass-filters",
+    "partNumbers": [
+      {
+        "partNumber": "HB600-25.4",
+        "glassType": "HB600",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB610-25.4",
+        "glassType": "HB610",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB630-25.4",
+        "glassType": "HB630",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB640-25.4",
+        "glassType": "HB640",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB650-25.4",
+        "glassType": "HB650",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB670-25.4",
+        "glassType": "HB670",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB685-25.4",
+        "glassType": "HB685",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB700-25.4",
+        "glassType": "HB700",
+        "thickness": "2mm",
+        "diameter": "25.4mm"
+      },
+      {
+        "partNumber": "HB720-25.4",
+        "glassType": "HB720",
+        "thickness": "3mm",
+        "diameter": "25.4mm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "ZnSe",
+      "Ge"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      800,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Industrial"
+    ],
+    "coating": [
+      "IR Bandpass"
+    ],
+    "seoTitle": "IR Bandpass Filters | 0.8-14um | Infrared Filters | PhotonEdge",
+    "seoDesc": "IR bandpass filters for 800nm-14um. CO2 laser, thermal imaging and IR sensor applications.",
+    "keywords": [
+      "ir bandpass filter",
+      "infrared filter",
+      "co2 laser filter",
+      "thermal filter"
+    ]
+  },
+  {
+    "id": 51,
     "name": "Circular/Square Beamsplitter Plates",
     "nameZh": "圆形/方形分光片",
     "category": "Optical Beamsplitters",
@@ -9371,7 +11633,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 38,
+    "id": 52,
     "name": "Cube Beamsplitters",
     "nameZh": "普通立方体分光镜",
     "category": "Optical Beamsplitters",
@@ -9695,7 +11957,687 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 39,
+    "id": 53,
+    "name": "Non-Polarizing Cube Beamsplitters",
+    "nameZh": "消偏振立方体分光棱镜",
+    "category": "Optical Beamsplitters",
+    "categoryZh": "光学分光镜",
+    "description": "Non-polarizing cube beamsplitters maintain equal splitting ratios for both s- and p-polarization states. T(P or S)=50±5%. Ideal for polarization-sensitive applications.",
+    "descriptionZh": "消偏振立方体分光棱镜对s偏振和p偏振保持相同的分光比。T(P or S)=50±5%。适用于偏振敏感应用。",
+    "image": "images/products/optical-beamsplitters/non-polarizing-cube-beamsplitters.jpg",
+    "parameters": {
+      "material": "N-BK7/K9",
+      "angleTolerance": "±10 arcsec",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "parallelism": "<1 arc min",
+      "transmissionPolarization": "T(P or S)=50±5%"
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $45 - $250",
+    "priceNoteZh": "参考价：¥315 - ¥1750",
+    "slug": "cube-beamsplitters",
+    "partNumbers": [
+      {
+        "partNumber": "LONPBS5-532",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS10-532",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-532",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS15-532",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS20-532",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-532",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LONPBS5-633",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS10-633",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-633",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS15-633",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS20-633",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-633",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LONPBS5-780",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS10-780",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-780",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS15-780",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS20-780",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-780",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LONPBS5-850",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS10-850",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-850",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS15-850",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS20-850",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-850",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LONPBS5-1064",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS10-1064",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-1064",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS15-1064",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS20-1064",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-1064",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LONPBS5-420/680",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS10-420/680",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-420/680",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS15-420/680",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS20-420/680",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-420/680",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LONPBS5-620/1000",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS10-620/1000",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-620/1000",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS15-620/1000",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS20-620/1000",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-620/1000",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LONPBS5-900/1300",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS10-900/1300",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-900/1300",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS15-900/1300",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS20-900/1300",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-900/1300",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LONPBS5-1200/1600",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LONPBS10-1200/1600",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LONPBS12.7-1200/1600",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LONPBS15-1200/1600",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LONPBS20-1200/1600",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LONPBS25.4-1200/1600",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "1200-1600nm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "Non-Polarizing BS"
+    ],
+    "seoTitle": "Non-Polarizing Cube Beamsplitters | VIS-NIR | PhotonEdge",
+    "seoDesc": "Non-polarizing cube beamsplitters maintaining polarization state. Critical for laser and imaging systems.",
+    "keywords": [
+      "non polarizing beamsplitter",
+      "npbs cube",
+      "polarization maintaining splitter"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Polarizing Cube Beamsplitters",
+    "nameZh": "偏振立方体分光棱镜",
+    "category": "Optical Beamsplitters",
+    "categoryZh": "光学分光镜",
+    "description": "Polarizing cube beamsplitters separate s- and p-polarization components. Extinction ratio >500:1, Tp>95%, Ts<1%. Ideal for polarization-based optical systems.",
+    "descriptionZh": "偏振立方体分光棱镜分离s偏振和p偏振分量。消光比>500:1，Tp>95%，Ts<1%。适用于偏振光学系统。",
+    "image": "images/products/optical-beamsplitters/polarizing-cube-beamsplitters.jpg",
+    "parameters": {
+      "material": "N-BK7/K9",
+      "angleTolerance": "±10 arcsec",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/4@632.8nm",
+      "parallelism": "<1 arc min",
+      "extinctionRatio": ">500:1",
+      "tp": ">95%",
+      "ts": "<1%"
+    },
+    "price": 55,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $55 - $300",
+    "priceNoteZh": "参考价：¥385 - ¥2100",
+    "slug": "cube-beamsplitters",
+    "partNumbers": [
+      {
+        "partNumber": "LOPBS5-397",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS10-397",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-397",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS15-397",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS20-397",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-397",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "397nm"
+      },
+      {
+        "partNumber": "LOPBS5-532",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS10-532",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-532",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS15-532",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS20-532",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-532",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "532nm"
+      },
+      {
+        "partNumber": "LOPBS5-633",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS10-633",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-633",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS15-633",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS20-633",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-633",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "633nm"
+      },
+      {
+        "partNumber": "LOPBS5-780",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS10-780",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-780",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS15-780",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS20-780",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-780",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "780nm"
+      },
+      {
+        "partNumber": "LOPBS5-850",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS10-850",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-850",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS15-850",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS20-850",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-850",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "850nm"
+      },
+      {
+        "partNumber": "LOPBS5-1064",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS10-1064",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-1064",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS15-1064",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS20-1064",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-1064",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "1064nm"
+      },
+      {
+        "partNumber": "LOPBS5-420/680",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS10-420/680",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-420/680",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS15-420/680",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS20-420/680",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-420/680",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "420-680nm"
+      },
+      {
+        "partNumber": "LOPBS5-620/1000",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS10-620/1000",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-620/1000",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS15-620/1000",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS20-620/1000",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-620/1000",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "620-1000nm"
+      },
+      {
+        "partNumber": "LOPBS5-900/1300",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS10-900/1300",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-900/1300",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS15-900/1300",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS20-900/1300",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-900/1300",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "900-1300nm"
+      },
+      {
+        "partNumber": "LOPBS5-1200/1600",
+        "dimension": "5.0*5.0*5.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LOPBS10-1200/1600",
+        "dimension": "10.0*10.0*10.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LOPBS12.7-1200/1600",
+        "dimension": "12.7*12.7*12.7mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LOPBS15-1200/1600",
+        "dimension": "15.0*15.0*15.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LOPBS20-1200/1600",
+        "dimension": "20.0*20.0*20.0mm",
+        "wavelength": "1200-1600nm"
+      },
+      {
+        "partNumber": "LOPBS25.4-1200/1600",
+        "dimension": "25.4*25.4*25.4mm",
+        "wavelength": "1200-1600nm"
+      }
+    ],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Beamsplitter",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Polarizing BS"
+    ],
+    "seoTitle": "Polarizing Cube Beamsplitters | High Extinction | PhotonEdge",
+    "seoDesc": "Polarizing cube beamsplitters for s/p polarization separation. High extinction ratio.",
+    "keywords": [
+      "polarizing beamsplitter",
+      "pbs cube",
+      "polarization splitter",
+      "polarizing cube"
+    ]
+  },
+  {
+    "id": 55,
     "name": "Multiple Order Waveplates",
     "nameZh": "多级波片",
     "category": "Optical Wave Plates",
@@ -10062,7 +13004,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 40,
+    "id": 56,
     "name": "Dual Wavelength Waveplates",
     "nameZh": "双波长波片",
     "category": "Optical Wave Plates",
@@ -10242,7 +13184,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 41,
+    "id": 57,
     "name": "Cemented Zero Order Waveplates",
     "nameZh": "胶合零级波片",
     "category": "Optical Wave Plates",
@@ -10605,7 +13547,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 42,
+    "id": 58,
     "name": "Air Spaced Zero Order Waveplates",
     "nameZh": "空气隙零级波片",
     "category": "Optical Wave Plates",
@@ -10925,7 +13867,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 43,
+    "id": 59,
     "name": "Visible Linear Polarizers",
     "nameZh": "可见光线偏振片",
     "category": "Optical Polarizers",
@@ -10988,7 +13930,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 44,
+    "id": 60,
     "name": "Visible Circular Polarizers",
     "nameZh": "可见光圆偏振片",
     "category": "Optical Polarizers",
@@ -11050,7 +13992,106 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 45,
+    "id": 61,
+    "name": "IR Polarizers",
+    "nameZh": "红外偏振片",
+    "category": "Optical Polarizers",
+    "categoryZh": "光学偏振片",
+    "description": "IR polarizers provide high extinction ratio polarization in the infrared spectrum. Extinction ratio >1000:1. Ideal for IR imaging and sensing applications.",
+    "descriptionZh": "红外偏振片在红外光谱范围提供高消光比偏振。消光比>1000:1。适用于红外成像和传感应用。",
+    "image": "images/products/optical-polarizers/ir-polarizers.jpg",
+    "parameters": {
+      "wavelengthRange": "IR",
+      "surfaceQuality": "60-40",
+      "parallelism": "<1 arc min",
+      "extinctionRatio": ">1000:1"
+    },
+    "price": 45,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $45 - $250",
+    "priceNoteZh": "参考价：¥315 - ¥1750",
+    "slug": "ir-polarizers",
+    "partNumbers": [
+      {
+        "partNumber": "LOIRP-600/1000",
+        "diameter": "25.4mm",
+        "wavelengthRange": "600-1000nm",
+        "transmission": ">84-95",
+        "extinctionRatio": ">1000:1"
+      },
+      {
+        "partNumber": "LOIRP-600/1200",
+        "diameter": "25.4mm",
+        "wavelengthRange": "600-1200nm",
+        "transmission": ">67-84",
+        "extinctionRatio": ">1000:1"
+      },
+      {
+        "partNumber": "LOIRP-800/1100",
+        "diameter": "25.4mm",
+        "wavelengthRange": "800-1100nm",
+        "transmission": ">85-87",
+        "extinctionRatio": ">1000:1"
+      },
+      {
+        "partNumber": "LOIRP-900/1200",
+        "diameter": "25.4mm",
+        "wavelengthRange": "900-1200nm",
+        "transmission": ">85-87",
+        "extinctionRatio": ">1000:1"
+      },
+      {
+        "partNumber": "LOIRP-750/1150",
+        "diameter": "25.4mm",
+        "wavelengthRange": "750-1150nm",
+        "transmission": ">87-93",
+        "extinctionRatio": ">1000:1"
+      },
+      {
+        "partNumber": "LOIRP-650/2000",
+        "diameter": "25.4mm",
+        "wavelengthRange": "650-2000nm",
+        "transmission": ">76-87%",
+        "extinctionRatio": ">1000:1"
+      }
+    ],
+    "diagram": "",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "ZnSe",
+      "Ge",
+      "CaF2"
+    ],
+    "wavelength": [
+      "NIR",
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      1000,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Research"
+    ],
+    "coating": [
+      "AR IR"
+    ],
+    "seoTitle": "IR Polarizers | 1-14um Infrared | PhotonEdge",
+    "seoDesc": "Infrared polarizers for NIR to LWIR. ZnSe, Ge and CaF2 substrates for 1-14um.",
+    "keywords": [
+      "ir polarizer",
+      "infrared polarizer",
+      "znse polarizer",
+      "mwir polarizer"
+    ]
+  },
+  {
+    "id": 62,
     "name": "Glan Taylor Prisms",
     "nameZh": "格兰泰勒棱镜",
     "category": "Optical Polarizers",
@@ -11267,7 +14308,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 46,
+    "id": 63,
     "name": "Glan Laser Prisms",
     "nameZh": "格兰激光棱镜",
     "category": "Optical Polarizers",
@@ -11442,7 +14483,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 47,
+    "id": 64,
     "name": "Glan Thompson Prisms",
     "nameZh": "格兰汤普生棱镜",
     "category": "Optical Polarizers",
@@ -11540,7 +14581,110 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 48,
+    "id": 65,
+    "name": "Wollaston Prisms",
+    "nameZh": "渥拉斯通棱镜",
+    "category": "Optical Polarizers",
+    "categoryZh": "光学偏振片",
+    "description": "Wollaston prisms split incident light into two orthogonally polarized beams with a separation angle of approximately 19°. Ideal for polarization analysis and interferometry.",
+    "descriptionZh": "渥拉斯通棱镜将入射光分成两束正交偏振光，分离角约为19°。适用于偏振分析和干涉测量。",
+    "image": "images/products/optical-polarizers/wollaston-prisms.png",
+    "parameters": {
+      "material": "Calcite",
+      "surfaceQuality": "20-10",
+      "wavefrontDistortion": "λ/4",
+      "separationAngle": "~19°",
+      "clearAperture": ">90%"
+    },
+    "price": 180,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $180 - $650",
+    "priceNoteZh": "参考价：¥1260 - ¥4550",
+    "slug": "glan-laser-prisms",
+    "partNumbers": [
+      {
+        "partNumber": "LOWPC-06",
+        "material": "Calcite",
+        "wavelengthRange": "350-2300nm",
+        "separationAngle": "19°",
+        "clearAperture": "6.0mm",
+        "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-08",
+        "material": "Calcite",
+        "wavelengthRange": "350-2300nm",
+        "separationAngle": "19°",
+        "clearAperture": "8.0mm",
+        "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-10",
+        "material": "Calcite",
+        "wavelengthRange": "350-2300nm",
+        "separationAngle": "19°",
+        "clearAperture": "10.0mm",
+        "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-12.7",
+        "material": "Calcite",
+        "wavelengthRange": "350-2300nm",
+        "separationAngle": "19°",
+        "clearAperture": "12.7mm",
+        "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-15",
+        "material": "Calcite",
+        "wavelengthRange": "350-2300nm",
+        "separationAngle": "19°",
+        "clearAperture": "15.0mm",
+        "extinctionRatio": "1×10⁻⁵"
+      },
+      {
+        "partNumber": "LOWPC-20",
+        "material": "Calcite",
+        "wavelength": "350-2300nm",
+        "separationAngle": "19°",
+        "extinctionRatio": "1×10⁻⁵",
+        "diameter": "38.0mm",
+        "clearAperture": "20.0mm"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-wollaston-prisms.png",
+    "category31": "Waveplates & Polarizers",
+    "componentType": "Polarizer",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "AR UV",
+      "AR VIS"
+    ],
+    "seoTitle": "Wollaston Prisms | Beam Splitting Polarization | PhotonEdge",
+    "seoDesc": "Wollaston prisms for separating orthogonal polarization states. Precise beam deviation angles.",
+    "keywords": [
+      "wollaston prism",
+      "polarization beam splitter",
+      "wollaston polarizer"
+    ]
+  },
+  {
+    "id": 66,
     "name": "Laser Safety Goggles",
     "nameZh": "激光护目镜",
     "category": "Laser Protection",
@@ -11683,7 +14827,199 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 49,
+    "id": 81,
+    "name": "Nd:YAG Output Couplers",
+    "nameZh": "Nd:YAG输出镜",
+    "category": "Optical Mirrors",
+    "categoryZh": "光学反射镜",
+    "description": "Nd:YAG output couplers are partial reflectors designed for use as laser cavity output mirrors. One surface is coated with partial reflectance dielectric coating, and the other surface is AR coated. Available for 1064nm wavelength with various transmission values.",
+    "descriptionZh": "Nd:YAG激光输出镜是专为激光腔输出镜设计的部分反射镜。一面镀部分反射膜，反面镀增透膜。提供1064nm波长多种透过率选择。",
+    "image": "images/products/optical-mirrors/ndyag-output-couplers.jpg",
+    "parameters": {
+      "material": "K9 (BK7) / UV Fused Silica",
+      "dimensionTolerance": "+0/-0.2mm",
+      "thicknessTolerance": "±0.2mm",
+      "surfaceQuality": "40-20",
+      "surfaceFlatness": "λ/8@632.8nm",
+      "clearAperture": ">90%",
+      "parallelism": "<1 arc min",
+      "coating": "Partial reflectance on one side, AR on the other",
+      "damageThreshold": ">10J/cm², 20ns, 20Hz, @1064nm"
+    },
+    "price": 50,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $50 - $250",
+    "priceNoteZh": "参考价：¥350 - ¥1750",
+    "slug": "high-energy-laser-mirrors",
+    "partNumbers": [
+      {
+        "partNumber": "SLM10-90T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "90%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-80T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "80%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-70T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "70%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-50T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "50%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-30T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "30%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-20T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "20%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-15T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "15%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM10-10T",
+        "wavelength": "1064nm",
+        "diameter": "10.0mm",
+        "thickness": "3.0mm",
+        "transmission": "10%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-95T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "95%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-90T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "90%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-80T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "80%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-70T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "70%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-50T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "50%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-30T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "30%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-20T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "20%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-10T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "10%",
+        "angleOfIncidence": "0°"
+      },
+      {
+        "partNumber": "SLM12.7-5T",
+        "wavelength": "1064nm",
+        "diameter": "12.7mm",
+        "thickness": "3.0mm",
+        "transmission": "5%",
+        "angleOfIncidence": "0°"
+      }
+    ],
+    "diagram": "images/diagrams/ltoptic-ndyag-output-couplers.jpg",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "NIR"
+    ],
+    "wavelengthRange": [
+      1064,
+      1064
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Partial HR 1064nm"
+    ],
+    "seoTitle": "Nd:YAG Laser Output Couplers | 1064nm | PhotonEdge",
+    "seoDesc": "Nd:YAG output couplers with precise partial reflectance at 1064nm. For laser cavity design.",
+    "keywords": [
+      "ndyag output coupler",
+      "1064nm coupler",
+      "laser output coupler",
+      "laser cavity"
+    ]
+  },
+  {
+    "id": 82,
     "name": "Dichroic Mirrors",
     "nameZh": "二向色镜/分色镜",
     "category": "Optical Mirrors",
@@ -11838,7 +15174,7 @@ var PRODUCTS = [
     ]
   },
   {
-    "id": 50,
+    "id": 83,
     "name": "360° Rotating Waveplate/Polarizer Mount",
     "nameZh": "360°旋转波片/偏振片支架",
     "category": "Optomechanical Components",
@@ -11917,6 +15253,164 @@ var PRODUCTS = [
       "rotating mount",
       "optic mount",
       "rotation stage"
+    ]
+  },
+  {
+    "id": 84,
+    "name": "3-Claw Concentric Mirror Frame",
+    "nameZh": "三爪同心镜框（同轴透镜调整架）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "3-claw concentric mirror frame for coaxial lens/mirror adjustment. Three-point claw design ensures centered alignment of optical elements. Adjustable claws accommodate various optic diameters. Anodized aluminum construction with M6 mounting thread.",
+    "descriptionZh": "三爪同心镜框，用于同轴透镜/反射镜调整。三点爪式设计确保光学元件居中对准。可调爪适应不同口径光学元件。阳极氧化铝材质，M6安装螺纹。",
+    "image": "images/products/optomechanics/concentric-mirror-frame.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum",
+      "clawDesign": "3-Point Adjustable",
+      "opticRange": "5-150mm diameter",
+      "mountingThread": "M6",
+      "surfaceFinish": "Black Anodized",
+      "alignmentType": "Coaxial/Concentric"
+    },
+    "price": 35,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $35 - $120",
+    "priceNoteZh": "参考价：¥245 - ¥840",
+    "slug": "concentric-mirror-frame",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-CMF-50",
+        "opticRange": "5-50mm",
+        "outerDiameter": "70mm",
+        "height": "90mm",
+        "weight": "~150g"
+      },
+      {
+        "partNumber": "HDG-CMF-75",
+        "opticRange": "5-75mm",
+        "outerDiameter": "102mm",
+        "height": "126mm",
+        "weight": "~200g"
+      },
+      {
+        "partNumber": "HDG-CMF-120",
+        "opticRange": "5-120mm",
+        "outerDiameter": "140mm",
+        "height": "164mm",
+        "weight": "~550g"
+      },
+      {
+        "partNumber": "HDG-CMF-150",
+        "opticRange": "5-150mm",
+        "outerDiameter": "190mm",
+        "height": "204mm",
+        "weight": "~1.0kg"
+      }
+    ],
+    "category31": "Custom Optics",
+    "componentType": "Mount",
+    "material": [
+      "Aluminum"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "Black Anodized"
+    ],
+    "seoTitle": "Concentric Mirror Frame | Kinematic Mount | PhotonEdge",
+    "seoDesc": "Concentric mirror frames for precision mirror alignment. Kinematic adjustment with low drift.",
+    "keywords": [
+      "mirror mount",
+      "kinematic mount",
+      "mirror frame",
+      "optical mount"
+    ]
+  },
+  {
+    "id": 85,
+    "name": "Lens Retaining Cell Mount with PTFE Spacer",
+    "nameZh": "透镜固定座（PTFE保护垫圈）",
+    "category": "Optomechanical Components",
+    "categoryZh": "光机元件",
+    "description": "Precision lens retaining cell mount with PTFE protective spacer ring. The PTFE spacer provides gentle, stress-free contact with the optic surface, preventing damage and deformation. Available for 12.7mm to 100mm optics with standard SM-thread compatibility.",
+    "descriptionZh": "精密透镜固定座，带PTFE保护垫圈。PTFE垫圈与光学表面温和接触，无应力，防止损伤和变形。适配12.7mm至100mm光学元件，兼容标准SM螺纹。",
+    "image": "images/products/optomechanics/lens-retaining-cell.jpg",
+    "parameters": {
+      "material": "Black Anodized Aluminum + PTFE",
+      "spacerMaterial": "PTFE (Teflon)",
+      "holdingDiameter": "12.7 / 25.4 / 50.8mm (custom available)",
+      "threadType": "M6 mounting",
+      "surfaceFinish": "Black Anodized",
+      "features": "Stress-free optic retention"
+    },
+    "price": 15,
+    "priceUnit": "USD",
+    "priceNote": "Reference: $15 - $45",
+    "priceNoteZh": "参考价：¥105 - ¥315",
+    "slug": "lens-retaining-cell",
+    "partNumbers": [
+      {
+        "partNumber": "HDG-LRC-12.7",
+        "holdingDiameter": "12.7mm",
+        "outerDiameter": "17mm",
+        "height": "8mm",
+        "weight": "~8g"
+      },
+      {
+        "partNumber": "HDG-LRC-25.4",
+        "holdingDiameter": "25.4mm",
+        "outerDiameter": "30mm",
+        "height": "14mm",
+        "weight": "~22g"
+      },
+      {
+        "partNumber": "HDG-LRC-50.8",
+        "holdingDiameter": "50.8mm",
+        "outerDiameter": "55mm",
+        "height": "21.5mm",
+        "weight": "~50g"
+      }
+    ],
+    "category31": "Custom Optics",
+    "componentType": "Mount",
+    "material": [
+      "Aluminum"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      200,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "Black Anodized"
+    ],
+    "seoTitle": "Lens Retaining Cells | Precision Optic Holding | PhotonEdge",
+    "seoDesc": "Lens retaining cells for secure optic mounting. Various diameters available. Low-stress design.",
+    "keywords": [
+      "lens cell",
+      "retaining cell",
+      "lens mount",
+      "optic holder"
     ]
   }
 ];
