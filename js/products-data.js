@@ -11400,7 +11400,7 @@ var PRODUCTS = [
     "componentType": "Filter",
     "material": [
       "ZnSe",
-      "Ge"
+      "Germanium"
     ],
     "wavelength": [
       "NIR",
@@ -14060,7 +14060,7 @@ var PRODUCTS = [
     "componentType": "Polarizer",
     "material": [
       "ZnSe",
-      "Ge",
+      "Germanium",
       "CaF2"
     ],
     "wavelength": [
@@ -15411,6 +15411,679 @@ var PRODUCTS = [
       "retaining cell",
       "lens mount",
       "optic holder"
+    ]
+  },
+  {
+    "id": 86,
+    "name": "Bi-Convex Lenses",
+    "nameZh": "双凸球面透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "BK7 bi-convex lenses for 1:1 imaging, focusing, and beam convergence. Symmetric design for reduced spherical aberration. Custom specs available. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "双凸球面透镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/bk7-bi-convex.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "1064nm-laser-line-mirrors",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      190,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "AR 650-1050nm"
+    ],
+    "seoTitle": "Bi-Convex Lenses | Double Convex Optical Lenses | PhotonEdge",
+    "seoDesc": "BK7 bi-convex lenses for 1:1 imaging, focusing, and beam convergence. Symmetric design for reduced spherical aberration. Custom specs available.",
+    "keywords": [
+      "bi-convex lenses",
+      "double convex lens",
+      "optical lenses",
+      "imaging lens"
+    ]
+  },
+  {
+    "id": 87,
+    "name": "Bi-Concave Lenses",
+    "nameZh": "双凹球面透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "BK7 bi-concave lenses for beam divergence and symmetric optical systems. Double concave negative lenses for laser beam expansion. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "双凹球面透镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/bk7-bi-concave.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "bi-concave-lenses",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7",
+      "UV Fused Silica",
+      "CaF2",
+      "Sapphire"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      190,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Research"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "Uncoated"
+    ],
+    "seoTitle": "Bi-Concave Lenses | Double Concave Optical Lenses | PhotonEdge",
+    "seoDesc": "BK7 bi-concave lenses for beam divergence and symmetric optical systems. Double concave negative lenses for laser beam expansion.",
+    "keywords": [
+      "bi-concave lenses",
+      "double concave lens",
+      "beam divergence lens",
+      "negative lens"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "CaF2 Plano-Convex Lenses",
+    "nameZh": "氟化钙平凸透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "Calcium fluoride plano-convex lenses with broadband UV to IR transmission (170nm-7.8um). Low dispersion for laser and spectroscopy applications. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "氟化钙平凸透镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/bk7-bi-convex.jpg",
+    "parameters": {
+      "material": "CaF2"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "bi-convex-lenses",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR",
+      "SWIR",
+      "MWIR"
+    ],
+    "wavelengthRange": [
+      170,
+      7800
+    ],
+    "application": [
+      "Laser",
+      "Research",
+      "Semiconductor"
+    ],
+    "coating": [
+      "AR 193-355nm",
+      "BBAR UV-IR",
+      "Uncoated"
+    ],
+    "seoTitle": "CaF2 Plano-Convex Lenses | UV-IR Focusing Optics | PhotonEdge",
+    "seoDesc": "Calcium fluoride plano-convex lenses with broadband UV to IR transmission (170nm-7.8um). Low dispersion for laser and spectroscopy applications.",
+    "keywords": [
+      "caf2 lens",
+      "calcium fluoride lens",
+      "UV IR lens",
+      "plano convex CaF2"
+    ]
+  },
+  {
+    "id": 89,
+    "name": "CaF2 Ultrafast Laser Optics",
+    "nameZh": "氟化钙超快激光光学元件",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "CaF2 optics for ultrafast femtosecond laser systems. Low dispersion, broadband UV-IR transmission, minimized group delay dispersion. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "氟化钙超快激光光学元件，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-mirrors/protected-aluminum-mirrors.jpg",
+    "parameters": {
+      "material": "CaF2"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "bk7-optical-mirrors",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "CaF2"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      170,
+      3000
+    ],
+    "application": [
+      "Laser",
+      "Research"
+    ],
+    "coating": [
+      "BBAR UV-IR",
+      "AR 193-355nm"
+    ],
+    "seoTitle": "CaF2 Ultrafast Laser Optics | Femtosecond Lenses | PhotonEdge",
+    "seoDesc": "CaF2 optics for ultrafast femtosecond laser systems. Low dispersion, broadband UV-IR transmission, minimized group delay dispersion.",
+    "keywords": [
+      "CaF2 ultrafast optics",
+      "femtosecond lens",
+      "low dispersion optic",
+      "GDD optics"
+    ]
+  },
+  {
+    "id": 90,
+    "name": "C-Mount Machine Vision Lenses",
+    "nameZh": "C接口机器视觉镜头",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "C-mount machine vision lenses for industrial inspection, barcode reading, and quality control. High-resolution imaging optics. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "C接口机器视觉镜头，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-prisms/bk7-right-angle-prisms.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "bk7-optical-prisms",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible"
+    ],
+    "wavelengthRange": [
+      400,
+      700
+    ],
+    "application": [
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "AR Vis",
+      "Uncoated"
+    ],
+    "seoTitle": "C-Mount Machine Vision Lenses | Industrial Imaging Optics | PhotonEdge",
+    "seoDesc": "C-mount machine vision lenses for industrial inspection, barcode reading, and quality control. High-resolution imaging optics.",
+    "keywords": [
+      "c-mount lens",
+      "machine vision lens",
+      "industrial imaging",
+      "inspection lens"
+    ]
+  },
+  {
+    "id": 91,
+    "name": "Fused Silica Optical Mirrors",
+    "nameZh": "熔融石英光学反射镜",
+    "category": "Optical Mirrors",
+    "categoryZh": "光学反射镜",
+    "description": "UV fused silica optical mirrors with high-flatness substrates for laser beam steering and high-power applications. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "熔融石英光学反射镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/bk7-c-lenses.png",
+    "parameters": {
+      "material": "UV Fused Silica"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "c-mount-lenses",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      190,
+      2500
+    ],
+    "application": [
+      "Laser",
+      "Semiconductor",
+      "Research"
+    ],
+    "coating": [
+      "Dielectric HR",
+      "Protected Ag",
+      "BBAR"
+    ],
+    "seoTitle": "Fused Silica Optical Mirrors | UV Laser Mirrors | PhotonEdge",
+    "seoDesc": "UV fused silica optical mirrors with high-flatness substrates for laser beam steering and high-power applications.",
+    "keywords": [
+      "fused silica mirror",
+      "UV mirror",
+      "laser steering mirror",
+      "flat mirror"
+    ]
+  },
+  {
+    "id": 92,
+    "name": "High Power Laser Mirrors",
+    "nameZh": "高功率激光反射镜",
+    "category": "Optical Mirrors",
+    "categoryZh": "光学反射镜",
+    "description": "High-power laser mirrors with >99.9% reflectance and high laser damage threshold. Dielectric HR coatings for CW and pulsed lasers. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "高功率激光反射镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-prisms/equilateral-dispersing-prisms.png",
+    "parameters": {
+      "material": "UV Fused Silica"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "caf2-optical-prisms",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Mirrors",
+    "componentType": "Mirror",
+    "material": [
+      "UV Fused Silica",
+      "BK7"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      190,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Industrial"
+    ],
+    "coating": [
+      "Dielectric HR",
+      "Custom"
+    ],
+    "seoTitle": "High Power Laser Mirrors | >99.9% Reflectance | PhotonEdge",
+    "seoDesc": "High-power laser mirrors with >99.9% reflectance and high laser damage threshold. Dielectric HR coatings for CW and pulsed lasers.",
+    "keywords": [
+      "high power laser mirror",
+      "HR mirror",
+      "laser damage threshold",
+      "dielectric mirror"
+    ]
+  },
+  {
+    "id": 93,
+    "name": "Corner Cube Retroreflectors",
+    "nameZh": "角锥棱镜回射器",
+    "category": "Optical Prisms",
+    "categoryZh": "光学棱镜",
+    "description": "Corner cube retroreflectors for metrology, alignment, and range measurement. N-BK7 and UV fused silica options available. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "角锥棱镜回射器，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-windows/caf2-windows.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "caf2-optical-windows",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Prisms",
+    "componentType": "Prism",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2100
+    ],
+    "application": [
+      "Laser",
+      "Research",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "Protected Ag",
+      "Uncoated"
+    ],
+    "seoTitle": "Corner Cube Retroreflectors | Precision Optical Retroreflectors | PhotonEdge",
+    "seoDesc": "Corner cube retroreflectors for metrology, alignment, and range measurement. N-BK7 and UV fused silica options available.",
+    "keywords": [
+      "corner cube retroreflector",
+      "retroreflector",
+      "alignment optics",
+      "metrology"
+    ]
+  },
+  {
+    "id": 94,
+    "name": "BK7 Optical Windows",
+    "nameZh": "BK7光学窗口",
+    "category": "Optical Windows",
+    "categoryZh": "光学窗口",
+    "description": "BK7 optical windows for laser systems, imaging enclosures, and sensor protection. AR coated or uncoated options. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "BK7光学窗口，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/uv-fused-silica-plano-convex.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "caf2-plano-convex-lenses",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "BK7"
+    ],
+    "wavelength": [
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      350,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Imaging",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 350-700nm",
+      "Uncoated"
+    ],
+    "seoTitle": "BK7 Optical Windows | Precision Protection Windows | PhotonEdge",
+    "seoDesc": "BK7 optical windows for laser systems, imaging enclosures, and sensor protection. AR coated or uncoated options.",
+    "keywords": [
+      "BK7 window",
+      "optical window",
+      "protection window",
+      "laser window"
+    ]
+  },
+  {
+    "id": 95,
+    "name": "Germanium Optical Windows",
+    "nameZh": "锗光学窗口",
+    "category": "Optical Windows",
+    "categoryZh": "光学窗口",
+    "description": "Thermal IR and mid-IR optics windows. Germanium transmission 2-14um. Custom sizes for FLIR and thermal imaging systems. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "锗光学窗口，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-lenses/laser-beam-expanders.jpg",
+    "parameters": {
+      "material": "Germanium"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "caf2-ultrafast-laser-optics",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Windows",
+    "componentType": "Window",
+    "material": [
+      "Germanium"
+    ],
+    "wavelength": [
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      2000,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 2-14um",
+      "DLC"
+    ],
+    "seoTitle": "Germanium Optical Windows | Thermal IR Windows | PhotonEdge",
+    "seoDesc": "Thermal IR and mid-IR optics windows. Germanium transmission 2-14um. Custom sizes for FLIR and thermal imaging systems.",
+    "keywords": [
+      "germanium window",
+      "IR window",
+      "thermal imaging window",
+      "LWIR window"
+    ]
+  },
+  {
+    "id": 96,
+    "name": "Germanium Infrared Lenses",
+    "nameZh": "锗红外透镜",
+    "category": "Optical Lenses",
+    "categoryZh": "光学透镜",
+    "description": "Germanium plano-convex and meniscus lenses for mid-IR and LWIR (2-14um) applications. High refractive index for compact IR optical designs. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "锗红外透镜，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-prisms/corner-cube-prisms.png",
+    "parameters": {
+      "material": "Germanium"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "corner-cube-retroreflectors",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Lenses",
+    "componentType": "Lens",
+    "material": [
+      "Germanium"
+    ],
+    "wavelength": [
+      "SWIR",
+      "MWIR",
+      "LWIR"
+    ],
+    "wavelengthRange": [
+      2000,
+      14000
+    ],
+    "application": [
+      "Laser",
+      "Aerospace",
+      "Industrial"
+    ],
+    "coating": [
+      "AR 2-14um"
+    ],
+    "seoTitle": "Germanium Infrared Lenses | MWIR/LWIR Optics | PhotonEdge",
+    "seoDesc": "Germanium plano-convex and meniscus lenses for mid-IR and LWIR (2-14um) applications. High refractive index for compact IR optical designs.",
+    "keywords": [
+      "germanium lens",
+      "IR lens",
+      "LWIR lens",
+      "thermal imaging lens"
+    ]
+  },
+  {
+    "id": 97,
+    "name": "Dichroic Filters",
+    "nameZh": "二向色滤光片",
+    "category": "Optical Filters",
+    "categoryZh": "光学滤光片",
+    "description": "Wavelength-selective beam splitters for fluorescence microscopy, multi-band imaging, and laser systems. Custom designs available. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "二向色滤光片，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-windows/bk7-windows.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "custom-optical-components",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7",
+      "UV Fused Silica"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2000
+    ],
+    "application": [
+      "Laser",
+      "Research",
+      "Semiconductor"
+    ],
+    "coating": [
+      "Beamsplitter",
+      "Dichroic",
+      "Custom"
+    ],
+    "seoTitle": "Dichroic Filters | Wavelength-Selective Beam Splitters | PhotonEdge",
+    "seoDesc": "Wavelength-selective beam splitters for fluorescence microscopy, multi-band imaging, and laser systems. Custom designs available.",
+    "keywords": [
+      "dichroic filter",
+      "beamsplitter filter",
+      "fluorescence filter",
+      "multiband filter"
+    ]
+  },
+  {
+    "id": 98,
+    "name": "Longpass Filters",
+    "nameZh": "长波通滤光片",
+    "category": "Optical Filters",
+    "categoryZh": "光学滤光片",
+    "description": "Edge filters transmitting wavelengths above the cutoff. Custom designs for any wavelength from 200nm to 2500nm. PhotonEdge offers custom specifications with fast turnaround.",
+    "descriptionZh": "长波通滤光片，PhotonEdge提供定制规格，快速交付。",
+    "image": "images/products/optical-mirrors/dichroic-mirrors.jpg",
+    "parameters": {
+      "material": "BK7"
+    },
+    "price": 0,
+    "priceUnit": "USD",
+    "priceNote": "Contact for quote",
+    "priceNoteZh": "联系获取报价",
+    "slug": "dichroic-filters",
+    "partNumbers": [],
+    "diagram": "",
+    "category31": "Optical Filters",
+    "componentType": "Filter",
+    "material": [
+      "BK7",
+      "UV Fused Silica",
+      "Borosilicate"
+    ],
+    "wavelength": [
+      "UV",
+      "Visible",
+      "NIR"
+    ],
+    "wavelengthRange": [
+      250,
+      2500
+    ],
+    "application": [
+      "Laser",
+      "Research",
+      "Industrial"
+    ],
+    "coating": [
+      "Beamsplitter",
+      "Custom"
+    ],
+    "seoTitle": "Longpass Filters | Edge Filters | PhotonEdge",
+    "seoDesc": "Edge filters transmitting wavelengths above the cutoff. Custom designs for any wavelength from 200nm to 2500nm.",
+    "keywords": [
+      "longpass filter",
+      "edge filter",
+      "IR longpass",
+      "fluorescence filter"
     ]
   }
 ];
