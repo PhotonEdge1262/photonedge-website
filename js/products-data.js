@@ -2714,7 +2714,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $35 - $120",
     "priceNoteZh": "参考价：¥245 - ¥840",
-    "slug": "fused-silica-plano-convex-lenses",
+    "slug": "fused-silica-plano-concave-lenses",
     "partNumbers": [
       {
         "partNumber": "LOPCCF6-6",
@@ -2980,7 +2980,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $38 - $120",
     "priceNoteZh": "参考价：¥266 - ¥840",
-    "slug": "fused-silica-laser-lenses",
+    "slug": "fused-silica-bi-concave-lenses",
     "partNumbers": [
       {
         "partNumber": "LOBCCF6-15",
@@ -4435,7 +4435,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $35 - $95",
     "priceNoteZh": "参考价：¥245 - ¥665",
-    "slug": "cylindrical-lenses",
+    "slug": "fused-silica-cylindrical-lenses",
     "partNumbers": [
       {
         "partNumber": "LOCPCXS11-8",
@@ -4604,7 +4604,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $35 - $90",
     "priceNoteZh": "参考价：¥245 - ¥630",
-    "slug": "cylindrical-lenses",
+    "slug": "fused-silica-plano-concave-cylindrical-lenses",
     "partNumbers": [
       {
         "partNumber": "LOCPCCS11-8",
@@ -5988,7 +5988,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $28 - $75",
     "priceNoteZh": "参考价：¥196 - ¥525",
-    "slug": "bk7-rod-lenses",
+    "slug": "fused-silica-rod-lenses",
     "partNumbers": [
       {
         "partNumber": "LORLU1-2",
@@ -7244,7 +7244,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $35 - $200",
     "priceNoteZh": "参考价：¥245 - ¥1400",
-    "slug": "custom-optical-windows",
+    "slug": "sapphire-windows",
     "partNumbers": [
       {
         "partNumber": "LOWS10-3",
@@ -7740,7 +7740,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $60 - $350",
     "priceNoteZh": "参考价：¥420 - ¥2450",
-    "slug": "custom-optical-windows",
+    "slug": "silicon-windows",
     "partNumbers": [
       {
         "partNumber": "LOWI10-3",
@@ -7919,7 +7919,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $70 - $400",
     "priceNoteZh": "参考价：¥490 - ¥2800",
-    "slug": "custom-optical-windows",
+    "slug": "znse-windows",
     "partNumbers": [
       {
         "partNumber": "LOWZ10-3",
@@ -8837,7 +8837,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $15 - $72",
     "priceNoteZh": "参考价：¥105 - ¥504",
-    "slug": "enhanced-aluminum-mirrors",
+    "slug": "protected-aluminum-mirrors",
     "partNumbers": [
       {
         "partNumber": "LOALM12.7-3",
@@ -9286,7 +9286,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $20 - $95",
     "priceNoteZh": "参考价：¥140 - ¥665",
-    "slug": "broadband-dielectric-mirrors",
+    "slug": "protected-silver-mirrors",
     "partNumbers": [
       {
         "partNumber": "LOAGM12.7-3",
@@ -9758,7 +9758,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $28 - $120",
     "priceNoteZh": "参考价：¥196 - ¥840",
-    "slug": "bk7-right-angle-prisms",
+    "slug": "fused-silica-right-angle-prisms",
     "partNumbers": [
       {
         "partNumber": "LORPF3-3",
@@ -10238,7 +10238,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $35 - $150",
     "priceNoteZh": "参考价：¥245 - ¥1050",
-    "slug": "corner-cube-prisms",
+    "slug": "roof-prisms",
     "partNumbers": [
       {
         "partNumber": "LORP01",
@@ -11132,7 +11132,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $55 - $280",
     "priceNoteZh": "参考价：¥385 - ¥1960",
-    "slug": "fixed-neutral-density-filters",
+    "slug": "variable-neutral-density-filters",
     "partNumbers": [
       {
         "partNumber": "LOLVF01",
@@ -11264,7 +11264,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $40 - $170",
     "priceNoteZh": "参考价：¥280 - ¥1190",
-    "slug": "ir-bandpass-filters",
+    "slug": "uv-visible-absorption-filters",
     "partNumbers": [
       {
         "partNumber": "ZWB1-25.4",
@@ -11338,7 +11338,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $45 - $290",
     "priceNoteZh": "参考价：¥315 - ¥2030",
-    "slug": "ir-bandpass-filters",
+    "slug": "ir-visible-absorption-filters",
     "partNumbers": [
       {
         "partNumber": "HB600-25.4",
@@ -11977,7 +11977,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $45 - $250",
     "priceNoteZh": "参考价：¥315 - ¥1750",
-    "slug": "cube-beamsplitters",
+    "slug": "non-polarizing-cube-beamsplitters",
     "partNumbers": [
       {
         "partNumber": "LONPBS5-532",
@@ -12303,7 +12303,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $55 - $300",
     "priceNoteZh": "参考价：¥385 - ¥2100",
-    "slug": "cube-beamsplitters",
+    "slug": "polarizing-cube-beamsplitters",
     "partNumbers": [
       {
         "partNumber": "LOPBS5-397",
@@ -13949,7 +13949,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $20 - $130",
     "priceNoteZh": "参考价：¥140 - ¥910",
-    "slug": "ir-polarizers",
+    "slug": "visible-circular-polarizers",
     "partNumbers": [
       {
         "partNumber": "LOCP12.7",
@@ -14600,7 +14600,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $180 - $650",
     "priceNoteZh": "参考价：¥1260 - ¥4550",
-    "slug": "glan-laser-prisms",
+    "slug": "wollaston-prisms",
     "partNumbers": [
       {
         "partNumber": "LOWPC-06",
@@ -14798,7 +14798,7 @@ var PRODUCTS = [
     ],
     "diagram": "",
     "category31": "Optical Lenses",
-    "componentType": "Accessory",
+    "componentType": "Optomechanical",
     "material": [
       "Polycarbonate"
     ],
@@ -14850,7 +14850,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $50 - $250",
     "priceNoteZh": "参考价：¥350 - ¥1750",
-    "slug": "high-energy-laser-mirrors",
+    "slug": "ndyag-output-couplers",
     "partNumbers": [
       {
         "partNumber": "SLM10-90T",
@@ -15194,7 +15194,7 @@ var PRODUCTS = [
     "priceUnit": "USD",
     "priceNote": "Reference: $28 - $55",
     "priceNoteZh": "参考价：¥196 - ¥385",
-    "slug": "concentric-mirror-frame",
+    "slug": "rotating-waveplate-mount",
     "partNumbers": [
       {
         "partNumber": "HDG-RWM-25.4",
@@ -15226,7 +15226,7 @@ var PRODUCTS = [
       }
     ],
     "category31": "Custom Optics",
-    "componentType": "Mount",
+    "componentType": "Optomechanical",
     "material": [
       "Aluminum"
     ],
@@ -15308,7 +15308,7 @@ var PRODUCTS = [
       }
     ],
     "category31": "Custom Optics",
-    "componentType": "Mount",
+    "componentType": "Optomechanical",
     "material": [
       "Aluminum"
     ],
@@ -15383,7 +15383,7 @@ var PRODUCTS = [
       }
     ],
     "category31": "Custom Optics",
-    "componentType": "Mount",
+    "componentType": "Optomechanical",
     "material": [
       "Aluminum"
     ],
