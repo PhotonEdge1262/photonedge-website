@@ -442,7 +442,7 @@ var translations = {
     "statYearsLabel": "Years of Experience",
     "statCountries": "50+",
     "statCountriesLabel": "Countries Served",
-    "statProducts": "80+",
+    "statProducts": "70+",
     "statProductsLabel": "Product Types",
     "statClients": "500+",
     "statClientsLabel": "Global Clients",
@@ -2375,7 +2375,7 @@ var translations = {
     "statYears": "15+",
     "statYearsLabel": "年行业经验",
     "statCountriesLabel": "服务国家和地区",
-    "statProducts": "80+",
+    "statProducts": "70+",
     "statProductsLabel": "标准产品",
     "statClients": "500+",
     "statClientsLabel": "全球客户",
@@ -3627,7 +3627,8 @@ var translations = {
     "v90AppsemiconductorinspectionSub2Desc": "Photolithography alignment systems rely on precision reference optics and alignment markers. Sub-nanometer stability and minimal thermal drift are ess",
     "v90AppsemiconductorinspectionSub4Desc": "Reticle and photomask inspection requires deep-UV transmission and ultra-high surface quality. Any defect on the optic is reproduced in the inspection",
     "v90AppmedicalimagingSpec2": "< 0.1%（成像镜头）",
-    "v90MatUvfusedsilicaIntro": "紫外熔融石英（UVFS）是一种高纯度无定形石英玻璃，具有从深紫外到近红外的优异透过率。",
+    "v90MatUvfusedsilicaIntro": "紫外熔融石英（UVFS）是一种高纯度无定形石英玻璃，具有从深紫外到近红外的优异透过率。"
+  ,
     "blogIRMaterials": "红外光学材料对比：ZnSe vs Ge vs Si",
     "blogIRMaterialsExcerpt": "全面对比ZnSe、Ge和Si红外光学材料在热成像和激光应用中的性能表现",
     "blogLIDTGuide": "激光损伤阈值（LIDT）完整指南",
@@ -3645,5 +3646,6 @@ var translations = {
     "newsAsphericExpansion": "PhotonEdge扩产精密非球面透镜产线",
     "newsAsphericExpansionExcerpt": "PhotonEdge宣布新增CNC设备，扩展非球面透镜生产能力",
     "newsDUVLaunch": "PhotonEdge推出深紫外（DUV）光学元件系列",
-    "newsDUVLaunchExcerpt": "PhotonEdge推出覆盖193-355nm的深紫外光学元件，适用于半导体和光谱应用"  }
+    "newsDUVLaunchExcerpt": "PhotonEdge推出覆盖193-355nm的深紫外光学元件，适用于半导体和光谱应用",
+  }
 };
