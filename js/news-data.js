@@ -52,7 +52,7 @@ var NEWS_ARTICLES = [
     "excerptZh": "选择正确的光学材料对系统性能至关重要。本综合对比涵盖BK7、紫外熔融石英和氟化钙(CaF2)的关键参数：透过率范围、折射率均匀性、热性能、激光损伤阈值和成本。包括针对激光、成像和紫外系统的应用推荐。",
     "category": "Technical Articles",
     "date": "2026-05-28",
-    "image": "/images/products/optical-lenses/bk7-plano-convex.jpg"
+    "image": "/images/products/fused-silica-plano-convex-lenses/bk7-plano-convex.jpg"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@ var NEWS_ARTICLES = [
     "excerptZh": "越来越多的医疗器械OEM开始从中国制造商采购精密光学元件。行业分析显示，中国在表面质量、尺寸精度和镀膜性能方面的光学制造能力已达到国际标准。与西方供应商相比30-40%的成本优势正在推动这一趋势。",
     "category": "Industry News",
     "date": "2026-05-20",
-    "image": "/images/products/optical-filters/narrow-band-interference-filters.jpg"
+    "image": "/images/products/laser-line-filters/narrow-band-interference-filters.jpg"
   },
   {
     "id": 7,
