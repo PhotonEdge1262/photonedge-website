@@ -91,21 +91,20 @@
             pc += ' ' + String(coatArr[i]).toLowerCase();
         }
         switch(filterCoating) {
-            case 'A1':
-                // A1: Broadband AR, Vis-NIR (AR 350-700nm, AR 400-700nm, AR 650-1050nm, BBAR)
-                return pc.indexOf('ar 350-700nm') !== -1 || pc.indexOf('ar 400-700nm') !== -1 || pc.indexOf('ar 650-1050nm') !== -1 || pc.indexOf('bbar') !== -1 || pc.indexOf('bbar uv-vis-nir') !== -1;
-            case 'A2':
-                // A2: Multispectral AR (AR 193-355nm, AR UV, BBAR UV-IR)
-                return pc.indexOf('ar 193-355nm') !== -1 || pc.indexOf('ar uv') !== -1 || pc.indexOf('bbar uv-ir') !== -1 || pc.indexOf('bbar uv') !== -1;
-            case 'A3':
-                // A3: NIR-SWIR AR (AR IR, AR 2-14um, AR 3-5um, AR 10.6um, AR 950-1250nm)
-                return pc.indexOf('ar ir') !== -1 || pc.indexOf('ar 2-14') !== -1 || pc.indexOf('ar 3-5') !== -1 || pc.indexOf('ar 10.6') !== -1 || pc.indexOf('ar 950-1250') !== -1 || pc.indexOf('ar 2-14µm') !== -1 || pc.indexOf('ar 3-5µm') !== -1;
-            case 'Dichroic':
-                // Dichroic coatings
-                return pc.indexOf('dichroic') !== -1;
-            case 'Partial':
-                // Partial reflectance / SLM / ND metal / variable ND
-                return pc.indexOf('slm') !== -1 || pc.indexOf('partial') !== -1 || pc.indexOf('%') !== -1 || pc.indexOf('50/50') !== -1 || pc.indexOf('variable nd') !== -1 || pc.indexOf('nd metal') !== -1;
+            case 'AR Coating':
+                return pc.indexOf('ar ') !== -1 || pc.indexOf('ar,') !== -1 || pc.indexOf('anti-reflection') !== -1 || pc.indexOf('bbar') !== -1;
+            case 'HR Coating':
+                return pc.indexOf('hr ') !== -1 || pc.indexOf('high ref') !== -1 || pc.indexOf('hr,') !== -1;
+            case 'Protected Metal':
+                return pc.indexOf('protected') !== -1 || pc.indexOf('enhanced al') !== -1;
+            case 'Narrow Band':
+                return pc.indexOf('narrow') !== -1 || pc.indexOf('bandpass') !== -1;
+            case 'Beamsplitter':
+                return pc.indexOf('bs') !== -1 || pc.indexOf('beamsplitter') !== -1 || pc.indexOf('split') !== -1 || pc.indexOf('polarizing') !== -1;
+            case 'Uncoated':
+                return pc.indexOf('uncoated') !== -1;
+            case 'Custom':
+                return pc.indexOf('custom') !== -1;
             default:
                 return true;
         }

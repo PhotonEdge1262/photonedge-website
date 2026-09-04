@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultrafast Laser Optics &amp; CaF₂ Selection Guide: Dispersion, LIDT &amp; Femtosecond Pulse Preservation | PhotonEdge Optics Blog</title>
+    <meta name="description" content="Complete guide to ultrafast laser optics selection: CaF₂ vs fused silica, group delay dispersion (GDD), high laser damage threshold, femtosecond pulse preservation, and key components for CPA, OPA, and attosecond science.">
+    <meta name="keywords" content="Ultrafast Laser Optics, Femtosecond Optics, CaF2 Optics, Group Delay Dispersion, GDD, Laser Damage Threshold, CPA, Chirped Pulse Amplification, PhotonEdge, 超快激光光学, 飞秒激光, 氟化钙光学元件">
+    <meta property="og:title" content="Ultrafast Laser Optics &amp; CaF₂ Selection Guide: Dispersion, LIDT &amp; Femtosecond Pulse Preservation | PhotonEdge Blog">
+    <meta property="og:description" content="Complete guide to ultrafast laser optics selection: CaF₂ vs fused silica, group delay dispersion (GDD), high laser damage threshold, femtosecond pulse preservation, and key components for CPA, OPA, and attosecond science.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/ultrafast-laser-caf2-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/?lang=zh">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Ultrafast Laser Optics & CaF₂ Selection Guide: Dispersion, LIDT & Femtosecond Pulse Preservation",
+  "description": "Complete guide to ultrafast laser optics selection: CaF₂ vs fused silica, group delay dispersion (GDD), high laser damage threshold, femtosecond pulse preservation, and key components for CPA, OPA, and attosecond science.",
+  "image": "https://photonedgeoptics.com/images/blog/ultrafast-laser-caf2-guide.jpg",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://photonedgeoptics.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ultrafast Laser Optics & CaF₂ Selection Guide",
+      "item": "https://photonedgeoptics.com/blog/ultrafast-laser-optics-caf2-guide/"
+    }
+  ]
+}
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ultrafast Laser Optics & CaF₂ Selection Guide | PhotonEdge Blog">
+    <meta name="twitter:description" content="Complete guide to ultrafast laser optics selection: CaF₂ vs fused silica, GDD, LIDT, and femtosecond pulse preservation.">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <style>
+        .article-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .article-header { margin-bottom: 30px; }
+        .article-category { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; background: #e0f2fe; color: #0369a1; }
+        .article-title { font-size: 2rem; color: #1e293b; line-height: 1.3; margin-bottom: 16px; }
+        .article-meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: 0.9rem; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; }
+        .article-body { line-height: 1.8; color: #334155; font-size: 1.05rem; }
+        .article-body p { margin-bottom: 1.2em; }
+        .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .article-body th, .article-body td { border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; }
+        .article-body th { background: #f1f5f9; font-weight: 600; }
+        .article-back { display: inline-flex; align-items: center; gap: 6px; color: #3b82f6; text-decoration: none; font-weight: 500; margin-bottom: 24px; }
+        .article-back:hover { text-decoration: underline; }
+        .article-cta { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 24px; margin: 30px 0; text-align: center; }
+        .article-cta h3 { color: #0369a1; margin-bottom: 8px; }
+        .article-cta p { color: #475569; margin-bottom: 16px; }
+        .article-cta .btn { display: inline-block; padding: 10px 24px; background: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <picture>
+                <source srcset="/images/logo.webp" type="image/webp">
+                <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+            </picture>
+        </a>
+        <nav class="nav">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+            <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/product-advisor.html" class="nav-link" data-i18n="navProductAdvisor">Product Advisor</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/coatings/" class="nav-link" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/evidence.html" class="nav-link" data-i18n="navEvidence">Evidence Center</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+            <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span class="cart-badge" id="compareBadge">0</span>
+            </a>
+            <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="article-container">
+    <a href="/blog.html" class="article-back" data-i18n="backToBlog">&larr; Back to Blog</a>
+    
+    <div class="article-header">
+        <span class="article-category" id="articleCategory" data-en-category="Technical Guide" data-zh-category="技术指南">Technical Guide</span>
+        <h1 class="article-title" id="articleTitle" data-en-title="Ultrafast Laser Optics &amp; CaF₂ Selection Guide: Dispersion, LIDT &amp; Femtosecond Pulse Preservation" data-zh-title="超快激光光学与氟化钙(CaF₂)选型完全指南：色散、损伤阈值与飞秒脉冲保真">Ultrafast Laser Optics &amp; CaF₂ Selection Guide: Dispersion, LIDT &amp; Femtosecond Pulse Preservation</h1>
+        <div class="article-meta">
+            <span id="articleDate">2026-09-01</span>
+            <span id="articleReadTime" data-en-time="14 min" data-zh-time="14 分钟">14 min</span>
+            <span id="articleAuthor">PhotonEdge Technical Team</span>
+        </div>
+    </div>
+    
+    <div class="article-body" id="articleBody">
+    <div id="articleContentEn">
+<h2>Introduction</h2>
+<p>Femtosecond and picosecond lasers deliver peak powers that dwarf continuous-wave systems — a 100-fs, 1-mJ pulse reaches 10 GW of peak intensity. At these levels, the rules of optical component selection change dramatically. Standard BK7 lenses fracture. Ordinary coatings burn off. And the pulse itself gets stretched and distorted by a phenomenon called <strong>group delay dispersion (GDD)</strong> that most engineers never think about for CW or nanosecond systems.</p>
+<p>Ultrafast optics is a specialized field where material choice, coating design, and surface quality directly determine whether your system delivers transform-limited pulses or a distorted, low-contrast mess. Calcium fluoride (CaF₂) has emerged as one of the most important materials for ultrafast laser systems thanks to its exceptionally low dispersion, wide transparency range, and high damage threshold. Yet many engineers still specify fused silica by default, without realizing when CaF₂ is the better choice.</p>
+<p>This guide walks through everything you need to know to select optical components for ultrafast laser systems. We cover GDD and dispersion management, compare CaF₂ against UV fused silica and other materials, break down the key component types (lenses, windows, prisms, mirrors), and highlight the most common mistakes that degrade ultrafast pulse quality. Whether you are building a chirped pulse amplifier (CPA), an optical parametric amplifier (OPA), or a multiphoton microscopy system, the principles here will help you keep your pulses short and your system reliable.</p>
+
+<h2>What Makes Ultrafast Optics Different?</h2>
+<p>An ultrafast laser pulse is not just a short burst of light — it is a coherent superposition of many wavelength components. The shorter the pulse, the broader its spectral bandwidth (the Fourier limit). A 100-fs pulse at 800 nm spans about 10 nm of bandwidth; a 10-fs pulse spans over 100 nm; and a single-cycle pulse (under 3 fs) spans an entire octave.</p>
+<p>This broad bandwidth creates three unique challenges for optical components:</p>
+<ul>
+<li><strong>Group Delay Dispersion (GDD):</strong> Different wavelength components travel at different speeds through transparent materials. After passing through an optical element, the blue part of the pulse arrives later than the red part (for normal dispersion), stretching the pulse in time and reducing peak intensity.</li>
+<li><strong>High Peak Intensity:</strong> Even a 1-mJ femtosecond pulse has peak powers in the gigawatt range when focused. The electric field strength can approach the intrinsic breakdown field of dielectric materials, making laser-induced damage far more likely than with CW or long-pulse lasers.</li>
+<li><strong>Dispersive Coatings:</strong> Standard single-layer or multilayer coatings designed for narrowband CW lasers will not work for broadband ultrafast pulses. The coating itself can introduce significant GDD and third-order dispersion (TOD) that distorts pulses.</li>
+</ul>
+<p>In ultrafast systems, the goal is not just "transmitting light" — it is transmitting light <em>with the pulse shape preserved</em>. That means minimizing GDD per component, selecting materials with the right dispersion characteristics, and using specially designed coatings.</p>
+
+<h3>Understanding GDD, TOD, and Dispersion Orders</h3>
+<p>Dispersion in optical materials is described by a Taylor expansion of the phase versus frequency. The key terms are:</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Term</th><th style="border:1px solid #e2e8f0;padding:8px;">Symbol</th><th style="border:1px solid #e2e8f0;padding:8px;">Units</th><th style="border:1px solid #e2e8f0;padding:8px;">What It Does to Your Pulse</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Group Delay</td><td style="border:1px solid #e2e8f0;padding:8px;">GD = d&phi;/d&omega;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs</td><td style="border:1px solid #e2e8f0;padding:8px;">Uniform time delay (no distortion)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Group Delay Dispersion</td><td style="border:1px solid #e2e8f0;padding:8px;">GDD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">Linear chirp — stretches pulse symmetrically</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Third-Order Dispersion</td><td style="border:1px solid #e2e8f0;padding:8px;">TOD = d&sup3;&phi;/d&omega;&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">Asymmetric pulse distortion, pre/post pulses</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Fourth-Order Dispersion</td><td style="border:1px solid #e2e8f0;padding:8px;">FOD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">Satellite pulses, pulse pedestals</td></tr>
+</table>
+<p>For pulses longer than ~50 fs, GDD is usually the dominant concern and can be compensated with a grating pair or prism pair. For sub-20-fs pulses, TOD and higher-order dispersion become significant and much harder to correct. This is where material choice becomes critical — choosing a material with inherently lower dispersion reduces the amount of compensation needed and minimizes higher-order distortion.</p>
+
+<h2>Material Comparison: CaF₂ vs Fused Silica vs Sapphire</h2>
+<p>Three materials dominate ultrafast optics: calcium fluoride (CaF₂), UV fused silica (UVFS), and sapphire. Each has distinct advantages depending on wavelength, pulse duration, and power level.</p>
+
+<h3>Calcium Fluoride (CaF₂)</h3>
+<p>CaF₂ is the rising star of ultrafast optics, particularly in the 700–900 nm Ti:Sapphire band and extending into the deep UV and mid-IR. Its key advantages include:</p>
+<ul>
+<li><strong>Ultra-low GDD in the visible/NIR:</strong> CaF₂ has roughly <em>30-40% lower group velocity dispersion</em> than fused silica at 800 nm, meaning a 10-mm CaF₂ window adds less dispersion than a 6-mm fused silica window.</li>
+<li><strong>Extremely wide transmission:</strong> CaF₂ transmits from <strong>180 nm (deep UV) to 8 &mu;m (mid-IR)</strong> — a range no other single optical material can match.</li>
+<li><strong>Low refractive index (~1.43 at 800 nm):</strong> Lower index means weaker Fresnel reflections, simpler AR coating designs, and less surface-induced dispersion.</li>
+<li><strong>High LIDT in the femtosecond regime:</strong> CaF₂ typically shows higher damage thresholds than fused silica for sub-100-fs pulses, especially in the UV.</li>
+<li><strong>Low nonlinear refractive index (n₂):</strong> Less self-phase modulation and filamentation for high-peak-power beams.</li>
+</ul>
+<p>The main disadvantage of CaF₂ is mechanical: it is softer than fused silica, more sensitive to thermal shock, and hygroscopic (slowly absorbs water in humid environments, leading to surface degradation over years). It also has a higher coefficient of thermal expansion (CTE) than fused silica, making it less suitable for very high average power systems where thermal lensing is a concern.</p>
+
+<h3>UV Fused Silica (UVFS)</h3>
+<p>Fused silica remains the workhorse material for most ultrafast systems, especially at 1030 nm and 1064 nm (ytterbium and Nd-based lasers). Its strengths:</p>
+<ul>
+<li><strong>Excellent mechanical properties:</strong> Hard, strong, chemically resistant, and dimensionally stable. Easy to polish to ultra-low roughness.</li>
+<li><strong>Low CTE (0.55 &times; 10⁻⁶ /K):</strong> Very low thermal expansion makes it ideal for high-average-power systems where thermal lensing would otherwise degrade beam quality.</li>
+<li><strong>Proven coating compatibility:</strong> Virtually every coating vendor has extensive experience with fused silica substrates.</li>
+<li><strong>Good transmission from 180 nm to 2.5 &mu;m:</strong> Covers most common ultrafast laser wavelengths.</li>
+</ul>
+<p>Fused silica's main limitation for ultrafast is higher dispersion compared to CaF₂, and higher nonlinear refractive index, which increases self-phase modulation effects in high-peak-power systems.</p>
+
+<h3>Sapphire</h3>
+<p>Sapphire (Al₂O₃) is used in specialized ultrafast applications where extreme mechanical hardness or high thermal conductivity is needed:</p>
+<ul>
+<li><strong>Extremely hard and scratch-resistant:</strong> The second-hardest optical material after diamond.</li>
+<li><strong>Very high thermal conductivity:</strong> 30&ndash;40 W/m&middot;K (vs ~1.4 for fused silica), making it ideal for high-average-power windows.</li>
+<li><strong>Wide transmission:</strong> 150 nm to 5 &mu;m.</li>
+<li><strong>Birefringent:</strong> Sapphire is a uniaxial crystal, which means it introduces polarization-dependent effects. This is generally a disadvantage for ultrafast systems unless you specifically need waveplate behavior.</li>
+</ul>
+
+<h3>Material Comparison Table</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Property</th><th style="border:1px solid #e2e8f0;padding:8px;">CaF₂</th><th style="border:1px solid #e2e8f0;padding:8px;">UV Fused Silica</th><th style="border:1px solid #e2e8f0;padding:8px;">Sapphire</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Transmission range</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 8 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">150 nm – 5 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Refractive index @ 800 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">1.432</td><td style="border:1px solid #e2e8f0;padding:8px;">1.453</td><td style="border:1px solid #e2e8f0;padding:8px;">1.768 (o-ray)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">GVD @ 800 nm (fs²/mm)</td><td style="border:1px solid #e2e8f0;padding:8px;">~28</td><td style="border:1px solid #e2e8f0;padding:8px;">~44</td><td style="border:1px solid #e2e8f0;padding:8px;">~58</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CTE (10⁻⁶ /K)</td><td style="border:1px solid #e2e8f0;padding:8px;">18.9</td><td style="border:1px solid #e2e8f0;padding:8px;">0.55</td><td style="border:1px solid #e2e8f0;padding:8px;">5.3 (∥ c)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Knoop Hardness</td><td style="border:1px solid #e2e8f0;padding:8px;">170</td><td style="border:1px solid #e2e8f0;padding:8px;">460</td><td style="border:1px solid #e2e8f0;padding:8px;">1800</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Thermal conductivity (W/m&middot;K)</td><td style="border:1px solid #e2e8f0;padding:8px;">9.7</td><td style="border:1px solid #e2e8f0;padding:8px;">1.4</td><td style="border:1px solid #e2e8f0;padding:8px;">30-40</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Hygroscopic?</td><td style="border:1px solid #e2e8f0;padding:8px;">Slightly</td><td style="border:1px solid #e2e8f0;padding:8px;">No</td><td style="border:1px solid #e2e8f0;padding:8px;">No</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Birefringent?</td><td style="border:1px solid #e2e8f0;padding:8px;">No (cubic)</td><td style="border:1px solid #e2e8f0;padding:8px;">No</td><td style="border:1px solid #e2e8f0;padding:8px;">Yes (uniaxial)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Best for</td><td style="border:1px solid #e2e8f0;padding:8px;">Sub-50 fs pulses, UV-IR broadband, low dispersion</td><td style="border:1px solid #e2e8f0;padding:8px;">High average power, general ultrafast, 1030/1064 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">Extreme environments, high thermal load</td></tr>
+</table>
+
+<h2>Key Ultrafast Optical Components</h2>
+
+<h3>1. CaF₂ Plano-Convex Lenses for Ultrafast Focusing</h3>
+<p>Focusing an ultrafast pulse without stretching it requires a lens with minimal material in the beam path and controlled dispersion. <a href="/products/caf2-plano-convex-lenses/">CaF₂ plano-convex lenses</a> are the preferred choice for Ti:Sapphire-based femtosecond systems because:</p>
+<ul>
+<li><strong>Lower GVD means less pulse broadening:</strong> A 25-mm focal length CaF₂ lens introduces roughly 30% less GDD than the equivalent fused silica lens, preserving more peak intensity at focus.</li>
+<li><strong>Plano-convex shape minimizes spherical aberration</strong> when used with the convex side facing the collimated beam — important for maintaining tight focus and high peak intensity.</li>
+<li><strong>Broadband AR coatings:</strong> Look for coatings specified for 700-900 nm or 650-1050 nm with both GDD and reflectance specified.</li>
+</ul>
+<p>For multiphoton microscopy, two-photon absorption, and other applications relying on high peak intensity at focus, <a href="/products/caf2-ultrafast-laser-optics/">CaF₂ ultrafast-grade lenses</a> with λ/10 wavefront and < 0.5% reflective loss per surface are standard.</p>
+
+<h3>2. Ultrafast Laser Mirrors: Dispersion-Compensated Designs</h3>
+<p>Mirrors are the workhorses of ultrafast laser cavities and amplifiers, but not all mirrors are created equal for femtosecond pulses. Standard dielectric HR mirrors introduce significant GDD because the light penetrates different distances into the coating at different wavelengths.</p>
+<p>For ultrafast systems, you need mirrors with <strong>controlled dispersion</strong>:</p>
+<ul>
+<li><strong>Low-GDD mirrors:</strong> Designed to introduce minimal GDD (&lt; 10 fs² per reflection) across the pulse bandwidth. Essential for oscillator cavities and anywhere pulse shape must be preserved.</li>
+<li><strong>Chirped mirrors:</strong> Intentionally designed with negative GDD to compensate for material dispersion in the rest of the system. Critical for Kerr-lens modelocked oscillators and CPA compressors.</li>
+<li><strong>Ultrabroadband mirrors:</strong> Covering one octave or more for few-cycle pulse generation (e.g., 500-1000 nm).</li>
+</ul>
+<p>PhotonEdge offers a range of <a href="/products/high-power-laser-mirrors/">high-power laser mirrors</a>, <a href="/products/fused-silica-optical-mirrors/">fused silica mirrors</a>, and <a href="/products/1064nm-laser-line-mirrors/">1064 nm laser mirrors</a> that can be customized for ultrafast dispersion requirements. For Yb-doped fiber amplifier systems at 1030-1064 nm, fused silica substrate mirrors provide optimal mechanical stability and damage resistance.</p>
+
+<h3>3. CaF₂ Optical Windows and Protective Windows</h3>
+<p>Every ultrafast system has windows — vacuum chamber windows, environmental protection windows, beam sampler windows. Each one adds GDD, and if you add them up, they can stretch your pulse significantly.</p>
+<p><a href="/products/caf2-optical-windows/">CaF₂ optical windows</a> are ideal for ultrafast vacuum chambers and beam path enclosures because:</p>
+<ul>
+<li><strong>Lower GVD per mm</strong> means you can use a thicker window for better vacuum sealing with less pulse broadening.</li>
+<li><strong>UV-to-mid-IR transmission</strong> means the same window material works for Ti:Sapphire (800 nm), OPA signal/idler (1200-2000 nm), and harmonics (266 nm, 400 nm).</li>
+<li><strong>Low index</strong> reduces Fresnel reflection losses even with simple single-layer AR coatings.</li>
+</ul>
+<p>Important: CaF₂ windows should be specified with a moisture-resistant coating if the system will operate in a humid environment. In dry nitrogen-purged or vacuum environments, uncoated or simple AR-coated CaF₂ is fine.</p>
+
+<h3>4. CaF₂ Prisms for Dispersion Compensation</h3>
+<p>Prism pairs are the classic technique for introducing controlled amounts of negative (or positive) GDD in ultrafast laser systems. In a typical Ti:Sapphire oscillator, a pair of prisms inside the cavity compensates for the positive GDD introduced by the Ti:Sapphire crystal and other optical elements.</p>
+<p><a href="/products/caf2-optical-prisms/">CaF₂ optical prisms</a> are preferred over fused silica prisms for ultrafast systems because:</p>
+<ul>
+<li><strong>Wider wavelength coverage:</strong> CaF₂ prisms work from the deep UV through the near-IR, making them suitable for OPA systems and harmonic generation experiments.</li>
+<li><strong>Lower intrinsic GDD:</strong> When used at minimum deviation, the beam path through CaF₂ is shorter in equivalent dispersion terms, meaning less higher-order dispersion is introduced.</li>
+<li><strong>Lower nonlinearity:</strong> CaF₂'s lower n₂ means less self-phase modulation inside the prism material at high pulse energies.</li>
+</ul>
+<p>For ultrafast applications, prisms are typically used at the Brewster angle to minimize reflection losses without AR coatings. The apex angle is chosen so that the center wavelength of the pulse passes through at minimum deviation.</p>
+
+<h3>5. High-Power Laser Mirrors for CPA Amplifiers</h3>
+<p>Chirped Pulse Amplification (CPA) systems operate at enormous peak powers — terawatts and even petawatts in large facilities. In these systems, mirror damage is the #1 failure mode. <a href="/products/high-energy-laser-mirrors/">High energy laser mirrors</a> designed for femtosecond pulses must satisfy three conflicting requirements simultaneously:</p>
+<ol>
+<li><strong>Extremely high reflectivity</strong> (&gt; 99.9%) to minimize loss and prevent damage to downstream components</li>
+<li><strong>Controlled GDD and TOD</strong> to avoid distorting the pulse shape</li>
+<li><strong>Highest possible damage threshold</strong> to survive multi-Joule, sub-100-fs pulses</li>
+</ol>
+<p>Fused silica substrate mirrors with ion-beam-sputtered (IBS) dielectric coatings are the standard for high-energy CPA systems. The coating design is a complex multilayer stack that must be optimized for both reflectivity bandwidth and dispersion characteristics. PhotonEdge <a href="/products/high-power-laser-mirrors/">high-power laser mirrors</a> are available with custom coating designs for specific pulse durations and wavelength bands.</p>
+
+<h2>Ultrafast Applications and Component Mapping</h2>
+
+<h3>Ti:Sapphire Oscillators and Amplifiers</h3>
+<p>Ti:Sapphire lasers operating around 800 nm remain the gold standard for ultrafast research. A typical kHz amplifier system has dozens of optical elements. Key component recommendations:</p>
+<ul>
+<li><strong>Oscillator cavity:</strong> Low-GDD chirped mirrors for dispersion compensation, <a href="/products/caf2-plano-convex-lenses/">CaF₂ lenses</a> for focusing into the crystal</li>
+<li><strong>Stretcher/compressor:</strong> Diffraction gratings (transmission or reflection) or prism pairs for large GDD compensation</li>
+<li><strong>Amplifier chain:</strong> <a href="/products/high-power-laser-mirrors/">High-power laser mirrors</a> with controlled dispersion, vacuum-grade <a href="/products/caf2-optical-windows/">CaF₂ windows</a></li>
+<li><strong>Beam delivery:</strong> CaF₂ lenses for final focusing, broadband HR mirrors for beam steering</li>
+</ul>
+
+<h3>Yb-Doped Fiber and Solid-State Amplifiers (1030-1064 nm)</h3>
+<p>Ytterbium-based systems have exploded in popularity for industrial ultrafast applications (laser micromachining, 3D printing, eye surgery). They offer high average power (up to kilowatts) and excellent wall-plug efficiency. Recommendations:</p>
+<ul>
+<li><strong>Use fused silica for most components:</strong> Fused silica's low CTE and high mechanical stability are critical for high-average-power industrial systems.</li>
+<li><strong>Mirrors:</strong> <a href="/products/1064nm-laser-line-mirrors/">1064 nm laser mirrors</a> with optimized GDD for femtosecond pulses</li>
+<li><strong>Focusing optics:</strong> <a href="/products/fused-silica-optical-mirrors/">Fused silica mirrors</a> and lenses with LIDT specifications at 1030 nm, ~200 fs</li>
+<li><strong>When to use CaF₂:</strong> If you are generating broadband supercontinuum or operating at wavelength bands where CaF₂'s lower dispersion matters (e.g., optical parametric chirped pulse amplification).</li>
+</ul>
+
+<h3>Optical Parametric Amplifiers (OPA) and OPCPA</h3>
+<p>OPAs generate wavelength-tunable ultrafast pulses by mixing a pump beam with a signal beam in a nonlinear crystal. The signal and idler beams can span from the UV to the mid-IR. For OPA systems:</p>
+<ul>
+<li><strong>CaF₂ is nearly ideal:</strong> Its wide UV-to-mid-IR transmission covers the entire OPA tuning range. A single CaF₂ lens or window works for the pump (e.g., 400 nm or 800 nm), signal (1200-2000 nm), and idler (2000-4000 nm) simultaneously.</li>
+<li><strong>Dispersion management is critical:</strong> The different wavelength beams experience different GDD in the optical elements, requiring careful material selection and path design.</li>
+</ul>
+
+<h3>Multiphoton Microscopy and Nonlinear Imaging</h3>
+<p>Two-photon microscopy, second-harmonic generation imaging, and coherent anti-Stokes Raman scattering (CARS) all rely on ultrashort pulses at the sample plane. The challenge is that each optical element in the microscope — scan lenses, tube lenses, objective, dichroics — adds dispersion that broadens the pulse and reduces signal intensity.</p>
+<ul>
+<li><strong>Pre-chirp the pulse:</strong> Use a prism pair or grism to add negative GDD before the microscope to compensate for positive GDD in the objective.</li>
+<li><strong>Minimize element count:</strong> Use CaF₂ optics where possible in the excitation path to reduce total accumulated GDD.</li>
+<li><strong>Dichroic mirrors:</strong> Specify dichroics with documented GDD characteristics — some standard dichroics can introduce hundreds of fs² of dispersion.</li>
+</ul>
+
+<h2>5 Common Ultrafast Optics Mistakes &amp; How to Avoid Them</h2>
+
+<h3>1. Ignoring Total Accumulated GDD</h3>
+<p>It is easy to look at each component individually — "this lens only adds 50 fs², no problem" — and forget that every element in the beam path contributes. A lens here, a window there, a beamsplitter, a polarizer, and a couple of mirror bounces can add up to hundreds or thousands of fs² of GDD, stretching your 30-fs pulse to 100 fs or more.</p>
+<p><strong>Solution:</strong> Calculate total GDD for the entire beam path before building the system. Sum the GDD from every transmissive element (lenses, windows, crystals, filters) and every reflective element (mirrors, dichroics). If the total is too high, reduce element count, switch to thinner substrates, or add a dispersion compensator (grating pair, prism pair, or chirped mirror sequence).</p>
+
+<h3>2. Using CW-Style Mirrors in Ultrafast Systems</h3>
+<p>A mirror with 99.9% reflectivity at 800 nm sounds great — until you realize it is a narrowband CW design with 10 nm bandwidth and 500 fs² of GDD. Your 30-fs pulse has 30 nm of bandwidth; the mirror will strip off the wings of the spectrum and stretch what remains.</p>
+<p><strong>Solution:</strong> Always check the <em>bandwidth</em> and <em>GDD</em> specifications of mirrors for ultrafast use, not just reflectivity. The mirror bandwidth should be at least 2&times; the pulse spectral bandwidth for minimal distortion. For sub-20-fs pulses, look for explicitly specified GDD and TOD values.</p>
+
+<h3>3. Forgetting About Thermal Effects at High Average Power</h3>
+<p>Modern femtosecond amplifiers can deliver 100 W, 500 W, or even kilowatts of average power. At these power levels, even a 0.1% absorption in a lens or window creates significant thermal lensing and wavefront distortion. CaF₂, with its higher CTE, is more susceptible to thermal lensing than fused silica.</p>
+<p><strong>Solution:</strong> For high-average-power systems (&gt; 10 W), use <a href="/products/fused-silica-optical-mirrors/">fused silica mirrors</a> and lenses instead of CaF₂ where possible. For transmissive optics, specify the highest damage threshold and lowest absorption coatings available. Consider water-cooled mounts for high-power windows.</p>
+
+<h3>4. Neglecting Surface Quality and Subsurface Damage</h3>
+<p>Laser damage in the femtosecond regime often initiates at surface defects — scratches, digs, polishing residue, and subsurface damage from the grinding process. A "60-40" scratch-dig specification may be fine for CW systems but can lead to premature damage at high peak intensities.</p>
+<p><strong>Solution:</strong> Specify tighter surface quality (e.g., 10-5 scratch-dig per MIL-PRF-13830) for all high-peak-power ultrafast optics. Look for suppliers who offer <strong>super-polished</strong> surfaces (&lt; 1 &Aring; RMS roughness) and advanced polishing techniques that minimize subsurface damage. All PhotonEdge <a href="/products/caf2-ultrafast-laser-optics/">ultrafast-grade CaF₂ optics</a> are manufactured with damage-resistant polishing processes.</p>
+
+<h3>5. Assuming AR Coatings Are All the Same</h3>
+<p>A standard single-layer MgF₂ AR coating works fine for visible CW light but can introduce significant GDD and can have low damage thresholds in the femtosecond regime. Broadband multilayer AR coatings can perform much better — or much worse — depending on the design.</p>
+<p><strong>Solution:</strong> For ultrafast systems, specify AR coatings with documented GDD characteristics across your operating bandwidth. Look for coatings with &lt; 0.5% reflectance per surface and specified LIDT at your pulse duration. For critical applications, consider ultrabroadband AR coatings designed specifically for femtosecond pulses.</p>
+
+<h2>Component Selection Quick Reference</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Application</th><th style="border:1px solid #e2e8f0;padding:8px;">Preferred Material</th><th style="border:1px solid #e2e8f0;padding:8px;">Key Components</th><th style="border:1px solid #e2e8f0;padding:8px;">Critical Spec</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Ti:Sapphire oscillator (800 nm, &lt; 50 fs)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ + FS mirrors</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂ lenses</a>, <a href="/products/high-power-laser-mirrors/">chirped mirrors</a></td><td style="border:1px solid #e2e8f0;padding:8px;">GDD &lt; 20 fs² per element</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Yb fiber amplifier (1030 nm, &gt; 10 W avg)</td><td style="border:1px solid #e2e8f0;padding:8px;">Fused Silica</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/1064nm-laser-line-mirrors/">1064 nm mirrors</a>, <a href="/products/fused-silica-optical-mirrors/">FS mirrors</a></td><td style="border:1px solid #e2e8f0;padding:8px;">LIDT, thermal stability</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OPA / OPCPA (broadband tunable)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂ windows</a>, <a href="/products/caf2-optical-prisms/">CaF₂ prisms</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Transmission range, GVD</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Multiphoton microscopy</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ (excitation)</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂ scan lenses</a>, <a href="/products/dichroic-filters/">dichroic mirrors</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Total GDD budget</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CPA amplifier (high peak power)</td><td style="border:1px solid #e2e8f0;padding:8px;">Fused Silica</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/high-power-laser-mirrors/">High-power mirrors</a>, <a href="/products/high-energy-laser-mirrors/">high-energy mirrors</a></td><td style="border:1px solid #e2e8f0;padding:8px;">LIDT (fs regime)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Vacuum chamber windows</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ or FS</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂ windows</a>, <a href="/products/fused-silica-optical-windows/">FS windows</a></td><td style="border:1px solid #e2e8f0;padding:8px;">GDD contribution, LIDT</td></tr>
+</table>
+
+<h2>PhotonEdge Ultrafast Optics Portfolio</h2>
+<p>PhotonEdge manufactures precision ultrafast-grade optical components for femtosecond and picosecond laser systems across the UV, visible, and near-IR spectrum:</p>
+<ul>
+<li><a href="/products/caf2-ultrafast-laser-optics/">CaF₂ Ultrafast Laser Optics</a> — Low-GVD CaF₂ lenses, windows, and prisms for Ti:Sapphire and OPA systems</li>
+<li><a href="/products/caf2-plano-convex-lenses/">CaF₂ Plano-Convex Lenses</a> — For ultrafast focusing and beam collimation with minimal dispersion</li>
+<li><a href="/products/caf2-optical-windows/">CaF₂ Optical Windows</a> — Vacuum-grade windows with broadband AR coating options (180 nm – 8 &mu;m)</li>
+<li><a href="/products/caf2-optical-prisms/">CaF₂ Optical Prisms</a> — Right-angle and equilateral prisms for dispersion control and beam manipulation</li>
+<li><a href="/products/high-power-laser-mirrors/">High-Power Laser Mirrors</a> — IBS-coated mirrors with controlled GDD for femtosecond systems</li>
+<li><a href="/products/fused-silica-optical-mirrors/">Fused Silica Optical Mirrors</a> — High-stability mirrors for 1030/1064 nm Yb-doped systems</li>
+<li><a href="/products/1064nm-laser-line-mirrors/">1064 nm Laser Mirrors</a> — Optimized for Yb fiber and Nd:YAG ultrafast amplifiers</li>
+<li><a href="/products/dichroic-filters/">Dichroic Filters</a> — Custom dichroics with documented GDD for multiphoton microscopy</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Ultrafast laser optics is where material science, coating design, and laser physics all come together. The right lens or mirror choice can mean the difference between transform-limited pulses at full peak power and a stretched, distorted beam that fails to deliver on its promise. CaF₂ has transformed ultrafast optics by offering exceptionally low dispersion, ultra-wide transmission, and high damage threshold — making it the material of choice for sub-50-fs systems, broadband OPA, and any application where preserving pulse shape is critical.</p>
+<p>At PhotonEdge, we manufacture CaF₂ and fused silica optics to the tightest tolerances, with certified LIDT values and documented dispersion characteristics. Whether you need a single CaF₂ focusing lens or a complete set of dispersion-controlled mirrors for your CPA system, our technical team can help you select the optimal components for your specific pulse duration, wavelength, and power level.</p>
+
+    </div>
+    <div id="articleContentZh" style="display:none;">
+<h2>引言</h2>
+<p>飞秒和皮秒激光能提供远超连续波系统的峰值功率——一个100飞秒、1毫焦的脉冲可以达到10吉瓦的峰值强度。在这种水平下，光学元件的选型规则发生了根本性变化。普通BK7透镜会碎裂。常规镀膜会被烧蚀。而脉冲本身会被一种叫做<strong>群延迟色散（GDD）</strong>的现象拉长和畸变——这是大多数使用连续波或纳秒系统的工程师从未关注过的问题。</p>
+<p>超快光学是一个高度专业化的领域，材料选择、镀膜设计和表面质量直接决定了你的系统能否输出变换极限脉冲，还是只能得到一个畸变大、对比度低的结果。氟化钙（CaF₂）因其极低的色散、超宽的透过范围和高损伤阈值，已成为超快激光系统中最重要的材料之一。然而，许多工程师仍然默认选用熔融石英，没有意识到在何种情况下CaF₂才是更好的选择。</p>
+<p>本指南详细介绍为超快激光系统选择光学元件所需了解的一切。我们将讲解GDD和色散管理，比较CaF₂与紫外熔融石英及其他材料，分析关键元件类型（透镜、窗口片、棱镜、反射镜），并指出导致超快脉冲质量下降的常见错误。无论您正在搭建啁啾脉冲放大器（CPA）、光学参量放大器（OPA）还是多光子显微镜系统，这里的原则都将帮助您保持脉宽短、系统可靠。</p>
+
+<h2>超快光学的特殊之处</h2>
+<p>超快激光脉冲不只是一个短的光脉冲——它是许多波长成分的相干叠加。脉冲越短，其光谱带宽越宽（傅里叶极限）。一个800 nm处的100飞秒脉冲约有10 nm的带宽；一个10飞秒脉冲则超过100 nm；而单周期脉冲（不到3飞秒）跨越整个倍频程。</p>
+<p>如此宽的带宽给光学元件带来了三大独特挑战：</p>
+<ul>
+<li><strong>群延迟色散（GDD）：</strong>不同波长成分在透明材料中的传播速度不同。通过光学元件后，脉冲的蓝光部分比红光部分晚到达（正色散情况下），导致脉冲在时间上被拉长，峰值强度降低。</li>
+<li><strong>高峰值强度：</strong>即使是1毫焦的飞秒脉冲，聚焦后的峰值功率也在吉瓦量级。电场强度可以接近介电材料的本征击穿场强，使得激光损伤的可能性远高于连续波或长脉冲激光。</li>
+<li><strong>色散镀膜：</strong>为窄带连续波激光器设计的标准单层或多层镀膜不适用于宽带超快脉冲。镀膜本身会引入显著的GDD和三阶色散（TOD），导致脉冲畸变。</li>
+</ul>
+<p>在超快系统中，目标不仅仅是"透光"——而是<strong>在保持脉冲形状的前提下</strong>透光。这意味着每个元件都要尽量减少GDD，选择具有合适色散特性的材料，并使用专门设计的镀膜。</p>
+
+<h3>理解GDD、TOD和各阶色散</h3>
+<p>光学材料中的色散可以通过相位随频率变化的泰勒展开来描述。关键项包括：</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">术语</th><th style="border:1px solid #e2e8f0;padding:8px;">符号</th><th style="border:1px solid #e2e8f0;padding:8px;">单位</th><th style="border:1px solid #e2e8f0;padding:8px;">对脉冲的影响</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">群延迟</td><td style="border:1px solid #e2e8f0;padding:8px;">GD = d&phi;/d&omega;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs</td><td style="border:1px solid #e2e8f0;padding:8px;">均匀时间延迟（无畸变）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">群延迟色散</td><td style="border:1px solid #e2e8f0;padding:8px;">GDD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">线性啁啾——对称地展宽脉冲</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">三阶色散</td><td style="border:1px solid #e2e8f0;padding:8px;">TOD = d&sup3;&phi;/d&omega;&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">非对称脉冲畸变、前后沿脉冲</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">四阶色散</td><td style="border:1px solid #e2e8f0;padding:8px;">FOD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">卫星脉冲、脉冲基座</td></tr>
+</table>
+<p>对于大于约50飞秒的脉冲，GDD通常是主要问题，可以通过光栅对或棱镜对进行补偿。对于小于20飞秒的脉冲，TOD和更高阶的色散变得显著且更难校正。这就是材料选择变得至关重要的原因——选择固有色散更低的材料可以减少所需的补偿量，并最小化高阶畸变。</p>
+
+<h2>材料比较：CaF₂ vs 熔融石英 vs 蓝宝石</h2>
+<p>超快光学中有三种主导材料：氟化钙（CaF₂）、紫外熔融石英（UVFS）和蓝宝石。根据波长、脉冲宽度和功率水平的不同，每种材料各有优势。</p>
+
+<h3>氟化钙（CaF₂）</h3>
+<p>CaF₂是超快光学领域的新星，尤其在700-900 nm的钛宝石波段，并可延伸到深紫外和中红外。其主要优势包括：</p>
+<ul>
+<li><strong>可见/近红外超低GVD：</strong>在800 nm处，CaF₂的群速度色散比熔融石英低约<strong>30-40%</strong>，这意味着一个10毫米的CaF₂窗口片产生的色散比一个6毫米的熔融石英窗口片还要少。</li>
+<li><strong>极宽的透过范围：</strong>CaF₂可从<strong>180 nm（深紫外）透过到8微米（中红外）</strong>——这是其他任何单一光学材料都无法比拟的。</li>
+<li><strong>低折射率（800 nm处约1.43）：</strong>较低的折射率意味着更弱的菲涅耳反射、更简单的增透膜设计，以及更少的表面引入色散。</li>
+<li><strong>飞秒损伤阈值高：</strong>对于100飞秒以下的脉冲，CaF₂通常表现出比熔融石英更高的损伤阈值，尤其是在紫外波段。</li>
+<li><strong>低非线性折射率（n₂）：</strong>高峰值功率光束中的自相位调制和成丝效应更小。</li>
+</ul>
+<p>CaF₂的主要缺点是力学性能：它比熔融石英软，对热冲击更敏感，并且具有吸湿性（在潮湿环境中会缓慢吸收水分，数年后导致表面退化）。它的热膨胀系数（CTE）也高于熔融石英，使其不太适合热透镜效应成为问题的极高平均功率系统。</p>
+
+<h3>紫外熔融石英（UVFS）</h3>
+<p>熔融石英仍然是大多数超快系统的主力材料，特别是在1030 nm和1064 nm（掺镱和钕基激光器）。其优势包括：</p>
+<ul>
+<li><strong>优异的力学性能：</strong>坚硬、强度高、耐化学腐蚀、尺寸稳定性好。易于抛光到超低粗糙度。</li>
+<li><strong>低热膨胀系数（0.55 &times; 10⁻⁶ /K）：</strong>极低的热膨胀使其成为高平均功率系统的理想选择，否则热透镜会降低光束质量。</li>
+<li><strong>成熟的镀膜兼容性：</strong>几乎每个镀膜厂商都对熔融石英基底有丰富的经验。</li>
+<li><strong>180 nm到2.5微米的良好透过：</strong>覆盖了最常见的超快激光波长。</li>
+</ul>
+<p>熔融石英用于超快的主要局限是与CaF₂相比较高的色散，以及较高的非线性折射率，这会增加高峰值功率系统中的自相位调制效应。</p>
+
+<h3>蓝宝石</h3>
+<p>蓝宝石（Al₂O₃）用于需要极高机械硬度或高热导率的特殊超快应用：</p>
+<ul>
+<li><strong>极硬且耐划痕：</strong>仅次于金刚石的第二硬光学材料。</li>
+<li><strong>非常高的热导率：</strong>30-40 W/m&middot;K（熔融石英约为1.4），使其成为高平均功率窗口的理想选择。</li>
+<li><strong>宽透过范围：</strong>150 nm到5微米。</li>
+<li><strong>双折射：</strong>蓝宝石是单轴晶体，这意味着它会引入偏振相关效应。对于超快系统来说，这通常是一个缺点，除非您特别需要波片行为。</li>
+</ul>
+
+<h3>材料对比表</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">性能</th><th style="border:1px solid #e2e8f0;padding:8px;">CaF₂</th><th style="border:1px solid #e2e8f0;padding:8px;">紫外熔融石英</th><th style="border:1px solid #e2e8f0;padding:8px;">蓝宝石</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">透过范围</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 8 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">150 nm – 5 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">折射率 @ 800 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">1.432</td><td style="border:1px solid #e2e8f0;padding:8px;">1.453</td><td style="border:1px solid #e2e8f0;padding:8px;">1.768（o光）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">GVD @ 800 nm (fs²/mm)</td><td style="border:1px solid #e2e8f0;padding:8px;">~28</td><td style="border:1px solid #e2e8f0;padding:8px;">~44</td><td style="border:1px solid #e2e8f0;padding:8px;">~58</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">热膨胀系数 (10⁻⁶ /K)</td><td style="border:1px solid #e2e8f0;padding:8px;">18.9</td><td style="border:1px solid #e2e8f0;padding:8px;">0.55</td><td style="border:1px solid #e2e8f0;padding:8px;">5.3（∥ c轴）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">努氏硬度</td><td style="border:1px solid #e2e8f0;padding:8px;">170</td><td style="border:1px solid #e2e8f0;padding:8px;">460</td><td style="border:1px solid #e2e8f0;padding:8px;">1800</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">热导率 (W/m&middot;K)</td><td style="border:1px solid #e2e8f0;padding:8px;">9.7</td><td style="border:1px solid #e2e8f0;padding:8px;">1.4</td><td style="border:1px solid #e2e8f0;padding:8px;">30-40</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">吸湿性？</td><td style="border:1px solid #e2e8f0;padding:8px;">轻微</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">双折射？</td><td style="border:1px solid #e2e8f0;padding:8px;">无（立方晶系）</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td><td style="border:1px solid #e2e8f0;padding:8px;">有（单轴）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">最佳适用</td><td style="border:1px solid #e2e8f0;padding:8px;">亚50飞秒脉冲、紫外-红外宽带、低色散</td><td style="border:1px solid #e2e8f0;padding:8px;">高平均功率、常规超快、1030/1064 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">极端环境、高热负载</td></tr>
+</table>
+
+<h2>关键超快光学元件</h2>
+
+<h3>1. 用于超快聚焦的CaF₂平凸透镜</h3>
+<p>在不展宽脉冲的情况下聚焦超快脉冲，需要使用光路中材料最少、色散可控的透镜。<a href="/products/caf2-plano-convex-lenses/">CaF₂平凸透镜</a>是钛宝石飞秒系统的首选，因为：</p>
+<ul>
+<li><strong>更低的GVD意味着更少的脉冲展宽：</strong>一个焦距25毫米的CaF₂透镜引入的GDD比等效的熔融石英透镜少约30%，在焦点处保留更高的峰值强度。</li>
+<li><strong>平凸形状在凸面朝向准直光束时最小化球差</strong>——这对于保持紧聚焦和高峰值强度至关重要。</li>
+<li><strong>宽带增透膜：</strong>寻找指定700-900 nm或650-1050 nm的镀膜，并同时标明GDD和反射率。</li>
+</ul>
+<p>对于多光子显微镜、双光子吸收以及其他依赖焦点处高峰值强度的应用，采用λ/10波前和每面反射损耗&lt;0.5%的<a href="/products/caf2-ultrafast-laser-optics/">CaF₂超快级透镜</a>是标准配置。</p>
+
+<h3>2. 超快激光反射镜：色散补偿设计</h3>
+<p>反射镜是超快激光谐振腔和放大器的主力元件，但并非所有反射镜都适用于飞秒脉冲。标准的介质高反镜会引入显著的GDD，因为不同波长的光在镀膜中穿透的深度不同。</p>
+<p>对于超快系统，您需要<strong>色散可控</strong>的反射镜：</p>
+<ul>
+<li><strong>低GDD反射镜：</strong>设计为在脉冲带宽内引入最小的GDD（每次反射 &lt; 10 fs²）。对于振荡器腔和任何需要保持脉冲形状的位置至关重要。</li>
+<li><strong>啁啾反射镜：</strong>有意设计为具有负GDD，以补偿系统其余部分的材料色散。对于克尔透镜锁模振荡器和CPA压缩器至关重要。</li>
+<li><strong>超宽带反射镜：</strong>覆盖一个倍频程或更宽，用于少周期脉冲产生（例如500-1000 nm）。</li>
+</ul>
+<p>恒鼎光提供多种<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>、<a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和<a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a>，可根据超快色散需求进行定制。对于1030-1064 nm的掺镱光纤放大器系统，熔融石英基底反射镜提供最佳的机械稳定性和抗损伤能力。</p>
+
+<h3>3. CaF₂光学窗口片与保护窗口</h3>
+<p>每个超快系统都有窗口片——真空腔窗口、环境保护窗口、光束采样窗口。每一片都会增加GDD，如果加起来，它们会显著展宽您的脉冲。</p>
+<p><a href="/products/caf2-optical-windows/">CaF₂光学窗口片</a>是超快真空腔和光束路径封装的理想选择，因为：</p>
+<ul>
+<li><strong>每毫米更低的GVD</strong>意味着您可以使用更厚的窗口片以获得更好的真空密封，同时产生更少的脉冲展宽。</li>
+<li><strong>紫外到中红外的透过</strong>意味着同一种窗口材料适用于钛宝石（800 nm）、OPA信号/闲频光（1200-2000 nm）和谐波（266 nm、400 nm）。</li>
+<li><strong>低折射率</strong>即使使用简单的单层增透膜也能降低菲涅耳反射损耗。</li>
+</ul>
+<p>重要提示：如果系统将在潮湿环境中运行，CaF₂窗口应指定防潮涂层。在干燥的氮气吹扫或真空环境中，未镀膜或简单增透膜的CaF₂即可使用。</p>
+
+<h3>4. 用于色散补偿的CaF₂棱镜</h3>
+<p>棱镜对是在超快激光系统中引入可控量的负（或正）GDD的经典技术。在典型的钛宝石振荡器中，腔内的一对棱镜用于补偿由钛宝石晶体和其他光学元件引入的正色散。</p>
+<p><a href="/products/caf2-optical-prisms/">CaF₂光学棱镜</a>在超快系统中优于熔融石英棱镜，因为：</p>
+<ul>
+<li><strong>更宽的波长覆盖：</strong>CaF₂棱镜从深紫外到近红外都有效，使其适用于OPA系统和谐波产生实验。</li>
+<li><strong>更低的固有GDD：</strong>在最小偏向角使用时，光束通过CaF₂的光程在等效色散意义上更短，意味着引入的高阶色散更少。</li>
+<li><strong>更低的非线性：</strong>CaF₂较低的n₂意味着在高脉冲能量下棱镜材料内部的自相位调制更少。</li>
+</ul>
+<p>对于超快应用，棱镜通常以布儒斯特角使用，以便在没有增透膜的情况下最小化反射损耗。顶角的选择使脉冲的中心波长以最小偏向角通过。</p>
+
+<h3>5. 用于CPA放大器的高功率激光反射镜</h3>
+<p>啁啾脉冲放大（CPA）系统工作在巨大的峰值功率下——大型设备中达到太瓦甚至拍瓦级别。在这些系统中，反射镜损伤是头号失效模式。<a href="/products/high-energy-laser-mirrors/">高能量激光反射镜</a>为飞秒脉冲设计时必须同时满足三个相互矛盾的要求：</p>
+<ol>
+<li><strong>极高的反射率</strong>（&gt; 99.9%），以最小化损耗并防止对下游元件的损伤</li>
+<li><strong>可控的GDD和TOD</strong>，以避免脉冲形状畸变</li>
+<li><strong>尽可能高的损伤阈值</strong>，以承受多焦耳、亚100飞秒的脉冲</li>
+</ol>
+<p>采用离子束溅射（IBS）介质镀膜的熔融石英基底反射镜是高能CPA系统的标准配置。镀膜设计是复杂的多层堆叠，必须同时优化反射率带宽和色散特性。恒鼎光<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>可提供针对特定脉冲宽度和波段的定制镀膜设计。</p>
+
+<h2>超快应用与元件对应</h2>
+
+<h3>钛宝石振荡器和放大器</h3>
+<p>工作在约800 nm的钛宝石激光器仍然是超快研究的金标准。一个典型的千赫兹放大器系统有数十个光学元件。关键元件建议：</p>
+<ul>
+<li><strong>振荡器腔：</strong>低GDD啁啾镜用于色散补偿，<a href="/products/caf2-plano-convex-lenses/">CaF₂透镜</a>用于聚焦到晶体</li>
+<li><strong>展宽器/压缩器：</strong>衍射光栅（透射或反射）或棱镜对用于大GDD补偿</li>
+<li><strong>放大链路：</strong>具有可控色散的<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>、真空级<a href="/products/caf2-optical-windows/">CaF₂窗口</a></li>
+<li><strong>光束传输：</strong>CaF₂透镜用于最终聚焦，宽带高反镜用于光束转向</li>
+</ul>
+
+<h3>掺镱光纤和固态放大器（1030-1064 nm）</h3>
+<p>基于镱的系统在工业超快应用（激光微加工、3D打印、眼科手术）中迅速普及。它们提供高平均功率（可达千瓦级）和出色的光-光转换效率。建议：</p>
+<ul>
+<li><strong>大多数元件使用熔融石英：</strong>熔融石英低热膨胀系数和高机械稳定性对于高平均功率工业系统至关重要。</li>
+<li><strong>反射镜：</strong><a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a>，针对飞秒脉冲优化GDD</li>
+<li><strong>聚焦光学元件：</strong><a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和透镜，指定1030 nm、~200 fs下的LIDT</li>
+<li><strong>何时使用CaF₂：</strong>如果您正在产生宽带超连续谱，或工作在CaF₂较低色散更重要的波段（例如，光学参量啁啾脉冲放大）。</li>
+</ul>
+
+<h3>光学参量放大器（OPA）和OPCPA</h3>
+<p>OPA通过在非线性晶体中混合泵浦光和信号光来产生波长可调谐的超快脉冲。信号光和闲频光可以从紫外到中红外。对于OPA系统：</p>
+<ul>
+<li><strong>CaF₂几乎是理想选择：</strong>其宽的紫外到中红外透过范围覆盖了整个OPA调谐范围。单个CaF₂透镜或窗口可同时用于泵浦光（例如400 nm或800 nm）、信号光（1200-2000 nm）和闲频光（2000-4000 nm）。</li>
+<li><strong>色散管理至关重要：</strong>不同波长的光束在光学元件中经历不同的GDD，需要仔细选择材料和光路设计。</li>
+</ul>
+
+<h3>多光子显微镜和非线性成像</h3>
+<p>双光子显微镜、二次谐波成像和相干反斯托克斯拉曼散射（CARS）都依赖于样品平面处的超短脉冲。挑战在于显微镜中的每个光学元件——扫描透镜、镜筒透镜、物镜、二向色镜——都会增加色散，展宽脉冲并降低信号强度。</p>
+<ul>
+<li><strong>预啁啾脉冲：</strong>在显微镜之前使用棱镜对或光栅棱镜组合添加负GDD，以补偿物镜中的正色散。</li>
+<li><strong>最小化元件数量：</strong>在激发光路中尽可能使用CaF₂光学元件，以减少总累积GDD。</li>
+<li><strong>二向色镜：</strong>选择具有记录GDD特性的二向色镜——一些标准二向色镜可能引入数百fs²的色散。</li>
+</ul>
+
+<h2>五个常见的超快光学错误及避免方法</h2>
+
+<h3>1. 忽视总累积GDD</h3>
+<p>单独看每个元件很容易——"这个透镜只增加50 fs²，没问题"——却忘记了光路中的每个元件都在贡献。一个透镜、一个窗口、一个分束器、一个偏振器，加上几次反射镜反射，加起来可能达到数百甚至数千fs²的GDD，将您的30飞秒脉冲展宽到100飞秒或更长。</p>
+<p><strong>解决方案：</strong>在搭建系统之前计算整个光路的总GDD。将每个透射元件（透镜、窗口、晶体、滤光片）和每个反射元件（反射镜、二向色镜）的GDD加起来。如果总GDD太高，减少元件数量、切换到更薄的基底，或添加色散补偿器（光栅对、棱镜对或啁啾镜序列）。</p>
+
+<h3>2. 在超快系统中使用连续波式反射镜</h3>
+<p>一个在800 nm处反射率99.9%的反射镜听起来很棒——直到你意识到它是一个窄带连续波设计，带宽只有10 nm，GDD高达500 fs²。你的30飞秒脉冲有30 nm的带宽；反射镜会削掉光谱的边带并展宽剩余部分。</p>
+<p><strong>解决方案：</strong>对于超快应用，始终检查反射镜的<strong>带宽</strong>和<strong>GDD</strong>规格，而不仅仅是反射率。为了最小化畸变，反射镜带宽应至少是脉冲光谱带宽的2倍。对于亚20飞秒脉冲，寻找明确指定GDD和TOD值的产品。</p>
+
+<h3>3. 忘记高平均功率下的热效应</h3>
+<p>现代飞秒放大器可以提供100 W、500 W甚至千瓦级的平均功率。在这种功率水平下，即使透镜或窗口中0.1%的吸收也会产生显著的热透镜和波前畸变。CaF₂由于其较高的热膨胀系数，比熔融石英更容易受热透镜效应的影响。</p>
+<p><strong>解决方案：</strong>对于高平均功率系统（&gt; 10 W），尽可能使用<a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和透镜代替CaF₂。对于透射光学元件，指定可用的最高损伤阈值和最低吸收镀膜。考虑为高功率窗口使用水冷镜架。</p>
+
+<h3>4. 忽视表面质量和亚表面损伤</h3>
+<p>飞秒区域的激光损伤通常始于表面缺陷——划痕、麻点、抛光残留物以及研磨过程产生的亚表面损伤。"60-40"的划痕-麻点规格对于连续波系统可能没问题，但在高峰值强度下可能导致过早损伤。</p>
+<p><strong>解决方案：</strong>为所有高峰值功率超快光学元件指定更严格的表面质量（例如，按MIL-PRF-13830标准的10-5划痕-麻点）。寻找提供<strong>超抛光</strong>表面（&lt; 1 &Aring; RMS粗糙度）和采用最小化亚表面损伤的先进抛光技术的供应商。恒鼎光所有<a href="/products/caf2-ultrafast-laser-optics/">超快级CaF₂光学元件</a>均采用抗损伤抛光工艺制造。</p>
+
+<h3>5. 以为所有增透膜都一样</h3>
+<p>标准的单层MgF₂增透膜对可见光连续光有效，但可能引入显著的GDD，并且在飞秒范围内损伤阈值可能很低。宽带多层增透膜的性能可能更好——也可能更差——取决于设计。</p>
+<p><strong>解决方案：</strong>对于超快系统，指定在您的工作带宽内具有记录GDD特性的增透膜。寻找每面反射率&lt;0.5%并指定了您的脉宽下LIDT的镀膜。对于关键应用，考虑专门为飞秒脉冲设计的超宽带增透膜。</p>
+
+<h2>元件选型速查表</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">应用</th><th style="border:1px solid #e2e8f0;padding:8px;">首选材料</th><th style="border:1px solid #e2e8f0;padding:8px;">关键元件</th><th style="border:1px solid #e2e8f0;padding:8px;">关键指标</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">钛宝石振荡器 (800 nm, &lt; 50 fs)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ + 石英反射镜</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂透镜</a>、<a href="/products/high-power-laser-mirrors/">啁啾镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">单元件GDD &lt; 20 fs²</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">掺镱光纤放大器 (1030 nm, &gt; 10 W 平均)</td><td style="border:1px solid #e2e8f0;padding:8px;">熔融石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/1064nm-laser-line-mirrors/">1064 nm反射镜</a>、<a href="/products/fused-silica-optical-mirrors/">石英反射镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">LIDT、热稳定性</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OPA / OPCPA (宽带可调谐)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂窗口</a>、<a href="/products/caf2-optical-prisms/">CaF₂棱镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">透过范围、GVD</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">多光子显微镜</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ (激发端)</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂扫描透镜</a>、<a href="/products/dichroic-filters/">二向色镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">总GDD预算</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CPA放大器 (高峰值功率)</td><td style="border:1px solid #e2e8f0;padding:8px;">熔融石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/high-power-laser-mirrors/">高功率反射镜</a>、<a href="/products/high-energy-laser-mirrors/">高能量反射镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">飞秒LIDT</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">真空腔窗口</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ 或 石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂窗口</a>、<a href="/products/fused-silica-optical-windows/">石英窗口</a></td><td style="border:1px solid #e2e8f0;padding:8px;">GDD贡献、LIDT</td></tr>
+</table>
+
+<h2>恒鼎光超快光学元件产品组合</h2>
+<p>恒鼎光为飞秒和皮秒激光系统制造精密超快级光学元件，覆盖紫外、可见和近红外光谱范围：</p>
+<ul>
+<li><a href="/products/caf2-ultrafast-laser-optics/">CaF₂超快激光光学元件</a> — 低GVD CaF₂透镜、窗口片和棱镜，适用于钛宝石和OPA系统</li>
+<li><a href="/products/caf2-plano-convex-lenses/">CaF₂平凸透镜</a> — 用于超快聚焦和光束准直，色散最小</li>
+<li><a href="/products/caf2-optical-windows/">CaF₂光学窗口片</a> — 真空级窗口，提供宽带增透膜选项（180 nm – 8 &mu;m）</li>
+<li><a href="/products/caf2-optical-prisms/">CaF₂光学棱镜</a> — 直角棱镜和等边棱镜，用于色散控制和光束操控</li>
+<li><a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a> — IBS镀膜反射镜，色散可控，适用于飞秒系统</li>
+<li><a href="/products/fused-silica-optical-mirrors/">熔融石英光学反射镜</a> — 高稳定性反射镜，适用于1030/1064 nm掺镱系统</li>
+<li><a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a> — 为掺镱光纤和Nd:YAG超快放大器优化</li>
+<li><a href="/products/dichroic-filters/">二向色滤光片</a> — 定制二向色镜，具有记录GDD，适用于多光子显微镜</li>
+</ul>
+
+<h2>结论</h2>
+<p>超快激光光学是材料科学、镀膜设计和激光物理的交汇点。正确的透镜或反射镜选择可以决定是获得满峰值功率的变换极限脉冲，还是得到一个展宽畸变、无法达到预期性能的光束。CaF₂通过提供极低的色散、超宽的透过范围和高损伤阈值，改变了超快光学的格局——使其成为亚50飞秒系统、宽带OPA以及任何脉冲形状保真至关重要的应用的首选材料。</p>
+<p>在恒鼎光，我们以最严格的公差制造CaF₂和熔融石英光学元件，具有经过认证的LIDT值和记录的色散特性。无论您需要单个CaF₂聚焦透镜还是一套用于CPA系统的色散可控反射镜，我们的技术团队都可以帮助您为您特定的脉冲宽度、波长和功率水平选择最佳元件。</p>
+
+    </div>
+    </div>
+    
+    <div class="article-cta">
+        <h3 data-i18n="ctaUltrafastTitle">Need Custom Ultrafast Optics for Your Laser System?</h3>
+        <p data-i18n="ctaUltrafastDesc">Our technical team can design and manufacture CaF₂ and fused silica optics with controlled GDD, certified LIDT, and custom coatings for your specific wavelength and pulse duration.</p>
+        <a href="/contact.html" class="btn" data-i18n="ctaUltrafastButton">Request Technical Consultation</a>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 20px; background: #f8fafc; border-radius: 12px;">
+        <h3 data-i18n="relatedTitle">Related Articles</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 16px;">
+            <a href="/blog/laser-induced-damage-threshold-lidt-guide/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>Laser-Induced Damage Threshold (LIDT) Complete Guide</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedLIDT">Understanding LIDT testing and specifications</p>
+            </a>
+            <a href="/blog/infrared-optical-materials-comparison/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>Infrared Optical Materials Comparison: ZnSe vs Ge vs Si</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedIR">Detailed comparison of IR optical materials</p>
+            </a>
+            <a href="/blog/laser-mirror-selection-guide/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>How to Select Mirrors for Laser Systems</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedMirrors">Reflectivity, damage threshold, and coating guide</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 data-i18n="footerProducts">Products</h4>
+                <a href="/products.html" data-i18n="footerAllProducts">All Products</a>
+                <a href="/products.html?category=lenses" data-i18n="footerLenses">Optical Lenses</a>
+                <a href="/products.html?category=mirrors" data-i18n="footerMirrors">Optical Mirrors</a>
+                <a href="/products.html?category=windows" data-i18n="footerWindows">Optical Windows</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerResources">Resources</h4>
+                <a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a>
+                <a href="/application-notes/" data-i18n="navAppNotes">Application Notes</a>
+                <a href="/blog.html" data-i18n="navBlog">Blog</a>
+                <a href="/calculator.html" data-i18n="menuCalculators">Optical Calculators</a>
+                <a href="/materials.html" data-i18n="menuMaterials">Materials Database</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerApplications">Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Aerospace &amp; Defense</a></li>
+                    <li><a href="/applications/research-laboratory/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Research &amp; Laboratory</a></li>
+                    <li><a href="/engineering.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <a href="/about.html" data-i18n="navAbout">About Us</a>
+                <a href="/contact.html" data-i18n="navContact">Contact</a>
+                <a href="/case-studies.html" data-i18n="footerCaseStudies">Case Studies</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerContactTitle">Contact</h4>
+                <p>sales@photonedgeoptics.com</p>
+                <p>WhatsApp: +86-13693009175</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PhotonEdge (HengDingGuang). All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="/js/products-data.js"></script>
+<script src="/js/blog-data.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/app.js"></script>
+<script>
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var lang = params.get('lang');
+        if (lang === 'zh') {
+            document.getElementById('articleContentEn').style.display = 'none';
+            document.getElementById('articleContentZh').style.display = 'block';
+            document.getElementById('articleTitle').textContent = document.getElementById('articleTitle').getAttribute('data-zh-title');
+            document.getElementById('articleCategory').textContent = document.getElementById('articleCategory').getAttribute('data-zh-category');
+            document.getElementById('articleReadTime').textContent = document.getElementById('articleReadTime').getAttribute('data-zh-time');
+            document.documentElement.lang = 'zh';
+        }
+    })();
+</script>
+</body>
+</html>

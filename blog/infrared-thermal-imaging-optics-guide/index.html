@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infrared Thermal Imaging Optics Guide: Lenses, Windows, Materials & Temperature Measurement | PhotonEdge Optics Blog</title>
+    <meta name="description" content="Complete guide to IR optical components for thermal imaging and temperature measurement: Ge vs Si vs ZnSe vs sapphire, lens selection, protective windows, IR filters, gold mirrors, and 5 common mistakes.">
+    <meta name="keywords" content="IR Thermal Imaging, Infrared Optics, Germanium Lenses, IR Windows, Thermal Camera Optics, Temperature Measurement, MWIR, LWIR, SWIR, Sapphire Windows, Gold Mirrors, 红外热成像, 测温光学, 锗透镜, 红外窗口">
+    <meta property="og:title" content="Infrared Thermal Imaging Optics Complete Guide | PhotonEdge Blog">
+    <meta property="og:description" content="Complete guide to IR optical components for thermal imaging and temperature measurement: Ge vs Si vs ZnSe vs sapphire materials comparison.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/ir-thermal-imaging-optics-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/?lang=zh">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Infrared Thermal Imaging Optics Complete Guide: Lenses, Windows, Filters & Materials for Temperature Measurement",
+  "description": "Complete guide to IR optical components for thermal imaging and temperature measurement: Ge vs Si vs ZnSe vs sapphire, lens and window selection, IR filters, and common mistakes.",
+  "image": "https://photonedgeoptics.com/images/blog/ir-thermal-imaging-optics-guide.jpg",
+  "datePublished": "2026-09-02",
+  "dateModified": "2026-09-02",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/"
+  }
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://photonedgeoptics.com/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "IR Thermal Imaging Optics Guide",
+      "item": "https://photonedgeoptics.com/blog/infrared-thermal-imaging-optics-guide/"
+    }
+  ]
+}
+    </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ultrafast Laser Optics & CaF₂ Selection Guide | PhotonEdge Blog">
+    <meta name="twitter:description" content="Complete guide to ultrafast laser optics selection: CaF₂ vs fused silica, GDD, LIDT, and femtosecond pulse preservation.">
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <style>
+        .article-container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+        .article-header { margin-bottom: 30px; }
+        .article-category { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 12px; background: #e0f2fe; color: #0369a1; }
+        .article-title { font-size: 2rem; color: #1e293b; line-height: 1.3; margin-bottom: 16px; }
+        .article-meta { display: flex; flex-wrap: wrap; gap: 16px; color: #64748b; font-size: 0.9rem; margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid #e2e8f0; }
+        .article-body { line-height: 1.8; color: #334155; font-size: 1.05rem; }
+        .article-body p { margin-bottom: 1.2em; }
+        .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        .article-body th, .article-body td { border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; }
+        .article-body th { background: #f1f5f9; font-weight: 600; }
+        .article-back { display: inline-flex; align-items: center; gap: 6px; color: #3b82f6; text-decoration: none; font-weight: 500; margin-bottom: 24px; }
+        .article-back:hover { text-decoration: underline; }
+        .article-cta { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 12px; padding: 24px; margin: 30px 0; text-align: center; }
+        .article-cta h3 { color: #0369a1; margin-bottom: 8px; }
+        .article-cta p { color: #475569; margin-bottom: 16px; }
+        .article-cta .btn { display: inline-block; padding: 10px 24px; background: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo">
+            <picture>
+                <source srcset="/images/logo.webp" type="image/webp">
+                <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+            </picture>
+        </a>
+        <nav class="nav">
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+            <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li><a href="/product-advisor.html" class="nav-link" data-i18n="navProductAdvisor">Product Advisor</a></li>
+                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/coatings/" class="nav-link" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
+                    <li><a href="/evidence.html" class="nav-link" data-i18n="navEvidence">Evidence Center</a></li>
+                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
+                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
+                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                </ul>
+            <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span class="cart-badge" id="compareBadge">0</span>
+            </a>
+            <a href="/cart.html" class="cart-icon" title="Shopping Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </a>
+            <div class="lang-switcher">
+                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main class="article-container">
+    <a href="/blog.html" class="article-back" data-i18n="backToBlog">&larr; Back to Blog</a>
+    
+    <div class="article-header">
+        <span class="article-category" id="articleCategory" data-en-category="Technical Guide" data-zh-category="技术指南">Technical Guide</span>
+        <h1 class="article-title" id="articleTitle" data-en-title="Infrared Thermal Imaging Optics Complete Guide: Lenses, Windows, Filters &amp; Materials for Temperature Measurement" data-zh-title="红外热成像与测温光学完全选型指南：透镜、窗口、滤光片与材料对比">Ultrafast Laser Optics &amp; CaF₂ Selection Guide: Dispersion, LIDT &amp; Femtosecond Pulse Preservation</h1>
+        <div class="article-meta">
+            <span id="articleDate">2026-09-02</span>
+            <span id="articleReadTime" data-en-time="15 min" data-zh-time="15 分钟">14 min</span>
+            <span id="articleAuthor">PhotonEdge Technical Team</span>
+        </div>
+    </div>
+    
+    <div class="article-body" id="articleBody">
+    <div id="articleContentEn">
+<h2>Introduction</h2>
+<p>Infrared thermal imaging has moved from a niche military technology to one of the most versatile sensing tools in modern industry. From predictive maintenance on electrical equipment to fever screening, industrial process monitoring, and automotive night vision, thermal cameras reveal what visible cameras cannot — temperature distributions across surfaces, in real time, without contact.</p>
+<p>Yet the performance of any thermal imaging system is only as good as its optical front end. An infrared lens with the wrong material, the wrong coating, or inadequate surface quality will blur the image, reduce contrast, and degrade temperature measurement accuracy. For engineers designing or specifying thermal imaging systems, choosing the right optical components is one of the most consequential decisions in the entire project.</p>
+<p>This guide walks through everything you need to know about infrared optics for thermal imaging and non-contact temperature measurement. We compare the four dominant IR optical materials (germanium, silicon, zinc selenide, and sapphire), break down the key component types (lenses, windows, filters, and mirrors), explain how spectral band selection drives material choice, and highlight the most common mistakes that degrade thermal image quality and temperature accuracy. Whether you are building a handheld thermal camera, an online process pyrometer, or a MWIR research imaging system, the principles here will help you select the right optics for your application.</p>
+
+<h2>How Thermal Imaging Works and Why IR Optics Are Different</h2>
+<p>Thermal imaging systems detect infrared radiation emitted by objects due to their temperature (blackbody radiation). Every object above absolute zero emits IR energy; the wavelength of peak emission shifts shorter as temperature increases (Wien's displacement law). A thermal camera uses an IR-transmissive lens to focus this radiation onto a detector array — typically a microbolometer for LWIR or an InSb/InGaAs array for MWIR/SWIR.</p>
+<p>IR optics differ fundamentally from visible optics in three ways:</p>
+<ul>
+<li><strong>Material selection is narrow and expensive:</strong> Standard optical glasses (BK7, fused silica) are completely opaque beyond ~2.5 &mu;m. Infrared optics require crystalline materials (germanium, silicon, ZnSe, sapphire) that are far more expensive and harder to fabricate.</li>
+<li><strong>Refractive indices are much higher:</strong> Germanium has an index near 4.0 — more than 2.7x higher than BK7. This means strong Fresnel reflections at every surface (over 30% per uncoated surface), making anti-reflection coatings absolutely essential.</li>
+<li><strong>Diffraction-limited resolution is lower:</strong> At 10 &mu;m wavelength, the diffraction limit is roughly 20x worse than at 500 nm for the same aperture. IR systems typically use larger apertures and shorter focal lengths to compensate.</li>
+</ul>
+
+<h3>The Three Thermal Imaging Spectral Bands</h3>
+<p>The spectral band of your system determines everything — detector type, lens material, window material, and coating design.</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Band</th><th style="border:1px solid #e2e8f0;padding:8px;">Wavelength Range</th><th style="border:1px solid #e2e8f0;padding:8px;">Typical Detector</th><th style="border:1px solid #e2e8f0;padding:8px;">Primary Applications</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">SWIR (Short-Wave IR)</td><td style="border:1px solid #e2e8f0;padding:8px;">0.9 – 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">InGaAs, extended Si</td><td style="border:1px solid #e2e8f0;padding:8px;">High-temp pyrometry (>600&deg;C), laser beam profiling, solar inspection</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">MWIR (Mid-Wave IR)</td><td style="border:1px solid #e2e8f0;padding:8px;">3 – 5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">InSb, MCT (HgCdTe)</td><td style="border:1px solid #e2e8f0;padding:8px;">High-res thermography, gas detection, missile seekers, high-temp processes</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LWIR (Long-Wave IR)</td><td style="border:1px solid #e2e8f0;padding:8px;">8 – 14 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">Microbolometer (uncooled)</td><td style="border:1px solid #e2e8f0;padding:8px;">General thermography (-40 to +2000&deg;C), night vision, building inspection, fever screening</td></tr>
+</table>
+
+<h2>IR Optical Materials: Germanium vs Silicon vs ZnSe vs Sapphire</h2>
+<p>Choosing the right substrate material is the first and most important decision in IR optics design. Each material has a unique combination of transmission range, refractive index, thermal properties, and cost.</p>
+
+<h3>1. Germanium (Ge) — The Workhorse of LWIR Imaging</h3>
+<p>Germanium is the most widely used material for thermal imaging lenses in the 8–14 &mu;m LWIR band and many MWIR applications as well.</p>
+<ul>
+<li><strong>Broad transmission (1.8 – 16 &mu;m):</strong> Covers both MWIR and LWIR bands with excellent transparency.</li>
+<li><strong>Very high refractive index (~4.0 at 10 &mu;m):</strong> High index means strong bending power — you can achieve the same focal length with fewer, less curved surfaces. This is why multi-element Ge lenses can be compact and high-performance simultaneously.</li>
+<li><strong>Low dispersion:</strong> Germanium has relatively low chromatic dispersion in the LWIR, reducing color blurring across the 8–14 &mu;m band.</li>
+<li><strong>High density and cost:</strong> Ge is heavy and expensive; raw material cost is orders of magnitude higher than BK7 glass.</li>
+</ul>
+<p>The most important thing to know about germanium is its <strong>strong temperature dependence of refractive index (dn/dT)</strong>. At room temperature, Ge's dn/dT is approximately 400 &times; 10⁻⁶ /K — roughly 200x higher than BK7. This means that as temperature changes, the focal length of a Ge lens shifts significantly. For systems operating over wide temperature ranges (e.g., outdoor cameras), you need either athermalized lens designs (which combine Ge with materials having complementary dn/dT) or focus compensation mechanisms.</p>
+<p>PhotonEdge <a href="/products/germanium-infrared-lenses/">Germanium Infrared Lenses</a> and <a href="/products/germanium-optical-windows/">Germanium Optical Windows</a> are precision manufactured for LWIR and MWIR thermal imaging systems, with diamond-turned surface quality, AR coatings optimized for 8–14 &mu;m or 3–5 &mu;m, and tight centration tolerances.</p>
+
+<h3>2. Silicon (Si) — The Cost-Effective SWIR/MWIR Choice</h3>
+<p>Silicon is the go-to material for SWIR (1.2–2.5 &mu;m) and many MWIR (3–5 &mu;m) applications where cost matters.</p>
+<ul>
+<li><strong>Transmission range: 1.2 – 8 &mu;m</strong> — covers SWIR fully and MWIR partially.</li>
+<li><strong>High refractive index (~3.4 at 4 &mu;m):</strong> Good optical power per surface.</li>
+<li><strong>Excellent thermal conductivity (~150 W/m&middot;K):</strong> 100x better than germanium, making it ideal for high-power laser applications where thermal lensing would be a problem.</li>
+<li><strong>Much lower cost than Ge or ZnSe:</strong> Because silicon wafer manufacturing is a mature industry driven by semiconductors, Si optics are significantly more affordable than other IR materials.</li>
+</ul>
+<p>Silicon is opaque in the visible range, which means you cannot use a HeNe laser for alignment. For integration, you either need an IR alignment laser or a reference mechanical datum. <a href="/products/si-windows/">Silicon Windows</a> from PhotonEdge are widely used as protective windows for SWIR cameras and industrial laser systems.</p>
+
+<h3>3. Zinc Selenide (ZnSe) — The CO2 Laser and Multi-Spectral Material</h3>
+<p>ZnSe is the material of choice for CO₂ laser optics (10.6 &mu;m) and multi-spectral IR systems.</p>
+<ul>
+<li><strong>Transmission: 0.6 – 16 &mu;m</strong> — spans visible red through LWIR. This extremely wide range means you can use the same lens for both visible alignment and IR imaging.</li>
+<li><strong>Moderate refractive index (~2.4 at 10 &mu;m):</strong> Lower than Ge, reducing Fresnel losses but requiring more strongly curved surfaces for the same power.</li>
+<li><strong>Low absorption and high LIDT:</strong> ZnSe handles high laser power better than Ge in the LWIR.</li>
+<li><strong>Toxicity note:</strong> ZnSe dust is toxic if inhaled; proper handling procedures are required during fabrication and installation.</li>
+</ul>
+<p>For thermal imaging systems that also need visible-light alignment capability (e.g., dual-band systems), ZnSe is the best single-material solution. PhotonEdge <a href="/products/znse-windows/">ZnSe Windows</a> and ZnSe lenses are commonly used in both laser and thermal imaging applications.</p>
+
+<h3>4. Sapphire (Al₂O₃) — The Toughest IR Window Material</h3>
+<p>Sapphire is not typically used for imaging lenses (it is birefringent and expensive), but it is the gold standard for <strong>protective windows</strong> in harsh environments.</p>
+<ul>
+<li><strong>Extremely hard and scratch-resistant:</strong> Mohs hardness 9, second only to diamond. A sapphire window can withstand sandblasting, hail impact, and repeated cleaning without damage.</li>
+<li><strong>Very high strength and thermal shock resistance:</strong> Can operate at temperatures up to 2000&deg;C and withstand rapid temperature changes.</li>
+<li><strong>Broad transmission: 0.15 – 5 &mu;m</strong> — UV through MWIR.</li>
+<li><strong>Chemically inert:</strong> Resistant to acids, alkalis, and most chemicals.</li>
+</ul>
+<p>Sapphire windows are the protective window of choice for outdoor thermal cameras in desert or coastal environments, high-temperature industrial process windows, and any application where mechanical or chemical durability is critical. PhotonEdge <a href="/products/custom-optical-windows/">Sapphire Circular/Square Windows</a> are available in custom sizes with broadband AR coatings.</p>
+
+<h3>Material Comparison Summary</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Property</th><th style="border:1px solid #e2e8f0;padding:8px;">Germanium</th><th style="border:1px solid #e2e8f0;padding:8px;">Silicon</th><th style="border:1px solid #e2e8f0;padding:8px;">ZnSe</th><th style="border:1px solid #e2e8f0;padding:8px;">Sapphire</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Transmission Range</td><td style="border:1px solid #e2e8f0;padding:8px;">1.8 – 16 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">1.2 – 8 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">0.6 – 16 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">0.15 – 5 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Refractive Index</td><td style="border:1px solid #e2e8f0;padding:8px;">~4.0</td><td style="border:1px solid #e2e8f0;padding:8px;">~3.4</td><td style="border:1px solid #e2e8f0;padding:8px;">~2.4</td><td style="border:1px solid #e2e8f0;padding:8px;">~1.7</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Best Spectral Band</td><td style="border:1px solid #e2e8f0;padding:8px;">LWIR (8–14 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">SWIR (1–2.5 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">LWIR + visible</td><td style="border:1px solid #e2e8f0;padding:8px;">MWIR, harsh env.</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Thermal Conductivity</td><td style="border:1px solid #e2e8f0;padding:8px;">Low (~6 W/mK)</td><td style="border:1px solid #e2e8f0;padding:8px;">Very High (~150)</td><td style="border:1px solid #e2e8f0;padding:8px;">Low (~18)</td><td style="border:1px solid #e2e8f0;padding:8px;">High (~35)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Hardness / Durability</td><td style="border:1px solid #e2e8f0;padding:8px;">Moderate</td><td style="border:1px solid #e2e8f0;padding:8px;">Good</td><td style="border:1px solid #e2e8f0;padding:8px;">Soft (Knoop ~120)</td><td style="border:1px solid #e2e8f0;padding:8px;">Excellent (Mohs 9)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Relative Cost</td><td style="border:1px solid #e2e8f0;padding:8px;">High</td><td style="border:1px solid #e2e8f0;padding:8px;">Low-Medium</td><td style="border:1px solid #e2e8f0;padding:8px;">High</td><td style="border:1px solid #e2e8f0;padding:8px;">Very High</td></tr>
+</table>
+
+<h2>Key Components for Thermal Imaging Systems</h2>
+
+<h3>1. IR Imaging Lenses: The Core Optical Subsystem</h3>
+<p>The imaging lens determines field of view (FOV), resolution, working distance, and light gathering power (f-number). Thermal imaging lenses are typically multi-element designs because:</p>
+<ul>
+<li>High-index materials (Ge) introduce significant spherical aberration that must be corrected with additional surfaces</li>
+<li>Athermalization requires material combinations to cancel focal shift with temperature</li>
+<li>Different FOV requirements may use zoom or interchangeable lens designs</li>
+</ul>
+<p>For LWIR microbolometer cameras, <a href="/products/germanium-infrared-lenses/">Germanium Infrared Lenses</a> are the standard. Common configurations include:</p>
+<ul>
+<li><strong>Fixed focal length lenses:</strong> 12 mm (wide), 25 mm (standard), 50 mm (telephoto), 100 mm (long range). Matched to specific detector formats (e.g., 640&times;480 with 17 &mu;m pitch).</li>
+<li><strong>Dual-field-of-view (DFOV) lenses:</strong> Switchable between two focal lengths for wide-area search and detailed inspection.</li>
+<li><strong>Continuous zoom lenses:</strong> Smooth zoom from wide to narrow FOV, essential for surveillance and search-and-track systems.</li>
+</ul>
+
+<h3>2. Protective Windows and Domes</h3>
+<p>Every outdoor thermal camera needs a protective window to seal the enclosure while transmitting IR radiation. The window is often the most abused component — it gets scratched, rained on, covered in dust, and baked by the sun. Key considerations:</p>
+<ul>
+<li><strong>Material must match the spectral band:</strong> For LWIR, use Ge or ZnSe windows. For MWIR, sapphire is preferred for durability. For SWIR, silicon is cost-effective.</li>
+<li><strong>Surface quality:</strong> Scratches and digs scatter light and reduce contrast. Specify appropriate surface quality per application.</li>
+<li><strong>Anti-reflection coating:</strong> With high-index materials, uncoated surfaces lose 30%+ per surface. AR coatings for IR are typically designed for specific wavebands (e.g., 8–14 &mu;m DLC coating, 3–5 &mu;m AR coating).</li>
+<li><strong>DLC coating for durability:</strong> Diamond-Like Carbon (DLC) coatings are often applied to the outer surface of protective windows to improve scratch resistance and durability in harsh environments.</li>
+</ul>
+<p>PhotonEdge offers a complete range of IR windows: <a href="/products/germanium-optical-windows/">Germanium Optical Windows</a> for LWIR, <a href="/products/si-windows/">Silicon Windows</a> for SWIR, <a href="/products/znse-windows/">ZnSe Windows</a> for CO₂ laser and multi-spectral, and <a href="/products/custom-optical-windows/">Sapphire Windows</a> for the most demanding environments.</p>
+
+<h3>3. IR Filters: Spectral Control for Accuracy</h3>
+<p>Spectral filters are critical in thermal imaging and temperature measurement systems for isolating specific wavelength bands and rejecting out-of-band radiation. Common filter types include:</p>
+<ul>
+<li><strong>Bandpass filters:</strong> Transmit a specific wavelength range while blocking everything else. Essential for pyrometry where you need to measure at a specific wavelength to avoid atmospheric absorption bands. <a href="/products/laser-line-filters/">Narrow Band Interference Filters</a> with CWL from 1 &mu;m to 5 &mu;m are widely used in SWIR/MWIR pyrometry.</li>
+<li><strong>Long-wave pass filters:</strong> Block short wavelengths, pass long ones. Used in LWIR systems to reject visible and near-IR background.</li>
+<li><strong>Neutral density filters:</strong> <a href="/products/fixed-neutral-density-filters/">Fixed Neutral Density Filters</a> attenuate all wavelengths uniformly, used for dynamic range extension in high-temperature measurements.</li>
+</ul>
+<p>For temperature measurement accuracy, the filter's passband must avoid atmospheric absorption bands (e.g., CO₂ at 4.2–4.4 &mu;m, water vapor at 5–7 &mu;m). Standard IR temperature measurement bands are 1.6 &mu;m, 2.2 &mu;m, 3.9 &mu;m, and 8–14 &mu;m — all chosen to sit in atmospheric windows.</p>
+
+<h3>4. Gold Mirrors for Infrared Beam Steering</h3>
+<p>In IR optical systems, mirrors are used for beam steering, folding, and scanning. Gold is the standard reflective coating for IR applications because:</p>
+<ul>
+<li><strong>Very high reflectivity from 2 &mu;m to far IR (> 98% at 10 &mu;m):</strong> Much better than aluminum or silver in the infrared.</li>
+<li><strong>Chemically stable:</strong> Gold does not tarnish, making it far more durable than silver or copper mirrors.</li>
+<li><strong>Broadband performance:</strong> A single gold coating works across the entire IR spectrum from near-IR to far-IR.</li>
+</ul>
+<p>Protected gold mirrors — with a thin protective overcoat (typically SiO or Al₂O₃) — are preferred for handling and durability. <a href="/products/dielectric-mirrors/">Protected Gold Circular/Square Mirrors</a> from PhotonEdge are available in various substrates for IR beam steering, scanning mirrors, and optical cavity use.</p>
+
+<h3>5. C-Mount Lenses for SWIR Machine Vision</h3>
+<p>For SWIR imaging applications (inspection, sorting, quality control) that use InGaAs detectors with C-mount interfaces, specialized SWIR lenses are required. Standard visible-glass C-mount lenses will not work properly in the SWIR band because they have chromatic aberration and anti-reflection coatings optimized for visible wavelengths.</p>
+<p><a href="/products/c-mount-lenses/">C-Mount Machine Vision Lenses</a> designed for the SWIR band (900–1700 nm) feature glass types and coatings optimized for the short-wave infrared, delivering sharp, high-contrast images on InGaAs detectors. These lenses are widely used in semiconductor inspection, solar cell evaluation, and agricultural product sorting.</p>
+
+<h2>5 Common Thermal Imaging Optics Mistakes &amp; How to Avoid Them</h2>
+
+<h3>1. Using a Visible-Glass Lens for IR Imaging</h3>
+<p>This is the #1 mistake among engineers new to thermal imaging. A lens designed for visible light (400–700 nm) will have significant issues in the IR:</p>
+<ul>
+<li>Many glass types used in visible lenses (e.g., BK7) are opaque beyond 2.5 &mu;m — the lens will not transmit LWIR or MWIR at all.</li>
+<li>Even for SWIR, visible lenses have AR coatings optimized for 400–700 nm with high reflection in the IR.</li>
+<li>Chromatic aberration is not corrected for IR wavelengths, leading to blurry images.</li>
+</ul>
+<p><strong>Solution:</strong> Always use lenses specifically designed and coated for your spectral band. Check that both the substrate material and the AR coating cover your operating wavelength range.</p>
+
+<h3>2. Neglecting Thermal Focus Shift (Athermalization)</h3>
+<p>Germanium has a dn/dT of ~400 &times; 10⁻⁶ /K. If your camera goes from -20&deg;C to +50&deg;C (a 70K swing), the focal length of a pure Ge lens can shift by several percent — enough to throw the image completely out of focus.</p>
+<p><strong>Solution:</strong> For wide-temperature-range operation, specify athermalized lenses. These use a combination of materials (e.g., Ge with ZnSe or chalcogenide glass) and mechanical design techniques to keep the image in focus across the operating temperature range. For lower-cost systems, active focus compensation (a motor or voice coil) can work instead.</p>
+
+<h3>3. Ignoring the Protective Window's Impact on Image Quality</h3>
+<p>The protective window in front of the camera seems like a simple piece — just a flat plate, right? In reality, a poorly specified window can degrade your system in multiple ways:</p>
+<ul>
+<li><strong>Wrong material:</strong> A glass window blocks LWIR entirely. A silicon window blocks LWIR (Si absorbs beyond 8 &mu;m).</li>
+<li><strong>Surface imperfections:</strong> Scratches, digs, or contamination cause scattering and reduce thermal contrast.</li>
+<li><strong>Tilted or wedged window:</strong> A wedged window introduces prism effects, shifting the image position.</li>
+<li><strong>Self-emission:</strong> The window itself emits IR radiation based on its temperature, creating a background signal that reduces measurement sensitivity (especially for cryogenically cooled detectors).</li>
+</ul>
+<p><strong>Solution:</strong> Specify the window material for your spectral band, require appropriate surface quality (typically 20-10 or better for imaging systems), and ensure good thermal control of the window to minimize self-emission artifacts.</p>
+
+<h3>4. Wrong f-Number for the Detector</h3>
+<p>The f-number of the lens (focal length divided by aperture diameter) must match the detector's f-number for optimal performance. If the lens f-number is too high (slow lens), the image is dim and thermal sensitivity (NETD) degrades. If it is too low (fast lens), you waste light and may introduce aberrations.</p>
+<p>Microbolometer detectors typically have f/1.0 or f/1.4 optics; InSb MWIR detectors often use f/2 to f/4. Always check the detector manufacturer's recommended f-number and match your lens accordingly.</p>
+
+<h3>5. Forgetting About Atmospheric Effects</h3>
+<p>IR radiation is absorbed and scattered by the atmosphere — primarily by water vapor and CO₂. This affects not just long-range imaging but even short-range temperature measurement accuracy. Different wavelength bands are affected differently:</p>
+<ul>
+<li><strong>LWIR (8–14 &mu;m):</strong> Good atmospheric transmission, but affected by humidity and fog.</li>
+<li><strong>MWIR (3–5 &mu;m):</strong> Generally better transmission than LWIR in humid or foggy conditions.</li>
+<li><strong>SWIR (0.9–2.5 &mu;m):</strong> Less affected by scattering (shorter wavelength = less Mie scattering from fog droplets), but more absorbed by water vapor at specific lines.</li>
+</ul>
+<p><strong>Solution:</strong> For temperature measurement at distance, choose a spectral band that corresponds to an atmospheric window (1.6 &mu;m, 3.9 &mu;m, or 8–14 &mu;m). For long-range imaging, MWIR generally performs better than LWIR in humid environments. Account for atmospheric attenuation in your measurement error budget.</p>
+
+<h2>Application-Specific Recommendations</h2>
+
+<h3>Industrial Predictive Maintenance (LWIR Thermography)</h3>
+<p>Handheld and fixed thermal cameras for electrical and mechanical inspection operate in the LWIR band with uncooled microbolometer detectors.</p>
+<ul>
+<li><strong>Lens:</strong> Germanium multi-element lens, 25 mm standard or 50 mm for long-distance inspection</li>
+<li><strong>Window:</strong> Not typically needed for handheld cameras; for fixed systems, use <a href="/products/germanium-optical-windows/">Ge windows</a> or <a href="/products/custom-optical-windows/">sapphire windows</a> for harsh factory environments</li>
+<li><strong>Mirror/Scanner:</strong> <a href="/products/dielectric-mirrors/">Protected gold mirrors</a> for scanning mirror assemblies</li>
+</ul>
+
+<h3>High-Temperature Pyrometry (SWIR / MWIR)</h3>
+<p>Non-contact temperature measurement of molten metals, furnaces, and industrial processes works at shorter wavelengths (1.6 &mu;m, 2.2 &mu;m, 3.9 &mu;m), where hot objects emit enough SWIR/MWIR radiation.</p>
+<ul>
+<li><strong>Lens:</strong> Silicon (for SWIR) or sapphire (for high-temp) singlet or doublet lenses</li>
+<li><strong>Filter:</strong> <a href="/products/laser-line-filters/">Narrow bandpass filters</a> at the measurement wavelength for accuracy</li>
+<li><strong>Window:</strong> <a href="/products/si-windows/">Silicon windows</a> (SWIR) or sapphire (high-temperature furnace viewports)</li>
+</ul>
+
+<h3>Gas Detection and MWIR Imaging</h3>
+<p>Gas leak detection and MWIR thermal imaging use cooled InSb or MCT detectors operating in the 3–5 &mu;m band.</p>
+<ul>
+<li><strong>Lens:</strong> Germanium or silicon MWIR-optimized lenses</li>
+<li><strong>Filter:</strong> Bandpass filters centered on gas absorption lines (e.g., 3.3 &mu;m for hydrocarbons, 4.2 &mu;m for CO₂)</li>
+<li><strong>Window:</strong> <a href="/products/custom-optical-windows/">Sapphire windows</a> for outdoor systems needing durability</li>
+</ul>
+
+<h3>Automotive Night Vision and ADAS</h3>
+<p>Automotive thermal cameras face extreme temperature ranges, vibration, and environmental exposure.</p>
+<ul>
+<li><strong>Lens:</strong> Athermalized germanium lenses with wide operating temperature range (-40 to +85&deg;C)</li>
+<li><strong>Window:</strong> DLC-coated germanium or chalcogenide glass windows with high scratch resistance</li>
+<li><strong>Key requirement:</strong> Athermalization — the lens must stay in focus across the full automotive temperature range</li>
+</ul>
+
+<h2>Component Selection Quick Reference</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Application</th><th style="border:1px solid #e2e8f0;padding:8px;">Spectral Band</th><th style="border:1px solid #e2e8f0;padding:8px;">Lens Material</th><th style="border:1px solid #e2e8f0;padding:8px;">Window Material</th><th style="border:1px solid #e2e8f0;padding:8px;">Key PhotonEdge Products</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LWIR Thermography (–40 to +1500&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">8–14 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">Germanium</td><td style="border:1px solid #e2e8f0;padding:8px;">Germanium or ZnSe</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/germanium-infrared-lenses/">Ge IR Lenses</a>, <a href="/products/germanium-optical-windows/">Ge Windows</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">High-Temp Pyrometry (600–3000&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">1.0–2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">Silicon, Sapphire</td><td style="border:1px solid #e2e8f0;padding:8px;">Silicon or Sapphire</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/si-windows/">Si Windows</a>, <a href="/products/laser-line-filters/">Narrow Band Filters</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">MWIR Imaging &amp; Gas Detection</td><td style="border:1px solid #e2e8f0;padding:8px;">3–5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">Germanium, Silicon</td><td style="border:1px solid #e2e8f0;padding:8px;">Sapphire or Ge</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/custom-optical-windows/">Sapphire Windows</a>, <a href="/products/germanium-infrared-lenses/">Ge Lenses</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">SWIR Machine Vision &amp; Inspection</td><td style="border:1px solid #e2e8f0;padding:8px;">0.9–1.7 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">Silicon, Glass</td><td style="border:1px solid #e2e8f0;padding:8px;">Silicon</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/c-mount-lenses/">C-Mount Lenses</a>, <a href="/products/si-windows/">Si Windows</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CO₂ Laser &amp; Multi-Spectral</td><td style="border:1px solid #e2e8f0;padding:8px;">10.6 &mu;m / Vis+IR</td><td style="border:1px solid #e2e8f0;padding:8px;">ZnSe</td><td style="border:1px solid #e2e8f0;padding:8px;">ZnSe</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/znse-windows/">ZnSe Windows</a>, <a href="/products/dielectric-mirrors/">Gold Mirrors</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Harsh Environment / Desert / Marine</td><td style="border:1px solid #e2e8f0;padding:8px;">Any</td><td style="border:1px solid #e2e8f0;padding:8px;">N/A (window only)</td><td style="border:1px solid #e2e8f0;padding:8px;">Sapphire</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/custom-optical-windows/">Sapphire Windows</a></td></tr>
+</table>
+
+<h2>PhotonEdge IR Optics Portfolio</h2>
+<p>PhotonEdge manufactures precision infrared optical components for thermal imaging, temperature measurement, spectroscopy, and laser applications across the SWIR, MWIR, and LWIR spectral bands:</p>
+<ul>
+<li><a href="/products/germanium-infrared-lenses/">Germanium Infrared Lenses</a> — LWIR/MWIR imaging lenses with diamond-turned surfaces</li>
+<li><a href="/products/germanium-optical-windows/">Germanium Optical Windows</a> — LWIR protective windows with AR/DLC coatings</li>
+<li><a href="/products/si-windows/">Silicon Windows</a> — SWIR and high-power laser windows</li>
+<li><a href="/products/znse-windows/">ZnSe Windows</a> — CO₂ laser and multi-spectral applications</li>
+<li><a href="/products/custom-optical-windows/">Sapphire Windows</a> — Ultra-durable for harsh environments</li>
+<li><a href="/products/dielectric-mirrors/">Protected Gold Mirrors</a> — Broadband IR reflectors for beam steering</li>
+<li><a href="/products/laser-line-filters/">Narrow Band Interference Filters</a> — Spectral control for pyrometry and gas detection</li>
+<li><a href="/products/c-mount-lenses/">C-Mount Machine Vision Lenses</a> — SWIR-optimized industrial imaging lenses</li>
+<li><a href="/products/caf2-windows/">CaF₂ Windows</a> — UV through mid-IR (180 nm – 8 &mu;m)</li>
+</ul>
+
+<h2>Conclusion</h2>
+<p>Infrared thermal imaging and temperature measurement systems depend entirely on the quality of their optical front end. Material selection must match the spectral band — germanium for LWIR, silicon for SWIR, sapphire for harsh environments, ZnSe for multi-spectral. Anti-reflection coatings are not optional accessories but essential components that can make or break system performance. And thermal effects — especially the large dn/dT of germanium — must be accounted for in any system operating over wide temperature ranges.</p>
+<p>By systematically selecting lenses, windows, filters, and mirrors based on spectral band, temperature range, environmental conditions, and accuracy requirements, you can build a thermal imaging or pyrometry system that delivers the image quality and temperature accuracy your application demands.</p>
+<p>PhotonEdge provides a complete portfolio of precision infrared optics with tight tolerances, certified quality, and custom coating options. Send your specifications to our technical team — we will help you select the optimal components for your thermal imaging or temperature measurement system.</p>
+    </div>
+    <div id="articleContentZh" style="display:none;">
+<h2>引言</h2>
+<p>飞秒和皮秒激光能提供远超连续波系统的峰值功率——一个100飞秒、1毫焦的脉冲可以达到10吉瓦的峰值强度。在这种水平下，光学元件的选型规则发生了根本性变化。普通BK7透镜会碎裂。常规镀膜会被烧蚀。而脉冲本身会被一种叫做<strong>群延迟色散（GDD）</strong>的现象拉长和畸变——这是大多数使用连续波或纳秒系统的工程师从未关注过的问题。</p>
+<p>超快光学是一个高度专业化的领域，材料选择、镀膜设计和表面质量直接决定了你的系统能否输出变换极限脉冲，还是只能得到一个畸变大、对比度低的结果。氟化钙（CaF₂）因其极低的色散、超宽的透过范围和高损伤阈值，已成为超快激光系统中最重要的材料之一。然而，许多工程师仍然默认选用熔融石英，没有意识到在何种情况下CaF₂才是更好的选择。</p>
+<p>本指南详细介绍为超快激光系统选择光学元件所需了解的一切。我们将讲解GDD和色散管理，比较CaF₂与紫外熔融石英及其他材料，分析关键元件类型（透镜、窗口片、棱镜、反射镜），并指出导致超快脉冲质量下降的常见错误。无论您正在搭建啁啾脉冲放大器（CPA）、光学参量放大器（OPA）还是多光子显微镜系统，这里的原则都将帮助您保持脉宽短、系统可靠。</p>
+
+<h2>超快光学的特殊之处</h2>
+<p>超快激光脉冲不只是一个短的光脉冲——它是许多波长成分的相干叠加。脉冲越短，其光谱带宽越宽（傅里叶极限）。一个800 nm处的100飞秒脉冲约有10 nm的带宽；一个10飞秒脉冲则超过100 nm；而单周期脉冲（不到3飞秒）跨越整个倍频程。</p>
+<p>如此宽的带宽给光学元件带来了三大独特挑战：</p>
+<ul>
+<li><strong>群延迟色散（GDD）：</strong>不同波长成分在透明材料中的传播速度不同。通过光学元件后，脉冲的蓝光部分比红光部分晚到达（正色散情况下），导致脉冲在时间上被拉长，峰值强度降低。</li>
+<li><strong>高峰值强度：</strong>即使是1毫焦的飞秒脉冲，聚焦后的峰值功率也在吉瓦量级。电场强度可以接近介电材料的本征击穿场强，使得激光损伤的可能性远高于连续波或长脉冲激光。</li>
+<li><strong>色散镀膜：</strong>为窄带连续波激光器设计的标准单层或多层镀膜不适用于宽带超快脉冲。镀膜本身会引入显著的GDD和三阶色散（TOD），导致脉冲畸变。</li>
+</ul>
+<p>在超快系统中，目标不仅仅是"透光"——而是<strong>在保持脉冲形状的前提下</strong>透光。这意味着每个元件都要尽量减少GDD，选择具有合适色散特性的材料，并使用专门设计的镀膜。</p>
+
+<h3>理解GDD、TOD和各阶色散</h3>
+<p>光学材料中的色散可以通过相位随频率变化的泰勒展开来描述。关键项包括：</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">术语</th><th style="border:1px solid #e2e8f0;padding:8px;">符号</th><th style="border:1px solid #e2e8f0;padding:8px;">单位</th><th style="border:1px solid #e2e8f0;padding:8px;">对脉冲的影响</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">群延迟</td><td style="border:1px solid #e2e8f0;padding:8px;">GD = d&phi;/d&omega;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs</td><td style="border:1px solid #e2e8f0;padding:8px;">均匀时间延迟（无畸变）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">群延迟色散</td><td style="border:1px solid #e2e8f0;padding:8px;">GDD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">线性啁啾——对称地展宽脉冲</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">三阶色散</td><td style="border:1px solid #e2e8f0;padding:8px;">TOD = d&sup3;&phi;/d&omega;&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">非对称脉冲畸变、前后沿脉冲</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">四阶色散</td><td style="border:1px solid #e2e8f0;padding:8px;">FOD = d&sup2;&phi;/d&omega;&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">fs&sup3;</td><td style="border:1px solid #e2e8f0;padding:8px;">卫星脉冲、脉冲基座</td></tr>
+</table>
+<p>对于大于约50飞秒的脉冲，GDD通常是主要问题，可以通过光栅对或棱镜对进行补偿。对于小于20飞秒的脉冲，TOD和更高阶的色散变得显著且更难校正。这就是材料选择变得至关重要的原因——选择固有色散更低的材料可以减少所需的补偿量，并最小化高阶畸变。</p>
+
+<h2>材料比较：CaF₂ vs 熔融石英 vs 蓝宝石</h2>
+<p>超快光学中有三种主导材料：氟化钙（CaF₂）、紫外熔融石英（UVFS）和蓝宝石。根据波长、脉冲宽度和功率水平的不同，每种材料各有优势。</p>
+
+<h3>氟化钙（CaF₂）</h3>
+<p>CaF₂是超快光学领域的新星，尤其在700-900 nm的钛宝石波段，并可延伸到深紫外和中红外。其主要优势包括：</p>
+<ul>
+<li><strong>可见/近红外超低GVD：</strong>在800 nm处，CaF₂的群速度色散比熔融石英低约<strong>30-40%</strong>，这意味着一个10毫米的CaF₂窗口片产生的色散比一个6毫米的熔融石英窗口片还要少。</li>
+<li><strong>极宽的透过范围：</strong>CaF₂可从<strong>180 nm（深紫外）透过到8微米（中红外）</strong>——这是其他任何单一光学材料都无法比拟的。</li>
+<li><strong>低折射率（800 nm处约1.43）：</strong>较低的折射率意味着更弱的菲涅耳反射、更简单的增透膜设计，以及更少的表面引入色散。</li>
+<li><strong>飞秒损伤阈值高：</strong>对于100飞秒以下的脉冲，CaF₂通常表现出比熔融石英更高的损伤阈值，尤其是在紫外波段。</li>
+<li><strong>低非线性折射率（n₂）：</strong>高峰值功率光束中的自相位调制和成丝效应更小。</li>
+</ul>
+<p>CaF₂的主要缺点是力学性能：它比熔融石英软，对热冲击更敏感，并且具有吸湿性（在潮湿环境中会缓慢吸收水分，数年后导致表面退化）。它的热膨胀系数（CTE）也高于熔融石英，使其不太适合热透镜效应成为问题的极高平均功率系统。</p>
+
+<h3>紫外熔融石英（UVFS）</h3>
+<p>熔融石英仍然是大多数超快系统的主力材料，特别是在1030 nm和1064 nm（掺镱和钕基激光器）。其优势包括：</p>
+<ul>
+<li><strong>优异的力学性能：</strong>坚硬、强度高、耐化学腐蚀、尺寸稳定性好。易于抛光到超低粗糙度。</li>
+<li><strong>低热膨胀系数（0.55 &times; 10⁻⁶ /K）：</strong>极低的热膨胀使其成为高平均功率系统的理想选择，否则热透镜会降低光束质量。</li>
+<li><strong>成熟的镀膜兼容性：</strong>几乎每个镀膜厂商都对熔融石英基底有丰富的经验。</li>
+<li><strong>180 nm到2.5微米的良好透过：</strong>覆盖了最常见的超快激光波长。</li>
+</ul>
+<p>熔融石英用于超快的主要局限是与CaF₂相比较高的色散，以及较高的非线性折射率，这会增加高峰值功率系统中的自相位调制效应。</p>
+
+<h3>蓝宝石</h3>
+<p>蓝宝石（Al₂O₃）用于需要极高机械硬度或高热导率的特殊超快应用：</p>
+<ul>
+<li><strong>极硬且耐划痕：</strong>仅次于金刚石的第二硬光学材料。</li>
+<li><strong>非常高的热导率：</strong>30-40 W/m&middot;K（熔融石英约为1.4），使其成为高平均功率窗口的理想选择。</li>
+<li><strong>宽透过范围：</strong>150 nm到5微米。</li>
+<li><strong>双折射：</strong>蓝宝石是单轴晶体，这意味着它会引入偏振相关效应。对于超快系统来说，这通常是一个缺点，除非您特别需要波片行为。</li>
+</ul>
+
+<h3>材料对比表</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">性能</th><th style="border:1px solid #e2e8f0;padding:8px;">CaF₂</th><th style="border:1px solid #e2e8f0;padding:8px;">紫外熔融石英</th><th style="border:1px solid #e2e8f0;padding:8px;">蓝宝石</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">透过范围</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 8 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm – 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">150 nm – 5 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">折射率 @ 800 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">1.432</td><td style="border:1px solid #e2e8f0;padding:8px;">1.453</td><td style="border:1px solid #e2e8f0;padding:8px;">1.768（o光）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">GVD @ 800 nm (fs²/mm)</td><td style="border:1px solid #e2e8f0;padding:8px;">~28</td><td style="border:1px solid #e2e8f0;padding:8px;">~44</td><td style="border:1px solid #e2e8f0;padding:8px;">~58</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">热膨胀系数 (10⁻⁶ /K)</td><td style="border:1px solid #e2e8f0;padding:8px;">18.9</td><td style="border:1px solid #e2e8f0;padding:8px;">0.55</td><td style="border:1px solid #e2e8f0;padding:8px;">5.3（∥ c轴）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">努氏硬度</td><td style="border:1px solid #e2e8f0;padding:8px;">170</td><td style="border:1px solid #e2e8f0;padding:8px;">460</td><td style="border:1px solid #e2e8f0;padding:8px;">1800</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">热导率 (W/m&middot;K)</td><td style="border:1px solid #e2e8f0;padding:8px;">9.7</td><td style="border:1px solid #e2e8f0;padding:8px;">1.4</td><td style="border:1px solid #e2e8f0;padding:8px;">30-40</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">吸湿性？</td><td style="border:1px solid #e2e8f0;padding:8px;">轻微</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">双折射？</td><td style="border:1px solid #e2e8f0;padding:8px;">无（立方晶系）</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td><td style="border:1px solid #e2e8f0;padding:8px;">有（单轴）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">最佳适用</td><td style="border:1px solid #e2e8f0;padding:8px;">亚50飞秒脉冲、紫外-红外宽带、低色散</td><td style="border:1px solid #e2e8f0;padding:8px;">高平均功率、常规超快、1030/1064 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">极端环境、高热负载</td></tr>
+</table>
+
+<h2>关键超快光学元件</h2>
+
+<h3>1. 用于超快聚焦的CaF₂平凸透镜</h3>
+<p>在不展宽脉冲的情况下聚焦超快脉冲，需要使用光路中材料最少、色散可控的透镜。<a href="/products/caf2-plano-convex-lenses/">CaF₂平凸透镜</a>是钛宝石飞秒系统的首选，因为：</p>
+<ul>
+<li><strong>更低的GVD意味着更少的脉冲展宽：</strong>一个焦距25毫米的CaF₂透镜引入的GDD比等效的熔融石英透镜少约30%，在焦点处保留更高的峰值强度。</li>
+<li><strong>平凸形状在凸面朝向准直光束时最小化球差</strong>——这对于保持紧聚焦和高峰值强度至关重要。</li>
+<li><strong>宽带增透膜：</strong>寻找指定700-900 nm或650-1050 nm的镀膜，并同时标明GDD和反射率。</li>
+</ul>
+<p>对于多光子显微镜、双光子吸收以及其他依赖焦点处高峰值强度的应用，采用λ/10波前和每面反射损耗&lt;0.5%的<a href="/products/caf2-ultrafast-laser-optics/">CaF₂超快级透镜</a>是标准配置。</p>
+
+<h3>2. 超快激光反射镜：色散补偿设计</h3>
+<p>反射镜是超快激光谐振腔和放大器的主力元件，但并非所有反射镜都适用于飞秒脉冲。标准的介质高反镜会引入显著的GDD，因为不同波长的光在镀膜中穿透的深度不同。</p>
+<p>对于超快系统，您需要<strong>色散可控</strong>的反射镜：</p>
+<ul>
+<li><strong>低GDD反射镜：</strong>设计为在脉冲带宽内引入最小的GDD（每次反射 &lt; 10 fs²）。对于振荡器腔和任何需要保持脉冲形状的位置至关重要。</li>
+<li><strong>啁啾反射镜：</strong>有意设计为具有负GDD，以补偿系统其余部分的材料色散。对于克尔透镜锁模振荡器和CPA压缩器至关重要。</li>
+<li><strong>超宽带反射镜：</strong>覆盖一个倍频程或更宽，用于少周期脉冲产生（例如500-1000 nm）。</li>
+</ul>
+<p>恒鼎光提供多种<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>、<a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和<a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a>，可根据超快色散需求进行定制。对于1030-1064 nm的掺镱光纤放大器系统，熔融石英基底反射镜提供最佳的机械稳定性和抗损伤能力。</p>
+
+<h3>3. CaF₂光学窗口片与保护窗口</h3>
+<p>每个超快系统都有窗口片——真空腔窗口、环境保护窗口、光束采样窗口。每一片都会增加GDD，如果加起来，它们会显著展宽您的脉冲。</p>
+<p><a href="/products/caf2-optical-windows/">CaF₂光学窗口片</a>是超快真空腔和光束路径封装的理想选择，因为：</p>
+<ul>
+<li><strong>每毫米更低的GVD</strong>意味着您可以使用更厚的窗口片以获得更好的真空密封，同时产生更少的脉冲展宽。</li>
+<li><strong>紫外到中红外的透过</strong>意味着同一种窗口材料适用于钛宝石（800 nm）、OPA信号/闲频光（1200-2000 nm）和谐波（266 nm、400 nm）。</li>
+<li><strong>低折射率</strong>即使使用简单的单层增透膜也能降低菲涅耳反射损耗。</li>
+</ul>
+<p>重要提示：如果系统将在潮湿环境中运行，CaF₂窗口应指定防潮涂层。在干燥的氮气吹扫或真空环境中，未镀膜或简单增透膜的CaF₂即可使用。</p>
+
+<h3>4. 用于色散补偿的CaF₂棱镜</h3>
+<p>棱镜对是在超快激光系统中引入可控量的负（或正）GDD的经典技术。在典型的钛宝石振荡器中，腔内的一对棱镜用于补偿由钛宝石晶体和其他光学元件引入的正色散。</p>
+<p><a href="/products/caf2-optical-prisms/">CaF₂光学棱镜</a>在超快系统中优于熔融石英棱镜，因为：</p>
+<ul>
+<li><strong>更宽的波长覆盖：</strong>CaF₂棱镜从深紫外到近红外都有效，使其适用于OPA系统和谐波产生实验。</li>
+<li><strong>更低的固有GDD：</strong>在最小偏向角使用时，光束通过CaF₂的光程在等效色散意义上更短，意味着引入的高阶色散更少。</li>
+<li><strong>更低的非线性：</strong>CaF₂较低的n₂意味着在高脉冲能量下棱镜材料内部的自相位调制更少。</li>
+</ul>
+<p>对于超快应用，棱镜通常以布儒斯特角使用，以便在没有增透膜的情况下最小化反射损耗。顶角的选择使脉冲的中心波长以最小偏向角通过。</p>
+
+<h3>5. 用于CPA放大器的高功率激光反射镜</h3>
+<p>啁啾脉冲放大（CPA）系统工作在巨大的峰值功率下——大型设备中达到太瓦甚至拍瓦级别。在这些系统中，反射镜损伤是头号失效模式。<a href="/products/high-energy-laser-mirrors/">高能量激光反射镜</a>为飞秒脉冲设计时必须同时满足三个相互矛盾的要求：</p>
+<ol>
+<li><strong>极高的反射率</strong>（&gt; 99.9%），以最小化损耗并防止对下游元件的损伤</li>
+<li><strong>可控的GDD和TOD</strong>，以避免脉冲形状畸变</li>
+<li><strong>尽可能高的损伤阈值</strong>，以承受多焦耳、亚100飞秒的脉冲</li>
+</ol>
+<p>采用离子束溅射（IBS）介质镀膜的熔融石英基底反射镜是高能CPA系统的标准配置。镀膜设计是复杂的多层堆叠，必须同时优化反射率带宽和色散特性。恒鼎光<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>可提供针对特定脉冲宽度和波段的定制镀膜设计。</p>
+
+<h2>超快应用与元件对应</h2>
+
+<h3>钛宝石振荡器和放大器</h3>
+<p>工作在约800 nm的钛宝石激光器仍然是超快研究的金标准。一个典型的千赫兹放大器系统有数十个光学元件。关键元件建议：</p>
+<ul>
+<li><strong>振荡器腔：</strong>低GDD啁啾镜用于色散补偿，<a href="/products/caf2-plano-convex-lenses/">CaF₂透镜</a>用于聚焦到晶体</li>
+<li><strong>展宽器/压缩器：</strong>衍射光栅（透射或反射）或棱镜对用于大GDD补偿</li>
+<li><strong>放大链路：</strong>具有可控色散的<a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a>、真空级<a href="/products/caf2-optical-windows/">CaF₂窗口</a></li>
+<li><strong>光束传输：</strong>CaF₂透镜用于最终聚焦，宽带高反镜用于光束转向</li>
+</ul>
+
+<h3>掺镱光纤和固态放大器（1030-1064 nm）</h3>
+<p>基于镱的系统在工业超快应用（激光微加工、3D打印、眼科手术）中迅速普及。它们提供高平均功率（可达千瓦级）和出色的光-光转换效率。建议：</p>
+<ul>
+<li><strong>大多数元件使用熔融石英：</strong>熔融石英低热膨胀系数和高机械稳定性对于高平均功率工业系统至关重要。</li>
+<li><strong>反射镜：</strong><a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a>，针对飞秒脉冲优化GDD</li>
+<li><strong>聚焦光学元件：</strong><a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和透镜，指定1030 nm、~200 fs下的LIDT</li>
+<li><strong>何时使用CaF₂：</strong>如果您正在产生宽带超连续谱，或工作在CaF₂较低色散更重要的波段（例如，光学参量啁啾脉冲放大）。</li>
+</ul>
+
+<h3>光学参量放大器（OPA）和OPCPA</h3>
+<p>OPA通过在非线性晶体中混合泵浦光和信号光来产生波长可调谐的超快脉冲。信号光和闲频光可以从紫外到中红外。对于OPA系统：</p>
+<ul>
+<li><strong>CaF₂几乎是理想选择：</strong>其宽的紫外到中红外透过范围覆盖了整个OPA调谐范围。单个CaF₂透镜或窗口可同时用于泵浦光（例如400 nm或800 nm）、信号光（1200-2000 nm）和闲频光（2000-4000 nm）。</li>
+<li><strong>色散管理至关重要：</strong>不同波长的光束在光学元件中经历不同的GDD，需要仔细选择材料和光路设计。</li>
+</ul>
+
+<h3>多光子显微镜和非线性成像</h3>
+<p>双光子显微镜、二次谐波成像和相干反斯托克斯拉曼散射（CARS）都依赖于样品平面处的超短脉冲。挑战在于显微镜中的每个光学元件——扫描透镜、镜筒透镜、物镜、二向色镜——都会增加色散，展宽脉冲并降低信号强度。</p>
+<ul>
+<li><strong>预啁啾脉冲：</strong>在显微镜之前使用棱镜对或光栅棱镜组合添加负GDD，以补偿物镜中的正色散。</li>
+<li><strong>最小化元件数量：</strong>在激发光路中尽可能使用CaF₂光学元件，以减少总累积GDD。</li>
+<li><strong>二向色镜：</strong>选择具有记录GDD特性的二向色镜——一些标准二向色镜可能引入数百fs²的色散。</li>
+</ul>
+
+<h2>五个常见的超快光学错误及避免方法</h2>
+
+<h3>1. 忽视总累积GDD</h3>
+<p>单独看每个元件很容易——"这个透镜只增加50 fs²，没问题"——却忘记了光路中的每个元件都在贡献。一个透镜、一个窗口、一个分束器、一个偏振器，加上几次反射镜反射，加起来可能达到数百甚至数千fs²的GDD，将您的30飞秒脉冲展宽到100飞秒或更长。</p>
+<p><strong>解决方案：</strong>在搭建系统之前计算整个光路的总GDD。将每个透射元件（透镜、窗口、晶体、滤光片）和每个反射元件（反射镜、二向色镜）的GDD加起来。如果总GDD太高，减少元件数量、切换到更薄的基底，或添加色散补偿器（光栅对、棱镜对或啁啾镜序列）。</p>
+
+<h3>2. 在超快系统中使用连续波式反射镜</h3>
+<p>一个在800 nm处反射率99.9%的反射镜听起来很棒——直到你意识到它是一个窄带连续波设计，带宽只有10 nm，GDD高达500 fs²。你的30飞秒脉冲有30 nm的带宽；反射镜会削掉光谱的边带并展宽剩余部分。</p>
+<p><strong>解决方案：</strong>对于超快应用，始终检查反射镜的<strong>带宽</strong>和<strong>GDD</strong>规格，而不仅仅是反射率。为了最小化畸变，反射镜带宽应至少是脉冲光谱带宽的2倍。对于亚20飞秒脉冲，寻找明确指定GDD和TOD值的产品。</p>
+
+<h3>3. 忘记高平均功率下的热效应</h3>
+<p>现代飞秒放大器可以提供100 W、500 W甚至千瓦级的平均功率。在这种功率水平下，即使透镜或窗口中0.1%的吸收也会产生显著的热透镜和波前畸变。CaF₂由于其较高的热膨胀系数，比熔融石英更容易受热透镜效应的影响。</p>
+<p><strong>解决方案：</strong>对于高平均功率系统（&gt; 10 W），尽可能使用<a href="/products/fused-silica-optical-mirrors/">熔融石英反射镜</a>和透镜代替CaF₂。对于透射光学元件，指定可用的最高损伤阈值和最低吸收镀膜。考虑为高功率窗口使用水冷镜架。</p>
+
+<h3>4. 忽视表面质量和亚表面损伤</h3>
+<p>飞秒区域的激光损伤通常始于表面缺陷——划痕、麻点、抛光残留物以及研磨过程产生的亚表面损伤。"60-40"的划痕-麻点规格对于连续波系统可能没问题，但在高峰值强度下可能导致过早损伤。</p>
+<p><strong>解决方案：</strong>为所有高峰值功率超快光学元件指定更严格的表面质量（例如，按MIL-PRF-13830标准的10-5划痕-麻点）。寻找提供<strong>超抛光</strong>表面（&lt; 1 &Aring; RMS粗糙度）和采用最小化亚表面损伤的先进抛光技术的供应商。恒鼎光所有<a href="/products/caf2-ultrafast-laser-optics/">超快级CaF₂光学元件</a>均采用抗损伤抛光工艺制造。</p>
+
+<h3>5. 以为所有增透膜都一样</h3>
+<p>标准的单层MgF₂增透膜对可见光连续光有效，但可能引入显著的GDD，并且在飞秒范围内损伤阈值可能很低。宽带多层增透膜的性能可能更好——也可能更差——取决于设计。</p>
+<p><strong>解决方案：</strong>对于超快系统，指定在您的工作带宽内具有记录GDD特性的增透膜。寻找每面反射率&lt;0.5%并指定了您的脉宽下LIDT的镀膜。对于关键应用，考虑专门为飞秒脉冲设计的超宽带增透膜。</p>
+
+<h2>元件选型速查表</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">应用</th><th style="border:1px solid #e2e8f0;padding:8px;">首选材料</th><th style="border:1px solid #e2e8f0;padding:8px;">关键元件</th><th style="border:1px solid #e2e8f0;padding:8px;">关键指标</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">钛宝石振荡器 (800 nm, &lt; 50 fs)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ + 石英反射镜</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂透镜</a>、<a href="/products/high-power-laser-mirrors/">啁啾镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">单元件GDD &lt; 20 fs²</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">掺镱光纤放大器 (1030 nm, &gt; 10 W 平均)</td><td style="border:1px solid #e2e8f0;padding:8px;">熔融石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/1064nm-laser-line-mirrors/">1064 nm反射镜</a>、<a href="/products/fused-silica-optical-mirrors/">石英反射镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">LIDT、热稳定性</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OPA / OPCPA (宽带可调谐)</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂窗口</a>、<a href="/products/caf2-optical-prisms/">CaF₂棱镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">透过范围、GVD</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">多光子显微镜</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ (激发端)</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-plano-convex-lenses/">CaF₂扫描透镜</a>、<a href="/products/dichroic-filters/">二向色镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">总GDD预算</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CPA放大器 (高峰值功率)</td><td style="border:1px solid #e2e8f0;padding:8px;">熔融石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/high-power-laser-mirrors/">高功率反射镜</a>、<a href="/products/high-energy-laser-mirrors/">高能量反射镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">飞秒LIDT</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">真空腔窗口</td><td style="border:1px solid #e2e8f0;padding:8px;">CaF₂ 或 石英</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/caf2-optical-windows/">CaF₂窗口</a>、<a href="/products/fused-silica-optical-windows/">石英窗口</a></td><td style="border:1px solid #e2e8f0;padding:8px;">GDD贡献、LIDT</td></tr>
+</table>
+
+<h2>恒鼎光超快光学元件产品组合</h2>
+<p>恒鼎光为飞秒和皮秒激光系统制造精密超快级光学元件，覆盖紫外、可见和近红外光谱范围：</p>
+<ul>
+<li><a href="/products/caf2-ultrafast-laser-optics/">CaF₂超快激光光学元件</a> — 低GVD CaF₂透镜、窗口片和棱镜，适用于钛宝石和OPA系统</li>
+<li><a href="/products/caf2-plano-convex-lenses/">CaF₂平凸透镜</a> — 用于超快聚焦和光束准直，色散最小</li>
+<li><a href="/products/caf2-optical-windows/">CaF₂光学窗口片</a> — 真空级窗口，提供宽带增透膜选项（180 nm – 8 &mu;m）</li>
+<li><a href="/products/caf2-optical-prisms/">CaF₂光学棱镜</a> — 直角棱镜和等边棱镜，用于色散控制和光束操控</li>
+<li><a href="/products/high-power-laser-mirrors/">高功率激光反射镜</a> — IBS镀膜反射镜，色散可控，适用于飞秒系统</li>
+<li><a href="/products/fused-silica-optical-mirrors/">熔融石英光学反射镜</a> — 高稳定性反射镜，适用于1030/1064 nm掺镱系统</li>
+<li><a href="/products/1064nm-laser-line-mirrors/">1064 nm激光反射镜</a> — 为掺镱光纤和Nd:YAG超快放大器优化</li>
+<li><a href="/products/dichroic-filters/">二向色滤光片</a> — 定制二向色镜，具有记录GDD，适用于多光子显微镜</li>
+</ul>
+
+<h2>结论</h2>
+<p>超快激光光学是材料科学、镀膜设计和激光物理的交汇点。正确的透镜或反射镜选择可以决定是获得满峰值功率的变换极限脉冲，还是得到一个展宽畸变、无法达到预期性能的光束。CaF₂通过提供极低的色散、超宽的透过范围和高损伤阈值，改变了超快光学的格局——使其成为亚50飞秒系统、宽带OPA以及任何脉冲形状保真至关重要的应用的首选材料。</p>
+<p>在恒鼎光，我们以最严格的公差制造CaF₂和熔融石英光学元件，具有经过认证的LIDT值和记录的色散特性。无论您需要单个CaF₂聚焦透镜还是一套用于CPA系统的色散可控反射镜，我们的技术团队都可以帮助您为您特定的脉冲宽度、波长和功率水平选择最佳元件。</p>
+
+    </div>
+    </div>
+    
+    <div class="article-cta">
+        <h3 data-i18n="ctaIRTGuideTitle">Need Custom IR Optics for Your Thermal Imaging System?</h3>
+        <p data-i18n="ctaIRTGuideDesc">Our technical team can design and manufacture precision IR optics from germanium, silicon, ZnSe, and sapphire with custom AR coatings, athermalized designs, and tight tolerances for your thermal imaging or temperature measurement system.</p>
+        <a href="/contact.html" class="btn" data-i18n="ctaIRTGuideButton">Request Technical Consultation</a>
+    </div>
+    
+    <div style="margin-top: 30px; padding: 20px; background: #f8fafc; border-radius: 12px;">
+        <h3 data-i18n="relatedTitle">Related Articles</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px; margin-top: 16px;">
+            <a href="/blog/infrared-optical-materials-comparison/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>Infrared Optical Materials Comparison: ZnSe vs Ge vs Si</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedIRMaterials">Detailed comparison of IR optical materials</p>
+            </a>
+            <a href="/blog/laser-induced-damage-threshold-lidt-guide/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>Laser-Induced Damage Threshold (LIDT) Complete Guide</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedLIDT">Understanding LIDT testing and specifications</p>
+            </a>
+            <a href="/blog/optical-filter-selection-guide/" style="text-decoration: none; color: #3b82f6; padding: 12px; background: white; border-radius: 8px; border: 1px solid #e2e8f0;">
+                <strong>How to Select Optical Filters for Precision Applications</strong>
+                <p style="font-size: 0.85rem; color: #64748b; margin-top: 4px;" data-i18n="relatedFilters">Filter types and selection criteria</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 data-i18n="footerProducts">Products</h4>
+                <a href="/products.html" data-i18n="footerAllProducts">All Products</a>
+                <a href="/products.html?category=lenses" data-i18n="footerLenses">Optical Lenses</a>
+                <a href="/products.html?category=mirrors" data-i18n="footerMirrors">Optical Mirrors</a>
+                <a href="/products.html?category=windows" data-i18n="footerWindows">Optical Windows</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerResources">Resources</h4>
+                <a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a>
+                <a href="/application-notes/" data-i18n="navAppNotes">Application Notes</a>
+                <a href="/blog.html" data-i18n="navBlog">Blog</a>
+                <a href="/calculator.html" data-i18n="menuCalculators">Optical Calculators</a>
+                <a href="/materials.html" data-i18n="menuMaterials">Materials Database</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerApplications">Applications</h4>
+                <ul>
+                    <li><a href="/applications/laser-optics/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Laser Systems</a></li>
+                    <li><a href="/applications/semiconductor-inspection/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Semiconductor</a></li>
+                    <li><a href="/applications/medical-imaging/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Medical Imaging</a></li>
+                    <li><a href="/applications/aerospace-defense/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Aerospace &amp; Defense</a></li>
+                    <li><a href="/applications/research-laboratory/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Research &amp; Laboratory</a></li>
+                    <li><a href="/engineering.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">Engineering Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <a href="/about.html" data-i18n="navAbout">About Us</a>
+                <a href="/contact.html" data-i18n="navContact">Contact</a>
+                <a href="/case-studies.html" data-i18n="footerCaseStudies">Case Studies</a>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerContactTitle">Contact</h4>
+                <p>sales@photonedgeoptics.com</p>
+                <p>WhatsApp: +86-13693009175</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PhotonEdge (HengDingGuang). All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="/js/products-data.js"></script>
+<script src="/js/blog-data.js"></script>
+<script src="/js/translations.js"></script>
+<script src="/js/app.js"></script>
+<script>
+    (function() {
+        var params = new URLSearchParams(window.location.search);
+        var lang = params.get('lang');
+        if (lang === 'zh') {
+            document.getElementById('articleContentEn').style.display = 'none';
+            document.getElementById('articleContentZh').style.display = 'block';
+            document.getElementById('articleTitle').textContent = document.getElementById('articleTitle').getAttribute('data-zh-title');
+            document.getElementById('articleCategory').textContent = document.getElementById('articleCategory').getAttribute('data-zh-category');
+            document.getElementById('articleReadTime').textContent = document.getElementById('articleReadTime').getAttribute('data-zh-time');
+            document.documentElement.lang = 'zh';
+        }
+    })();
+</script>
+</body>
+</html>

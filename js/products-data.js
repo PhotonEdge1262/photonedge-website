@@ -11654,7 +11654,7 @@ var PRODUCTS = [
     ],
     "diagram": "",
     "category31": "Optical Lenses",
-    "componentType": "Optomechanical",
+    "componentType": "Accessory",
     "material": [
       "Polycarbonate"
     ],
@@ -11890,7 +11890,7 @@ var PRODUCTS = [
       }
     ],
     "category31": "Custom Optics",
-    "componentType": "Optomechanical",
+    "componentType": "Mount",
     "material": [
       "Aluminum"
     ],
