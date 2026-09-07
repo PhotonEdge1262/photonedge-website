@@ -159,25 +159,405 @@
 </header>
 
 <main class="article-container">
-    <a href="/application-notes/" style="color:#94a3b8;text-decoration:none;">Application Notes</a></li>
-                        <li><a href="/blog.html" class="article-back" data-i18n="backToBlog">← Back to Blog</a>
+    <a href="/blog.html" class="article-back" data-i18n="backToBlog">← Back to Blog</a>
     
     <div class="article-header">
         <span class="article-category" id="articleCategory" data-en-category="Technical Guide" data-zh-category="技术指南">Technical Guide</span>
         <h1 class="article-title" id="articleTitle" data-en-title="UV Fused Silica vs BK7 Glass: Complete Material Selection Guide for Optical Engineers" data-zh-title="紫外熔融石英 vs BK7玻璃：光学工程师的完整材料选择指南">UV Fused Silica vs BK7 Glass: Complete Material Selection Guide for Optical Engineers</h1>
         <div class="article-meta">
             <span id="articleDate">2026-06-28</span>
-            <span id="articleReadTime" data-en-time="8 min" data-zh-time="8 分钟">8 min</span>
+            <span id="articleReadTime" data-en-time="10 min" data-zh-time="10 分钟">10 min</span>
             <span id="articleAuthor">PhotonEdge Technical Team</span>
         </div>
     </div>
     
     <div class="article-body" id="articleBody">
-        <p data-en-content="Detailed comparison of UV fused silica and BK7 optical glass for engineers. Covers transmission range, thermal properties, laser damage threshold, and cost considerations. Use our BK7 vs fused silica comparison to make the right material choice." data-zh-content="面向工程师的紫外熔融石英和BK7光学玻璃详细对比。涵盖透过范围、热性能、激光损伤阈值和成本考量。使用BK7与熔融石英对比做出正确材料选择。">Detailed comparison of UV fused silica and BK7 optical glass for engineers. Covers transmission range, thermal properties, laser damage threshold, and cost considerations. Use our BK7 vs fused silica comparison to make the right material choice.</p>
+    <div id="articleContentEn">
+<h2>Introduction</h2>
+<p>Selecting the right optical material is one of the most consequential decisions in optical system design. Among the dozens of available optical materials, UV fused silica (synthetic silicon dioxide) and BK7 (borosilicate crown glass) represent the two most widely used substrates in precision optics. Together, they account for the majority of lenses, windows, prisms, and mirrors manufactured worldwide. Yet their properties differ so dramatically that choosing the wrong material can lead to system failure, premature damage, or unnecessary cost.</p>
+
+<p>This comprehensive guide provides optical engineers with a detailed, data-driven comparison of UV fused silica and BK7 glass across every relevant property: transmission range, refractive index, thermal behavior, laser damage threshold, mechanical strength, chemical durability, and cost. We also discuss which component types are available in each material, how application requirements drive the selection, and what common mistakes to avoid when specifying these materials.</p>
+
+<h2>What Is UV Fused Silica?</h2>
+<p>UV fused silica (also called synthetic fused silica or UV-grade fused quartz) is an amorphous silicon dioxide (SiO<sub>2</sub>) glass produced by flame hydrolysis of silicon tetrachloride (SiCl<sub>4</sub>) or by electric fusion of high-purity quartz crystals. The synthetic process yields a material with extremely low metallic impurity content (&lt;1 ppm total transition metals), making it transparent deep into the ultraviolet spectrum. The most common commercial grade for optical applications is equivalent to Corning 7980, Heraeus Suprasil, or SCHOTT FSQ-U.</p>
+
+<p>Key attributes of UV fused silica include:</p>
+<ul>
+<li>Broadband transmission from approximately 180 nm to 2.5 &mu;m</li>
+<li>Extremely low coefficient of thermal expansion (CTE = 0.55 &times; 10<sup>-6</sup>/&deg;C)</li>
+<li>High laser-induced damage threshold (LIDT)</li>
+<li>Low autofluorescence in UV-grade versions</li>
+<li>Excellent homogeneity (&plusmn;1 &times; 10<sup>-6</sup> refractive index uniformity)</li>
+<li>Superior resistance to thermal shock</li>
+</ul>
+
+<h2>What Is BK7?</h2>
+<p>BK7 (known as N-BK7 in SCHOTT nomenclature, or B270 in some regions) is a borosilicate crown optical glass that has been the industry-standard visible-light substrate for over a century. It is produced by melting high-purity silica sand with boron oxide and alkali metal oxides in platinum crucibles. BK7 offers an excellent combination of optical homogeneity, ease of polishing, and low cost, making it the default material for most visible and near-infrared optical systems.</p>
+
+<p>Key attributes of BK7 include:</p>
+<ul>
+<li>Good transmission from approximately 350 nm to 2.0 &mu;m</li>
+<li>Refractive index n<sub>d</sub> = 1.5168 (Abbe number V<sub>d</sub> = 64.17)</li>
+<li>Easy to machine, polish, and coat</li>
+<li>Low cost and widely available in all standard sizes</li>
+<li>Good chemical durability (resistance to humidity and mild acids)</li>
+<li>Moderate hardness (Knoop 610) suitable for most handling environments</li>
+</ul>
+
+<h2>Comprehensive Properties Comparison</h2>
+<p>The table below provides a side-by-side comparison of all key properties relevant to optical system design:</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Property</th><th style="border:1px solid #e2e8f0;padding:8px;">UV Fused Silica</th><th style="border:1px solid #e2e8f0;padding:8px;">BK7 (N-BK7)</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Transmission Range</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm &ndash; 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">350 nm &ndash; 2.0 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Internal Transmittance (10 mm)</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;99% from 250 nm to 2.0 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;99.5% from 400 nm to 1.8 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Refractive Index (n<sub>d</sub>)</td><td style="border:1px solid #e2e8f0;padding:8px;">1.4585</td><td style="border:1px solid #e2e8f0;padding:8px;">1.5168</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Abbe Number (V<sub>d</sub>)</td><td style="border:1px solid #e2e8f0;padding:8px;">67.82</td><td style="border:1px solid #e2e8f0;padding:8px;">64.17</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Density (g/cm&sup3;)</td><td style="border:1px solid #e2e8f0;padding:8px;">2.20</td><td style="border:1px solid #e2e8f0;padding:8px;">2.51</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CTE (10<sup>-6</sup>/&deg;C, 20&ndash;300&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">0.55</td><td style="border:1px solid #e2e8f0;padding:8px;">7.1</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">dn/dT (10<sup>-6</sup>/&deg;C @ 633 nm)</td><td style="border:1px solid #e2e8f0;padding:8px;">10.5</td><td style="border:1px solid #e2e8f0;padding:8px;">3.0</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Thermal Conductivity (W/m&middot;K)</td><td style="border:1px solid #e2e8f0;padding:8px;">1.38</td><td style="border:1px solid #e2e8f0;padding:8px;">1.11</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Strain Point (&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">1050</td><td style="border:1px solid #e2e8f0;padding:8px;">557</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Annealing Point (&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">1140</td><td style="border:1px solid #e2e8f0;padding:8px;">565</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Softening Point (&deg;C)</td><td style="border:1px solid #e2e8f0;padding:8px;">1585</td><td style="border:1px solid #e2e8f0;padding:8px;">820</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Knoop Hardness (kg/mm&sup2;)</td><td style="border:1px solid #e2e8f0;padding:8px;">480</td><td style="border:1px solid #e2e8f0;padding:8px;">610</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Young's Modulus (GPa)</td><td style="border:1px solid #e2e8f0;padding:8px;">72.7</td><td style="border:1px solid #e2e8f0;padding:8px;">82.2</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Poisson's Ratio</td><td style="border:1px solid #e2e8f0;padding:8px;">0.17</td><td style="border:1px solid #e2e8f0;padding:8px;">0.206</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT (1064 nm, 10 ns)</td><td style="border:1px solid #e2e8f0;padding:8px;">~20 J/cm&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">~10 J/cm&sup2;</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT (355 nm, 10 ns)</td><td style="border:1px solid #e2e8f0;padding:8px;">~10 J/cm&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">Not recommended</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Chemical Durability</td><td style="border:1px solid #e2e8f0;padding:8px;">Excellent (resists all except HF)</td><td style="border:1px solid #e2e8f0;padding:8px;">Good (ISO 79-3 Class 1)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Homogeneity (typical)</td><td style="border:1px solid #e2e8f0;padding:8px;">&plusmn;1 &times; 10<sup>-6</sup></td><td style="border:1px solid #e2e8f0;padding:8px;">&plusmn;2 &times; 10<sup>-6</sup></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Autofluorescence</td><td style="border:1px solid #e2e8f0;padding:8px;">Very low (UV-grade)</td><td style="border:1px solid #e2e8f0;padding:8px;">Moderate</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Relative Cost (same geometry)</td><td style="border:1px solid #e2e8f0;padding:8px;">2&ndash;4&times; BK7</td><td style="border:1px solid #e2e8f0;padding:8px;">1&times; (baseline)</td></tr>
+</table>
+
+<h2>Optical Transmission Analysis</h2>
+
+<h3>Deep UV Performance (&lt;350 nm)</h3>
+<p>This is the most decisive difference between the two materials. UV fused silica transmits efficiently down to approximately 180 nm, with internal transmittance exceeding 90% per 10 mm at 193 nm (ArF excimer wavelength) and 95% at 248 nm (KrF). BK7, in contrast, becomes opaque below approximately 300 nm and is completely unsuitable for any application below 350 nm. The iron oxide and other transition metal impurities in BK7 create strong absorption bands in the UV.</p>
+
+<p>For applications requiring UV transmission below 350 nm &mdash; including excimer laser optics, UV lithography, UV fluorescence microscopy, UV curing systems, and UV spectroscopy &mdash; UV fused silica is not just preferred but mandatory. BK7 cannot be used under any circumstances in these wavelength ranges.</p>
+
+<h3>Visible Spectrum Performance (400&ndash;700 nm)</h3>
+<p>Both materials transmit excellently in the visible spectrum. BK7 actually has a slight edge in internal transmittance (99.5%+ per 10 mm from 400 nm to 1.8 &mu;m) compared to fused silica (99%+ per 10 mm from 250 nm to 2.0 &mu;m), though the difference is negligible for most practical applications. BK7's higher refractive index (1.517 vs 1.458) means less light is reflected per surface, but it also requires thicker AR coatings to achieve the same reflectance performance.</p>
+
+<h3>Near-Infrared Performance (700 nm&ndash;2.5 &mu;m)</h3>
+<p>Beyond 1.8 &mu;m, BK7 begins to show absorption from iron and hydroxyl impurities. By 2.0 &mu;m, BK7 transmission drops below 50% for standard 10 mm thickness. UV fused silica maintains good transmission up to approximately 2.2 &mu;m, beyond which OH absorption bands become significant. For applications between 2.0 and 2.5 &mu;m, IR-grade (low-OH) fused silica is required. Neither material is suitable for mid-IR applications beyond 2.5 &mu;m.</p>
+
+<h2>Thermal Properties Deep Dive</h2>
+
+<h3>Coefficient of Thermal Expansion</h3>
+<p>The most dramatic thermal property difference is the CTE. BK7 expands at 7.1 &times; 10<sup>-6</sup>/&deg;C, while UV fused silica expands at only 0.55 &times; 10<sup>-6</sup>/&deg;C &mdash; roughly 13 times less. This has critical implications for any optical system operating across temperature ranges:</p>
+<ul>
+<li><strong>Dimensional stability:</strong> A 100 mm BK7 lens heated by 50&deg;C changes diameter by ~35 &mu;m, while a fused silica lens of the same size changes by only ~2.8 &mu;m. For precision systems requiring tight focus or beam position stability, fused silica is overwhelmingly superior.</li>
+<li><strong>Thermal shock resistance:</strong> Fused silica's combination of low CTE and high strain point (1050&deg;C vs 557&deg;C) means it can withstand extreme temperature gradients without cracking. BK7 is more susceptible to thermal shock, especially in large optics with uneven temperature distributions.</li>
+<li><strong>Outdoor and aerospace applications:</strong> Systems exposed to temperature ranges from -40&deg;C to +70&deg;C (110&deg;C swing) will maintain far better alignment and focus with fused silica optics.</li>
+</ul>
+
+<h3>Thermo-Optic Coefficient (dn/dT)</h3>
+<p>While BK7 has a lower dn/dT (3.0 &times; 10<sup>-6</sup>/&deg;C) than fused silica (10.5 &times; 10<sup>-6</sup>/&deg;C), the overall thermal optical path difference (OPD) must account for both dn/dT and CTE effects. The thermal defocus power depends on the combination of refractive index change and surface deformation. For fused silica, the very low CTE means surface figure is preserved even though dn/dT is higher. The effective thermal focal length change is typically smaller for fused silica in most practical configurations.</p>
+
+<h2>Laser Damage Threshold</h2>
+<p>Laser-induced damage threshold (LIDT) is critical for any high-power laser application. UV fused silica consistently outperforms BK7 across all wavelengths and pulse durations:</p>
+<ul>
+<li><strong>At 1064 nm (Nd:YAG, 10 ns pulses):</strong> Fused silica ~20 J/cm&sup2;, BK7 ~10 J/cm&sup2; (2:1 ratio)</li>
+<li><strong>At 532 nm (frequency-doubled Nd:YAG):</strong> Fused silica ~12&ndash;15 J/cm&sup2;, BK7 not recommended for high-energy pulsed applications</li>
+<li><strong>At 355 nm (frequency-tripled Nd:YAG):</strong> Fused silica ~8&ndash;10 J/cm&sup2;, BK7 unsuitable</li>
+<li><strong>At 193/248 nm (excimer lasers):</strong> Fused silica 15&ndash;40 J/cm&sup2;, BK7 completely opaque and unsuitable</li>
+</ul>
+<p>The higher LIDT of fused silica comes from its superior purity (no metallic impurities that serve as damage nucleation sites), higher band gap energy (~9 eV vs ~4 eV for BK7), and better resistance to UV solarization. For pulsed laser systems above approximately 100 mJ/cm&sup2; fluence, fused silica should be considered the minimum standard regardless of wavelength.</p>
+
+<h2>Mechanical and Chemical Properties</h2>
+
+<h3>Hardness and Polishability</h3>
+<p>BK7 is harder (Knoop 610) than fused silica (Knoop 480), which makes BK7 slightly more resistant to surface scratching during handling and cleaning. However, fused silica's lower hardness also makes it easier and faster to polish to very fine surface finishes, partially offsetting the higher material cost during manufacturing. Both materials can be polished to 10-5 scratch-dig surface quality and &lambda;/10 flatness or better.</p>
+
+<h3>Chemical Resistance</h3>
+<p>Both materials offer excellent resistance to water, most acids (except hydrofluoric acid), and atmospheric corrosion. BK7 meets ISO 79-3 Class 1 for climate resistance. Fused silica, being pure SiO<sub>2</sub>, is even more chemically inert and is the standard material for laboratory ware and semiconductor process chambers. Neither material should be exposed to hydrofluoric acid (HF), which attacks both rapidly.</p>
+
+<h3>Young's Modulus and Weight</h3>
+<p>Fused silica has a lower density (2.20 g/cm&sup3; vs 2.51 g/cm&sup3; for BK7), making it approximately 12% lighter for the same geometry. This is advantageous for aerospace applications and systems where weight is critical. BK7's higher Young's modulus (82.2 GPa vs 72.7 GPa) makes it slightly stiffer, which can be beneficial for large optics requiring minimal deflection under gravity.</p>
+
+<h2>Component Availability</h2>
+<p>Both materials are available in a wide range of standard optical component types. Here is a summary of commonly available components:</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5em 0;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Component Type</th><th style="border:1px solid #e2e8f0;padding:8px;">UV Fused Silica</th><th style="border:1px solid #e2e8f0;padding:8px;">BK7</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Plano-Convex Lenses</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none;">Available</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none;">Available</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Bi-Convex / Laser Lenses</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-laser-lenses/" style="color:#2563eb;text-decoration:none;">Available</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-bi-convex/" style="color:#2563eb;text-decoration:none;">Available</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Optical Windows</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/" style="color:#2563eb;text-decoration:none;">Available</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none;">Available</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Optical Prisms</td><td style="border:1px solid #e2e8f0;padding:8px;">Available</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-optical-prisms/" style="color:#2563eb;text-decoration:none;">Available</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Optical Mirrors</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-mirrors/" style="color:#2563eb;text-decoration:none;">Available</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-optical-mirrors/" style="color:#2563eb;text-decoration:none;">Available</a></td></tr>
+</table>
+
+<p>Fused silica is also available in specialized forms including cylindrical lenses, ball lenses, and rod lenses. BK7 additionally comes in meniscus lenses, C-lenses, and ball lenses. For custom geometries, both materials can be ordered as blanks and machined to specification.</p>
+
+<h2>Application Selection Decision Matrix</h2>
+<p>Based on the property comparisons above, here is a practical decision framework for selecting between UV fused silica and BK7:</p>
+
+<h3>Choose UV Fused Silica When:</h3>
+<ul>
+<li>Your system operates below 350 nm (UV laser, fluorescence, spectroscopy)</li>
+<li>High-power pulsed laser fluence exceeds ~100 mJ/cm&sup2;</li>
+<li>Excimer laser compatibility is required (193 nm, 248 nm)</li>
+<li>Thermal stability across wide temperature ranges is critical (space, outdoor, interferometry)</li>
+<li>Thermal shock resistance is needed (rapid temperature cycling)</li>
+<li>Ultra-low autofluorescence is required (Raman spectroscopy, single-molecule fluorescence)</li>
+<li>Superior homogeneity is needed for high-precision wavefront applications</li>
+</ul>
+
+<h3>Choose BK7 When:</h3>
+<ul>
+<li>Your system operates entirely in the visible to near-IR (400 nm &ndash; 1.8 &mu;m)</li>
+<li>Laser power levels are moderate (CW &lt; 100 W or low-energy pulsed)</li>
+<li>Cost is a primary driver, especially for large-diameter optics (&gt;50 mm)</li>
+<li>The optical system operates at or near room temperature with small thermal excursions</li>
+<li>Standard catalog optics meet your requirements</li>
+<li>Volume production where per-unit cost differences compound significantly</li>
+</ul>
+
+<h2>Cost-Performance Tradeoffs</h2>
+<p>The cost differential between fused silica and BK7 is real and significant. For equivalent geometries and surface finishes, fused silica optics typically cost 2&ndash;4&times; more than BK7. The raw material cost is higher because high-purity synthetic fused silica blanks are more expensive to produce. Additionally, fused silica's lower hardness can increase polishing time slightly (though this is partially offset by faster stock removal).</p>
+
+<p>However, the cost picture changes when you consider system-level economics:</p>
+<ul>
+<li><strong>Failure cost:</strong> A BK7 window damaged by UV laser exposure may cost $50 to replace, but the system downtime could cost $5,000+ per hour. Fused silica prevents this failure mode entirely.</li>
+<li><strong>Performance cost:</strong> Using BK7 in a UV application results in significant transmission loss, reduced signal, and potential solarization. The system underperforms, requiring more gain, longer integration times, or reduced throughput.</li>
+<li><strong>Thermal recalibration:</strong> Systems using BK7 in variable-temperature environments may need periodic recalibration to maintain focus and alignment, adding operational cost.</li>
+</ul>
+<p>Rule of thumb: if your application is within BK7's comfort zone (visible, moderate power, stable temperature), use BK7 and save 60&ndash;75% on optic cost. If you are near the edge of BK7's capabilities, the fused silica premium is almost always justified by improved reliability and performance.</p>
+
+<h2>Common Material Selection Mistakes</h2>
+<p>Based on our experience manufacturing optics for thousands of customers, these are the most common mistakes we see in material selection:</p>
+
+<h3>1. Using BK7 for Near-UV Applications (350&ndash;380 nm)</h3>
+<p>At the boundary of BK7's transmission range, internal transmittance begins to drop. For a 20 mm thick BK7 lens at 350 nm, transmission is only ~90%, and it drops further at shorter wavelengths. If your system operates at 355 nm (frequency-tripled Nd:YAG), BK7 is marginal at best. Always verify transmittance data at your exact operating wavelength and thickness.</p>
+
+<h3>2. Ignoring dn/dT in High-Power CW Laser Systems</h3>
+<p>Even in continuous-wave (CW) laser systems where LIDT is not a concern, absorbed laser power causes local heating and thermal lensing. BK7's higher CTE means the optic deforms more under thermal load, degrading beam quality. For CW laser systems above ~100 W, consider fused silica for all transmissive optics.</p>
+
+<h3>3. Over-specifying Fused Silica for All Applications</h3>
+<p>Conversely, specifying fused silica for a simple visible-light imaging system where BK7 performs perfectly wastes 2&ndash;4&times; the optic budget. Material selection should match the application requirements, not default to the most expensive option.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can BK7 transmit UV light at all?</h3>
+<p>BK7 transmits some near-UV light from 350&ndash;400 nm, but its transmittance drops rapidly below 380 nm due to iron oxide absorption. At 300 nm, standard BK7 is essentially opaque. For any application below 350 nm, you must use UV fused silica or another UV-grade material. BK7 should not be used in UV laser, UV spectroscopy, or fluorescence applications.</p>
+
+<h3>Is UV fused silica the same as fused quartz?</h3>
+<p>They are related but not identical. Fused quartz typically refers to material made by fusing natural quartz crystals, which contains more impurities than synthetic fused silica. UV-grade fused silica is made synthetically (from SiCl<sub>4</sub>) and has much lower metallic impurity content, resulting in deeper UV transmission. For UV applications, always specify UV-grade or synthetic fused silica.</p>
+
+<h3>Can I use BK7 optics in a Nd:YAG laser system at 1064 nm?</h3>
+<p>Yes, for low-to-moderate power levels. BK7 transmits well at 1064 nm, and many low-power Nd:YAG systems use BK7 optics. However, for pulsed Nd:YAG systems with fluences above ~10 J/cm&sup2;, you should switch to fused silica for better LIDT and reliability. For CW systems above ~100 W, fused silica is also recommended to minimize thermal lensing.</p>
+
+<h3>What about fused silica for large optics over 100 mm diameter?</h3>
+<p>Large fused silica blanks are available but significantly more expensive and have longer lead times than BK7. For large windows or mirrors in visible-light applications where UV transmission and extreme thermal stability are not required, BK7 is the pragmatic choice. The cost of a 150 mm fused silica blank can be 5&ndash;8&times; that of BK7.</p>
+
+<h3>Does the choice of material affect AR coating performance?</h3>
+<p>Yes, indirectly. The refractive index difference between the substrate and coating materials affects AR coating design. BK7 (n=1.517) and fused silica (n=1.458) require different coating designs for optimal performance. Additionally, UV applications require special coating materials (like Al<sub>2</sub>O<sub>3</sub> and MgF<sub>2</sub>) that work in the UV, while visible coatings typically use Ta<sub>2</sub>O<sub>5</sub>/SiO<sub>2</sub> or TiO<sub>2</sub>/SiO<sub>2</sub> pairs. Always specify the coating for your exact wavelength and substrate material combination.</p>
+
+<h3>How does fused silica compare to BK7 for outdoor optical systems?</h3>
+<p>Fused silica is far superior for outdoor applications due to its extremely low CTE (0.55 vs 7.1 &times; 10<sup>-6</sup>/&deg;C). Outdoor optical systems experience daily temperature swings of 30&ndash;50&deg;C and seasonal swings of 60&deg;C or more. Fused silica optics maintain their figure and alignment through these temperature changes, while BK7 optics can shift focus and alignment significantly. Solar exposure also adds UV radiation that can cause BK7 solarization over time.</p>
+
+<h2>Conclusion</h2>
+<p>UV fused silica and BK7 are both excellent optical materials, but they serve fundamentally different application spaces. BK7 is the cost-effective workhorse for visible and near-IR optical systems operating under moderate conditions. UV fused silica is the premium material required for UV transmission, high-power lasers, thermally demanding environments, and applications requiring the highest optical homogeneity. The key to optimal material selection is matching the material properties to your specific wavelength, power, temperature, and environmental requirements rather than defaulting to either material.</p>
+
+<p>PhotonEdge manufactures precision optical components in both UV fused silica and BK7, including <a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none;">fused silica plano-convex lenses</a>, <a href="/products/fused-silica-optical-windows/" style="color:#2563eb;text-decoration:none;">fused silica windows</a>, <a href="/products/fused-silica-laser-lenses/" style="color:#2563eb;text-decoration:none;">fused silica laser lenses</a>, <a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none;">BK7 plano-convex lenses</a>, <a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none;">BK7 windows</a>, and <a href="/products/bk7-optical-prisms/" style="color:#2563eb;text-decoration:none;">BK7 prisms</a>. All components are available with custom coatings, tight tolerances, and full inspection reports. Contact our engineering team for material selection guidance on your next project.</p>
     </div>
+    <div id="articleContentZh" style="display:none;">
+<h2>引言</h2>
+<p>选择正确的光学材料是光学系统设计中最关键的决策之一。在众多可用光学材料中，紫外熔融石英（合成二氧化硅）和BK7（硼硅酸盐冕牌玻璃）是精密光学中最广泛使用的两种基底材料。它们合计占全球制造的透镜、窗口、棱镜和反射镜的大部分。然而，它们的特性差异如此之大，选择错误的材料可能导致系统故障、过早损坏或不必要的成本。</p>
+
+<p>本综合指南为光学工程师提供紫外熔融石英和BK7玻璃在所有相关特性方面的详细数据驱动对比：透过范围、折射率、热学行为、激光损伤阈值、机械强度、化学耐久性和成本。我们还将讨论两种材料各自可用的元件类型、应用需求如何驱动选择，以及指定这些材料时应避免的常见错误。</p>
+
+<h2>什么是紫外熔融石英？</h2>
+<p>紫外熔融石英（又称合成熔融石英或紫外级熔融石英玻璃）是一种非晶态二氧化硅（SiO<sub>2</sub>）玻璃，通过四氯化硅（SiCl<sub>4</sub>）的火焰水解或高纯石英晶体的电熔制得。合成工艺产生的材料金属杂质含量极低（总过渡金属&lt;1 ppm），使其在紫外光谱深处具有透明性。光学应用最常见的商用等级等效于Corning 7980、Heraeus Suprasil或SCHOTT FSQ-U。</p>
+
+<p>紫外熔融石英的关键特性包括：</p>
+<ul>
+<li>从约180 nm到2.5 &mu;m的宽带透过</li>
+<li>极低的热膨胀系数（CTE = 0.55 &times; 10<sup>-6</sup>/&deg;C）</li>
+<li>高激光损伤阈值（LIDT）</li>
+<li>紫外级别的低自发荧光</li>
+<li>优异的均匀性（折射率均匀度&plusmn;1 &times; 10<sup>-6</sup>）</li>
+<li>卓越的抗热冲击性</li>
+</ul>
+
+<h2>什么是BK7？</h2>
+<p>BK7（SCHOTT命名法中称为N-BK7，某些地区称为B270）是一种硼硅酸盐冕牌光学玻璃，作为一个多世纪以来的行业标准可见光基底材料。它通过将高纯硅砂与氧化硼和碱金属氧化物在铂坩埚中熔炼制得。BK7提供了光学均匀性、易抛光性和低成本的优秀组合，使其成为大多数可见光和近红外光学系统的默认材料。</p>
+
+<p>BK7的关键特性包括：</p>
+<ul>
+<li>从约350 nm到2.0 &mu;m的良好透过</li>
+<li>折射率n<sub>d</sub> = 1.5168（阿贝数V<sub>d</sub> = 64.17）</li>
+<li>易于加工、抛光和镀膜</li>
+<li>低成本且所有标准尺寸均可广泛获取</li>
+<li>良好的化学耐久性（耐湿气和弱酸）</li>
+<li>中等硬度（努氏610），适用于大多数操作环境</li>
+</ul>
+
+<h2>全面特性对比</h2>
+<p>下表提供了与光学系统设计相关的所有关键特性的并列对比：</p>
+
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">特性</th><th style="border:1px solid #e2e8f0;padding:8px;">紫外熔融石英</th><th style="border:1px solid #e2e8f0;padding:8px;">BK7（N-BK7）</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">透过范围</td><td style="border:1px solid #e2e8f0;padding:8px;">180 nm &ndash; 2.5 &mu;m</td><td style="border:1px solid #e2e8f0;padding:8px;">350 nm &ndash; 2.0 &mu;m</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">内部透过率（10 mm）</td><td style="border:1px solid #e2e8f0;padding:8px;">250 nm至2.0 &mu;m &gt;99%</td><td style="border:1px solid #e2e8f0;padding:8px;">400 nm至1.8 &mu;m &gt;99.5%</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">折射率（n<sub>d</sub>）</td><td style="border:1px solid #e2e8f0;padding:8px;">1.4585</td><td style="border:1px solid #e2e8f0;padding:8px;">1.5168</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">阿贝数（V<sub>d</sub>）</td><td style="border:1px solid #e2e8f0;padding:8px;">67.82</td><td style="border:1px solid #e2e8f0;padding:8px;">64.17</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">密度（g/cm&sup3;）</td><td style="border:1px solid #e2e8f0;padding:8px;">2.20</td><td style="border:1px solid #e2e8f0;padding:8px;">2.51</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">CTE（10<sup>-6</sup>/&deg;C，20&ndash;300&deg;C）</td><td style="border:1px solid #e2e8f0;padding:8px;">0.55</td><td style="border:1px solid #e2e8f0;padding:8px;">7.1</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">dn/dT（10<sup>-6</sup>/&deg;C @ 633 nm）</td><td style="border:1px solid #e2e8f0;padding:8px;">10.5</td><td style="border:1px solid #e2e8f0;padding:8px;">3.0</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">导热系数（W/m&middot;K）</td><td style="border:1px solid #e2e8f0;padding:8px;">1.38</td><td style="border:1px solid #e2e8f0;padding:8px;">1.11</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">应变点（&deg;C）</td><td style="border:1px solid #e2e8f0;padding:8px;">1050</td><td style="border:1px solid #e2e8f0;padding:8px;">557</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">退火点（&deg;C）</td><td style="border:1px solid #e2e8f0;padding:8px;">1140</td><td style="border:1px solid #e2e8f0;padding:8px;">565</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">软化点（&deg;C）</td><td style="border:1px solid #e2e8f0;padding:8px;">1585</td><td style="border:1px solid #e2e8f0;padding:8px;">820</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">努氏硬度（kg/mm&sup2;）</td><td style="border:1px solid #e2e8f0;padding:8px;">480</td><td style="border:1px solid #e2e8f0;padding:8px;">610</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">杨氏模量（GPa）</td><td style="border:1px solid #e2e8f0;padding:8px;">72.7</td><td style="border:1px solid #e2e8f0;padding:8px;">82.2</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">泊松比</td><td style="border:1px solid #e2e8f0;padding:8px;">0.17</td><td style="border:1px solid #e2e8f0;padding:8px;">0.206</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT（1064 nm，10 ns）</td><td style="border:1px solid #e2e8f0;padding:8px;">~20 J/cm&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">~10 J/cm&sup2;</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">LIDT（355 nm，10 ns）</td><td style="border:1px solid #e2e8f0;padding:8px;">~10 J/cm&sup2;</td><td style="border:1px solid #e2e8f0;padding:8px;">不推荐</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">化学耐久性</td><td style="border:1px solid #e2e8f0;padding:8px;">优异（除HF外）</td><td style="border:1px solid #e2e8f0;padding:8px;">良好（ISO 79-3 1级）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">均匀性（典型值）</td><td style="border:1px solid #e2e8f0;padding:8px;">&plusmn;1 &times; 10<sup>-6</sup></td><td style="border:1px solid #e2e8f0;padding:8px;">&plusmn;2 &times; 10<sup>-6</sup></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">自发荧光</td><td style="border:1px solid #e2e8f0;padding:8px;">极低（紫外级）</td><td style="border:1px solid #e2e8f0;padding:8px;">中等</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">相对成本（相同几何）</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7的2&ndash;4倍</td><td style="border:1px solid #e2e8f0;padding:8px;">1&times;（基准）</td></tr>
+</table>
+
+<h2>光学透过分析</h2>
+
+<h3>深紫外性能（&lt;350 nm）</h3>
+<p>这是两种材料之间最具决定性的差异。紫外熔融石英的有效透过可低至约180 nm，在193 nm（ArF准分子波长）时每10 mm内部透过率超过90%，在248 nm（KrF）时为95%。相比之下，BK7在约300 nm以下变得不透明，完全不适用于350 nm以下的任何应用。BK7中的氧化铁和其他过渡金属杂质在紫外区域产生强吸收带。</p>
+
+<p>对于需要350 nm以下紫外透过的应用——包括准分子激光光学、紫外光刻、紫外荧光显微镜、紫外固化系统和紫外光谱——紫外熔融石英不仅是首选而是必须的。在这些波长范围内，任何情况下都不能使用BK7。</p>
+
+<h3>可见光谱性能（400&ndash;700 nm）</h3>
+<p>两种材料在可见光谱中均具有优异的透过率。BK7在内部透过率方面实际上略有优势（从400 nm到1.8 &mu;m每10 mm超过99.5%），而熔融石英为（从250 nm到2.0 &mu;m每10 mm超过99%），尽管在大多数实际应用中差异可以忽略不计。BK7较高的折射率（1.517对1.458）意味着每个表面的光反射更少，但也需要更厚的增透膜才能达到相同的反射率性能。</p>
+
+<h3>近红外性能（700 nm&ndash;2.5 &mu;m）</h3>
+<p>超过1.8 &mu;m后，BK7开始显示来自铁和羟基杂质的吸收。到2.0 &mu;m时，标准10 mm厚度的BK7透过率降至50%以下。紫外熔融石英在约2.2 &mu;m以内保持良好的透过率，超过此值OH吸收带变得显著。对于2.0至2.5 &mu;m之间的应用，需要红外级（低OH）熔融石英。两种材料都不适用于超过2.5 &mu;m的中红外应用。</p>
+
+<h2>热学特性深入分析</h2>
+
+<h3>热膨胀系数</h3>
+<p>最显著的热学特性差异是CTE。BK7以7.1 &times; 10<sup>-6</sup>/&deg;C膨胀，而紫外熔融石英仅以0.55 &times; 10<sup>-6</sup>/&deg;C膨胀——低约13倍。这对任何在温度范围内运行的光学系统具有关键影响：</p>
+<ul>
+<li><strong>尺寸稳定性：</strong>100 mm BK7透镜加热50&deg;C时直径变化约35 &mu;m，而同尺寸熔融石英透镜仅变化约2.8 &mu;m。对于需要严格聚焦或光束位置稳定性的精密系统，熔融石英具有压倒性优势。</li>
+<li><strong>抗热冲击性：</strong>熔融石英的低CTE和高应变点（1050&deg;C对557&deg;C）的组合意味着它能承受极端温度梯度而不开裂。BK7更容易受热冲击影响，特别是在温度分布不均的大型光学元件中。</li>
+<li><strong>户外和航空航天应用：</strong>暴露在-40&deg;C至+70&deg;C温度范围（110&deg;C波动）的系统使用熔融石英光学元件将保持远更好的对准和聚焦。</li>
+</ul>
+
+<h3>热光系数（dn/dT）</h3>
+<p>虽然BK7的dn/dT（3.0 &times; 10<sup>-6</sup>/&deg;C）低于熔融石英（10.5 &times; 10<sup>-6</sup>/&deg;C），但总的热光程差（OPD）必须同时考虑dn/dT和CTE效应。热离焦能力取决于折射率变化和表面变形的组合。对于熔融石英，极低的CTE意味着即使dn/dT较高，表面面形也能得到保持。在大多数实际配置中，熔融石英的有效热焦距变化通常更小。</p>
+
+<h2>激光损伤阈值</h2>
+<p>激光损伤阈值（LIDT）对任何高功率激光应用都至关重要。紫外熔融石英在所有波长和脉冲宽度下均持续优于BK7：</p>
+<ul>
+<li><strong>1064 nm（Nd:YAG，10 ns脉冲）：</strong>熔融石英~20 J/cm&sup2;，BK7~10 J/cm&sup2;（2:1比率）</li>
+<li><strong>532 nm（倍频Nd:YAG）：</strong>熔融石英~12&ndash;15 J/cm&sup2;，BK7不推荐用于高能脉冲应用</li>
+<li><strong>355 nm（三倍频Nd:YAG）：</strong>熔融石英~8&ndash;10 J/cm&sup2;，BK7不适合</li>
+<li><strong>193/248 nm（准分子激光）：</strong>熔融石英15&ndash;40 J/cm&sup2;，BK7完全不透明且不适合</li>
+</ul>
+<p>熔融石英较高的LIDT来源于其更高的纯度（没有充当损伤成核位点的金属杂质）、更高的带隙能量（~9 eV对BK7的~4 eV）以及更好的抗紫外日晒性。对于通量超过约100 mJ/cm&sup2;的脉冲激光系统，无论波长如何，都应考虑将熔融石英作为最低标准。</p>
+
+<h2>机械与化学特性</h2>
+
+<h3>硬度与可抛光性</h3>
+<p>BK7比熔融石英更硬（努氏610对480），这使得BK7在操作和清洁过程中略耐表面划伤。然而，熔融石英较低的硬度也使其更容易、更快速地抛光到非常精细的表面光洁度，这在制造过程中部分抵消了较高的材料成本。两种材料都可以抛光到10-5划痕-麻点表面质量和&lambda;/10或更好的平面度。</p>
+
+<h3>耐化学性</h3>
+<p>两种材料对水、大多数酸（氢氟酸除外）和大气腐蚀都具有优异的耐受性。BK7符合ISO 79-3 1级气候耐受性标准。熔融石英作为纯SiO<sub>2</sub>，化学惰性更强，是实验室器皿和半导体工艺腔室的标准材料。两种材料都不应接触氢氟酸（HF），它会迅速侵蚀两者。</p>
+
+<h3>杨氏模量与重量</h3>
+<p>熔融石英的密度较低（2.20 g/cm&sup3;对BK7的2.51 g/cm&sup3;），在相同几何条件下重量轻约12%。这对航空航天应用和重量关键系统具有优势。BK7较高的杨氏模量（82.2 GPa对72.7 GPa）使其略刚度更高，这对需要在重力作用下最小变形的大型光学元件可能有益。</p>
+
+<h2>元件可用性</h2>
+<p>两种材料均可广泛用于各种标准光学元件类型。以下是常用元件的概要：</p>
+
+<table style="width:100%;border-collapse:collapse;margin:1.5em 0;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">元件类型</th><th style="border:1px solid #e2e8f0;padding:8px;">紫外熔融石英</th><th style="border:1px solid #e2e8f0;padding:8px;">BK7</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">平凸透镜</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none;">可用</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none;">可用</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">双凸/激光透镜</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-laser-lenses/" style="color:#2563eb;text-decoration:none;">可用</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-bi-convex/" style="color:#2563eb;text-decoration:none;">可用</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">光学窗口</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/" style="color:#2563eb;text-decoration:none;">可用</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none;">可用</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">光学棱镜</td><td style="border:1px solid #e2e8f0;padding:8px;">可用</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-optical-prisms/" style="color:#2563eb;text-decoration:none;">可用</a></td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">光学反射镜</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-mirrors/" style="color:#2563eb;text-decoration:none;">可用</a></td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-optical-mirrors/" style="color:#2563eb;text-decoration:none;">可用</a></td></tr>
+</table>
+
+<p>熔融石英还提供柱面透镜、球透镜和棒透镜等特殊形式。BK7还有弯月透镜、C透镜和球透镜。对于定制几何形状，两种材料都可以毛坯形式订购并加工到规格要求。</p>
+
+<h2>应用选型决策矩阵</h2>
+<p>基于上述特性对比，以下是选择紫外熔融石英和BK7的实用决策框架：</p>
+
+<h3>选择紫外熔融石英的情况：</h3>
+<ul>
+<li>您的系统在350 nm以下工作（紫外激光、荧光、光谱）</li>
+<li>高功率脉冲激光通量超过~100 mJ/cm&sup2;</li>
+<li>需要准分子激光兼容性（193 nm、248 nm）</li>
+<li>宽温度范围内的热稳定性至关重要（太空、户外、干涉测量）</li>
+<li>需要抗热冲击性（快速温度循环）</li>
+<li>需要超低自发荧光（拉曼光谱、单分子荧光）</li>
+<li>需要高精度波前应用的优异均匀性</li>
+</ul>
+
+<h3>选择BK7的情况：</h3>
+<ul>
+<li>您的系统完全在可见光到近红外范围内工作（400 nm &ndash; 1.8 &mu;m）</li>
+<li>激光功率水平中等（CW &lt; 100 W或低能量脉冲）</li>
+<li>成本是主要驱动因素，尤其是大口径光学元件（&gt;50 mm）</li>
+<li>光学系统在室温附近或室温下运行，热波动小</li>
+<li>标准目录光学元件满足您的要求</li>
+<li>单位成本差异叠加的批量生产</li>
+</ul>
+
+<h2>成本-性能权衡</h2>
+<p>熔融石英和BK7之间的成本差异是真实且显著的。对于等效几何形状和表面光洁度，熔融石英光学元件的成本通常是BK7的2&ndash;4倍。原材料成本更高，因为高纯合成熔融石英毛坯的生产成本更高。此外，熔融石英较低的硬度可能略微增加抛光时间（但这被更快的材料去除率部分抵消）。</p>
+
+<p>然而，当您考虑系统级经济性时，成本情况会发生变化：</p>
+<ul>
+<li><strong>故障成本：</strong>被紫外激光损坏的BK7窗口更换成本可能为50美元，但系统停机可能每小时损失5,000美元以上。熔融石英从根本上防止了这种故障模式。</li>
+<li><strong>性能成本：</strong>在紫外应用中使用BK7会导致显著的透过率损失、信号降低和潜在的日晒效应。系统性能不足，需要更多增益、更长积分时间或降低产量。</li>
+<li><strong>热重新校准：</strong>在可变温度环境中使用BK7的系统可能需要定期重新校准以保持聚焦和对准，增加运营成本。</li>
+</ul>
+<p>经验法则：如果您的应用在BK7的舒适区内（可见光、中等功率、稳定温度），使用BK7可节省60&ndash;75%的光学元件成本。如果您处于BK7能力的边缘，熔融石英的溢价几乎总是通过提高的可靠性和性能来证明合理。</p>
+
+<h2>常见材料选择错误</h2>
+<p>基于我们为数千客户制造光学元件的经验，以下是我们在材料选择中看到的最常见错误：</p>
+
+<h3>1. 将BK7用于近紫外应用（350&ndash;380 nm）</h3>
+<p>在BK7透过范围的边界处，内部透过率开始下降。对于20 mm厚的BK7透镜在350 nm处，透过率仅约90%，在更短波长时进一步下降。如果您的系统在355 nm（三倍频Nd:YAG）工作，BK7充其量是勉强可用的。始终在您确切的工作波长和厚度下验证透过率数据。</p>
+
+<h3>2. 忽视高功率连续激光系统中的dn/dT</h3>
+<p>即使在LIDT不是问题的连续波（CW）激光系统中，吸收的激光功率也会引起局部加热和热透镜效应。BK7较高的CTE意味着光学元件在热负荷下变形更大，降低光束质量。对于功率超过约100 W的CW激光系统，建议所有透射光学元件使用熔融石英以最小化热透镜效应。</p>
+
+<h3>3. 为所有应用过度指定熔融石英</h3>
+<p>相反，为BK7性能完美的简单可见光成像系统指定熔融石英会浪费2&ndash;4倍的光学预算。材料选择应匹配应用需求，而不是默认选择最昂贵的选项。</p>
+
+<h2>常见问题解答</h2>
+
+<h3>BK7能透过紫外光吗？</h3>
+<p>BK7可以透过350&ndash;400 nm范围内的部分近紫外光，但在380 nm以下其透过率由于氧化铁吸收而迅速下降。在300 nm处，标准BK7基本上是不透明的。对于350 nm以下的任何应用，您必须使用紫外熔融石英或其他紫外级材料。BK7不应在紫外激光、紫外光谱或荧光应用中使用。</p>
+
+<h3>紫外熔融石英和熔融石英一样吗？</h3>
+<p>它们相关但不完全相同。熔融石英通常指通过熔合天然石英晶体制得的材料，含有比合成熔融石英更多的杂质。紫外级熔融石英是合成的（由SiCl<sub>4</sub>制得），金属杂质含量低得多，从而实现更深的紫外透过。对于紫外应用，始终指定紫外级或合成熔融石英。</p>
+
+<h3>我可以在1064 nm的Nd:YAG激光系统中使用BK7光学元件吗？</h3>
+<p>可以，适用于低到中等功率水平。BK7在1064 nm处透过良好，许多低功率Nd:YAG系统使用BK7光学元件。然而，对于通量超过约10 J/cm&sup2;的脉冲Nd:YAG系统，应切换到熔融石英以获得更好的LIDT和可靠性。对于功率超过约100 W的CW系统，也建议使用熔融石英以最小化热透镜效应。</p>
+
+<h3>超过100 mm口径的大型光学元件用熔融石英怎么样？</h3>
+<p>大型熔融石英毛坯可用，但比BK7贵得多且交货时间更长。对于可见光应用中的大窗口或反射镜，紫外透过和极端热稳定性不是必需时，BK7是务实的选择。150 mm熔融石英毛坯的成本可能是BK7的5&ndash;8倍。</p>
+
+<h3>材料选择是否影响增透膜性能？</h3>
+<p>是的，间接影响。基底和镀膜材料之间的折射率差异影响增透膜设计。BK7（n=1.517）和熔融石英（n=1.458）需要不同的镀膜设计以获得最佳性能。此外，紫外应用需要特殊的镀膜材料（如Al<sub>2</sub>O<sub>3</sub>和MgF<sub>2</sub>）在紫外中工作，而可见光镀膜通常使用Ta<sub>2</sub>O<sub>5</sub>/SiO<sub>2</sub>或TiO<sub>2</sub>/SiO<sub>2</sub>组合。始终为您的确切波长和基底材料组合指定镀膜。</p>
+
+<h3>熔融石英与BK7在户外光学系统中如何比较？</h3>
+<p>由于其极低的热膨胀系数（0.55对7.1 &times; 10<sup>-6</sup>/&deg;C），熔融石英在户外应用中远优于BK7。户外光学系统经历30&ndash;50&deg;C的日温差和60&deg;C或更大的季节温差。熔融石英光学元件在这些温度变化中保持面形和对准，而BK7光学元件可能会显著偏移焦点和对准。太阳照射还会增加紫外辐射，可能随时间导致BK7日晒效应。</p>
+
+<h2>结论</h2>
+<p>紫外熔融石英和BK7都是优秀的光学材料，但服务于根本不同的应用领域。BK7是在中等条件下运行的可见光和近红外光学系统的成本效益型主力材料。紫外熔融石英是紫外透过、高功率激光、热苛刻环境和需要最高光学均匀性的应用所需的优质材料。最佳材料选择的关键是将材料特性与您特定的波长、功率、温度和环境要求相匹配，而不是默认选择任何一种材料。</p>
+
+<p>恒鼎光使用紫外熔融石英和BK7两种材料制造精密光学元件，包括<a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none;">熔融石英平凸透镜</a>、<a href="/products/fused-silica-optical-windows/" style="color:#2563eb;text-decoration:none;">熔融石英窗口</a>、<a href="/products/fused-silica-laser-lenses/" style="color:#2563eb;text-decoration:none;">熔融石英激光透镜</a>、<a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none;">BK7平凸透镜</a>、<a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none;">BK7窗口</a>和<a href="/products/bk7-optical-prisms/" style="color:#2563eb;text-decoration:none;">BK7棱镜</a>。所有元件均可提供定制镀膜、严格公差和完整检测报告。请联系我们的工程团队获取您下一个项目的材料选择指导。</p>
+    </div>
+</div>
     
-    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none">UV Fused Silica Plano-Convex Lenses</a></li>
-                        <li><a href="/quality-assurance.html" style="color:#94a3b8;text-decoration:none;">Quality Assurance</a></li><li style="margin-bottom:0.5rem"><a href="/products/fused-silica-optical-windows/" style="color:#2563eb;text-decoration:none">UV Fused Silica Windows</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none">BK7 Plano-Convex Lenses</a></li></ul></div>
     <div class="article-cta">
         <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
         <p data-i18n="blogCtaDesc">PhotonEdge offers precision optical components with competitive pricing and fast delivery. Contact us for a free quote.</p>
