@@ -470,7 +470,7 @@
 
 <!-- Hero Section -->
 <section class="p31-hero">
-    <h1>Precision Optical Components for UV, Visible & IR Systems</h1>
+    <h1 data-i18n="productsHeroTitle">Precision Optical Components for UV, Visible & IR Systems</h1>
     <p class="subtitle">67 standard optical components across 10 categories. From UV fused silica lenses to IR windows — engineered for performance, backed by inspection evidence.</p>
     <div class="p31-hero-cta">
         <a href="#product-grid" class="btn btn-primary">Browse Components</a>
@@ -480,7 +480,7 @@
 
 <!-- Category Quick Nav -->
 <section class="p31-cat-section">
-    <h2>Shop by Product Category</h2>
+    <h2 data-i18n="productsCategoryTitle">Shop by Product Category</h2>
     <p class="section-desc">Find the right component quickly by browsing our most popular categories</p>
     <div class="p31-cat-grid">
         <a href="?component=Lens" class="p31-cat-card" onclick="document.getElementById('filter-component').value='Lens';window.applyFilters();window.scrollTo({top:document.getElementById('p31-filter-section').offsetTop - 80,behavior:'smooth'});return false;">
@@ -533,7 +533,7 @@
     <div class="p31-filter-container">
         <div class="p31-filter-row">
             <div class="p31-filter-group">
-                <label>Component Type</label>
+                <label data-i18n="filterComponent">Component Type</label>
                 <select id="filter-component" onchange="window.applyFilters()">
                     <option value="">All Components</option>
                     <option value="Lens">Lenses</option>
@@ -547,9 +547,9 @@
                 </select>
             </div>
             <div class="p31-filter-group">
-                <label>Material</label>
+                <label data-i18n="filterMaterial">Material</label>
                 <select id="filter-material" onchange="window.applyFilters()">
-                    <option value="">All Materials</option>
+                    <option value="" data-i18n="filterAllMaterials">All Materials</option>
                     <option value="BK7">BK7</option>
                     <option value="UV Fused Silica">UV Fused Silica</option>
                     <option value="CaF2">CaF2 (Calcium Fluoride)</option>
@@ -561,7 +561,7 @@
                 </select>
             </div>
             <div class="p31-filter-group">
-                <label>Wavelength Range</label>
+                <label data-i18n="filterWavelengthRange">Wavelength Range</label>
                 <select id="filter-wavelength" onchange="window.applyFilters()">
                     <option value="">All Wavelengths</option>
                     <option value="UV (190-400nm)">UV (190-400nm)</option>
@@ -573,9 +573,9 @@
                 </select>
             </div>
             <div class="p31-filter-group">
-                <label>Application</label>
+                <label data-i18n="productApplications">Application</label>
                 <select id="filter-application" onchange="window.applyFilters()">
-                    <option value="">All Applications</option>
+                    <option value="" data-i18n="filterAllApplications">All Applications</option>
                     <option value="Laser">Laser Systems</option>
                     <option value="Imaging">Imaging</option>
                     <option value="Medical">Medical Devices</option>
@@ -589,7 +589,7 @@
                 </select>
             </div>
             <div class="p31-filter-group">
-                <label>Coating Type</label>
+                <label data-i18n="filterCoating">Coating Type</label>
                 <select id="filter-coating" onchange="window.applyFilters()">
                     <option value="">All Coatings</option>
                     <option value="A1">A1 (Broadband AR, Vis-NIR)</option>
@@ -601,12 +601,12 @@
             </div>
             <div class="p31-filter-group">
                 <label>Search</label>
-                <input type="text" id="filter-search" placeholder="Search products..." oninput="window.applyFilters()">
+                <input type="text" id="filter-search" data-i18n-placeholder="filterSearchProducts" placeholder="Search products..." oninput="window.applyFilters()">
             </div>
-            <button class="p31-filter-reset" onclick="window.resetFilters()">Reset</button>
+            <button class="p31-filter-reset" onclick="window.resetFilters()" data-i18n="filterReset">Reset</button>
         </div>
         <div class="p31-filter-summary">
-            <span>Showing <strong><span id="visible-count">70</span></strong> of <strong><span id="total-count">70</span></strong> components</span>
+            <span><span data-i18n="filterShowing">Showing</span> <strong><span id="visible-count">70</span></strong> <span data-i18n="filterOf">of</span> <strong><span id="total-count">70</span></strong> <span data-i18n="filterComponentsUnit">components</span></span>
             <span>All prices in USD — reference pricing only</span>
         </div>
     </div>
@@ -617,7 +617,7 @@
     <div class="p31-products-container">
         <div id="no-results" class="p31-no-results">
             <p style="font-size: 40px; margin-bottom: 12px;">🔍</p>
-            <p>No products match your filters. Try adjusting your criteria or <a href="/contact.html">contact us for custom solutions</a>.</p>
+            <p data-i18n="filterNoResults">No products match your filters. Try adjusting your criteria or <a href="/contact.html">contact us for custom solutions</a>.</p>
         </div>
         <div id="product-grid" class="p31-product-grid">
             <!-- Products rendered by JS -->
@@ -631,19 +631,19 @@
         <div class="p31-cta-card">
             <div class="p31-cta-icon">🛠️</div>
             <h3>Custom Optics</h3>
-            <p>Don't see exactly what you need? We manufacture custom optical components to your specifications.</p>
+            <p data-i18n="productsCustomCTA">Don't see exactly what you need? We manufacture custom optical components to your specifications.</p>
             <a href="/engineering.html">Explore Custom Manufacturing →</a>
         </div>
         <div class="p31-cta-card">
             <div class="p31-cta-icon">🤖</div>
             <h3>AI Optical Engineer</h3>
-            <p>Get instant recommendations for your application. Material selection, coating advice, and more.</p>
+            <p data-i18n="productsAdvisorCTA">Get instant recommendations for your application. Material selection, coating advice, and more.</p>
             <a href="/ai-optical-engineer.html">Ask AI Engineer →</a>
         </div>
         <div class="p31-cta-card">
             <div class="p31-cta-icon">📋</div>
             <h3>Request a Quote</h3>
-            <p>Tell us your requirements and get a detailed quote with lead times, pricing, and technical review.</p>
+            <p data-i18n="productsQuoteCTA">Tell us your requirements and get a detailed quote with lead times, pricing, and technical review.</p>
             <a href="/contact.html">Get Your Quote →</a>
         </div>
     </div>

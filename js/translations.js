@@ -645,6 +645,43 @@ var translations = {
     "filterBy": "Filter By",
     "filterCoating": "Coating Type",
     "filterMaterial": "Material",
+    "filterComponent": "Component Type",
+    "filterWavelengthRange": "Wavelength Range",
+    "filterAllMaterials": "All Materials",
+    "filterAllApplications": "All Applications",
+    "filterAllCoatings": "All Coatings",
+    "filterAllComponents": "All Components",
+    "filterSearchProducts": "Search products...",
+    "filterReset": "Reset",
+    "filterShowing": "Showing",
+    "filterOf": "of",
+    "filterComponentsUnit": "components",
+
+    "productsHeroTitle": "Precision Optical Components for UV, Visible & IR Systems",
+    "productsCategoryTitle": "Shop by Product Category",
+    "productsCustomCTA": "Don't see exactly what you need? We manufacture custom optical components to your specifications.",
+    "productsAdvisorCTA": "Get instant recommendations for your application. Material selection, coating advice, and more.",
+    "productsQuoteCTA": "Tell us your requirements and get a detailed quote with lead times, pricing, and technical review.",
+    "filterNoResults": "No products match your filters. Try adjusting your criteria or <a href=\"/contact.html\">contact us for custom solutions</a>.",
+    "aboutPhilosophy": "Our Philosophy",
+    "aboutEngFirst": "Engineering First",
+    "aboutEngFirstDesc": "We review your specifications before pricing — ensuring you get the right optic, not the most expensive one.",
+    "aboutSpecNotTightest": "Right Specification, Not Tightest",
+    "aboutSpecNotTightestDesc": "Tighter tolerances don't always mean better system performance. We help identify the optimal spec for your application.",
+    "aboutSupplyChain": "Supply Chain Strategy",
+    "aboutMfgFlex": "Manufacturing Flexibility",
+    "aboutMfgFlexDesc": "We match each project to the optimal manufacturing capability — whether that's our in-house production or our vetted partner network.",
+    "aboutQualityCommit": "Quality Commitment",
+    "aboutInspTransparency": "Inspection Transparency",
+    "aboutInspTransparencyDesc": "Full inspection documentation with every shipment. Interferometry data, spectrophotometry reports, and dimensional inspection included.",
+    "aboutGlobalVision": "Global Vision",
+    "aboutProtoProduction": "Prototype to Production",
+    "aboutProtoProductionDesc": "From 1 piece to 10,000 pieces — same engineering rigor, same quality system. Fast prototype turnaround, reliable volume delivery.",
+    "aboutGlobalSupport": "Global Support, Local Feel",
+    "aboutGlobalSupportDesc": "English-speaking engineering support, DDP/DAP shipping with full customs documentation. We make international ordering as easy as domestic.",
+    "aboutOperatingModel": "Our Operating Model",
+    "aboutWhyEngineers": "Why Engineers Work With PhotonEdge",
+    "aboutPageHeroSubtitle": "Engineering-driven precision optics partner. From prototype to volume production.",
     "followUs": "Follow Us",
     "formCompany": "Company",
     "formEmail": "Email",
@@ -2314,6 +2351,7 @@ var translations = {
     "coatircoatingsRelProd2": "Germanium Infrared Lenses",
     "coatircoatingsRelProd3": "Germanium Optical Windows",
     "coatircoatingsRelProd4": "CaF₂ Ultrafast Laser Optics",
+    "coatircoatingsRelProd5": "IR Bandpass Filters",
     "coatircoatingsRelTitle": "Related Products",
     "coatircoatingsSpec1": "AR Reflectance",
     "coatircoatingsSpec2": "HR Reflectance",
@@ -2766,7 +2804,44 @@ var translations = {
     "filterCategory": "分类",
     "filterCoating": "镀膜类型",
     "filterMaterial": "材料",
+    "filterComponent": "元件类型",
+    "filterWavelengthRange": "波长范围",
+    "filterAllMaterials": "所有材料",
+    "filterAllApplications": "所有应用",
+    "filterAllCoatings": "所有镀膜",
+    "filterAllComponents": "所有元件",
+    "filterSearchProducts": "搜索产品...",
+    "filterReset": "重置",
+    "filterShowing": "显示",
+    "filterOf": "共",
+    "filterComponentsUnit": "个元件",
+
+    "productsHeroTitle": "紫外、可见光与红外精密光学元件",
+    "productsCategoryTitle": "按产品分类浏览",
+    "productsCustomCTA": "没有找到您需要的产品？我们按您的规格定制光学元件。",
+    "productsAdvisorCTA": "获取即时产品推荐——材料选型、镀膜建议、一站式工程指导。",
+    "productsQuoteCTA": "告诉我们您的需求，获取包含交期、报价和技术评审的详细报价。",
+    "filterNoResults": "没有匹配的产品。请调整筛选条件或<a href=\"/contact.html\">联系我们定制</a>。",
     "focalLength": "焦距",
+    "aboutPhilosophy": "我们的理念",
+    "aboutEngFirst": "工程优先",
+    "aboutEngFirstDesc": "我们在报价前先评审您的规格——确保您获得合适的光学元件，而非最贵的。",
+    "aboutSpecNotTightest": "合适规格，而非极限规格",
+    "aboutSpecNotTightestDesc": "更紧的公差并不意味着更好的系统性能。我们帮助您确定应用的最优规格。",
+    "aboutSupplyChain": "供应链战略",
+    "aboutMfgFlex": "制造灵活性",
+    "aboutMfgFlexDesc": "我们为每个项目匹配最优的制造能力——无论是自有产线还是经过验证的合作伙伴网络。",
+    "aboutQualityCommit": "质量承诺",
+    "aboutInspTransparency": "检测透明",
+    "aboutInspTransparencyDesc": "每次发货附带完整检测文档，包括干涉仪数据、光谱报告和尺寸检测报告。",
+    "aboutGlobalVision": "全球视野",
+    "aboutProtoProduction": "从原型到量产",
+    "aboutProtoProductionDesc": "从1件到10000件——同样的工程严谨度、同样的质量体系。快速原型交付，可靠的批量供货。",
+    "aboutGlobalSupport": "全球支持，本地服务",
+    "aboutGlobalSupportDesc": "英语工程技术支持，DDP/DAP运输含完整通关文件。让国际采购像国内一样便捷。",
+    "aboutOperatingModel": "我们的运营模式",
+    "aboutWhyEngineers": "为什么工程师选择恒鼎光",
+    "aboutPageHeroSubtitle": "工程驱动的精密光学合作伙伴。从原型到批量生产。",
     "followUs": "关注我们",
     "footerDesc": "精密光学解决方案提供商",
     "formCompany": "公司",
@@ -2812,7 +2887,7 @@ var translations = {
     "loading": "加载中...",
     "loadingProduct": "正在加载产品详情...",
     "matCaF2": "CaF2",
-    "matGe": "",
+    "matGe": "锗",
     "matK9": "K9 (BK7) 光学玻璃",
     "matQuartz": "石英玻璃",
     "matSapphire": "蓝宝石",
@@ -4933,3 +5008,79 @@ var translations = {
     "coatmetalliccoatingsTitle": "金属镀膜 (Al/Au/Ag)",
   }
 };
+
+// ===== i18n Core Functions =====
+// Get current language from localStorage, default to 'en'
+function getCurrentLanguage() {
+    return localStorage.getItem('lang') || 'en';
+}
+
+// Apply data-i18n translations to all elements on the page
+function applyTranslations() {
+    var lang = getCurrentLanguage();
+    var dict = translations[lang];
+    if (!dict) return;
+
+    // Apply text content for data-i18n elements
+    var elements = document.querySelectorAll('[data-i18n]');
+    for (var i = 0; i < elements.length; i++) {
+        var key = elements[i].getAttribute('data-i18n');
+        if (dict[key] !== undefined && dict[key] !== '') {
+            elements[i].textContent = dict[key];
+        }
+    }
+
+    // Apply placeholder attributes
+    var phElements = document.querySelectorAll('[data-i18n-placeholder]');
+    for (var j = 0; j < phElements.length; j++) {
+        var phKey = phElements[j].getAttribute('data-i18n-placeholder');
+        if (dict[phKey] !== undefined && dict[phKey] !== '') {
+            phElements[j].setAttribute('placeholder', dict[phKey]);
+        }
+    }
+
+    // Apply title attributes
+    var titleElements = document.querySelectorAll('[data-i18n-title]');
+    for (var k = 0; k < titleElements.length; k++) {
+        var titleKey = titleElements[k].getAttribute('data-i18n-title');
+        if (dict[titleKey] !== undefined && dict[titleKey] !== '') {
+            titleElements[k].setAttribute('title', dict[titleKey]);
+        }
+    }
+
+    // Update lang attribute on html
+    document.documentElement.lang = lang;
+
+    // Update language button states
+    var btns = document.querySelectorAll('.lang-btn');
+    for (var m = 0; m < btns.length; m++) {
+        btns[m].classList.remove('active');
+        var btnLang = btns[m].getAttribute('onclick');
+        if (btnLang && btnLang.indexOf("'" + lang + "'") !== -1) {
+            btns[m].classList.add('active');
+        }
+    }
+}
+
+// Switch language and re-apply all translations
+function setLanguage(lang) {
+    if (lang !== 'en' && lang !== 'zh') return;
+    localStorage.setItem('lang', lang);
+
+    // Apply static translations
+    applyTranslations();
+
+    // Re-render dynamic content if applicable
+    if (typeof renderProducts === 'function' && typeof PRODUCTS !== 'undefined') {
+        renderProducts(PRODUCTS);
+    }
+    if (typeof renderBlogPosts === 'function') {
+        renderBlogPosts();
+    }
+    if (typeof renderNewsPosts === 'function') {
+        renderNewsPosts();
+    }
+    if (typeof renderV90Knowledge === 'function') {
+        renderV90Knowledge();
+    }
+}
