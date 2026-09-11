@@ -1,46 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | PhotonEdge Precision Optics</title>
-    <meta name="description" content="The page you're looking for doesn't exist. Browse PhotonEdge's precision optical components catalog or contact us for help.">
-    <meta name="keywords" content="光学元件,光学透镜,棱镜,反射镜,滤光片,激光扩束镜,偏振片,光学窗口片,光学镀膜,定制光学,北京恒鼎光,PhotonEdge">
-    <meta property="og:title" content="404 - Page Not Found | PhotonEdge">
-    <meta property="og:description" content="The page you are looking for does not exist. Browse our precision optical components.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://photonedgeoptics.com/404.html">
-    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
-    <meta property="og:site_name" content="PhotonEdge">
-    <link rel="canonical" href="https://photonedgeoptics.com/404.html">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="404 - Page Not Found | PhotonEdge">
-    <meta name="twitter:description" content="The page you are looking for does not exist.">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
-    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/chatbot.css">
+# -*- coding: utf-8 -*-
+import os, re, json
 
-    <!-- Baidu Search Auto Push -->
-    <script>
-        (function(){
-            var bp = document.createElement('script');
-            var curProtocol = window.location.protocol.split(':')[0];
-            if (curProtocol === 'https') {
-                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-            } else {
-                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
-            }
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(bp, s);
-        })();
-    </script>
-    <meta name="robots" content="noindex, nofollow">
-    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/404.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/404.html?lang=zh">
-</head>
-<body>
-    <header class="header">
+BASE = '/Coze/Drive/萧邮/v123-work'
+
+# ============================================================
+# NEW NAV HTML
+# ============================================================
+NEW_NAV = '''<header class="header">
         <div class="container">
             <a href="/" class="logo">
     <picture>
@@ -89,20 +55,51 @@
                 <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
         </div>
-    </header>
+    </header>'''
 
-    <section class="container" style="text-align:center; padding:100px 20px; min-height:60vh;">
-        <h1 style="font-size:6rem; color:#3b82f6; margin-bottom:10px;" data-i18n="error404Code">404</h1>
-        <h2 style="font-size:1.8rem; margin-bottom:20px;" data-i18n="error404Title">Page Not Found</h2>
-        <p style="font-size:1.1rem; color:#64748b; max-width:600px; margin:0 auto 40px;" data-i18n="error404Desc">The page you're looking for doesn't exist or has been moved. Try searching for products or go back to homepage.</p>
-        <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
-            <a href="/" class="btn btn-primary" data-i18n="goHome">Go to Homepage</a>
-            <a href="/products.html" class="btn btn-secondary" data-i18n="viewAllProducts">View All Products</a>
-            <a href="/contact.html" class="btn btn-secondary" data-i18n="navContact">Contact Us</a>
-        </div>
-    </section>
+# ============================================================
+# STEP 1: Batch update navigation in all HTML files
+# ============================================================
+def update_nav(filepath, is_about=False):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Find the header section: from <header class="header"> to </header>
+    # Then find <nav...>...</nav> within it
+    header_match = re.search(r'(<header class="header">.*?<nav class="nav">)(.*?)(</nav>.*?</header>)', content, re.DOTALL)
+    if not header_match:
+        return False
+    
+    # Build the new nav content
+    nav_content = NEW_NAV
+    # Extract everything before <header and after </header> in the header section
+    # Actually, let's replace the entire header block
+    
+    # Find the full header block
+    full_header_pattern = r'<header class="header">.*?</header>'
+    full_header_match = re.search(full_header_pattern, content, re.DOTALL)
+    if not full_header_match:
+        return False
+    
+    # For about.html, we need to mark the About nav item as active
+    new_header = nav_content
+    if is_about:
+        # Mark About dropdown as active
+        new_header = new_header.replace(
+            '<a href="#" class="nav-link" data-i18n="navAboutDropdown">About',
+            '<a href="#" class="nav-link active" data-i18n="navAboutDropdown">About'
+        )
+    
+    new_content = content[:full_header_match.start()] + new_header + content[full_header_match.end():]
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    return True
 
-    <footer class="footer">
+# ============================================================
+# STEP 2: Update Footer in all HTML files
+# ============================================================
+NEW_FOOTER = '''<footer class="footer">
     <div class="container">
         <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
             <div class="footer-brand">
@@ -155,9 +152,45 @@
             <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote &rarr;</a>
         </div>
     </div>
-</footer>
+</footer>'''
 
-    <script src="/js/translations.js"></script>
-    <script src="/js/chatbot.js"></script>
-</body>
-</html>
+def update_footer(filepath):
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    footer_pattern = r'<footer class="footer">.*?</footer>'
+    footer_match = re.search(footer_pattern, content, re.DOTALL)
+    if not footer_match:
+        return False
+    
+    new_content = content[:footer_match.start()] + NEW_FOOTER + content[footer_match.end():]
+    
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+    return True
+
+# ============================================================
+# Process all HTML files
+# ============================================================
+html_count = 0
+nav_updated = 0
+footer_updated = 0
+
+for root, dirs, files in os.walk(BASE):
+    for fname in files:
+        if not fname.endswith('.html'):
+            continue
+        fpath = os.path.join(root, fname)
+        rel = os.path.relpath(fpath, BASE)
+        html_count += 1
+        
+        is_about = (fname == 'about.html' and '/' not in rel.replace('\\','/').split(fname)[0].strip('/'))
+        
+        if update_nav(fpath, is_about=is_about):
+            nav_updated += 1
+        if update_footer(fpath):
+            footer_updated += 1
+
+print("Nav updated: {}/{}".format(nav_updated, html_count))
+print("Footer updated: {}/{}".format(footer_updated, html_count))
+print("Total HTML files: {}".format(html_count))

@@ -63,7 +63,7 @@ var NEWS_ARTICLES = [
     "excerptZh": "越来越多的医疗器械OEM开始从中国制造商采购精密光学元件。行业分析显示，中国在表面质量、尺寸精度和镀膜性能方面的光学制造能力已达到国际标准。与西方供应商相比30-40%的成本优势正在推动这一趋势。",
     "category": "Industry News",
     "date": "2026-05-20",
-    "image": "/images/products/optical-filters/narrow-band-interference-filters.jpg"
+    "image": "/images/products/optical-filters/laser-line-filters.jpg"
   },
   {
     "id": 7,

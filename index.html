@@ -101,24 +101,34 @@
 </a>
             <nav class="nav">
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
-                
                 <ul class="nav-list">
                     <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
                     <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
-                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
-                    <li><a href="/product-advisor.html" class="nav-link" data-i18n="navProductAdvisor">Product Advisor</a></li>
-                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-                    <li><a href="/coatings/" class="nav-link" data-i18n="navCoatings">Coating Database</a></li>
-                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
-                    <li><a href="/evidence.html" class="nav-link" data-i18n="navEvidence">Evidence Center</a></li>
-                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
-                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
-                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request Engineering Review</a></li>
+                    <li><a href="/contact.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navResources">Resources &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/knowledge-center/" class="dropdown-item" data-i18n="navKnowledgeCenter"><span class="dropdown-icon">📚</span> Knowledge Center</a>
+                            <a href="/application-notes/" class="dropdown-item" data-i18n="navApplicationNotes"><span class="dropdown-icon">📄</span> Application Notes</a>
+                            <a href="/coatings/" class="dropdown-item" data-i18n="navCoatings"><span class="dropdown-icon">🔬</span> Coating Database</a>
+                            <a href="/materials.html" class="dropdown-item" data-i18n="navMaterials"><span class="dropdown-icon">🧪</span> Materials Guide</a>
+                            <a href="/faq.html" class="dropdown-item" data-i18n="navFAQ"><span class="dropdown-icon">❓</span> FAQ</a>
+                            <a href="/ai-optical-engineer.html" class="dropdown-item" data-i18n="navAIOptical"><span class="dropdown-icon">🤖</span> AI Optical Engineer</a>
+                        </div>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/about.html" class="dropdown-item" data-i18n="navAboutPhotonEdge"><span class="dropdown-icon">🏢</span> About PhotonEdge</a>
+                            <a href="/quality-assurance.html" class="dropdown-item" data-i18n="navQualityDoc"><span class="dropdown-icon">✅</span> Quality &amp; Documentation</a>
+                            <a href="/case-studies.html" class="dropdown-item" data-i18n="navCaseStudies"><span class="dropdown-icon">📋</span> Case Studies</a>
+                        </div>
+                    </li>
                 </ul>
-                <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                    <span class="cart-badge" id="compareBadge">0</span>
-                </a>
+                <a href="/compare.html" class="cart-icon" title="Compare">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 14 8 14"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 8 8 9"/></svg>
+                <span class="cart-badge" id="compareBadge">0</span>
+            </a>
                 <a href="/cart.html" class="cart-icon" title="Shopping Cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
                     <span class="cart-badge" id="cartBadge">0</span>
@@ -127,638 +137,262 @@
                     <button class="lang-btn notranslate active" onclick="setLanguage('en')">EN</button>
                     <button class="lang-btn notranslate" onclick="setLanguage('zh')">中文</button>
                 </div>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
         </div>
     </header>
-
     
     <div class="request-quote-float">
         <a href="/contact.html" class="quote-btn">
             <span class="quote-icon">&#9993;</span>
-            <span data-i18n="navRFQ">Request Engineering Review</span>
+            <span data-i18n="navCTA">Request a Quote</span>
         </a>
     </div>
 
-<!-- ============ SCREEN 1: HERO + AI Mini Entry ============ -->
-<section class="hero v90-hero">
+<!-- ============ SCREEN 1: HERO ============ -->
+<section class="hero v90-hero" style="padding:160px 0 100px;">
     <div class="container">
-        <div class="v90-hero-grid">
-            <div class="v90-hero-text">
-                <h1 data-i18n="v90HeroTitle">Precision Optical Components for Advanced Photonics Systems</h1>
-                <p class="subtitle" data-i18n="v90HeroSubtitle">From material selection to volume production — we engineer optical solutions that perform in the real world, not just on spec sheets.</p>
-                <!-- Trust Bar -->
-                <div class="hero-trust-bar v90-trust-bar">
-                    <div class="trust-item">
-                        <span class="trust-number">15+ Years</span>
-                        <span class="trust-label">Optical Engineering</span>
-                    </div>
-                    <div class="trust-divider"></div>
-                    <div class="trust-item">
-                        <span class="trust-number">30+ Materials</span>
-                        <span class="trust-label">Optical Materials</span>
-                    </div>
-                    <div class="trust-divider"></div>
-                    <div class="trust-item">
-                        <span class="trust-number">ISO 9001</span>
-                        <span class="trust-label">Quality System</span>
-                    </div>
-                    <div class="trust-divider"></div>
-                    <div class="trust-item">
-                        <span class="trust-number">Custom</span>
-                        <span class="trust-label">Engineering Support</span>
-                    </div>
-                </div>
-                <!-- CTA Buttons -->
-                <div class="hero-btns v90-hero-btns">
-                    <a href="/ai-optical-engineer.html" class="btn btn-primary" data-i18n="v90HeroCTA1">Ask AI Optical Engineer</a>
-                    <a href="/contact.html" class="btn btn-secondary" data-i18n="v90HeroCTA2">Request Engineering Review</a>
-                    <a href="/products.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.4);color:rgba(255,255,255,0.85);">Browse Components &rarr;</a>
-                </div>
-                <p style="font-size:14px;color:rgba(176,196,222,0.7);font-style:italic;margin-top:16px;">Specify what your system needs &mdash; not what the catalog says.</p>
-            </div>
-            <div class="v90-hero-ai-card">
-                <div class="v90-ai-badge">
-                    <span style="background: linear-gradient(135deg,#3b82f6,#8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight:700;">AI Optical Engineer</span>
-                </div>
-                <p class="v90-ai-desc" data-i18n="v90HeroAIDesc">Describe your optical requirement — get instant material, coating and tolerance recommendations.</p>
-                <div class="v90-ai-input-row">
-                    <input type="text" class="v90-ai-input" data-i18n-placeholder="v90HeroAIPlaceholder" placeholder="e.g., 532nm laser window for industrial use" onclick="window.location.href='/ai-optical-engineer.html'" readonly>
-                    <button class="v90-ai-btn" onclick="window.location.href='/ai-optical-engineer.html'" data-i18n="v90HeroAIButton">Start Analysis</button>
-                </div>
-                <div class="v90-ai-samples">
-                    <span class="v90-ai-chip" onclick="window.location.href='/ai-optical-engineer.html'">Laser window</span>
-                    <span class="v90-ai-chip" onclick="window.location.href='/ai-optical-engineer.html'">Imaging lens</span>
-                    <span class="v90-ai-chip" onclick="window.location.href='/ai-optical-engineer.html'">Coating design</span>
-                </div>
+        <div style="max-width:800px;">
+            <h1 data-i18n="v123HeroTitle" style="font-size:44px;font-weight:800;color:white;margin-bottom:16px;letter-spacing:-1px;line-height:1.25;">Precision Optical Components &amp; Engineering Support</h1>
+            <p data-i18n="v123HeroSubtitle" style="font-size:20px;color:rgba(255,255,255,0.92);margin-bottom:20px;font-weight:500;">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+            <p data-i18n="v123HeroDesc" style="font-size:16px;color:rgba(255,255,255,0.75);line-height:1.8;margin-bottom:36px;max-width:680px;">PhotonEdge provides precision optical components and custom optical solutions for laser systems, scientific research, imaging, semiconductor equipment and industrial applications. From material selection and coating to manufacturing and delivery, we help you turn optical requirements into reliable components.</p>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;">
+                <a href="/contact.html" class="btn" style="background:white;color:#2563eb;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;" data-i18n="v123HeroCTA1">Request a Quote</a>
+                <a href="/contact.html" class="btn" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:white;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;" data-i18n="v123HeroCTA2">Upload Your Drawing</a>
+                <a href="/ai-optical-engineer.html" class="btn" style="background:transparent;border:2px solid rgba(255,255,255,0.5);color:white;padding:14px 28px;border-radius:8px;font-weight:600;font-size:16px;" data-i18n="v123HeroCTA3">Talk to an Optical Engineer</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ============ SCREEN 2: OPTICAL CHALLENGES ============ -->
-<section class="v90-challenges" style="padding: 80px 0; background: #f8fafc;">
+<!-- ============ SCREEN 2: BUILT ON EXPERIENCE ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
     <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90ChallengesTag">Industry Solutions</span>
-            <h2 class="v90-section-title" data-i18n="v90ChallengesTitle">Optical Challenges We Solve</h2>
-            <p class="v90-section-subtitle" data-i18n="v90ChallengesSubtitle">Five core industries. Each with unique optical constraints. We engineer components that address your specific challenges.</p>
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:32px;font-weight:700;color:#1e293b;margin-bottom:12px;" data-i18n="v123S2Title">Built on Experience, Engineering and Supply Chain</h2>
+            <p style="color:#64748b;max-width:700px;margin:0 auto;font-size:16px;line-height:1.7;" data-i18n="v123S2Subtitle">PhotonEdge combines years of optical industry experience with flexible manufacturing resources and practical engineering support.</p>
         </div>
-        <div class="v90-challenges-grid">
-            <!-- Laser Systems -->
-            <div class="v90-challenge-card">
-                <div class="v90-challenge-icon" style="background: linear-gradient(135deg, #fef3c7, #fde68a);">
-                    &#128300;
-                </div>
-                <h3 class="v90-challenge-title" data-i18n="v90ChallengeLaserTitle">Laser Systems</h3>
-                <div class="v90-challenge-pain">
-                    <h4 data-i18n="v90ChallengePainLabel">Key Challenges</h4>
-                    <ul>
-                        <li data-i18n="v90ChallengeLaserPain1">Thermal lensing under high-power CW operation</li>
-                        <li data-i18n="v90ChallengeLaserPain2">Laser-induced damage at coating interfaces</li>
-                        <li data-i18n="v90ChallengeLaserPain3">Beam quality degradation from surface irregularities</li>
-                    </ul>
-                </div>
-                <div class="v90-challenge-solution">
-                    <h4 data-i18n="v90ChallengeSolutionLabel">Our Solution</h4>
-                    <p data-i18n="v90ChallengeLaserSolution">Fused silica and ZnSe optics with high-LIDT coatings. Engineered for thermal stability from 100W to multi-kilowatt systems.</p>
-                </div>
-                <a href="/applications/laser-optics/" class="v90-challenge-btn" data-i18n="v90ChallengeLaserBtn">Explore Laser Solutions &rarr;</a>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+            <div style="padding:32px;background:white;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:12px;">🔬</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123S2Card1Title">Optical Industry Experience</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123S2Card1Desc">Years of experience working with optical components, materials, coatings and applications.</p>
             </div>
-            <!-- Semiconductor -->
-            <div class="v90-challenge-card">
-                <div class="v90-challenge-icon" style="background: linear-gradient(135deg, #dbeafe, #bfdbfe);">
-                    &#128187;
-                </div>
-                <h3 class="v90-challenge-title" data-i18n="v90ChallengeSemiTitle">Semiconductor Equipment</h3>
-                <div class="v90-challenge-pain">
-                    <h4 data-i18n="v90ChallengePainLabel">Key Challenges</h4>
-                    <ul>
-                        <li data-i18n="v90ChallengeSemiPain1">Sub-nanometer flatness for wafer inspection optics</li>
-                        <li data-i18n="v90ChallengeSemiPain2">UV-grade material purity to avoid solarization</li>
-                        <li data-i18n="v90ChallengeSemiPain3">Particle-free cleanroom-compatible packaging</li>
-                    </ul>
-                </div>
-                <div class="v90-challenge-solution">
-                    <h4 data-i18n="v90ChallengeSolutionLabel">Our Solution</h4>
-                    <p data-i18n="v90ChallengeSemiSolution">UV fused silica optics with &#955;/20 flatness. Super-polished surfaces with Class 100 cleanroom inspection and packaging.</p>
-                </div>
-                <a href="/applications/semiconductor-inspection/" class="v90-challenge-btn" data-i18n="v90ChallengeSemiBtn">Explore Semiconductor Solutions &rarr;</a>
+            <div style="padding:32px;background:white;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:12px;">📐</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123S2Card2Title">Engineering Support</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123S2Card2Desc">We help review material, coating, tolerance and application requirements before production.</p>
             </div>
-            <!-- Medical Imaging -->
-            <div class="v90-challenge-card">
-                <div class="v90-challenge-icon" style="background: linear-gradient(135deg, #fce7f3, #fbcfe8);">
-                    &#10084;
-                </div>
-                <h3 class="v90-challenge-title" data-i18n="v90ChallengeMedicalTitle">Medical Imaging</h3>
-                <div class="v90-challenge-pain">
-                    <h4 data-i18n="v90ChallengePainLabel">Key Challenges</h4>
-                    <ul>
-                        <li data-i18n="v90ChallengeMedicalPain1">Biocompatible materials for patient-contact optics</li>
-                        <li data-i18n="v90ChallengeMedicalPain2">High-resolution imaging requires low distortion</li>
-                        <li data-i18n="v90ChallengeMedicalPain3">Sterilization-resistant coatings and materials</li>
-                    </ul>
-                </div>
-                <div class="v90-challenge-solution">
-                    <h4 data-i18n="v90ChallengeSolutionLabel">Our Solution</h4>
-                    <p data-i18n="v90ChallengeMedicalSolution">Precision lenses and windows with medical-grade coatings. Sapphire and fused silica options for sterilizable systems.</p>
-                </div>
-                <a href="/applications/medical-imaging/" class="v90-challenge-btn" data-i18n="v90ChallengeMedicalBtn">Explore Medical Solutions &rarr;</a>
+            <div style="padding:32px;background:white;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:12px;">🏭</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123S2Card3Title">Flexible Manufacturing</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123S2Card3Desc">Different optical processes require different manufacturing capabilities. We select the appropriate manufacturing route for each project.</p>
+            </div>
+            <div style="padding:32px;background:white;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:12px;">🤝</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123S2Card4Title">One Point of Contact</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123S2Card4Desc">From initial inquiry to production and delivery, you work with one team responsible for your project.</p>
             </div>
         </div>
     </div>
+</section>
 
-            <!-- Aerospace & Defense -->
-            <div class="v90-challenge-card" style="background: white; border-radius: 16px; padding: 32px; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
-                <h3 class="v90-challenge-title" data-i18n="v90ChallengeAeroTitle">Aerospace &amp; Defense</h3>
-                <h4 style="color: #64748b; font-size: 14px; margin-bottom: 16px;" data-i18n="v90ChallengeAeroSub">Thermal Imaging, Surveillance &amp; Navigation</h4>
-                <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
-                    <li data-i18n="v90ChallengeAeroPain1" style="padding: 6px 0; color: #475569; font-size: 14px;">• Extreme temperature operation (-40°C to +85°C)</li>
-                    <li data-i18n="v90ChallengeAeroPain2" style="padding: 6px 0; color: #475569; font-size: 14px;">• IR wavelength performance (MWIR/LWIR bands)</li>
-                    <li data-i18n="v90ChallengeAeroPain3" style="padding: 6px 0; color: #475569; font-size: 14px;">• Vibration and shock resistance for airborne systems</li>
-                </ul>
-                <p data-i18n="v90ChallengeAeroSolution" style="color: #334155; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Ge and ZnSe optics for thermal imaging. Protected gold mirrors for IR beam steering. MIL-spec environmental testing.</p>
-                <a href="/applications/aerospace-defense/" class="v90-challenge-btn" data-i18n="v90ChallengeAeroBtn" style="display: inline-block; padding: 10px 20px; background: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">Explore Aerospace Solutions &rarr;</a>
-            </div>
-
-            <!-- Research & Laboratory -->
-            <div class="v90-challenge-card" style="background: white; border-radius: 16px; padding: 32px; border: 1px solid #e2e8f0; transition: all 0.3s;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
-                <h3 class="v90-challenge-title" data-i18n="v90ChallengeResearchTitle">Research &amp; Laboratory</h3>
-                <h4 style="color: #64748b; font-size: 14px; margin-bottom: 16px;" data-i18n="v90ChallengeResearchSub">Spectroscopy, Quantum Optics &amp; Ultrafast Lasers</h4>
-                <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
-                    <li data-i18n="v90ChallengeResearchPain1" style="padding: 6px 0; color: #475569; font-size: 14px;">• Broad wavelength coverage (UV to IR) in single setup</li>
-                    <li data-i18n="v90ChallengeResearchPain2" style="padding: 6px 0; color: #475569; font-size: 14px;">• Custom specs with tight tolerances, small quantities</li>
-                    <li data-i18n="v90ChallengeResearchPain3" style="padding: 6px 0; color: #475569; font-size: 14px;">• Full documentation and batch-to-batch reproducibility</li>
-                </ul>
-                <p data-i18n="v90ChallengeResearchSolution" style="color: #334155; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">CaF₂ prisms for pulse compression. Broadband optics from DUV to LWIR. No minimum order. Full inspection reports with every shipment.</p>
-                <a href="/applications/research-laboratory/" class="v90-challenge-btn" data-i18n="v90ChallengeResearchBtn" style="display: inline-block; padding: 10px 20px; background: #3b82f6; color: white; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">Explore Research Solutions &rarr;</a>
-            </div>
-
-        </section>
-
-<!-- ============ SCREEN 3: CORE PRODUCTS ============ -->
-<section class="v90-products" style="padding: 80px 0; background: #ffffff;">
+<!-- ============ SCREEN 3: PRODUCTS ============ -->
+<section style="padding:80px 0;background:#ffffff;">
     <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90ProductsTag">Core Products</span>
-            <h2 class="v90-section-title" data-i18n="v90ProductsTitle">Core Optical Component Families</h2>
-            <p class="v90-section-subtitle" data-i18n="v90ProductsSubtitle">Engineered in standard and custom specifications across UV, visible, and infrared spectra.</p>
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:32px;font-weight:700;color:#1e293b;margin-bottom:12px;" data-i18n="v123S3Title">Precision Optical Components</h2>
+            <p style="color:#64748b;max-width:600px;margin:0 auto;font-size:16px;" data-i18n="v123S3Subtitle">Standard and custom optical components for UV, visible and infrared applications.</p>
         </div>
-        <div class="v90-products-grid">
-            <a href="/products.html?category=Optical%20Lenses" class="v90-product-card">
-                <div class="v90-product-icon">&#10753;</div>
-                <h3 data-i18n="v90ProdLensesTitle">Optical Lenses</h3>
-                <p data-i18n="v90ProdLensesDesc">Spherical, aspheric, cylindrical, achromatic, ball and rod lenses for imaging, focusing and collimation.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:1100px;margin:0 auto;">
+            <a href="/products.html?category=Optical%20Lenses" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdLenses">Optical Lenses</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdLensesDesc">Spherical, aspheric, cylindrical, achromatic and custom lenses.</p>
             </a>
-            <a href="/products.html?category=Optical%20Windows" class="v90-product-card">
-                <div class="v90-product-icon">&#9673;</div>
-                <h3 data-i18n="v90ProdWindowsTitle">Optical Windows</h3>
-                <p data-i18n="v90ProdWindowsDesc">Protection windows and substrates in BK7, fused silica, sapphire, CaF&#8322;, ZnSe and other materials.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?category=Optical%20Windows" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdWindows">Optical Windows</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdWindowsDesc">Fused silica, BK7, sapphire, CaF&#8322;, ZnSe and other optical materials.</p>
             </a>
-            <a href="/products.html?category=Optical%20Mirrors" class="v90-product-card">
-                <div class="v90-product-icon">&#9672;</div>
-                <h3 data-i18n="v90ProdMirrorsTitle">Optical Mirrors</h3>
-                <p data-i18n="v90ProdMirrorsDesc">Dielectric, metallic and laser-line mirrors with reflectance up to 99.99% at design wavelength.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?category=Optical%20Mirrors" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdMirrors">Optical Mirrors</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdMirrorsDesc">Dielectric, metallic and laser-line mirrors.</p>
             </a>
-            <a href="/products.html?category=Optical%20Filters" class="v90-product-card">
-                <div class="v90-product-icon">&#9674;</div>
-                <h3 data-i18n="v90ProdFiltersTitle">Optical Filters</h3>
-                <p data-i18n="v90ProdFiltersDesc">Bandpass, shortpass, longpass, neutral density and dichroic filters for precise wavelength control.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?category=Optical%20Filters" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdFilters">Optical Filters</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdFiltersDesc">Bandpass, longpass, shortpass, ND and dichroic filters.</p>
             </a>
-            <a href="/products.html?component=Beamsplitter" class="v90-product-card">
-                <div class="v90-product-icon">&#9670;</div>
-                <h3 data-i18n="v90ProdBeamsplittersTitle">Beamsplitters</h3>
-                <p data-i18n="v90ProdBeamsplittersDesc">Cube and plate beamsplitters, polarizing and non-polarizing types for precise beam splitting and combining.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?component=Beamsplitter" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdBeamsplitters">Beamsplitters</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdBeamsplittersDesc">Plate and cube beamsplitters for beam splitting and combining.</p>
             </a>
-            <a href="/products.html?category=Optical%20Prisms" class="v90-product-card">
-                <div class="v90-product-icon">&#9650;</div>
-                <h3 data-i18n="v90ProdPrismsTitle">Optical Prisms</h3>
-                <p data-i18n="v90ProdPrismsDesc">Right angle, penta, dove, dispersing and polarizing prisms for beam manipulation.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?category=Optical%20Prisms" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdPrisms">Optical Prisms</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdPrismsDesc">Beam steering, dispersion and polarization applications.</p>
             </a>
-            <a href="/products.html?category=Waveplates%20%26%20Polarizers" class="v90-product-card">
-                <div class="v90-product-icon">&#9671;</div>
-                <h3 data-i18n="v90ProdWaveplatesTitle">Waveplates &amp; Polarizers</h3>
-                <p data-i18n="v90ProdWaveplatesDesc">Zero-order and multi-order waveplates, polarizers and retarders for polarization control.</p>
-                <span class="v90-product-link" data-i18n="v90ProdViewSpec">View Specifications &rarr;</span>
+            <a href="/products.html?category=Waveplates%20%26%20Polarizers" style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;text-decoration:none;transition:all 0.3s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:6px;font-weight:600;" data-i18n="v123ProdWaveplates">Waveplates &amp; Polarizers</h3>
+                <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="v123ProdWaveplatesDesc">Polarization control and retardation applications.</p>
+            </a>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <a href="/products.html" style="display:inline-block;background:#2563eb;color:white;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;" data-i18n="v123ViewAllProducts">View All Products</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SCREEN 4: APPLICATIONS ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:32px;font-weight:700;color:#1e293b;margin-bottom:12px;" data-i18n="v123S4Title">Optical Solutions for Demanding Applications</h2>
+            <p style="color:#64748b;max-width:700px;margin:0 auto;font-size:16px;line-height:1.7;" data-i18n="v123S4Subtitle">Different applications require different optical materials, coatings and specifications. We help customers select and source the right components for their systems.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+            <a href="/applications/laser-optics/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App1Title">Laser Systems</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App1Desc">Laser windows, mirrors, lenses, beamsplitters and other components for industrial and scientific laser systems.</p>
+            </a>
+            <a href="/applications/research-laboratory/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App2Title">Scientific Research</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App2Desc">Custom optics for spectroscopy, microscopy, laboratory instruments and research systems.</p>
+            </a>
+            <a href="/applications/semiconductor-inspection/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App3Title">Semiconductor Equipment</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App3Desc">Optical components for inspection, measurement and precision equipment.</p>
+            </a>
+            <a href="/applications/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App4Title">Imaging &amp; Vision</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App4Desc">Lenses, windows, filters and optical assemblies for imaging and machine vision.</p>
+            </a>
+            <a href="/applications/medical-imaging/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App5Title">Medical &amp; Life Science</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App5Desc">Optical components for imaging, diagnostic and analytical equipment.</p>
+            </a>
+            <a href="/applications/" style="text-decoration:none;padding:28px;background:white;border-radius:12px;border:1px solid #e2e8f0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <h3 style="font-size:17px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123App6Title">Industrial Optics</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123App6Desc">Custom optical components for sensing, measurement and industrial systems.</p>
+            </a>
+        </div>
+        <div style="text-align:center;margin-top:40px;">
+            <a href="/applications.html" style="color:#2563eb;font-weight:600;text-decoration:none;font-size:15px;" data-i18n="v123ExploreApps">Explore Applications &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SCREEN 5: HOW CAN WE HELP ============ -->
+<section style="padding:80px 0;background:white;">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:32px;font-weight:700;color:#1e293b;" data-i18n="v123S5Title">How Can We Help?</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1000px;margin:0 auto;">
+            <a href="/contact.html" style="text-decoration:none;display:block;padding:32px;background:#f0f9ff;border-radius:12px;border:1px solid #bae6fd;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(59,130,246,0.1)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <div style="font-size:2rem;margin-bottom:12px;">📋</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123Path1Title">I Know What I Need</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123Path1Desc">Have a product specification or drawing? Send it to us for quotation.</p>
+                <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:14px;" data-i18n="v123Path1CTA">Request a Quote &rarr;</div>
+            </a>
+            <a href="/contact.html" style="text-decoration:none;display:block;padding:32px;background:#f0fdf4;border-radius:12px;border:1px solid #bbf7d0;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(34,197,94,0.1)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <div style="font-size:2rem;margin-bottom:12px;">🔧</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123Path2Title">I Need a Custom Optic</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123Path2Desc">Tell us your material, dimensions, wavelength, coating or application requirements. We'll review the requirements and identify a suitable manufacturing route.</p>
+                <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:14px;" data-i18n="v123Path2CTA">Discuss Your Project &rarr;</div>
+            </a>
+            <a href="/ai-optical-engineer.html" style="text-decoration:none;display:block;padding:32px;background:#fefce8;border-radius:12px;border:1px solid #fde68a;transition:all 0.3s;" onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 20px rgba(234,179,8,0.1)'" onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <div style="font-size:2rem;margin-bottom:12px;">💡</div>
+                <h3 style="font-size:18px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v123Path3Title">I'm Not Sure What I Need</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v123Path3Desc">Tell us about your application, wavelength, power and operating environment. We'll help you determine the specifications that actually matter.</p>
+                <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:14px;" data-i18n="v123Path3CTA">Talk to an Engineer &rarr;</div>
             </a>
         </div>
     </div>
 </section>
 
-<!-- ============ SCREEN 3.5: COMPONENT FINDER ============ -->
-
-    <!-- Three Entry Paths - Engineering Search Portal -->
-    <section style="padding: 60px 0; background: linear-gradient(135deg, #f0f9ff 0%, #f8fafc 100%); border-bottom: 1px solid #e2e6ef;">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <span class="v90-section-tag">How Can We Help?</span>
-                <h2 class="v90-section-title">Choose Your Path</h2>
-                <p style="color: #5a6577; max-width: 600px; margin: 0 auto; font-size: 16px;">Whether you know exactly what you need or need expert guidance, we have the right path for you.</p>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1000px; margin: 0 auto;">
-                <!-- Path A: I Know What I Need -->
-                <a href="/products.html" style="text-decoration:none;display:block;padding:32px;background:white;border-radius:16px;border:1px solid #e2e8f0;transition:all 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                    <div style="font-size:2rem;margin-bottom:12px;">🔍</div>
-                    <h3 style="font-size:1.1rem;color:#1e293b;margin-bottom:8px;">I Know What I Need</h3>
-                    <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0;">Browse our complete catalog of 70+ optical components. Filter by type, material, wavelength, or application to find the exact specification you need.</p>
-                    <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:0.9rem;">Browse Catalog →</div>
-                </a>
-                <!-- Path B: I Have an Optical Problem -->
-                <a href="/ai-optical-engineer.html" style="text-decoration:none;display:block;padding:32px;background:white;border-radius:16px;border:1px solid #e2e8f0;transition:all 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                    <div style="font-size:2rem;margin-bottom:12px;">🔬</div>
-                    <h3 style="font-size:1.1rem;color:#1e293b;margin-bottom:8px;">I Have an Optical Problem</h3>
-                    <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0;">Describe your optical challenge — thermal issues, coating degradation, alignment problems — and our AI engineer will analyze solutions for you.</p>
-                    <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:0.9rem;">Ask AI Engineer →</div>
-                </a>
-                <!-- Path C: I'm Still Selecting -->
-                <a href="/knowledge-center/" style="text-decoration:none;display:block;padding:32px;background:white;border-radius:16px;border:1px solid #e2e8f0;transition:all 0.3s;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
-                    <div style="font-size:2rem;margin-bottom:12px;">📚</div>
-                    <h3 style="font-size:1.1rem;color:#1e293b;margin-bottom:8px;">I'm Still Selecting</h3>
-                    <p style="color:#64748b;font-size:0.9rem;line-height:1.6;margin:0;">Explore our engineering guides, material comparisons, and application notes to make informed decisions for your optical system.</p>
-                    <div style="margin-top:16px;color:#2563eb;font-weight:600;font-size:0.9rem;">Explore Knowledge Center →</div>
-                </a>
-            </div>
+<!-- ============ SCREEN 6: FROM SPEC TO FINISHED OPTIC ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
+    <div class="container" style="text-align:center;">
+        <h2 style="font-size:32px;font-weight:700;color:#1e293b;margin-bottom:12px;" data-i18n="v123S6Title">From Specification to Finished Optic</h2>
+        <p style="color:#64748b;max-width:700px;margin:0 auto 36px;font-size:16px;line-height:1.7;" data-i18n="v123S6Subtitle">We coordinate the key stages required to produce your optical component:</p>
+        <div style="display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px;margin-bottom:36px;">
+            <span style="background:white;padding:12px 20px;border-radius:8px;font-weight:600;color:#1e293b;border:1px solid #e2e8f0;" data-i18n="v123Step1">Material Selection</span>
+            <span style="color:#94a3b8;font-size:20px;">&rarr;</span>
+            <span style="background:white;padding:12px 20px;border-radius:8px;font-weight:600;color:#1e293b;border:1px solid #e2e8f0;" data-i18n="v123Step2">Precision Manufacturing</span>
+            <span style="color:#94a3b8;font-size:20px;">&rarr;</span>
+            <span style="background:white;padding:12px 20px;border-radius:8px;font-weight:600;color:#1e293b;border:1px solid #e2e8f0;" data-i18n="v123Step3">Coating</span>
+            <span style="color:#94a3b8;font-size:20px;">&rarr;</span>
+            <span style="background:white;padding:12px 20px;border-radius:8px;font-weight:600;color:#1e293b;border:1px solid #e2e8f0;" data-i18n="v123Step4">Inspection</span>
+            <span style="color:#94a3b8;font-size:20px;">&rarr;</span>
+            <span style="background:white;padding:12px 20px;border-radius:8px;font-weight:600;color:#1e293b;border:1px solid #e2e8f0;" data-i18n="v123Step5">Delivery</span>
         </div>
-    </section>
+        <p style="color:#64748b;max-width:600px;margin:0 auto 12px;font-size:15px;line-height:1.7;" data-i18n="v123S6Desc1">The manufacturing route is selected according to the material, geometry, tolerance, coating and quantity required for each project.</p>
+        <p style="color:#64748b;max-width:600px;margin:0 auto 24px;font-size:15px;line-height:1.7;" data-i18n="v123S6Desc2">You work with one point of contact throughout the process.</p>
+        <a href="/engineering.html" style="color:#2563eb;font-weight:600;text-decoration:none;font-size:15px;" data-i18n="v123S6CTA">Learn About Our Engineering &amp; Supply Chain &rarr;</a>
+    </div>
+</section>
 
-<section style="padding: 60px 0; background: #ffffff; border-bottom: 1px solid #e2e6ef;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 40px;">
-            <span class="v90-section-tag">Find It Fast</span>
-            <h2 class="v90-section-title">Find the Right Optical Component</h2>
-            <p style="color: #5a6577; max-width: 600px; margin: 0 auto; font-size: 16px;">Filter by component type, material, wavelength range, application or specification requirements.</p>
-        </div>
-        <div style="max-width: 900px; margin: 0 auto; background: #f8fafc; border-radius: 12px; padding: 32px; border: 1px solid #e2e6ef;">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 20px;">
-                <div>
-                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Component</label>
-                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?component='+this.value">
-                        <option>All Components</option>
-                        <option>Lens</option><option>Window</option><option>Mirror</option>
-                        <option>Filter</option><option>Prism</option><option>Waveplate</option>
-                    </select>
-                </div>
-                <div>
-                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Wavelength</label>
-                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?wavelength='+this.value">
-                        <option>All Wavelengths</option>
-                        <option>UV</option><option>Visible</option><option>NIR</option>
-                        <option>SWIR</option><option>MWIR</option><option>LWIR</option>
-                    </select>
-                </div>
-                <div>
-                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material</label>
-                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?material='+this.value">
-                        <option>All Materials</option>
-                        <option>BK7</option><option>Fused Silica</option><option>CaF₂</option>
-                        <option>ZnSe</option><option>Ge</option><option>Sapphire</option>
-                    </select>
-                </div>
-                <div>
-                    <label style="display:block;font-size:11px;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Application</label>
-                    <select style="width:100%;padding:8px 12px;border:1px solid #d1d5de;border-radius:6px;font-size:13px;background:white;" onchange="if(this.value) window.location.href='/products.html?application='+this.value">
-                        <option>All Applications</option>
-                        <option>Laser</option><option>Semiconductor</option><option>Medical</option>
-                        <option>Aerospace</option><option>Research</option><option>Industrial</option>
-                    </select>
-                </div>
-            </div>
-            <div style="text-align: center;">
-                <a href="/products.html" class="btn btn-primary" style="padding: 10px 28px; font-size: 14px;">Browse All Components &rarr;</a>
-            </div>
+<!-- ============ SCREEN 7: QUALITY ============ -->
+<section style="padding:60px 0;background:white;">
+    <div class="container" style="max-width:800px;text-align:center;">
+        <h2 style="font-size:28px;font-weight:700;color:#1e293b;margin-bottom:16px;" data-i18n="v123S7Title">Quality According to Your Requirements</h2>
+        <p style="color:#64748b;font-size:16px;line-height:1.8;margin-bottom:16px;" data-i18n="v123S7Desc1">Quality requirements vary from project to project. We coordinate inspection and documentation according to the agreed specifications, including dimensional, surface, optical and coating requirements when applicable.</p>
+        <p style="color:#64748b;font-size:16px;line-height:1.8;margin-bottom:24px;" data-i18n="v123S7Desc2">Inspection documentation and material documentation can be provided when required.</p>
+        <a href="/quality-assurance.html" style="color:#2563eb;font-weight:600;text-decoration:none;font-size:15px;" data-i18n="v123S7CTA">Quality &amp; Documentation &rarr;</a>
+    </div>
+</section>
+
+<!-- ============ SCREEN 8: FINAL CTA ============ -->
+<section style="padding:80px 0;background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);">
+    <div class="container" style="text-align:center;">
+        <h2 style="font-size:32px;font-weight:700;color:white;margin-bottom:16px;" data-i18n="v123FinalCTATitle">Have an Optical Requirement?</h2>
+        <p style="color:rgba(255,255,255,0.85);font-size:16px;line-height:1.8;max-width:650px;margin:0 auto 32px;" data-i18n="v123FinalCTADesc">Whether you have a drawing, a product specification or simply an application requirement, send us what you have. We'll help identify the appropriate optical component and manufacturing approach.</p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+            <a href="/contact.html" style="display:inline-block;background:white;color:#2563eb;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:16px;" data-i18n="v123FinalCTA1">Request a Quote</a>
+            <a href="/contact.html" style="display:inline-block;background:transparent;border:2px solid rgba(255,255,255,0.5);color:white;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:16px;" data-i18n="v123FinalCTA2">Upload Your Drawing</a>
+            <a href="/ai-optical-engineer.html" style="display:inline-block;background:transparent;border:2px solid rgba(255,255,255,0.5);color:white;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:16px;" data-i18n="v123FinalCTA3">Ask an Engineer</a>
         </div>
     </div>
 </section>
 
-<!-- ============ SCREEN 4: WHY PHOTONEDGE ============ -->
-<section class="v90-why" style="padding: 80px 0; background: #f8fafc;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90WhyTag">Why PhotonEdge</span>
-            <h2 class="v90-section-title" data-i18n="v90WhyTitle">Engineering Expertise You Can Measure</h2>
-            <p class="v90-section-subtitle" data-i18n="v90WhySubtitle">We do not just sell components — we help engineers solve optical problems.</p>
-        </div>
-        <div class="v90-why-grid">
-            <div class="v90-why-card">
-                <div class="v90-why-number">15+</div>
-                <h3 data-i18n="v90Why1Title">Years of Optical Experience</h3>
-                <p data-i18n="v90Why1Desc">Founded by optical engineers. Thousands of custom designs delivered for laser, semiconductor and medical systems.</p>
-            </div>
-            <div class="v90-why-card">
-                <div class="v90-why-number">30+</div>
-                <h3 data-i18n="v90Why2Title">Optical Materials Available</h3>
-                <p data-i18n="v90Why2Desc">From standard BK7 to exotic IR materials. We select the right material for your wavelength, power and environment.</p>
-            </div>
-            <div class="v90-why-card">
-                <div class="v90-why-number">ISO</div>
-                <h3 data-i18n="v90Why3Title">Quality Management System</h3>
-                <p data-i18n="v90Why3Desc">ISO 9001:2015 certified. Every component inspected with laser interferometry before shipment.</p>
-            </div>
-            <div class="v90-why-card">
-                <div class="v90-why-number">Custom</div>
-                <h3 data-i18n="v90Why4Title">Engineering Support Included</h3>
-                <p data-i18n="v90Why4Desc">Every quote includes a free engineering review. Material selection, coating optimization and tolerance advice at no extra cost.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- ============ SCREEN 5: MANUFACTURING PROCESS ============ -->
-<section class="v90-manufacturing" style="padding: 80px 0; background: #ffffff;">
+    <footer class="footer">
     <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90MfgTag">Manufacturing</span>
-            <h2 class="v90-section-title" data-i18n="v90MfgTitle">How Precision Optics Are Made</h2>
-            <p class="v90-section-subtitle" data-i18n="v90MfgSubtitle">Every optic goes through a controlled 7-step process. Skip a step and you compromise quality.</p>
-        </div>
-        <div class="v90-mfg-steps">
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">01</div>
-                <div class="v90-mfg-step-icon">&#128202;</div>
-                <h3 data-i18n="v90MfgStep1Title">Material Selection</h3>
-                <p data-i18n="v90MfgStep1Desc">Grade-A optical blanks selected for your wavelength, power and environmental requirements.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">02</div>
-                <div class="v90-mfg-step-icon">&#9881;</div>
-                <h3 data-i18n="v90MfgStep2Title">Precision Grinding</h3>
-                <p data-i18n="v90MfgStep2Desc">CNC grinding to achieve near-net shape with controlled surface generation.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">03</div>
-                <div class="v90-mfg-step-icon">&#10024;</div>
-                <h3 data-i18n="v90MfgStep3Title">Polishing</h3>
-                <p data-i18n="v90MfgStep3Desc">Sub-aperture and full-aperture polishing to achieve nanometer-scale surface finish.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">04</div>
-                <div class="v90-mfg-step-icon">&#127919;</div>
-                <h3 data-i18n="v90MfgStep4Title">Centering</h3>
-                <p data-i18n="v90MfgStep4Desc">Precision edging to ensure optical and mechanical axes align within arc-second tolerances.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">05</div>
-                <div class="v90-mfg-step-icon">&#127912;</div>
-                <h3 data-i18n="v90MfgStep5Title">Coating</h3>
-                <p data-i18n="v90MfgStep5Desc">Physical vapor deposition coatings — AR, HR, bandpass, dichroic — designed for your specifications.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">06</div>
-                <div class="v90-mfg-step-icon">&#128269;</div>
-                <h3 data-i18n="v90MfgStep6Title">Inspection</h3>
-                <p data-i18n="v90MfgStep6Desc">100% inspection with interferometer, spectrophotometer and surface analysis before release.</p>
-            </div>
-            <div class="v90-mfg-step-arrow">&rarr;</div>
-            <div class="v90-mfg-step">
-                <div class="v90-mfg-step-num">07</div>
-                <div class="v90-mfg-step-icon">&#128230;</div>
-                <h3 data-i18n="v90MfgStep7Title">Packaging</h3>
-                <p data-i18n="v90MfgStep7Desc">Cleanroom packaging with full inspection documentation. Ready for your assembly line.</p>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="/engineering.html" class="btn btn-primary" data-i18n="v90MfgExploreBtn">Explore Manufacturing Capability &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 5.5: SPECIFICATION OPTIMIZATION ============ -->
-<section style="padding: 70px 0; background: #f0f4f8; border-bottom: 1px solid #e2e6ef;">
-    <div class="container">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <span class="v90-section-tag">Engineering Philosophy</span>
-            <h2 class="v90-section-title">The Right Specification &mdash; Not the Most Expensive Specification</h2>
-            <p style="color: #5a6577; font-size: 16px; line-height: 1.8; margin-bottom: 32px;">Tighter tolerances can increase cost without improving system performance. We help engineers identify which specifications actually matter to the optical system &mdash; and which are just costing you more.</p>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center;">
-                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
-                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">&lambda;/4 vs &lambda;/10</div>
-                    <p style="font-size: 13px; color: #5a6577; margin: 0;">When does flatness actually matter for your system performance?</p>
-                </div>
-                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
-                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">10-5 vs 20-10</div>
-                    <p style="font-size: 13px; color: #5a6577; margin: 0;">When does surface quality directly affect your application?</p>
-                </div>
-                <div style="background: white; padding: 24px 16px; border-radius: 10px; border: 1px solid #e2e6ef;">
-                    <div style="font-size: 24px; font-weight: 700; color: #1e3a5f; margin-bottom: 8px;">&plusmn;0.01 vs &plusmn;0.05mm</div>
-                    <p style="font-size: 13px; color: #5a6577; margin: 0;">Where does dimensional tolerance drive real system value?</p>
-                </div>
-            </div>
-            <div style="margin-top: 32px;">
-                <a href="/contact.html" class="btn btn-primary" style="padding: 10px 28px;">Talk to an Optical Engineer &rarr;</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 6: PRECISION REQUIRES MEASUREMENT ============ -->
-<section class="v90-measurement" style="padding: 80px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag v90-tag-light" data-i18n="v90MeasTag">Quality Assurance</span>
-            <h2 class="v90-section-title" style="color: white;" data-i18n="v90MeasTitle">Precision Requires Measurement</h2>
-            <p class="v90-section-subtitle" style="color: rgba(255,255,255,0.7);" data-i18n="v90MeasSubtitle">Every component verified to specification. Full inspection data with every shipment.</p>
-            <p class="v90-meas-quote" data-i18n="v90MeasTagline">"If you cannot measure it, you cannot guarantee it."</p>
-        </div>
-        <div class="v90-meas-grid">
-            <div class="v90-meas-card">
-                <div class="v90-meas-icon">&#128269;</div>
-                <h3 data-i18n="v90Meas1Title">Interferometer</h3>
-                <p data-i18n="v90Meas1Desc">Wavefront measurement at &#955;/100 resolution. Verifies surface flatness, curvature and transmitted wavefront distortion.</p>
-            </div>
-            <div class="v90-meas-card">
-                <div class="v90-meas-icon">&#127752;</div>
-                <h3 data-i18n="v90Meas2Title">Spectrophotometer</h3>
-                <p data-i18n="v90Meas2Desc">Spectral transmission and reflection measurement from 190 nm to 25 &#956;m. Validates coating performance across design bandwidth.</p>
-            </div>
-            <div class="v90-meas-card">
-                <div class="v90-meas-icon">&#128270;</div>
-                <h3 data-i18n="v90Meas3Title">Surface Inspection</h3>
-                <p data-i18n="v90Meas3Desc">MIL-PRF-13830B compliant surface quality inspection. Scratch-dig verification from 60-40 to 10-5 precision grade.</p>
-            </div>
-            <div class="v90-meas-card">
-                <div class="v90-meas-icon">&#128207;</div>
-                <h3 data-i18n="v90Meas4Title">Dimension Measurement</h3>
-                <p data-i18n="v90Meas4Desc">High-precision metrology for thickness, diameter, wedge angle and centering. Dimensional tolerances to &#177;0.01 mm.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 7: TECHNICAL KNOWLEDGE HUB ============ -->
-<section class="v90-knowledge" style="padding: 80px 0; background: #f8fafc;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90KbTag">Knowledge Center</span>
-            <h2 class="v90-section-title" data-i18n="v90KbTitle">PhotonEdge Optical Engineering Knowledge Base</h2>
-            <p class="v90-section-subtitle" data-i18n="v90KbSubtitle">Practical engineering guides to help you specify, select and deploy optical components with confidence.</p>
-        </div>
-        <div class="v90-kb-grid" id="v90KnowledgeGrid">
-            <!-- Filled by JS from blog data -->
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="/knowledge-center/" class="btn btn-secondary" data-i18n="v90KbAllBtn">View All Technical Resources &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 8: AI OPTICAL ENGINEER ============ -->
-<section class="v90-ai-section" style="padding: 80px 0; background: #ffffff;">
-    <div class="container">
-        <div class="v90-ai-grid">
-            <div class="v90-ai-left">
-                <span class="v90-section-tag" data-i18n="v90AI2Tag">AI-Powered</span>
-                <h2 class="v90-section-title v90-ai-title" data-i18n="v90AI2Title">AI Optical Engineer</h2>
-                <p class="v90-ai-desc-full" data-i18n="v90AI2Desc">Describe your optical problem in plain English. Our AI Optical Engineer will recommend materials, coatings, surface quality specs and tolerance ranges — instantly.</p>
-                <ul class="v90-ai-benefits">
-                    <li data-i18n="v90AI2Benefit1">&#10003; Get material recommendations based on wavelength and power</li>
-                    <li data-i18n="v90AI2Benefit2">&#10003; Understand which coatings matter for your application</li>
-                    <li data-i18n="v90AI2Benefit3">&#10003; Learn what tolerances are actually necessary</li>
-                    <li data-i18n="v90AI2Benefit4">&#10003; Export spec sheet to send to your team</li>
-                </ul>
-                <a href="/ai-optical-engineer.html" class="btn btn-primary" data-i18n="v90AI2CTA">Start Optical Analysis &rarr;</a>
-            </div>
-            <div class="v90-ai-mockup">
-                <div class="v90-chat-window">
-                    <div class="v90-chat-header">
-                        <div class="v90-chat-avatar">AI</div>
-                        <span>PhotonEdge AI Optical Engineer</span>
-                    </div>
-                    <div class="v90-chat-body">
-                        <div class="v90-chat-msg user-msg">
-                            <p data-i18n="v90ChatUserMsg">Need a 532nm laser window for industrial system</p>
-                        </div>
-                        <div class="v90-chat-msg ai-msg">
-                            <p data-i18n="v90ChatAI1"><strong>Material:</strong> UV Fused Silica — high transmission at 532nm, excellent thermal stability, good LIDT.</p>
-                            <p data-i18n="v90ChatAI2"><strong>Coating:</strong> Dual-band AR @ 532nm, R&#60;0.2% per surface. Specify LIDT based on your laser power.</p>
-                            <p data-i18n="v90ChatAI3"><strong>Surface Quality:</strong> 20-10 scratch-dig for visible laser use. 10-5 for intra-cavity.</p>
-                            <p data-i18n="v90ChatAI4">Want a full specification sheet with drawing-ready tolerances?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 9: CASE STUDIES ============ -->
-<section class="v90-cases" style="padding: 80px 0; background: #f8fafc;">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90CaseTag">Case Studies</span>
-            <h2 class="v90-section-title" data-i18n="v90CaseTitle">Real Problems, Engineered Solutions</h2>
-            <p class="v90-section-subtitle" data-i18n="v90CaseSubtitle">See how we collaborated with engineering teams to solve demanding optical challenges.</p>
-        </div>
-        <div class="v90-cases-grid">
-            <div class="v90-case-card">
-                <span class="v90-case-industry" data-i18n="v90Case1Industry">Laser Systems</span>
-                <h3 data-i18n="v90Case1Title">UV Laser Window Optimization</h3>
-                <div class="v90-case-body">
-                    <p><strong data-i18n="v90CaseChallenge">Challenge:</strong> <span data-i18n="v90Case1Challenge">355nm UV laser system experiencing rapid optics degradation and power drop within 1000 hours of operation.</span></p>
-                    <p><strong data-i18n="v90CaseSolution">Solution:</strong> <span data-i18n="v90Case1Solution">Switched from standard fused silica to high-purity synthetic silica with solarization-resistant coating. Surface quality upgraded to 10-5.</span></p>
-                    <p><strong data-i18n="v90CaseResult">Result:</strong> <span data-i18n="v90Case1Result">Lifetime extended to 8000+ hours with stable transmission. Power fluctuation reduced by 70%.</span></p>
-                </div>
-                <a href="/case-studies.html" class="v90-case-link" data-i18n="v90CaseReadMore">Read Full Case &rarr;</a>
-            </div>
-            <div class="v90-case-card">
-                <span class="v90-case-industry" data-i18n="v90Case2Industry">Medical Imaging</span>
-                <h3 data-i18n="v90Case2Title">Precision Imaging Lens Assembly</h3>
-                <div class="v90-case-body">
-                    <p><strong data-i18n="v90CaseChallenge">Challenge:</strong> <span data-i18n="v90Case2Challenge">Diagnostic imaging system needed a 3-element lens achieving diffraction-limited performance across 400-700nm with &#60;0.1% distortion.</span></p>
-                    <p><strong data-i18n="v90CaseSolution">Solution:</strong> <span data-i18n="v90Case2Solution">Achromatic doublet plus correction element design. BK7 and SF11 glasses with optimized cemented interface. Centration to 30 arc-sec.</span></p>
-                    <p><strong data-i18n="v90CaseResult">Result:</strong> <span data-i18n="v90Case2Result">MTF exceeded specification across all fields. Batch consistency maintained over 20 production runs.</span></p>
-                </div>
-                <a href="/case-studies.html" class="v90-case-link" data-i18n="v90CaseReadMore">Read Full Case &rarr;</a>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="/case-studies.html" class="btn btn-secondary" data-i18n="v90CaseAllBtn">View All Case Studies &rarr;</a>
-        </div>
-    </div>
-</section>
-
-<!-- ============ SCREEN 10: RFQ CTA ============ -->
-<section style="padding: 80px 0; background: linear-gradient(135deg,#1e3a5f 0%,#2d5a87 100%); text-align: center; color: white;">
-    <div class="container">
-        <h2 style="color: white; margin-bottom: 16px; font-size: 36px;">Have an Optical Requirement?</h2>
-        <p style="color: rgba(176,196,222,0.9); margin-bottom: 40px; font-size: 18px; max-width: 600px; margin-left: auto; margin-right: auto;">Tell us what you know. We'll help identify what you still need.</p>
-        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-            <div class="final-cta-item">
-                <a href="/contact.html" class="final-cta-btn primary" style="background:#e8792f;">I Know What I Need &rarr;</a>
-                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Upload Drawing / RFQ</p>
-            </div>
-            <div class="final-cta-item">
-                <a href="/contact.html" class="final-cta-btn secondary" style="border:1px solid rgba(255,255,255,0.4);color:white;">I Have an Optical Problem &rarr;</a>
-                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Request Engineering Review</p>
-            </div>
-            <div class="final-cta-item">
-                <a href="/ai-optical-engineer.html" class="final-cta-btn secondary" style="border:1px solid rgba(255,255,255,0.4);color:white;">I Need Help Choosing &rarr;</a>
-                <p class="final-cta-desc" style="color:rgba(176,196,222,0.8);">Ask AI Optical Engineer</p>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="footer">
-    <div class="container">
-        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr 1fr;">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
-                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS &amp; REACH</p>
+                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="navProducts">Products</h4>
                 <ul>
-                    <li><a href="/products.html?component=Lens">Optical Lenses</a></li>
-                    <li><a href="/products.html?component=Window">Optical Windows</a></li>
-                    <li><a href="/products.html?component=Mirror">Optical Mirrors</a></li>
-                    <li><a href="/products.html?component=Filter">Optical Filters</a></li>
-                    <li><a href="/products.html?component=Prism">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
                     <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
-                    <li><a href="/products.html?component=Waveplate">Waveplates &amp; Polarizers</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4 data-i18n="footerApplications">Applications</h4>
+                <h4 data-i18n="navResources">Resources</h4>
                 <ul>
-                    <li><a href="/applications/laser-optics/">Laser Systems</a></li>
-                    <li><a href="/applications/semiconductor-inspection/">Semiconductor</a></li>
-                    <li><a href="/applications/medical-imaging/">Medical Imaging</a></li>
-                    <li><a href="/applications/aerospace-defense/">Aerospace &amp; Defense</a></li>
-                    <li><a href="/applications/research-laboratory/">Research &amp; Laboratory</a></li>
-                    <li><a href="/engineering.html">Engineering Services</a></li>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="footerCompany">Company</h4>
                 <ul>
-                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
-                    <li><a href="/quality-assurance.html" class="footer-link" data-i18n="navQualityAssurance">Quality Assurance</a></li>
-                    <li><a href="/applications.html" data-i18n="navSolutions">Solutions</a></li>
+                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
+                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
                     <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality &amp; Documentation</a></li>
                     <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="footerResources">Resources</h4>
-                <ul>
-                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
-                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
-                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
-                    <li><a href="/calculator.html" data-i18n="menuCalculators">Calculators</a></li>
-                    <li><a href="/materials.html" data-i18n="menuMaterials">Materials Database</a></li>
-                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
-                    <li><a href="/quality-assurance.html" data-i18n="navQuality">Quality Assurance</a></li>
                 </ul>
             </div>
         </div>
@@ -769,8 +403,8 @@
             <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
         </div>
         <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-            <p>&copy; 2024-2026 PhotonEdge Optics. All Rights Reserved.</p>
-            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="footerNewsletter">Subscribe to weekly optical engineering insights &rarr; Contact us</a>
+            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote &rarr;</a>
         </div>
     </div>
 </footer>
