@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Flats and Surface Flatness Measurement: A Practical Guide to Interferometry, Reference Surfaces, and Quality Verification | PhotonEdge Optics Blog</title>
+    <meta name="description" content="Complete guide to optical flats and surface flatness measurement: understanding lambda-based specifications, Fizeau interferometry, fringe analysis, material selection (BK7, fused silica, sapphire), and 5 common mistakes in flat selection and use.">
+    <meta name="keywords" content="Optical Flat, Surface Flatness, Interferometry, Fizeau Interferometer, Flatness Measurement, Lambda Flat, Reference Flat, Optical Metrology, 光学平晶, 表面平面度, 干涉测量">
+    <meta property="og:title" content="Optical Flats and Surface Flatness Measurement: A Practical Guide to Interferometry, Reference Surfaces, and Quality Verification | PhotonEdge Blog">
+    <meta property="og:description" content="Complete guide to optical flats and surface flatness measurement: understanding lambda-based specifications, Fizeau interferometry, fringe analysis, material selection (BK7, fused silica, sapphire), and 5 common mistakes in flat selection and use.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/optical-flats-interferometry-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Optical Flats and Surface Flatness Measurement: A Practical Guide to Interferometry, Reference Surfaces, and Quality Verification",
+  "description": "Complete guide to optical flats and surface flatness measurement: understanding lambda-based specifications, Fizeau interferometry, fringe analysis, material selection (BK7, fused silica, sapphire), and 5 common mistakes in flat selection and use.",
+  "image": "https://photonedgeoptics.com/images/blog/optical-flats-interferometry-guide.jpg",
+  "datePublished": "2026-09-16",
+  "dateModified": "2026-09-16",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/"
+  }
+}
+    </script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blog-post.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <script src="/js/main.js"></script>
+    <script>renderHeader();</script>
+
+    <article style="max-width:900px;margin:0 auto;padding:40px 20px;">
+        <!-- Breadcrumb -->
+        <nav style="font-size:14px;color:#64748b;margin-bottom:24px;">
+            <a href="/" style="color:#3b82f6;text-decoration:none;">Home</a> &gt;
+            <a href="/blog.html" style="color:#3b82f6;text-decoration:none;">Blog</a> &gt;
+            <span>Optical Flats &amp; Surface Flatness Guide</span>
+        </nav>
+
+        <!-- Article Header -->
+        <header style="margin-bottom:32px;">
+            <span style="display:inline-block;background:#eff6ff;color:#3b82f6;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Technical Guide</span>
+            <h1 style="font-size:32px;font-weight:800;color:#0f172a;line-height:1.3;margin-bottom:16px;">Optical Flats and Surface Flatness Measurement: A Practical Guide to Interferometry, Reference Surfaces, and Quality Verification</h1>
+            <div style="display:flex;gap:16px;font-size:14px;color:#64748b;">
+                <span>PhotonEdge Technical Team</span>
+                <span>|</span>
+                <span>September 16, 2026</span>
+                <span>|</span>
+                <span>11 min read</span>
+            </div>
+        </header>
+
+        <!-- English Content -->
+        <div itemscope itemtype="http://schema.org/Article">
+            <div itemprop="articleBody" style="font-size:17px;line-height:1.8;color:#334155;">
+<h2>Introduction</h2>
+<p>Surface flatness is the most fundamental specification in precision optics. Whether you are calibrating a coordinate measuring machine, aligning a semiconductor lithography stage, or verifying the parallelism of an optical window, the accuracy of your entire system depends on the flatness of the reference surfaces it uses. Yet many engineers struggle with flatness specifications, interferometry methods, and how to select the right optical flat for their application.</p>
+<p>An optical flat is a highly precise, optically flat reference surface used to measure the flatness of other surfaces through interferometry. When monochromatic light reflects between the bottom surface of the flat and the test surface, interference fringes form &mdash; each fringe representing a height deviation of half the wavelength of light (typically &lambda;/2 &asymp; 316 nm for a He-Ne laser at 632.8 nm). By counting and analyzing these fringes, you can quantify surface flatness to a fraction of a wavelength.</p>
+<p>This guide covers the fundamentals of optical flats, surface flatness specifications (including the meaning of &lambda;/4, &lambda;/10, and &lambda;/20), how interferometry works in practice, real-world applications across semiconductor inspection, precision metrology, and optical system alignment, and five common mistakes engineers make when specifying or using reference flats.</p>
+
+<h2>Understanding Surface Flatness Specifications</h2>
+
+<h3>What Does &lambda;/4 (or &lambda;/10, &lambda;/20) Mean?</h3>
+<p>Surface flatness is expressed in fractions of a wavelength (&lambda;), typically referenced to a He-Ne laser wavelength of 632.8 nm. The specification indicates the maximum peak-to-valley (PV) deviation of the surface from a perfect plane:</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Flatness Grade</th><th style="border:1px solid #e2e8f0;padding:8px;">Peak-to-Valley Deviation</th><th style="border:1px solid #e2e8f0;padding:8px;">Typical Application</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/4</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 158 nm (0.158 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">General optical alignment, educational labs</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 63 nm (0.063 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">Precision metrology, optical system alignment</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/20</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 32 nm (0.032 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">Semiconductor inspection, interferometer references</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/50</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 13 nm (0.013 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">Lithography optics, high-precision calibration</td></tr>
+</table>
+<p>Note: &lambda;/20 flatness means the surface deviates no more than 32 nanometers from a perfect plane across its entire diameter. For context, a typical silicon wafer has a total thickness variation (TTV) of about 1&ndash;2 &mu;m &mdash; roughly 30&ndash;60 times the deviation of a &lambda;/20 flat.</p>
+
+<h3>Peak-to-Valley vs RMS Flatness</h3>
+<p><strong>Peak-to-valley (PV)</strong> flatness measures the difference between the highest peak and lowest valley on the surface. This is the most commonly specified metric. However, PV can be misleading because a single scratch or dust particle can dominate the PV value while the rest of the surface is much flatter.</p>
+<p><strong>RMS (root-mean-square)</strong> flatness calculates the statistical average deviation across the entire surface. RMS values are typically 3&ndash;5 times smaller than PV values for the same surface. A &lambda;/10 PV flat typically has &lambda;/30 to &lambda;/50 RMS flatness.</p>
+<p><strong>Best practice:</strong> For most applications, specify PV flatness with an optional RMS requirement. If your system is sensitive to local defects (e.g., semiconductor wafer inspection), add a local flatness specification measured over a small area (e.g., &lambda;/20 PV over any 25 mm &times; 25 mm region).</p>
+
+<h2>How Interferometry Works</h2>
+
+<h3>The Fizeau Interferometer Principle</h3>
+<p>The most common method for measuring surface flatness is the Fizeau interferometer. The setup is straightforward:</p>
+<ol style="font-size:16px;line-height:1.8;">
+<li>A monochromatic, coherent light source (typically a He-Ne laser at 632.8 nm) produces a collimated beam.</li>
+<li>The beam reflects off a reference surface (the optical flat) and the test surface simultaneously.</li>
+<li>The two reflected beams recombine and create an interference pattern &mdash; alternating bright and dark fringes.</li>
+<li>Each fringe represents a contour line of constant optical path difference. Adjacent bright fringes are separated by &lambda;/2 of surface height difference.</li>
+<li>By analyzing the fringe pattern (number, spacing, and curvature of fringes), the surface topography is calculated.</li>
+</ol>
+
+<h3>Reading Interference Fringes</h3>
+<p>When you place an optical flat on a test surface and illuminate with monochromatic light, you see interference fringes. The interpretation is simple:</p>
+<ul>
+<li><strong>Straight, parallel, equally spaced fringes:</strong> The test surface has a uniform wedge angle (slightly tilted relative to the flat). Flatness is good, but there is a controlled tilt.</li>
+<li><strong>Curved fringes:</strong> The test surface deviates from flatness. The amount of curvature indicates the magnitude of deviation. A fringe curvature of 1 fringe spacing = &lambda;/2 surface deviation.</li>
+<li><strong>Concentric circular fringes:</strong> The test surface is spherical (convex or concave). The number of rings indicates the radius of curvature.</li>
+<li><strong>No fringes (uniform color):</strong> The two surfaces are in optical contact (no air gap). This indicates excellent flatness and contact.</li>
+</ul>
+
+<h3>Transmission vs Reflection Flats</h3>
+<p><strong>Transmission flats</strong> (also called reference flats) have both surfaces polished to high flatness. Light passes through the flat, reflects off the test surface, and passes back through. The transmitted wavefront carries information about both the reference surface and the test surface.</p>
+<p><strong>Reflection flats</strong> have one surface polished to high flatness and the opposite surface anti-reflection coated or angled to suppress back reflections. They are used in Fizeau interferometers where the reference surface and test surface produce the interference pair.</p>
+<p>For most quality verification work, a transmission flat made from <a href="/products/fused-silica-optical-windows/">UV fused silica</a> or <a href="/products/bk7-windows/">BK7 glass</a> provides excellent performance. For high-precision applications, dedicated reference flats with &lambda;/20 or better flatness are recommended.</p>
+
+<h2>Application Scenarios</h2>
+
+<h3>Semiconductor Wafer Inspection</h3>
+<p>In semiconductor manufacturing, wafer flatness directly affects lithography focus uniformity and overlay accuracy. Modern 300 mm wafer fabrication requires flatness specifications of &lambda;/50 or better for mask and reticle substrates. Optical flats serve as reference surfaces in the inspection tools that verify wafer planarity.</p>
+<p>The inspection optics in these systems &mdash; including the <a href="/products/fused-silica-optical-windows/">fused silica windows</a> that protect the imaging sensors from process contaminants, the <a href="/products/laser-line-high-reflected-mirrors/">laser mirrors</a> that direct illumination beams, and the precision <a href="/products/bk7-right-angle-prisms/">right angle prisms</a> used in beam folding &mdash; all require flatness specifications that trace back to calibrated reference flats.</p>
+
+<h3>Optical System Alignment</h3>
+<p>When assembling a multi-element optical system (imaging lenses, laser resonators, or interferometers), each optical surface must be aligned to the mechanical axis of the system. An optical flat placed against a mirror mount or lens barrel provides a reference plane for alignment telescopes and autocollimators.</p>
+<p>For laser resonator alignment, flat reference mirrors ensure that the cavity axis is perpendicular to the mirror surface. A <a href="/products/broadband-dielectric-mirrors/">broadband dielectric mirror</a> with known flatness can serve dual purposes &mdash; as a cavity mirror and as an alignment reference.</p>
+
+<h3>Precision Metrology and CMM Calibration</h3>
+<p>Coordinate measuring machines (CMMs) and optical comparators use optical flats as reference surfaces for calibrating probe tips, verifying stage planarity, and establishing datum planes. In gauge labs, optical flats are placed on the measurement stage to verify that the stage itself is flat to the required tolerance before measuring production parts.</p>
+<p>For CMM stages that operate in the visible spectrum, <a href="/products/bk7-windows/">BK7 optical windows</a> with &lambda;/10 flatness serve as cost-effective reference surfaces. For UV or vacuum-compatible metrology systems, <a href="/products/fused-silica-optical-windows/">UV fused silica flats</a> are preferred due to their higher transmission in the deep UV and lower thermal expansion.</p>
+
+<h3>Parallel Plate Verification</h3>
+<p>Many optical components &mdash; especially optical windows and beam sampler plates &mdash; must maintain precise parallelism between their front and back surfaces. Wedge error (non-parallelism) causes beam deviation when the window is inserted into an optical path.</p>
+<p>To measure parallelism, an optical flat is placed against one surface of the window, and the interference pattern is observed from the opposite surface. Any deviation from parallelism produces wedge fringes. The fringe spacing directly indicates the wedge angle: closer fringes = larger wedge angle.</p>
+
+<h2>5 Common Mistakes in Optical Flat Selection and Use</h2>
+
+<h3>1. Choosing the Wrong Material for the Environment</h3>
+<p>Optical flats made from BK7 glass work well in standard lab environments but are unsuitable for high-temperature or UV applications. BK7 has a coefficient of thermal expansion (CTE) of 7.1 &times; 10<sup>&minus;6</sup> /&deg;C &mdash; for a 100 mm flat at &lambda;/10, a 5&deg;C temperature change introduces roughly &lambda;/8 of thermal deformation. For precision measurements in uncontrolled environments, use UV fused silica (CTE = 0.55 &times; 10<sup>&minus;6</sup> /&deg;C) which produces negligible thermal drift.</p>
+<p><strong>Solution:</strong> For metrology labs with temperature control (&plusmn;1&deg;C), BK7 flats are adequate. For shop-floor measurements or outdoor environments, specify fused silica flats. For high-temperature environments above 200&deg;C, consider sapphire or silicon carbide flats.</p>
+
+<h3>2. Ignoring Surface Quality Alongside Flatness</h3>
+<p>A flat can have &lambda;/20 flatness but poor surface quality (scratches, digs, or pits), making it useless for interferometry. Surface defects scatter light and create artifacts in the fringe pattern that are indistinguishable from actual surface errors on the test piece.</p>
+<p><strong>Solution:</strong> Always specify both flatness and surface quality. For interferometry reference flats, require 20-10 surface quality (ISO 10110) or better. See our guide on <a href="/blog/optical-quality-testing-methods/">optical quality testing methods</a> for how to verify surface quality specifications.</p>
+
+<h3>3. Contamination and Handling Errors</h3>
+<p>Fingerprints, dust particles, and cleaning residue on an optical flat create local distortions in the interference pattern that can be misinterpreted as surface errors on the test piece. A single 10 &mu;m dust particle between the flat and test surface produces a local fringe distortion equivalent to roughly &lambda;/30 of apparent flatness error.</p>
+<p><strong>Solution:</strong> Always handle optical flats with powder-free gloves, clean with appropriate solvents before use, and store in a clean environment. For detailed procedures, see our guide on <a href="/blog/optical-component-cleaning-maintenance-guide/">optical component cleaning and maintenance</a>.</p>
+
+<h3>4. Overlooking Flat Size Relative to Test Surface</h3>
+<p>The optical flat must be large enough to cover the entire test surface area of interest. Using a 25 mm flat to check a 100 mm optic only verifies flatness over the 25 mm contact area &mdash; the remaining 75 mm diameter is unverified. Conversely, an oversized flat is heavier, more expensive, and more susceptible to gravitational sag.</p>
+<p><strong>Solution:</strong> Select a flat diameter at least equal to the test surface diameter. For large surfaces (&gt;150 mm), consider using multiple overlapping measurements or a dedicated large-format interferometer.</p>
+
+<h3>5. Not Distinguishing Reference Flat from Working Flat</h3>
+<p>A reference flat (calibrated to &lambda;/20 or better) is used to calibrate other flats and verify instrument accuracy. A working flat (typically &lambda;/4 to &lambda;/10) is used for day-to-day measurements. Using a working flat as a reference standard introduces unknown errors. Using a reference flat for daily work risks damaging the more expensive, higher-precision optic.</p>
+<p><strong>Solution:</strong> Maintain a clear hierarchy: reference flats stored separately and used only for calibration; working flats used for daily measurements. Calibrate working flats against reference flats at regular intervals (annually for most labs).</p>
+
+<h2>Optical Flat Selection Quick Reference</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Application</th><th style="border:1px solid #e2e8f0;padding:8px;">Recommended Material</th><th style="border:1px solid #e2e8f0;padding:8px;">Flatness Grade</th><th style="border:1px solid #e2e8f0;padding:8px;">Key Consideration</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">General optical alignment</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/">BK7 Glass</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/4 to &lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">Cost-effective; adequate for most lab work</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Semiconductor inspection</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/">UV Fused Silica</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/20</td><td style="border:1px solid #e2e8f0;padding:8px;">Low CTE; UV compatible; high transmission</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">High-temperature environments</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/custom-optical-windows/">Sapphire</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">Extreme hardness; thermal stability to 500&deg;C</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Precision reference standard</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/">UV Fused Silica</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/50</td><td style="border:1px solid #e2e8f0;padding:8px;">Calibration reference; minimal thermal drift</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Laser system alignment</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/">BK7</a> or <a href="/products/fused-silica-optical-windows/">Fused Silica</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">Match to laser wavelength; AR coating optional</td></tr>
+</table>
+
+<h2>Conclusion</h2>
+<p>Optical flats are the foundation of precision surface measurement. Understanding flatness specifications (&lambda;/4 through &lambda;/50), interferometry principles, and proper selection criteria ensures your quality verification delivers traceable, reliable results.</p>
+<p>When specifying optical flats, consider the material (BK7 for general use, fused silica for UV/low-CTE, sapphire for harsh environments), the flatness grade required by your application, surface quality requirements, and the distinction between reference and working flats.</p>
+<p>PhotonEdge manufactures precision optical flats from <a href="/products/bk7-windows/">BK7 glass</a>, <a href="/products/fused-silica-optical-windows/">UV fused silica</a>, and <a href="/products/custom-optical-windows/">sapphire</a> with flatness from &lambda;/4 to &lambda;/50, surface quality to 20-10, and custom diameters up to 200 mm. For complete optical system components &mdash; including <a href="/products/bk7-right-angle-prisms/">right angle prisms</a>, <a href="/products/laser-line-high-reflected-mirrors/">laser mirrors</a>, and precision windows &mdash; explore our full product catalog or contact our technical team for application-specific recommendations.</p>
+            </div>
+
+        <!-- Chinese Content -->
+        <div id="chinese-content" style="display:none;font-size:17px;line-height:1.8;color:#334155;">
+<h2>引言</h2>
+<p>表面平面度是精密光学中最基本的规格参数。无论您是在校准坐标测量机、对准半导体光刻平台，还是验证光学窗口的平行度，整个系统的精度都取决于其所使用的基准面的平面度。然而，许多工程师在平面度规格、干涉测量方法以及如何为应用选择合适的光学平晶方面仍然存在困难。</p>
+<p>光学平晶是一种高度精密的光学基准面，用于通过干涉测量法测量其他表面的平面度。当单色光在平晶底面和被测面之间反射时，会形成干涉条纹——每条条纹代表半个波长的光程差（对于632.8 nm的He-Ne激光，&lambda;/2 &asymp; 316 nm）。通过计数和分析这些条纹，可以量化平面度至波长的几分之一。</p>
+<p>本指南涵盖光学平晶的基础知识、表面平面度规格（包括&lambda;/4、&lambda;/10和&lambda;/20的含义）、干涉测量的实际工作原理、在半导体检测、精密计量和光学系统对准中的实际应用，以及工程师在指定或使用基准平晶时常犯的五个错误。</p>
+
+<h2>理解表面平面度规格</h2>
+
+<h3>&lambda;/4（或&lambda;/10、&lambda;/20）是什么意思？</h3>
+<p>表面平面度以波长(&lambda;)的分数表示，通常参考He-Ne激光波长632.8 nm。该规格表示表面与完美平面的最大峰谷(PV)偏差：</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">平面度等级</th><th style="border:1px solid #e2e8f0;padding:8px;">峰谷偏差</th><th style="border:1px solid #e2e8f0;padding:8px;">典型应用</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/4</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 158 nm (0.158 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">通用光学对准、教育实验室</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 63 nm (0.063 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">精密计量、光学系统对准</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/20</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 32 nm (0.032 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">半导体检测、干涉仪基准</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/50</td><td style="border:1px solid #e2e8f0;padding:8px;">&le; 13 nm (0.013 &mu;m)</td><td style="border:1px solid #e2e8f0;padding:8px;">光刻光学、高精度校准</td></tr>
+</table>
+<p>注意：&lambda;/20平面度意味着表面在其整个直径范围内与完美平面的偏差不超过32纳米。作为参考，典型硅晶圆的总厚度变化(TTV)约为1&ndash;2 &mu;m——大约是&lambda;/20平晶偏差的30&ndash;60倍。</p>
+
+<h3>峰谷(PV) vs RMS平面度</h3>
+<p><strong>峰谷(PV)</strong>平面度测量表面上最高点与最低点之间的差异。这是最常用的指标。然而，PV可能具有误导性，因为单个划痕或灰尘颗粒可能主导PV值，而表面其余部分要平坦得多。</p>
+<p><strong>RMS（均方根）</strong>平面度计算整个表面的统计平均偏差。对于同一表面，RMS值通常比PV值小3&ndash;5倍。&lambda;/10 PV平晶通常具有&lambda;/30至&lambda;/50 RMS平面度。</p>
+<p><strong>最佳实践：</strong>对于大多数应用，指定PV平面度并可选RMS要求。如果您的系统对局部缺陷敏感（例如半导体晶圆检测），添加一个在小区域上测量的局部平面度规格（例如在任何25 mm &times; 25 mm区域内&lambda;/20 PV）。</p>
+
+<h2>干涉测量工作原理</h2>
+
+<h3>Fizeau干涉仪原理</h3>
+<p>测量表面平面度最常用的方法是Fizeau干涉仪。设置非常直接：</p>
+<ol style="font-size:16px;line-height:1.8;">
+<li>单色相干光源（通常为632.8 nm He-Ne激光）产生准直光束。</li>
+<li>光束同时从基准面（光学平晶）和被测面反射。</li>
+<li>两束反射光重新组合并产生干涉图样——交替的明暗条纹。</li>
+<li>每条条纹代表等光程差的等高线。相邻亮条纹之间的间距对应&lambda;/2的表面高度差。</li>
+<li>通过分析条纹图样（条纹数量、间距和弯曲度），计算表面形貌。</li>
+</ol>
+
+<h3>判读干涉条纹</h3>
+<p>当您将光学平晶放在被测面上并用单色光照射时，会看到干涉条纹。判读方法如下：</p>
+<ul>
+<li><strong>直线、平行、等间距条纹：</strong>被测面具有均匀楔角（相对于平晶轻微倾斜）。平面度良好，但存在可控倾斜。</li>
+<li><strong>弯曲条纹：</strong>被测面偏离平面度。弯曲量表示偏差大小。1个条纹间距的弯曲 = &lambda;/2表面偏差。</li>
+<li><strong>同心圆条纹：</strong>被测面为球面（凸或凹）。环数表示曲率半径。</li>
+<li><strong>无条纹（均匀颜色）：</strong>两个表面处于光学接触（无气隙）。表示出色的平面度和接触。</li>
+</ul>
+
+<h3>透射平晶 vs 反射平晶</h3>
+<p><strong>透射平晶</strong>（也称基准平晶）两面都抛光到高平面度。光穿过平晶，从被测面反射后再次穿过。透射波前携带基准面和被测面的信息。</p>
+<p><strong>反射平晶</strong>一面抛光到高平面度，另一面镀增透膜或倾斜以抑制背反射。它们用于Fizeau干涉仪中，基准面和被测面构成干涉对。</p>
+<p>对于大多数质量验证工作，由<a href="/products/fused-silica-optical-windows/">UV熔融石英</a>或<a href="/products/bk7-windows/">BK7玻璃</a>制成的透射平晶提供优异的性能。对于高精度应用，推荐使用&lambda;/20或更高等级的专用基准平晶。</p>
+
+<h2>应用场景</h2>
+
+<h3>半导体晶圆检测</h3>
+<p>在半导体制造中，晶圆平面度直接影响光刻聚焦均匀性和套刻精度。现代300 mm晶圆制造要求掩模和掩模版基板的平面度达到&lambda;/50或更好。光学平晶在验证晶圆平面度的检测工具中充当基准面。</p>
+<p>这些系统中的检测光学元件——包括保护成像传感器免受工艺污染物的<a href="/products/fused-silica-optical-windows/">熔融石英窗口</a>、引导照明光束的<a href="/products/laser-line-high-reflected-mirrors/">激光反射镜</a>，以及用于光束折叠的精密<a href="/products/bk7-right-angle-prisms/">直角棱镜</a>——都需要可追溯到校准基准平晶的平面度规格。</p>
+
+<h3>光学系统对准</h3>
+<p>在组装多元件光学系统（成像镜头、激光谐振腔或干涉仪）时，每个光学表面都必须对准系统的机械轴。将光学平晶放置在反射镜架或透镜筒上，为对准望远镜和自准直仪提供基准面。</p>
+<p>对于激光谐振腔对准，平面基准镜确保腔轴垂直于镜面表面。具有已知平面度的<a href="/products/broadband-dielectric-mirrors/">宽带介质膜反射镜</a>可以兼具两种用途——作为腔镜和对准基准。</p>
+
+<h3>精密计量与CMM校准</h3>
+<p>坐标测量机(CMM)和光学比较仪使用光学平晶作为校准探头尖端、验证平台平面度和建立基准面的基准面。在校准实验室中，将光学平晶放置在测量平台上，在测量生产零件之前验证平台本身是否达到要求的平面度公差。</p>
+<p>对于在可见光谱下工作的CMM平台，&lambda;/10平面度的<a href="/products/bk7-windows/">BK7光学窗口</a>可作为经济高效的基准面。对于兼容紫外或真空的计量系统，首选<a href="/products/fused-silica-optical-windows/">UV熔融石英平晶</a>，因其在深紫外具有更高的透过率和更低的热膨胀。</p>
+
+<h3>平行平板验证</h3>
+<p>许多光学元件——特别是光学窗口和光束采样片——必须保持前后表面之间的精确平行度。楔形误差（非平行度）会导致窗口插入光路时产生光束偏转。</p>
+<p>要测量平行度，将光学平晶放在窗口的一侧，从另一侧观察干涉图样。任何平行度偏差都会产生楔形条纹。条纹间距直接指示楔角：条纹越密 = 楔角越大。</p>
+
+<h2>光学平晶选择和使用中的5大常见错误</h2>
+
+<h3>1. 为环境选择了错误的材料</h3>
+<p>BK7玻璃制成的光学平晶在标准实验室环境中工作良好，但不适用于高温或紫外应用。BK7的热膨胀系数(CTE)为7.1 &times; 10<sup>&minus;6</sup> /&deg;C——对于100 mm的&lambda;/10平晶，5&deg;C的温度变化引入约&lambda;/8的热变形。对于在非受控环境中的精密测量，使用UV熔融石英(CTE = 0.55 &times; 10<sup>&minus;6</sup> /&deg;C)，其热漂移可忽略不计。</p>
+<p><strong>解决方案：</strong>对于温控(&plusmn;1&deg;C)计量实验室，BK7平晶足够。对于车间测量或户外环境，指定熔融石英平晶。对于超过200&deg;C的高温环境，考虑蓝宝石或碳化硅平晶。</p>
+
+<h3>2. 忽视平面度之外的表面质量</h3>
+<p>平晶可能具有&lambda;/20平面度但表面质量差（划痕、麻点或凹坑），使其无法用于干涉测量。表面缺陷散射光线，在条纹图样中产生与被测面实际表面误差无法区分的伪影。</p>
+<p><strong>解决方案：</strong>始终同时指定平面度和表面质量。对于干涉测量基准平晶，要求20-10表面质量(ISO 10110)或更好。详见我们的<a href="/blog/optical-quality-testing-methods/">光学质量检测方法</a>指南。</p>
+
+<h3>3. 污染和操作错误</h3>
+<p>光学平晶上的指纹、灰尘颗粒和清洁残留物会在干涉图样中产生局部畸变，可能被误判为被测面的表面误差。平晶和被测面之间的单个10 &mu;m灰尘颗粒产生约&lambda;/30的表观平面度误差的局部条纹畸变。</p>
+<p><strong>解决方案：</strong>始终戴无粉手套操作光学平晶，使用前用适当溶剂清洁，存放在洁净环境中。详细程序请参见我们的<a href="/blog/optical-component-cleaning-maintenance-guide/">光学元件清洁与维护</a>指南。</p>
+
+<h3>4. 忽视平晶尺寸与被测面的匹配</h3>
+<p>光学平晶必须足够大以覆盖整个感兴趣的被测面区域。使用25 mm平晶检查100 mm光学元件仅验证25 mm接触区域的平面度——剩余75 mm直径未验证。反过来，过大的平晶更重、更贵，更容易受重力下垂影响。</p>
+<p><strong>解决方案：</strong>选择至少等于被测面直径的平晶直径。对于大表面(&gt;150 mm)，考虑使用多次重叠测量或专用大尺寸干涉仪。</p>
+
+<h3>5. 不区分基准平晶和工作平晶</h3>
+<p>基准平晶（校准到&lambda;/20或更好）用于校准其他平晶和验证仪器精度。工作平晶（通常&lambda;/4至&lambda;/10）用于日常测量。将工作平晶用作参考标准会引入未知误差。使用基准平晶进行日常工作则可能损坏更昂贵、更高精度的光学元件。</p>
+<p><strong>解决方案：</strong>保持清晰的层级：基准平晶单独存放，仅用于校准；工作平晶用于日常测量。定期（大多数实验室每年）将工作平晶与基准平晶进行对比校准。</p>
+
+<h2>光学平晶选型快速参考</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">应用</th><th style="border:1px solid #e2e8f0;padding:8px;">推荐材料</th><th style="border:1px solid #e2e8f0;padding:8px;">平面度等级</th><th style="border:1px solid #e2e8f0;padding:8px;">关键考虑</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">通用光学对准</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/">BK7玻璃</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/4至&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">经济高效；满足大多数实验室工作</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">半导体检测</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/">UV熔融石英</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/20</td><td style="border:1px solid #e2e8f0;padding:8px;">低CTE；紫外兼容；高透过率</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">高温环境</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/custom-optical-windows/">蓝宝石</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">极高硬度；热稳定性至500&deg;C</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">精密基准标准</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/fused-silica-optical-windows/">UV熔融石英</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/50</td><td style="border:1px solid #e2e8f0;padding:8px;">校准基准；最小热漂移</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">激光系统对准</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-windows/">BK7</a>或<a href="/products/fused-silica-optical-windows/">熔融石英</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;/10</td><td style="border:1px solid #e2e8f0;padding:8px;">匹配激光波长；AR镀膜可选</td></tr>
+</table>
+
+<h2>结论</h2>
+<p>光学平晶是精密表面测量的基础。理解平面度规格（&lambda;/4至&lambda;/50）、干涉测量原理和正确的选择标准，确保您的质量验证提供可追溯、可靠的结果。</p>
+<p>指定光学平晶时，请考虑材料（通用型选BK7、紫外/低CTE选熔融石英、恶劣环境选蓝宝石）、应用所需的平面度等级、表面质量要求，以及基准平晶与工作平晶的区别。</p>
+<p>恒鼎光使用<a href="/products/bk7-windows/">BK7玻璃</a>、<a href="/products/fused-silica-optical-windows/">UV熔融石英</a>和<a href="/products/custom-optical-windows/">蓝宝石</a>制造精密光学平晶，平面度从&lambda;/4到&lambda;/50，表面质量达20-10，定制直径可达200 mm。如需完整的光学系统元件——包括<a href="/products/bk7-right-angle-prisms/">直角棱镜</a>、<a href="/products/laser-line-high-reflected-mirrors/">激光反射镜</a>和精密窗口——请浏览我们的完整产品目录或联系技术团队获取针对应用的推荐。</p>
+        </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div style="margin-top:48px;padding:32px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;text-align:center;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:12px;" data-i18n="blog.cta.title">Need Help Selecting Optical Flats?</h2>
+            <p style="color:#475569;margin-bottom:20px;" data-i18n="blog.cta.description">PhotonEdge manufactures precision optical flats from BK7, UV fused silica, and sapphire with flatness to &lambda;/50. Send your measurement requirements &mdash; we will recommend the right reference surfaces.</p>
+            <a href="/contact.html" style="display:inline-block;background:#3b82f6;color:#fff;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;" data-i18n="blog.cta.button">Get Technical Support</a>
+        </div>
+
+        <!-- Related Posts -->
+        <div style="margin-top:48px;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:20px;" data-i18n="blog.related.title">Related Articles</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+                <a href="/blog/precision-optical-metrology/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Precision Optical Metrology</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Interferometry, surface measurement, and optical testing standards.</p>
+                </a>
+                <a href="/blog/optical-quality-testing-methods/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Optical Quality Testing Methods</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">How to verify optical component quality using interferometry and other standards.</p>
+                </a>
+                <a href="/blog/precision-optical-components-semiconductor-inspection/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Semiconductor Inspection Optics</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Precision optical components for semiconductor manufacturing and inspection.</p>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <div id="site-footer"></div>
+    <script>renderFooter();</script>
+
+    <!-- Language switch handling -->
+    <script>
+    (function() {
+        var params = window.location.search;
+        var langMatch = params.match(/[?&]lang=([^&]+)/);
+        if (langMatch && langMatch[1] === 'zh') {
+            var enContent = document.querySelector('[itemprop="articleBody"]');
+            var zhContent = document.getElementById('chinese-content');
+            if (enContent && zhContent) {
+                enContent.style.display = 'none';
+                zhContent.style.display = 'block';
+            }
+            document.documentElement.lang = 'zh';
+            var titleEl = document.querySelector('title');
+            if (titleEl) titleEl.textContent = '光学平晶与表面平面度测量：干涉测量、基准面与质量验证实用指南 | \u6052\u9F0E\u5149\u535A\u5BA2';
+        }
+    });
+    </script>
+</body>
+</html>
