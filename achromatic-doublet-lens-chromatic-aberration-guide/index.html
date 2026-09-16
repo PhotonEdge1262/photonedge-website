@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achromatic Doublet Lenses: How to Correct Chromatic Aberration in Precision Imaging & Machine Vision | PhotonEdge Optics Blog</title>
+    <meta name="description" content="Practical engineering guide to correcting chromatic aberration using achromatic doublet lenses. Covers working principles, design types, selection criteria, comparison with singlet and aspherical lenses, and 5 common mistakes.">
+    <meta name="keywords" content="Achromatic Doublet, Chromatic Aberration, Achromatic Lens, Color Correction, Machine Vision Lens, Imaging Optics, Doublet Lens Selection, 消色差双胶合透镜, 色差校正, 成像光学">
+    <meta property="og:title" content="Achromatic Doublet Lenses: Chromatic Aberration Correction Guide | PhotonEdge Blog">
+    <meta property="og:description" content="How achromatic doublet lenses correct chromatic aberration in precision imaging and machine vision systems. Selection guide, comparison, and common mistakes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/achromatic-doublet-lens-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Achromatic Doublet Lenses: How to Correct Chromatic Aberration in Precision Imaging and Machine Vision Systems",
+  "description": "Practical engineering guide to correcting chromatic aberration using achromatic doublet lenses: working principles, design types, selection criteria, and common mistakes.",
+  "image": "https://photonedgeoptics.com/images/blog/achromatic-doublet-lens-guide.jpg",
+  "datePublished": "2026-09-14",
+  "dateModified": "2026-09-14",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/"
+  }
+}
+    </script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blog-post.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <script src="/js/main.js"></script>
+    <script>renderHeader();</script>
+
+    <article style="max-width:900px;margin:0 auto;padding:40px 20px;">
+        <!-- Breadcrumb -->
+        <nav style="font-size:14px;color:#64748b;margin-bottom:24px;">
+            <a href="/" style="color:#3b82f6;text-decoration:none;">Home</a> &gt;
+            <a href="/blog.html" style="color:#3b82f6;text-decoration:none;">Blog</a> &gt;
+            <span>Achromatic Doublet Lenses: Chromatic Aberration Guide</span>
+        </nav>
+
+        <!-- Article Header -->
+        <header style="margin-bottom:32px;">
+            <span style="display:inline-block;background:#eff6ff;color:#3b82f6;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Technical Guide</span>
+            <h1 style="font-size:32px;font-weight:800;color:#0f172a;line-height:1.3;margin-bottom:16px;">Achromatic Doublet Lenses: How to Correct Chromatic Aberration in Precision Imaging and Machine Vision Systems</h1>
+            <div style="display:flex;gap:16px;font-size:14px;color:#64748b;">
+                <span>PhotonEdge Technical Team</span>
+                <span>|</span>
+                <span>September 14, 2026</span>
+                <span>|</span>
+                <span>12 min read</span>
+            </div>
+        </header>
+
+        <!-- English Content -->
+        <div itemscope itemtype="http://schema.org/Article">
+            <div itemprop="articleBody" style="font-size:17px;line-height:1.8;color:#334155;">
+<h2>Introduction</h2>
+<p>Chromatic aberration is the single most common optical error in imaging systems that use broadband light or multi-wavelength sources. If your machine vision camera produces color fringing around edges, your microscope images look soft at the periphery, or your inspection system shows focus shift between red and blue illumination, the root cause is almost certainly chromatic aberration in your lenses.</p>
+<p>Unlike monochromatic aberrations (spherical aberration, coma, astigmatism) that affect all wavelengths equally, chromatic aberration occurs because optical glass refracts different wavelengths by different amounts. Blue light focuses closer to the lens; red light focuses farther away. The result: no single focal plane brings all colors into sharp focus simultaneously.</p>
+<p>The most practical and cost-effective solution is the achromatic doublet lens &mdash; a cemented pair of positive and negative lens elements made from different glass types, designed to bring two specific wavelengths to a common focus. Achromatic doublets are the workhorse of precision imaging, used everywhere from machine vision cameras and microscope objectives to telescope eyepieces and semiconductor inspection optics.</p>
+<p>This guide explains how achromatic doublets correct chromatic aberration, walks through the main design types, shows how to select the right doublet for your application, compares doublets with singlet lenses and aspherical alternatives, and highlights five common mistakes engineers make when specifying imaging optics.</p>
+
+<h2>Understanding Chromatic Aberration</h2>
+<h3>What Causes Chromatic Aberration?</h3>
+<p>Every optical glass has a wavelength-dependent refractive index, described by its dispersion curve. This dispersion is quantified by the Abbe number (V-number):</p>
+<ul>
+<li><strong>High Abbe number (V &gt; 50):</strong> Low dispersion &mdash; refractive index changes slowly with wavelength. Crown glasses like BK7 (V = 64.2) are low-dispersion.</li>
+<li><strong>Low Abbe number (V &lt; 50):</strong> High dispersion &mdash; refractive index changes rapidly with wavelength. Flint glasses like F2 (V = 36.4) are high-dispersion.</li>
+</ul>
+<p>When white light passes through a simple <a href="/products/bk7-plano-convex/">BK7 plano-convex lens</a>, each wavelength focuses at a different distance from the lens. The focal length at 486 nm (blue, F-line) is typically 1&ndash;2% shorter than at 656 nm (red, C-line). For a 100 mm focal length lens, this means the blue focus and red focus are separated by 1&ndash;2 mm &mdash; a massive difference in precision imaging where depth of focus may be only a few micrometers.</p>
+
+<h3>Two Types of Chromatic Aberration</h3>
+<p><strong>Axial (longitudinal) chromatic aberration:</strong> Different wavelengths focus at different distances along the optical axis. This causes overall color blurring and is the primary aberration corrected by achromatic doublets.</p>
+<p><strong>Lateral (transverse) chromatic aberration:</strong> Different wavelengths produce different image sizes, causing color fringing at the edges of the field of view. This is corrected by symmetric lens designs or software post-processing in digital systems.</p>
+<p>Achromatic doublets primarily correct axial chromatic aberration. Residual lateral color can be minimized by stopping down the aperture or corrected in post-processing for digital imaging systems.</p>
+
+<h2>How Achromatic Doublets Work</h2>
+<h3>The Principle of Chromatic Correction</h3>
+<p>An achromatic doublet combines a positive lens element made from low-dispersion crown glass (typically BK7) with a negative lens element made from high-dispersion flint glass (typically F2 or SF series). The two elements are cemented together with an index-matching optical adhesive.</p>
+<p>The positive crown element provides the overall focusing power, while the negative flint element introduces an equal and opposite dispersion. The net result: the doublet focuses two selected wavelengths (typically the red C-line at 656.3 nm and blue F-line at 486.1 nm) to the same focal point, while the third wavelength (green d-line at 587.6 nm) focuses very close to the same plane.</p>
+
+<h3>Design Types</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Type</th><th style="border:1px solid #e2e8f0;padding:8px;">Configuration</th><th style="border:1px solid #e2e8f0;padding:8px;">Best For</th><th style="border:1px solid #e2e8f0;padding:8px;">Characteristics</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Positive Achromat</td><td style="border:1px solid #e2e8f0;padding:8px;">Crown front (convex) + Flint rear (concave)</td><td style="border:1px solid #e2e8f0;padding:8px;">Focusing, imaging, collimating</td><td style="border:1px solid #e2e8f0;padding:8px;">Net positive focal length; most common type</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Negative Achromat</td><td style="border:1px solid #e2e8f0;padding:8px;">Flint front (concave) + Crown rear (convex)</td><td style="border:1px solid #e2e8f0;padding:8px;">Beam expansion, divergence</td><td style="border:1px solid #e2e8f0;padding:8px;">Net negative focal length; less common</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Cemented vs Air-spaced</td><td style="border:1px solid #e2e8f0;padding:8px;">Cemented: bonded; Air-spaced: gap between elements</td><td style="border:1px solid #e2e8f0;padding:8px;">Cemented for general; Air-spaced for high-power laser</td><td style="border:1px solid #e2e8f0;padding:8px;">Air-spaced avoids cement LIDT limitations</td></tr>
+</table>
+
+<p>PhotonEdge <a href="/products/achromatic-doublet/">Achromatic Doublet Lenses</a> are cemented-type positive achromats, optimized for visible-spectrum imaging applications from 400 nm to 700 nm. They provide near-diffraction-limited performance on-axis with significant improvement over singlet lenses.</p>
+
+<h2>Achromatic Doublets vs Singlet Lenses vs Aspherical Lenses</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Parameter</th><th style="border:1px solid #e2e8f0;padding:8px;">Singlet (e.g., <a href="/products/bk7-plano-convex/">BK7 PCX</a>)</th><th style="border:1px solid #e2e8f0;padding:8px;">Achromatic Doublet</th><th style="border:1px solid #e2e8f0;padding:8px;">Aspherical Lens</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Chromatic Correction</td><td style="border:1px solid #e2e8f0;padding:8px;">None</td><td style="border:1px solid #e2e8f0;padding:8px;">Two wavelengths corrected</td><td style="border:1px solid #e2e8f0;padding:8px;">None (single material)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Spherical Aberration</td><td style="border:1px solid #e2e8f0;padding:8px;">Significant</td><td style="border:1px solid #e2e8f0;padding:8px;">Reduced</td><td style="border:1px solid #e2e8f0;padding:8px;">Near-zero on-axis</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Cost</td><td style="border:1px solid #e2e8f0;padding:8px;">$</td><td style="border:1px solid #e2e8f0;padding:8px;">$$</td><td style="border:1px solid #e2e8f0;padding:8px;">$$&ndash;$$$</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Best Use Case</td><td style="border:1px solid #e2e8f0;padding:8px;">Monochromatic or low-precision</td><td style="border:1px solid #e2e8f0;padding:8px;">Broadband imaging, machine vision</td><td style="border:1px solid #e2e8f0;padding:8px;">Laser focusing (single wavelength)</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Performance (broadband)</td><td style="border:1px solid #e2e8f0;padding:8px;">Poor</td><td style="border:1px solid #e2e8f0;padding:8px;">Good</td><td style="border:1px solid #e2e8f0;padding:8px;">Poor (same chromatic issue)</td></tr>
+</table>
+<p>Key insight: aspherical lenses correct spherical aberration beautifully but do nothing for chromatic aberration because they are still single-element, single-material optics. For broadband imaging, you need an achromatic doublet. For single-wavelength laser focusing, an <a href="/products/aspherical-lenses/">aspherical lens</a> may give better on-axis performance than a doublet.</p>
+
+<h2>Selecting an Achromatic Doublet: Key Parameters</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Parameter</th><th style="border:1px solid #e2e8f0;padding:8px;">What It Means</th><th style="border:1px solid #e2e8f0;padding:8px;">Selection Guidance</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Focal Length</td><td style="border:1px solid #e2e8f0;padding:8px;">Distance from lens to focus (for collimated input)</td><td style="border:1px solid #e2e8f0;padding:8px;">Match to your working distance and magnification requirement</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Clear Aperture</td><td style="border:1px solid #e2e8f0;padding:8px;">Usable optical diameter</td><td style="border:1px solid #e2e8f0;padding:8px;">Must exceed your beam or field diameter; typical 6&ndash;50 mm</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Wavelength Range</td><td style="border:1px solid #e2e8f0;padding:8px;">Design optimization band</td><td style="border:1px solid #e2e8f0;padding:8px;">Visible (400&ndash;700 nm) for most imaging; UV or IR for specialized</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Surface Quality</td><td style="border:1px solid #e2e8f0;padding:8px;">Scratch-dig per ISO 10110</td><td style="border:1px solid #e2e8f0;padding:8px;">40-20 for general; 20-10 for high-resolution imaging</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">AR Coating</td><td style="border:1px solid #e2e8f0;padding:8px;">Anti-reflection coating type</td><td style="border:1px solid #e2e8f0;padding:8px;">Broadband VIS AR for color imaging; single-wavelength AR for laser</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Centration</td><td style="border:1px solid #e2e8f0;padding:8px;">Alignment of optical axes of both elements</td><td style="border:1px solid #e2e8f0;padding:8px;">&lt; 3 arc-min for precision imaging; &lt; 1 arc-min for diffraction-limited</td></tr>
+</table>
+
+<h2>Application Scenarios</h2>
+
+<h3>Machine Vision Systems</h3>
+<p>In machine vision inspection, cameras capture images under white-light or multi-LED illumination. The lens must focus all wavelengths to the same plane to produce sharp, color-accurate images for edge detection, dimension measurement, and defect classification. A singlet lens would produce focus shift of 1&ndash;2 mm between blue and red channels &mdash; far exceeding the typical depth of focus of a 5 MP camera with 2.2 &mu;m pixels.</p>
+<p>PhotonEdge <a href="/products/achromatic-doublet/">Achromatic Doublet Lenses</a> reduce this focus shift to under 0.1 mm across the visible spectrum, enabling sub-pixel measurement accuracy. For complete machine vision optical systems, pair achromats with <a href="/products/c-mount-lenses/">C-Mount Machine Vision Lenses</a> that already incorporate multi-element achromatic designs.</p>
+
+<h3>Microscopy and Life Sciences</h3>
+<p>Transmission brightfield microscopy uses white-light illumination through stained biological samples. The condenser and objective lenses must be achromatically corrected to produce color-accurate images. Research-grade microscope objectives use 3&ndash;8 element apochromatic designs, but for educational systems, photography adapters, and custom microscopy setups, achromatic doublets provide excellent color correction at a fraction of the cost.</p>
+<p>For fluorescence systems where you need to focus both excitation and emission wavelengths, an achromatic doublet ensures both channels are in focus simultaneously. Combine with <a href="/products/dichroic-mirrors/">Dichroic Mirrors</a> and <a href="/products/laser-line-filters/">Narrow Band Interference Filters</a> for complete fluorescence filter cube assemblies.</p>
+
+<h3>Inspection and Quality Control</h3>
+<p>Optical inspection systems for manufacturing (PCB inspection, surface defect detection, dimensional gauging) require lenses that maintain focus across the full spectral range of the illumination source. Whether using halogen (broadband white), LED (multi-peak), or laser-line illumination, achromatic doublets ensure consistent focus and sharp edges for reliable automated inspection.</p>
+
+<h3>Telescopes and Long-Range Imaging</h3>
+<p>Refractor telescopes were the original application for achromatic doublets. A positive crown/flint doublet objective brings red and blue light to a common focus, eliminating the colorful halos that plague simple singlet refractors. Modern achromatic telescope objectives use optimized doublet designs with focal ratios of f/10 or longer to minimize residual secondary spectrum.</p>
+
+<h2>5 Common Mistakes in Achromatic Doublet Selection</h2>
+
+<h3>1. Using a Singlet When You Need a Doublet</h3>
+<p>Engineers sometimes specify <a href="/products/bk7-plano-convex/">BK7 plano-convex lenses</a> for imaging applications without realizing that singlet lenses cannot correct chromatic aberration. If your system uses broadband illumination or captures color images, a singlet will always produce color fringing and focus shift. The fix is simple: replace singlets with achromatic doublets wherever color fidelity matters.</p>
+<p><strong>Rule of thumb:</strong> If your light source spans more than ~50 nm bandwidth and you need sharp focus, use an achromatic doublet.</p>
+
+<h3>2. Expecting an Achromat to Correct All Aberrations</h3>
+<p>Achromatic doublets correct axial chromatic aberration well but still have residual spherical aberration, coma, and field curvature. For diffraction-limited performance across a wide field, you need additional elements (forming a triplet or more complex objective). An achromatic doublet is an excellent starting point but may not be the complete solution for high-NA or wide-field systems.</p>
+<p><strong>Solution:</strong> Use achromatic doublets for moderate-NA (up to ~0.1) and narrow-field applications. For higher performance, consider multi-element objectives or add an <a href="/products/aspherical-lenses/">aspherical lens</a> element to correct spherical aberration.</p>
+
+<h3>3. Ignoring the Cement Layer in High-Power Laser Systems</h3>
+<p>Standard cemented achromatic doublets use optical adhesive (typically UV-curing cement) to bond the crown and flint elements. This cement layer absorbs high-power laser energy and can degrade, yellow, or delaminate under sustained laser illumination above ~1 W/cm&sup2;. For high-power laser applications, specify air-spaced doublets or use <a href="/products/high-power-laser-mirrors/">reflective optics</a> instead.</p>
+<p><strong>Solution:</strong> For CW laser power above 1 W or pulsed energy above 10 mJ, consider air-spaced achromats or reflective alternatives. For imaging and low-power applications, cemented doublets are perfectly suitable.</p>
+
+<h3>4. Mismatching Doublet Coating to the Light Source</h3>
+<p>Achromatic doublets optimized for visible light (400&ndash;700 nm) with broadband VIS AR coatings perform poorly in the near-infrared or near-UV. If your system uses 850 nm IR illumination for night-vision or 365 nm UV for fluorescence excitation, you need doublets with coatings optimized for those wavelength ranges.</p>
+<p><strong>Solution:</strong> Always specify the operating wavelength range when ordering doublets. PhotonEdge can customize AR coatings on achromatic doublets for UV, visible, or NIR optimization.</p>
+
+<h3>5. Overlooking Centration Tolerance</h3>
+<p>In a cemented doublet, the optical axes of the crown and flint elements must be perfectly aligned. Poor centration introduces coma and degrades image quality, especially at the edges of the field. Low-cost doublets may have centration tolerance of 5&ndash;6 arc-min, which is acceptable for educational use but insufficient for precision machine vision.</p>
+<p><strong>Solution:</strong> For machine vision and inspection systems, specify centration &lt; 3 arc-min. PhotonEdge achromatic doublets are held to &lt; 3 arc-min centration as standard, with &lt; 1 arc-min available for diffraction-limited applications.</p>
+
+<h2>Product Selection Quick Reference</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Application</th><th style="border:1px solid #e2e8f0;padding:8px;">Recommended Product</th><th style="border:1px solid #e2e8f0;padding:8px;">Key Specification</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Broadband imaging (VIS)</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/achromatic-doublet/">Achromatic Doublet Lenses</a></td><td style="border:1px solid #e2e8f0;padding:8px;">VIS AR coating; &lt; 3 arc-min centration</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Machine vision systems</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/c-mount-lenses/">C-Mount Machine Vision Lenses</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Multi-element achromatic; C-mount thread</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Laser focusing (single &lambda;)</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/aspherical-lenses/">Aspherical Lenses</a></td><td style="border:1px solid #e2e8f0;padding:8px;">&lambda;-specific AR; NA matched to beam</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Budget imaging prototype</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Low cost; monochromatic only</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Fluorescence systems</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/achromatic-doublet/">Achromatic Doublet</a> + <a href="/products/dichroic-mirrors/">Dichroic Mirrors</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Match excitation/emission bands</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Relay / 1:1 imaging</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-bi-convex/">BK7 Bi-Convex Lenses</a> (if mono) or Doublet</td><td style="border:1px solid #e2e8f0;padding:8px;">Symmetric conjugates minimize aberrations</td></tr>
+</table>
+
+<h2>Conclusion</h2>
+<p>Chromatic aberration is the dominant optical error in broadband imaging systems, and achromatic doublet lenses are the most practical, cost-effective solution. By combining a low-dispersion crown element with a high-dispersion flint element, achromats bring two wavelengths to a common focus, dramatically improving image sharpness and color fidelity compared to singlet lenses.</p>
+<p>When specifying achromatic doublets, pay attention to focal length, clear aperture, surface quality, AR coating bandwidth, and centration tolerance. Understand the limitations: achromats do not correct all aberrations, cemented designs have power limits, and the correction is optimized for a specific wavelength range.</p>
+<p>PhotonEdge manufactures precision achromatic doublet lenses with tight centration tolerance (&lt; 3 arc-min standard), broadband VIS AR coatings, and surface quality to 40-20 or 20-10. We also supply complementary optics for complete imaging systems: <a href="/products/c-mount-lenses/">C-Mount Machine Vision Lenses</a>, <a href="/products/aspherical-lenses/">Aspherical Lenses</a>, <a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a>, and <a href="/products/bk7-bi-convex/">BK7 Bi-Convex Lenses</a>. Custom achromats with specialized coatings, focal lengths, and glass combinations are available for OEM applications.</p>
+            </div>
+        </div>
+
+        <!-- Chinese Content (hidden by default) -->
+        <div id="chinese-content" style="display:none;font-size:17px;line-height:1.8;color:#334155;">
+<h2>引言</h2>
+<p>色差是使用宽带光源或多波长光源的成像系统中最常见的光学误差。如果您的机器视觉相机在边缘产生彩色条纹、显微镜图像周边模糊，或检测系统在红色和蓝色照明之间出现焦点偏移，根本原因几乎可以确定是透镜中的色差。</p>
+<p>与等量影响所有波长的单色像差（球差、彗差、像散）不同，色差的发生是因为光学玻璃对不同波长的折射率不同。蓝光聚焦在离透镜更近的位置；红光聚焦在更远的位置。结果是：没有单一的焦平面能让所有颜色同时清晰聚焦。</p>
+<p>最实用且最具成本效益的解决方案是消色差双胶合透镜——一对由不同玻璃类型制成的正负透镜元件胶合在一起，设计用于将两个特定波长聚焦到共同焦点。消色差双胶合透镜是精密成像的主力，广泛应用于机器视觉相机、显微镜物镜、望远镜目镜和半导体检测光学系统。</p>
+<p>本指南解释消色差双胶合透镜如何校正色差，介绍主要设计类型，展示如何为您的应用选择合适的双胶合透镜，对比双胶合透镜与单透镜及非球面替代方案，并重点介绍工程师在指定成像光学元件时常犯的五个错误。</p>
+
+<h2>理解色差</h2>
+<h3>什么导致色差？</h3>
+<p>每种光学玻璃都具有波长依赖的折射率，由其色散曲线描述。这种色散用阿贝数（V值）量化：</p>
+<ul>
+<li><strong>高阿贝数（V &gt; 50）：</strong>低色散——折射率随波长变化缓慢。BK7等冕牌玻璃（V = 64.2）属于低色散。</li>
+<li><strong>低阿贝数（V &lt; 50）：</strong>高色散——折射率随波长变化迅速。F2等火石玻璃（V = 36.4）属于高色散。</li>
+</ul>
+<p>当白光通过简单的<a href="/products/bk7-plano-convex/">BK7平凸透镜</a>时，每个波长聚焦在距透镜不同的距离。486 nm（蓝光，F线）处的焦距通常比656 nm（红光，C线）处短1&ndash;2%。对于100 mm焦距透镜，这意味着蓝色焦点和红色焦点相距1&ndash;2 mm——在景深可能仅几微米的精密成像中，这是一个巨大的差异。</p>
+
+<h3>两种色差类型</h3>
+<p><strong>轴向（纵向）色差：</strong>不同波长聚焦在光轴上不同的距离。这导致整体颜色模糊，是消色差双胶合透镜主要校正的像差。</p>
+<p><strong>横向（倍率）色差：</strong>不同波长产生不同的图像尺寸，导致视场边缘出现彩色条纹。这可以通过对称透镜设计或在数字系统中的软件后处理来校正。</p>
+<p>消色差双胶合透镜主要校正轴向色差。残余横向色差可以通过缩小光圈或在数字成像系统的后处理中最小化。</p>
+
+<h2>消色差双胶合透镜的工作原理</h2>
+<h3>色校正原理</h3>
+<p>消色差双胶合透镜将低色散冕牌玻璃（通常为BK7）制成的正透镜元件与高色散火石玻璃（通常为F2或SF系列）制成的负透镜元件组合。两个元件用折射率匹配的光学粘合剂胶合在一起。</p>
+<p>正冕牌元件提供总聚焦光焦度，而负火石元件引入相等且相反的色散。最终结果：双胶合透镜将两个选定波长（通常为红光C线656.3 nm和蓝光F线486.1 nm）聚焦到同一焦点，而第三个波长（绿光d线587.6 nm）聚焦在非常接近的平面。</p>
+
+<h3>设计类型</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">类型</th><th style="border:1px solid #e2e8f0;padding:8px;">配置</th><th style="border:1px solid #e2e8f0;padding:8px;">最佳用途</th><th style="border:1px solid #e2e8f0;padding:8px;">特点</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">正消色差</td><td style="border:1px solid #e2e8f0;padding:8px;">冕牌前（凸）+ 火石后（凹）</td><td style="border:1px solid #e2e8f0;padding:8px;">聚焦、成像、准直</td><td style="border:1px solid #e2e8f0;padding:8px;">净正焦距；最常见类型</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">负消色差</td><td style="border:1px solid #e2e8f0;padding:8px;">火石前（凹）+ 冕牌后（凸）</td><td style="border:1px solid #e2e8f0;padding:8px;">扩束、发散</td><td style="border:1px solid #e2e8f0;padding:8px;">净负焦距；较不常见</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">胶合 vs 空气间隔</td><td style="border:1px solid #e2e8f0;padding:8px;">胶合：粘合；空气间隔：元件间有间隙</td><td style="border:1px solid #e2e8f0;padding:8px;">胶合用于通用；空气间隔用于高功率激光</td><td style="border:1px solid #e2e8f0;padding:8px;">空气间隔避免胶膜的LIDT限制</td></tr>
+</table>
+
+<p>恒鼎光<a href="/products/achromatic-doublet/">消色差双胶合透镜</a>为胶合型正消色差透镜，针对400 nm至700 nm可见光谱成像应用优化。它们提供接近衍射极限的轴上性能，比单透镜有显著改善。</p>
+
+<h2>消色差双胶合透镜 vs 单透镜 vs 非球面透镜</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">参数</th><th style="border:1px solid #e2e8f0;padding:8px;">单透镜（如<a href="/products/bk7-plano-convex/">BK7平凸</a>）</th><th style="border:1px solid #e2e8f0;padding:8px;">消色差双胶合</th><th style="border:1px solid #e2e8f0;padding:8px;">非球面透镜</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">色差校正</td><td style="border:1px solid #e2e8f0;padding:8px;">无</td><td style="border:1px solid #e2e8f0;padding:8px;">两个波长校正</td><td style="border:1px solid #e2e8f0;padding:8px;">无（单材料）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">球差</td><td style="border:1px solid #e2e8f0;padding:8px;">显著</td><td style="border:1px solid #e2e8f0;padding:8px;">降低</td><td style="border:1px solid #e2e8f0;padding:8px;">轴上近零</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">成本</td><td style="border:1px solid #e2e8f0;padding:8px;">$</td><td style="border:1px solid #e2e8f0;padding:8px;">$$</td><td style="border:1px solid #e2e8f0;padding:8px;">$$&ndash;$$$</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">最佳用途</td><td style="border:1px solid #e2e8f0;padding:8px;">单色或低精度</td><td style="border:1px solid #e2e8f0;padding:8px;">宽带成像、机器视觉</td><td style="border:1px solid #e2e8f0;padding:8px;">激光聚焦（单波长）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">宽带性能</td><td style="border:1px solid #e2e8f0;padding:8px;">差</td><td style="border:1px solid #e2e8f0;padding:8px;">好</td><td style="border:1px solid #e2e8f0;padding:8px;">差（同样有色差问题）</td></tr>
+</table>
+<p>关键洞察：非球面透镜能很好地校正球差，但对色差无能为力，因为它们仍然是单元件、单材料光学元件。对于宽带成像，您需要消色差双胶合透镜。对于单波长激光聚焦，<a href="/products/aspherical-lenses/">非球面透镜</a>可能比双胶合透镜提供更好的轴上性能。</p>
+
+<h2>选择消色差双胶合透镜：关键参数</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">参数</th><th style="border:1px solid #e2e8f0;padding:8px;">含义</th><th style="border:1px solid #e2e8f0;padding:8px;">选型指导</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">焦距</td><td style="border:1px solid #e2e8f0;padding:8px;">透镜到焦点的距离（对平行光输入）</td><td style="border:1px solid #e2e8f0;padding:8px;">匹配工作距离和放大倍率需求</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">通光孔径</td><td style="border:1px solid #e2e8f0;padding:8px;">可用光学直径</td><td style="border:1px solid #e2e8f0;padding:8px;">必须大于光束或视场直径；通常6&ndash;50 mm</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">波长范围</td><td style="border:1px solid #e2e8f0;padding:8px;">设计优化波段</td><td style="border:1px solid #e2e8f0;padding:8px;">大多数成像用可见光（400&ndash;700 nm）</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">表面质量</td><td style="border:1px solid #e2e8f0;padding:8px;">ISO 10110划痕/ digs</td><td style="border:1px solid #e2e8f0;padding:8px;">通用40-20；高分辨率成像20-10</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">AR镀膜</td><td style="border:1px solid #e2e8f0;padding:8px;">减反射镀膜类型</td><td style="border:1px solid #e2e8f0;padding:8px;">彩色成像用宽带可见光AR；激光用单波长AR</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">偏心差</td><td style="border:1px solid #e2e8f0;padding:8px;">两个元件光轴的对准度</td><td style="border:1px solid #e2e8f0;padding:8px;">精密成像 &lt; 3弧分；衍射极限 &lt; 1弧分</td></tr>
+</table>
+
+<h2>应用场景</h2>
+
+<h3>机器视觉系统</h3>
+<p>在机器视觉检测中，相机在白光或多LED照明下捕获图像。透镜必须将所有波长聚焦到同一平面，以产生锐利、颜色准确的图像，用于边缘检测、尺寸测量和缺陷分类。单透镜会在蓝色和红色通道之间产生1&ndash;2 mm的焦点偏移——远超过具有2.2 &mu;m像素的500万像素相机的典型景深。</p>
+<p>恒鼎光<a href="/products/achromatic-doublet/">消色差双胶合透镜</a>将整个可见光谱的焦点偏移减小到0.1 mm以下，实现亚像素测量精度。对于完整的机器视觉光学系统，将消色差透镜与已包含多元件消色差设计的<a href="/products/c-mount-lenses/">C口机器视觉镜头</a>配合使用。</p>
+
+<h3>显微镜与生命科学</h3>
+<p>透射明场显微镜使用白光照明通过染色生物样品。聚光镜和物镜必须进行色差校正以产生颜色准确的图像。研究级显微镜物镜使用3&ndash;8元件复消色差设计，但对于教育系统、摄影转接器和定制显微镜装置，消色差双胶合透镜以极低的成本提供出色的色校正。</p>
+<p>对于需要同时聚焦激发和发射波长的荧光系统，消色差双胶合透镜确保两个通道同时聚焦。结合<a href="/products/dichroic-mirrors/">二向色镜</a>和<a href="/products/laser-line-filters/">窄带干涉滤光片</a>组建完整的荧光滤光片组件。</p>
+
+<h3>检测与质量控制</h3>
+<p>用于制造业的光学检测系统（PCB检测、表面缺陷检测、尺寸测量）需要透镜在照明源的全光谱范围内保持聚焦。无论是使用卤素灯（宽带白光）、LED（多峰）还是激光线照明，消色差双胶合透镜都能确保一致的焦点和锐利的边缘，实现可靠的自动检测。</p>
+
+<h3>望远镜与远程成像</h3>
+<p>折射望远镜是消色差双胶合透镜最初的应用。正冕牌/火石双胶合物镜将红光和蓝光聚焦到共同焦点，消除了简单单透镜折射望远镜中常见的彩色光晕。现代消色差望远镜物镜使用优化的双胶合设计，焦比f/10或更长，以最小化残余二级光谱。</p>
+
+<h2>消色差双胶合透镜选型的5大常见错误</h2>
+
+<h3>1. 需要双胶合时却用了单透镜</h3>
+<p>工程师有时为成像应用指定<a href="/products/bk7-plano-convex/">BK7平凸透镜</a>，却没有意识到单透镜无法校正色差。如果您的系统使用宽带照明或捕获彩色图像，单透镜始终会产生彩色条纹和焦点偏移。解决方法很简单：在颜色保真度重要的地方，用消色差双胶合透镜替换单透镜。</p>
+<p><strong>经验法则：</strong>如果您的光源带宽超过约50 nm且您需要锐利聚焦，请使用消色差双胶合透镜。</p>
+
+<h3>2. 期望消色差透镜校正所有像差</h3>
+<p>消色差双胶合透镜能很好地校正轴向色差，但仍有残余球差、彗差和场曲。对于宽视场的衍射极限性能，您需要额外的元件（构成三胶合或更复杂的物镜）。消色差双胶合透镜是一个优秀的起点，但可能不是高NA或宽视场系统的完整解决方案。</p>
+<p><strong>解决方案：</strong>将消色差双胶合透镜用于中等NA（约0.1以下）和窄视场应用。对于更高性能，考虑多元件物镜或添加<a href="/products/aspherical-lenses/">非球面透镜</a>元件校正球差。</p>
+
+<h3>3. 忽视胶合层在高功率激光系统中的局限</h3>
+<p>标准胶合消色差双胶合透镜使用光学粘合剂（通常为UV固化胶）粘合冕牌和火石元件。该胶合层会吸收高功率激光能量，在持续激光照射超过约1 W/cm&sup2;时可能降解、变黄或脱胶。对于高功率激光应用，请指定空气间隔双胶合透镜或使用<a href="/products/high-power-laser-mirrors/">反射光学元件</a>替代。</p>
+<p><strong>解决方案：</strong>对于CW激光功率超过1 W或脉冲能量超过10 mJ的应用，考虑空气间隔消色差或反射替代方案。对于成像和低功率应用，胶合双胶合透镜完全适用。</p>
+
+<h3>4. 双胶合镀膜与光源不匹配</h3>
+<p>优化用于可见光（400&ndash;700 nm）并镀有宽带可见光AR膜的消色差双胶合透镜在近红外或近紫外中性能较差。如果您的系统使用850 nm红外照明用于夜视或365 nm紫外用于荧光激发，您需要针对这些波长范围优化镀膜的双胶合透镜。</p>
+<p><strong>解决方案：</strong>订购双胶合透镜时始终指定工作波长范围。恒鼎光可以定制消色差双胶合透镜的AR镀膜，优化紫外、可见光或近红外。</p>
+
+<h3>5. 忽视偏心差公差</h3>
+<p>在胶合双胶合透镜中，冕牌和火石元件的光轴必须完美对准。差的偏心差会引入彗差并降低图像质量，特别是在视场边缘。低成本双胶合透镜的偏心差公差可能为5&ndash;6弧分，这适用于教育用途，但对于精密机器视觉不够。</p>
+<p><strong>解决方案：</strong>对于机器视觉和检测系统，指定偏心差 &lt; 3弧分。恒鼎光消色差双胶合透镜标准偏心差控制在 &lt; 3弧分，衍射极限应用可提供 &lt; 1弧分。</p>
+
+<h2>产品选型快速参考</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">应用</th><th style="border:1px solid #e2e8f0;padding:8px;">推荐产品</th><th style="border:1px solid #e2e8f0;padding:8px;">关键规格</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">宽带成像（可见光）</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/achromatic-doublet/">消色差双胶合透镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">可见光AR镀膜；&lt; 3弧分偏心差</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">机器视觉系统</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/c-mount-lenses/">C口机器视觉镜头</a></td><td style="border:1px solid #e2e8f0;padding:8px;">多元件消色差；C口螺纹</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">激光聚焦（单波长）</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/aspherical-lenses/">非球面透镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">匹配波长的AR；NA匹配光束</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">预算成像原型</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-plano-convex/">BK7平凸透镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">低成本；仅适用于单色</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">荧光系统</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/achromatic-doublet/">消色差双胶合</a> + <a href="/products/dichroic-mirrors/">二向色镜</a></td><td style="border:1px solid #e2e8f0;padding:8px;">匹配激发/发射波段</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">中继/1:1成像</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/bk7-bi-convex/">BK7双凸透镜</a>（单色）或双胶合</td><td style="border:1px solid #e2e8f0;padding:8px;">对称共轭最小化像差</td></tr>
+</table>
+
+<h2>结论</h2>
+<p>色差是宽带成像系统中的主导光学误差，消色差双胶合透镜是最实用、最具成本效益的解决方案。通过将低色散冕牌元件与高色散火石元件组合，消色差透镜将两个波长聚焦到共同焦点，与单透镜相比显著提高了图像锐度和颜色保真度。</p>
+<p>指定消色差双胶合透镜时，请注意焦距、通光孔径、表面质量、AR镀膜带宽和偏心差公差。了解其局限性：消色差透镜不能校正所有像差，胶合设计有功率限制，且校针对特定波长范围优化。</p>
+<p>恒鼎光制造精密消色差双胶合透镜，具有严格偏心差公差（标准 &lt; 3弧分）、宽带可见光AR镀膜和40-20或20-10表面质量。我们还提供完整成像系统的配套光学元件：<a href="/products/c-mount-lenses/">C口机器视觉镜头</a>、<a href="/products/aspherical-lenses/">非球面透镜</a>、<a href="/products/bk7-plano-convex/">BK7平凸透镜</a>和<a href="/products/bk7-bi-convex/">BK7双凸透镜</a>。具有特殊镀膜、焦距和玻璃组合的定制消色差透镜可用于OEM应用。</p>
+        </div>
+
+        <!-- CTA Section -->
+        <div style="margin-top:48px;padding:32px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;text-align:center;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:12px;" data-i18n="blog.cta.title">Need Help Selecting Achromatic Lenses?</h2>
+            <p style="color:#475569;margin-bottom:20px;" data-i18n="blog.cta.description">PhotonEdge manufactures precision achromatic doublet lenses with tight centration tolerance and application-specific AR coatings. Send your imaging requirements &mdash; we will recommend the right optics.</p>
+            <a href="/contact.html" style="display:inline-block;background:#3b82f6;color:#fff;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;" data-i18n="blog.cta.button">Get Technical Support</a>
+        </div>
+
+        <!-- Related Posts -->
+        <div style="margin-top:48px;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:20px;" data-i18n="blog.related.title">Related Articles</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+                <a href="/blog/machine-vision-lens-selection-guide/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Machine Vision Lens Selection Guide</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Complete guide to choosing lenses for machine vision inspection systems.</p>
+                </a>
+                <a href="/blog/choose-right-optical-lens/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">How to Choose the Right Optical Lens</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Understanding lens types, materials, and specifications for your application.</p>
+                </a>
+                <a href="/blog/optical-quality-testing-methods/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Optical Quality Testing Methods</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">How to verify optical component quality using interferometry and other standards.</p>
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <div id="site-footer"></div>
+    <script>renderFooter();</script>
+
+    <!-- Language switch handling -->
+    <script>
+    (function() {
+        var params = window.location.search;
+        var langMatch = params.match(/[?&]lang=([^&]+)/);
+        if (langMatch && langMatch[1] === 'zh') {
+            var enContent = document.querySelector('[itemprop="articleBody"]');
+            var zhContent = document.getElementById('chinese-content');
+            if (enContent && zhContent) {
+                enContent.style.display = 'none';
+                zhContent.style.display = 'block';
+            }
+            document.documentElement.lang = 'zh';
+            var titleEl = document.querySelector('title');
+            if (titleEl) titleEl.textContent = '\u6D88\u5DEE\u76F4\u53CC\u80F6\u5408\u900F\u955C\uFF1A\u5982\u4F55\u6D88\u9664\u7CBE\u5BC6\u6210\u50CF\u4E0E\u673A\u5668\u89C6\u89C9\u7CFB\u7EDF\u4E2D\u7684\u8272\u5DEE | \u6052\u9F0E\u5149\u535A\u5BA2';
+        }
+    })();
+    </script>
+</body>
+</html>

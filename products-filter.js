@@ -91,20 +91,16 @@
             pc += ' ' + String(coatArr[i]).toLowerCase();
         }
         switch(filterCoating) {
-            case 'AR Coating':
-                return pc.indexOf('ar ') !== -1 || pc.indexOf('ar,') !== -1 || pc.indexOf('anti-reflection') !== -1 || pc.indexOf('bbar') !== -1;
-            case 'HR Coating':
-                return pc.indexOf('hr ') !== -1 || pc.indexOf('high ref') !== -1 || pc.indexOf('hr,') !== -1;
-            case 'Protected Metal':
-                return pc.indexOf('protected') !== -1 || pc.indexOf('enhanced al') !== -1;
-            case 'Narrow Band':
-                return pc.indexOf('narrow') !== -1 || pc.indexOf('bandpass') !== -1;
-            case 'Beamsplitter':
-                return pc.indexOf('bs') !== -1 || pc.indexOf('beamsplitter') !== -1 || pc.indexOf('split') !== -1 || pc.indexOf('polarizing') !== -1;
-            case 'Uncoated':
-                return pc.indexOf('uncoated') !== -1;
-            case 'Custom':
-                return pc.indexOf('custom') !== -1;
+            case 'A1':
+                return pc.indexOf('ar 350-700nm') !== -1 || pc.indexOf('ar 400-700nm') !== -1 || pc.indexOf('ar 650-1050nm') !== -1 || pc.indexOf('bbar') !== -1;
+            case 'A2':
+                return pc.indexOf('ar 193-355nm') !== -1 || pc.indexOf('ar uv') !== -1 || pc.indexOf('bbar uv-ir') !== -1 || pc.indexOf('bbar uv') !== -1;
+            case 'A3':
+                return pc.indexOf('ar ir') !== -1 || pc.indexOf('ar 2-14um') !== -1 || pc.indexOf('ar 3-5um') !== -1 || pc.indexOf('ar 10.6um') !== -1 || pc.indexOf('ar 950-1250nm') !== -1;
+            case 'Dichroic':
+                return pc.indexOf('dichroic') !== -1;
+            case 'Partial':
+                return pc.indexOf('slm') !== -1 || pc.indexOf('partial') !== -1 || pc.indexOf('%') !== -1 || pc.indexOf('50/50') !== -1 || pc.indexOf('variable nd') !== -1 || pc.indexOf('nd metal') !== -1;
             default:
                 return true;
         }
@@ -175,6 +171,13 @@
 
     function renderProducts(products) {
         var html = '';
+        var lang = (typeof getCurrentLanguage === 'function') ? getCurrentLanguage() : 'en';
+        var isZh = lang === 'zh';
+        var labelMat = isZh ? '材料' : 'Material';
+        var labelWl = isZh ? '波长' : 'Wavelength';
+        var labelCoat = isZh ? '镀膜' : 'Coating';
+        var labelApp = isZh ? '应用' : 'Application';
+        var labelView = isZh ? '查看产品 &rarr;' : 'View Product &rarr;';
         for (var i = 0; i < products.length; i++) {
             var p = products[i];
             var img = '/' + (p.image || 'images/logo.png');
@@ -182,20 +185,22 @@
             var wl = displayVal(p.wavelength, 35);
             var coat = displayVal(p.coating, 40);
             var app = displayVal(p.application, 30);
+            var prodName = (isZh && p.nameZh) ? p.nameZh : p.name;
+            var prodCat = (isZh && p.categoryZh) ? p.categoryZh : p.category;
 
             html += '<div class="p31-product-card" onclick="window.location.href=\'/products/' + p.slug + '/\'">' +
                 '<div class="p31-product-img">' +
-                    '<img src="' + img + '" alt="' + p.name + '" loading="lazy">' +
+                    '<img src="' + img + '" alt="' + prodName + '" loading="lazy">' +
                 '</div>' +
                 '<div class="p31-product-body">' +
-                    '<h4 class="p31-product-name">' + p.name + '</h4>' +
+                    '<h4 class="p31-product-name">' + prodName + '</h4>' +
                     '<div class="p31-product-specs">' +
-                        '<div class="p31-spec-row"><span class="p31-spec-label">Material</span><span class="p31-spec-value">' + mat + '</span></div>' +
-                        '<div class="p31-spec-row"><span class="p31-spec-label">Wavelength</span><span class="p31-spec-value">' + wl + '</span></div>' +
-                        '<div class="p31-spec-row"><span class="p31-spec-label">Coating</span><span class="p31-spec-value">' + coat + '</span></div>' +
-                        '<div class="p31-spec-row"><span class="p31-spec-label">Application</span><span class="p31-spec-value">' + app + '</span></div>' +
+                        '<div class="p31-spec-row"><span class="p31-spec-label">' + labelMat + '</span><span class="p31-spec-value">' + mat + '</span></div>' +
+                        '<div class="p31-spec-row"><span class="p31-spec-label">' + labelWl + '</span><span class="p31-spec-value">' + wl + '</span></div>' +
+                        '<div class="p31-spec-row"><span class="p31-spec-label">' + labelCoat + '</span><span class="p31-spec-value">' + coat + '</span></div>' +
+                        '<div class="p31-spec-row"><span class="p31-spec-label">' + labelApp + '</span><span class="p31-spec-value">' + app + '</span></div>' +
                     '</div>' +
-                    '<a href="/products/' + p.slug + '/" class="p31-product-btn" onclick="event.stopPropagation()">View Product &rarr;</a>' +
+                    '<a href="/products/' + p.slug + '/" class="p31-product-btn" onclick="event.stopPropagation()">' + labelView + '</a>' +
                 '</div>' +
             '</div>';
         }
