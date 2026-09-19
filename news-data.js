@@ -66,17 +66,6 @@ var NEWS_ARTICLES = [
     "image": "/images/products/optical-filters/laser-line-filters.jpg"
   },
   {
-    "id": 7,
-    "title": "PhotonEdge Achieves ISO 13485 Medical Device Quality Certification",
-    "titleZh": "通过ISO 13485医疗器械质量认证",
-    "slug": "photonedge-achieves-iso-13485-medical-device-quality-certification",
-    "excerpt": "PhotonEdge has successfully obtained ISO 13485 certification for medical device quality management systems. This certification demonstrates our commitment to meeting the stringent requirements of the medical device industry. It enables us to supply optical components directly to medical device manufacturers with full regulatory compliance.",
-    "excerptZh": "PhotonEdge成功获得医疗器械质量管理体系ISO 13485认证。该认证表明我们致力于满足医疗器械行业的严格要求，使我们能够完全符合法规要求地向医疗器械制造商供应光学元件。",
-    "category": "Company News",
-    "date": "2026-05-15",
-    "image": "/images/factory/factory_3.jpg"
-  },
-  {
     "id": 8,
     "title": "Understanding Laser Damage Threshold (LDT) for Optical Components",
     "titleZh": "激光损伤阈值(LDT)详解",
@@ -97,17 +86,6 @@ var NEWS_ARTICLES = [
     "category": "Industry News",
     "date": "2026-04-28",
     "image": "/images/factory/factory_1.jpg"
-  },
-  {
-    "id": 10,
-    "title": "PhotonEdge Expands Precision Aspheric Lens Production",
-    "titleZh": "恒鼎光扩产高精度非球面透镜生产线",
-    "slug": "photonedge-expands-aspheric-lens-production",
-    "excerpt": "PhotonEdge announces expansion of aspheric lens manufacturing with new CNC precision grinding, advanced polishing, and MRF (magnetorheological finishing) equipment. Production capacity increases 60%, achieving surface form accuracy of lambda/20 PV and surface roughness below 1 nm Ra for semiconductor inspection, medical imaging, and aerospace applications.",
-    "excerptZh": "恒鼎光宣布扩大非球面透镜制造产能，新增CNC精密磨削、先进抛光和磁流变抛光（MRF）设备。产能提升60%，面形精度达lambda/20 PV、表面粗糙度低于1nm Ra，服务于半导体检测、医疗成像和航空航天应用。",
-    "category": "Company News",
-    "date": "2026-07-29",
-    "image": "/images/factory/factory_4.jpg"
   },
   {
     "id": 11,
