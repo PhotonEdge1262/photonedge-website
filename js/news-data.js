@@ -66,17 +66,6 @@ var NEWS_ARTICLES = [
     "image": "/images/products/optical-filters/laser-line-filters.jpg"
   },
   {
-    "id": 7,
-    "title": "PhotonEdge Achieves ISO 13485 Medical Device Quality Certification",
-    "titleZh": "通过ISO 13485医疗器械质量认证",
-    "slug": "photonedge-achieves-iso-13485-medical-device-quality-certification",
-    "excerpt": "PhotonEdge has successfully obtained ISO 13485 certification for medical device quality management systems. This certification demonstrates our commitment to meeting the stringent requirements of the medical device industry. It enables us to supply optical components directly to medical device manufacturers with full regulatory compliance.",
-    "excerptZh": "PhotonEdge成功获得医疗器械质量管理体系ISO 13485认证。该认证表明我们致力于满足医疗器械行业的严格要求，使我们能够完全符合法规要求地向医疗器械制造商供应光学元件。",
-    "category": "Company News",
-    "date": "2026-05-15",
-    "image": "/images/factory/factory_3.jpg"
-  },
-  {
     "id": 8,
     "title": "Understanding Laser Damage Threshold (LDT) for Optical Components",
     "titleZh": "激光损伤阈值(LDT)详解",
