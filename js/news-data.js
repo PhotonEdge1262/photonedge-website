@@ -88,17 +88,6 @@ var NEWS_ARTICLES = [
     "image": "/images/factory/factory_1.jpg"
   },
   {
-    "id": 10,
-    "title": "PhotonEdge Expands Precision Aspheric Lens Production",
-    "titleZh": "恒鼎光扩产高精度非球面透镜生产线",
-    "slug": "photonedge-expands-aspheric-lens-production",
-    "excerpt": "PhotonEdge announces expansion of aspheric lens manufacturing with new CNC precision grinding, advanced polishing, and MRF (magnetorheological finishing) equipment. Production capacity increases 60%, achieving surface form accuracy of lambda/20 PV and surface roughness below 1 nm Ra for semiconductor inspection, medical imaging, and aerospace applications.",
-    "excerptZh": "恒鼎光宣布扩大非球面透镜制造产能，新增CNC精密磨削、先进抛光和磁流变抛光（MRF）设备。产能提升60%，面形精度达lambda/20 PV、表面粗糙度低于1nm Ra，服务于半导体检测、医疗成像和航空航天应用。",
-    "category": "Company News",
-    "date": "2026-07-29",
-    "image": "/images/factory/factory_4.jpg"
-  },
-  {
     "id": 11,
     "title": "PhotonEdge Launches Deep UV (DUV) Optical Components Series",
     "titleZh": "恒鼎光推出深紫外(DUV)光学元件系列",
