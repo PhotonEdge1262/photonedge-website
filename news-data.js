@@ -40,6 +40,7 @@ var NEWS_ARTICLES = [
     "excerpt": "Anti-reflection (AR) coatings are essential for maximizing optical system performance. This guide covers single-layer vs multi-layer AR coatings, wavelength-specific designs, and how to select the optimal coating based on your operating wavelength range, angle of incidence, and environmental requirements. Learn about V-coat, broadband AR, and dual-band coatings.",
     "excerptZh": "增透膜(AR)对于最大化光学系统性能至关重要。本指南涵盖单层与多层增透膜、特定波长设计，以及如何根据工作波长范围、入射角和环境要求选择最佳镀膜。了解V涂层、宽带增透膜和双波段镀膜。",
     "category": "Technical Articles",
+  // NOTE [Phase 5-C]: Technical content overlaps with blog Materials/AR/LIDT articles. Consider migrating to blog.
     "date": "2026-06-05",
     "image": "/images/factory/clean-room.jpg"
   },
@@ -51,6 +52,7 @@ var NEWS_ARTICLES = [
     "excerpt": "Choosing the right optical material is critical for system performance. This comprehensive comparison covers BK7, UV fused silica, and calcium fluoride (CaF2) across key parameters: transmission range, refractive index homogeneity, thermal properties, laser damage threshold, and cost. Includes application-specific recommendations for laser, imaging, and UV systems.",
     "excerptZh": "选择正确的光学材料对系统性能至关重要。本综合对比涵盖BK7、紫外熔融石英和氟化钙(CaF2)的关键参数：透过率范围、折射率均匀性、热性能、激光损伤阈值和成本。包括针对激光、成像和紫外系统的应用推荐。",
     "category": "Technical Articles",
+  // NOTE [Phase 5-C]: Technical content overlaps with blog Materials/AR/LIDT articles. Consider migrating to blog.
     "date": "2026-05-28",
     "image": "/images/products/optical-lenses/bk7-plano-convex.jpg"
   },
@@ -73,6 +75,7 @@ var NEWS_ARTICLES = [
     "excerpt": "Laser damage threshold is a critical specification for optics used in laser systems. This technical article explains LDT testing methods (ISO 21254), factors affecting LDT including coating design, surface quality, and material purity, and how to specify LDT requirements for your laser application. Includes typical LDT values for common coating types.",
     "excerptZh": "激光损伤阈值是激光系统中光学元件的关键规格。本技术文章解释了LDT测试方法(ISO 21254)、影响LDT的因素包括镀膜设计、表面质量和材料纯度，以及如何为激光应用指定LDT要求。包括常见镀膜类型的典型LDT值。",
     "category": "Technical Articles",
+  // NOTE [Phase 5-C]: Technical content overlaps with blog Materials/AR/LIDT articles. Consider migrating to blog.
     "date": "2026-05-08",
     "image": "/images/factory/factory_0.jpg"
   },

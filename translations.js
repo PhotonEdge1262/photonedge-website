@@ -224,7 +224,7 @@ var translations = {
     "caseDefenseTitle": "Multi-Spectral IR Optical Assembly for Border Surveillance",
     "caseDefenseSubtitle": "Defense Optics Subsystem Contractor",
     "caseDefenseChallenge": "A defense contractor needed Germanium and ZnSe optical assemblies for a long-wave infrared thermal imaging system operating in extreme desert conditions (-40°C to +70°C). Previous optics suffered delamination and focus shift under thermal cycling.",
-    "caseDefenseSolution": "PhotonEdge designed and manufactured Ge/ZnSe optical assemblies with athermal mounts, diamond-turned surfaces (Ra<10nm), and custom AR coatings optimized for 8-12μm LWIR band. All assemblies passed MIL-STD-810G thermal shock and vibration testing.",
+    "caseDefenseSolution": "PhotonEdge specified and coordinated the production of Ge/ZnSe optical assemblies with athermal mounts, diamond-turned surfaces (Ra<10nm), and custom AR coatings optimized for 8-12μm LWIR band. All assemblies passed MIL-STD-810G thermal shock and vibration testing.",
     "caseDefenseResult1": "8-12μm AR coated",
     "caseDefenseResult2": "MIL-STD-810G qualified",
     "caseDefenseResult3": "Months of field deployment",
