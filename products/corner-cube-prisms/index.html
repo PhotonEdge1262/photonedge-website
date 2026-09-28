@@ -31,7 +31,7 @@
     gtag('config', 'G-E6J791MXZY');
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/products/corner-cube-prisms/">
-    <link rel="alternate" hreflang="zh-CN" href="https://photonedgeoptics.com/zh/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
 
     <style>
     .product-diagram-section {
@@ -201,7 +201,6 @@
                             <a href="/application-notes/" class="dropdown-item" data-i18n="navApplicationNotes"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
                             <a href="/materials.html" class="dropdown-item" data-i18n="navMaterials"><span class="dropdown-icon">&#129514;</span> Materials Guide</a>
                             <a href="/coatings/" class="dropdown-item" data-i18n="navCoatings"><span class="dropdown-icon">&#128300;</span> Coating Database</a>
-                            <a href="/ai-optical-assistant.html" class="dropdown-item" data-i18n="navAIAssistant"><span class="dropdown-icon">&#129302;</span> AI Optical Assistant</a>
                             <a href="/faq.html" class="dropdown-item" data-i18n="navFAQ"><span class="dropdown-icon">&#10067;</span> FAQ</a>
                             <a href="/blog.html" class="dropdown-item" data-i18n="navBlog"><span class="dropdown-icon">&#128221;</span> Blog</a>
                         </div>
@@ -250,7 +249,7 @@
 <section class="product-detail">
         <div class="container">
             <div class="product-detail-grid" id="productDetailGrid">
-                <h1 id="productHeroTitle" class="hero-title-31">Corner Cube Prisms - Retroreflection</h1>
+                <h1 style="font-size:24px;color:#1e293b;margin-bottom:16px;">Corner Cube Prisms</h1>
                 <div class="loading">
                     <div class="loading-spinner"></div>
                     <p data-i18n="loadingProduct">Loading product details...</p>
@@ -976,7 +975,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<img src="' + getDetailImage(currentProduct.image) + '" alt="' + name + '" onerror="handleDetailImgError(this)">' +
                 '</div>' +
                 '<div class="product-detail-info">' +
-                '' +
+                '<h1>' + name + '</h1>' +
                 '<p class="product-detail-category"><span class="category-badge">' + category + '</span></p>' +
                 '<div class="product-price-section" id="productPriceSection"></div>' +
                 '<div class="product-description">' +
@@ -991,10 +990,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 '</div>';
             
             // Render price and cart controls
-
-            // Update static H1 with product name
-            var heroTitle = document.getElementById('productHeroTitle');
-            if (heroTitle) { heroTitle.textContent = name; }
             renderPriceSection();
             renderProductActions();
         }

@@ -2,40 +2,6 @@
 
 var BLOG_POSTS = [
   {
-  "id": 45,
-  "title": "Corner Cube Retroreflectors: Operating Principles, Specifications & Applications in Metrology, LiDAR and Interferometry",
-  "slug": "corner-cube-retroreflector-guide",
-  "url": "/blog/corner-cube-retroreflector-guide/",
-  "excerpt": "Complete engineering guide to corner cube retroreflectors: retroreflection principle, hollow vs solid types, key specifications (dihedral angle, wavefront quality), applications in metrology, LiDAR and interferometry, and 5 common selection mistakes.",
-  "category": "Technical Guide",
-  "date": "2026-09-27",
-  "readTime": "12 min",
-  "image": "images/blog/corner-cube-retroreflector-guide.jpg",
-  "author": "PhotonEdge Technical Team",
-  "titleZh": "角锥棱镜逆向反射器：工作原理、规格参数及在计量、LiDAR和干涉测量中的应用",
-  "excerptZh": "角锥棱镜逆向反射器完整工程指南：逆向反射原理、实心与空心类型对比、关键规格（二面角、波前质量）、计量、LiDAR和干涉测量应用，以及5大选型错误。",
-  "categoryZh": "技术指南",
-  "content": "<p>Full content available on the blog page.</p>",
-  "contentZh": "<p>完整内容请访问博客页面。</p>"
-  },
-  {
-  "id": 44,
-  "title": "Neutral Density Filter Selection Guide: OD, Transmission & Multi-Stop Stacking",
-  "slug": "neutral-density-filter-selection-guide",
-  "url": "/blog/neutral-density-filter-selection-guide/",
-  "excerpt": "Complete engineering guide to neutral density filters: understanding optical density, absorptive vs reflective types, laser power attenuation, fluorescence signal control, and 5 common selection mistakes.",
-  "category": "Technical Guide",
-  "date": "2026-09-25",
-  "readTime": "11 min",
-  "image": "images/blog/neutral-density-filter-guide.jpg",
-  "author": "PhotonEdge Technical Team",
-  "titleZh": "中性密度滤光片选型指南：光学密度、透过率与多片叠加",
-  "excerptZh": "中性密度滤光片完整工程指南：理解光学密度、吸收型与反射型对比、激光功率衰减、荧光信号控制以及5大常见选型错误。",
-  "categoryZh": "技术指南",
-  "content": "<p>Full content available on the blog page.</p>",
-  "contentZh": "<p>完整内容请访问博客页面。</p>"
-  },
-  {
   "id": 43,
   "title": "Aspherical Lenses vs Spherical Lenses: A Complete Engineering Guide to Aberration Correction and Optical System Simplification",
   "slug": "aspherical-vs-spherical-lenses-aberration-correction-guide",

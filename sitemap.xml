@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://photonedgeoptics.com/</loc><lastmod>2026-09-17</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+  <url><loc>https://photonedgeoptics.com/</loc><lastmod>2026-09-16</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://photonedgeoptics.com/about.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://photonedgeoptics.com/ai-optical-assistant.html</loc><lastmod>2026-09-17</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://photonedgeoptics.com/ai-optical-engineer.html</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/application-notes/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/application-notes/beam-expander-design-considerations/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -95,7 +95,6 @@
   <url><loc>https://photonedgeoptics.com/news/lidar-technology-driving-demand-for-precision-reflective-mirrors/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/news/medical-device-oems-increasing-optical-component-sourcing-from-china/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/news/new-uv-fused-silica-window-production-line-launched/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://photonedgeoptics.com/news/photonedge-expands-aspheric-lens-production/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/news/photonedge-laser-world-photonics-2027/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/news/photonedge-launches-ar-coating-optimization-service/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/news/photonedge-launches-deep-uv-optical-components/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -184,16 +183,4 @@
   <url><loc>https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/blog/aspherical-vs-spherical-lenses-aberration-correction-guide/</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url>
-    <loc>https://photonedgeoptics.com/blog/neutral-density-filter-selection-guide/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://photonedgeoptics.com/blog/corner-cube-retroreflector-guide/</loc>
-    <lastmod>2026-09-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>
