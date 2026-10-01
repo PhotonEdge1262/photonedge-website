@@ -160,8 +160,7 @@
                     </li>
                 </ul>
                 <a href="/zh/" class="lang-toggle" style="text-decoration:none;color:inherit;cursor:pointer;">
-                    <span>中文</span>
-                </a>
+                    <span>中文</span></a>
                 <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
         </div>
@@ -183,8 +182,7 @@
     <div class="request-quote-float">
         <a href="/contact.html" class="quote-btn">
             <span class="quote-icon">&#9993;</span>
-            <span>Request Engineering Review</span>
-        </a>
+            <span>Request Engineering Review</span></a>
     </div>
 
     <!-- Hero Section -->
@@ -331,8 +329,7 @@
                 <button class="faq-accordion-header" onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-arrow').style.transform=this.parentElement.classList.contains('open')?'rotate(180deg)':'rotate(0)'">
                     <span class="faq-q-icon">?</span>
                     <span>What optics do you recommend for 365nm inspection systems?</span>
-                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span>
-                </button>
+                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span></button>
                 <div class="faq-accordion-body" style="display:none;">
                     <p>For i-line (365 nm) systems, UV-grade fused silica is the standard substrate material. For higher-performance requirements, synthetic fused silica offers even lower metallic impurity content. CaF2 is typically reserved for 193 nm and 248 nm systems.</p>
                 </div>
@@ -341,8 +338,7 @@
                 <button class="faq-accordion-header" onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-arrow').style.transform=this.parentElement.classList.contains('open')?'rotate(180deg)':'rotate(0)'">
                     <span class="faq-q-icon">?</span>
                     <span>Can you provide cleanroom-compatible optics?</span>
-                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span>
-                </button>
+                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span></button>
                 <div class="faq-accordion-body" style="display:none;">
                     <p>Yes. All optics for semiconductor applications undergo cleanroom-compatible packaging. We can accommodate specific cleanliness requirements including Class 100 cleanroom packaging, particle count specifications, and special handling procedures.</p>
                 </div>
@@ -351,8 +347,7 @@
                 <button class="faq-accordion-header" onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-arrow').style.transform=this.parentElement.classList.contains('open')?'rotate(180deg)':'rotate(0)'">
                     <span class="faq-q-icon">?</span>
                     <span>What wavefront error can you achieve?</span>
-                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span>
-                </button>
+                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span></button>
                 <div class="faq-accordion-body" style="display:none;">
                     <p>Standard specification is lambda/10 at the operating wavelength. For critical inspection applications, we can achieve lambda/20 or better. The achievable specification depends on substrate material, diameter, and operating wavelength.</p>
                 </div>
@@ -361,8 +356,7 @@
                 <button class="faq-accordion-header" onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-arrow').style.transform=this.parentElement.classList.contains('open')?'rotate(180deg)':'rotate(0)'">
                     <span class="faq-q-icon">?</span>
                     <span>How do you ensure batch-to-batch consistency?</span>
-                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span>
-                </button>
+                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span></button>
                 <div class="faq-accordion-body" style="display:none;">
                     <p>We maintain material traceability from substrate supplier through final inspection. Every batch is measured against the same reference standards. Coating runs are monitored with witness samples. We can provide statistical process control data for critical parameters.</p>
                 </div>
@@ -371,8 +365,7 @@
                 <button class="faq-accordion-header" onclick="this.parentElement.classList.toggle('open');this.querySelector('.faq-arrow').style.transform=this.parentElement.classList.contains('open')?'rotate(180deg)':'rotate(0)'">
                     <span class="faq-q-icon">?</span>
                     <span>What is your typical lead time for semiconductor-grade optics?</span>
-                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span>
-                </button>
+                    <span class="faq-arrow" style="transition:transform 0.3s;">&#9660;</span></button>
                 <div class="faq-accordion-body" style="display:none;">
                     <p>Standard specifications: 2-3 weeks. Custom specifications with tight tolerances: 3-5 weeks depending on material availability and coating requirements. Rush delivery is available for critical needs.</p>
                 </div>
@@ -532,7 +525,7 @@ function renderAppRelatedArticles() {
         html += '<div style="font-size: 12px; color: #3b82f6; font-weight: 600; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px;">' + (useZh && post.categoryZh ? post.categoryZh : post.category) + '</div>';
         html += '<h3 style="color: #1e293b; margin-bottom: 10px; font-size: 17px; line-height: 1.4;">' + postTitle + '</h3>';
         html += '<p style="color: #64748b; font-size: 14px; line-height: 1.6; margin-bottom: 12px;">' + postExcerpt + '</p>';
-        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article &rarr;</span>';
+        html += '<span style="color: #3b82f6; font-weight: 600; font-size: 14px;">Read Article</span>';
         html += '</a>';
     }
     container.innerHTML = html;
@@ -603,7 +596,7 @@ if (document.readyState === 'loading') {
         </div>
         <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
             <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
-            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote &rarr;</a>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
         </div>
     </div>
 </footer>

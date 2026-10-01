@@ -199,7 +199,7 @@ var ProductEnhancedRender = (function() {
             '</p>' +
             '<a href="/ai-optical-engineer.html" style="display:inline-block;padding:10px 24px;background:#3b82f6;color:white;border-radius:6px;font-weight:600;text-decoration:none;font-size:14px;">' +
             (lang === 'zh' ? '咨询AI光学工程师' : 'Ask AI Optical Engineer') +
-            ' →</a>' +
+            '  </a>' +
             '</div>';
         
         html += '</div></section>';
@@ -321,7 +321,7 @@ var ProductEnhancedRender = (function() {
                 '</div>' +
                 '<div class="enh-related-info">' +
                 '<h3 class="enh-related-name">' + prodName + '</h3>' +
-                '<span class="enh-related-link">' + (lang === 'zh' ? '查看详情 →' : 'Learn More →') + '</span>' +
+                '<span class="enh-related-link">' + (lang === 'zh' ? '查看详情  ' : 'Learn More  ') + '</span>' +
                 '</div>' +
                 '</a>';
         }
@@ -369,7 +369,7 @@ var ProductEnhancedRender = (function() {
             html += '<a href="' + url + '" class="enh-article-card">' +
                 '<div class="enh-article-icon">📄</div>' +
                 '<h3 class="enh-article-title">' + artTitle + '</h3>' +
-                '<span class="enh-article-link">' + (lang === 'zh' ? '阅读文章 →' : 'Read Article →') + '</span>' +
+                '<span class="enh-article-link">' + (lang === 'zh' ? '阅读文章  ' : 'Read Article  ') + '</span>' +
                 '</a>';
         }
         html += '</div></div></section>';

@@ -239,7 +239,7 @@ var PhotonEdgeChatbot = (function() {
                 phone: { label: 'Phone / WhatsApp', placeholder: '+1-234-567-8900', required: false },
                 requirement: { label: 'Requirements Summary', placeholder: 'Brief description of your needs...', required: false }
             },
-            submit: 'Submit & Get Quote',
+            submit: 'Submit & Request a Quote',
             success: 'Thank you! We\'ve received your information and will contact you within 24 hours.'
         },
         zh: {
@@ -710,7 +710,7 @@ var PhotonEdgeChatbot = (function() {
                         '<div class="pe-chatbot-product-name">' + name + '</div>' +
                         '<div class="pe-chatbot-product-category">' + p.category + '</div>' +
                         '<a href="/contact.html?product=' + encodeURIComponent(p.slug) + '" class="pe-chatbot-product-link" onclick="PhotonEdgeChatbot.trackEvent(\'product_recommendation_click\', {product: \'' + p.slug + '\'})">' + 
-                        (lang === 'zh' ? '查看详情 →' : 'View Details →') + '</a>' +
+                        (lang === 'zh' ? '查看详情  ' : 'View Details  ') + '</a>' +
                     '</div>';
                 }
                 html += '</div>';

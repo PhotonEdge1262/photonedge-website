@@ -177,7 +177,7 @@
         var labelWl = isZh ? '波长' : 'Wavelength';
         var labelCoat = isZh ? '镀膜' : 'Coating';
         var labelApp = isZh ? '应用' : 'Application';
-        var labelView = isZh ? '查看产品 &rarr;' : 'View Product &rarr;';
+        var labelView = isZh ? '查看产品  ' : 'View Product  ';
         for (var i = 0; i < products.length; i++) {
             var p = products[i];
             var img = '/' + (p.image || 'images/logo.png');
