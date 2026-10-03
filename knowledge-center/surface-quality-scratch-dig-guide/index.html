@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surface Quality: Understanding Scratch-Dig Specifications | PhotonEdge Optics</title>
+    <meta name="description" content="Complete guide to scratch-dig surface quality specifications per MIL-PRF-13830B: what scratch and dig numbers mean, common specs by application, cost implications, and how to avoid over-specifying.">
+    <meta name="keywords" content="scratch dig specification, MIL-PRF-13830B, surface quality, optical surface quality, scratch dig 60-40, scratch dig 40-20, scratch dig 20-10, optical surface roughness, scratch dig cost, optical inspection">
+    <meta property="og:title" content="Surface Quality: Understanding Scratch-Dig Specifications | PhotonEdge Optics">
+    <meta property="og:description" content="Complete guide to scratch-dig surface quality specifications per MIL-PRF-13830B: what scratch and dig numbers mean, common specs by application, cost implications, and how to avoid over-specifying.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Surface Quality: Understanding Scratch-Dig Specifications | PhotonEdge Optics">
+    <meta name="twitter:description" content="Complete guide to scratch-dig surface quality specifications per MIL-PRF-13830B: what scratch and dig numbers mean, common specs by application, cost implications, and how to avoid over-specifying.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <style>
+    .pillar-hero {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1a4971 100%);
+        color: white;
+        padding: 80px 0 60px;
+    }
+    .pillar-hero h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    .pillar-hero .subtitle {
+        font-size: 18px;
+        opacity: 0.9;
+        line-height: 1.6;
+        max-width: 700px;
+    }
+    .pillar-toc {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 28px 32px;
+        margin: 40px auto;
+        max-width: 800px;
+    }
+    .pillar-toc h2 {
+        font-size: 18px;
+        color: #1e3a5f;
+        margin-bottom: 16px;
+    }
+    .pillar-toc ol {
+        padding-left: 20px;
+    }
+    .pillar-toc li {
+        margin-bottom: 8px;
+    }
+    .pillar-toc a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .pillar-toc a:hover {
+        text-decoration: underline;
+    }
+    .pillar-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .pillar-content h2 {
+        font-size: 28px;
+        color: #1e3a5f;
+        margin-top: 48px;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e2e8f0;
+    }
+    .pillar-content h3 {
+        font-size: 22px;
+        color: #2d5a87;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+    .pillar-content h4 {
+        font-size: 18px;
+        color: #374151;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    .pillar-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #374151;
+        margin-bottom: 16px;
+    }
+    .pillar-content ul, .pillar-content ol {
+        margin-bottom: 16px;
+        padding-left: 24px;
+    }
+    .pillar-content li {
+        margin-bottom: 8px;
+        line-height: 1.7;
+        color: #374151;
+    }
+    .pillar-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 14px;
+    }
+    .pillar-table th {
+        background: #1e3a5f;
+        color: white;
+        padding: 12px 16px;
+        text-align: left;
+        font-weight: 600;
+    }
+    .pillar-table td {
+        padding: 10px 16px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    .pillar-table tr:nth-child(even) {
+        background: #f8fafc;
+    }
+    .pillar-table tr:hover {
+        background: #eff6ff;
+    }
+    .pillar-callout {
+        background: #eff6ff;
+        border-left: 4px solid #3b82f6;
+        padding: 16px 20px;
+        margin: 24px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .pillar-callout.warning {
+        background: #fef3c7;
+        border-left-color: #d97706;
+    }
+    .pillar-callout.tip {
+        background: #ecfdf5;
+        border-left-color: #059669;
+    }
+    .pillar-callout strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+    .pillar-internal-links {
+        background: #f0f9ff;
+        border: 1px solid #bae6fd;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 32px 0;
+    }
+    .pillar-internal-links h3 {
+        margin-top: 0;
+        color: #0369a1;
+        font-size: 16px;
+    }
+    .pillar-internal-links a {
+        color: #0369a1;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 8px 4px 0;
+        padding: 4px 12px;
+        background: white;
+        border-radius: 6px;
+        font-size: 14px;
+        border: 1px solid #bae6fd;
+    }
+    .pillar-internal-links a:hover {
+        background: #e0f2fe;
+    }
+    .pillar-faq {
+        margin-top: 48px;
+    }
+    .pillar-faq-item {
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        overflow: hidden;
+    }
+    .pillar-faq-q {
+        padding: 16px 20px;
+        background: #f8fafc;
+        cursor: pointer;
+        font-weight: 600;
+        color: #1e3a5f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pillar-faq-q:hover {
+        background: #eff6ff;
+    }
+    .pillar-faq-a {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .pillar-faq-item.open .pillar-faq-a {
+        padding: 16px 20px;
+        max-height: 500px;
+    }
+    .pillar-faq-q::after {
+        content: '+';
+        font-size: 20px;
+        color: #3b82f6;
+        transition: transform 0.3s;
+    }
+    .pillar-faq-item.open .pillar-faq-q::after {
+        transform: rotate(45deg);
+    }
+    .pillar-cta {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+        color: white;
+        padding: 48px 32px;
+        border-radius: 16px;
+        text-align: center;
+        margin: 48px 0;
+    }
+    .pillar-cta h2 {
+        color: white;
+        border: none;
+        margin-top: 0;
+    }
+    .pillar-cta a {
+        display: inline-block;
+        margin: 8px;
+        padding: 12px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .pillar-cta .btn-primary {
+        background: white;
+        color: #1e3a5f;
+    }
+    .pillar-cta .btn-secondary {
+        border: 1px solid rgba(255,255,255,0.4);
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .pillar-hero h1 { font-size: 28px; }
+        .pillar-hero .subtitle { font-size: 16px; }
+        .pillar-content h2 { font-size: 22px; }
+        .pillar-content h3 { font-size: 18px; }
+        .pillar-table { font-size: 12px; }
+        .pillar-table th, .pillar-table td { padding: 8px; }
+    }
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Surface Quality: Understanding Scratch-Dig Specifications",
+  "description": "Complete guide to scratch-dig surface quality specifications per MIL-PRF-13830B: what scratch and dig numbers mean, common specs by application, cost implications, and how to avoid over-specifying.",
+  "url": "https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge Optics",
+    "url": "https://photonedgeoptics.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "dateModified": "2026-08-23",
+  "datePublished": "2026-08-23",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Engineering Team"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Knowledge Center",
+      "item": "https://photonedgeoptics.com/knowledge-center/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Surface Quality Scratch-Dig Guide",
+      "item": "https://photonedgeoptics.com/knowledge-center/surface-quality-scratch-dig-guide/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="/images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/custom-optics.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navResources">Resources &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/knowledge-center/" class="dropdown-item" data-i18n="navKnowledgeCenter"><span class="dropdown-icon">&#128218;</span> Knowledge Center</a>
+                            <a href="/application-notes/" class="dropdown-item" data-i18n="navApplicationNotes"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
+                            <a href="/materials.html" class="dropdown-item" data-i18n="navMaterials"><span class="dropdown-icon">&#129514;</span> Materials Guide</a>
+                            <a href="/coatings/" class="dropdown-item" data-i18n="navCoatings"><span class="dropdown-icon">&#128300;</span> Coating Database</a>
+                            <a href="/faq.html" class="dropdown-item" data-i18n="navFAQ"><span class="dropdown-icon">&#10067;</span> FAQ</a>
+                            <a href="/blog.html" class="dropdown-item" data-i18n="navBlog"><span class="dropdown-icon">&#128221;</span> Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/about.html" class="dropdown-item" data-i18n="navAboutPhotonEdge"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
+                            <a href="/quality-assurance.html" class="dropdown-item" data-i18n="navQualityDoc"><span class="dropdown-icon">&#9989;</span> Quality &amp; Documentation</a>
+                            <a href="/case-studies.html" class="dropdown-item" data-i18n="navCaseStudies"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn notranslate active">EN</button>
+                    <a href="/zh/" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
+                </div>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+<div class="pillar-hero">
+    <div class="container">
+        <h1>Surface Quality: Understanding Scratch-Dig Specifications</h1>
+        <p class="subtitle">A practical engineering guide to the MIL-PRF-13830B scratch-dig standard &mdash; what the numbers mean, how to specify correctly, and how to avoid paying for surface quality you do not need.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pillar-toc">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#what-is-scratch-dig">What Scratch-Dig Means</a></li>
+            <li><a href="#scratch-number">Understanding the Scratch Number</a></li>
+            <li><a href="#dig-number">Understanding the Dig Number</a></li>
+            <li><a href="#specs-by-application">Common Specifications by Application</a></li>
+            <li><a href="#cost-implications">Cost Implications of Surface Quality</a></li>
+            <li><a href="#roughness-vs-scratch">Surface Roughness vs Scratch-Dig</a></li>
+            <li><a href="#how-to-specify">How to Specify Correctly</a></li>
+            <li><a href="#inspection">Inspection Methods</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ol>
+    </div>
+
+    <div class="pillar-content">
+
+        <h2 id="what-is-scratch-dig">What Scratch-Dig Means</h2>
+        <p>Scratch-dig is the most widely used surface quality specification in the optical industry, defined by the US military standard <strong>MIL-PRF-13830B</strong> (formerly MIL-O-13830). It provides a quick, standardized way to communicate the maximum allowable size of surface defects on an optical element.</p>
+        <p>A scratch-dig specification is written as two numbers separated by a dash, for example: <strong>60-40</strong>, <strong>40-20</strong>, <strong>20-10</strong>, or <strong>10-5</strong>. The first number is the <em>scratch number</em>; the second is the <em>dig number</em>.</p>
+        <p>Importantly, scratch-dig is a <em>comparative</em> standard. Inspectors compare observed defects against calibrated reference standards under controlled illumination (typically a long-wave UV lamp or diffuse white light against a dark background). It is not a direct dimensional measurement &mdash; it is a width comparison against certified scratch and dig standards.</p>
+
+        <h2 id="scratch-number">Understanding the Scratch Number</h2>
+        <p>The scratch number indicates the <strong>width</strong> of the widest allowable scratch, expressed in units of 0.001&nbsp;mm (1&nbsp;&mu;m). A scratch number of 80 means the widest visible scratch must not exceed 0.08&nbsp;mm (80&nbsp;&mu;m) in width.</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Scratch Number</th>
+                    <th>Width (&mu;m)</th>
+                    <th>Width (mm)</th>
+                    <th>Visibility</th>
+                    <th>Typical Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>0.080</td>
+                    <td>Clearly visible under inspection light</td>
+                    <td>Rough industrial, non-critical</td>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>60</td>
+                    <td>0.060</td>
+                    <td>Visible under inspection light</td>
+                    <td>General purpose optics</td>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>40</td>
+                    <td>0.040</td>
+                    <td>Moderately visible</td>
+                    <td>Imaging systems, moderate quality</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>0.020</td>
+                    <td>Faint under inspection light</td>
+                    <td>Laser systems, precision optics</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>0.010</td>
+                    <td>Very difficult to see</td>
+                    <td>High-precision, lithography, space</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>The scratch number also governs the cumulative length of scratches. Per MIL-PRF-13830B, the total length of scratches at the specified width must not exceed certain limits based on the optic diameter. Narrower scratches (lower number) are allowed to be longer; wider scratches must be shorter. The standard provides specific formulas for this tradeoff.</p>
+
+        <div class="pillar-callout">
+            <strong>Key Insight</strong>
+            A &ldquo;scratch&rdquo; is defined as a linear defect whose length exceeds 4&times; its width. Shorter defects are classified as &ldquo;digs&rdquo; or &ldquo;pits.&rdquo; This distinction matters during inspection: a long narrow mark and a short wide mark are categorized differently.
+        </div>
+
+        <h2 id="dig-number">Understanding the Dig Number</h2>
+        <p>The dig number indicates the <strong>diameter</strong> of the largest allowable pit (circular defect), expressed in units of 0.01&nbsp;mm (10&nbsp;&mu;m). A dig number of 10 means no pit may exceed 0.10&nbsp;mm (100&nbsp;&mu;m) in diameter.</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Dig Number</th>
+                    <th>Diameter (&mu;m)</th>
+                    <th>Diameter (mm)</th>
+                    <th>Appearance</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>1,000</td>
+                    <td>1.00</td>
+                    <td>Large, obvious pit</td>
+                    <td>Unacceptable for most optical use</td>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>500</td>
+                    <td>0.50</td>
+                    <td>Large pit</td>
+                    <td>Rough industrial use only</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>200</td>
+                    <td>0.20</td>
+                    <td>Moderate pit, visible</td>
+                    <td>General purpose optics</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>100</td>
+                    <td>0.10</td>
+                    <td>Small pit</td>
+                    <td>Laser, imaging, precision</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>50</td>
+                    <td>0.05</td>
+                    <td>Very small pit</td>
+                    <td>High-precision optics</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>0.02</td>
+                    <td>Microscopic</td>
+                    <td>Precision, lithography, space optics</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Per the standard, the total area of all digs on the optic must not exceed a specified fraction of the clear aperture. For most specifications, the allowable number of digs of the maximum size is limited to prevent clustering.</p>
+
+        <h2 id="specs-by-application">Common Specifications by Application</h2>
+        <p>The following table provides typical scratch-dig specifications for common optical applications. These are guidelines &mdash; your specific system requirements may differ.</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Application</th>
+                    <th>Typical Scratch-Dig</th>
+                    <th>Why This Level</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>General purpose (windows, mirrors for alignment)</td>
+                    <td>60-40</td>
+                    <td>Defects have minimal impact on beam quality or transmission</td>
+                </tr>
+                <tr>
+                    <td>Imaging systems (camera lenses, microscope objectives)</td>
+                    <td>40-20</td>
+                    <td>Surface defects scatter light, reducing contrast and creating artifacts</td>
+                </tr>
+                <tr>
+                    <td>Laser systems (beam steering, focusing, windows)</td>
+                    <td>20-10</td>
+                    <td>Scratches act as stress concentrators and laser damage initiation sites</td>
+                </tr>
+                <tr>
+                    <td>Precision optics (interferometer flats, reference surfaces)</td>
+                    <td>10-5</td>
+                    <td>Any surface defect degrades wavefront quality and measurement accuracy</td>
+                </tr>
+                <tr>
+                    <td>High-power laser (fusion research, industrial cutting)</td>
+                    <td>10-5 or better</td>
+                    <td>Surface defects cause localized absorption leading to catastrophic damage</td>
+                </tr>
+                <tr>
+                    <td>Space optics (satellite instruments)</td>
+                    <td>20-10 to 10-5</td>
+                    <td>Cannot be cleaned or replaced; contamination and defects accelerate degradation</td>
+                </tr>
+                <tr>
+                    <td>Consumer optics (eyepieces, simple magnifiers)</td>
+                    <td>80-50</td>
+                    <td>Human eye tolerance; cost is primary driver</td>
+                </tr>
+                <tr>
+                    <td>Fiber optic collimators</td>
+                    <td>40-20</td>
+                    <td>Back-reflection and insertion loss sensitivity</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="pillar-callout tip">
+            <strong>Engineering Tip</strong>
+            When in doubt, specify 40-20 for transmissive optics and 60-40 for reflective optics used in non-imaging roles. This covers 80% of general industrial applications without over-specifying. Tighten only when your system analysis shows that surface defects actually impact performance.
+        </div>
+
+        <h2 id="cost-implications">Cost Implications of Surface Quality</h2>
+        <p>Tighter scratch-dig specifications increase cost through multiple mechanisms:</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Specification</th>
+                    <th>Relative Cost Factor</th>
+                    <th>Why It Costs More</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>80-50</td>
+                    <td>1.0&times; (baseline)</td>
+                    <td>Standard polishing; most blanks meet this easily</td>
+                </tr>
+                <tr>
+                    <td>60-40</td>
+                    <td>1.0&ndash;1.2&times;</td>
+                    <td>Minimal cost increase; still within standard process capability</td>
+                </tr>
+                <tr>
+                    <td>40-20</td>
+                    <td>1.3&ndash;1.5&times;</td>
+                    <td>More careful handling, additional inspection time, potential rework</td>
+                </tr>
+                <tr>
+                    <td>20-10</td>
+                    <td>1.5&ndash;2.0&times;</td>
+                    <td>Extended polishing, clean-room handling, 100% inspection under calibrated light</td>
+                </tr>
+                <tr>
+                    <td>10-5</td>
+                    <td>2.0&ndash;3.0&times;</td>
+                    <td>Precision polishing, class-100 cleanroom, multiple inspection passes, high yield loss</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>The cost drivers are not just the polishing time. Tighter specs require:</p>
+        <ul>
+            <li><strong>Cleaner environment:</strong> Class-100 or better cleanroom handling to prevent contamination-induced digs</li>
+            <li><strong>More careful process:</strong> Slower polishing, protective handling between steps, specialized cleaning procedures</li>
+            <li><strong>100% inspection:</strong> Every optic must be inspected under calibrated illumination against reference standards</li>
+            <li><strong>Lower yield:</strong> More parts are rejected or require rework, increasing effective cost per good part</li>
+            <li><strong>Packaging:</strong> Individual protective packaging to prevent transit damage</li>
+        </ul>
+
+        <div class="pillar-callout warning">
+            <strong>Don&rsquo;t Over-Specify</strong>
+            Specifying 20-10 when 60-40 is sufficient can increase cost by 50&ndash;100% with zero performance benefit. Always justify the scratch-dig requirement based on your system&rsquo;s actual sensitivity to scattered light, laser damage threshold, or imaging contrast. Ask: &ldquo;What problem does this surface defect actually cause in my system?&rdquo;
+        </div>
+
+        <h2 id="roughness-vs-scratch">Surface Roughness vs Scratch-Dig</h2>
+        <p>Surface roughness (Ra or RMS) and scratch-dig measure different things, and both may need to be specified:</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Parameter</th>
+                    <th>What It Measures</th>
+                    <th>Unit</th>
+                    <th>Typical Values</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Scratch-Dig</td>
+                    <td>Discrete defects (scratches, pits) &mdash; localized damage events</td>
+                    <td>Dimensionless (comparative)</td>
+                    <td>60-40 to 10-5</td>
+                </tr>
+                <tr>
+                    <td>Surface Roughness (Ra)</td>
+                    <td>Average height variation of the entire surface texture</td>
+                    <td>Nanometers (nm) or &Aring;ngstr&ouml;ms (&Aring;)</td>
+                    <td>0.5&ndash;5 nm RMS typical</td>
+                </tr>
+                <tr>
+                    <td>Total Integrated Scatter (TIS)</td>
+                    <td>Total light scattered from surface roughness</td>
+                    <td>Percentage or fraction</td>
+                    <td>&lt; 0.1% for polished optics</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>An optic can have excellent scratch-dig (no visible defects) but poor surface roughness (high scatter), or vice versa. For laser and imaging applications, both parameters matter. Roughness controls diffuse scatter; scratch-dig controls discrete scatter sites.</p>
+        <p>For most polished optical surfaces, standard polishing produces Ra &lt; 1&nbsp;nm RMS. When scatter is critical, specify both scratch-dig AND surface roughness separately.</p>
+
+        <h2 id="how-to-specify">How to Specify Correctly</h2>
+        <p>When writing scratch-dig into your optical drawing or purchase order, follow these best practices:</p>
+        <ol>
+            <li><strong>Specify per surface:</strong> If front and back surfaces have different requirements, note each separately. Example: &ldquo;Front: 20-10, Back: 40-20.&rdquo;</li>
+            <li><strong>Define the clear aperture:</strong> Scratch-dig applies to the clear aperture only. Edge defects (chips, bevel damage) are typically excluded unless specifically called out.</li>
+            <li><strong>Reference the standard:</strong> State &ldquo;Per MIL-PRF-13830B&rdquo; to avoid ambiguity. Some vendors use ISO 10110-7, which has a different numbering system.</li>
+            <li><strong>Do not specify tighter than needed:</strong> Each step down (e.g., 40-20 to 20-10) adds 30&ndash;100% cost. Justify the requirement with system-level analysis.</li>
+            <li><strong>Consider combined specs:</strong> If scatter is also critical, add surface roughness: &ldquo;Scratch-Dig: 20-10 per MIL-PRF-13830B; Surface Roughness: &lt; 1.0 nm RMS.&rdquo;</li>
+            <li><strong>Note inspection conditions:</strong> For critical optics, specify inspection illumination type (UV, white light), intensity, and viewing angle.</li>
+        </ol>
+
+        <h2 id="inspection">Inspection Methods</h2>
+        <p>Scratch-dig inspection per MIL-PRF-13830B uses the following standard approach:</p>
+        <ul>
+            <li><strong>Illumination:</strong> A long-wavelength UV lamp (365&nbsp;nm) or focused white light beam, directed at a low angle to the surface</li>
+            <li><strong>Background:</strong> Black background for transmitted light inspection; dark diffuse background for reflected light</li>
+            <li><strong>Comparison:</strong> Inspector compares observed defects against calibrated reference standards (MIL-PRF-13830B certified scratch and dig comparators)</li>
+            <li><strong>Environment:</strong> Clean room or clean bench to prevent contamination from being mistaken for defects</li>
+        </ul>
+        <p>For automated or quantitative inspection, some manufacturers use dark-field microscopy with digital image analysis. This provides objective, repeatable measurements but requires correlation to the visual comparison standard for acceptance/rejection decisions.</p>
+
+        <div class="pillar-internal-links">
+            <h3>Related PhotonEdge Resources</h3>
+            <a href="/quality-assurance.html">Quality Assurance &amp; Documentation</a>
+            <a href="/knowledge-center/optical-materials-selection-handbook/">Optical Materials Selection Handbook</a>
+            <a href="/knowledge-center/optical-coatings-complete-guide/">Optical Coatings Complete Guide</a>
+            <a href="/knowledge-center/bk7-vs-fused-silica-comparison/">BK7 vs Fused Silica Comparison</a>
+            <a href="/knowledge-center/ar-coating-selection-guide/">AR Coating Selection Guide</a>
+            <a href="/custom-optics.html">Custom Optics Manufacturing</a>
+            <a href="/contact.html">Request Engineering Review</a>
+        </div>
+
+        <div class="pillar-cta">
+            <h2>Need Help Specifying Surface Quality?</h2>
+            <p style="font-size:16px;opacity:0.9;margin-bottom:24px;">Our optical engineers can review your application and recommend the appropriate scratch-dig specification &mdash; balancing performance requirements with manufacturing cost.</p>
+            <a href="/contact.html" class="btn-primary">Request Engineering Review</a>
+            <a href="/quality-assurance.html" class="btn-secondary">View Quality Standards</a>
+        </div>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="pillar-faq">
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">What does a 60-40 scratch-dig specification mean?</div>
+                <div class="pillar-faq-a"><p>A 60-40 specification means: the widest allowable scratch has a width of 0.060&nbsp;mm (scratch number 60 = 60 &times; 0.001&nbsp;mm), and the largest allowable pit has a diameter of 0.40&nbsp;mm (dig number 40 = 40 &times; 0.01&nbsp;mm). This is the most common specification for general-purpose optics and provides a good balance between quality and cost.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Does a tighter scratch-dig always improve optical performance?</div>
+                <div class="pillar-faq-a"><p>Not necessarily. In imaging systems, tighter scratch-dig reduces scatter and improves contrast. But for a simple window used in a non-imaging alignment system, 60-40 and 20-10 will perform identically. The improvement only matters if surface defects are in the signal path of a scatter-sensitive application. Always tie the specification to a system-level requirement.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">What is the difference between MIL-PRF-13830B and ISO 10110-7 for surface quality?</div>
+                <div class="pillar-faq-a"><p>Both standards define surface quality for optical elements, but they use different numbering systems. MIL-PRF-13830B uses the traditional scratch-dig numbers (e.g., 40-20). ISO 10110-7 uses a numerical code (e.g., 5/40&times;20) where the first number indicates the total allowed defect area and subsequent numbers describe scratch and dig limits. When ordering from international suppliers, specify which standard you are referencing to avoid confusion.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Can surface quality affect laser damage threshold?</div>
+                <div class="pillar-faq-a"><p>Yes, significantly. Surface scratches and digs act as stress concentrators and local field enhancement sites where laser damage can initiate at lower fluence than the bulk material would otherwise support. For high-power laser optics, specify 20-10 or tighter, combined with high-quality polishing (Ra &lt; 0.5&nbsp;nm RMS) and IBS-deposited coatings. Many laser damage events originate at surface defects, not coating or substrate bulk.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">How much does improving scratch-dig from 60-40 to 20-10 cost?</div>
+                <div class="pillar-faq-a"><p>Typically 50&ndash;100% increase in fabrication cost for the same optic. The cost comes from extended polishing time, more careful handling (clean-room conditions), 100% inspection under calibrated illumination, and lower yield. For a standard &Oslash;25&nbsp;mm BK7 plano-convex lens, the difference might be $10&ndash;20 per unit. For large optics (&gt;&Oslash;100&nbsp;mm), the cost difference scales significantly.</p></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
+                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality &amp; Documentation</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
+</a>
+
+<script src="/js/blog-data.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof updatePageTranslations === 'function') updatePageTranslations();
+        });
+    </script>
+    <script>
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) {
+            navList.classList.toggle('active');
+        }
+    }
+    </script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>

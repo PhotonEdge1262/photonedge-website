@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK7 vs UV Fused Silica: When to Choose Which | PhotonEdge Optics</title>
+    <meta name="description" content="Engineering comparison of BK7 and UV Fused Silica: transmission ranges, thermal properties, laser damage thresholds, cost tradeoffs, and a practical decision guide for optical designers.">
+    <meta name="keywords" content="BK7 vs fused silica, BK7 optical properties, UV fused silica, optical material comparison, BK7 transmission, fused silica thermal expansion, laser optics material selection, UV optics material">
+    <meta property="og:title" content="BK7 vs UV Fused Silica: When to Choose Which | PhotonEdge Optics">
+    <meta property="og:description" content="Engineering comparison of BK7 and UV Fused Silica: transmission ranges, thermal properties, laser damage thresholds, cost tradeoffs, and a practical decision guide for optical designers.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BK7 vs UV Fused Silica: When to Choose Which | PhotonEdge Optics">
+    <meta name="twitter:description" content="Engineering comparison of BK7 and UV Fused Silica: transmission ranges, thermal properties, laser damage thresholds, cost tradeoffs, and a practical decision guide for optical designers.">
+    <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <style>
+    .pillar-hero {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 50%, #1a4971 100%);
+        color: white;
+        padding: 80px 0 60px;
+    }
+    .pillar-hero h1 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    .pillar-hero .subtitle {
+        font-size: 18px;
+        opacity: 0.9;
+        line-height: 1.6;
+        max-width: 700px;
+    }
+    .pillar-toc {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 28px 32px;
+        margin: 40px auto;
+        max-width: 800px;
+    }
+    .pillar-toc h2 {
+        font-size: 18px;
+        color: #1e3a5f;
+        margin-bottom: 16px;
+    }
+    .pillar-toc ol {
+        padding-left: 20px;
+    }
+    .pillar-toc li {
+        margin-bottom: 8px;
+    }
+    .pillar-toc a {
+        color: #3b82f6;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .pillar-toc a:hover {
+        text-decoration: underline;
+    }
+    .pillar-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    .pillar-content h2 {
+        font-size: 28px;
+        color: #1e3a5f;
+        margin-top: 48px;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid #e2e8f0;
+    }
+    .pillar-content h3 {
+        font-size: 22px;
+        color: #2d5a87;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+    .pillar-content h4 {
+        font-size: 18px;
+        color: #374151;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+    .pillar-content p {
+        font-size: 16px;
+        line-height: 1.8;
+        color: #374151;
+        margin-bottom: 16px;
+    }
+    .pillar-content ul, .pillar-content ol {
+        margin-bottom: 16px;
+        padding-left: 24px;
+    }
+    .pillar-content li {
+        margin-bottom: 8px;
+        line-height: 1.7;
+        color: #374151;
+    }
+    .pillar-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 14px;
+    }
+    .pillar-table th {
+        background: #1e3a5f;
+        color: white;
+        padding: 12px 16px;
+        text-align: left;
+        font-weight: 600;
+    }
+    .pillar-table td {
+        padding: 10px 16px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    .pillar-table tr:nth-child(even) {
+        background: #f8fafc;
+    }
+    .pillar-table tr:hover {
+        background: #eff6ff;
+    }
+    .pillar-callout {
+        background: #eff6ff;
+        border-left: 4px solid #3b82f6;
+        padding: 16px 20px;
+        margin: 24px 0;
+        border-radius: 0 8px 8px 0;
+    }
+    .pillar-callout.warning {
+        background: #fef3c7;
+        border-left-color: #d97706;
+    }
+    .pillar-callout.tip {
+        background: #ecfdf5;
+        border-left-color: #059669;
+    }
+    .pillar-callout strong {
+        display: block;
+        margin-bottom: 4px;
+    }
+    .pillar-internal-links {
+        background: #f0f9ff;
+        border: 1px solid #bae6fd;
+        border-radius: 12px;
+        padding: 24px;
+        margin: 32px 0;
+    }
+    .pillar-internal-links h3 {
+        margin-top: 0;
+        color: #0369a1;
+        font-size: 16px;
+    }
+    .pillar-internal-links a {
+        color: #0369a1;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 8px 4px 0;
+        padding: 4px 12px;
+        background: white;
+        border-radius: 6px;
+        font-size: 14px;
+        border: 1px solid #bae6fd;
+    }
+    .pillar-internal-links a:hover {
+        background: #e0f2fe;
+    }
+    .pillar-faq {
+        margin-top: 48px;
+    }
+    .pillar-faq-item {
+        border: 1px solid #e2e8f0;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        overflow: hidden;
+    }
+    .pillar-faq-q {
+        padding: 16px 20px;
+        background: #f8fafc;
+        cursor: pointer;
+        font-weight: 600;
+        color: #1e3a5f;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .pillar-faq-q:hover {
+        background: #eff6ff;
+    }
+    .pillar-faq-a {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .pillar-faq-item.open .pillar-faq-a {
+        padding: 16px 20px;
+        max-height: 500px;
+    }
+    .pillar-faq-q::after {
+        content: '+';
+        font-size: 20px;
+        color: #3b82f6;
+        transition: transform 0.3s;
+    }
+    .pillar-faq-item.open .pillar-faq-q::after {
+        transform: rotate(45deg);
+    }
+    .pillar-cta {
+        background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+        color: white;
+        padding: 48px 32px;
+        border-radius: 16px;
+        text-align: center;
+        margin: 48px 0;
+    }
+    .pillar-cta h2 {
+        color: white;
+        border: none;
+        margin-top: 0;
+    }
+    .pillar-cta a {
+        display: inline-block;
+        margin: 8px;
+        padding: 12px 28px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .pillar-cta .btn-primary {
+        background: white;
+        color: #1e3a5f;
+    }
+    .pillar-cta .btn-secondary {
+        border: 1px solid rgba(255,255,255,0.4);
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .pillar-hero h1 { font-size: 28px; }
+        .pillar-hero .subtitle { font-size: 16px; }
+        .pillar-content h2 { font-size: 22px; }
+        .pillar-content h3 { font-size: 18px; }
+        .pillar-table { font-size: 12px; }
+        .pillar-table th, .pillar-table td { padding: 8px; }
+    }
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BK7 vs UV Fused Silica: When to Choose Which",
+  "description": "Engineering comparison of BK7 and UV Fused Silica: transmission ranges, thermal properties, laser damage thresholds, cost tradeoffs, and a practical decision guide for optical designers.",
+  "url": "https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge Optics",
+    "url": "https://photonedgeoptics.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "dateModified": "2026-08-23",
+  "datePublished": "2026-08-23",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Engineering Team"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://photonedgeoptics.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Knowledge Center",
+      "item": "https://photonedgeoptics.com/knowledge-center/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BK7 vs UV Fused Silica",
+      "item": "https://photonedgeoptics.com/knowledge-center/bk7-vs-fused-silica-comparison/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="/images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/custom-optics.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
+                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navResources">Resources &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/knowledge-center/" class="dropdown-item" data-i18n="navKnowledgeCenter"><span class="dropdown-icon">&#128218;</span> Knowledge Center</a>
+                            <a href="/application-notes/" class="dropdown-item" data-i18n="navApplicationNotes"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
+                            <a href="/materials.html" class="dropdown-item" data-i18n="navMaterials"><span class="dropdown-icon">&#129514;</span> Materials Guide</a>
+                            <a href="/coatings/" class="dropdown-item" data-i18n="navCoatings"><span class="dropdown-icon">&#128300;</span> Coating Database</a>
+                            <a href="/faq.html" class="dropdown-item" data-i18n="navFAQ"><span class="dropdown-icon">&#10067;</span> FAQ</a>
+                            <a href="/blog.html" class="dropdown-item" data-i18n="navBlog"><span class="dropdown-icon">&#128221;</span> Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/about.html" class="dropdown-item" data-i18n="navAboutPhotonEdge"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
+                            <a href="/quality-assurance.html" class="dropdown-item" data-i18n="navQualityDoc"><span class="dropdown-icon">&#9989;</span> Quality &amp; Documentation</a>
+                            <a href="/case-studies.html" class="dropdown-item" data-i18n="navCaseStudies"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn notranslate active">EN</button>
+                    <a href="/zh/" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
+                </div>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+            </nav>
+        </div>
+    </header>
+
+<div class="pillar-hero">
+    <div class="container">
+        <h1>BK7 vs UV Fused Silica: When to Choose Which</h1>
+        <p class="subtitle">A practical engineering comparison of the two most common optical materials &mdash; helping you avoid costly material selection mistakes in lens, window, and substrate design.</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="pillar-toc">
+        <h2>Table of Contents</h2>
+        <ol>
+            <li><a href="#overview">Why This Comparison Matters</a></li>
+            <li><a href="#properties">Key Property Comparison</a></li>
+            <li><a href="#when-bk7">When BK7 Is the Right Choice</a></li>
+            <li><a href="#when-fs">When Fused Silica Is Necessary</a></li>
+            <li><a href="#decision-guide">Material Selection Decision Guide</a></li>
+            <li><a href="#common-mistakes">Common Material Selection Mistakes</a></li>
+            <li><a href="#cost-analysis">Cost vs Performance Tradeoffs</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+        </ol>
+    </div>
+
+    <div class="pillar-content">
+
+        <h2 id="overview">Why This Comparison Matters</h2>
+        <p>BK7 (N-BK7, borosilicate crown glass) and UV Fused Silica are the two most frequently specified optical materials worldwide. Together they cover the majority of lens, window, prism, and substrate applications. Yet optical designers still over-specify fused silica for visible-light systems (paying 3&ndash;5&times; more than necessary) or mistakenly choose BK7 for UV applications (causing transmission failures at wavelengths below 350&nbsp;nm).</p>
+        <p>This guide provides a direct, property-level comparison so you can make the right choice for your application &mdash; without over-engineering or under-performing.</p>
+
+        <h2 id="properties">Key Property Comparison</h2>
+        <p>The following table compares the critical engineering properties of N-BK7 and UV Fused Silica (Schott/Ohara equivalents). All values are representative at room temperature unless otherwise noted.</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>N-BK7</th>
+                    <th>UV Fused Silica</th>
+                    <th>Impact on Design</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Transmission Range</strong></td>
+                    <td>350 &ndash; 2,000 nm</td>
+                    <td>185 &ndash; 2,500 nm</td>
+                    <td>FS reaches deep UV; BK7 blocks below ~350 nm</td>
+                </tr>
+                <tr>
+                    <td><strong>Refractive Index (n<sub>d</sub>)</strong></td>
+                    <td>1.5168</td>
+                    <td>1.4585</td>
+                    <td>BK7 bends light more; fewer surfaces needed for same power</td>
+                </tr>
+                <tr>
+                    <td><strong>Abbe Number (V<sub>d</sub>)</strong></td>
+                    <td>64.17</td>
+                    <td>67.82</td>
+                    <td>Both low dispersion; BK7 pairs well with SF glasses for achromats</td>
+                </tr>
+                <tr>
+                    <td><strong>CTE (&alpha;)</strong></td>
+                    <td>7.1 &times; 10<sup>&minus;6</sup> /K</td>
+                    <td>0.55 &times; 10<sup>&minus;6</sup> /K</td>
+                    <td>FS ~13&times; lower expansion &mdash; critical for athermal designs</td>
+                </tr>
+                <tr>
+                    <td><strong>Thermal Conductivity</strong></td>
+                    <td>1.11 W/(m&middot;K)</td>
+                    <td>1.38 W/(m&middot;K)</td>
+                    <td>FS dissipates heat better; matters for laser window stability</td>
+                </tr>
+                <tr>
+                    <td><strong>dn/dT</strong></td>
+                    <td>3.0 &times; 10<sup>&minus;6</sup> /K</td>
+                    <td>9.6 &times; 10<sup>&minus;6</sup> /K</td>
+                    <td>BK7 lower thermo-optic; FS dn/dT matters in precision optics</td>
+                </tr>
+                <tr>
+                    <td><strong>Softening Temperature</strong></td>
+                    <td>~557 &deg;C</td>
+                    <td>~1,580 &deg;C</td>
+                    <td>FS withstands far higher temperatures without deformation</td>
+                </tr>
+                <tr>
+                    <td><strong>Laser Damage Threshold (CW, 1&nbsp;&mu;m)</strong></td>
+                    <td>~10 MW/cm&sup2;</td>
+                    <td>~40 MW/cm&sup2;</td>
+                    <td>FS preferred for high-power laser optics</td>
+                </tr>
+                <tr>
+                    <td><strong>Hardness (Knoop)</strong></td>
+                    <td>~580 kg/mm&sup2;</td>
+                    <td>~470 kg/mm&sup2;</td>
+                    <td>BK7 slightly harder; easier to polish to fine finish</td>
+                </tr>
+                <tr>
+                    <td><strong>Stress Birefringence</strong></td>
+                    <td>Class 1&ndash;2 (low)</td>
+                    <td>&lt; 2 nm/cm (very low)</td>
+                    <td>FS preferred for polarization-sensitive systems</td>
+                </tr>
+                <tr>
+                    <td><strong>Available Blank Sizes</strong></td>
+                    <td>Up to &Oslash;300 mm</td>
+                    <td>Up to &Oslash;400+ mm</td>
+                    <td>Both available in large formats; FS excels for large windows</td>
+                </tr>
+                <tr>
+                    <td><strong>Relative Cost</strong></td>
+                    <td>Baseline (1&times;)</td>
+                    <td>3&ndash;5&times; baseline</td>
+                    <td>BK7 is the cost-effective default for non-UV, non-laser use</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="when-bk7">When BK7 Is the Right Choice</h2>
+        <p>N-BK7 is the default workhorse optical material. It should be your first choice unless specific application requirements rule it out. Choose BK7 when:</p>
+        <ul>
+            <li><strong>Visible to near-IR operation (400&ndash;1,800 nm):</strong> BK7 provides excellent transmission across the entire visible spectrum and well into the near-infrared. Most imaging, collimation, beam steering, and illumination optics operate in this range.</li>
+            <li><strong>General-purpose lenses and prisms:</strong> Plano-convex lenses, achromat elements, Dove prisms, right-angle prisms &mdash; BK7 is the standard material for catalog optics.</li>
+            <li><strong>Cost-sensitive designs:</strong> BK7 blanks are widely available, easy to fabricate, and well-understood by all optical shops. Lead times are short and scrap rates are low.</li>
+            <li><strong>Moderate thermal environments:</strong> For systems operating between &minus;20&deg;C and +60&deg;C with no extreme thermal cycling, BK7&rsquo;s expansion is manageable with standard mechanical design.</li>
+            <li><strong>Low to moderate power lasers:</strong> For alignment lasers, pointer-class, or diagnostic beams below ~1&nbsp;W/cm&sup2;, BK7 substrates with appropriate coatings are acceptable.</li>
+            <li><strong>Prototyping and R&amp;D:</strong> When you need fast turnaround and iteration, BK7&rsquo;s availability and lower cost make it the practical choice.</li>
+        </ul>
+
+        <div class="pillar-callout tip">
+            <strong>Engineering Tip</strong>
+            If your system operates entirely above 400&nbsp;nm and below 1,800&nbsp;nm, has no high-power laser exposure, and does not require athermal performance, BK7 is almost certainly the right material. Save fused silica for where you actually need it.
+        </div>
+
+        <h2 id="when-fs">When Fused Silica Is Necessary</h2>
+        <p>UV Fused Silica becomes necessary (not just preferable) when one or more of these conditions exist:</p>
+        <ul>
+            <li><strong>Deep UV transmission required (&lt;350 nm):</strong> Applications such as fluorescence microscopy (DAPI/Hoechst at 340&ndash;360&nbsp;nm), lithography optics (i-line at 365&nbsp;nm), UV curing systems, and spectroscopy below 350&nbsp;nm all demand fused silica. BK7 absorption below 350&nbsp;nm makes it unusable.</li>
+            <li><strong>High-power laser systems:</strong> For CW lasers above ~10&nbsp;W or pulsed lasers with peak intensities above ~10&nbsp;J/cm&sup2; (nanosecond regime), fused silica&rsquo;s superior laser damage threshold (LIDT) is essential. BK7 substrates can develop thermal lensing or catastrophic damage.</li>
+            <li><strong>Precision athermal designs:</strong> Interferometers, reference cavities, space-borne optics, and systems requiring wavefront stability over wide temperature ranges benefit from fused silica&rsquo;s ~13&times; lower thermal expansion coefficient.</li>
+            <li><strong>UV fluorescence and Raman spectroscopy:</strong> Windows and collection optics for UV-excited fluorescence must transmit both the excitation and emission wavelengths. Fused silica covers 185&ndash;2,500&nbsp;nm in a single material.</li>
+            <li><strong>Excimer and exciplex laser systems:</strong> ArF (193&nbsp;nm), KrF (248&nbsp;nm), and XeCl (308&nbsp;nm) lasers require fused silica optics rated for deep-UV operation with appropriate coatings.</li>
+            <li><strong>Low-birefringence requirements:</strong> Polarization-sensitive systems (ellipsometry, precision polarimetry) benefit from fused silica&rsquo;s extremely low intrinsic stress birefringence.</li>
+        </ul>
+
+        <div class="pillar-callout warning">
+            <strong>Common Mistake: Over-specifying Fused Silica</strong>
+            Many engineers specify fused silica &ldquo;just to be safe&rdquo; for visible-light imaging systems. This adds 3&ndash;5&times; material cost, longer lead times for large blanks, and can actually degrade achromatic correction since fused silica&rsquo;s dispersion properties differ from BK7. Only specify FS when a real requirement exists.
+        </div>
+
+        <h2 id="decision-guide">Material Selection Decision Guide</h2>
+        <p>Use this step-by-step framework to select between BK7 and fused silica:</p>
+        <ol>
+            <li><strong>What is your operating wavelength?</strong><br>
+                &bull; Below 350&nbsp;nm &rarr; <strong>Fused Silica</strong> (mandatory)<br>
+                &bull; 350&ndash;2,000&nbsp;nm &rarr; Both work; continue to step 2<br>
+                &bull; Above 2,000&nbsp;nm &rarr; Neither is ideal; consider ZnSe, Si, or Ge</li>
+            <li><strong>Is high laser power involved?</strong><br>
+                &bull; CW &gt;10&nbsp;W or pulsed &gt;10&nbsp;J/cm&sup2; &rarr; <strong>Fused Silica</strong> (LIDT advantage)<br>
+                &bull; Lower power &rarr; BK7 acceptable; continue to step 3</li>
+            <li><strong>Does thermal stability matter?</strong><br>
+                &bull; Operating range &gt;80&deg;C or wavefront stability &lt;&lambda;/4 over temperature &rarr; <strong>Fused Silica</strong><br>
+                &bull; Room-temperature or controlled environment &rarr; BK7 is fine</li>
+            <li><strong>Is polarization purity critical?</strong><br>
+                &bull; Yes (ellipsometry, precision polarimetry) &rarr; <strong>Fused Silica</strong><br>
+                &bull; No &rarr; BK7 acceptable</li>
+            <li><strong>Is budget a primary constraint?</strong><br>
+                &bull; Yes and no other driver above applies &rarr; <strong>BK7</strong></li>
+        </ol>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Application</th>
+                    <th>Recommended Material</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camera lens / imaging optics</td>
+                    <td>BK7</td>
+                    <td>Visible range, low cost, excellent achromat pairing</td>
+                </tr>
+                <tr>
+                    <td>Laser marking head (532 nm, 20 W)</td>
+                    <td>Fused Silica</td>
+                    <td>High power at visible wavelength</td>
+                </tr>
+                <tr>
+                    <td>Microscope coverslip (brightfield)</td>
+                    <td>BK7 (standard) or FS (UV fluorescence)</td>
+                    <td>Depends on excitation wavelength</td>
+                </tr>
+                <tr>
+                    <td>Spectrometer window (UV-Vis)</td>
+                    <td>Fused Silica</td>
+                    <td>Must transmit below 350 nm</td>
+                </tr>
+                <tr>
+                    <td>Beam expander for HeNe (633 nm)</td>
+                    <td>BK7</td>
+                    <td>Low power, visible wavelength</td>
+                </tr>
+                <tr>
+                    <td>Excimer laser window (248 nm)</td>
+                    <td>Fused Silica</td>
+                    <td>Deep UV + high energy per pulse</td>
+                </tr>
+                <tr>
+                    <td>Optical flat / reference surface</td>
+                    <td>Fused Silica</td>
+                    <td>Thermal stability preserves flatness</td>
+                </tr>
+                <tr>
+                    <td>LED collimation lens</td>
+                    <td>BK7</td>
+                    <td>Visible range, cost-sensitive, high volume</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="common-mistakes">Common Material Selection Mistakes</h2>
+
+        <h3>Mistake 1: Using BK7 for UV Applications</h3>
+        <p>BK7 contains iron impurities that cause strong absorption below 350&nbsp;nm. At 300&nbsp;nm, BK7 transmission is essentially zero for any meaningful thickness. Designers new to UV systems sometimes specify BK7 because it is the &ldquo;default&rdquo; optical glass, then discover their optics are opaque at the operating wavelength. <strong>Solution:</strong> Always check the transmission curve. For any wavelength below 350&nbsp;nm, specify fused silica or CaF&#8322;.</p>
+
+        <h3>Mistake 2: Over-specifying Fused Silica for Visible Systems</h3>
+        <p>Some engineers specify fused silica for all optics &ldquo;because it&rsquo;s better.&rdquo; But in visible imaging systems, fused silica&rsquo;s lower refractive index (1.458 vs 1.517) means you need steeper curvatures to achieve the same optical power, potentially increasing aberrations. It also disrupts achromatic doublet designs optimized for BK7/SF-glass pairs. <strong>Solution:</strong> Use fused silica only when UV, laser power, or thermal stability demand it.</p>
+
+        <h3>Mistake 3: Ignoring dn/dT in Thermal Analysis</h3>
+        <p>While fused silica has much lower CTE than BK7, its dn/dT (9.6 &times; 10<sup>&minus;6</sup>/K) is actually <em>higher</em> than BK7&rsquo;s (3.0 &times; 10<sup>&minus;6</sup>/K). The total thermal optical power shift depends on both CTE and dn/dT. In some athermal designs, BK7 can actually outperform fused silica when both effects are considered together. <strong>Solution:</strong> Calculate the total thermo-optic coefficient, not just CTE.</p>
+
+        <h3>Mistake 4: Forgetting Coating Compatibility</h3>
+        <p>AR coatings designed for BK7 (n=1.517) will not perform optimally on fused silica (n=1.458), and vice versa. The layer thicknesses in multi-layer coatings are calculated for specific substrate indices. Always specify the substrate material when ordering coated optics. <strong>Solution:</strong> See our <a href="/knowledge-center/ar-coating-selection-guide/">AR Coating Selection Guide</a> for details on matching coatings to substrate materials.</p>
+
+        <h2 id="cost-analysis">Cost vs Performance Tradeoffs</h2>
+        <p>Understanding the cost structure helps you make rational tradeoffs:</p>
+
+        <table class="pillar-table">
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th>BK7</th>
+                    <th>UV Fused Silica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Raw blank cost (&Oslash;25&nbsp;mm)</td>
+                    <td>Low (baseline)</td>
+                    <td>3&ndash;5&times; BK7</td>
+                </tr>
+                <tr>
+                    <td>Raw blank cost (&Oslash;100&nbsp;mm)</td>
+                    <td>Moderate</td>
+                    <td>4&ndash;8&times; BK7</td>
+                </tr>
+                <tr>
+                    <td>Polishing difficulty</td>
+                    <td>Standard</td>
+                    <td>Slightly harder (higher softening point)</td>
+                </tr>
+                <tr>
+                    <td>Typical lead time (standard catalog)</td>
+                    <td>1&ndash;2 weeks</td>
+                    <td>2&ndash;4 weeks</td>
+                </tr>
+                <tr>
+                    <td>Coating cost</td>
+                    <td>Standard</td>
+                    <td>Similar (may need UV-rated coating materials)</td>
+                </tr>
+                <tr>
+                    <td>Cost of wrong material choice</td>
+                    <td>System failure in UV</td>
+                    <td>3&ndash;5&times; unnecessary cost</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>The real cost question is not &ldquo;which material is cheaper&rdquo; but &ldquo;what is the cost of getting the material wrong?&rdquo; Choosing BK7 for a UV system means complete optical failure &mdash; no amount of cost savings compensates. Conversely, specifying fused silica for a simple visible LED collimator means paying 3&ndash;5&times; more for no performance benefit.</p>
+
+        <div class="pillar-internal-links">
+            <h3>Related PhotonEdge Resources</h3>
+            <a href="/materials/bk7/">BK7 Material Page</a>
+            <a href="/materials/uv-fused-silica/">UV Fused Silica Material Page</a>
+            <a href="/knowledge-center/optical-materials-selection-handbook/">Optical Materials Selection Handbook</a>
+            <a href="/knowledge-center/ar-coating-selection-guide/">AR Coating Selection Guide</a>
+            <a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a>
+            <a href="/products/fused-silica-plano-convex-lenses/">Fused Silica Plano-Convex Lenses</a>
+            <a href="/coatings/ar-coatings/">AR Coatings</a>
+            <a href="/coatings/bbar-coatings/">BBAR Coatings</a>
+        </div>
+
+        <div class="pillar-cta">
+            <h2>Need Help Selecting the Right Material?</h2>
+            <p style="font-size:16px;opacity:0.9;margin-bottom:24px;">Our optical engineers can review your application requirements and recommend the optimal material &mdash; balancing performance, lead time, and cost.</p>
+            <a href="/contact.html" class="btn-primary">Request Engineering Review</a>
+            <a href="/materials.html" class="btn-secondary">Browse All Materials</a>
+        </div>
+
+        <h2 id="faq">Frequently Asked Questions</h2>
+        <div class="pillar-faq">
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Can I use BK7 for 365 nm UV-A applications?</div>
+                <div class="pillar-faq-a"><p>BK7 has marginal transmission at 365&nbsp;nm &mdash; typically 60&ndash;70% per 10&nbsp;mm thickness depending on the specific melt. For demanding UV-A applications, fused silica is strongly recommended. If you must use BK7 near 365&nbsp;nm, request a transmission curve from the manufacturer for your specific batch and keep thickness minimal.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Is fused silica really worth 3&ndash;5&times; the cost of BK7?</div>
+                <div class="pillar-faq-a"><p>Only if your application requires its specific advantages: UV transmission, high LIDT, or thermal stability. For standard visible-light imaging, collimation, or beam steering, BK7 provides equivalent performance at a fraction of the cost. The cost premium is justified for laser systems, UV instruments, and precision references.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">What about UV-grade BK7 &mdash; is that a compromise?</div>
+                <div class="pillar-faq-a"><p>UV-grade BK7 (with tighter iron content control) improves transmission near 350&nbsp;nm but does not reach true deep-UV performance. It can be a reasonable choice for 340&ndash;365&nbsp;nm applications where fused silica cost is prohibitive, but it is not a substitute for fused silica below 330&nbsp;nm.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Can I mix BK7 and fused silica elements in the same lens design?</div>
+                <div class="pillar-faq-a"><p>Yes, but be aware that their different refractive indices (1.517 vs 1.458) and dispersion properties (V<sub>d</sub> 64.2 vs 67.8) will affect the optical design. Achromatic doublets are typically designed with BK7 paired with high-index flint glasses, not fused silica. Hybrid designs are possible but require optimization from the start.</p></div>
+            </div>
+            <div class="pillar-faq-item" onclick="this.classList.toggle('open')">
+                <div class="pillar-faq-q">Does fused silica&rsquo;s higher dn/dT make it worse for some thermal applications?</div>
+                <div class="pillar-faq-a"><p>In a word: sometimes. The total thermal shift of optical power depends on both CTE (which favors fused silica) and dn/dT (which favors BK7). For systems where the optical path length through air dominates (long focal lengths), BK7&rsquo;s lower dn/dT can actually give better thermal stability. Always calculate the full thermo-optic effect for your specific design.</p></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
+                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality &amp; Documentation</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
+</a>
+
+<script src="/js/blog-data.js"></script>
+    <script src="/js/translations.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/search.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof updatePageTranslations === 'function') updatePageTranslations();
+        });
+    </script>
+    <script>
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) {
+            navList.classList.toggle('active');
+        }
+    }
+    </script>
+<script src="/js/chatbot.js"></script>
+</body>
+</html>

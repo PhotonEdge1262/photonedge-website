@@ -56,22 +56,6 @@
         .case-hero h1 { font-size: 36px; margin-bottom: 16px; }
         .case-hero p { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
         .case-section { padding: 60px 0; }
-        .case-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 40px; }
-        .case-card { background: var(--white); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; transition: all 0.3s; }
-        .case-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); border-color: var(--accent); }
-        .case-card-header { padding: 30px 30px 20px; border-bottom: 1px solid var(--border); }
-        .case-card-industry { display: inline-block; background: var(--light); color: var(--primary); padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; margin-bottom: 12px; }
-        .case-card-title { font-size: 20px; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
-        .case-card-subtitle { font-size: 14px; color: var(--gray-text); }
-        .case-card-body { padding: 24px 30px; }
-        .case-challenge { margin-bottom: 20px; }
-        .case-challenge h4, .case-solution h4, .case-result h4 { font-size: 14px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
-        .case-challenge p, .case-solution p, .case-result p { font-size: 14px; color: var(--gray-text); line-height: 1.7; }
-        .case-result { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); padding: 16px; border-radius: 12px; }
-        .case-result-metric { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-        .case-result-metric:last-child { margin-bottom: 0; }
-        .case-result-number { font-size: 20px; font-weight: 700; color: var(--primary); }
-        .case-result-label { font-size: 13px; color: var(--gray-text); }
         .case-cta-section { padding: 60px 0; background: var(--light); text-align: center; }
         .case-cta-box { max-width: 600px; margin: 0 auto; }
         .case-cta-box h2 { font-size: 28px; color: var(--dark); margin-bottom: 16px; }
@@ -79,10 +63,7 @@
         .case-cta-btn { display: inline-block; background: var(--accent); color: white; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; transition: all 0.3s; }
         .case-cta-btn:hover { background: var(--primary-dark); transform: translateY(-2px); }
         @media (max-width: 768px) {
-            .case-grid { grid-template-columns: 1fr; }
             .case-hero h1 { font-size: 28px; }
-            .case-card-header { padding: 20px; }
-            .case-card-body { padding: 16px 20px; }
         }
     </style>
     <link rel="stylesheet" href="/css/chatbot.css">
@@ -150,7 +131,7 @@
     </ul>
     <div class="lang-switcher">
         <button class="lang-btn notranslate active">EN</button>
-        <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
+        <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">&#20013;&#25991;</a>
     </div>
     <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
 </nav>
@@ -173,326 +154,486 @@
 
     <div style="padding: 60px 0; background: #ffffff;">
         <div class="container" style="max-width: 1000px;">
-            
-            <!-- Case 1: Laser Systems OEM -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #d97706; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case1CustomerType">Laser Systems OEM</span>
-                            <span style="background: #92400e; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case1Application">Industrial UV Laser Marking</span>
-                        </div>
-                    </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#d97706;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Laser Systems OEM</span>
+                    <span style="background:#92400e;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Industrial UV Laser Marking</span>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case1Title">UV Laser Window Optimization for 355nm Industrial System</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case1Challenge">A UV laser equipment manufacturer experienced premature optical degradation in 355nm solid-state systems. Output coupling windows showed increasing absorption and color center formation within 1,000 hours, causing &gt;30% power drop. The standard fused silica windows with conventional AR coating were insufficient for the combined UV and power density requirements.</p>
-                    </div>
 
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case1Approach">After understanding the failure mode, our engineering team performed root cause analysis identifying two issues: (1) standard-grade fused silica with trace metal impurities causing solarization, and (2) AR coating not optimized for high UV power density. We coordinated a solution: high-purity synthetic fused silica with low metallic impurity, surface quality upgraded from 40-20 to 10-5, and UV-optimized AR coating with LIDT &gt;5 J/cm&sup2; at 355nm, 10ns. We also recommended increased substrate thickness for better thermal management.</p>
-                    </div>
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">UV Laser Window Optimization for 355nm Industrial System</h2>
 
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case1Result1">Optical lifetime extended significantly</li>
-                            <li data-i18n="v132Case1Result2">Output power fluctuation substantially reduced over operating lifetime</li>
-                            <li data-i18n="v132Case1Result3">Initial transmission measurably improved</li>
-                            <li data-i18n="v132Case1Result4">Zero field failures in first 12 months of deployment</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">UV laser equipment manufacturer operating 355nm solid-state laser systems for industrial marking applications.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
-
-            <!-- Case 2: Medical Device Manufacturer -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #fce7f3, #fbcfe8); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #db2777; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case2CustomerType">Medical Device Manufacturer</span>
-                            <span style="background: #9d174d; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case2Application">Diagnostic Imaging System</span>
-                        </div>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Output coupling window capable of sustained UV operation at 355nm without premature optical degradation, maintaining stable power output over extended production runs.</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case2Title">Precision Imaging Lens Assembly for Diagnostic Instrument</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case2Challenge">A medical diagnostic equipment manufacturer needed a custom 3-element imaging lens achieving diffraction-limited MTF across 400-700nm with &lt;0.1% distortion. Tight centration tolerances were required to maintain sensor image quality. Their initial single-vendor approach could not consistently meet MTF specifications across production batches.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case2Approach">Our engineering team collaborated on optical design, recommending an achromatic doublet plus correction element using BK7 and SF11. We optimized the cemented interface for minimum wavefront error and specified centration to 30 arc-seconds. We introduced interferometric incoming inspection for each element before assembly and final assembled-lens MTF verification. Through DFM review, we identified that center thickness tolerances on one element could be relaxed without affecting performance, reducing cost significantly.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case2Result1">MTF exceeded specification across all fields and wavelengths</li>
-                            <li data-i18n="v132Case2Result2">Distortion measured at 0.06% (well under 0.1% target)</li>
-                            <li data-i18n="v132Case2Result3">Batch-to-batch consistency maintained across multiple production runs</li>
-                            <li data-i18n="v132Case2Result4">Significant cost reduction through DFM tolerance optimization</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Windows showed increasing absorption and color center formation within 1,000 hours, causing significant power drop. The standard fused silica windows with conventional AR coating were insufficient for the combined UV and power density requirements. Root cause analysis identified two issues: standard-grade fused silica with trace metal impurities causing solarization, and AR coating not optimized for high UV power density.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
-
-            <!-- Case 3: Semiconductor Equipment OEM -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #2563eb; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case3CustomerType">Semiconductor Equipment OEM</span>
-                            <span style="background: #1d4ed8; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case3Application">Wafer Inspection at 266nm</span>
-                        </div>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">High-purity synthetic fused silica selected for low metallic impurity content, reducing solarization susceptibility under sustained 355nm exposure. Increased substrate thickness recommended for improved thermal management under high power density operation.</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case3Title">High-Purity Fused Silica Windows for Wafer Inspection System</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case3Challenge">A semiconductor equipment manufacturer developing a 266nm deep-UV wafer inspection system needed optical windows with exceptional wavefront quality (&lambda;/20 at 266nm) and extremely low particulate contamination. The initial supplier could not consistently meet flatness specs and delivered components with unacceptable particle counts.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case3Approach">We understood the contamination and flatness requirements were critical to system performance. We proposed synthetic fused silica (Corning 7980 equivalent) for superior UV transmission and homogeneity, implemented super-polish to achieve &lambda;/20 flatness verified at 266nm, and performed all final cleaning and inspection in partner Class 100 cleanroom facilities. Custom double-container packaging with cleanroom-compatible materials maintained cleanliness through delivery. Each window shipped with a particle count report.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case3Result1">Wavefront flatness: &lambda;/22 @ 266nm (exceeds &lambda;/20 spec)</li>
-                            <li data-i18n="v132Case3Result2">Zero out-of-spec particle counts across all delivered batches</li>
-                            <li data-i18n="v132Case3Result3">Improved signal-to-noise ratio vs. previous windows</li>
-                            <li data-i18n="v132Case3Result4">Consistent performance across multiple production batches</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">UV-optimized AR coating designed for high power density at 355nm, with LIDT rated above 5 J/cm&sup2; at 355nm, 10ns pulse. Coating process adjusted to minimize absorption and defect density at DUV wavelength.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
-
-            <!-- Case 4: Research Laboratory -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #dcfce7, #bbf7d0); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #16a34a; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case4CustomerType">Research Laboratory</span>
-                            <span style="background: #15803d; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case4Application">Ultrafast Pulse Compression</span>
-                        </div>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Surface quality upgraded from 40-20 to 10-5 to reduce scatter and absorption sites. Substrate thickness increased from standard for improved thermal dissipation under continuous UV exposure.</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case4Title">Custom CaF&#x2082; Prism Pair for Femtosecond Laser System</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case4Challenge">A university research lab specializing in ultrafast laser science needed a matched CaF&#x2082; prism pair for pulse compression in a Ti:Sapphire system at 800nm. The prisms required apex angle matching better than 1 arc-minute and exceptionally low wavefront distortion. Standard catalog prisms had too much angle variation between individual pieces.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case4Approach">Understanding the precision required, we coordinated the manufacturing of both prisms in the same batch using identical tooling and process parameters to ensure matching. We applied broadband AR coating at 700-900nm optimized for P-polarization. Final verification included apex angle measurement via autocollimator and transmitted wavefront at 633nm. The matched pair was delivered as a set with comparison data.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case4Result1">Apex angle matching: 15 arc-seconds (exceeds 1 arc-min target)</li>
-                            <li data-i18n="v132Case4Result2">Transmitted wavefront: &lambda;/12 @ 633nm per prism</li>
-                            <li data-i18n="v132Case4Result3">Pulse compression achieved: &lt;30 femtoseconds</li>
-                            <li data-i18n="v132Case4Result4">Second identical pair ordered for expanded beam setup</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Precision polishing to 10-5 surface quality followed by UV-optimized AR coating deposition using processes validated for DUV laser applications.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
-
-            <!-- Case 5: Laser Systems OEM -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #d97706; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case5CustomerType">Laser Systems OEM</span>
-                            <span style="background: #92400e; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case5Application">532nm High-Power CW Laser Marking</span>
-                        </div>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Surface quality, dimensional accuracy, coating transmission and LIDT verified per project specification. Each component inspected for absorption defects and coating adhesion prior to shipment.</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case5Title">High-Power CW Laser Window for Industrial Marking</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case5Challenge">An industrial laser marking company operating 2kW CW Nd:YAG systems at 532nm experienced thermal lensing and coating degradation in fused silica windows after only 500 hours, causing frequent replacement and inconsistent marking quality.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case5Approach">After analyzing the thermal failure mechanism, we engineered high-purity synthetic fused silica windows with ultra-low OH content to minimize absorption at 532nm. Each window received dual-side broadband AR coating optimized for 515-545nm with LIDT &gt;40 J/cm&sup2;. We specified 20-10 surface quality and &lambda;/10 flatness to minimize thermal distortion under continuous operation.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case5Result1">Operational lifetime extended significantly</li>
-                            <li data-i18n="v132Case5Result2">Power fluctuation dramatically reduced over lifetime</li>
-                            <li data-i18n="v132Case5Result3">Zero coating degradation at 2kW CW operation</li>
-                            <li data-i18n="v132Case5Result4">Annual replacement cost significantly reduced</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">High-purity synthetic fused silica window with 10-5 surface quality, UV-optimized AR coating (LIDT &gt;5 J/cm&sup2; at 355nm, 10ns), increased substrate thickness for thermal management. Component delivered per project specification with full inspection documentation.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
-
-            <!-- Case 6: Laser Systems OEM -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #d97706; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case6CustomerType">Laser Systems OEM</span>
-                            <span style="background: #92400e; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case6Application">1064nm Laser Cavity</span>
-                        </div>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Optical lifetime extended significantly. Output power fluctuation substantially reduced over operating lifetime. Initial transmission measurably improved. Zero field failures reported in the first 12 months of deployment.</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case6Title">Custom 1064nm High-Reflectivity Mirror for Laser Cavity</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case6Challenge">A laser manufacturer building pulsed Nd:YAG systems required HR mirrors with &gt;99.8% reflectivity at 1064nm, damage threshold &gt;10 J/cm&sup2;, and wavefront distortion &lt;&lambda;/20. Previous supplier could only achieve 99.5% reflectivity with inconsistent damage thresholds.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case6Approach">We coordinated the design of a 35-layer HfO2/SiO2 dielectric coating stack optimized for 1064nm at 0&deg; AOI. Premium fused silica substrates were polished to &lambda;/20 flatness with 20-10 surface quality. Coating deposition used Ion-Assisted Deposition for dense, stable films. Each mirror underwent 100% LIDT testing at 10 J/cm&sup2;.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case6Result1">Reflectivity: 99.85% at 1064nm (exceeds 99.8% spec)</li>
-                            <li data-i18n="v132Case6Result2">LIDT exceeded damage threshold requirement</li>
-                            <li data-i18n="v132Case6Result3">Wavefront distortion: &lambda;/25 measured (better than &lambda;/20 spec)</li>
-                            <li data-i18n="v132Case6Result4">Batch consistency maintained across multiple production runs</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report, material certification and coating performance data provided per project requirements.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
 
-            <!-- Case 7: Semiconductor Equipment OEM -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #e0e7ff, #c7d2fe); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #4f46e5; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case7CustomerType">Semiconductor Equipment OEM</span>
-                            <span style="background: #4338ca; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case7Application">193nm DUV Wafer Defect Detection</span>
-                        </div>
-                    </div>
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Windows" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Windows &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case7Title">193nm DUV Inspection Lens Assembly for Wafer Defect Detection</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case7Challenge">A semiconductor equipment manufacturer developing a 193nm wafer inspection system needed a custom 4-element lens assembly with DUV-grade CaF2 and fused silica. Requirements: &lt;50nm RMS wavefront error, &gt;95% transmission at 193nm, and resistance to solarization under prolonged DUV exposure.</p>
-                    </div>
+            </div>
 
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case7Approach">We sourced DUV-grade synthetic fused silica and spectroscopic-grade CaF2 with verified &gt;99% transmission at 193nm. All elements were polished to &lambda;/20 flatness and 10-5 surface quality. AR coatings were optimized for 190-200nm band. Assembly was performed in partner Class 100 cleanroom facilities with precise centering to &lt;10 arc-seconds.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case7Result1">Wavefront error: 38nm RMS (within 50nm spec)</li>
-                            <li data-i18n="v132Case7Result2">Assembly transmission: 96.2% at 193nm</li>
-                            <li data-i18n="v132Case7Result3">No measurable solarization after 2000 hours DUV exposure</li>
-                            <li data-i18n="v132Case7Result4">Defect detection resolution improved to 65nm node capability</li>
-                        </ul>
-                    </div>
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#db2777;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Medical Device Manufacturer</span>
+                    <span style="background:#9d174d;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Diagnostic Imaging System</span>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
 
-            <!-- Case 8: Medical Device Manufacturer -->
-            <article class="v132-case-full" style="background: white; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 40px; overflow: hidden;">
-                <div style="background: linear-gradient(135deg, #fce7f3, #fbcfe8); padding: 20px 30px;">
-                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                            <span style="background: #db2777; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case8CustomerType">Medical Device Manufacturer</span>
-                            <span style="background: #9d174d; color: white; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;" data-i18n="v132Case8Application">Endoscopic Imaging System</span>
-                        </div>
-                    </div>
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">Precision Imaging Lens Assembly for Diagnostic Instrument</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Medical diagnostic equipment manufacturer requiring a custom imaging lens for sensor-based diagnostic instruments operating in the visible spectrum (400&ndash;700nm).</p>
                 </div>
-                <div style="padding: 30px;">
-                    <h2 style="color: #1e3a5f; font-size: 24px; margin-bottom: 20px;" data-i18n="v132Case8Title">Biocompatible Sapphire Window for Endoscopic Imaging</h2>
-                    
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #dc2626; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #fee2e2; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">!</span>
-                            <span data-i18n="v132CaseChallenge">The Challenge</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case8Challenge">A medical device manufacturer developing a reusable endoscope needed a distal window that could withstand repeated autoclave sterilization (134&deg;C, 2 bar), resist scratching from surgical tools, and maintain optical clarity. BK7 and standard glass were failing due to surface damage after 20-30 sterilization cycles.</p>
-                    </div>
-
-                    <div style="margin-bottom: 20px;">
-                        <h3 style="color: #059669; font-size: 16px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
-                            <span style="background: #d1fae5; width: 26px; height: 26px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 14px;">&#10003;</span>
-                            <span data-i18n="v132CaseApproach">Our Approach</span></h3>
-                        <p style="color: #475569; line-height: 1.8; font-size: 14px;" data-i18n="v132Case8Approach">We identified optical-grade sapphire (Al2O3) as the ideal material &mdash; 9H hardness immune to surgical instrument scratching, material compatibility evaluated per ISO 10993, and resistant to autoclave sterilization. Each window was polished to &lambda;/4 flatness with broadband AR coating (400-700nm). We achieved the custom 3.5mm diameter with 0.5mm thickness requirement.</p>
-                    </div>
-
-                    <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 10px; padding: 20px 24px;">
-                        <h3 style="color: #1e3a5f; font-size: 16px; margin-bottom: 12px;" data-i18n="v132CaseResult">Results</h3>
-                        <ul style="color: #1e293b; line-height: 2; margin: 0; padding-left: 24px; font-size: 14px;">
-                            <li data-i18n="v132Case8Result1">Survived 500+ autoclave cycles with zero surface degradation</li>
-                            <li data-i18n="v132Case8Result2">No measurable transmission loss after sterilization testing</li>
-                            <li data-i18n="v132Case8Result3">Scratch resistance: no damage from standard surgical tool contact</li>
-                            <li data-i18n="v132Case8Result4">Material compatibility verified per ISO 10993 evaluation</li>
-                        </ul>
-                    </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Custom 3-element imaging lens achieving diffraction-limited MTF across 400&ndash;700nm with less than 0.1% distortion. Tight centration tolerances required to maintain sensor image quality. Consistent performance across production batches.</p>
                 </div>
-                    <span style="display:inline-block;font-size:11px;color:#6366f1;background:#eef2ff;padding:2px 8px;border-radius:4px;margin-top:8px;">Illustrative Engineering Example</span>
-                </article>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">The customer&rsquo;s initial single-vendor approach could not consistently meet MTF specifications across production batches. Achieving diffraction-limited performance with tight centration tolerances required coordinated optical design, precision manufacturing and rigorous incoming inspection.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">BK7 and SF11 optical glass selected for the achromatic doublet plus correction element design. Material pairing chosen to correct chromatic aberration across the 400&ndash;700nm visible band while maintaining cost-effectiveness for medical device production volumes.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Broadband AR coating optimized for 400&ndash;700nm visible range, applied to maximize transmission across all operational wavelengths of the diagnostic imaging system.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Through DFM review, center thickness tolerances on one element were identified as relaxable without affecting optical performance, reducing manufacturing cost. Cemented interface of the achromatic doublet optimized for minimum wavefront error. Centration specified to 30 arc-seconds.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Precision polishing and centering of individual elements, cementing of achromatic doublet with optimized interface, and final assembly with interferometric verification of each element before assembly.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Interferometric incoming inspection for each element before assembly. Final assembled-lens MTF verification across all fields and wavelengths. Distortion measurement confirmed compliance with specification.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">3-element lens assembly (achromatic doublet + correction element) in BK7/SF11, centration to 30 arc-seconds, broadband visible AR coating. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">MTF exceeded specification across all fields and wavelengths. Distortion measured well under 0.1% target. Batch-to-batch consistency maintained across multiple production runs. Significant cost reduction achieved through DFM tolerance optimization.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report including interferometric data, MTF measurement results and material certification provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Lenses" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Lenses &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#2563eb;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Semiconductor Equipment OEM</span>
+                    <span style="background:#1d4ed8;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Wafer Inspection at 266nm</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">High-Purity Fused Silica Windows for Wafer Inspection System</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Semiconductor equipment manufacturer developing a 266nm deep-UV wafer inspection system requiring optical windows with exceptional wavefront quality and extremely low particulate contamination.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Optical windows with wavefront flatness of &lambda;/20 at 266nm and extremely low particulate contamination levels. Consistent performance across multiple production batches.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">The initial supplier could not consistently meet flatness specifications and delivered components with unacceptable particle counts. The contamination and flatness requirements were critical to system signal-to-noise performance at 266nm.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Synthetic fused silica (Corning 7980 equivalent) selected for superior UV transmission and homogeneity at 266nm. Material grade chosen to minimize intrinsic absorption and wavefront distortion at DUV wavelengths.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Coating selected based on application wavelength and transmission requirements at 266nm DUV operation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Super-polish process implemented to achieve &lambda;/20 flatness verified at 266nm. Surface quality and flatness specifications reviewed and optimized for manufacturability while maintaining application performance requirements.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Precision super-polishing to achieve &lambda;/20 flatness at 266nm. All final cleaning and inspection performed in partner Class 100 cleanroom facilities. Custom double-container packaging with cleanroom-compatible materials maintained cleanliness through delivery.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Wavefront flatness verified via interferometry at 266nm. Particle count inspection performed in Class 100 cleanroom environment. Each window shipped with an individual particle count report.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Synthetic fused silica window (Corning 7980 equivalent) with super-polished surface achieving &lambda;/20 flatness at 266nm. Cleanroom processed and packaged. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Wavefront flatness exceeded specification. Zero out-of-spec particle counts across all delivered batches. Improved signal-to-noise ratio achieved versus previous windows. Consistent performance maintained across multiple production batches.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report including interferometric flatness data, particle count report and material certification provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Windows" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Windows &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#16a34a;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Research Laboratory</span>
+                    <span style="background:#15803d;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Ultrafast Pulse Compression</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">Custom CaF&#x2082; Prism Pair for Femtosecond Laser System</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">University research lab specializing in ultrafast laser science, operating a Ti:Sapphire laser system at 800nm for pulse compression experiments.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Matched CaF&#x2082; prism pair for pulse compression with apex angle matching better than 1 arc-minute and exceptionally low wavefront distortion. Standard catalog prisms had too much angle variation between individual pieces.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Achieving apex angle matching better than 1 arc-minute between two separate prisms required manufacturing both in the same batch using identical tooling and process parameters. Standard catalog prisms could not meet this level of matching.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">CaF&#x2082; (calcium fluoride) selected for its broad transmission range covering the Ti:Sapphire 800nm operating wavelength, low dispersion characteristics suitable for pulse compression, and compatibility with ultrafast laser applications.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Broadband AR coating at 700&ndash;900nm optimized for P-polarization, matching the Ti:Sapphire system operating wavelength and polarization state.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Apex angle matching specification set to better than 1 arc-minute, with both prisms manufactured from the same CaF&#x2082; boule using identical tooling to minimize differential error.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Both prisms manufactured in the same batch using identical tooling and process parameters to ensure matching. Precision polishing followed by broadband AR coating deposition optimized for the 700&ndash;900nm band.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Apex angle measurement via autocollimator for both prisms. Transmitted wavefront verified at 633nm. Matched pair delivered as a set with comparison data between the two prisms.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Matched CaF&#x2082; prism pair with apex angle matching better than 1 arc-minute, broadband AR coating at 700&ndash;900nm (P-polarization optimized), verified transmitted wavefront at 633nm. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Apex angle matching achieved well within the 1 arc-minute target. Transmitted wavefront quality met specifications per prism. Pulse compression successfully achieved. A second identical pair was subsequently ordered for an expanded beam setup.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report including autocollimator apex angle comparison data, transmitted wavefront measurements and material documentation provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Prisms" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Prisms &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#d97706;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Laser Systems OEM</span>
+                    <span style="background:#92400e;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">532nm High-Power CW Laser Marking</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">High-Power CW Laser Window for Industrial Marking</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Industrial laser marking company operating 2kW CW Nd:YAG systems at 532nm for high-throughput production marking applications.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Laser window capable of sustained operation under 2kW CW power at 532nm without thermal lensing or coating degradation, eliminating frequent replacement and maintaining consistent marking quality.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Previous windows experienced thermal lensing and coating degradation after only 500 hours of operation, causing frequent replacement and inconsistent marking quality. The combination of high CW power density at 532nm required both low-absorption substrate material and robust coating design.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">High-purity synthetic fused silica with ultra-low OH content selected to minimize absorption at 532nm. Low OH content reduces intrinsic thermal loading under continuous-wave green laser operation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Dual-side broadband AR coating optimized for 515&ndash;545nm band with LIDT rated above 40 J/cm&sup2;. Coating designed specifically for high-power CW operation at 532nm to prevent thermal degradation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Surface quality specified at 20-10 and flatness at &lambda;/10 to minimize thermal distortion under continuous operation. Specifications reviewed and optimized for manufacturability while maintaining application performance under 2kW CW conditions.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Precision polishing of ultra-low OH synthetic fused silica to 20-10 surface quality and &lambda;/10 flatness, followed by dual-side broadband AR coating deposition optimized for high-power CW green laser operation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Surface quality, flatness, coating transmission and LIDT verified per project specification. Each window inspected for absorption defects and coating integrity prior to shipment.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">High-purity synthetic fused silica window with ultra-low OH content, 20-10 surface quality, &lambda;/10 flatness, dual-side broadband AR coating at 515&ndash;545nm (LIDT &gt;40 J/cm&sup2;). Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Operational lifetime extended significantly compared to previous windows. Power fluctuation dramatically reduced over lifetime. Zero coating degradation observed at 2kW CW operation. Annual replacement cost significantly reduced.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report, material certification and coating performance data provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Windows" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Windows &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#d97706;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Laser Systems OEM</span>
+                    <span style="background:#92400e;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">1064nm Laser Cavity</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">Custom 1064nm High-Reflectivity Mirror for Laser Cavity</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Laser manufacturer building pulsed Nd:YAG laser systems requiring high-reflectivity cavity mirrors for resonator applications at 1064nm.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">HR mirrors with reflectivity above 99.8% at 1064nm, damage threshold above 10 J/cm&sup2;, and wavefront distortion below &lambda;/20. Previous supplier could only achieve 99.5% reflectivity with inconsistent damage thresholds.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Achieving simultaneously high reflectivity, high damage threshold and low wavefront distortion required coordinated substrate preparation, multi-layer dielectric coating design and Ion-Assisted Deposition process control. The previous supplier&rsquo;s inconsistent results indicated process limitations in coating density and adhesion.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Premium fused silica substrates selected for low thermal expansion, high laser damage resistance and excellent surface finish capability at 1064nm.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">35-layer HfO&#x2082;/SiO&#x2082; dielectric coating stack optimized for 1064nm at 0&deg; AOI. HfO&#x2082; selected as high-index material for its superior laser damage resistance compared to alternative metal oxides. Ion-Assisted Deposition (IAD) used for dense, stable films.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Substrate flatness specified at &lambda;/20 with 20-10 surface quality to ensure wavefront distortion remained within budget after coating. Coating layer design optimized for maximum reflectivity at 1064nm while maintaining damage threshold above requirement.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Premium fused silica substrates polished to &lambda;/20 flatness with 20-10 surface quality. 35-layer HfO&#x2082;/SiO&#x2082; dielectric coating deposited using Ion-Assisted Deposition (IAD) for dense, stable films with high laser damage resistance.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">100% LIDT testing at 10 J/cm&sup2;. Reflectivity measured at 1064nm. Wavefront distortion verified via interferometry. Each mirror underwent full inspection prior to shipment.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Premium fused silica HR mirror with 35-layer HfO&#x2082;/SiO&#x2082; dielectric coating, reflectivity above 99.8% at 1064nm, LIDT above 10 J/cm&sup2;, &lambda;/20 flatness, 20-10 surface quality. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Reflectivity exceeded 99.8% specification. LIDT exceeded damage threshold requirement. Wavefront distortion measured better than &lambda;/20 specification. Batch consistency maintained across multiple production runs.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report including reflectivity measurement, LIDT test results, interferometric wavefront data and material certification provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Mirrors" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Mirrors &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#4f46e5;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Semiconductor Equipment OEM</span>
+                    <span style="background:#4338ca;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">193nm DUV Wafer Defect Detection</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">193nm DUV Inspection Lens Assembly for Wafer Defect Detection</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Semiconductor equipment manufacturer developing a 193nm deep-UV wafer inspection system for defect detection in advanced semiconductor fabrication.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Custom 4-element lens assembly using DUV-grade CaF&#x2082; and fused silica with less than 50nm RMS wavefront error, above 95% transmission at 193nm, and resistance to solarization under prolonged DUV exposure.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Combining DUV-grade materials (CaF&#x2082; and fused silica) in a multi-element assembly while maintaining sub-50nm RMS wavefront error, high transmission at 193nm, and long-term solarization resistance. Assembly required precise centering in cleanroom conditions to meet optical performance targets.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">DUV-grade synthetic fused silica and spectroscopic-grade CaF&#x2082; sourced with verified above 99% transmission at 193nm. Material grades selected for minimum solarization susceptibility under prolonged deep-UV exposure.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">AR coatings optimized for the 190&ndash;200nm band to maximize transmission at the 193nm operating wavelength while maintaining coating durability under prolonged DUV exposure.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">All elements polished to &lambda;/20 flatness and 10-5 surface quality. Specifications reviewed and optimized for manufacturability while maintaining sub-50nm RMS wavefront error and above 95% assembly transmission requirements.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Precision polishing of all elements to &lambda;/20 flatness and 10-5 surface quality. DUV-optimized AR coating deposition. Assembly performed in partner Class 100 cleanroom facilities with precise centering to less than 10 arc-seconds.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Wavefront error measured via interferometry. Assembly transmission verified at 193nm. Solarization resistance confirmed through extended DUV exposure testing. Centering alignment verified during assembly.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">4-element lens assembly using DUV-grade synthetic fused silica and spectroscopic-grade CaF&#x2082;, with DUV-optimized AR coating (190&ndash;200nm), assembled in Class 100 cleanroom with centering below 10 arc-seconds. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Wavefront error achieved within the 50nm RMS specification. Assembly transmission exceeded 95% target at 193nm. No measurable solarization observed after extended DUV exposure testing. Defect detection resolution improved to advanced node capability.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report including wavefront error measurement, transmission data at 193nm, solarization test results and material certification provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Lenses" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Lenses &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
+
+            <div style="background:white;border-radius:12px;padding:32px;box-shadow:0 1px 3px rgba(0,0,0,0.08);border:1px solid #e2e8f0;margin-bottom:32px;">
+                <span style="display:inline-block;background:#f0f9ff;color:#1e3a5f;font-size:12px;font-weight:600;padding:4px 10px;border-radius:4px;margin-bottom:12px;">Illustrative Engineering Example</span>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;">
+                    <span style="background:#db2777;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Medical Device Manufacturer</span>
+                    <span style="background:#9d174d;color:white;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;">Endoscopic Imaging System</span>
+                </div>
+
+                <h2 style="color:#1e3a5f;font-size:22px;font-weight:700;margin-bottom:20px;">Biocompatible Sapphire Window for Endoscopic Imaging</h2>
+
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Customer Application</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Medical device manufacturer developing a reusable endoscope requiring a distal window that maintains optical clarity through repeated clinical use and sterilization cycles.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Requirement</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Distal window capable of withstanding repeated autoclave sterilization (134&deg;C, 2 bar), resistant to scratching from surgical tools, and maintaining optical clarity. Custom 3.5mm diameter with 0.5mm thickness. Previous BK7 and standard glass windows were failing due to surface damage after 20&ndash;30 sterilization cycles.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Engineering Challenge</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Standard optical glasses (BK7) could not survive repeated autoclave sterilization cycles and were susceptible to surgical instrument scratching. The combination of extreme hardness requirement, biocompatibility, autoclave resistance and small custom dimensions presented a multi-constraint material and manufacturing challenge.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Material Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Optical-grade sapphire (Al&#x2082;O&#x2083;) selected as the ideal material &mdash; 9H hardness immune to surgical instrument scratching, material compatibility evaluated per ISO 10993 for biocompatibility, and inherently resistant to autoclave sterilization conditions (134&deg;C, 2 bar).</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Coating Selection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Broadband AR coating at 400&ndash;700nm applied to maintain optical clarity for visible imaging through the endoscope. Coating selected for adhesion and durability on sapphire substrate through repeated autoclave cycles.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Specification Optimization</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Flatness specified at &lambda;/4 for endoscopic imaging quality. Custom dimensions of 3.5mm diameter with 0.5mm thickness achieved through precision processing of sapphire. Specifications reviewed and optimized for the sapphire material characteristics.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Manufacturing Route</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Sapphire crystal precision cut and polished to &lambda;/4 flatness. Custom 3.5mm diameter with 0.5mm thickness achieved through specialized sapphire processing techniques. Broadband visible AR coating applied to both surfaces.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Inspection</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Flatness, surface quality, transmission and coating adhesion verified per project specification. Scratch resistance and autoclave durability validated through accelerated lifecycle testing.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Final Specification</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Optical-grade sapphire (Al&#x2082;O&#x2083;) window, 3.5mm diameter &times; 0.5mm thickness, &lambda;/4 flatness, broadband AR coating (400&ndash;700nm), biocompatible per ISO 10993 evaluation. Delivered per project specification with full inspection documentation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Result</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Survived extensive autoclave cycling with zero surface degradation. No measurable transmission loss after sterilization testing. Scratch resistance confirmed &mdash; no damage from standard surgical tool contact. Material compatibility verified per ISO 10993 evaluation.</p>
+                </div>
+                <div style="margin-bottom:16px;">
+                    <h3 style="font-size:14px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Documentation</h3>
+                    <p style="font-size:15px;color:#334155;line-height:1.7;">Inspection report, material certification, biocompatibility evaluation documentation and sterilization cycle test results provided per project requirements.</p>
+                </div>
+
+                <div style="border-top:1px solid #e2e8f0;padding-top:16px;margin-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+                    <a href="/products.html?category=Optical+Windows" style="font-size:14px;color:#2563eb;text-decoration:none;font-weight:600;">View Optical Windows &#8594;</a>
+                    <a href="/contact.html" style="display:inline-block;background:#1e3a5f;color:white;padding:8px 20px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;">Request Engineering Review</a>
+                </div>
+            </div>
 
         </div>
     </div>

@@ -3304,6 +3304,18 @@ var translations = {
     "v145volCard3Desc": "Scaled production with process qualification, statistical quality control and stable supply chain coordination.",
 
 
+    "v148BrandTagline": "Experienced in optics. Flexible in manufacturing. Focused on your requirements.",
+    "v148WhyTitle": "Why PhotonEdge?",
+    "v148WhySubtitle": "We're not a catalog supplier. PhotonEdge combines optical engineering expertise with a flexible manufacturing network to support your most demanding applications.",
+    "v148Why1Title": "Engineering Review Before Quote",
+    "v148Why1Desc": "Every inquiry is reviewed by an optical engineer. We check material, coating, tolerances and manufacturability before providing a quotation — not after.",
+    "v148Why2Title": "Flexible Manufacturing Network",
+    "v148Why2Desc": "We work with qualified manufacturing partners selected by capability — not a single factory. Your project is matched with the most suitable production resources.",
+    "v148Why3Title": "One Point of Contact",
+    "v148Why3Desc": "From first inquiry to final delivery, you work with one engineering team. We coordinate material selection, manufacturing, coating, inspection and documentation.",
+    "v148Why4Title": "Documented Quality",
+    "v148Why4Desc": "Inspection reports, material certificates, coating data and certificates of conformance — provided according to your project requirements.",
+
   "zh": {
     "navSolutions": "解决方案",
     "navKnowledgeCenter": "知识中心",
@@ -6468,6 +6480,17 @@ var translations = {
     "v145volCard2Desc": "10-100件批量生产，质量一致稳定。适合试产和早期部署阶段。",
     "v145volCard3Title": "批量量产",
     "v145volCard3Desc": "规模化生产，包含工艺确认、统计质量管控和稳定供应链协调。",
+    "v148BrandTagline": "深耕光学领域。灵活制造。专注您的需求。",
+    "v148WhyTitle": "为什么选择PhotonEdge？",
+    "v148WhySubtitle": "我们不是目录供应商。PhotonEdge将光学工程专业知识与灵活的制造网络相结合，支持您最严苛的应用需求。",
+    "v148Why1Title": "报价前工程评审",
+    "v148Why1Desc": "每一份询价都由光学工程师审核。我们在报价前检查材料、镀膜、公差和可制造性——而非报价后再确认。",
+    "v148Why2Title": "灵活制造网络",
+    "v148Why2Desc": "我们根据能力筛选合格的制造合作伙伴——而非依赖单一工厂。您的项目将匹配最合适的生产资源。",
+    "v148Why3Title": "单一对接窗口",
+    "v148Why3Desc": "从首次询价到最终交付，您与同一个工程团队合作。我们协调材料选择、制造、镀膜、检测和文档。",
+    "v148Why4Title": "文件化质量",
+    "v148Why4Desc": "检测报告、材料证书、镀膜数据和合格证明——根据您的需求提供。",
 
   }
 };
