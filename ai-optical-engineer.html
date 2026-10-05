@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Optical Engineer | Preliminary Component &amp; Material Recommendations | PhotonEdge</title>
+    <title>Optical Engineering Consultation | Describe Your Requirement | PhotonEdge</title>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/ai-optical-engineer.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/ai-optical-engineer.html">
-    <meta name="description" content="Describe your optical application and receive preliminary component recommendations, material suggestions, coating guidance and specification review. AI-powered engineering guidance for optical component selection.">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <meta name="description" content="Describe your optical requirement and our engineering team will provide component recommendations, material suggestions, and coating guidance. Free consultation from PhotonEdge.">
     <meta name="keywords" content="optical component advisor, lens recommendation, optical material selector, coating advisor, free optical tool, optical consultation">
-    <meta property="og:title" content="AI Optical Engineer | Preliminary Component &amp; Material Recommendations | PhotonEdge">
-    <meta property="og:description" content="Describe your optical application and receive preliminary component recommendations, material suggestions, coating guidance and specification review. AI-powered engineering guidance for optical component selection.">
+    <meta property="og:title" content="Optical Engineering Consultation | Describe Your Requirement | PhotonEdge">
+    <meta property="og:description" content="Describe your optical requirement and our engineering team will provide component recommendations, material suggestions, and coating guidance.">
     <meta property="og:url" content="https://photonedgeoptics.com/ai-optical-engineer.html">
     <link rel="canonical" href="https://photonedgeoptics.com/ai-optical-engineer.html">
     <link rel="stylesheet" href="/css/style.css">
@@ -200,8 +200,8 @@
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "AI Optical Engineer",
-        "description": "Describe your optical application and receive preliminary component recommendations, material suggestions, coating guidance and specification review. AI-powered engineering guidance for optical component selection.",
+        "name": "Optical Engineering Consultation",
+        "description": "Describe your optical application and get professional component recommendations for materials, coatings, and specifications.",
         "url": "https://photonedgeoptics.com/ai-optical-engineer.html",
         "applicationCategory": "DesignApplication",
         "operatingSystem": "Web Browser",
@@ -267,7 +267,8 @@
             <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
             <div class="dropdown-menu">
                 <a href="/about.html" class="dropdown-item"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
-                <a href="/quality-assurance.html" class="dropdown-item"><span class="dropdown-icon">&#9989;</span> Quality &amp; Documentation</a>
+                <a href="/quality-assurance.html" class="dropdown-item"><span class="dropdown-icon">&#9989;</span> Quality Assurance</a>
+                <a href="/evidence.html" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Evidence Center</a>
                 <a href="/case-studies.html" class="dropdown-item"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
             </div>
         </li>
@@ -282,18 +283,18 @@
     </header>
     <!-- Hero -->
     <section class="ai-hero">
-        <h1 data-i18n="v149HeroTitle">Tell Us Your Optical Requirement</h1>
-        <p data-i18n="v149HeroDesc">Describe your optical application. Get preliminary recommendations for materials, components, coatings, and specifications.</p>
+        <h1>Tell Us Your Optical Requirement</h1>
+        <p>Describe your optical application. Get recommendations for materials, components, coatings, and specifications.</p>
     </section>
 
     <div class="ai-container">
         <!-- Main Form -->
         <div class="ai-card">
-            <h2 data-i18n="v149FormTitle">Tell Us About Your Application</h2>
+            <h2>Tell Us About Your Application</h2>
             <form id="aiOpticalForm" onsubmit="return handleAIRecommend(event)">
                 <div class="ai-row">
                     <div class="ai-input-group">
-                        <label for="aiApplication" data-i18n="v149FormApp">Application Area *</label>
+                        <label for="aiApplication">Application Area *</label>
                         <select id="aiApplication" required>
                             <option value="">Select your application...</option>
                             <option value="laser">Laser Systems (Cutting/Welding/Marking)</option>
@@ -308,7 +309,7 @@
                         </select>
                     </div>
                     <div class="ai-input-group">
-                        <label for="aiWavelength" data-i18n="v149FormWavelength">Operating Wavelength *</label>
+                        <label for="aiWavelength">Operating Wavelength *</label>
                         <select id="aiWavelength" required>
                             <option value="">Select wavelength range...</option>
                             <option value="duv">Deep UV (193-280 nm)</option>
@@ -324,7 +325,7 @@
                 </div>
                 <div class="ai-row">
                     <div class="ai-input-group">
-                        <label for="aiComponent" data-i18n="v149FormComp">Component Type Needed</label>
+                        <label for="aiComponent">Component Type Needed</label>
                         <select id="aiComponent">
                             <option value="">Select component type...</option>
                             <option value="lens">Lenses (Plano-Convex, Aspheric, etc.)</option>
@@ -338,61 +339,30 @@
                         </select>
                     </div>
                     <div class="ai-input-group">
-                        <label for="aiPower" data-i18n="v149FormPower">Laser Power / Energy (if applicable)</label>
-                        <input type="text" id="aiPower" placeholder="e.g., 500W CW, 10mJ pulsed, N/A" data-i18n-placeholder="v149FormPowerPh">
-                    </div>
-                </div>
-                <div class="ai-row">
-                    <div class="ai-input-group">
-                        <label for="aiEnvironment" data-i18n="v149FormEnv">Operating Environment</label>
-                        <select id="aiEnvironment">
-                            <option value="" data-i18n="v149FormEnvDefault">Select environment...</option>
-                            <option value="standard" data-i18n="v149FormEnvStd">Standard (Lab / Office)</option>
-                            <option value="harsh" data-i18n="v149FormEnvHarsh">Harsh (Outdoor / Industrial)</option>
-                            <option value="vacuum" data-i18n="v149FormEnvVac">Vacuum / Cleanroom</option>
-                            <option value="hightemp" data-i18n="v149FormEnvHigh">High-Temperature (&gt;80&deg;C)</option>
-                        </select>
-                    </div>
-                    <div class="ai-input-group">
-                        <label for="aiAddReqs" data-i18n="v149FormAddReqs">Additional Requirements</label>
-                        <input type="text" id="aiAddReqs" placeholder="e.g., size constraints, budget range, timeline..." data-i18n-placeholder="v149FormAddReqsPh">
+                        <label for="aiPower">Laser Power / Energy (if applicable)</label>
+                        <input type="text" id="aiPower" placeholder="e.g., 500W CW, 10mJ pulsed, N/A">
                     </div>
                 </div>
                 <div class="ai-input-group">
-                    <label for="aiDescription" data-i18n="v149FormDesc">Describe Your Requirements *</label>
+                    <label for="aiDescription">Describe Your Requirements *</label>
                     <textarea id="aiDescription" required placeholder="Tell us about your optical system: what it does, key performance requirements, environment, any constraints (size, budget, timeline)..."></textarea>
                 </div>
-                <button type="submit" class="ai-submit-btn" data-i18n="v149FormSubmit">Ask AI Optical Engineer</button>
+                <button type="submit" class="ai-submit-btn">Ask AI Optical Engineer</button>
             </form>
             
             <!-- AI Result -->
             <div class="ai-result" id="aiResult">
                 <h3>📋 Recommended Optical Solution</h3>
                 <div id="aiResultContent"></div>
-                <!-- Preliminary Engineering Summary -->
-                <div id="aiEngSummary" style="display:none;margin-top:24px;padding:24px;background:#eff6ff;border:2px solid #93c5fd;border-radius:12px;">
-                    <h3 style="color:#1e40af;font-size:18px;margin-bottom:16px;font-weight:700;" data-i18n="v149SummaryTitle">&#128202; Preliminary Engineering Summary</h3>
-                    <div id="aiEngSummaryContent" style="font-size:14px;color:#1e3a5f;line-height:1.8;"></div>
-                </div>
-                <!-- Send to Engineer CTA -->
-                <div id="aiSendToEngineer" style="display:none;margin-top:24px;padding:28px;background:linear-gradient(135deg,#2563eb,#1d4ed8);border-radius:12px;text-align:center;">
-                    <h3 style="color:white;font-size:20px;margin-bottom:10px;font-weight:700;" data-i18n="v149SendTitle">Send This Requirement to Our Engineer</h3>
-                    <p style="color:rgba(255,255,255,0.85);font-size:14px;line-height:1.7;max-width:560px;margin:0 auto 20px;" data-i18n="v149SendDesc">Your AI-generated recommendation will be included in the inquiry. You only need to fill in your contact information.</p>
-                    <a href="/contact.html" id="aiSendBtn" style="display:inline-block;background:white;color:#2563eb;padding:16px 48px;border-radius:8px;text-decoration:none;font-weight:700;font-size:17px;transition:all 0.3s;box-shadow:0 4px 12px rgba(0,0,0,0.15);" data-i18n="v149SendBtn">Send to Engineer &#8594;</a>
-                </div>
-                <!-- Enhanced Disclaimer -->
-                <div style="margin-top:20px;padding:14px 18px;background:#fef3c7;border-radius:8px;">
-                    <p style="font-size:12px;color:#78350f;line-height:1.6;margin:0;" data-i18n="v149Disclaimer">AI recommendations are preliminary engineering guidance and do not constitute guaranteed specifications. All critical parameters must be verified through formal engineering review.</p>
-                </div>
                 <div style="margin-top:24px;padding:20px;background:white;border-radius:8px;border:1px solid #d1fae5;">
-                    <p style="font-size:15px;color:#374151;margin-bottom:16px;font-weight:600;" data-i18n="v149ReviewTitle">Get Detailed Engineering Review</p>
-                    <p style="font-size:14px;color:#6b7280;margin-bottom:16px;" data-i18n="v149ReviewDesc">Our engineering team can provide a detailed specification review, material selection analysis, and custom quote for your application.</p>
+                    <p style="font-size:15px;color:#374151;margin-bottom:16px;font-weight:600;">Get Detailed Engineering Review</p>
+                    <p style="font-size:14px;color:#6b7280;margin-bottom:16px;">Our engineering team can provide a detailed specification review, material selection analysis, and custom quote for your application.</p>
                     <div class="ai-row">
                         <div class="ai-input-group">
-                            <input type="email" id="aiEmail" placeholder="Your work email" data-i18n-placeholder="v149EmailPh">
+                            <input type="email" id="aiEmail" placeholder="Your work email">
                         </div>
                         <div>
-                            <a href="/contact.html" class="ai-submit-btn" style="display:block;text-align:center;text-decoration:none;" data-i18n="v149ReviewCTA" onclick="if(document.getElementById('aiEmail').value){return true;}">Request Engineering Review</a>
+                            <a href="/contact.html" class="ai-submit-btn" style="display:block;text-align:center;text-decoration:none;" onclick="if(document.getElementById('aiEmail').value){return true;}">Request Engineering Review</a>
                         </div>
                     </div>
                 </div>
@@ -403,18 +373,18 @@
         <div class="ai-features">
             <div class="ai-feature">
                 <div class="ai-feature-icon">🔬</div>
-                <h3 data-i18n="v149Feat1Title">Material Selection</h3>
-                <p data-i18n="v149Feat1Desc">30+ optical materials matched to your wavelength, power, and environmental requirements</p>
+                <h3>Material Selection</h3>
+                <p>30+ optical materials matched to your wavelength, power, and environmental requirements</p>
             </div>
             <div class="ai-feature">
                 <div class="ai-feature-icon">⚡</div>
-                <h3 data-i18n="v149Feat2Title">Coating Recommendation</h3>
-                <p data-i18n="v149Feat2Desc">AR, HR, bandpass, and specialty coating designs optimized for your application</p>
+                <h3>Coating Recommendation</h3>
+                <p>AR, HR, bandpass, and specialty coating designs optimized for your application</p>
             </div>
             <div class="ai-feature">
                 <div class="ai-feature-icon">📐</div>
-                <h3 data-i18n="v149Feat3Title">Specification Review</h3>
-                <p data-i18n="v149Feat3Desc">Tolerance analysis and DFM feedback to optimize performance vs. cost</p>
+                <h3>Specification Review</h3>
+                <p>Tolerance analysis and DFM feedback to optimize performance vs. cost</p>
             </div>
         </div>
 
@@ -433,9 +403,9 @@
     <!-- Also link to Smart Product Advisor -->
     <div style="max-width:900px;margin:0 auto 60px;padding:0 20px;">
         <div class="ai-card" style="background:#f8fafc;text-align:center;">
-            <h2 data-i18n="v149GuidedTitle">Prefer Guided Selection?</h2>
-            <p style="color:#6b7280;margin-bottom:20px;" data-i18n="v149GuidedDesc">Use our step-by-step Smart Product Advisor for component-by-component selection from our catalog.</p>
-            <a href="/product-advisor.html" style="display:inline-block;background:#1e3a5f;color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:600;" data-i18n="v149GuidedCTA">Open Smart Product Advisor</a>
+            <h2>Prefer Guided Selection?</h2>
+            <p style="color:#6b7280;margin-bottom:20px;">Use our step-by-step Smart Product Advisor for component-by-component selection from our catalog.</p>
+            <a href="/product-advisor.html" style="display:inline-block;background:#1e3a5f;color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:600;">Open Smart Product Advisor</a>
         </div>
     </div>
 
@@ -476,7 +446,8 @@
                     <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
                     <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
                     <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
-                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality &amp; Documentation</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality Assurance</a></li>
+                    <li><a href="/evidence.html" data-i18n="navEvidence">Evidence Center</a></li>
                     <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
                 </ul>
             </div>
@@ -565,60 +536,6 @@
 
         document.getElementById('aiResultContent').innerHTML = html;
         document.getElementById('aiResult').style.display = 'block';
-
-        // Populate Preliminary Engineering Summary
-        var env = document.getElementById('aiEnvironment').value;
-        var addReqs = document.getElementById('aiAddReqs').value;
-        var envLabels = {'standard':'Standard (Lab/Office)','harsh':'Harsh (Outdoor/Industrial)','vacuum':'Vacuum/Cleanroom','hightemp':'High-Temperature (>80°C)'};
-        var envNote = env ? envLabels[env] : 'Not specified — to be confirmed';
-
-        var missingInfo = [];
-        if (!comp || comp === 'unsure') missingInfo.push('Component type needs clarification');
-        if (!power) missingInfo.push('Power/energy requirements not specified');
-        if (!env) missingInfo.push('Operating environment not specified');
-        if (!desc || desc.length < 30) missingInfo.push('More detailed application description needed');
-        if (missingInfo.length === 0) missingInfo.push('All key fields provided — ready for engineering review');
-
-        var risks = [];
-        if (app === 'laser' && power) risks.push('Laser damage threshold (LIDT) must be verified for power level');
-        if (wl === 'duv') risks.push('DUV materials require special handling and contamination control');
-        if (env === 'harsh' || env === 'hightemp') risks.push('Environmental conditions may affect material and coating selection');
-        if (comp === 'assembly') risks.push('Custom assembly requires full mechanical interface definition');
-        if (risks.length === 0) risks.push('No critical risks identified at this stage');
-
-        var confidenceLevel = 'LEVEL 2 — REFERENCE';
-        if (comp && comp !== 'unsure' && power && env) {
-            confidenceLevel = 'LEVEL 3 — PROJECT-SPECIFIC';
-        } else if (!comp || comp === 'unsure') {
-            confidenceLevel = 'LEVEL 2 — REFERENCE';
-        }
-        if (!desc || desc.length < 30) {
-            confidenceLevel = 'LEVEL 2 — REFERENCE';
-        }
-
-        var summaryHtml = '<table style="width:100%;border-collapse:collapse;">';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;width:40%;">Recommended Component</td><td style="padding:8px 12px;">' + (comp && compRecs[comp] ? compRecs[comp] : 'To be determined') + '</td></tr>';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Recommended Material</td><td style="padding:8px 12px;">' + mat.primary + '</td></tr>';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Recommended Coating</td><td style="padding:8px 12px;">' + coat + '</td></tr>';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Operating Environment</td><td style="padding:8px 12px;">' + envNote + '</td></tr>';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Missing Information</td><td style="padding:8px 12px;">' + missingInfo.join('; ') + '</td></tr>';
-        summaryHtml += '<tr style="border-bottom:1px solid #bfdbfe;"><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Engineering Risks</td><td style="padding:8px 12px;">' + risks.join('; ') + '</td></tr>';
-        summaryHtml += '<tr><td style="padding:8px 12px;font-weight:600;color:#1e40af;">Confidence Level</td><td style="padding:8px 12px;"><strong>' + confidenceLevel + '</strong></td></tr>';
-        summaryHtml += '</table>';
-
-        document.getElementById('aiEngSummaryContent').innerHTML = summaryHtml;
-        document.getElementById('aiEngSummary').style.display = 'block';
-
-        // Build contact URL with parameters
-        var contactUrl = '/contact.html?source=ai-engineer';
-        contactUrl += '&app=' + encodeURIComponent(app);
-        contactUrl += '&wl=' + encodeURIComponent(wl);
-        contactUrl += '&comp=' + encodeURIComponent(comp || 'unsure');
-        if (power) contactUrl += '&power=' + encodeURIComponent(power);
-        if (env) contactUrl += '&env=' + encodeURIComponent(env);
-        document.getElementById('aiSendBtn').href = contactUrl;
-        document.getElementById('aiSendToEngineer').style.display = 'block';
-
         document.getElementById('aiResult').scrollIntoView({behavior: 'smooth'});
         return false;
     }
@@ -635,8 +552,8 @@
 
     <section style="padding: 60px 20px; background: #f0f9ff;">
         <div style="max-width: 1000px; margin: 0 auto;">
-            <h2 style="text-align:center; font-size:28px; color:#1e293b; margin:0 0 12px 0;" data-i18n="v149ConfTitle">Confidence Gate</h2>
-            <p style="text-align:center; color:#64748b; margin:0 0 40px 0; line-height:1.6;" data-i18n="v149ConfDesc">Every recommendation comes with a confidence level. This tells you how certain the answer is &mdash; and what to do next.</p>
+            <h2 style="text-align:center; font-size:28px; color:#1e293b; margin:0 0 12px 0;">Confidence Gate</h2>
+            <p style="text-align:center; color:#64748b; margin:0 0 40px 0; line-height:1.6;">Every recommendation comes with a confidence level. This tells you how certain the answer is &mdash; and what to do next.</p>
             <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px;">
                 <div style="background:#fff; border-radius:12px; padding:24px; border-left:4px solid #10b981; box-shadow:0 2px 8px rgba(0,0,0,0.06);">
                     <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
