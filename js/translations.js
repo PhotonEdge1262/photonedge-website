@@ -314,7 +314,7 @@ var translations = {
     "testimonial8Name": "Lab Manager",
     "testimonial8Role": "National Research Laboratory, Singapore",
     "testimonial8Product": "Product: Achromatic Doublet Lenses",
-    "requestQuoteBtn": "Request a Quote",
+    "requestQuoteBtn": "Request an Engineering Quote",
     "shareArticle": "Share this article",
     "subscribeNewsletter": "Subscribe to our newsletter",
     "getUpdates": "Get the latest optical industry insights and PhotonEdge updates delivered to your inbox.",
@@ -2475,7 +2475,7 @@ var translations = {
     "navAboutDropdown": "About ▾",
     "navAboutPhotonEdge": "About PhotonEdge",
     "navQualityDoc": "Quality & Documentation",
-    "navCTA": "Request a Quote",
+    "navCTA": "Request an Engineering Quote",
     "v123FooterDesc": "Experienced in optics. Flexible in manufacturing. Focused on your requirements.",
     "v123HeroTitle": "Precision Optical Components & Engineering Support",
     "v123HeroSubtitle": "Experienced in optics. Flexible in manufacturing. Focused on your requirements.",
@@ -3198,7 +3198,7 @@ var translations = {
     "navEngResources": "Engineering Resources",
 
     // ===== V144 Homepage Translations =====
-    "v144HeroTitle": "Precision Optics for Demanding Applications",
+    "v144HeroTitle": "Precision Optical Components & Engineering Support",
     "v144HeroSubtitle": "Standard and custom optical components for laser systems, semiconductor inspection, medical imaging, scientific instruments and industrial vision.",
     "v144HeroCTA1": "Upload Your Drawing",
     "v144HeroCTA2": "Request a Quote",
@@ -3605,6 +3605,11 @@ var translations = {
     "v151QADoc5Name": "Dimensional Report",
     "v151QADoc5Purpose": "Confirms mechanical dimensions and tolerances",
     "v151QADocNote": "Documentation provided according to agreed project requirements.",
+    "v152CoatRFQTitle": "Need Help Selecting a Coating?",
+    "v152CoatRFQDesc": "Our engineering team can recommend the optimal coating for your application and specifications.",
+    "v152CoatRFQCTA1": "Request a Coating Quote",
+    "v152CoatRFQCTA2": "Explore Other Coatings",
+    "v152ViewCoatings": "View All Coating Options \u2192",
   "zh": {
     "navSolutions": "解决方案",
     "navKnowledgeCenter": "知识中心",
@@ -6666,7 +6671,7 @@ var translations = {
     "navEngResources": "工程资源",
 
     // ===== V144 首页翻译 =====
-    "v144HeroTitle": "面向严苛应用的精密光学元件",
+    "v144HeroTitle": "精密光学元件与工程技术支持",
     "v144HeroSubtitle": "为激光系统、半导体检测、医疗影像、科学仪器及工业视觉提供标准与定制光学元件。",
     "v144HeroCTA1": "上传您的询价需求",
     "v144HeroCTA2": "获取报价",
@@ -7069,6 +7074,11 @@ var translations = {
     "v151QADoc5Name": "\u5c3a\u5bf8\u62a5\u544a",
     "v151QADoc5Purpose": "\u786e\u8ba4\u673a\u68b0\u5c3a\u5bf8\u548c\u516c\u5dee",
     "v151QADocNote": "\u6587\u6863\u6309\u7ea6\u5b9a\u9879\u76ee\u8981\u6c42\u63d0\u4f9b\u3002",
+    "v152CoatRFQTitle": "\u4e0d\u786e\u5b9a\u9009\u54ea\u79cd\u9540\u819c\uff1f",
+    "v152CoatRFQDesc": "\u6211\u4eec\u7684\u5de5\u7a0b\u56e2\u961f\u53ef\u4ee5\u4e3a\u60a8\u7684\u5e94\u7528\u548c\u89c4\u683c\u63a8\u8350\u6700\u4f18\u9540\u819c\u65b9\u6848\u3002",
+    "v152CoatRFQCTA1": "\u83b7\u53d6\u9540\u819c\u62a5\u4ef7",
+    "v152CoatRFQCTA2": "\u6d4f\u89c8\u5176\u4ed6\u9540\u819c",
+    "v152ViewCoatings": "\u67e5\u770b\u5168\u90e8\u9540\u819c\u9009\u9879 \u2192",
 
   }
 };
