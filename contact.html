@@ -185,6 +185,51 @@
         </div>
     </section>
 
+    <!-- What Are You Looking For? -->
+    <section style="padding:40px 0;background:#f8fafc;">
+        <div class="container">
+            <h2 style="font-size:24px;font-weight:700;color:#1e3a5f;margin-bottom:8px;text-align:center;" data-i18n="v151ContactTitle">What Are You Looking For?</h2>
+            <p style="text-align:center;color:#64748b;margin-bottom:30px;" data-i18n="v151ContactSub">Select your requirement type to help us route your inquiry efficiently.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:900px;margin:0 auto;">
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">🔬</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq1Title">Standard Optics</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq1Desc">Lenses, windows, mirrors, filters from our catalog</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">⚙️</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq2Title">Custom Optics</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq2Desc">Custom specifications, drawings or samples</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">💡</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq3Title">Optical Design Support</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq3Desc">Engineering review and technical consultation</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">💎</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq4Title">Coating Services</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq4Desc">AR, HR, metallic and custom coating requirements</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">🧪</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq5Title">Prototype</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq5Desc">Rapid prototype and small batch production</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">📦</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq6Title">Volume Production</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq6Desc">Series manufacturing with quality documentation</p>
+                </div>
+                <div style="background:white;padding:20px;border-radius:8px;border:2px solid #e2e8f0;text-align:center;cursor:pointer;transition:border-color 0.2s;" onclick="this.style.borderColor='#2563eb'">
+                    <div style="font-size:24px;margin-bottom:8px;">🤝</div>
+                    <h3 style="font-size:15px;font-weight:600;color:#1e3a5f;margin-bottom:4px;" data-i18n="v151Inq7Title">Technical Consultation</h3>
+                    <p style="font-size:13px;color:#64748b;" data-i18n="v151Inq7Desc">Not sure what you need? Talk to our engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Form -->
     <section id="contact-form" style="padding:60px 0;background:white;">
         <div class="container">
@@ -252,11 +297,32 @@
                     <button type="submit" style="width:100%;padding:14px;background:#2563eb;color:white;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;" data-i18n="v133FormSubmit">Submit Requirement</button>
                 </form>
 
-                <div id="formSuccess" style="display:none;text-align:center;padding:40px;">
-                    <div style="font-size:48px;margin-bottom:16px;">&#9989;</div>
-                    <h3 data-i18n="v133FormSuccessTitle" style="font-size:20px;color:#1e293b;margin-bottom:8px;">Thank You!</h3>
-                    <p data-i18n="v133FormSuccessDesc" style="color:#64748b;font-size:15px;margin-bottom:24px;">We have received your requirement and will respond within one business day.</p>
-                    <button onclick="resetForm()" style="padding:10px 24px;background:#f0f9ff;color:#2563eb;border:1px solid #bae6fd;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;" data-i18n="v133FormReset">Send Another Request</button>
+                <div id="formSuccessMessage" style="display:none;text-align:center;padding:40px;">
+                    <h2 style="font-size:24px;font-weight:700;color:#059669;margin-bottom:12px;" data-i18n="v151FormSuccessTitle">Your Engineering Request Has Been Received</h2>
+                    <p style="color:#64748b;margin-bottom:24px;" data-i18n="v151FormSuccessSub">Here is what happens next:</p>
+                    <div style="max-width:500px;margin:0 auto;text-align:left;">
+                        <div style="display:flex;align-items:flex-start;margin-bottom:16px;">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#059669;color:white;font-size:14px;font-weight:600;flex-shrink:0;margin-right:12px;">1</span>
+                            <div><strong style="color:#1e3a5f;" data-i18n="v151Next1">Requirement Review</strong><p style="font-size:13px;color:#64748b;margin:2px 0 0;" data-i18n="v151Next1Desc">We review your specifications and requirements</p></div>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;margin-bottom:16px;">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#059669;color:white;font-size:14px;font-weight:600;flex-shrink:0;margin-right:12px;">2</span>
+                            <div><strong style="color:#1e3a5f;" data-i18n="v151Next2">Engineering Clarification</strong><p style="font-size:13px;color:#64748b;margin:2px 0 0;" data-i18n="v151Next2Desc">We may ask for additional details if needed</p></div>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;margin-bottom:16px;">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#059669;color:white;font-size:14px;font-weight:600;flex-shrink:0;margin-right:12px;">3</span>
+                            <div><strong style="color:#1e3a5f;" data-i18n="v151Next3">Manufacturing Feasibility Review</strong><p style="font-size:13px;color:#64748b;margin:2px 0 0;" data-i18n="v151Next3Desc">We evaluate the manufacturing approach</p></div>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;margin-bottom:16px;">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#059669;color:white;font-size:14px;font-weight:600;flex-shrink:0;margin-right:12px;">4</span>
+                            <div><strong style="color:#1e3a5f;" data-i18n="v151Next4">Quotation</strong><p style="font-size:13px;color:#64748b;margin:2px 0 0;" data-i18n="v151Next4Desc">Detailed quotation with specifications and lead time</p></div>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;margin-bottom:16px;">
+                            <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#059669;color:white;font-size:14px;font-weight:600;flex-shrink:0;margin-right:12px;">5</span>
+                            <div><strong style="color:#1e3a5f;" data-i18n="v151Next5">Documentation Confirmation</strong><p style="font-size:13px;color:#64748b;margin:2px 0 0;" data-i18n="v151Next5Desc">We confirm inspection and documentation requirements</p></div>
+                        </div>
+                    </div>
+                    <button onclick="resetForm()" style="margin-top:24px;padding:10px 24px;background:#f0f9ff;color:#2563eb;border:1px solid #bae6fd;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;" data-i18n="v133FormReset">Send Another Request</button>
                 </div>
 
                 <p style="text-align:center;margin-top:16px;color:#94a3b8;font-size:13px;" data-i18n="v133FormResponse">We normally respond within one business day.</p>
@@ -339,13 +405,13 @@
 
         function resetForm() {
             document.getElementById('contactForm').style.display = 'block';
-            document.getElementById('formSuccess').style.display = 'none';
+            document.getElementById('formSuccessMessage').style.display = 'none';
             document.getElementById('contactForm').reset();
         }
 
         if (window.location.search.indexOf('submitted=true') !== -1) {
             document.getElementById('contactForm').style.display = 'none';
-            document.getElementById('formSuccess').style.display = 'block';
+            document.getElementById('formSuccessMessage').style.display = 'block';
         }
     </script>
 </body>
