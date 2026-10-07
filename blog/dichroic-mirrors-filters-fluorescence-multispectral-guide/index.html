@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://photonedgeoptics.com/images/favicon-32.png">
+    <link rel="icon" type="image/svg+xml" href="https://photonedgeoptics.com/images/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dichroic Mirrors and Filters for Fluorescence Microscopy and Multispectral Imaging: Selection Guide | PhotonEdge Optics Blog</title>
+    <meta name="description" content="Complete guide to dichroic mirrors and filters for fluorescence microscopy and multispectral imaging: edge wavelength selection, transition bandwidth, OD blocking, multi-band dichroics, and how to build optimized filter sets for your application.">
+    <meta name="keywords" content="dichroic mirror, dichroic filter, fluorescence microscopy, multispectral imaging, filter set, excitation filter, emission filter, longpass dichroic, multi-band dichroic, optical density, fluorescence filter selection">
+    <meta property="og:title" content="Dichroic Mirrors and Filters for Fluorescence Microscopy and Multispectral Imaging: Selection Guide | PhotonEdge Blog">
+    <meta property="og:description" content="Complete guide to dichroic mirrors and filters for fluorescence microscopy and multispectral imaging: edge wavelength selection, transition bandwidth, OD blocking, multi-band dichroics, and how to build optimized filter sets for your application.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://photonedgeoptics.com/blog/dichroic-mirrors-filters-fluorescence-multispectral-guide/">
+    <meta property="og:image" content="https://photonedgeoptics.com/images/blog/dichroic-mirrors-filters-fluorescence-guide.jpg">
+    <meta property="og:site_name" content="PhotonEdge">
+    <link rel="canonical" href="https://photonedgeoptics.com/blog/dichroic-mirrors-filters-fluorescence-multispectral-guide/">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/dichroic-mirrors-filters-fluorescence-multispectral-guide/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Dichroic Mirrors and Filters for Fluorescence Microscopy and Multispectral Imaging: Selection Guide",
+  "description": "Complete guide to dichroic mirrors and filters for fluorescence microscopy and multispectral imaging: edge wavelength selection, transition bandwidth, OD blocking, multi-band dichroics, and how to build optimized filter sets for your application.",
+  "image": "https://photonedgeoptics.com/images/blog/dichroic-mirrors-filters-fluorescence-guide.jpg",
+  "datePublished": "2026-10-07",
+  "dateModified": "2026-10-07",
+  "author": {
+    "@type": "Organization",
+    "name": "PhotonEdge Technical Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "PhotonEdge",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://photonedgeoptics.com/images/logo.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://photonedgeoptics.com/blog/dichroic-mirrors-filters-fluorescence-multispectral-guide/"
+  }
+}
+    </script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/blog-post.css">
+</head>
+<body>
+    <div id="site-header"></div>
+    <script src="/js/main.js"></script>
+    <script>renderHeader();</script>
+
+    <article style="max-width:900px;margin:0 auto;padding:40px 20px;">
+        <!-- Breadcrumb -->
+        <nav style="font-size:14px;color:#64748b;margin-bottom:24px;">
+            <a href="/" style="color:#3b82f6;text-decoration:none;">Home</a> &gt;
+            <a href="/blog.html" style="color:#3b82f6;text-decoration:none;">Blog</a> &gt;
+            <span>Dichroic Mirrors &amp; Filters Guide</span>
+        </nav>
+
+        <!-- Article Header -->
+        <header style="margin-bottom:32px;">
+            <span style="display:inline-block;background:#eff6ff;color:#3b82f6;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Technical Guide</span>
+            <h1 style="font-size:32px;font-weight:800;color:#0f172a;line-height:1.3;margin-bottom:16px;">Dichroic Mirrors and Filters for Fluorescence Microscopy and Multispectral Imaging: Selection Guide</h1>
+            <div style="display:flex;gap:16px;font-size:14px;color:#64748b;">
+                <span>PhotonEdge Technical Team</span>
+                <span>|</span>
+                <span>October 7, 2026</span>
+                <span>|</span>
+                <span>14 min read</span>
+            </div>
+        </header>
+
+        <!-- English Content -->
+        <div itemprop="articleBody">
+            <p>style="line-height:1.8;color:#334155;font-size:16px;">
+
+<h2>Introduction</h2>
+<p>Fluorescence microscopy has become the dominant imaging modality in modern biology, materials science, and semiconductor inspection. At the heart of every fluorescence system lies a single optical component that determines what signal reaches the detector and what gets rejected: the <strong>dichroic mirror</strong> (also called a dichroic beamsplitter or dichroic filter). This thin-film interference device simultaneously reflects excitation light toward the sample and transmits the longer-wavelength emission toward the detector &mdash; or vice versa, depending on the system architecture.</p>
+<p>Choosing the right dichroic mirror and its companion emission filter is not a trivial task. Edge wavelength placement, transition bandwidth, optical density (OD) in the blocking region, and angular sensitivity all interact to determine the signal-to-noise ratio (SNR), spectral crosstalk, and quantitative accuracy of your measurements. In multispectral imaging&mdash;whether for flow cytometry, hyperspectral remote sensing, or multi-fluorophore microscopy&mdash;the challenge multiplies: each spectral channel requires its own precisely matched dichroic-filter pair, and the aggregate performance of the filter set determines the entire system's capability.</p>
+<p>This guide covers the physics of dichroic mirrors, how to specify and select them for fluorescence and multispectral applications, the key differences between single-band and multi-band designs, how to pair dichroics with <a href="/products/laser-line-filters/">narrow band interference filters</a> and <a href="/products/fixed-neutral-density-filters/">neutral density filters</a> for optimized performance, and five common mistakes that degrade fluorescence system performance.</p>
+
+<h2>How Dichroic Mirrors Work</h2>
+
+<h3>Thin-Film Interference Principle</h3>
+<p>A dichroic mirror is a wavelength-selective optical filter fabricated by depositing multiple alternating layers of high- and low-refractive-index dielectric materials (typically TiO<sub>2</sub>/SiO<sub>2</sub> or Ta<sub>2</sub>O<sub>5</sub>/SiO<sub>2</sub>) onto a transparent substrate such as <a href="/products/bk7-windows/">BK7 glass</a> or <a href="/products/fused-silica-optical-windows/">fused silica</a>. The layer thicknesses are designed so that constructive interference at target wavelengths produces high reflection, while destructive interference at other wavelengths allows transmission.</p>
+<p>The result is a filter with an extremely sharp spectral transition: reflectance can change from &lt;5% to &gt;95% within a bandwidth as narrow as 10&ndash;20 nm. This steepness is what makes dichroic mirrors uniquely suited for fluorescence applications, where excitation and emission spectra may be separated by only 20&ndash;50 nm (the Stokes shift).</p>
+
+<h3>Key Specifications</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Parameter</th><th style="border:1px solid #e2e8f0;padding:8px;">Definition</th><th style="border:1px solid #e2e8f0;padding:8px;">Typical Range</th><th style="border:1px solid #e2e8f0;padding:8px;">Why It Matters</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Edge wavelength (&lambda;<sub>e</sub>)</td><td style="border:1px solid #e2e8f0;padding:8px;">Wavelength at 50% reflectance (longpass dichroic)</td><td style="border:1px solid #e2e8f0;padding:8px;">400&ndash;1000 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">Must sit between excitation peak and emission peak</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Transition bandwidth</td><td style="border:1px solid #e2e8f0;padding:8px;">Spectral width from 5% to 95% reflectance</td><td style="border:1px solid #e2e8f0;padding:8px;">10&ndash;40 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">Narrower = better excitation/emission separation</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Reflectance (blocking band)</td><td style="border:1px solid #e2e8f0;padding:8px;">Reflectance in the excitation region</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;95% typical</td><td style="border:1px solid #e2e8f0;padding:8px;">Higher = more excitation light reaches sample</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Transmission (pass band)</td><td style="border:1px solid #e2e8f0;padding:8px;">Transmission in the emission region</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;90% typical</td><td style="border:1px solid #e2e8f0;padding:8px;">Higher = more emission signal reaches detector</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">OD (optical density)</td><td style="border:1px solid #e2e8f0;padding:8px;">log<sub>10</sub>(incident/transmitted) in blocking region</td><td style="border:1px solid #e2e8f0;padding:8px;">OD 3&ndash;6</td><td style="border:1px solid #e2e8f0;padding:8px;">Higher = less excitation bleed-through to detector</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Angle of incidence (AOI)</td><td style="border:1px solid #e2e8f0;padding:8px;">Design angle, typically 45&deg; or 0&deg;</td><td style="border:1px solid #e2e8f0;padding:8px;">45&deg; &plusmn; 2&deg; typical</td><td style="border:1px solid #e2e8f0;padding:8px;">Edge wavelength blue-shifts at non-design angles</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Substrate</td><td style="border:1px solid #e2e8f0;padding:8px;">Glass type for the filter substrate</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7, fused silica, B270</td><td style="border:1px solid #e2e8f0;padding:8px;">Affects transmission range, flatness, and laser damage threshold</td></tr>
+</table>
+
+<h2>Dichroic Mirror Types for Fluorescence Applications</h2>
+
+<h3>Single-Band Longpass Dichroics</h3>
+<p>The most common configuration in epifluorescence microscopy. A longpass dichroic reflects short wavelengths (excitation) and transmits long wavelengths (emission). For example, a 495 nm longpass dichroic reflects blue excitation light (&lt;495 nm) toward a GFP-labeled sample and transmits the green fluorescence emission (&gt;495 nm) to the camera or eyepiece.</p>
+<p>Single-band dichroics are the building blocks of standard filter cubes in widefield fluorescence microscopes. Each cube contains a <a href="/products/laser-line-filters/">narrow band excitation filter</a>, a longpass dichroic, and a <a href="/products/laser-line-filters/">bandpass emission filter</a>. This three-component set is sometimes called a &ldquo;filter set&rdquo; or &ldquo;filter block.&rdquo;</p>
+
+<h3>Multi-Band (Dual-Band / Triple-Band) Dichroics</h3>
+<p>Multi-band dichroic mirrors feature multiple reflection bands and multiple transmission bands within a single component. A dual-band dichroic might reflect both 488 nm (for GFP excitation) and 561 nm (for RFP excitation) while transmitting both 500&ndash;550 nm (GFP emission) and 580&ndash;630 nm (RFP emission). This enables simultaneous multi-color imaging without moving parts or filter wheels.</p>
+<p>The trade-off is complexity: multi-band designs have more spectral transitions, each of which represents a potential leakage path. Transition bandwidth and OD in the inter-band regions become critical. For demanding applications, custom <a href="/products/dichroic-filters/">dichroic filters</a> with optimized multi-band profiles are available.</p>
+
+<h3>Polychroic (Polychromatic) Mirrors</h3>
+<p>Polychroic mirrors are a specialized form of multi-band dichroic designed for 3, 4, or even 6+ fluorescence channels. They are commonly used in confocal microscopy and high-content screening systems where spectral unmixing requires well-separated excitation/reflection bands. The spectral design of a polychroic must be precisely matched to the emission spectra of all fluorophores in the panel, making custom design essential.</p>
+
+<h2>Filter Set Design for Fluorescence Microscopy</h2>
+
+<h3>The Three-Component Filter Set</h3>
+<p>A complete fluorescence filter set consists of three elements that must work together as a system:</p>
+<ol>
+<li><strong>Excitation filter:</strong> A <a href="/products/laser-line-filters/">narrow band interference filter</a> (bandpass) that selects the excitation wavelength from the light source. Typical bandwidth: 10&ndash;40 nm FWHM. The excitation filter defines the spectral purity of light reaching the sample.</li>
+<li><strong>Dichroic mirror:</strong> The wavelength router that directs excitation light toward the sample and emission light toward the detector. Its edge wavelength must sit in the gap between excitation and emission spectra.</li>
+<li><strong>Emission filter:</strong> A <a href="/products/laser-line-filters/">bandpass filter</a> that blocks residual excitation light and selects the desired emission band. The emission filter's OD specification (typically OD 4&ndash;6 at the excitation wavelength) determines the final extinction of excitation bleed-through.</li>
+</ol>
+
+<h3>Matching Filter Components</h3>
+<p>The critical design rule: the excitation filter's passband must fall entirely within the dichroic's reflection band, and the emission filter's passband must fall entirely within the dichroic's transmission band. Additionally, the emission filter's blocking range must cover the excitation wavelength to at least OD 4 (10,000:1 rejection) to prevent excitation light from reaching the detector.</p>
+<p>In practice, this means:</p>
+<ul>
+<li>For a 470/40 nm excitation filter (450&ndash;490 nm), use a dichroic with edge wavelength &le;495 nm and reflection band extending below 450 nm.</li>
+<li>For a 525/50 nm emission filter (500&ndash;550 nm), the dichroic's transmission band must cover at least 500&ndash;550 nm with &gt;90% transmission.</li>
+<li>The emission filter must block at 470 nm to OD 6 to prevent excitation bleed-through from a mercury arc lamp (which has strong lines near 436 nm and 546 nm).</li>
+</ul>
+
+<h3>Complementary Components</h3>
+<p>Beyond the core filter set, fluorescence systems often require additional filtering:</p>
+<ul>
+<li><a href="/products/fixed-neutral-density-filters/">Neutral density filters</a> control excitation intensity to prevent photobleaching and phototoxicity. For live-cell imaging, ND filters with OD 0.3&ndash;2.0 reduce excitation power by 50&ndash;99% while maintaining spectral balance.</li>
+<li><a href="/products/cube-beamsplitters/">Cube beamsplitters</a> can be used in multi-port microscope systems to route emission light to multiple detectors simultaneously (e.g., camera + spectrometer).</li>
+<li><a href="/products/beamsplitter-plates/">Beamsplitter plates</a> serve as pick-off mirrors in custom fluorescence setups where a portion of the emission is diverted to a secondary detection path.</li>
+</ul>
+
+<h2>Multispectral Imaging: Scaling Up the Filter Challenge</h2>
+
+<h3>What Makes Multispectral Different</h3>
+<p>Multispectral imaging goes beyond standard fluorescence by acquiring images in many narrow spectral bands (typically 5&ndash;30+ channels). Applications include:</p>
+<ul>
+<li><strong>Hyperspectral remote sensing:</strong> Satellite and airborne sensors use <a href="/products/dichroic-filters/">dichroic filter</a> arrays to split incoming light into spectral bands for vegetation analysis, mineral identification, and environmental monitoring.</li>
+<li><strong>Flow cytometry:</strong> Modern cytometers use 20+ fluorescence channels, each requiring a dedicated dichroic-filter pair. The optical design must minimize spectral crosstalk between adjacent channels.</li>
+<li><strong>Fluorescence lifetime imaging (FLIM):</strong> Time-resolved measurements require extremely clean spectral separation to prevent excitation scatter from corrupting decay curves.</li>
+<li><strong>Semiconductor photoluminescence mapping:</strong> Wafer-scale PL imaging uses <a href="/products/laser-line-filters/">narrow band filters</a> to map composition variations across silicon and compound semiconductor wafers.</li>
+</ul>
+
+<h3>Filter Wheel vs. Tunable Filter Approaches</h3>
+<p>Two main approaches exist for multispectral filter selection:</p>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Approach</th><th style="border:1px solid #e2e8f0;padding:8px;">How It Works</th><th style="border:1px solid #e2e8f0;padding:8px;">Advantages</th><th style="border:1px solid #e2e8f0;padding:8px;">Limitations</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Filter wheel</td><td style="border:1px solid #e2e8f0;padding:8px;">Motorized wheel with 6&ndash;12 fixed filters</td><td style="border:1px solid #e2e8f0;padding:8px;">High OD, sharp edges, proven reliability</td><td style="border:1px solid #e2e8f0;padding:8px;">Discrete bands only; mechanical switching time 50&ndash;200 ms</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Acousto-optic tunable filter (AOTF)</td><td style="border:1px solid #e2e8f0;padding:8px;">RF-driven crystal selects wavelength electronically</td><td style="border:1px solid #e2e8f0;padding:8px;">Continuous tuning; &lt;10 &mu;s switching</td><td style="border:1px solid #e2e8f0;padding:8px;">Lower OD (~2&ndash;3); expensive; limited UV range</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Liquid crystal tunable filter (LCTF)</td><td style="border:1px solid #e2e8f0;padding:8px;">Voltage-controlled LC layer tunes passband</td><td style="border:1px solid #e2e8f0;padding:8px;">No moving parts; 20&ndash;50 nm bandwidth</td><td style="border:1px solid #e2e8f0;padding:8px;">Slower than AOTF; limited transmission in UV</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Multi-band dichroic + camera</td><td style="border:1px solid #e2e8f0;padding:8px;">Custom dichroic splits light to multiple ROIs on camera</td><td style="border:1px solid #e2e8f0;padding:8px;">Simultaneous acquisition; no temporal artifacts</td><td style="border:1px solid #e2e8f0;padding:8px;">Fixed spectral bands; complex optical alignment</td></tr>
+</table>
+
+<h2>Angular Sensitivity: The Hidden Spec</h2>
+
+<h3>Why Angle of Incidence Matters</h3>
+<p>Dichroic mirrors are interference filters, and their spectral performance depends critically on the angle of incidence (AOI). Most dichroics are designed for 45&deg; AOI in epifluorescence configurations. When the actual AOI deviates from the design angle, the entire spectral profile shifts toward shorter wavelengths (blue shift).</p>
+<p>The shift magnitude follows: &lambda;(&theta;) = &lambda;<sub>0</sub> &times; &radic;(1 - (sin&theta;/n<sub>eff</sub>)&sup2;), where n<sub>eff</sub> is the effective refractive index of the coating stack (~1.8&ndash;2.0 for typical designs). At 45&deg; &plusmn; 2&deg;, a typical longpass dichroic shifts by approximately 3&ndash;5 nm per degree. In high-NA microscope objectives (NA &ge;0.9), the cone of light includes rays at angles up to 64&deg; from normal, meaning the effective AOI varies across the beam. This causes edge wavelength non-uniformity across the field of view.</p>
+
+<h3>Practical Implications</h3>
+<ul>
+<li><strong>Widefield microscopy with high-NA objectives:</strong> Use dichroics specifically designed for high-NA applications, with optimized transition profiles that account for the angular spread. Standard 45&deg; dichroics may show 5&ndash;10 nm of edge shift across the field.</li>
+<li><strong>Confocal and laser-scanning systems:</strong> The beam is typically near-collimated with low divergence (&lt;2&deg;), so AOI sensitivity is less of a concern. Standard dichroics perform well.</li>
+<li><strong>Multi-port systems:</strong> When using <a href="/products/cube-beamsplitters/">cube beamsplitters</a> to split emission to multiple ports, ensure all mirrors in the emission path are at the correct AOI. A 5&deg; tilt error on an emission filter can shift its bandpass by 10&ndash;15 nm.</li>
+</ul>
+
+<h2>Five Common Dichroic Selection Mistakes</h2>
+
+<h3>1. Placing the Edge Wavelength Too Close to the Emission Peak</h3>
+<p>If the dichroic's edge wavelength is within 10 nm of the emission peak, a significant fraction of the emission signal falls in the transition region where transmission is only 50&ndash;80%. This directly reduces signal level and makes quantification unreliable (small wavelength shifts due to temperature or AOI changes cause large signal variations).</p>
+<p><strong>Solution:</strong> Place the edge wavelength at least 15&ndash;20 nm below the emission peak. For a GFP emission peak at 510 nm, use a 485&ndash;495 nm edge dichroic, not a 500 nm edge.</p>
+
+<h3>2. Ignoring Emission Filter OD Requirements</h3>
+<p>A common mistake is using a standard <a href="/products/laser-line-filters/">bandpass filter</a> with OD 2&ndash;3 at the excitation wavelength when the application requires OD 5&ndash;6. In low-light applications (single-molecule imaging, weakly expressing cell lines), even OD 3 of excitation rejection leaves enough background to swamp the fluorescence signal.</p>
+<p><strong>Solution:</strong> For demanding applications, specify hard-coated <a href="/products/laser-line-filters/">narrow band interference filters</a> with OD 6+ blocking at the excitation wavelength. Pair with a high-quality dichroic that provides OD 4+ reflection in the emission band as a secondary blocking mechanism.</p>
+
+<h3>3. Using the Same Dichroic for Laser and Lamp Excitation</h3>
+<p>Arc lamp excitation (Hg, Xe) has a broad, structured spectrum with intensity peaks at specific wavelengths. Laser excitation provides narrow, intense lines. A dichroic optimized for lamp excitation has a broad reflection band (400&ndash;500 nm) to capture the wide excitation profile, but this broad band may leak laser line power if the laser wavelength falls near a transition edge.</p>
+<p><strong>Solution:</strong> For laser-based systems, use <a href="/products/dichroic-mirrors/">dichroic mirrors</a> with sharp, laser-line-specific reflection bands. For multi-laser systems, use multi-notch dichroics designed to reflect all laser lines simultaneously (e.g., 405/488/561/640 nm quad-band).</p>
+
+<h3>4. Overlooking Substrate Material Compatibility</h3>
+<p>Standard BK7 dichroics are suitable for visible wavelengths (400&ndash;700 nm). However, UV fluorescence applications (DAPI, Hoechst at 350&ndash;400 nm) require fused silica substrates because BK7 absorbs significantly below 380 nm. Similarly, NIR fluorescence (700&ndash;900 nm, common in small-animal imaging) benefits from substrates with low OH absorption.</p>
+<p><strong>Solution:</strong> For UV fluorescence (&lt;400 nm), specify <a href="/products/fused-silica-optical-windows/">fused silica</a> substrate dichroics. For visible work, standard BK7 is adequate and more cost-effective.</p>
+
+<h3>5. Neglecting Environmental Stability of Coatings</h3>
+<p>Soft coating designs (typically ion-beam sputtered or conventional e-beam) are susceptible to humidity-induced wavelength shifts. Water vapor absorbed into the coating layers changes the effective refractive index, shifting edge wavelengths by 2&ndash;10 nm in high-humidity environments. This is particularly problematic in tropical laboratories or uncontrolled manufacturing environments.</p>
+<p><strong>Solution:</strong> Specify hard-coated (ion-assisted deposition or IAD) dichroics for environments where humidity varies. Hard coatings shift &lt;0.5 nm across 20&ndash;80% relative humidity. Custom <a href="/products/dichroic-filters/">dichroic filters</a> with hard-coated designs are available for demanding environments.</p>
+
+<h2>Application-Specific Filter Recommendations</h2>
+
+<h3>GFP Imaging (Standard Fluorescence)</h3>
+<p><strong>Excitation:</strong> 470/40 nm bandpass (use <a href="/products/laser-line-filters/">narrow band filter</a>)</p>
+<p><strong>Dichroic:</strong> 495 nm longpass (<a href="/products/dichroic-mirrors/">dichroic mirror</a>)</p>
+<p><strong>Emission:</strong> 525/50 nm bandpass, OD 6 at 470 nm (use <a href="/products/laser-line-filters/">narrow band filter</a>)</p>
+<p><strong>Optional:</strong> <a href="/products/fixed-neutral-density-filters/">ND filter</a> (OD 0.5&ndash;1.0) for live-cell intensity control</p>
+
+<h3>Multi-Color GFP/RFP/DAPI</h3>
+<p><strong>Dichroic:</strong> Triple-band polychroic reflecting 350&plusmn;30, 470&plusmn;20, and 545&plusmn;15 nm bands, transmitting &gt;500 nm</p>
+<p><strong>Emission filters:</strong> 460/50 (DAPI), 525/50 (GFP), 600/50 (RFP) &mdash; each OD 6+ at respective excitation lines</p>
+<p>For multi-laser confocal systems, custom <a href="/products/dichroic-filters/">dichroic filters</a> with 4 or more reflection bands provide simultaneous multi-channel detection.</p>
+
+<h3>Infrared Fluorescence (NIR Small-Animal Imaging)</h3>
+<p><strong>Excitation:</strong> 680/30 nm or 750/30 nm (use <a href="/products/ir-bandpass-filters/">UV transmission visible absorption filters</a> for blocking visible ambient light)</p>
+<p><strong>Dichroic:</strong> Custom longpass at 700 or 780 nm on fused silica substrate</p>
+<p><strong>Emission:</strong> 710/50 or 790/50 nm (use <a href="/products/ir-bandpass-filters/">IR bandpass filters</a>)</p>
+<p>For NIR systems, ensure all components (<a href="/products/fused-silica-optical-windows/">fused silica windows</a>, <a href="/products/fused-silica-optical-mirrors/">mirrors</a>) are specified for the target NIR wavelength range to avoid absorption losses.</p>
+
+<h2>Dichroic Mirror and Filter Selection Summary</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">Application</th><th style="border:1px solid #e2e8f0;padding:8px;">Dichroic Type</th><th style="border:1px solid #e2e8f0;padding:8px;">Substrate</th><th style="border:1px solid #e2e8f0;padding:8px;">Companion Filters</th><th style="border:1px solid #e2e8f0;padding:8px;">Key Spec</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Single-color fluorescence</td><td style="border:1px solid #e2e8f0;padding:8px;">Longpass</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/laser-line-filters/">Narrow band filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Edge 15&ndash;20 nm below emission peak</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Multi-color widefield</td><td style="border:1px solid #e2e8f0;padding:8px;">Multi-band</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7 / fused silica</td><td style="border:1px solid #e2e8f0;padding:8px;">Multiple <a href="/products/laser-line-filters/">bandpass filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Inter-band OD &ge;4</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Confocal multi-laser</td><td style="border:1px solid #e2e8f0;padding:8px;">Multi-notch</td><td style="border:1px solid #e2e8f0;padding:8px;">Fused silica</td><td style="border:1px solid #e2e8f0;padding:8px;">Pinhole + <a href="/products/laser-line-filters/">emission filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Sharp notch edges, low scatter</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">NIR fluorescence</td><td style="border:1px solid #e2e8f0;padding:8px;">Longpass</td><td style="border:1px solid #e2e8f0;padding:8px;">Fused silica</td><td style="border:1px solid #e2e8f0;padding:8px;"><a href="/products/ir-bandpass-filters/">IR bandpass filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Low substrate absorption at &gt;700 nm</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">UV fluorescence</td><td style="border:1px solid #e2e8f0;padding:8px;">Longpass</td><td style="border:1px solid #e2e8f0;padding:8px;">Fused silica</td><td style="border:1px solid #e2e8f0;padding:8px;">UV <a href="/products/laser-line-filters/">bandpass filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">UV-grade coating, OD 6 at excitation</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">Multispectral / hyperspectral</td><td style="border:1px solid #e2e8f0;padding:8px;">Custom array</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7 / fused silica</td><td style="border:1px solid #e2e8f0;padding:8px;">Tunable or <a href="/products/fixed-neutral-density-filters/">ND filters</a></td><td style="border:1px solid #e2e8f0;padding:8px;">Channel-to-channel crosstalk &lt;1%</td></tr>
+</table>
+
+<h2>Conclusion</h2>
+<p>Dichroic mirrors are the spectral backbone of every fluorescence and multispectral imaging system. Their edge wavelength placement, transition bandwidth, and blocking OD directly determine the signal-to-noise ratio, spectral purity, and quantitative accuracy of your measurements. The three-component filter set&mdash;excitation filter, dichroic, emission filter&mdash;must be designed as a matched system, not assembled from individual parts.</p>
+<p>The five mistakes covered in this guide&mdash;edge too close to emission, insufficient emission filter OD, lamp/laser dichroic interchange, wrong substrate, and humidity sensitivity&mdash;account for the majority of fluorescence performance issues in real-world systems. By understanding the specifications that matter and matching components to your specific fluorophores and detection geometry, you can achieve near-theoretical SNR performance.</p>
+<p>PhotonEdge provides custom and catalog <a href="/products/dichroic-mirrors/">dichroic mirrors</a>, <a href="/products/dichroic-filters/">dichroic filters</a>, <a href="/products/laser-line-filters/">narrow band interference filters</a>, <a href="/products/ir-bandpass-filters/">IR bandpass filters</a>, and <a href="/products/fixed-neutral-density-filters/">neutral density filters</a> for fluorescence and multispectral applications. Contact our technical team with your fluorophore panel and system architecture &mdash; we will design an optimized filter set for your requirements.</p>
+<p>For related guidance, explore our <a href="/blog/optical-filter-selection-guide/">optical filter selection guide</a>, <a href="/blog/optical-coating-types-explained/">optical coating types</a>, <a href="/blog/optical-beamsplitter-selection-complete-guide/">beamsplitter selection guide</a>, <a href="/blog/medical-device-optical-components-guide/">medical device optics guide</a>, and <a href="/blog/spectroscopy-optics-component-selection-guide/">spectroscopy optics guide</a>.</p></p>
+        </div>
+
+        <!-- Chinese Content -->
+        <div id="chinese-content" style="display:none;">
+            <p>style="display:none;line-height:1.8;color:#334155;font-size:16px;">
+
+<h2>引言</h2>
+<p>荧光显微镜已成为现代生物学、材料科学和半导体检测中的主导成像方式。每个荧光系统的核心是一个决定哪些信号到达探测器、哪些被抑制的单一光学元件：<strong>二向色镜</strong>（也称为二向色分束器或二向色滤光片）。这种薄膜干涉器件同时将激发光反射到样品上，并将较长波长的发射光透射到探测器——或根据系统架构反之。</p>
+<p>选择合适的二向色镜及其配套发射滤光片并非易事。截止波长位置、过渡带宽、阻挡区域的光密度（OD）以及角度敏感性都会相互作用，决定测量的信噪比（SNR）、光谱串扰和定量精度。在多光谱成像中——无论是用于流式细胞术、高光谱遥感还是多荧光团显微镜——挑战成倍增加：每个光谱通道都需要精确匹配的二向色镜-滤光片对，而滤光片组的整体性能决定了整个系统的能力。</p>
+<p>本指南涵盖二向色镜的物理原理、如何在荧光和多光谱应用中指定和选择它们、单波段和多波段设计之间的关键差异，以及如何搭配<a href="/products/laser-line-filters/">窄带干涉滤光片</a>和<a href="/products/fixed-neutral-density-filters/">中性密度滤光片</a>实现优化性能，还有五个降低荧光系统性能的常见错误。</p>
+
+<h2>二向色镜的工作原理</h2>
+
+<h3>薄膜干涉原理</h3>
+<p>二向色镜是一种波长选择性光学滤光片，通过在透明基底（如<a href="/products/bk7-windows/">BK7玻璃</a>或<a href="/products/fused-silica-optical-windows/">熔融石英</a>）上沉积多层交替的高折射率和低折射率介电材料（通常为TiO<sub>2</sub>/SiO<sub>2</sub>或Ta<sub>2</sub>O<sub>5</sub>/SiO<sub>2</sub>）来制造。层厚被设计为使目标波长处的相长干涉产生高反射，而其他波长的相消干涉允许透射。</p>
+<p>其结果是具有极其尖锐光谱过渡的滤光片：反射率可以在10&ndash;20 nm的带宽内从&lt;5%变化到&gt;95%。这种陡峭性使二向色镜特别适合荧光应用，其中激发光谱和发射光谱可能仅相隔20&ndash;50 nm（斯托克斯位移）。</p>
+
+<h3>关键规格参数</h3>
+<table style="width:100%;border-collapse:collapse;">
+<tr style="background:#f1f5f9;"><th style="border:1px solid #e2e8f0;padding:8px;">参数</th><th style="border:1px solid #e2e8f0;padding:8px;">定义</th><th style="border:1px solid #e2e8f0;padding:8px;">典型范围</th><th style="border:1px solid #e2e8f0;padding:8px;">为何重要</th></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">截止波长（&lambda;<sub>e</sub>）</td><td style="border:1px solid #e2e8f0;padding:8px;">50%反射率处的波长（长通二向色镜）</td><td style="border:1px solid #e2e8f0;padding:8px;">400&ndash;1000 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">必须位于激发峰和发射峰之间</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">过渡带宽</td><td style="border:1px solid #e2e8f0;padding:8px;">5%到95%反射率的光谱宽度</td><td style="border:1px solid #e2e8f0;padding:8px;">10&ndash;40 nm</td><td style="border:1px solid #e2e8f0;padding:8px;">越窄=激发/发射分离越好</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">反射率（阻挡带）</td><td style="border:1px solid #e2e8f0;padding:8px;">激发区域的反射率</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;95%典型</td><td style="border:1px solid #e2e8f0;padding:8px;">越高=越多激发光到达样品</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">透射率（通带）</td><td style="border:1px solid #e2e8f0;padding:8px;">发射区域的透射率</td><td style="border:1px solid #e2e8f0;padding:8px;">&gt;90%典型</td><td style="border:1px solid #e2e8f0;padding:8px;">越高=越多发射信号到达探测器</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">光密度（OD）</td><td style="border:1px solid #e2e8f0;padding:8px;">阻挡区域中log<sub>10</sub>（入射/透射）</td><td style="border:1px solid #e2e8f0;padding:8px;">OD 3&ndash;6</td><td style="border:1px solid #e2e8f0;padding:8px;">越高=越少的激发光渗入探测器</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">入射角（AOI）</td><td style="border:1px solid #e2e8f0;padding:8px;">设计角度，通常45&deg;或0&deg;</td><td style="border:1px solid #e2e8f0;padding:8px;">45&deg; &plusmn; 2&deg;典型</td><td style="border:1px solid #e2e8f0;padding:8px;">非设计角度下截止波长蓝移</td></tr>
+<tr><td style="border:1px solid #e2e8f0;padding:8px;">基底材料</td><td style="border:1px solid #e2e8f0;padding:8px;">滤光片基底的玻璃类型</td><td style="border:1px solid #e2e8f0;padding:8px;">BK7、熔融石英、B270</td><td style="border:1px solid #e2e8f0;padding:8px;">影响透射范围、平面度和激光损伤阈值</td></tr>
+</table>
+
+<h2>荧光应用中二向色镜的类型</h2>
+
+<h3>单波段长通二向色镜</h3>
+<p>落射荧光显微镜中最常见的配置。长通二向色镜反射短波长（激发）并透射长波长（发射）。例如，495 nm长通二向色镜将蓝色激发光（&lt;495 nm）反射向GFP标记的样品，并将绿色荧光发射（&gt;495 nm）透射到相机或目镜。</p>
+<p>单波段二向色镜是宽场荧光显微镜中标准滤光片组的基本构建块。每个滤光片组包含一个<a href="/products/laser-line-filters/">窄带激发滤光片</a>、一个长通二向色镜和一个<a href="/products/laser-line-filters/">带通发射滤光片</a>。这三个组件的组合有时称为"滤光片组"或"滤光片块"。</p>
+
+<h3>多波段（双波段/三波段）二向色镜</h3>
+<p>多波段二向色镜在单个组件中具有多个反射带和多个透射带。双波段二向色镜可能同时反射488 nm（用于GFP激发）和561 nm（用于RFP激发），同时透射500&ndash;550 nm（GFP发射）和580&ndash;630 nm（RFP发射）。这使得无需移动部件或滤光片轮即可同时进行多色成像成为可能。</p>
+<p>其代价是复杂性增加：多波段设计有更多的光谱过渡，每一个都代表潜在的泄漏路径。过渡带宽和带间区域的光密度变得至关重要。对于要求苛刻的应用，可定制具有优化多波段曲线的<a href="/products/dichroic-filters/">二向色滤光片</a>。</p>
+
+<h3>多色镜（Polychroic）</h3>
+<p>多色镜是为3、4甚至6+荧光通道设计的二向色镜的特殊形式。它们常用于共聚焦显微镜和高通量筛选系统，其中光谱解混需要良好分离的激发/反射带。多色镜的光谱设计必须与面板中所有荧光团的发射光谱精确匹配，因此定制设计至关重要。</p>
+
+<h2>荧光显微镜滤光片组设计</h2>
+
+<h3>三组件滤光片组</h3>
+<p>完整的荧光滤光片组由三个必须作为系统协同工作的元件组成：</p>
+<ol>
+<li><strong>激发滤光片：</strong><a href="/products/laser-line-filters/">窄带干涉滤光片</a>（带通），从光源中选择激发波长。典型带宽：10&ndash;40 nm FWHM。激发滤光片定义了到达样品的光的光谱纯度。</li>
+<li><strong>二向色镜：</strong>将激发光引导向样品并将发射光引导向探测器的波长路由器。其截止波长必须位于激发和发射光谱之间的间隙中。</li>
+<li><strong>发射滤光片：</strong><a href="/products/laser-line-filters/">带通滤光片</a>，阻挡残余激发光并选择所需的发射带。发射滤光片的OD规格（通常在激发波长处为OD 4&ndash;6）决定了激发光渗透的最终抑制程度。</li>
+</ol>
+
+<h3>匹配滤光片组件</h3>
+<p>关键设计规则：激发滤光片的通带必须完全位于二向色镜的反射带内，发射滤光片的通带必须完全位于二向色镜的透射带内。此外，发射滤光片的阻挡范围必须在激发波长处达到至少OD 4（10,000:1抑制），以防止激发光到达探测器。</p>
+<p>在实践中，这意味着：</p>
+<ul>
+<li>对于470/40 nm激发滤光片（450&ndash;490 nm），使用截止波长&le;495 nm且反射带延伸至450 nm以下的二向色镜。</li>
+<li>对于525/50 nm发射滤光片（500&ndash;550 nm），二向色镜的透射带必须覆盖至少500&ndash;550 nm且透射率&gt;90%。</li>
+<li>发射滤光片必须在470 nm处阻挡到OD 6，以防止汞弧灯（在436 nm和546 nm附近有强谱线）的激发光渗透。</li>
+</ul>
+
+<h3>互补组件</h3>
+<p>除了核心滤光片组外，荧光系统通常需要额外的滤光：</p>
+<ul>
+<li><a href="/products/fixed-neutral-density-filters/">中性密度滤光片</a>控制激发强度以防止光漂白和光毒性。对于活细胞成像，OD 0.3&ndash;2.0的ND滤光片将激发功率降低50&ndash;99%，同时保持光谱平衡。</li>
+<li><a href="/products/cube-beamsplitters/">立方分束器</a>可用于多端口显微镜系统，将发射光同时路由到多个探测器（如相机+光谱仪）。</li>
+<li><a href="/products/beamsplitter-plates/">分束板</a>在定制荧光设置中用作取样反射镜，将部分发射光引导到次级检测路径。</li>
+</ul>
+
+<h2>多光谱成像：扩展滤光片挑战</h2>
+
+<h3>多光谱有何不同</h3>
+<p>多光谱成像通过在许多窄光谱带（通常5&ndash;30+个通道）中获取图像，超越了标准荧光。应用包括：</p>
+<ul>
+<li><strong>高光谱遥感：</strong>卫星和机载传感器使用<a href="/products/dichroic-filters/">二向色滤光片</a>阵列将入射光分成光谱带，用于植被分析、矿物识别和环境监测。</li>
+<li><strong>流式细胞术：</strong>现代细胞仪使用20+荧光通道，每个通道需要专用的二向色镜-滤光片对。光学设计必须最小化相邻通道之间的光谱串扰。</li>
+<li><strong>荧光寿命成像（FLIM）：</strong>时间分辨测量需要极其干净的光谱分离，以防止激发散射破坏衰减曲线。</li>
+<li><strong>半导体光致发光映射：</strong>晶圆级PL成像使用<a href="/products/laser-line-filters/">窄带滤光片</a>映射硅和化合物半导体晶圆上的成分变化。</li>
+</ul>
+
+<h3>角度敏感性：隐藏的规格</h3>
+<p>二向色镜是干涉滤光片，其光谱性能严格取决于入射角（AOI）。大多数二向色镜设计用于落射荧光配置中的45&deg;入射角。当实际AOI偏离设计角度时，整个光谱曲线向短波长方向移动（蓝移）。</p>
+<p>位移量遵循：&lambda;(&theta;) = &lambda;<sub>0</sub> &times; &radic;(1 - (sin&theta;/n<sub>eff</sub>)&sup2;)，其中n<sub>eff</sub>是镀膜堆栈的有效折射率（典型设计约为1.8&ndash;2.0）。在45&deg; &plusmn; 2&deg;时，典型的长通二向色镜每度位移约3&ndash;5 nm。在高NA显微镜物镜（NA &ge;0.9）中，光锥包括与法线成最大64&deg;角的光线，意味着有效AOI在整个光束中变化。这导致视场内截止波长的不均匀性。</p>
+
+<h2>五个常见的二向色镜选型错误</h2>
+
+<h3>1. 截止波长过于接近发射峰</h3>
+<p>如果二向色镜的截止波长在发射峰10 nm以内，大量发射信号会落在透射率仅为50&ndash;80%的过渡区域。这直接降低了信号水平并使定量不可靠。</p>
+<p><strong>解决方案：</strong>将截止波长放置在发射峰下方至少15&ndash;20 nm处。对于510 nm处的GFP发射峰，使用485&ndash;495 nm截止的二向色镜，而不是500 nm截止的。</p>
+
+<h3>2. 忽视发射滤光片OD要求</h3>
+<p>一个常见错误是在需要OD 5&ndash;6的应用中使用激发波长处OD 2&ndash;3的标准<a href="/products/laser-line-filters/">带通滤光片</a>。在低光应用中（单分子成像、弱表达细胞系），即使是OD 3的激发抑制也留下足够的背景来淹没荧光信号。</p>
+<p><strong>解决方案：</strong>对于要求苛刻的应用，指定硬镀膜的<a href="/products/laser-line-filters/">窄带干涉滤光片</a>，在激发波长处具有OD 6+阻挡。</p>
+
+<h3>3. 对激光和灯激发使用相同的二向色镜</h3>
+<p>弧灯激发具有宽而结构化的光谱。激光激发提供窄而强的谱线。为灯激发优化的二向色镜具有宽反射带，但如果激光波长落在过渡边缘附近，可能会泄漏激光功率。</p>
+<p><strong>解决方案：</strong>对于基于激光的系统，使用具有锐利、激光线特定反射带的<a href="/products/dichroic-mirrors/">二向色镜</a>。对于多激光系统，使用多陷波二向色镜同时反射所有激光线。</p>
+
+<h3>4. 忽视基底材料兼容性</h3>
+<p>标准BK7二向色镜适用于可见波长（400&ndash;700 nm）。然而，紫外荧光应用（DAPI、Hoechst在350&ndash;400 nm）需要熔融石英基底，因为BK7在380 nm以下显著吸收。</p>
+<p><strong>解决方案：</strong>对于紫外荧光（&lt;400 nm），指定<a href="/products/fused-silica-optical-windows/">熔融石英</a>基底二向色镜。对于可见光工作，标准BK7足够且更具成本效益。</p>
+
+<h3>5. 忽视镀膜的环境稳定性</h3>
+<p>软镀膜设计容易受到湿度引起的波长位移。在高湿度环境中，水蒸气被吸收进镀膜层会改变有效折射率，导致截止波长位移2&ndash;10 nm。</p>
+<p><strong>解决方案：</strong>在湿度变化的环境中指定硬镀膜（离子辅助沉积或IAD）二向色镜。硬镀膜在20&ndash;80%相对湿度范围内位移&lt;0.5 nm。</p>
+
+<h2>结论</h2>
+<p>二向色镜是每个荧光和多光谱成像系统的光谱骨干。其截止波长位置、过渡带宽和阻挡OD直接决定测量的信噪比、光谱纯度和定量精度。三组件滤光片组——激发滤光片、二向色镜、发射滤光片——必须作为匹配系统来设计，而不是从单个零件组装。</p>
+<p>恒鼎光为荧光和多光谱应用提供定制和目录<a href="/products/dichroic-mirrors/">二向色镜</a>、<a href="/products/dichroic-filters/">二向色滤光片</a>、<a href="/products/laser-line-filters/">窄带干涉滤光片</a>、<a href="/products/ir-bandpass-filters/">红外带通滤光片</a>和<a href="/products/fixed-neutral-density-filters/">中性密度滤光片</a>。联系我们的技术团队，告知您的荧光团面板和系统架构——我们将为您设计优化的滤光片组。</p>
+<p>相关指导，请探索我们的<a href="/blog/optical-filter-selection-guide/">光学滤光片选型指南</a>、<a href="/blog/optical-coating-types-explained/">光学镀膜类型</a>、<a href="/blog/optical-beamsplitter-selection-complete-guide/">分束器选型指南</a>、<a href="/blog/medical-device-optical-components-guide/">医疗器件光学指南</a>和<a href="/blog/spectroscopy-optics-component-selection-guide/">光谱学光学指南</a>。</p></p>
+        </div>
+
+        <!-- CTA Section -->
+        <div style="margin-top:48px;padding:32px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border-radius:12px;text-align:center;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:12px;" data-i18n="blog.cta.title">Need Help Selecting Dichroic Mirrors or Filters for Your System?</h2>
+            <p style="color:#475569;margin-bottom:20px;" data-i18n="blog.cta.description">PhotonEdge manufactures custom and catalog dichroic mirrors, interference filters, and filter sets for fluorescence microscopy, multispectral imaging, and spectroscopy. Tell us your fluorophore panel and system requirements &mdash; we will design the optimal filter solution.</p>
+            <a href="/contact.html" style="display:inline-block;background:#3b82f6;color:#fff;padding:12px 32px;border-radius:8px;text-decoration:none;font-weight:600;" data-i18n="blog.cta.button">Talk to an Optical Engineer</a>
+        </div>
+
+        <!-- Related Posts -->
+        <div style="margin-top:48px;">
+            <h2 style="font-size:22px;font-weight:700;color:#0f172a;margin-bottom:20px;" data-i18n="blog.related.title">Related Articles</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+                <a href="/blog/optical-filter-selection-guide/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Optical Filter Selection Guide</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Complete guide to bandpass, longpass, shortpass, and ND filters for optical systems.</p></a>
+                <a href="/blog/optical-beamsplitter-selection-complete-guide/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Beamsplitter Selection Guide</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">How to choose plate and cube beamsplitters for your application.</p></a>
+                <a href="/blog/medical-device-optical-components-guide/" style="padding:20px;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#334155;">
+                    <strong style="color:#0f172a;">Medical Device Optics Guide</strong>
+                    <p style="font-size:14px;color:#64748b;margin-top:8px;">Optical components for microscopy, endoscopy, and biomedical imaging systems.</p></a>
+            </div>
+        </div>
+    </article>
+
+    <div id="site-footer"></div>
+    <script>renderFooter();</script>
+
+    <!-- Language switch handling -->
+    <script>
+    (function() {
+        var params = window.location.search;
+        var langMatch = params.match(/[?&]lang=([^&]+)/);
+        if (langMatch && langMatch[1] === 'zh') {
+            var enContent = document.querySelector('[itemprop="articleBody"]');
+            var zhContent = document.getElementById('chinese-content');
+            if (enContent && zhContent) {
+                enContent.style.display = 'none';
+                zhContent.style.display = 'block';
+            }
+            document.documentElement.lang = 'zh';
+            var titleEl = document.querySelector('title');
+            if (titleEl) titleEl.textContent = '荧光显微镜与多光谱成像中的二向色镜与滤光片选型指南';
+        }
+    })();
+    </script>
+</body>
+</html>

@@ -186,4 +186,16 @@
   <url><loc>https://photonedgeoptics.com/blog/achromatic-doublet-lens-chromatic-aberration-guide/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/blog/optical-flats-surface-flatness-interferometry-guide/</loc><lastmod>2026-09-16</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/blog/aspherical-vs-spherical-lenses-aberration-correction-guide/</loc><lastmod>2026-09-19</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url>
+    <loc>https://www.photonedgeoptics.com/blog/optical-alignment-techniques-tools-retroreflectors-guide/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.photonedgeoptics.com/blog/dichroic-mirrors-filters-fluorescence-multispectral-guide/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
