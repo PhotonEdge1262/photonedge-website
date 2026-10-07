@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optical Engineering Consultation | Describe Your Requirement | PhotonEdge</title>
+    <title data-i18n="v153PageTitle">Ask an Optical Engineer | Organize Your Requirements | PhotonEdge</title>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/ai-optical-engineer.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
-    <meta name="description" content="Describe your optical requirement and our engineering team will provide component recommendations, material suggestions, and coating guidance. Free consultation from PhotonEdge.">
+    <meta name="description" content="Organize your optical requirements before submitting a quote request. Get a requirement summary with component, material, and coating guidance for engineering review.">
     <meta name="keywords" content="optical component advisor, lens recommendation, optical material selector, coating advisor, free optical tool, optical consultation">
-    <meta property="og:title" content="Optical Engineering Consultation | Describe Your Requirement | PhotonEdge">
-    <meta property="og:description" content="Describe your optical requirement and our engineering team will provide component recommendations, material suggestions, and coating guidance.">
+    <meta property="og:title" data-i18n="v153PageTitle" content="Ask an Optical Engineer | Organize Your Requirements | PhotonEdge">
+    <meta property="og:description" content="Organize your optical requirements and get a summary for engineering review. Component, material, and coating guidance included.">
     <meta property="og:url" content="https://photonedgeoptics.com/ai-optical-engineer.html">
     <link rel="canonical" href="https://photonedgeoptics.com/ai-optical-engineer.html">
     <link rel="stylesheet" href="/css/style.css">
@@ -200,8 +200,8 @@
     {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Optical Engineering Consultation",
-        "description": "Describe your optical application and get professional component recommendations for materials, coatings, and specifications.",
+        "name": "Ask an Optical Engineer",
+        "description": "Organize your optical requirements before submitting a quote request. Get a requirement summary with potential component, material, and coating guidance for engineering review.",
         "url": "https://photonedgeoptics.com/ai-optical-engineer.html",
         "applicationCategory": "DesignApplication",
         "operatingSystem": "Web Browser",
@@ -283,14 +283,14 @@
     </header>
     <!-- Hero -->
     <section class="ai-hero">
-        <h1>Tell Us Your Optical Requirement</h1>
-        <p>Describe your optical application. Get recommendations for materials, components, coatings, and specifications.</p>
+        <h1 data-i18n="v153HeroTitle">Ask an Optical Engineer</h1>
+        <p data-i18n="v153HeroDesc">Use this tool to organize your optical requirements before submitting a quote request. You will get a structured requirement summary that our engineering team can review.</p>
     </section>
 
     <div class="ai-container">
         <!-- Main Form -->
         <div class="ai-card">
-            <h2>Tell Us About Your Application</h2>
+            <h2 data-i18n="v153FormTitle">Organize Your Optical Requirements</h2>
             <form id="aiOpticalForm" onsubmit="return handleAIRecommend(event)">
                 <div class="ai-row">
                     <div class="ai-input-group">
@@ -347,22 +347,25 @@
                     <label for="aiDescription">Describe Your Requirements *</label>
                     <textarea id="aiDescription" required placeholder="Tell us about your optical system: what it does, key performance requirements, environment, any constraints (size, budget, timeline)..."></textarea>
                 </div>
-                <button type="submit" class="ai-submit-btn">Ask AI Optical Engineer</button>
+                <button type="submit" class="ai-submit-btn" data-i18n="v153SubmitBtn">Organize My Requirements</button>
             </form>
             
             <!-- AI Result -->
             <div class="ai-result" id="aiResult">
-                <h3>📋 Recommended Optical Solution</h3>
+                <h3 data-i18n="v153ResultTitle">📋 Your Requirement Summary</h3>
+                <div style="margin-bottom:16px;padding:12px 16px;background:#fef3c7;border-radius:8px;">
+                    <p data-i18n="v153Disclaimer" style="color:#78350f;font-size:13px;line-height:1.6;margin:0;"><strong>Disclaimer:</strong> This is a requirement-organizing tool. All suggestions are preliminary and subject to engineering review. Potential materials, coatings, and component types are provided for reference only and do not constitute guaranteed specifications.</p>
+                </div>
                 <div id="aiResultContent"></div>
                 <div style="margin-top:24px;padding:20px;background:white;border-radius:8px;border:1px solid #d1fae5;">
-                    <p style="font-size:15px;color:#374151;margin-bottom:16px;font-weight:600;">Get Detailed Engineering Review</p>
-                    <p style="font-size:14px;color:#6b7280;margin-bottom:16px;">Our engineering team can provide a detailed specification review, material selection analysis, and custom quote for your application.</p>
+                    <p data-i18n="v153CTATitle" style="font-size:15px;color:#374151;margin-bottom:16px;font-weight:600;">Send to Engineering Team</p>
+                    <p data-i18n="v153CTADesc" style="font-size:14px;color:#6b7280;margin-bottom:16px;">Submit your organized requirements to our engineering team for detailed specification review and a formal quote.</p>
                     <div class="ai-row">
                         <div class="ai-input-group">
                             <input type="email" id="aiEmail" placeholder="Your work email">
                         </div>
                         <div>
-                            <a href="/contact.html" class="ai-submit-btn" style="display:block;text-align:center;text-decoration:none;" onclick="if(document.getElementById('aiEmail').value){return true;}">Request Engineering Review</a>
+                            <a href="/contact.html" class="ai-submit-btn" style="display:block;text-align:center;text-decoration:none;" onclick="if(document.getElementById('aiEmail').value){return true;}" data-i18n="navCTA">Request a Quote</a>
                         </div>
                     </div>
                 </div>
@@ -404,7 +407,7 @@
     <div style="max-width:900px;margin:0 auto 60px;padding:0 20px;">
         <div class="ai-card" style="background:#f8fafc;text-align:center;">
             <h2>Prefer Guided Selection?</h2>
-            <p style="color:#6b7280;margin-bottom:20px;">Use our step-by-step Smart Product Advisor for component-by-component selection from our catalog.</p>
+            <p style="color:#6b7280;margin-bottom:20px;">Use our step-by-step Product Advisor for component-by-component selection from our catalog.</p>
             <a href="/product-advisor.html" style="display:inline-block;background:#1e3a5f;color:white;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:600;">Open Smart Product Advisor</a>
         </div>
     </div>
@@ -519,20 +522,60 @@
             'unsure': 'Based on your description, we recommend starting with a technical review to identify the optimal component type'
         };
 
-        var html = '<table>';
-        html += '<tr><th>Parameter</th><th>Recommendation</th></tr>';
-        html += '<tr><td><strong>Recommended Material</strong></td><td>' + mat.primary + '<br><small style="color:#6b7280;">' + mat.note + '</small></td></tr>';
-        html += '<tr><td><strong>Coating Type</strong></td><td>' + coat + '</td></tr>';
-        if (comp && compRecs[comp]) {
-            html += '<tr><td><strong>Component Type</strong></td><td>' + compRecs[comp] + '</td></tr>';
-        }
-        if (power) {
-            html += '<tr><td><strong>Power Consideration</strong></td><td>' + power + ' — LIDT and thermal management will be factored into specification</td></tr>';
-        }
-        html += '<tr><td><strong>Surface Quality</strong></td><td>40-20 (standard) or 20-10 (precision) per MIL-PRF-13830B</td></tr>';
-        html += '<tr><td><strong>Typical Lead Time</strong></td><td>Stock items: 1-3 days | Custom: 5-10 business days</td></tr>';
+        // Build missing info list
+        var missingInfo = [];
+        if (!desc || desc.length < 20) missingInfo.push('Detailed application description');
+        if (!comp || comp === 'unsure') missingInfo.push('Specific component type preference');
+        if (!power) missingInfo.push('Power/energy requirements (if laser application)');
+
+        var html = '<h4 style="color:#166534;margin-bottom:8px;">Requirement Summary</h4>';
+        html += '<table>';
+        html += '<tr><th>Parameter</th><th>Details</th></tr>';
+        if (app) html += '<tr><td>Application</td><td>' + document.getElementById('aiApplication').options[document.getElementById('aiApplication').selectedIndex].text + '</td></tr>';
+        if (wl) html += '<tr><td>Wavelength</td><td>' + document.getElementById('aiWavelength').options[document.getElementById('aiWavelength').selectedIndex].text + '</td></tr>';
+        if (comp) html += '<tr><td>Component</td><td>' + document.getElementById('aiComponent').options[document.getElementById('aiComponent').selectedIndex].text + '</td></tr>';
+        if (power) html += '<tr><td>Power/Energy</td><td>' + power + '</td></tr>';
+        if (desc) html += '<tr><td>Description</td><td>' + desc + '</td></tr>';
         html += '</table>';
-        html += '<p style="margin-top:16px;font-size:14px;color:#374151;"><strong>Next Step:</strong> For a detailed specification and quote, submit your requirements for engineering review. Our team will respond within 24 hours with material verification, coating design options, and DFM feedback.</p>';
+
+        html += '<h4 style="color:#166534;margin:16px 0 8px;">Possible Component Type</h4>';
+        if (comp && compRecs[comp]) {
+            html += '<p style="font-size:14px;color:#374151;margin:0;">' + compRecs[comp] + '</p>';
+        } else {
+            html += '<p style="font-size:14px;color:#374151;margin:0;">Based on your application, the optimal component type may vary. Our engineering team can help identify the best option.</p>';
+        }
+
+        html += '<h4 style="color:#166534;margin:16px 0 8px;">Potential Material Options</h4>';
+        html += '<p style="font-size:14px;color:#374151;margin:0;"><strong>' + mat.primary + '</strong><br><small style="color:#6b7280;">' + mat.note + '</small></p>';
+
+        html += '<h4 style="color:#166534;margin:16px 0 8px;">Coating Considerations</h4>';
+        html += '<p style="font-size:14px;color:#374151;margin:0;">' + coat + '</p>';
+
+        html += '<h4 style="color:#166534;margin:16px 0 8px;">Surface Quality (Typical)</h4>';
+        html += '<p style="font-size:14px;color:#374151;margin:0;">40-20 (standard) or 20-10 (precision) per MIL-PRF-13830B — exact specification subject to engineering review.</p>';
+
+        html += '<h4 style="color:#166534;margin:16px 0 8px;">Typical Lead Time</h4>';
+        html += '<p style="font-size:14px;color:#374151;margin:0;">Stock items: 1-3 days | Custom: 5-10 business days — actual lead time may vary based on specifications and order quantity.</p>';
+
+        if (missingInfo.length > 0) {
+            html += '<h4 style="color:#92400e;margin:16px 0 8px;">Missing Information</h4>';
+            html += '<ul style="font-size:14px;color:#374151;margin:0;padding-left:20px;">';
+            for (var i = 0; i < missingInfo.length; i++) {
+                html += '<li>' + missingInfo[i] + '</li>';
+            }
+            html += '</ul>';
+        }
+
+        html += '<h4 style="color:#92400e;margin:16px 0 8px;">Questions for Engineering Review</h4>';
+        html += '<ul style="font-size:14px;color:#374151;margin:0;padding-left:20px;">';
+        html += '<li>What are the exact dimensional requirements (diameter, focal length, etc.)?</li>';
+        html += '<li>Are there specific environmental conditions (temperature, humidity, vibration)?</li>';
+        html += '<li>What tolerance levels are required for surface figure and roughness?</li>';
+        html += '<li>Do you have an existing drawing or specification document?</li>';
+        html += '<li>What is the estimated order quantity?</li>';
+        html += '</ul>';
+
+        html += '<p style="margin-top:16px;font-size:14px;color:#374151;"><strong>Next Steps:</strong> Review the summary above and submit your requirements for engineering review. All recommendations are preliminary and subject to engineering review. Our team will respond within 24 hours.</p>';
 
         document.getElementById('aiResultContent').innerHTML = html;
         document.getElementById('aiResult').style.display = 'block';
@@ -585,7 +628,7 @@
                 </div>
             </div>
             <div style="text-align:center; margin-top:30px; padding:16px 24px; background:#fef3c7; border-radius:8px;">
-                <p style="color:#78350f; font-size:13px; line-height:1.6; margin:0;"><strong>Important:</strong> These recommendations are for design guidance only and do not constitute guaranteed specifications. All critical parameters must be verified through our formal quotation and engineering review process.</p>
+                <p style="color:#78350f; font-size:13px; line-height:1.6; margin:0;"><strong>Important:</strong> This tool helps organize your optical requirements. All suggestions are preliminary and subject to engineering review. This does not constitute a final engineering review, guaranteed specification, or final quotation. All critical parameters must be verified through our formal quotation and engineering review process.</p>
             </div>
         </div>
     </section>
