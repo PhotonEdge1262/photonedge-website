@@ -35,6 +35,14 @@
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
     <meta name="robots" content="noindex, nofollow">
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/404.html">
     <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/404.html?lang=zh">
@@ -49,6 +57,8 @@
                 </picture>
             </a>
             <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                
                 <ul class="nav-list">
                     <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
                     <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
@@ -69,21 +79,41 @@
     <section class="container" style="text-align:center; padding:100px 20px; min-height:60vh;">
         <h1 style="font-size:6rem; color:#3b82f6; margin-bottom:10px;" data-i18n="error404Code">404</h1>
         <h2 style="font-size:1.8rem; margin-bottom:20px;" data-i18n="error404Title">Page Not Found</h2>
-        <p style="font-size:1.1rem; color:#64748b; max-width:600px; margin:0 auto 40px;" data-i18n="error404Desc">The page you're looking for doesn't exist or has been moved. Try searching for products or go back to homepage.</p>
-        <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
+        <p style="font-size:1.1rem; color:#64748b; max-width:600px; margin:0 auto 40px;" data-i18n="error404Desc">The page you're looking for doesn't exist or has been moved. Here are some helpful links:</p>
+        <div style="display:flex; gap:15px; justify-content:center; flex-wrap:wrap; margin-bottom:30px;">
             <a href="/" class="btn btn-primary" data-i18n="goHome">Go to Homepage</a>
             <a href="/products.html" class="btn btn-secondary" data-i18n="viewAllProducts">View All Products</a>
             <a href="/contact.html" class="btn btn-secondary" data-i18n="navContact">Contact Us</a>
+        </div>
+        <div style="max-width:500px; margin:0 auto;">
+            <p style="color:#64748b; margin-bottom:16px;">Popular pages:</p>
+            <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; font-size:14px;">
+                <a href="/knowledge-center/" style="color:#3b82f6; text-decoration:none;">Knowledge Center</a>
+                <span style="color:#cbd5e1;">|</span>
+                <a href="/calculator.html" style="color:#3b82f6; text-decoration:none;">Optical Calculators</a>
+                <span style="color:#cbd5e1;">|</span>
+                <a href="/blog.html" style="color:#3b82f6; text-decoration:none;">Blog</a>
+                <span style="color:#cbd5e1;">|</span>
+                <a href="/downloads.html" style="color:#3b82f6; text-decoration:none;">Downloads</a>
+                <span style="color:#cbd5e1;">|</span>
+                <a href="/faq.html" style="color:#3b82f6; text-decoration:none;">FAQ</a>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container" style="text-align:center; padding:30px 0;">
-            <p>&copy; 2025 PhotonEdge. <span data-i18n="copyright">All Rights Reserved</span></p>
+            <p>&copy; 2025-2026 PhotonEdge. <span data-i18n="copyright">All Rights Reserved</span></p>
         </div>
     </footer>
 
     <script src="/js/translations.js"></script>
+    <script>
+    function toggleMobileMenu() {
+        var navList = document.querySelector('.nav-list');
+        if (navList) { navList.classList.toggle('active'); }
+    }
+    </script>
     <script src="/js/chatbot.js"></script>
 </body>
 </html>

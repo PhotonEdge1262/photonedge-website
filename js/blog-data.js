@@ -162,7 +162,7 @@ var BLOG_POSTS = [
     "title": "Why PhotonEdge is Your Trusted Precision Optics Partner",
     "slug": "photonedge-trusted-optics-partner",
     "url": "/blog/photonedge-trusted-optics-partner/",
-    "excerpt": "Discover why over 500 global clients trust PhotonEdge as their precision optics supplier. ISO 9001:2015 certified manufacturing, custom solutions, and fast delivery from our Beijing facility.",
+    "excerpt": "Discover why over 500 global clients trust PhotonEdge as their precision optics supplier. Quality-aligned manufacturing, custom solutions, and fast delivery from our Beijing facility.",
     "category": "Company",
     "date": "2025-04-05",
     "readTime": "5 min",

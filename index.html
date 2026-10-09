@@ -12,7 +12,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhotonEdge | Precision Optical Components for Advanced Photonics Systems</title>
-    <meta name="description" content="Custom optics from prototype to volume production. Material selection, coating design, full inspection. ISO 9001, ISO 13485 &  certified. 48h prototype turnaround. Delivered worldwide.">
+    <meta name="description" content="Custom optics from prototype to volume production. Material selection, coating design, full inspection. Quality aligned with ISO 9001. Engineering support from prototype to production. Delivered worldwide.">
     <meta name="keywords" content="custom optics, optical engineering, prototype optics, precision optical components, laser optics, semiconductor optics, PhotonEdge, 定制光学,光学工程,精密光学元件">
     <meta property="og:title" content="PhotonEdge | Precision Optical Components for Advanced Photonics Systems">
     <meta property="og:description" content="Custom lenses, windows, mirrors and optical assemblies for laser, semiconductor, medical and research applications.">
@@ -156,7 +156,7 @@
                     <div class="trust-divider"></div>
                     <div class="trust-item">
                         <span class="trust-number">ISO 9001</span>
-                        <span class="trust-label">Quality System</span>
+                        <span class="trust-label">Quality Aligned</span>
                     </div>
                     <div class="trust-divider"></div>
                     <div class="trust-item">
@@ -166,9 +166,9 @@
                 </div>
                 <!-- CTA Buttons -->
                 <div class="hero-btns v90-hero-btns">
-                    <a href="/ai-optical-engineer.html" class="btn btn-primary" data-i18n="v90HeroCTA1">Ask AI Optical Engineer</a>
-                    <a href="/contact.html" class="btn btn-secondary" data-i18n="v90HeroCTA2">Request a Quote</a>
+                    <a href="/contact.html" class="btn btn-primary" data-i18n="v90HeroCTA2">Request a Quote</a>
                     <a href="/products.html" class="btn btn-secondary" style="border-color:rgba(255,255,255,0.4);color:rgba(255,255,255,0.85);">Browse Components &rarr;</a>
+                    <a href="/ai-optical-engineer.html" class="btn btn-secondary" data-i18n="v90HeroCTA1">Ask AI Optical Engineer</a>
                 </div>
                 <p style="font-size:14px;color:rgba(176,196,222,0.7);font-style:italic;margin-top:16px;">Specify what your system needs &mdash; not what the catalog says.</p>
             </div>
@@ -451,9 +451,9 @@
                 <p data-i18n="v90Why2Desc">From standard BK7 to exotic IR materials. We select the right material for your wavelength, power and environment.</p>
             </div>
             <div class="v90-why-card">
-                <div class="v90-why-number">ISO</div>
+                <div class="v90-why-number">QC</div>
                 <h3 data-i18n="v90Why3Title">Quality Management System</h3>
-                <p data-i18n="v90Why3Desc">ISO 9001:2015 certified. Every component inspected with laser interferometry before shipment.</p>
+                <p data-i18n="v90Why3Desc">Quality system aligned with ISO 9001:2015. Every component inspected with laser interferometry before shipment.</p>
             </div>
             <div class="v90-why-card">
                 <div class="v90-why-number">Custom</div>
@@ -468,9 +468,9 @@
 <section class="v90-manufacturing" style="padding: 80px 0; background: #ffffff;">
     <div class="container">
         <div style="text-align: center; margin-bottom: 50px;">
-            <span class="v90-section-tag" data-i18n="v90MfgTag">Manufacturing</span>
-            <h2 class="v90-section-title" data-i18n="v90MfgTitle">How Precision Optics Are Made</h2>
-            <p class="v90-section-subtitle" data-i18n="v90MfgSubtitle">Every optic goes through a controlled 7-step process. Skip a step and you compromise quality.</p>
+            <span class="v90-section-tag" data-i18n="v90MfgTag">Engineering Process</span>
+            <h2 class="v90-section-title" data-i18n="v90MfgTitle">How We Engineer Your Optical Components</h2>
+            <p class="v90-section-subtitle" data-i18n="v90MfgSubtitle">From specification review to final inspection — every project follows a controlled 7-step engineering process.</p>
         </div>
         <div class="v90-mfg-steps">
             <div class="v90-mfg-step">
@@ -709,7 +709,7 @@
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
                 <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS & REACH</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">Quality aligned with ISO 9001:2015 | RoHS & REACH</p>
             </div>
             <div class="footer-col">
                 <h4>Products</h4>
@@ -747,9 +747,9 @@
                 <h4 data-i18n="footerResources">Resources</h4>
                 <ul>
                     <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/">Application Notes</a></li>
                     <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
                     <li><a href="/calculator.html" data-i18n="menuCalculators">Calculators</a></li>
-                    <li><a href="/materials.html" data-i18n="menuMaterials">Materials Database</a></li>
                     <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
                 </ul>
             </div>
@@ -1011,188 +1011,8 @@ if (document.readyState === 'loading') {
 }
 </script>
 
-<script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderV90Knowledge);
-} else {
-    renderV90Knowledge();
-}
-</script>
 
-<script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderV90Knowledge);
-} else {
-    renderV90Knowledge();
-}
-</script>
 
-<script>
-function renderV90Knowledge() {
-    var grid = document.getElementById('v90KnowledgeGrid');
-    if (!grid | typeof BLOG_POSTS === 'undefined') return;
-    var useZh = localStorage.getItem('lang') === 'zh';
-    // Featured slugs for homepage
-    var featuredSlugs = [
-        'laser-damage-threshold-guide',
-        'bk7-vs-uv-fused-silica',
-        'optical-beamsplitter-selection-complete-guide'
-    ];
-    var html = '';
-    var count = 0;
-    for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-        var post = BLOG_POSTS[i];
-        // Use featured first, then fall back to latest
-        if (featuredSlugs.indexOf(post.slug) === -1 && count < featuredSlugs.length) continue;
-        var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-        var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-        var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-        if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-        html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-        html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-        html += '<h3>' + postTitle + '</h3>';
-        html += '<p>' + postExcerpt + '</p>';
-        html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-        html += '</a>';
-        count++;
-    }
-    // If we didn't get 3 from featured, grab latest
-    if (count < 3) {
-        for (var i = 0; i < BLOG_POSTS.length && count < 3; i++) {
-            var post = BLOG_POSTS[i];
-            var alreadyFeatured = false;
-            // Check if already rendered
-            for (var j = 0; j < featuredSlugs.length; j++) {
-                if (featuredSlugs[j] === post.slug) { alreadyFeatured = true; break; }
-            }
-            if (alreadyFeatured) continue;
-            var postTitle = useZh && post.titleZh ? post.titleZh : post.title;
-            var postExcerpt = useZh && post.excerptZh ? post.excerptZh : post.excerpt;
-            var postCategory = useZh && post.categoryZh ? post.categoryZh : post.category;
-            if (postExcerpt.length > 150) postExcerpt = postExcerpt.substring(0, 150) + '...';
-            html += '<a href="/blog/' + post.slug + '/" class="v90-kb-card">';
-            html += '<div class="v90-kb-cat">' + postCategory + '</div>';
-            html += '<h3>' + postTitle + '</h3>';
-            html += '<p>' + postExcerpt + '</p>';
-            html += '<span class="v90-kb-link">Read Article &rarr;</span>';
-            html += '</a>';
-            count++;
-        }
-    }
-    grid.innerHTML = html;
-}
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', renderV90Knowledge);
-} else {
-    renderV90Knowledge();
-}
-</script>
 <script src="/js/chatbot.js"></script>
 </body>
 </html>

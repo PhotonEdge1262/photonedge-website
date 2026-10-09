@@ -65,7 +65,7 @@ var PhotonEdgeChatbot = (function() {
                 zh: '标准精度：面形质量40-20划痕 digs，面形精度λ/4 @ 633nm，偏心差< 3弧分。精密选项可达10-5划痕digs，λ/20面形精度。'
             },
             'certification': {
-                en: 'PhotonEdge is ISO 9001:2015 certified. We provide inspection reports including interferometer surface maps, spectrophotometer curves, and dimensional data. Certificates of Compliance (CoC) are provided with every shipment.',
+                en: 'PhotonEdge quality management processes are aligned with ISO 9001 standards. We provide inspection reports including interferometer surface maps, spectrophotometer curves, and dimensional data. Certificates of Compliance (CoC) are provided with every shipment.',
                 zh: '恒鼎光通过ISO 9001:2015认证。我们提供干涉仪面形图、分光光度计曲线和尺寸检测数据等检验报告。每批货物附带合格证书(CoC)。'
             },
             'warranty': {

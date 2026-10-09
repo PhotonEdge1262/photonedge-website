@@ -11,6 +11,16 @@
     <meta property="og:url" content="https://photonedgeoptics.com/ai-optical-engineer.html">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://photonedgeoptics.com/ai-optical-engineer.html">
+    <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/ai-optical-engineer.html">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/ai-optical-engineer.html?lang=zh">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6J791MXZY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-E6J791MXZY');
+    </script>
     <link rel="stylesheet" href="/css/style.css">
     <style>
         .ai-hero {
@@ -216,6 +226,32 @@
         }
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://photonedgeoptics.com/"},
+            {"@type": "ListItem", "position": 2, "name": "AI Optical Engineer", "item": "https://photonedgeoptics.com/ai-optical-engineer.html"}
+        ]
+    }
+    </script>
+    <link rel="stylesheet" href="/css/chatbot.css">
+
+    <!-- Baidu Search Auto Push -->
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            } else {
+                bp.src = 'https://push.zhangzifan.com/linksubmit/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
 </head>
 <body>
 <header class="header">
@@ -321,6 +357,11 @@
                 </div>
                 <button type="submit" class="ai-submit-btn">Get Optical Recommendation →</button>
             </form>
+            <div style="margin-top:16px;padding:14px 18px;background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;">
+                <p style="font-size:13px;color:#0369a1;margin:0;line-height:1.6;">
+                    <strong>&#128274; Privacy Notice:</strong> All information you provide is used solely for generating component recommendations. Your specifications and application details are confidential and will not be shared with third parties. No data is stored permanently.
+                </p>
+            </div>
             
             <!-- AI Result -->
             <div class="ai-result" id="aiResult">
@@ -387,7 +428,7 @@
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
                 <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">ISO 9001:2015 | ISO 13485 | RoHS & REACH</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);" data-i18n="footerIsoCert">Quality aligned with ISO 9001:2015 | RoHS & REACH</p>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="navProducts">Products</h4>
@@ -489,8 +530,8 @@
         var desc = document.getElementById('aiDescription').value;
         var power = document.getElementById('aiPower').value;
 
-        var mat = materialDB[wl] | materialDB['vis'];
-        var coat = coatingDB[app] | coatingDB['other'];
+        var mat = materialDB[wl] || materialDB['vis'];
+        var coat = coatingDB[app] || coatingDB['other'];
 
         var compRecs = {
             'lens': 'Plano-Convex / Aspheric / Achromatic Doublet (depending on imaging vs. beam shaping requirements)',
