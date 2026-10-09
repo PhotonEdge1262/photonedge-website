@@ -19,7 +19,7 @@
     <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/blog/machine-vision-lens-selection-guide/">
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/machine-vision-lens-selection-guide/">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/machine-vision-lens-selection-guide/?lang=zh">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -104,48 +104,26 @@
 </head>
 <body>
 <header class="header">
-        <div class="container">
-            <a href="/" class="logo">
-    <picture>
-        <source srcset="/images/logo.webp" type="image/webp">
-        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
-    </picture>
-</a>
-            <nav class="nav">
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
-                <ul class="nav-list">
-                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
-                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
-                    <li><a href="/custom-optics.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
-                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
-                    <li class="nav-dropdown">
-                        <a href="#" class="nav-link" data-i18n="navResources">Resources &#9662;</a>
-                        <div class="dropdown-menu">
-                            <a href="/knowledge-center/" class="dropdown-item" data-i18n="navKnowledgeCenter"><span class="dropdown-icon">&#128218;</span> Knowledge Center</a>
-                            <a href="/application-notes/" class="dropdown-item" data-i18n="navApplicationNotes"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
-                            <a href="/materials.html" class="dropdown-item" data-i18n="navMaterials"><span class="dropdown-icon">&#129514;</span> Materials Guide</a>
-                            <a href="/coatings/" class="dropdown-item" data-i18n="navCoatings"><span class="dropdown-icon">&#128300;</span> Coating Database</a>
-                            <a href="/faq.html" class="dropdown-item" data-i18n="navFAQ"><span class="dropdown-icon">&#10067;</span> FAQ</a>
-                            <a href="/blog.html" class="dropdown-item" data-i18n="navBlog"><span class="dropdown-icon">&#128221;</span> Blog</a>
-                        </div>
-                    </li>
-                    <li class="nav-dropdown">
-                        <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
-                        <div class="dropdown-menu">
-                            <a href="/about.html" class="dropdown-item" data-i18n="navAboutPhotonEdge"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
-                            <a href="/quality-assurance.html" class="dropdown-item" data-i18n="navQualityDoc"><span class="dropdown-icon">&#9989;</span> Quality &amp; Documentation</a>
-                            <a href="/case-studies.html" class="dropdown-item" data-i18n="navCaseStudies"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="lang-switcher">
-                    <button class="lang-btn notranslate active">EN</button>
-                    <a href="/zh/" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
-                </div>
-                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
-            </nav>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="/images/logo.png" alt="PhotonEdge" width="160" height="40">
+        </a>
+        <nav class="nav">
+            <a href="/" data-i18n="navHome">Home</a>
+            <a href="/products.html" data-i18n="navProducts">Products</a>
+            <a href="/about.html" data-i18n="navAbout">About</a>
+            <a href="/blog.html" data-i18n="navBlog">Blog</a>
+            <a href="/news.html" data-i18n="navNews">News</a>
+            <a href="/contact.html" data-i18n="navContact">Contact</a>
+            <a href="/faq.html" data-i18n="navFaq">FAQ</a>
+        </nav>
+        <div class="header-actions">
+            <button onclick="toggleLanguage()" class="lang-btn" id="langBtn">中文</button>
+            <a href="/cart.html" class="cart-btn" data-i18n="navCart">Cart</a>
+            <button onclick="toggleMobileMenu()" class="mobile-menu-btn">☰</button>
         </div>
-    </header>
+    </div>
+</header>
 
 <main class="blog-article">
     <div class="article-header">
@@ -222,7 +200,7 @@
 <p>The lens material affects transmission range, refractive index, and thermal stability:</p>
 <ul>
 <li><strong>BK7 (350 nm – 2.0 um):</strong> The standard material for visible and NIR machine vision. Excellent homogeneity, low cost, and wide availability. Suitable for 95% of machine vision applications. <a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a> and <a href="/products/bk7-c-lenses/">BK7 C-Lenses</a> cover the majority of needs.</li>
-<li><strong>UV Fused Silica (185 nm – 2.5 um):</strong> Required for UV fluorescence inspection and short-wavelength applications. Lower CTE (0.55 × 10<sup>-6</sup>/°C vs 7.1 × 10<sup>-6</sup>/°C for BK7) provides superior thermal stability. <a href="/products/fused-silica-plano-convex-lenses/">UV Fused Silica Plano-Convex Lenses</a> are essential for DUV and UV inspection systems.</li>
+<li><strong>UV Fused Silica (185 nm – 2.5 um):</strong> Required for UV fluorescence inspection and short-wavelength applications. Lower CTE (0.55 × 10<sup>-6</sup>/°C vs 7.1 × 10<sup>-6</sup>/°C for BK7) provides superior thermal stability. <a href="/products/uv-fused-silica-plano-convex/">UV Fused Silica Plano-Convex Lenses</a> are essential for DUV and UV inspection systems.</li>
 </ul>
 
 <h3>Anti-Reflection Coating</h3>
@@ -250,24 +228,56 @@
 <li><a href="/products/bk7-plano-convex/">BK7 Plano-Convex Lenses</a> — Cost-effective focusing and collimation for monochromatic vision systems. The most versatile singlet lens for LED-illuminated measurement tasks.</li>
 <li><a href="/products/aspherical-lenses/">Aspherical Lenses</a> — Diffraction-limited on-axis performance with zero spherical aberration in a compact form factor. Ideal for space-constrained vision heads and high-resolution projection optics.</li>
 <li><a href="/products/bk7-c-lenses/">BK7 C-Lenses</a> — C-mount compatible lenses for standard industrial cameras. Pre-designed for popular sensor formats and working distances.</li>
-<li><a href="/products/fused-silica-plano-convex-lenses/">UV Fused Silica Plano-Convex Lenses</a> — For UV fluorescence inspection and thermally demanding environments. Superior thermal stability and UV transmission.</li>
+<li><a href="/products/uv-fused-silica-plano-convex/">UV Fused Silica Plano-Convex Lenses</a> — For UV fluorescence inspection and thermally demanding environments. Superior thermal stability and UV transmission.</li>
 </ul>
 
 <h2>Conclusion</h2>
 <p>Choosing the right lens for a machine vision system requires understanding the specific optical demands of your inspection task: resolution requirements driven by sensor pixel pitch, distortion limits imposed by measurement accuracy, and wavelength considerations determined by your illumination strategy. By matching lens MTF to sensor resolution, selecting appropriate distortion correction, and choosing the right material and coating for your operating conditions, you can ensure your vision system delivers accurate, repeatable results.</p>
-<p>The cost of getting lens selection wrong — missed defects, inaccurate measurements, and production downtime — far exceeds the cost of consulting with an optical specialist before purchase. <a href="/contact.html">Talk to an Optical Engineer</a> for application-specific lens selection guidance and custom optical design support.</p>
+<p>The cost of getting lens selection wrong — missed defects, inaccurate measurements, and production downtime — far exceeds the cost of consulting with an optical specialist before purchase. <a href="/contact.html">Contact PhotonEdge's technical team</a> for application-specific lens selection guidance and custom optical design support.</p>
     </div>
 
-    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/achromatic-doublet/" style="color:#2563eb;text-decoration:none">Achromatic Doublet Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none">BK7 Plano-Convex Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/aspherical-lenses/" style="color:#2563eb;text-decoration:none">Aspherical Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-c-lenses/" style="color:#2563eb;text-decoration:none">BK7 C-Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/fused-silica-plano-convex-lenses/" style="color:#2563eb;text-decoration:none">UV Fused Silica Plano-Convex Lenses</a></li></ul></div>
+    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/achromatic-doublet/" style="color:#2563eb;text-decoration:none">Achromatic Doublet Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none">BK7 Plano-Convex Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/aspherical-lenses/" style="color:#2563eb;text-decoration:none">Aspherical Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-c-lenses/" style="color:#2563eb;text-decoration:none">BK7 C-Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/uv-fused-silica-plano-convex/" style="color:#2563eb;text-decoration:none">UV Fused Silica Plano-Convex Lenses</a></li></ul></div>
 
     <div class="article-cta">
         <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
         <p data-i18n="blogCtaDesc">PhotonEdge offers precision optical components with competitive pricing and fast delivery. Contact us for a free quote.</p>
-        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request a Quote</a>
+        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request Quote</a>
     </div>
 </main>
 
-
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footerProducts">Products</h4>
+                <a href="/products.html?category=Optical+Lenses" data-i18n="footerLenses">Optical Lenses</a>
+                <a href="/products.html?category=Optical+Windows" data-i18n="footerWindows">Optical Windows</a>
+                <a href="/products.html?category=Optical+Mirrors" data-i18n="footerMirrors">Optical Mirrors</a>
+                <a href="/products.html?category=Optical+Prisms" data-i18n="footerPrisms">Optical Prisms</a>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <a href="/about.html" data-i18n="navAbout">About</a>
+                <a href="/blog.html" data-i18n="navBlog">Blog</a>
+                <a href="/news.html" data-i18n="navNews">News</a>
+                <a href="/contact.html" data-i18n="navContact">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4 data-i18n="footerSupport">Support</h4>
+                <a href="/faq.html" data-i18n="navFaq">FAQ</a>
+                <a href="/calculator.html" data-i18n="navCalculator">Calculator</a>
+                <a href="/contact.html" data-i18n="footerGetQuote">Get Quote</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024-2026 Beijing Hengdingguang Technology Co., Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
 <script src="/js/main.js"></script>
 <script src="/js/translations.js"></script>
@@ -280,60 +290,5 @@ function toggleMobileMenu() {
     }
 }
 </script>
-    <footer class="footer">
-    <div class="container">
-        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
-            <div class="footer-brand">
-                <h3>PhotonEdge</h3>
-                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
-                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="navProducts">Products</h4>
-                <ul>
-                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
-                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
-                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
-                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
-                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
-                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
-                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="navResources">Resources</h4>
-                <ul>
-                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
-                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
-                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
-                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
-                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4 data-i18n="footerCompany">Company</h4>
-                <ul>
-                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
-                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
-                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
-                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality Assurance</a></li>
-                    <li><a href="/evidence.html" data-i18n="navEvidence">Evidence Center</a></li>
-                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
-            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
-            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
-            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
-            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
-        </div>
-        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
-            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
-        </div>
-    </div>
-</footer>
 </body>
 </html>

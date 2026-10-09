@@ -239,7 +239,7 @@ var PhotonEdgeChatbot = (function() {
                 phone: { label: 'Phone / WhatsApp', placeholder: '+1-234-567-8900', required: false },
                 requirement: { label: 'Requirements Summary', placeholder: 'Brief description of your needs...', required: false }
             },
-            submit: 'Submit & Request a Quote',
+            submit: 'Submit & Get Quote',
             success: 'Thank you! We\'ve received your information and will contact you within 24 hours.'
         },
         zh: {
@@ -339,11 +339,6 @@ var PhotonEdgeChatbot = (function() {
                 '<div class="pe-chatbot-input-area" id="peChatbotInputArea" style="display:none;">' +
                     '<input type="text" class="pe-chatbot-input" id="peChatbotInput" placeholder="Type your message..." />' +
                     '<button class="pe-chatbot-send" id="peChatbotSend">➤</button>' +
-                '</div>' +
-                
-                '<!-- AI Disclaimer Footer -->' +
-                '<div class="pe-chatbot-disclaimer">' +
-                    '<span>AI-generated content is for reference only. Critical specifications and quotations must be confirmed through our formal engineering review process.</span>' +
                 '</div>' +
             '</div>';
 
@@ -710,7 +705,7 @@ var PhotonEdgeChatbot = (function() {
                         '<div class="pe-chatbot-product-name">' + name + '</div>' +
                         '<div class="pe-chatbot-product-category">' + p.category + '</div>' +
                         '<a href="/contact.html?product=' + encodeURIComponent(p.slug) + '" class="pe-chatbot-product-link" onclick="PhotonEdgeChatbot.trackEvent(\'product_recommendation_click\', {product: \'' + p.slug + '\'})">' + 
-                        (lang === 'zh' ? '查看详情  ' : 'View Details  ') + '</a>' +
+                        (lang === 'zh' ? '查看详情 →' : 'View Details →') + '</a>' +
                     '</div>';
                 }
                 html += '</div>';
