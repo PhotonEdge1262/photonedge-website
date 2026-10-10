@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://photonedgeoptics.com/404.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/about.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/ai-optical-engineer.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/application-notes/ar-coating-specification-multi-wavelength/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -65,7 +64,6 @@
   <url><loc>https://photonedgeoptics.com/blog/uv-fused-silica-semiconductor-optics-guide/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/blog/uv-fused-silica-vs-bk7-material-guide/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/calculator.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://photonedgeoptics.com/cart.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/case-studies.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/coatings/ar-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/coatings/bbar-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -116,7 +114,6 @@
   <url><loc>https://photonedgeoptics.com/news/understanding-laser-damage-threshold-ldt-for-optical-components/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/optomechanics.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/product-advisor.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://photonedgeoptics.com/product-detail.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/products.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://photonedgeoptics.com/products/1064nm-laser-line-mirrors/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://photonedgeoptics.com/products/achromatic-doublet/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -244,29 +241,11 @@
   <url><loc>https://photonedgeoptics.com/zh/about.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/applications.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/case-studies.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/ar-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/bbar-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/dichroic-filters/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/hard-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/hr-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/ir-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/laser-line-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/coatings/metallic-coatings/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/contact.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/custom-optics.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/evidence.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/faq.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/bk7/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/borosilicate/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/caf2/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/germanium/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/magnesium-fluoride/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/sapphire/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/silicon/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/uv-fused-silica/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/zinc-sulfide/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://photonedgeoptics.com/zh/materials/znse/</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/products.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://photonedgeoptics.com/zh/quality.html</loc><lastmod>2026-10-09</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>

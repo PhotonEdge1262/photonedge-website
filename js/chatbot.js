@@ -33,11 +33,11 @@ var PhotonEdgeChatbot = (function() {
     var KB = {
         faq: {
             'lead-time': {
-                en: 'Standard in-stock components ship within 3-5 business days. Custom manufactured optics typically take 2-4 weeks depending on specifications and coating requirements. Rush orders may be available for urgent requirements.',
-                zh: '标准库存元件3-5个工作日发货。定制光学元件通常需要2-4周，具体取决于规格和镀膜要求。紧急订单可加急处理。'
+                en: 'Standard catalog items: 1-2 weeks. Custom specifications: 2-4 weeks depending on complexity and material availability. Complex custom optics: 4-6 weeks depending on specifications and production scheduling. All lead times are estimated, subject to final confirmation based on specifications and order quantity.',
+                zh: '标准件：1-2周。常规定制：2-4周，视复杂度和材料供应情况而定。复杂定制光学元件：4-6周，视规格和生产排期而定。以上交期均为预估，最终以实际规格和订单数量确认。'
             },
             'moq': {
-                en: 'For standard catalog components, we have no minimum order quantity — you can order even a single piece. For custom manufactured optics, MOQ typically starts at 5-10 pieces depending on complexity.',
+                en: 'Standard catalog items: no minimum order — even single pieces are available. Custom products: prototypes from 1 piece; typical production MOQ 5-10 pieces depending on specifications. Volume production: capable of 10,000+ pieces; pricing scales with quantity.',
                 zh: '标准目录产品无最低起订量，单片起订。定制光学元件最低起订量通常为5-10片，具体取决于复杂度。'
             },
             'payment': {
