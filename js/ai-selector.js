@@ -402,7 +402,7 @@ var AISelector = (function() {
 
         html += '</div>';
         html += '<div class="ai-nav">';
-        html += '<button class="ai-btn ai-btn-next' + (!selectedApp ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedApp ? ' disabled' : '') + '>' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
+        html += '<button class="ai-btn ai-btn-next' + (!selectedApp ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedApp ? ' disabled' : '') + '>' + (lang === 'zh' ? '下一步' : 'Next') + '  </button>';
         html += '</div>';
         return html;
     }
@@ -429,7 +429,7 @@ var AISelector = (function() {
         html += '</div>';
         html += '<div class="ai-nav">';
         html += '<button class="ai-btn ai-btn-back" data-action="prevStep">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
-        html += '<button class="ai-btn ai-btn-next' + (!selectedWavelength ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedWavelength ? ' disabled' : '') + '">' + (lang === 'zh' ? '下一步' : 'Next') + ' →</button>';
+        html += '<button class="ai-btn ai-btn-next' + (!selectedWavelength ? ' disabled' : '') + '" data-action="nextStep"' + (!selectedWavelength ? ' disabled' : '') + '">' + (lang === 'zh' ? '下一步' : 'Next') + '  </button>';
         html += '</div>';
         return html;
     }
@@ -456,7 +456,7 @@ var AISelector = (function() {
         html += '</div>';
         html += '<div class="ai-nav">';
         html += '<button class="ai-btn ai-btn-back" data-action="prevStep">← ' + (lang === 'zh' ? '上一步' : 'Back') + '</button>';
-        html += '<button class="ai-btn ai-btn-recommend" data-action="showResults">✨ ' + (lang === 'zh' ? '获取推荐' : 'Get Recommendations') + '</button>';
+        html += '<button class="ai-btn ai-btn-recommend" data-action="showResults">✨ ' + (lang === 'zh' ? '获取推荐' : 'Ask AI Optical Engineer') + '</button>';
         html += '</div>';
         return html;
     }
@@ -507,7 +507,7 @@ var AISelector = (function() {
 
                 html += '<div class="ai-result-actions">';
                 html += '<a href="/products/' + p.slug + '/" class="ai-btn ai-btn-outline">' + (lang === 'zh' ? '查看详情' : 'View Details') + '</a>';
-                html += '<a href="/contact.html?product=' + p.slug + '" class="ai-btn ai-btn-primary">' + (lang === 'zh' ? '询价' : 'Request Quote') + '</a>';
+                html += '<a href="/contact.html?product=' + p.slug + '" class="ai-btn ai-btn-primary">' + (lang === 'zh' ? '询价' : 'Request a Quote') + '</a>';
                 html += '</div>';
                 html += '</div></div>';
             }

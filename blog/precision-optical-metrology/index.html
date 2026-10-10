@@ -20,7 +20,7 @@
     <meta property="og:site_name" content="PhotonEdge">
     <link rel="canonical" href="https://photonedgeoptics.com/blog/precision-optical-metrology/">
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/blog/precision-optical-metrology/">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/blog/precision-optical-metrology/?lang=zh">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -120,63 +120,64 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
-        <a href="/" class="logo">
-            <picture>
-                <source srcset="/images/logo.webp" type="image/webp">
-                <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
-            </picture>
-        </a>
-        <nav class="nav">
-            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
-            <ul class="nav-list">
-<li><a href="/" class="nav-link" data-i18n="navHome">Home</a></li>
-<li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
-<li><a href="/solutions/" class="nav-link" data-i18n="navSolutions">Solutions</a></li>
-<li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-<li class="nav-dropdown" onclick="if(window.innerWidth<=768){event.stopPropagation();this.classList.toggle('open')}">
-                        <a href="/calculator.html" class="nav-link" data-i18n="navTools">Tools</a>
+        <div class="container">
+            <a href="/" class="logo">
+    <picture>
+        <source srcset="/images/logo.webp" type="image/webp">
+        <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
+    </picture>
+</a>
+            <nav class="nav">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+                <ul class="nav-list">
+                    <li class="nav-dropdown">
+                        <a href="/products.html" class="nav-link" data-i18n="navProducts">Products &#9662;</a>
                         <div class="dropdown-menu">
-                            <a href="/calculator.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#129518;</span>
-                                <span data-i18n="menuCalculators">Optical Calculators</span>
-                            </a>
-                            <a href="/ray-tracer.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#128300;</span>
-                                <span data-i18n="menuRayTracer">Ray Tracer Simulator</span>
-                            </a>
-                            <a href="/materials.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#128202;</span>
-                                <span data-i18n="menuMaterials">Materials Database</span>
-                            </a>
-                            <a href="/product-advisor.html" class="dropdown-item">
-                                <span class="dropdown-icon">&#127919;</span>
-                                <span data-i18n="menuSelector">Product Selector</span>
-                            </a>
+                            <a href="/products.html?category=Optical+Lenses" class="dropdown-item"><span class="dropdown-icon">&#128269;</span> Optical Lenses</a>
+                            <a href="/products.html?category=Optical+Windows" class="dropdown-item"><span class="dropdown-icon">&#129695;</span> Optical Windows</a>
+                            <a href="/products.html?category=Optical+Mirrors" class="dropdown-item"><span class="dropdown-icon">&#129694;</span> Optical Mirrors</a>
+                            <a href="/products.html?category=Optical+Filters" class="dropdown-item"><span class="dropdown-icon">&#127752;</span> Optical Filters</a>
+                            <a href="/products.html?component=Beamsplitter" class="dropdown-item"><span class="dropdown-icon">&#9671;</span> Beamsplitters</a>
+                            <a href="/products.html?category=Optical+Prisms" class="dropdown-item"><span class="dropdown-icon">&#128142;</span> Optical Prisms</a>
+                            <a href="/products.html?category=Waveplates+%26+Polarizers" class="dropdown-item"><span class="dropdown-icon">&#128300;</span> Waveplates &amp; Polarizers</a>
                         </div>
                     </li>
-<li><a href="/about.html" class="nav-link" data-i18n="navAbout">About Us</a></li>
-<li><a href="/blog.html" class="nav-link active" data-i18n="navBlog">Blog</a></li>
-<li><a href="/contact.html" class="nav-link" data-i18n="navContact">Contact</a></li>
-</ul>
-            <a href="/compare.html" class="cart-icon" title="Compare" style="margin-left: 15px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                <span class="cart-badge" id="compareBadge">0</span>
-            </a>
-            <a href="/cart.html" class="cart-icon" title="Shopping Cart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                <span class="cart-badge" id="cartBadge">0</span>
-            </a>
-            <div class="lang-switcher">
-                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
-                <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
-            </div>
-        </nav>
-    </div>
-</header>
+                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/custom-optics.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
+                    <li><a href="/materials.html" class="nav-link" data-i18n="navMaterials">Materials</a></li>
+                    <li><a href="/coatings/" class="nav-link" data-i18n="navCoatings">Coatings</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navEngResources">Engineering Resources &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/knowledge-center/" class="dropdown-item"><span class="dropdown-icon">&#128218;</span> Knowledge Center</a>
+                            <a href="/application-notes/" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
+                            <a href="/faq.html" class="dropdown-item"><span class="dropdown-icon">&#10067;</span> FAQ</a>
+                            <a href="/downloads.html" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Downloads</a>
+                            <a href="/blog.html" class="dropdown-item"><span class="dropdown-icon">&#128221;</span> Blog</a>
+                        </div>
+                    </li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
+                        <div class="dropdown-menu">
+                            <a href="/about.html" class="dropdown-item"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
+                            <a href="/quality-assurance.html" class="dropdown-item"><span class="dropdown-icon">&#9989;</span> Quality Assurance</a>
+                <a href="/evidence.html" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Evidence Center</a>
+                            <a href="/case-studies.html" class="dropdown-item"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn notranslate active">EN</button>
+                    <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
+                </div>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+            </nav>
+        </div>
+    </header>
 
 <main class="article-container">
-    <a href="/blog.html" class="article-back" data-i18n="backToBlog">← Back to Blog</a>
+    <a href="/application-notes/" style="color:#94a3b8;text-decoration:none;">Application Notes</a></li>
+                        <li><a href="/blog.html" class="article-back" data-i18n="backToBlog">← Back to Blog</a>
     
     <div class="article-header">
         <span class="article-category" id="articleCategory" data-en-category="Technical Guide" data-zh-category="技术指南">Technical Guide</span>
@@ -188,71 +189,71 @@
         </div>
     </div>
     
-    <div class="article-body" id="articleBody"><p data-en-content="A technical deep-dive into optical metrology techniques including Fizeau and Twyman-Green interferometry, profilometry, and wavefront sensing. Understand how measurement uncertainty affects optical component selection and quality assurance." data-zh-content="光学计量技术深度解析，包括Fizeau和Twyman-Green干涉测量、轮廓测量和波前传感。了解测量不确定度如何影响光学元件选型和质量保证。">A technical deep-dive into optical metrology techniques including Fizeau and Twyman-Green interferometry, profilometry, and wavefront sensing. Understand how measurement uncertainty affects optical component selection and quality assurance.</p>
-
-        <h2>Interferometry</h2>
-        <p><strong>Fizeau:</strong> Full-aperture measurement of flats and spheres to lambda/100. <strong>Twyman-Green:</strong> Flexible for aspheres using null optics.</p>
-        <h2>Profilometry</h2>
-        <p>Contact profilometers measure Ra, Rq, PSD. Optical profilers use PSI (smooth) or VSI (rough). AFM for nanometer-scale roughness.</p>
-        <h2>Wavefront Sensing</h2>
-        <p>Shack-Hartmann sensors measure local wavefront tilt via lenslet array. Used for adaptive optics and laser beam characterization.</p>
-        <p>PhotonEdge provides complete inspection data. <a href="/contact.html" style="color:#2563eb;">Request a quote</a>.</p>
+    <div class="article-body" id="articleBody">
+        <p data-en-content="A technical deep-dive into optical metrology techniques including Fizeau and Twyman-Green interferometry, profilometry, and wavefront sensing. Understand how measurement uncertainty affects optical component selection and quality assurance." data-zh-content="光学计量技术深度解析，包括Fizeau和Twyman-Green干涉测量、轮廓测量和波前传感。了解测量不确定度如何影响光学元件选型和质量保证。">A technical deep-dive into optical metrology techniques including Fizeau and Twyman-Green interferometry, profilometry, and wavefront sensing. Understand how measurement uncertainty affects optical component selection and quality assurance.</p>
     </div>
     
-    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none">BK7 Plano-Convex Lenses</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none">BK7 Windows</a></li><li style="margin-bottom:0.5rem"><a href="/products/corner-cube-prisms/" style="color:#2563eb;text-decoration:none">Corner Cube Prisms</a></li></ul></div>
+    <div class="related-products" style="margin:2rem 0;padding:1.5rem;background:#f8fafc;border-radius:8px"><h3 style="margin-bottom:1rem;color:#1e293b" data-i18n="blogRelatedProducts">Related Products</h3><ul style="list-style:none;padding:0"><li style="margin-bottom:0.5rem"><a href="/products/bk7-plano-convex/" style="color:#2563eb;text-decoration:none">BK7 Plano-Convex Lenses</a></li>
+                        <li><a href="/quality-assurance.html" style="color:#94a3b8;text-decoration:none;">Quality Assurance</a></li><li style="margin-bottom:0.5rem"><a href="/products/bk7-windows/" style="color:#2563eb;text-decoration:none">BK7 Windows</a></li><li style="margin-bottom:0.5rem"><a href="/products/corner-cube-prisms/" style="color:#2563eb;text-decoration:none">Corner Cube Prisms</a></li></ul></div>
     <div class="article-cta">
         <h3 data-i18n="blogCtaTitle">Need Custom Optical Components?</h3>
         <p data-i18n="blogCtaDesc">PhotonEdge offers precision optical components with competitive pricing and fast delivery. Contact us for a free quote.</p>
-        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request Quote</a>
+        <a href="/contact.html" class="btn" data-i18n="blogCtaBtn">Request a Quote</a>
     </div>
 </main>
 
 <footer class="footer">
     <div class="container">
-        <div class="footer-grid">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
             <div class="footer-brand">
                 <h3>PhotonEdge</h3>
-                <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="navProducts">Products</h4>
                 <ul>
-                    <li><a href="/products.html?category=Optical%20Lenses" data-i18n="catLenses">Optical Lenses</a></li>
-                    <li><a href="/products.html?category=Optical%20Mirrors" data-i18n="catMirrors">Optical Mirrors</a></li>
-                    <li><a href="/products.html?category=Optical%20Prisms" data-i18n="catPrisms">Optical Prisms</a></li>
-                    <li><a href="/products.html?category=Optical%20Filters" data-i18n="catFilters">Optical Filters</a></li>
+                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+                    <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
+                    <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
+                    <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
+                    <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
+                    <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
+                    <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Applications</h4>
+                <h4 data-i18n="navResources">Resources</h4>
                 <ul>
-                    <li><a href="/applications/laser-optics/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Laser Systems</a></li>
-                    <li><a href="/applications/semiconductor-inspection/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Semiconductor</a></li>
-                    <li><a href="/applications/medical-imaging/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Medical Imaging</a></li>
-                    <li><a href="/applications/aerospace-defense/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Aerospace & Defense</a></li>
-                    <li><a href="/applications/research-laboratory/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Research & Laboratory</a></li>
-                    <li><a href="/engineering.html" style="color:rgba(255,255,255,0.7);text-decoration:none;">Engineering Services</a></li>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4 data-i18n="footerCompany">Company</h4>
                 <ul>
-                    <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
+                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
+                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality Assurance</a></li>
+                    <li><a href="/evidence.html" data-i18n="navEvidence">Evidence Center</a></li>
                     <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-col">
-                <h4 data-i18n="contactInfo">Contact</h4>
-                <ul>
-                    <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
-                    <li>Phone: +86-13693009175</li>
-                    <li>WhatsApp: +86-13693009175</li>
-                    <li>Contact: Ms. Lin</li>
-                </ul>
-            </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024-2026 PhotonEdge. All Rights Reserved.</p>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
         </div>
     </div>
 </footer>
@@ -260,8 +261,7 @@
 <div class="request-quote-float">
     <a href="/contact.html" class="quote-btn">
         <span class="quote-icon">&#9993;</span>
-        <span data-i18n="requestQuoteBtn">Request Quote</span>
-    </a>
+        <span data-i18n="requestQuoteBtn">Request a Quote</span></a>
 </div>
 
 <script src="/js/translations.js"></script>

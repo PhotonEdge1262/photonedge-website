@@ -12,10 +12,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://photonedgeoptics.com/images/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About PhotonEdge | Optical Engineering & Supply Chain Company</title>
-    <meta name="description" content="PhotonEdge helps engineers and procurement teams source and specify optical components. We combine optical industry experience with a flexible manufacturing network to support projects from prototype to production.">
-    <meta name="keywords" content="BK7 optical glass, fused silica optics, optical component manufacturer China, precision optics factory, Beijing Hengdingguang Technology, PhotonEdge, 恒鼎光科技,光学元件工厂">
+    <meta name="description" content="PhotonEdge is an engineering-oriented optical component supplier. We support standard components and custom optical projects with qualified production resources, quality control and technical documentation.">
+    <meta name="keywords" content="BK7 optical glass, fused silica optics, optical component supplier China, Beijing Hengdingguang Technology, PhotonEdge, 恒鼎光科技">
     <meta property="og:title" content="About PhotonEdge | Optical Engineering & Supply Chain Company">
-    <meta property="og:description" content="PhotonEdge is an optical engineering and supply chain company serving laser, semiconductor, medical, and research industries worldwide. Custom optics from prototype to volume production.">
+    <meta property="og:description" content="Engineering-oriented optical component supplier. Standard and custom optics with qualified production resources, quality control and technical documentation. International brand of Beijing Hengdingguang Technology Co., Ltd.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://photonedgeoptics.com/about.html">
     <meta property="og:image" content="https://photonedgeoptics.com/images/logo.webp">
@@ -38,7 +38,7 @@
     gtag('config', 'G-E6J791MXZY');
     </script>
     <link rel="alternate" hreflang="en" href="https://photonedgeoptics.com/about.html">
-    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/about.html?lang=zh">
+    <link rel="alternate" hreflang="zh" href="https://photonedgeoptics.com/zh/about.html">
 
     <!-- AboutPage Schema -->
     <script type="application/ld+json">
@@ -46,7 +46,7 @@
         "@context": "https://schema.org",
         "@type": "AboutPage",
         "name": "PhotonEdge - AboutPage",
-        "description": "PhotonEdge precision optical components. Engineering-oriented optical sourcing and specification support.",
+        "description": "PhotonEdge precision optical components. Quality-managed processes for lenses, mirrors, windows, prisms.",
         "publisher": {
             "@type": "Organization",
             "name": "PhotonEdge"
@@ -56,7 +56,7 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About PhotonEdge | Optical Engineering & Supply Chain Company">
-    <meta name="twitter:description" content="PhotonEdge is an optical engineering and supply chain company serving laser, semiconductor, medical, and research industries worldwide. Custom optics from prototype to volume production.">
+    <meta name="twitter:description" content="Engineering-oriented optical component supplier. Standard and custom optics with qualified production resources, quality control and technical documentation. International brand of Beijing Hengdingguang Technology Co., Ltd.">
     <meta name="twitter:image" content="https://photonedgeoptics.com/images/logo.webp">
     <link rel="stylesheet" href="/css/chatbot.css">
 
@@ -80,396 +80,424 @@
         <div class="container">
             <a href="/" class="logo">
     <picture>
-        <source srcset="images/logo.webp" type="image/webp">
+        <source srcset="/images/logo.webp" type="image/webp">
         <img src="https://photonedgeoptics.com/logo.png" alt="PhotonEdge" width="160" height="40">
     </picture>
 </a>
             <nav class="nav">
-                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
-                
-                <ul class="nav-list">
-                    <li><a href="/products.html" class="nav-link" data-i18n="navProducts">Products</a></li>
-                    <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
-                    <li><a href="/engineering.html" class="nav-link" data-i18n="navEngineering">Engineering</a></li>
-                    <li><a href="/knowledge-center/" class="nav-link" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
-                    <li><a href="/ai-optical-engineer.html" class="nav-link" data-i18n="navAIOptical">AI Optical Engineer</a></li>
-                    <li><a href="/about.html" class="nav-link" data-i18n="navAbout">About</a></li>
-                    <li><a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navRFQ" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;">Request a Quote</a></li>
-                </ul>
-                <a href="/cart.html" class="cart-icon" title="Shopping Cart">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                    <span class="cart-badge" id="cartBadge">0</span>
-                </a>
-                <div class="lang-switcher">
-                    <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
-                    <button class="lang-btn" onclick="setLanguage('zh')">中文</button>
-                </div>
-            </nav>
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">&#9776;</button>
+    <ul class="nav-list">
+        <li class="nav-dropdown">
+            <a href="/products.html" class="nav-link" data-i18n="navProducts">Products &#9662;</a>
+            <div class="dropdown-menu">
+                <a href="/products.html?category=Optical+Lenses" class="dropdown-item"><span class="dropdown-icon">&#128269;</span> Optical Lenses</a>
+                <a href="/products.html?category=Optical+Windows" class="dropdown-item"><span class="dropdown-icon">&#129695;</span> Optical Windows</a>
+                <a href="/products.html?category=Optical+Mirrors" class="dropdown-item"><span class="dropdown-icon">&#129694;</span> Optical Mirrors</a>
+                <a href="/products.html?category=Optical+Filters" class="dropdown-item"><span class="dropdown-icon">&#127752;</span> Optical Filters</a>
+                <a href="/products.html?component=Beamsplitter" class="dropdown-item"><span class="dropdown-icon">&#9671;</span> Beamsplitters</a>
+                <a href="/products.html?category=Optical+Prisms" class="dropdown-item"><span class="dropdown-icon">&#128142;</span> Optical Prisms</a>
+                <a href="/products.html?category=Waveplates+%26+Polarizers" class="dropdown-item"><span class="dropdown-icon">&#128300;</span> Waveplates &amp; Polarizers</a>
+            </div>
+        </li>
+        <li><a href="/applications.html" class="nav-link" data-i18n="navApplications">Applications</a></li>
+        <li><a href="/custom-optics.html" class="nav-link" data-i18n="navCustomOptics">Custom Optics</a></li>
+        <li><a href="/materials.html" class="nav-link" data-i18n="navMaterials">Materials</a></li>
+        <li><a href="/coatings/" class="nav-link" data-i18n="navCoatings">Coatings</a></li>
+        <li class="nav-dropdown">
+            <a href="#" class="nav-link" data-i18n="navEngResources">Engineering Resources &#9662;</a>
+            <div class="dropdown-menu">
+                <a href="/knowledge-center/" class="dropdown-item"><span class="dropdown-icon">&#128218;</span> Knowledge Center</a>
+                <a href="/application-notes/" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Application Notes</a>
+                <a href="/faq.html" class="dropdown-item"><span class="dropdown-icon">&#10067;</span> FAQ</a>
+                            <a href="/downloads.html" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Downloads</a>
+                <a href="/blog.html" class="dropdown-item"><span class="dropdown-icon">&#128221;</span> Blog</a>
+            </div>
+        </li>
+        <li class="nav-dropdown">
+            <a href="#" class="nav-link" data-i18n="navAboutDropdown">About &#9662;</a>
+            <div class="dropdown-menu">
+                <a href="/about.html" class="dropdown-item"><span class="dropdown-icon">&#127970;</span> About PhotonEdge</a>
+                <a href="/quality-assurance.html" class="dropdown-item"><span class="dropdown-icon">&#9989;</span> Quality Assurance</a>
+                <a href="/evidence.html" class="dropdown-item"><span class="dropdown-icon">&#128196;</span> Evidence Center</a>
+                <a href="/case-studies.html" class="dropdown-item"><span class="dropdown-icon">&#128203;</span> Case Studies</a>
+            </div>
+        </li>
+    </ul>
+    <div class="lang-switcher">
+        <button class="lang-btn notranslate active">EN</button>
+        <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
+    </div>
+    <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+</nav>
         </div>
     </header>
-
-    <section class="page-header">
-        <div class="container">
-            <h1 data-i18n="aboutPageTitle">About PhotonEdge</h1>
-            <p class="page-subtitle" data-i18n="aboutPageSubtitle">Engineering-oriented optical sourcing and specification support.</p>
-        </div>
-    </section>
-
-    <!-- Section 1: Who We Are -->
-    <section style="padding: 80px 0 40px; background: linear-gradient(135deg, #f0f4f8 0%, #e8eef5 100%);">
-        <div class="container" style="max-width:800px;">
-            <h1 style="font-size:38px;font-weight:700;color:#1e3a5f;margin-bottom:20px;">About PhotonEdge</h1>
-            <p style="font-size:18px;color:#475569;line-height:1.9;max-width:700px;">PhotonEdge helps engineers and procurement teams source and specify optical components for demanding applications. We combine optical industry experience with a flexible manufacturing network to support projects from prototype to production.</p>
-        </div>
-    </section>
-
-    <!-- Section 2: What We Actually Do -->
-    <section style="padding: 60px 0; background: white;">
-        <div class="container" style="max-width:1000px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:12px;text-align:center;">What We Actually Do</h2>
-            <p style="color:#64748b;font-size:16px;text-align:center;margin-bottom:40px;max-width:600px;margin-left:auto;margin-right:auto;">From your initial requirement to delivered components — we manage the full engineering and sourcing process.</p>
-            <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0;">
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">1</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Requirement</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">2</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Engineering Review</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">3</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Material Selection</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">4</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Specification Review</div>
-                </div>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0;margin-top:8px;">
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">5</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Manufacturing Route</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">6</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Coating</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#1e3a5f;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">7</div>
-                    <div style="font-size:13px;font-weight:600;color:#1e3a5f;">Inspection</div>
-                </div>
-                <div style="color:#94a3b8;font-size:24px;padding:0 4px;">&#10132;</div>
-                <div style="text-align:center;padding:20px 12px;flex:0 0 auto;min-width:100px;">
-                    <div style="width:56px;height:56px;border-radius:50%;background:#059669;color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:20px;">&#10003;</div>
-                    <div style="font-size:13px;font-weight:600;color:#059669;">Delivery</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 3: Our Manufacturing Model -->
-    <section style="padding: 60px 0; background: #f8fafc;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;">Our Manufacturing Model</h2>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;">PhotonEdge does not rely on a single factory for every optical process. Different optical processes require different equipment, expertise, and environments. No single facility excels at all of them.</p>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;">We work with qualified manufacturing partners selected according to material, geometry, tolerance, coating, quantity and application requirements. Each partner is chosen for specific capabilities relevant to your project.</p>
-            <div style="background:white;border:1px solid #e2e8f0;border-radius:12px;padding:24px;margin-top:24px;text-align:center;">
-                <p style="font-size:18px;color:#1e3a5f;font-weight:600;margin:0;">One engineering contact. Multiple manufacturing capabilities.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 4: Why This Model Matters -->
-    <section style="padding: 60px 0; background: white;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;">Why This Model Matters</h2>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:24px;">Different projects demand different manufacturing strengths. A UV laser window requires different capabilities than an IR thermal imaging lens. A prototype CaF&#8322; prism pair needs a different approach than a volume production run of BK7 windows.</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#9675;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">Precision Polishing</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">Lambda-quality flatness and sub-nanometer surface finish</p>
-                </div>
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#9832;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">IR Materials</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">ZnSe, Ge, Si, CaF&#8322; — specialized handling and processing</p>
-                </div>
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#9674;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">Optical Coating</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">AR, HR, bandpass, dichroic — matched to wavelength and power</p>
-                </div>
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#9651;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">Custom Geometry</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">Non-standard shapes, aspheres, and complex assemblies</p>
-                </div>
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#9881;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">High-Precision Inspection</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">Interferometry, spectrophotometry, and dimensional verification</p>
-                </div>
-                <div style="background:#f8fafc;border-radius:10px;padding:20px;border:1px solid #e2e8f0;">
-                    <div style="font-size:24px;margin-bottom:8px;">&#8635;</div>
-                    <h4 style="color:#1e3a5f;font-size:14px;margin-bottom:6px;">Prototype to Volume</h4>
-                    <p style="color:#64748b;font-size:13px;margin:0;line-height:1.6;">Single pieces to production runs, with consistent quality</p>
-                </div>
-            </div>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-top:24px;">PhotonEdge matches each project with the appropriate manufacturing capability — rather than forcing every job through a single facility.</p>
-        </div>
-    </section>
-
-    <!-- Section 5: Engineering Support -->
-    <section style="padding: 60px 0; background: #f8fafc;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;">Engineering Support</h2>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:24px;">Every project starts with engineering discussion. We provide technical support across the full optical specification process:</p>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;">
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">Material Selection</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">Glass type, substrate material, and grade selection for your application</p>
-                    </div>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">Coating Selection</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">AR, HR, bandpass, dichroic — optimized for wavelength and power requirements</p>
-                    </div>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">Specification Review</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">Review your drawing or requirements for manufacturability and completeness</p>
-                    </div>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">DFM Review</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">Identify tolerance improvements that reduce cost without affecting performance</p>
-                    </div>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">Tolerance Discussion</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">Which specs matter for your system — and which are just adding cost</p>
-                    </div>
-                </div>
-                <div style="background:white;border-radius:10px;padding:20px;border:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:12px;">
-                    <span style="color:#059669;font-size:18px;font-weight:700;flex-shrink:0;">&#10003;</span>
-                    <div>
-                        <h4 style="color:#1e3a5f;font-size:15px;margin-bottom:4px;">Documentation Requirements</h4>
-                        <p style="color:#64748b;font-size:13px;margin:0;line-height:1.5;">Inspection reports, material certificates, and compliance documentation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 6: Quality & Documentation -->
-    <section style="padding: 60px 0; background: white;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;">Quality &amp; Documentation</h2>
-            <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;">Inspection documentation and material certificates are available according to project requirements. We work with our manufacturing partners to ensure components are inspected against your specifications before shipment.</p>
-            <p style="color:#475569;font-size:16px;line-height:1.9;">Documentation available upon request includes inspection reports covering surface quality, dimensional accuracy, coating performance, and material traceability. Specific inspection methods and acceptance criteria are agreed during the engineering review phase.</p>
-        </div>
-    </section>
-
-    <!-- Section 7: Company Facts -->
-    <section style="padding: 60px 0; background: #f8fafc;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;">Company Facts</h2>
-            <div style="background:white;border:1px solid #e2e8f0;border-radius:12px;padding:30px;">
-                <table style="width:100%;border-collapse:collapse;">
-                    <tr>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:14px;width:200px;vertical-align:top;">Company</td>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#1e293b;font-size:15px;font-weight:500;">Beijing Hengdingguang Technology Co., Ltd.</td>
-                    </tr>
-                    <tr>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:14px;vertical-align:top;">Brand</td>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#1e293b;font-size:15px;font-weight:500;">PhotonEdge Optics</td>
-                    </tr>
-                    <tr>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#64748b;font-size:14px;vertical-align:top;">Location</td>
-                        <td style="padding:12px 0;border-bottom:1px solid #f1f5f9;color:#1e293b;font-size:15px;font-weight:500;">Beijing, China</td>
-                    </tr>
-                    <tr>
-                        <td style="padding:12px 0;color:#64748b;font-size:14px;vertical-align:top;">Contact</td>
-                        <td style="padding:12px 0;color:#1e293b;font-size:15px;font-weight:500;"><a href="/contact.html" style="color:#2563eb;text-decoration:none;">Get in touch &#8594;</a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Explore More -->
-    <section style="padding: 60px 0; background: #f8fafc;">
-        <div class="container" style="max-width:800px;">
-            <h2 style="font-size:28px;color:#1e3a5f;margin-bottom:24px;text-align:center;">Explore PhotonEdge</h2>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;">
-                <a href="/products.html" style="text-decoration:none;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-align:center;transition:all 0.2s;">
-                    <div style="font-size:28px;margin-bottom:8px;">&#128300;</div>
-                    <div style="font-size:15px;font-weight:600;color:#1e3a5f;">Product Catalog</div>
-                    <div style="font-size:13px;color:#64748b;margin-top:4px;">70+ optical components across 10 categories</div>
-                </a>
-                <a href="/knowledge-center/" style="text-decoration:none;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-align:center;transition:all 0.2s;">
-                    <div style="font-size:28px;margin-bottom:8px;">&#128218;</div>
-                    <div style="font-size:15px;font-weight:600;color:#1e3a5f;">Knowledge Center</div>
-                    <div style="font-size:13px;color:#64748b;margin-top:4px;">Selection guides, material data, coating references</div>
-                </a>
-                <a href="/calculator.html" style="text-decoration:none;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-align:center;transition:all 0.2s;">
-                    <div style="font-size:28px;margin-bottom:8px;">&#128290;</div>
-                    <div style="font-size:15px;font-weight:600;color:#1e3a5f;">Optical Calculators</div>
-                    <div style="font-size:13px;color:#64748b;margin-top:4px;">Free tools for focal length, beam divergence & more</div>
-                </a>
-                <a href="/blog.html" style="text-decoration:none;background:white;border:1px solid #e2e8f0;border-radius:10px;padding:20px;text-align:center;transition:all 0.2s;">
-                    <div style="font-size:28px;margin-bottom:8px;">&#9997;</div>
-                    <div style="font-size:15px;font-weight:600;color:#1e3a5f;">Technical Blog</div>
-                    <div style="font-size:13px;color:#64748b;margin-top:4px;">Engineering articles and application guides</div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Technical Resources -->
-    <section class="tech-resources" style="padding: 60px 0; background: white;">
-        <div class="container">
-            <h2 class="section-title" data-i18n="technicalResources">Technical Resources</h2>
-            <p class="section-subtitle" data-i18n="technicalResourcesDesc">Download product catalogs, specifications, and technical documentation</p>
-            <div class="tech-resources-grid">
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#128196;</div>
-                    <div class="tech-resource-title" data-i18n="techCatalog">Product Catalog</div>
-                    <div class="tech-resource-desc" data-i18n="techCatalogDesc">Complete product catalog covering lenses, mirrors, windows, prisms, filters, beamsplitters, and polarizers.</div>
-                    <span class="tech-resource-format">PDF</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#10004;</div>
-                    <div class="tech-resource-title" data-i18n="techCoC">Certificate of Conformance</div>
-                    <div class="tech-resource-desc" data-i18n="techCoCDesc">Standard CoC template documenting material, dimensions, surface quality, and coating specifications.</div>
-                    <span class="tech-resource-format">PDF</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#128200;</div>
-                    <div class="tech-resource-title" data-i18n="techCoating">Coating Performance Curves</div>
-                    <div class="tech-resource-desc" data-i18n="techCoatingDesc">Transmission and reflectance curves for our standard AR, HR, and dielectric coatings across wavelength ranges.</div>
-                    <span class="tech-resource-format">PDF</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#128187;</div>
-                    <div class="tech-resource-title" data-i18n="techCAD">CAD Files (STEP)</div>
-                    <div class="tech-resource-desc" data-i18n="techCADDesc">3D CAD models in STEP format for standard optical components. Available for direct integration into your designs.</div>
-                    <span class="tech-resource-format">STEP</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#127915;</div>
-                    <div class="tech-resource-title" data-i18n="techTestReport">Test Report Sample</div>
-                    <div class="tech-resource-desc" data-i18n="techTestReportDesc">Sample inspection report showing interferometry data, spectrophotometry results, and dimensional measurements.</div>
-                    <span class="tech-resource-format">PDF</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-                <div class="tech-resource-card">
-                    <div class="tech-resource-icon">&#128274;</div>
-                    <div class="tech-resource-title" data-i18n="techMSDS">Material Safety Data</div>
-                    <div class="tech-resource-desc" data-i18n="techMSDSDesc">MSDS documentation for optical materials including ZnSe, Ge, CaF2, and other specialty materials.</div>
-                    <span class="tech-resource-format">PDF</span>
-                    <a href="/downloads.html" class="tech-resource-btn">
-                        <span data-i18n="downloadNow">Download Now</span>
-                        <span>&#8594;</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div class="request-quote-float">
         <a href="/contact.html" class="quote-btn">
             <span class="quote-icon">&#9993;</span>
-            <span data-i18n="navRFQ">Request a Quote</span>
-        </a>
+            <span data-i18n="navCTA">Request a Quote</span></a>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>PhotonEdge</h3>
-                    <p data-i18n="footerDesc">Precision Optical Solutions Provider</p>
+
+<!-- ============ SECTION 1: WHO WE ARE ============ -->
+<section style="padding:120px 0 60px;background:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);">
+    <div class="container" style="max-width:800px;">
+        <h1 style="font-size:40px;font-weight:800;color:white;margin-bottom:16px;line-height:1.25;" data-i18n="aboutHeroTitle">About PhotonEdge</h1>
+        <p style="font-size:17px;color:rgba(255,255,255,0.9);line-height:1.8;margin-bottom:24px;" data-i18n="v153AboutHeroDesc">PhotonEdge is an engineering-oriented optical component supplier and the international brand of Beijing Hengdingguang Technology Co., Ltd. We support standard optical components and custom optical projects, working with qualified production resources according to material, geometry, tolerance, coating and quantity requirements.</p>
+        <p style="font-size:20px;color:white;font-weight:600;font-style:italic;" data-i18n="aboutHeroTagline">Understand the requirement. Select the right solution. Deliver the right optic.</p>
+    </div>
+</section>
+
+<!-- ============ SECTION 2: WHAT WE ACTUALLY DO ============ -->
+<section style="padding:80px 0;background:white;">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:28px;font-weight:700;color:#1e293b;" data-i18n="aboutProcessTitle">What We Actually Do</h2>
+            <p style="color:#64748b;font-size:15px;line-height:1.7;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;" data-i18n="aboutProcessDesc">From your first inquiry to final delivery — every step is managed by an optical engineer who understands your requirements.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;max-width:1200px;margin:0 auto;">
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">📋</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">01</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep1Title">Requirement</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep1Desc">Understand your application, wavelength, material, dimensions, tolerances, coating and quantity.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">🔍</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">02</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep2Title">Engineering Review</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep2Desc">Evaluate feasibility, suggest material and coating choices based on actual application needs.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">🧪</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">03</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep3Title">Material Selection</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep3Desc">Match optimal optical material — BK7, fused silica, CaF2, Ge, sapphire — to your specification.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">📐</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">04</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep4Title">Specification Review</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep4Desc">Confirm all tolerances, surface quality, flatness, centration and environmental requirements.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">⚙️</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">05</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep5Title">Manufacturing Route</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep5Desc">Select qualified manufacturing partner based on geometry, tolerance, coating and quantity.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">🔬</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">06</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep6Title">Coating</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep6Desc">AR, HR, BBAR, metallic or custom coating design and deposition with verified performance.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">✅</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">07</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep7Title">Inspection</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep7Desc">Dimensional verification, surface quality, coating performance and full dimensional report.</p>
+            </div>
+            <div style="text-align:center;padding:24px 12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+                <div style="font-size:32px;margin-bottom:8px;">📦</div>
+                <div style="font-size:24px;font-weight:800;color:#2563eb;margin-bottom:6px;">08</div>
+                <h4 style="color:#1e293b;font-size:14px;margin-bottom:4px;font-weight:600;" data-i18n="aboutStep8Title">Delivery</h4>
+                <p style="font-size:12px;color:#64748b;line-height:1.5;margin:0;" data-i18n="aboutStep8Desc">Protected packaging, inspection documentation and coordinated logistics to your facility.</p>
+            </div>
+        </div>
+        <p style="text-align:center;color:#1e293b;font-weight:600;font-size:16px;margin-top:36px;" data-i18n="aboutProcessTagline">One engineering contact. Multiple manufacturing capabilities.</p>
+    </div>
+</section>
+
+
+<!-- ============ SECTION 2b: HOW WE WORK ============ -->
+<section style="padding:60px 0;background:#f8fafc;">
+    <div class="container" style="max-width:900px;">
+        <h2 style="font-size:28px;font-weight:700;color:#1e293b;margin-bottom:24px;" data-i18n="v153HowWeWorkTitle">How We Work</h2>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:28px;" data-i18n="v153HowWeWorkIntro">From initial inquiry to final delivery, our workflow is designed around your technical requirements.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;">
+            <div style="background:white;padding:24px;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:24px;margin-bottom:10px;">&#128172;</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v153HowWork1Title">Engineering Communication</h3>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;margin:0;" data-i18n="v153HowWork1Desc">We start by understanding your application, wavelength, material, dimensions, tolerances and coating requirements. Technical questions are addressed directly by our engineering team.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:24px;margin-bottom:10px;">&#9881;</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v153HowWork2Title">Production Coordination</h3>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;margin:0;" data-i18n="v153HowWork2Desc">We select qualified production resources based on material, geometry, tolerance, coating and quantity. Each project is matched to the most suitable manufacturing capabilities.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:24px;margin-bottom:10px;">&#9989;</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v153HowWork3Title">Quality Control</h3>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;margin:0;" data-i18n="v153HowWork3Desc">Inspection is coordinated against agreed specifications at each production stage. Dimensional, surface quality, coating performance and flatness are verified before shipment.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:24px;margin-bottom:10px;">&#128196;</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="v153HowWork4Title">Documentation</h3>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;margin:0;" data-i18n="v153HowWork4Desc">Technical documentation can be provided according to project requirements, including inspection reports, material certificates, coating data and certificates of conformance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 3: OUR MANUFACTURING MODEL ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
+    <div class="container" style="max-width:800px;">
+        <h2 style="font-size:28px;font-weight:700;color:#1e293b;margin-bottom:24px;" data-i18n="aboutModelTitle">Our Manufacturing Model</h2>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;" data-i18n="aboutModelP1">PhotonEdge is the international brand of Beijing Hengdingguang Technology Co., Ltd. We work with qualified manufacturing partners selected according to material, geometry, tolerance, coating, quantity and application requirements.</p>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;" data-i18n="aboutModelP2">This model lets us match each project with the most suitable production resources — whether that is a partner specializing in precision BK7 lens polishing, a facility with IR material expertise, or a coating lab optimized for high-power laser optics.</p>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;" data-i18n="aboutModelP3">We built practical experience in products, applications, sourcing, manufacturing coordination and customer service. PhotonEdge brings that experience to international customers.</p>
+        <div style="background:#f0f9ff;padding:20px 24px;border-radius:10px;border-left:4px solid #2563eb;margin-top:24px;">
+            <p style="color:#1e293b;font-size:16px;font-weight:600;margin:0;" data-i18n="aboutModelHighlight">One engineering contact. Multiple manufacturing capabilities.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============ SECTION 3b: MANUFACTURING NETWORK ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
+    <div style="max-width:1000px;margin:0 auto;padding:0 24px;">
+        <h2 style="font-size:28px;font-weight:700;color:#1e293b;margin-bottom:12px;">Our Manufacturing Network</h2>
+        <p style="color:#64748b;font-size:16px;line-height:1.7;margin-bottom:32px;">PhotonEdge works with a network of qualified manufacturing partners, each selected for specific capabilities. We match each project with the partner best suited to its requirements.</p>
+        
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">Precision Polishing Partners</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">Specialized in surface quality 10-5 and below, flatness &lambda;/10 and better. For demanding optical surfaces requiring controlled figure and scratch-dig.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">IR Material Specialists</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">Experienced with germanium, silicon, zinc selenide, zinc sulfide. For thermal imaging, FLIR, and IR laser applications.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">Optical Coating Facilities</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">BBAR, HR, dichroic, metallic coatings with spectrophotometer verification. LIDT-tested for high-power laser applications.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">Custom Geometry Capability</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">Aspherical surfaces, cylindrical optics, prisms, custom mounts. For non-standard geometries that require specialized tooling.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">Inspection &amp; Metrology</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">Interferometry, spectrophotometry, surface profilometry. For components requiring documented verification of all specifications.</p>
+            </div>
+            <div style="background:white;padding:24px;border-radius:8px;border:1px solid #e2e8f0;">
+                <div style="font-size:14px;font-weight:600;color:#2563eb;margin-bottom:8px;">Prototype to Volume</div>
+                <p style="font-size:14px;color:#64748b;line-height:1.6;">Partners capable of single-unit prototypes and partners optimized for volume production. We route your project accordingly.</p>
+            </div>
+        </div>
+        
+        <div style="margin-top:32px;padding:20px;background:white;border-radius:8px;border:1px solid #e2e8f0;">
+            <p style="font-size:15px;color:#475569;line-height:1.7;margin:0;"><strong style="color:#1e293b;">One point of contact.</strong> You work with PhotonEdge. We coordinate the network — so you don't need to manage multiple suppliers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 4: WHY THIS MODEL MATTERS ============ -->
+<section style="padding:80px 0;background:white;">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:28px;font-weight:700;color:#1e293b;" data-i18n="aboutWhyModelTitle">Why This Model Matters</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">💎</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy1Title">Precision Polishing</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy1Desc">Access partners specializing in high-precision optical polishing for lenses, mirrors and flats across all common materials.</p>
+            </div>
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">🔥</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy2Title">IR Materials</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy2Desc">Germanium, silicon, ZnSe, CaF2 and other IR materials processed by partners with specialized equipment and experience.</p>
+            </div>
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">🔬</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy3Title">Optical Coating</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy3Desc">AR, HR, BBAR, dichroic, metallic — matched with coating facilities that have verified deposition capabilities for your wavelength and power requirements.</p>
+            </div>
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">📐</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy4Title">Custom Geometry</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy4Desc">Non-standard shapes, aspheres, cylindrical optics, prisms — we route to partners with the right tooling and process expertise.</p>
+            </div>
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">🔎</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy5Title">Inspection</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy5Desc">Interferometers, spectrophotometers, LIDT testing, surface quality assessment — inspection matched to your specification requirements.</p>
+            </div>
+            <div style="padding:24px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;">
+                <div style="font-size:28px;margin-bottom:10px;">📈</div>
+                <h3 style="font-size:16px;color:#1e293b;margin-bottom:8px;font-weight:600;" data-i18n="aboutWhy6Title">Prototype to Volume</h3>
+                <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="aboutWhy6Desc">From single prototypes to production volumes, we scale manufacturing resources to match your project phase and timeline.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 5: ENGINEERING SUPPORT ============ -->
+<section style="padding:80px 0;background:#f8fafc;">
+    <div class="container">
+        <div style="text-align:center;margin-bottom:50px;">
+            <h2 style="font-size:28px;font-weight:700;color:#1e293b;" data-i18n="aboutSupportTitle">Engineering Support</h2>
+            <p style="color:#64748b;font-size:15px;line-height:1.7;margin-top:12px;max-width:600px;margin-left:auto;margin-right:auto;" data-i18n="aboutSupportDesc">We don't just take orders — we help you make the right technical decisions.</p>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:1100px;margin:0 auto;">
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">🧪</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup1Title">Material Selection</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup1Desc">Guidance on BK7, fused silica, CaF2, Ge, Si, sapphire and other optical materials for your application.</p>
                 </div>
-                <div class="footer-col">
-                    <h4 data-i18n="navProducts">Products</h4>
-                    <ul>
-                                            <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
+            </div>
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">🔬</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup2Title">Coating Selection</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup2Desc">AR, HR, BBAR, dichroic, metallic — we recommend coating types based on wavelength, power and environment.</p>
+                </div>
+            </div>
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">📐</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup3Title">Spec Review</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup3Desc">We review your specifications for manufacturability and suggest optimizations where appropriate.</p>
+                </div>
+            </div>
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">⚙️</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup4Title">DFM Review</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup4Desc">Design for manufacturability feedback to optimize cost, lead time and yield without sacrificing performance.</p>
+                </div>
+            </div>
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">📏</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup5Title">Tolerance Discussion</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup5Desc">We help identify which tolerances are critical and which can be relaxed to reduce cost and lead time.</p>
+                </div>
+            </div>
+            <div style="padding:20px 24px;background:white;border-radius:10px;border:1px solid #e2e8f0;display:flex;gap:16px;align-items:flex-start;">
+                <div style="font-size:24px;flex-shrink:0;">📋</div>
+                <div>
+                    <h4 style="color:#1e293b;font-size:15px;margin-bottom:4px;font-weight:600;" data-i18n="aboutSup6Title">Documentation</h4>
+                    <p style="color:#64748b;font-size:13px;line-height:1.6;margin:0;" data-i18n="aboutSup6Desc">Inspection reports, material certificates, coating data and compliance documentation as project requires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 6: QUALITY & DOCUMENTATION ============ -->
+<section style="padding:80px 0;background:white;">
+    <div class="container" style="max-width:800px;">
+        <h2 style="font-size:28px;font-weight:700;color:#1e293b;margin-bottom:24px;" data-i18n="aboutQualityTitle">Quality &amp; Documentation</h2>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;" data-i18n="aboutQualityP1">Inspection documentation and material certificates are available according to project requirements. We coordinate quality requirements with our manufacturing partners and manage inspection throughout production.</p>
+        <p style="color:#475569;font-size:16px;line-height:1.9;margin-bottom:16px;" data-i18n="aboutQualityP2">Quality requirements are agreed with the customer upfront — dimensional accuracy, surface quality, coating performance, flatness, centration — and verified against these specifications at each stage.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:24px;">
+            <div style="padding:16px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;text-align:center;">
+                <div style="font-size:24px;margin-bottom:6px;">🔎</div>
+                <p style="font-size:13px;color:#475569;font-weight:600;margin:0;" data-i18n="aboutQc1">Dimensional Inspection</p>
+            </div>
+            <div style="padding:16px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;text-align:center;">
+                <div style="font-size:24px;margin-bottom:6px;">📊</div>
+                <p style="font-size:13px;color:#475569;font-weight:600;margin:0;" data-i18n="aboutQc2">Surface Quality</p>
+            </div>
+            <div style="padding:16px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;text-align:center;">
+                <div style="font-size:24px;margin-bottom:6px;">🔬</div>
+                <p style="font-size:13px;color:#475569;font-weight:600;margin:0;" data-i18n="aboutQc3">Coating Verification</p>
+            </div>
+            <div style="padding:16px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;text-align:center;">
+                <div style="font-size:24px;margin-bottom:6px;">📋</div>
+                <p style="font-size:13px;color:#475569;font-weight:600;margin:0;" data-i18n="aboutQc4">Material Certificates</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============ SECTION 7: COMPANY FACTS ============ -->
+<section style="padding:60px 0;background:#f8fafc;border-top:1px solid #e2e8f0;">
+    <div class="container" style="max-width:800px;">
+        <h2 style="font-size:24px;font-weight:700;color:#1e293b;margin-bottom:20px;" data-i18n="aboutFactsTitle">Company Facts</h2>
+        <div style="background:white;padding:32px;border-radius:12px;border:1px solid #e2e8f0;">
+            <div style="display:grid;grid-template-columns:160px 1fr;gap:12px 24px;font-size:14px;align-items:center;">
+                <span style="color:#94a3b8;font-weight:600;" data-i18n="aboutFactCompanyLabel">Company</span>
+                <span style="color:#1e293b;font-weight:600;" data-i18n="aboutFactCompanyValue">Beijing Hengdingguang Technology Co., Ltd.</span>
+                <span style="color:#94a3b8;font-weight:600;" data-i18n="aboutFactBrandLabel">Brand</span>
+                <span style="color:#1e293b;" data-i18n="aboutFactBrandValue">PhotonEdge Optics</span>
+                <span style="color:#94a3b8;font-weight:600;" data-i18n="aboutFactLocationLabel">Location</span>
+                <span style="color:#1e293b;" data-i18n="aboutFactLocationValue">Beijing, China</span>
+                <span style="color:#94a3b8;font-weight:600;" data-i18n="aboutFactContactLabel">Contact</span>
+                <span style="color:#1e293b;"><a href="mailto:sales@photonedgeoptics.com" style="color:#2563eb;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            </div>
+            <div style="margin-top:24px;padding-top:24px;border-top:1px solid #e2e8f0;">
+                <a href="/contact.html" style="display:inline-block;background:#2563eb;color:white;padding:10px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:14px;" data-i18n="aboutContactCTA">Contact PhotonEdge</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-grid" style="grid-template-columns: 2fr 1fr 1fr 1fr;">
+            <div class="footer-brand">
+                <h3>PhotonEdge</h3>
+                <p data-i18n="v123FooterDesc">Experienced in optics. Flexible in manufacturing. Focused on your requirements.</p>
+                <p style="margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.6);">Beijing Hengdingguang Technology Co., Ltd.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="navProducts">Products</h4>
+                <ul>
+                    <li><a href="/products.html?category=Optical%20Lenses">Optical Lenses</a></li>
                     <li><a href="/products.html?category=Optical%20Windows">Optical Windows</a></li>
                     <li><a href="/products.html?category=Optical%20Mirrors">Optical Mirrors</a></li>
                     <li><a href="/products.html?category=Optical%20Filters">Optical Filters</a></li>
                     <li><a href="/products.html?component=Beamsplitter">Beamsplitters</a></li>
                     <li><a href="/products.html?category=Optical%20Prisms">Optical Prisms</a></li>
                     <li><a href="/products.html?category=Waveplates%20%26%20Polarizers">Waveplates &amp; Polarizers</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="companyName">Company</h4>
-                    <ul>
-                        <li><a href="/about.html" data-i18n="navAbout">About Us</a></li>
-                        <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
-                        <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4 data-i18n="contactInfo">Contact</h4>
-                    <ul>
-                        <li>Email: <a href="mailto:sales@photonedgeoptics.com">sales@photonedgeoptics.com</a></li>
-                        <li>Phone: +86-13693009175</li>
-                        <li>WhatsApp: +86-13693009175</li>
-                        <li>Contact: Ms. Lin</li>
-                    </ul>
-                </div>
+                </ul>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025-2026 PhotonEdge. All Rights Reserved.</p>
+            <div class="footer-col">
+                <h4 data-i18n="navResources">Resources</h4>
+                <ul>
+                    <li><a href="/knowledge-center/" data-i18n="navKnowledgeCenter">Knowledge Center</a></li>
+                    <li><a href="/application-notes/" data-i18n="navApplicationNotes">Application Notes</a></li>
+                    <li><a href="/coatings/" data-i18n="navCoatings">Coating Database</a></li>
+                    <li><a href="/materials.html" data-i18n="navMaterials">Materials Guide</a></li>
+                    <li><a href="/faq.html" data-i18n="navFAQ">FAQ</a></li>
+                    <li><a href="/blog.html" data-i18n="navBlog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-i18n="footerCompany">Company</h4>
+                <ul>
+                    <li><a href="/about.html" data-i18n="navAboutPhotonEdge">About PhotonEdge</a></li>
+                    <li><a href="/applications.html" data-i18n="navApplications">Applications</a></li>
+                    <li><a href="/case-studies.html" data-i18n="navCaseStudies">Case Studies</a></li>
+                    <li><a href="/quality-assurance.html" data-i18n="navQualityDoc">Quality Assurance</a></li>
+                    <li><a href="/evidence.html" data-i18n="navEvidence">Evidence Center</a></li>
+                    <li><a href="/contact.html" data-i18n="navContact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-contact-bar" style="background:rgba(255,255,255,0.05);border-radius:8px;padding:16px 24px;margin:24px 0 16px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center;">
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x2709; <a href="mailto:sales@photonedgeoptics.com" style="color:#4da4ff;text-decoration:none;">sales@photonedgeoptics.com</a></span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">&#x260E; +86-13693009175</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">WeChat: hengdingguang</span>
+            <span style="color:rgba(255,255,255,0.8);font-size:14px;">Contact: Ms. Lin</span>
+        </div>
+        <div class="footer-bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <p>&copy; 2024-2026 PhotonEdge Optics | Beijing Hengdingguang Technology Co., Ltd. All Rights Reserved.</p>
+            <a href="/contact.html" style="color: rgba(255,255,255,0.6); font-size: 14px; text-decoration: none;" data-i18n="navCTA">Request a Quote</a>
+        </div>
+    </div>
+</footer>
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/8613693009175" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
-        <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div>
-    </a>
+        <div class="whatsapp-tooltip" data-i18n="whatsappTooltip">Chat with us</div></a>
 
     <script src="/js/translations.js"></script>
     <script src="/js/cart.js"></script>
@@ -485,6 +513,36 @@
                 }
             });
         });
+        
+        // Add translations
+        if (typeof translations !== 'undefined') {
+            translations.en.aboutMore = 'We partner with companies across laser systems, semiconductor metrology, medical devices, and scientific research — providing engineering support from initial concept through volume production. Our global clients in Europe, North America, and Asia-Pacific trust us for consistent quality, technical expertise, and reliable delivery.';
+            translations.zh.aboutMore = '凭借在光学行业的多年经验，我们与欧洲、北美、亚太等地区的客户建立了长期合作关系。我们的产品广泛应用于医疗设备、激光技术、科学研究、工业制造和国防工业等领域。';
+            
+            translations.en.certificationsTitle = 'Quality Management';
+            translations.zh.certificationsTitle = '质量管理';
+            
+            translations.en.isoDesc = 'Quality management processes aligned with international standards, ensuring consistent product quality and customer satisfaction.';
+            translations.zh.isoDesc = '质量管理流程符合国际标准，确保产品品质和客户满意度。';
+            
+            translations.en.precisionTitle = 'Precision Manufacturing';
+            translations.zh.precisionTitle = '精密制造';
+            
+            translations.en.precisionDesc = 'High-precision optical components with strict quality control at every stage of production.';
+            translations.zh.precisionDesc = '高精度光学元件，生产各阶段严格质量控制。';
+            
+            translations.en.testingTitle = 'Full Testing';
+            translations.zh.testingTitle = '全面检测';
+            
+            translations.en.testingDesc = 'Every product undergoes rigorous inspection and testing before shipment to ensure quality.';
+            translations.zh.testingDesc = '每件产品在发货前都经过严格检测，确保质量。';
+            
+            translations.en.deliveryTitle = 'Fast Delivery';
+            translations.zh.deliveryTitle = '快速交付';
+            
+            translations.en.deliveryDesc = 'Efficient production and logistics system ensures fast delivery for standard and custom orders.';
+            translations.zh.deliveryDesc = '高效的生产和物流系统确保标准订单和定制订单的快速交付。';
+        }
     </script>
 <script>
 
@@ -496,7 +554,7 @@ function toggleMobileMenu() {
 }
 
     </script>
-
+
     <script src="/js/chatbot.js"></script>
 </body>
 </html>

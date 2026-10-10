@@ -65,7 +65,7 @@ var PhotonEdgeChatbot = (function() {
                 zh: '标准精度：面形质量40-20划痕 digs，面形精度λ/4 @ 633nm，偏心差< 3弧分。精密选项可达10-5划痕digs，λ/20面形精度。'
             },
             'certification': {
-                en: 'PhotonEdge quality management processes are aligned with ISO 9001 standards. We provide inspection reports including interferometer surface maps, spectrophotometer curves, and dimensional data. Certificates of Compliance (CoC) are provided with every shipment.',
+                en: 'PhotonEdge is ISO 9001:2015 certified. We provide inspection reports including interferometer surface maps, spectrophotometer curves, and dimensional data. Certificates of Compliance (CoC) are provided with every shipment.',
                 zh: '恒鼎光通过ISO 9001:2015认证。我们提供干涉仪面形图、分光光度计曲线和尺寸检测数据等检验报告。每批货物附带合格证书(CoC)。'
             },
             'warranty': {
@@ -239,7 +239,7 @@ var PhotonEdgeChatbot = (function() {
                 phone: { label: 'Phone / WhatsApp', placeholder: '+1-234-567-8900', required: false },
                 requirement: { label: 'Requirements Summary', placeholder: 'Brief description of your needs...', required: false }
             },
-            submit: 'Submit & Get Quote',
+            submit: 'Submit & Request a Quote',
             success: 'Thank you! We\'ve received your information and will contact you within 24 hours.'
         },
         zh: {
@@ -339,6 +339,11 @@ var PhotonEdgeChatbot = (function() {
                 '<div class="pe-chatbot-input-area" id="peChatbotInputArea" style="display:none;">' +
                     '<input type="text" class="pe-chatbot-input" id="peChatbotInput" placeholder="Type your message..." />' +
                     '<button class="pe-chatbot-send" id="peChatbotSend">➤</button>' +
+                '</div>' +
+                
+                '<!-- AI Disclaimer Footer -->' +
+                '<div class="pe-chatbot-disclaimer">' +
+                    '<span>AI-generated content is for reference only. Critical specifications and quotations must be confirmed through our formal engineering review process.</span>' +
                 '</div>' +
             '</div>';
 
@@ -705,7 +710,7 @@ var PhotonEdgeChatbot = (function() {
                         '<div class="pe-chatbot-product-name">' + name + '</div>' +
                         '<div class="pe-chatbot-product-category">' + p.category + '</div>' +
                         '<a href="/contact.html?product=' + encodeURIComponent(p.slug) + '" class="pe-chatbot-product-link" onclick="PhotonEdgeChatbot.trackEvent(\'product_recommendation_click\', {product: \'' + p.slug + '\'})">' + 
-                        (lang === 'zh' ? '查看详情 →' : 'View Details →') + '</a>' +
+                        (lang === 'zh' ? '查看详情  ' : 'View Details  ') + '</a>' +
                     '</div>';
                 }
                 html += '</div>';
