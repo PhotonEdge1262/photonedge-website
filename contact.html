@@ -118,7 +118,7 @@
                     <div style="width:64px;height:64px;background:#dbeafe;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px;">&#128196;</div>
                     <h3 data-i18n="v133ContactCard1Title" style="font-size:18px;color:#1e3a5f;margin-bottom:10px;font-weight:600;">I Have a Drawing</h3>
                     <p data-i18n="v133ContactCard1Desc" style="color:#475569;font-size:14px;line-height:1.7;margin-bottom:16px;">Upload your drawing file (PDF, DWG, STEP, IGES, JPG, PNG). We'll review the specifications and manufacturing requirements.</p>
-                    <a href="#contact-form" style="display:inline-block;background:#1e3a5f;color:white;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;" data-i18n="v133ContactCard1CTA">Upload Your Drawing</a>
+                    <a href="#contact-form" style="display:inline-block;background:#1e3a5f;color:white;padding:10px 24px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;" data-i18n="v133ContactCard1CTA" onclick="if(typeof gtag==='function'){gtag('event','upload_drawing_click',{page_url:window.location.pathname,source:'contact_card'});}">Upload Your Drawing</a>
                 </div>
                 <div style="background:white;border-radius:12px;padding:32px 24px;border:2px solid #e2e8f0;text-align:center;transition:border-color 0.2s;" onmouseover="this.style.borderColor='#3b82f6'" onmouseout="this.style.borderColor='#e2e8f0'">
                     <div style="width:64px;height:64px;background:#fef3c7;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 16px;">&#128203;</div>
@@ -272,19 +272,67 @@
                         </div>
                     </div>
 
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;">
+                      <div>
+                        <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Product Type</label>
+                        <select name="Product_Type" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;">
+                          <option value="">Select product type...</option>
+                          <option value="Lenses">Lenses</option>
+                          <option value="Windows">Windows</option>
+                          <option value="Mirrors">Mirrors</option>
+                          <option value="Filters">Filters</option>
+                          <option value="Beamsplitters">Beamsplitters</option>
+                          <option value="Prisms">Prisms</option>
+                          <option value="Waveplates/Polarizers">Waveplates / Polarizers</option>
+                          <option value="Custom Optics">Custom Optics</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Application</label>
+                        <select name="Application" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;">
+                          <option value="">Select application...</option>
+                          <option value="Laser Systems">Laser Systems</option>
+                          <option value="Semiconductor Inspection">Semiconductor Inspection</option>
+                          <option value="Medical & Imaging">Medical & Imaging</option>
+                          <option value="Industrial Vision">Industrial Vision</option>
+                          <option value="Scientific Instruments">Scientific Instruments</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:16px;">
+                      <div>
+                        <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Material</label>
+                        <input type="text" name="Material" placeholder="e.g., BK7, Fused Silica, CaF&#x2082;..." style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;box-sizing:border-box;">
+                      </div>
+                      <div>
+                        <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Quantity</label>
+                        <input type="text" name="Quantity" placeholder="e.g., 10, 100, 1000..." style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;box-sizing:border-box;">
+                      </div>
+                      <div>
+                        <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Delivery Timeline</label>
+                        <input type="text" name="Delivery_Timeline" placeholder="e.g., 2 weeks, urgent..." style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;box-sizing:border-box;">
+                      </div>
+                    </div>
+                    <div style="margin-bottom:16px;">
+                      <label style="display:block;font-size:14px;font-weight:600;color:#1e293b;margin-bottom:6px;">Upload Drawing or Specifications</label>
+                      <input type="file" name="Drawing_File" multiple accept=".pdf,.dwg,.dxf,.step,.stp,.igs,.iges,.jpg,.png,.doc,.docx" style="width:100%;padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:14px;box-sizing:border-box;">
+                      <p style="font-size:12px;color:#64748b;margin-top:4px;">Accepted: PDF, DWG, DXF, STEP, IGES, JPG, PNG, DOC (max 20MB)</p>
+                    </div>
                     <div style="margin-bottom:16px;">
                         <label data-i18n="v133FormRequirement" style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:6px;">Requirement *</label>
-                        <textarea name="Requirement" rows="5" required style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:14px;box-sizing:border-box;resize:vertical;" data-i18n-placeholder="v133FormReqPh" placeholder="Describe your optical requirement — drawing details, material, coating, dimensions, tolerance, quantity, application..."></textarea>
+                        <textarea name="Requirement" rows="5" required style="width:100%;padding:10px 14px;border:1px solid #d1d5db;border-radius:8px;font-size:14px;box-sizing:border-box;resize:vertical;" data-i18n-placeholder="v133FormReqPh" placeholder="Describe your requirements in detail — coating specifications, surface quality, flatness, tolerance, or any special conditions..."></textarea>
                     </div>
 
-                    <div style="margin-bottom:20px;">
-                        <label data-i18n="v133FormUpload" style="display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:6px;">Upload Your Drawing (optional)</label>
-                        <input type="file" name="Attachment" accept=".pdf,.dwg,.step,.iges,.jpg,.png" style="width:100%;padding:8px;border:1px solid #d1d5db;border-radius:8px;font-size:13px;box-sizing:border-box;">
-                        <span style="font-size:12px;color:#94a3b8;margin-top:4px;display:block;">PDF, DWG, STEP, IGES, JPG, PNG</span>
-                    </div>
-
-                    <button type="submit" style="width:100%;padding:14px;background:#2563eb;color:white;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;" data-i18n="v133FormSubmit">Submit Requirement</button>
+                    <button type="submit" style="width:100%;padding:14px;background:#2563eb;color:white;border:none;border-radius:8px;font-size:16px;font-weight:600;cursor:pointer;" data-i18n="v133FormSubmit" onclick="if(typeof gtag==='function'){gtag('event','inquiry_submit',{form_page:'contact',source:'direct_visit'});}">Submit Requirement</button>
                 </form>
+
+                <div id="formSuccess" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:12px;padding:32px;text-align:center;margin-top:24px;">
+                    <h3 style="font-size:20px;font-weight:700;color:#166534;margin-bottom:12px;">&#9989; Inquiry Received</h3>
+                    <p style="color:#166534;font-size:14px;line-height:1.7;">Thank you for your inquiry. Our engineering team will review your requirements and respond within 24 business hours.</p>
+                    <p style="color:#166534;font-size:14px;margin-top:12px;">If you need immediate assistance, contact us via <a href="https://wa.me/8613693009175" style="color:#2563eb;font-weight:600;">WhatsApp</a>.</p>
+                </div>
 
                 <div id="formSuccessMessage" style="display:none;text-align:center;padding:40px;">
                     <h2 style="font-size:24px;font-weight:700;color:#059669;margin-bottom:12px;" data-i18n="v151FormSuccessTitle">Your Engineering Request Has Been Received</h2>
