@@ -2920,7 +2920,7 @@ var translations = {
     "v127ContactSide3Title": "Response Time",
     "v127ContactSide3Desc": "We review all inquiries within 24 business hours. For urgent requirements, please call or WhatsApp us directly at +86-13693009175.",
     "v132CaseHeroTag": "Engineering Partnerships",
-    "v132CaseHeroTitle": "Real Optical Challenges. Practical Solutions.",
+    "v132CaseHeroTitle": "Optical Engineering Challenges. Practical Solutions.",
     "v132CaseHeroDesc": "We work alongside engineering teams to understand requirements, coordinate the right optical approach, and deliver components that perform.",
     "v132CaseChallenge": "The Challenge",
     "v132CaseApproach": "Our Approach",
