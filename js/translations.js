@@ -1,5 +1,18 @@
 var translations = {
   "en": {
+    "v163HelpTitle": "How Can We Help You?",
+    "v163HelpSubtitle": "Choose the path that matches your current stage",
+    "v163Card1Title": "I Have a Drawing",
+    "v163Card1Desc": "Upload your drawing with specifications. Get a detailed quote within 24 business hours.",
+    "v163Card1CTA": "Upload Your Drawing",
+    "v163Card2Title": "I Know the Product Type",
+    "v163Card2Desc": "Select product type and describe your requirements. Our team will review and suggest specifications.",
+    "v163Card2CTA": "Request Engineering Review",
+    "v163Card3Title": "I'm Not Sure What I Need",
+    "v163Card3Desc": "Describe your system and technical challenge. Get material and component selection guidance.",
+    "v163Card3CTA": "Ask AI Optical Engineer",
+    "v163RelatedApps": "Related Applications",
+    "v163EngConsiderations": "Engineering Considerations",
     "navSolutions": "Solutions",
     "navKnowledgeCenter": "Knowledge Center",
     "heroCTA1": "Request a Quote",
@@ -3826,6 +3839,19 @@ var translations = {
 
 
   "zh": {
+    "v163HelpTitle": "我们如何帮助您？",
+    "v163HelpSubtitle": "选择符合您当前阶段的Path",
+    "v163Card1Title": "我有图纸",
+    "v163Card1Desc": "上传您的图纸和规格。在24个工作小时内获得详细报价。",
+    "v163Card1CTA": "上传您的图纸",
+    "v163Card2Title": "我知道产品类型",
+    "v163Card2Desc": "选择产品类型并描述您的需求。我们的团队将审核并建议规格。",
+    "v163Card2CTA": "请求工程审核",
+    "v163Card3Title": "我不确定需要什么",
+    "v163Card3Desc": "描述您的系统和技术挑战。获得材料和组件选择指导。",
+    "v163Card3CTA": "咨询AI光学工程师",
+    "v163RelatedApps": "相关应用",
+    "v163EngConsiderations": "工程注意事项",
     "navSolutions": "解决方案",
     "navKnowledgeCenter": "知识中心",
     "heroCTA1": "提交您的规格要求",
