@@ -156,7 +156,7 @@
                     <button class="lang-btn notranslate active">EN</button>
                     <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
                 </div>
-                <a href="/contact.html" class="btn btn-primary nav-cta-btn" onclick="if(typeof gtag==='function'){gtag('event','quote_click',{page_url:window.location.pathname,source:'nav'});}" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
         </div>
     </header>
@@ -496,6 +496,35 @@
     </div>
 </section>
 
+    <!-- Ordering Information Block V165 -->
+    <section class="product-section-31 alt-bg">
+        <div class="section-inner" style="max-width:900px;margin:0 auto;padding:0 24px;">
+            <h2 class="section-title-31" data-i18n="v165OrderingBlockTitle">Ordering Information</h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;">
+                <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBPriceLabel">Price Range</div>
+                    <div style="font-size:16px;font-weight:600;color:#1e293b;" id="v165-price">See Quote</div>
+                </div>
+                <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBLeadLabel">Lead Time</div>
+                    <div style="font-size:16px;font-weight:600;color:#1e293b;" id="v165-lead">1-2 Weeks</div>
+                </div>
+                <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBMOQLabel">MOQ</div>
+                    <div style="font-size:16px;font-weight:600;color:#1e293b;" id="v165-moq">1 Piece</div>
+                </div>
+                <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBSampleLabel">Samples</div>
+                    <div style="font-size:16px;font-weight:600;color:#1e293b;">Available</div>
+                </div>
+            </div>
+            <p style="text-align:center;font-size:14px;color:#64748b;margin-bottom:16px;" data-i18n="v165OBPriceNote">Contact us for exact pricing based on your specifications.</p>
+            <div style="text-align:center;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <a href="/contact.html" class="btn-primary-31" data-i18n="v165GetQuoteBtn">Get a Quote</a>
+                <a href="/ordering-info.html" class="btn-secondary-31" style="border-color:#1e40af;color:#1e40af;">Full Ordering Guide</a>
+            </div>
+        </div>
+    </section>
     <!-- FAQ -->
     <section class="product-section">
         <div class="container">
@@ -570,7 +599,7 @@
         <div class="cta-box">
             <h2>Have an Optical Requirement?</h2>
             <p>Tell us what you know. We'll help identify what you still need.</p>
-            <a href="/contact.html" class="btn btn-primary"onclick="if(typeof gtag==='function'){gtag('event','upload_drawing',{page_url:window.location.pathname,source:'product_footer'});}" style="cursor:pointer;">Upload Your Drawing</a>
+            <a href="/contact.html" class="btn btn-primary">Upload Your Drawing</a>
             <a href="/contact.html" class="btn btn-secondary">Request a Quote</a>
         </div>
     </div>
@@ -646,5 +675,9 @@
         </div>
     </div>
 </footer>
+<script>
+var v165p = document.getElementById('v165-price'); if(v165p) v165p.textContent = '$30 – $500+ / pc';
+var v165l = document.getElementById('v165-lead'); if(v165l) v165l.textContent = '2 – 4 Weeks';
+</script>
 </body>
 </html>

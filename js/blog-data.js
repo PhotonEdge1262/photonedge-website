@@ -2,20 +2,6 @@
 
 var BLOG_POSTS = [
   {
-    "id": 48,
-    "title": "Cylindrical Lenses: A Practical Guide to Beam Shaping, Line Generation, and Astigmatism Correction",
-    "titleZh": "柱面透镜实用指南：光束整形、线激光生成与像散校正",
-    "slug": "cylindrical-lenses-beam-shaping-guide",
-    "excerpt": "A comprehensive guide to cylindrical lenses for optical engineers. Learn how cylindrical lenses correct astigmatism, shape laser beams into lines or sheets, and enable uniform illumination in machine vision and spectroscopy applications.",
-    "excerptZh": "面向光学工程师的柱面透镜全面指南。了解柱面透镜如何校正像散、将激光束整形为线光或光片，以及在机器视觉和光谱应用中实现均匀照明。",
-    "category": "Technical Guide",
-    "categoryZh": "技术指南",
-    "date": "2026-10-14",
-    "readTime": "10 min",
-    "image": "images/blog/cylindrical-lenses-beam-shaping.jpg",
-    "author": "PhotonEdge Engineering Team"
-  },
-  {
   "id": 43,
   "title": "Aspherical Lenses vs Spherical Lenses: A Complete Engineering Guide to Aberration Correction and Optical System Simplification",
   "slug": "aspherical-vs-spherical-lenses-aberration-correction-guide",
