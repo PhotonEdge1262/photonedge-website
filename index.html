@@ -147,7 +147,7 @@
                     <button class="lang-btn notranslate active">EN</button>
                     <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
                 </div>
-                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" onclick="if(typeof gtag==='function'){gtag('event','quote_click',{page_url:window.location.pathname,source:'nav'});}" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
         </div>
     </header>
@@ -536,7 +536,7 @@
                     <span class="faq-arrow" style="color:#94a3b8;font-size:18px;transition:transform 0.3s;">&#9660;</span>
                 </button>
                 <div class="faq-accordion-body" style="display:none;padding:0 24px 20px;">
-                    <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v159Faq3A">Standard components ship according to stock availability. Custom components typically require 2&ndash;4 weeks depending on complexity and quantity. We confirm lead time in every quotation.</p>
+                    <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v159Faq3A">Standard catalog items: 1&ndash;2 weeks from stock. Custom specifications: 2&ndash;4 weeks depending on complexity and material. Complex custom optics: 4&ndash;6 weeks. All lead times are estimates &mdash; we confirm in every quotation.</p>
                 </div>
             </div>
             <div style="border:1px solid #e2e8f0;border-radius:10px;margin-bottom:12px;overflow:hidden;">
@@ -554,7 +554,7 @@
                     <span class="faq-arrow" style="color:#94a3b8;font-size:18px;transition:transform 0.3s;">&#9660;</span>
                 </button>
                 <div class="faq-accordion-body" style="display:none;padding:0 24px 20px;">
-                    <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v159Faq5A">For standard components, there is no minimum. For custom optics, we can produce from 1 piece for prototype evaluation.</p>
+                    <p style="color:#64748b;font-size:14px;line-height:1.7;margin:0;" data-i18n="v159Faq5A">Standard components: no minimum &mdash; single pieces available. Custom optics: prototypes from 1 piece; typical production runs start at 5&ndash;10 pieces. Volume production up to 10,000+ pieces. Pricing scales with quantity.</p>
                 </div>
             </div>
         </div>

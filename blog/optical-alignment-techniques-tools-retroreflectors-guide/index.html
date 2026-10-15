@@ -116,7 +116,7 @@
                     <button class="lang-btn notranslate active">EN</button>
                     <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
                 </div>
-                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" onclick="if(typeof gtag==='function'){gtag('event','quote_click',{page_url:window.location.pathname,source:'nav'});}" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
 
         <!-- Article Header -->
