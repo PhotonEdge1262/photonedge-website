@@ -606,7 +606,7 @@
                     <button class="lang-btn notranslate active">EN</button>
                     <a href="/zh/index.html" class="lang-btn notranslate" style="text-decoration:none;">中文</a>
                 </div>
-                <a href="/contact.html" class="btn btn-primary nav-cta-btn" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
+                <a href="/contact.html" class="btn btn-primary nav-cta-btn" onclick="if(typeof gtag==='function'){gtag('event','quote_click',{page_url:window.location.pathname,source:'nav'});}" data-i18n="navCTA" style="padding:8px 20px;border-radius:6px;font-size:14px;color:white;text-decoration:none;margin-left:8px;">Request a Quote</a>
             </nav>
     <div class="container" style="padding:12px 0 0;">
             <nav aria-label="breadcrumb" style="font-size:13px;color:#64748b;">
@@ -1103,7 +1103,7 @@
     <h2 style="font-size:28px;font-weight:700;color:white;margin-bottom:12px;">Have a Custom Requirement?</h2>
     <p style="font-size:16px;color:rgba(255,255,255,0.9);margin-bottom:24px;">Upload your drawing or specifications. Our engineering team will review and respond within 24 business hours.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="/contact.html" style="display:inline-block;padding:14px 32px;background:white;color:#1e40af;font-weight:600;border-radius:8px;text-decoration:none;font-size:15px;">Upload Your Drawing</a>
+      <a href="/contact.html" style="display:inline-block;padding:14px 32px;background:white;color:#1e40af;font-weight:600;border-radius:8px;text-decoration:none;font-size:15px;" onclick="if(typeof gtag==='function'){gtag('event','upload_drawing',{page_url:window.location.pathname,source:'product_footer'});}" style="cursor:pointer;">Upload Your Drawing</a>
       <a href="/contact.html" style="display:inline-block;padding:14px 32px;background:transparent;color:white;font-weight:600;border-radius:8px;text-decoration:none;font-size:15px;border:2px solid rgba(255,255,255,0.5);">Request a Quote</a>
     </div>
   </div>
