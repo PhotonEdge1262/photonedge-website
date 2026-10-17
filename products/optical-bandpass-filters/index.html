@@ -283,14 +283,18 @@
     <section class="product-section-31 alt-bg">
         <div class="section-inner" style="max-width:900px;margin:0 auto;padding:0 24px;">
             <h2 class="section-title-31" data-i18n="v165OrderingBlockTitle">Ordering Information</h2>
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-bottom:24px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:24px;">
                 <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
                     <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBPriceLabel">Price Range</div>
                     <div style="font-size:16px;font-weight:600;color:#1e293b;" id="v165-price">See Quote</div>
                 </div>
                 <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
-                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBLeadLabel">Lead Time</div>
-                    <div style="font-size:16px;font-weight:600;color:#1e293b;" id="v165-lead">1-2 Weeks</div>
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBLeadStdLabel">Standard Lead Time</div>
+                    <div style="font-size:14px;font-weight:600;color:#16a34a;" data-i18n="v165OBLeadStdValue">Ships within 1 week after payment</div>
+                </div>
+                <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
+                    <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBLeadCustLabel">Custom Lead Time</div>
+                    <div style="font-size:14px;font-weight:600;color:#d97706;" data-i18n="v165OBLeadCustValue">Subject to engineering evaluation</div>
                 </div>
                 <div style="background:white;border:1px solid #e2e8f0;border-radius:8px;padding:16px;text-align:center;">
                     <div style="font-size:13px;color:#64748b;margin-bottom:4px;" data-i18n="v165OBMOQLabel">MOQ</div>
@@ -301,7 +305,11 @@
                     <div style="font-size:16px;font-weight:600;color:#1e293b;">Available</div>
                 </div>
             </div>
-            <p style="text-align:center;font-size:14px;color:#64748b;margin-bottom:16px;" data-i18n="v165OBPriceNote">Contact us for exact pricing based on your specifications.</p>
+            <p style="text-align:center;font-size:14px;color:#64748b;margin-bottom:12px;" data-i18n="v165OBPriceNote">Contact us for exact pricing based on your specifications.</p>
+            <div style="background:#f0f9ff;border:1px solid #bfdbfe;border-radius:8px;padding:14px 18px;margin-bottom:16px;">
+                <p style="font-size:13px;color:#1e3a5f;font-weight:600;margin:0 0 6px 0;" data-i18n="v168GradeTitle">Specification Parameters</p>
+                <p style="font-size:12px;color:#475569;line-height:1.6;margin:0;" data-i18n="v168GradeDesc"><strong>Typical Specifications</strong> shown on this page are standard capabilities. <strong>Available Options</strong> include alternative materials and coatings. <strong>Custom Specifications</strong> are available per your drawing. Requirements beyond standard capability are marked <strong>Subject to Engineering Review</strong>.</p>
+            </div>
             <div style="text-align:center;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
                 <a href="/contact.html" class="btn-primary-31" data-i18n="v165GetQuoteBtn">Get a Quote</a>
                 <a href="/ordering-info.html" class="btn-secondary-31" style="border-color:#1e40af;color:#1e40af;">Full Ordering Guide</a>
@@ -411,7 +419,6 @@
 </footer>
 <script>
 var v165p = document.getElementById('v165-price'); if(v165p) v165p.textContent = '$15 – $300+ / pc';
-var v165l = document.getElementById('v165-lead'); if(v165l) v165l.textContent = '2 – 3 Weeks';
 </script>
 </body>
 </html>

@@ -259,45 +259,22 @@
     <section style="padding:60px 0;background:white;">
         <div class="container" style="max-width:900px;">
             <h2 data-i18n="v165LeadTimeTitle" style="font-size:28px;color:#1e3a5f;margin-bottom:12px;text-align:center;font-weight:700;">Lead Time Reference</h2>
-            <p style="color:#64748b;font-size:15px;text-align:center;margin-bottom:32px;line-height:1.7;">Lead times are estimates based on typical order complexity. Final confirmation will be provided with your quotation.</p>
-            <div style="overflow-x:auto;">
-                <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
-                    <thead>
-                        <tr style="background:#1e3a5f;color:white;">
-                            <th style="padding:14px 16px;text-align:left;font-size:14px;font-weight:600;">Order Type</th>
-                            <th style="padding:14px 16px;text-align:left;font-size:14px;font-weight:600;">Typical Lead Time</th>
-                            <th style="padding:14px 16px;text-align:left;font-size:14px;font-weight:600;">Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom:1px solid #e2e8f0;">
-                            <td style="padding:12px 16px;font-size:14px;color:#1e3a5f;font-weight:500;">Standard in-stock items</td>
-                            <td style="padding:12px 16px;font-size:14px;color:#475569;">1 &ndash; 2 weeks</td>
-                            <td style="padding:12px 16px;font-size:13px;color:#64748b;">After order confirmation</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;">
-                            <td style="padding:12px 16px;font-size:14px;color:#1e3a5f;font-weight:500;">Standard with coating</td>
-                            <td style="padding:12px 16px;font-size:14px;color:#475569;">2 &ndash; 3 weeks</td>
-                            <td style="padding:12px 16px;font-size:13px;color:#64748b;">Depends on coating complexity</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #e2e8f0;">
-                            <td style="padding:12px 16px;font-size:14px;color:#1e3a5f;font-weight:500;">Custom components (simple)</td>
-                            <td style="padding:12px 16px;font-size:14px;color:#475569;">2 &ndash; 4 weeks</td>
-                            <td style="padding:12px 16px;font-size:13px;color:#64748b;">Estimated, depends on specifications</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #e2e8f0;background:#f8fafc;">
-                            <td style="padding:12px 16px;font-size:14px;color:#1e3a5f;font-weight:500;">Custom components (complex)</td>
-                            <td style="padding:12px 16px;font-size:14px;color:#475569;">4 &ndash; 6 weeks</td>
-                            <td style="padding:12px 16px;font-size:13px;color:#64748b;">Estimated, includes engineering review</td>
-                        </tr>
-                        <tr>
-                            <td style="padding:12px 16px;font-size:14px;color:#1e3a5f;font-weight:500;">Sample orders</td>
-                            <td style="padding:12px 16px;font-size:14px;color:#475569;">1 &ndash; 2 weeks</td>
-                            <td style="padding:12px 16px;font-size:13px;color:#64748b;">Priority processing for first orders</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <p style="color:#64748b;font-size:15px;text-align:center;margin-bottom:32px;line-height:1.7;" data-i18n="v168LeadTimeNote">Lead times depend on product type and order complexity. Standard items ship quickly; custom items require engineering evaluation.</p>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;">
+                <div style="background:#f0fdf4;border:2px solid #bbf7d0;border-radius:12px;padding:28px;text-align:center;">
+                    <div style="font-size:36px;margin-bottom:12px;">&#9989;</div>
+                    <h3 style="font-size:18px;color:#166534;margin-bottom:8px;font-weight:700;" data-i18n="v168StdLeadTitle">Standard Products</h3>
+                    <div style="font-size:24px;font-weight:800;color:#16a34a;margin-bottom:8px;" data-i18n="v168StdLeadTime">Ships within 1 week after payment</div>
+                    <p style="font-size:13px;color:#475569;line-height:1.6;margin:0;" data-i18n="v168StdLeadDesc">In-stock optical components including standard lenses, windows, mirrors and filters. Ready to ship upon order confirmation.</p>
+                </div>
+                <div style="background:#fffbeb;border:2px solid #fde68a;border-radius:12px;padding:28px;text-align:center;">
+                    <div style="font-size:36px;margin-bottom:12px;">&#128295;</div>
+                    <h3 style="font-size:18px;color:#92400e;margin-bottom:8px;font-weight:700;" data-i18n="v168CustLeadTitle">Custom Products</h3>
+                    <div style="font-size:24px;font-weight:800;color:#d97706;margin-bottom:8px;" data-i18n="v168CustLeadTime">Subject to engineering evaluation</div>
+                    <p style="font-size:13px;color:#475569;line-height:1.6;margin:0;" data-i18n="v168CustLeadDesc">Custom optical components are quoted after engineering review of your specifications, drawings and requirements. Lead time is confirmed with quotation.</p>
+                </div>
             </div>
+            <p style="color:#475569;font-size:13px;text-align:center;margin-top:24px;line-height:1.6;" data-i18n="v168LeadFootNote">For custom orders, please submit your drawing or specification via our <a href="/contact.html" style="color:#2563eb;text-decoration:underline;">Request a Quote</a> form. Our engineering team will review and respond with a confirmed lead time.</p>
         </div>
     </section>
 
@@ -312,12 +289,12 @@
                         <span style="color:#475569;font-size:15px;line-height:1.6;">Sample orders welcome for evaluation and qualification</span>
                     </li>
                     <li style="display:flex;align-items:flex-start;gap:12px;">
-                        <span style="color:#2563eb;font-size:18px;min-width:24px;">&#10003;</span>
-                        <span style="color:#475569;font-size:15px;line-height:1.6;">Standard samples: typically ship within 1 week</span>
+                        <span style="color:#16a34a;font-size:18px;min-width:24px;">&#10003;</span>
+                        <span style="color:#475569;font-size:15px;line-height:1.6;"><strong data-i18n="v168SampleStdLabel">Standard samples:</strong> Ships within 1 week after payment</span>
                     </li>
                     <li style="display:flex;align-items:flex-start;gap:12px;">
-                        <span style="color:#2563eb;font-size:18px;min-width:24px;">&#10003;</span>
-                        <span style="color:#475569;font-size:15px;line-height:1.6;">Custom samples: 2&ndash;3 weeks depending on complexity</span>
+                        <span style="color:#d97706;font-size:18px;min-width:24px;">&#10003;</span>
+                        <span style="color:#475569;font-size:15px;line-height:1.6;"><strong data-i18n="v168SampleCustLabel">Custom samples:</strong> Lead time confirmed after engineering evaluation</span>
                     </li>
                     <li style="display:flex;align-items:flex-start;gap:12px;">
                         <span style="color:#2563eb;font-size:18px;min-width:24px;">&#10003;</span>
